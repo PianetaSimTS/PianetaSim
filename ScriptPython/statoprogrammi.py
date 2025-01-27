@@ -80,7 +80,7 @@ def compare_status_only(old_state, new_state):
 
                 if new_status != old_status:  # Controlla se lo status è cambiato
                     status_icon = status_icons.get(new_status, "⚪️")  # Ottieni il pallino corrispondente
-                    status_change_message = f"ROGRAMMI\n\n{new_mod['programma']} ➜ {new_mod['data_aggiornamento']}\n\nStato ➜ {status_icon} {new_status}\n[SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                    status_change_message = f"PROGRAMMI\n\n*{new_mod['programma']}* ➜ *{new_mod['data_aggiornamento']}*\n\n_Stato {status_icon} {new_status}_\n[SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     messages.append(status_change_message)
                 break
     
