@@ -13,7 +13,7 @@ github_token = os.getenv('GITHUB_TOKEN')
 # URL dei file su GitHub
 mods_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/animazioniww18.json'
 state_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/telegramstato/last_stateanimazioni.json'
-repo_api_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/telegramstato/last_stateanimazioni.json'
+repo_api_url = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_stateanimazioni.json'
 
 # Funzione per scaricare un file JSON da un URL
 def fetch_json(url):
