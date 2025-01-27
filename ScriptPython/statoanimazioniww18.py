@@ -94,9 +94,9 @@ def compare_status_only(old_state, new_state):
 
                     status_change_message = (
                         f"ANIMAZIONE\n\n"
-                        f"{new_mod['Autore'].title()} ➜ Data: {new_mod['DataAggiornamento']}\n\n"
-                        f"Stato ➜ {status_icon} {new_mod['Status'].capitalize()}\n"
-                        f"[SITO]({new_mod['Link']})"
+                        f"*{new_mod['Autore'].title()}* ➜ *Data: {new_mod['DataAggiornamento']}*\n\n"
+                        f"_Stato {status_icon} {new_mod['Status'].capitalize()}\n_"
+                        f"[SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
                     messages.append(status_change_message)
                 break  # Interrompi il ciclo interno se l'autore corrisponde
