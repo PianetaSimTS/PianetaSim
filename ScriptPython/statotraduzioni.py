@@ -14,7 +14,7 @@ github_token = os.getenv('GITHUB_TOKEN')
 # URL dei file su GitHub
 mods_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/traduzioni.json'
 state_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/telegramstato/last_statetraduzioni.json'
-repo_api_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/telegramstato/last_statetraduzioni.json'
+repo_api_url = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_statetraduzioni.json'
 
 def fetch_json(url):
     try:
