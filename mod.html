@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabella - MOD</title>
+  <link rel="icon" type="image/png" href="Immagini/plumboblogo.png">
+    <style>
+:root {
+      --navbarbackground: #343a40;
+      --navbarcolor: #fff;
+      --formcontainerbackground: #343a40;
+      --formcontainercolor: #fff;
+      --h1backgroundcolor: #343a40;
+      --h1color: white;
+      --thchildcolor: #666666;
+      --tdcolor: #555555;
+      --thcolor: white;
+      --bodybackground: #343a40;
+      --sconosciutavar: #545454;
+      --thtdcolor: white;
+    }
+
+    #filter-status-dropdown, #filter-translation-dropdown, #filter-category-dropdown {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+    .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--navbarbackground);
+  padding: 10px;
+  border-bottom: 3px solid #f9359d; /* Bordo inferiore della navbar */
+}
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: none;
+  z-index: 1000; /* Ensures the tooltip appears above other elements */
+  width: 800px; /* Adjusts the width to fit the content */
+  max-width: 800px; /* Optional: limits the width if needed */
+}
+
+.mod-name {
+  position: relative; /* Rendi l'elemento contenitore posizionato per il tooltip */
+}
+
+.mod-name .tooltip {
+  display: none; /* Mantieni nascosto di default */
+  position: absolute;
+  top: 0; /* Posiziona il tooltip sopra l'elemento mod-name */
+  left: 80%; /* Posiziona il tooltip alla destra dell'elemento */
+  transform: translateX(10px); /* Aggiungi un offset per distanziarlo un po' */
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1000;
+  max-width: none; /* Consenti l'estensione orizzontale */
+}
+
+.mod-name:hover .tooltip {
+  display: block; /* Mostra il tooltip al passaggio del mouse */
+}
+.navbar a, .navbar button {
+  color: var(--navbarcolor);
+  text-decoration: none;
+  background-color: #4CAF50; /* Usa il colore di sfondo dal nuovo design */
+  padding: 10px 20px; /* Più spazio cliccabile */
+  border-radius: 5px; /* Raggio bordi più ampio */
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px; /* Font più grande */
+  text-align: center; /* Per centrare il testo */
+  font-weight: bold;
+}
+
+.navbar a:hover, .navbar button:hover {
+  background-color: #0f7041; /* Colore hover più intenso */
+  transform: scale(1.05); /* Leggero ingrandimento al passaggio del mouse */
+}
+.sort-arrow {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.sort-arrow.asc:before {
+  content: "↑"; /* Freccia su per l'ordinamento ascendente */
+}
+
+.sort-arrow.desc:before {
+  content: "↓"; /* Freccia giù per l'ordinamento discendente */
+}
+      .scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Sarà visibile solo quando necessario */
+  width: 50px;
+  height: 50px;
+  background-color: #f05454;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #d94343; /* Colore più scuro al passaggio del mouse */
+  transform: scale(1.1); /* Leggera animazione di ingrandimento */
+}
+
+.scroll-to-top:active {
+  transform: scale(0.95); /* Riduce leggermente le dimensioni al clic */
+}
+    .back-arrow {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #16ab63;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.2s ease;
+      display: flex;
+  align-items: center;
+  text-decoration: none;
+    }
+
+    .back-arrow:hover {
+      color: #16ab63;
+      transform: scale(1.1);
+    }
+      
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bodybackground);
+      margin: 0;
+      padding: 0;
+    }
+    
+    input, select {
+      margin: 10px 5px;
+      padding: 10px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #16ab63;
+    }
+
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0px; /* Riduci lo spazio sopra */
+      margin-bottom: 0px; /* Riduci lo spazio sotto */
+      padding: 5px;
+      border: 1px solid var(--formcontainerbackground);
+      border-radius: 5px;
+      background-color: var(--formcontainerbackground);
+      color: var(--formcontainercolor);
+      gap: 60px;
+    }
+
+    .form-container label {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+
+    input, select {
+      margin: 5px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    h1 {
+      color: var(--h1color);
+      font-size: 2rem;
+      margin: 0;
+      padding: 20px 0;
+      background-color: var(--h1backgroundcolor);
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      table-layout: auto;
+    }
+
+    th, td {
+      padding: 15px 20px;
+      text-align: center;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      word-wrap: break-word;
+      color: var(--thtdcolor)
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: var(--thcolor);
+    }
+
+    td {
+      background-color: var(--tdcolor);
+    }
+
+    tr:nth-child(even) td {
+      background-color: var(--thchildcolor);
+    }
+
+    .status {
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      width: auto;
+      height: auto;
+      text-transform: uppercase;
+      color: white;
+    }
+      
+    .status.nuova {
+      color: #9372ff;
+    }
+      
+    .status.compatibile {
+      color: #008eff;
+    }
+
+    .status.rotta {
+      color: #ff0015;
+    }
+    
+    .status.sconosciuta {
+      color: var(--sconosciutavar);
+    }
+
+    .status.aggiornata {
+      color: #00d517;
+    }
+
+    .traduzione {
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      text-align: center;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .traduzione.inclusa {
+      color: #54d41d;
+    }
+
+   .traduzione.non-necessaria {
+     color: #38b6ff;
+    }
+
+    .traduzione.in-lavorazione {
+       color: #ff57cb;
+    }
+
+    .traduzione.da-scaricare {
+      color: #ff9800;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+      }
+
+      .navbar a, .navbar button {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .form-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .star-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .star {
+      font-size: 24px;
+      cursor: pointer;
+      color: grey;
+      transition: transform 0.2s;
+    }
+
+    .star.favorite {
+      color: gold;
+    }
+
+    .star:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-arrow">
+    <img src="Immagini/plumboblogonoscritte.png" alt="Home Logo" width="50" height="auto">
+    <span class="home-text">HOME</span>
+  </a>
+  <h1>Tabella - Mod</h1>
+  <div class="navbar">
+    <a href="mod.html">MOD</a>
+    <a href="mod18.html">MOD +18</a>
+    <a href="animazioniww18.html">ANIMAZIONI WICKED WHIMS +18</a>
+    <a href="traduzioni.html">TRADUZIONI</a>
+    <a href="programmi.html">PROGRAMMI</a>
+    <button onclick="toggleTable()">Lista MOD</button>
+    <button id="themeSwitch" onclick="toggleTheme()" class="theme-toggle" title="Cambia Tema">🌙</button>
+  </div>
+
+  <div class="form-container">
+    <div>
+      <input type="text" id="search" oninput="filterTable()" placeholder="Cerca...">
+    </div>
+    <div>
+      <label for="filter-status">Stato:</label>
+      <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
+      <div id="filter-status-dropdown" style="display:none;">
+        <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
+        <label><input type="checkbox" value="Rotta" id="status-rotta" onchange="filterTable()"> Rotta</label><br>
+        <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
+        <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
+        <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label>
+      </div>
+    </div>
+    <div>
+      <label for="filter-translation">Traduzione:</label>
+      <button onclick="toggleDropdown('filter-translation-dropdown')">▼</button>
+      <div id="filter-translation-dropdown" style="display:none;">
+        <label><input type="checkbox" value="Inclusa" id="translation-inclusa" onchange="filterTable()"> Inclusa</label><br>
+        <label><input type="checkbox" value="Non necessaria" id="translation-non-necessaria" onchange="filterTable()"> Non necessaria</label><br>
+        <label><input type="checkbox" value="Da scaricare" id="translation-da-scaricare" onchange="filterTable()"> Da scaricare</label>
+      </div>
+    </div>
+    <div>
+      <label for="filter-category">Categoria:</label>
+      <button onclick="toggleDropdown('filter-category-dropdown')">▼</button>
+      <div id="filter-category-dropdown" style="display:none;">
+        <!-- Le checkbox delle categorie verranno aggiunte dinamicamente qui -->
+      </div>
+    </div>
+    <div>
+      <label for="filter-favorites">Preferiti:</label>
+      <select id="filter-favorites" onchange="filterTable()">
+        <option value="">Tutti</option>
+        <option value="true">Preferiti</option>
+        <option value="false">Non preferiti</option>
+      </select>
+    </div>
+</div>
+  <div>
+  </div>
+  <table id="mods-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">PREFERITE <span class="sort-arrow" id="arrow-0"></span></th>
+        <th onclick="sortTable(1)">AUTORE <span class="sort-arrow" id="arrow-1"></span></th>
+        <th onclick="sortTable(2)">MOD <span class="sort-arrow" id="arrow-2"></span></th>
+        <th onclick="sortTable(3)">STATO <span class="sort-arrow" id="arrow-3"></span></th>
+        <th onclick="sortTable(4)">LINK MOD <span class="sort-arrow" id="arrow-4"></span></th>
+        <th onclick="sortTable(5)">DATA ULTIMA MODIFICA STATO MOD <span class="sort-arrow" id="arrow-5"></span></th>
+        <th onclick="sortTable(6)">TRADUZIONE <span class="sort-arrow" id="arrow-6"></span></th>
+        <th onclick="sortTable(7)">PER IL FUNZIONAMENTO SERVE <span class="sort-arrow" id="arrow-7"></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Le righe verranno aggiunte tramite JavaScript -->
+    </tbody>
+  </table>
+
+  <script>
+function loadModsFromJson() {
+  fetch('https://raw.githubusercontent.com/PianetaSimSito/PianetaSim/refs/heads/main/Json/mods.json')
+    .then(response => response.json())
+    .then(mods => {
+      const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+      const table = document.getElementById("mods-table").getElementsByTagName("tbody")[0];
+      table.innerHTML = '';
+
+      // Estrai le categorie in modo sicuro
+      const categories = [...new Set(mods
+        .map(mod => mod.Categoria || '') // Usa una stringa vuota per valori mancanti
+        .filter(c => c !== '') // Filtra le categorie vuote
+        .map(c => c.toLowerCase()) // Rendi tutte le categorie minuscole
+      )];
+
+      // Popola il filtro categorie
+      const filterCategoryDropdown = document.getElementById("filter-category-dropdown");
+      filterCategoryDropdown.innerHTML = ''; // Reset delle categorie
+      categories.forEach(category => {
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.value = category;
+        checkbox.id = `category-${category}`;
+        checkbox.onchange = filterTable;
+
+        const label = document.createElement("label");
+        label.setAttribute("for", `category-${category}`);
+        label.textContent = category.charAt(0).toUpperCase() + category.slice(1); // Capitalizza la prima lettera
+
+        // Appendi la checkbox e il label al dropdown
+        filterCategoryDropdown.appendChild(checkbox);
+        filterCategoryDropdown.appendChild(label);
+        filterCategoryDropdown.appendChild(document.createElement("br"));
+      });
+
+
+      // Crea righe per ogni mod
+      mods.forEach(mod => {
+  console.log(mod.Descrizione); // Aggiungi questo per vedere cosa c'è in Descrizione
+  const isFavorite = favorites.includes(mod.ModName);
+  const newRow = table.insertRow();
+
+  newRow.setAttribute("data-categories", (mod.Categoria || '').toLowerCase());
+  const tooltip = document.createElement("div");
+tooltip.classList.add("tooltip");
+
+// Imposta il testo del tooltip dal JSON
+tooltip.textContent = mod.Descrizione || "Nessuna descrizione disponibile";
+
+// Controlla se la descrizione è "Nessuna descrizione disponibile" e imposta la larghezza
+if (tooltip.textContent === "Nessuna descrizione disponibile") {
+  tooltip.style.width = '200px';
+  tooltip.style.maxWidth = '200px';
+} else {
+  tooltip.style.width = '800px'; // Larghezza predefinita
+  tooltip.style.maxWidth = '800px'; // Larghezza massima predefinita
+}
+
+const modLink = mod.SiteLink || '#';
+sessionStorage.setItem(mod.ModName, modLink);
+
+newRow.innerHTML = `
+  <td>
+    <span class="star-container">
+      <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.ModName}')">&#9733;</span>
+    </span>
+  </td>
+  <td>${mod.Author || ''}</td>
+  <td class="mod-name" onmouseover="showTooltip(event, '${mod.ModName}')" onmouseout="hideTooltip(event)">
+    ${mod.ModName || ''}
+    <div class="tooltip">${mod.Descrizione || "Nessuna descrizione disponibile"}</div>
+  </td>
+  <td><span class="status ${mod.Status || 'sconosciuta'}">${(mod.Status || '').toUpperCase()}</span></td>
+  <td><a href="${modLink}" target="_blank" rel="noopener noreferrer">Visita</a></td>
+  <td>${mod.DataUltimaModifica || ''}</td>
+  <td><span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">${(mod.Translation || '').replace("-", " ").toUpperCase()}</span></td>
+  <td>${mod.Dependency || ''}</td>
+`;
+
+newRow.querySelector('.mod-name').appendChild(tooltip);
+});
+
+      filterTable();
+    })
+    .catch(error => console.error('Errore nel caricare il JSON:', error));
+}
+
+let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
+let lastSortDirection = 'asc'; // Ordine di ordinamento: ascendente (default) o discendente
+
+function sortTable(columnIndex) {
+  const table = document.getElementById("mods-table");
+  const rows = Array.from(table.rows).slice(1); // Esclude l'intestazione
+  const arrow = document.getElementById(`arrow-${columnIndex}`);
+
+  // Cambia la direzione dell'ordinamento se la stessa colonna è cliccata
+  if (lastSortedColumn === columnIndex) {
+    lastSortDirection = (lastSortDirection === 'asc') ? 'desc' : 'asc';
+  } else {
+    lastSortDirection = 'asc'; // Imposta l'ordinamento ascendente per una nuova colonna
+  }
+
+  // Funzione di ordinamento in base alla colonna cliccata
+  const compare = (a, b) => {
+    let valA = a.cells[columnIndex].textContent.trim().toLowerCase();
+    let valB = b.cells[columnIndex].textContent.trim().toLowerCase();
+
+    if (valA < valB) return lastSortDirection === 'asc' ? -1 : 1;
+    if (valA > valB) return lastSortDirection === 'asc' ? 1 : -1;
+    return 0;
+  };
+
+  // Ordina le righe
+  rows.sort(compare);
+
+  // Rimuove le righe attuali dalla tabella e le riaggiunge in ordine
+  rows.forEach(row => table.appendChild(row));
+
+  // Azzera le frecce di tutte le colonne
+  document.querySelectorAll('.sort-arrow').forEach(arrow => arrow.classList.remove('asc', 'desc'));
+
+  // Aggiungi la classe della freccia per la colonna ordinata
+  arrow.classList.add(lastSortDirection);
+
+  // Memorizza l'ultima colonna ordinata
+  lastSortedColumn = columnIndex;
+}
+
+function filterTable() {
+  const searchValue = document.getElementById("search").value.toLowerCase();
+  
+  // Stato - raccogli i valori selezionati
+  const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))
+                                  .map(input => input.value.toLowerCase());
+  
+  // Traduzione - raccogli i valori selezionati
+  const selectedTranslations = Array.from(document.querySelectorAll('#filter-translation-dropdown input:checked'))
+                                     .map(input => input.value.toLowerCase());
+
+  // Categoria - raccogli i valori selezionati
+  const selectedCategories = Array.from(document.querySelectorAll('#filter-category-dropdown input:checked'))
+                                   .map(input => input.value.toLowerCase());
+
+  const filterFavorites = document.getElementById("filter-favorites").value.toLowerCase();
+
+  const table = document.getElementById("mods-table");
+  const rows = table.getElementsByTagName("tr");
+
+  for (let i = 1; i < rows.length; i++) {
+    const row = rows[i];
+    const modName = row.querySelector(".mod-name").textContent.toLowerCase();
+    const author = row.cells[1].textContent.toLowerCase(); // Colonna autore
+    const status = row.querySelector(".status").textContent.toLowerCase();
+    const translation = row.querySelector(".traduzione").textContent.toLowerCase();
+    const categories = row.getAttribute("data-categories").toLowerCase();
+    const isFavorite = row.querySelector(".star").classList.contains("favorite");
+
+    const matchesSearch = modName.includes(searchValue) || author.includes(searchValue);
+    const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status);
+    const matchesTranslation = selectedTranslations.length === 0 || selectedTranslations.includes(translation);
+    const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(category => categories.includes(category));
+    const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : !isFavorite);
+
+    row.style.display = (matchesSearch && matchesStatus && matchesTranslation && matchesCategory && matchesFavorites) ? "" : "none";
+  }
+}
+
+    function toggleFavorite(modName) {
+      let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+      if (favorites.includes(modName)) {
+        favorites = favorites.filter(favorite => favorite !== modName);
+        alert(modName + " è stato rimosso dai preferiti.");
+      } else {
+        favorites.push(modName);
+        alert(modName + " è stato aggiunto ai preferiti!");
+      }
+      localStorage.setItem("favorites", JSON.stringify(favorites));
+      loadModsFromJson();
+    }
+    window.onload = loadModsFromJson;
+
+
+    function applyTheme(theme) {
+  const root = document.documentElement;
+  const themeSwitch = document.getElementById("themeSwitch");
+  
+  if (theme === "light") {
+    root.style.setProperty("--navbarbackground", "#ffffff"); // Grigio molto chiaro per la navbar
+root.style.setProperty("--navbarcolor", "#000000"); // Testo scuro per la navbar
+root.style.setProperty("--formcontainerbackground", "#ffffff"); // Bianco per lo sfondo del contenitore
+root.style.setProperty("--formcontainercolor", "#black"); // Testo scuro nel contenitore
+root.style.setProperty("--h1backgroundcolor", "#ffffff"); // Grigio chiaro per sfondo h1
+root.style.setProperty("--h1color", "#black"); // Testo scuro per h1
+root.style.setProperty("--thchildcolor", "#f2f2f2"); // Grigio medio per i titoli delle colonne
+root.style.setProperty("--tdcolor", "#f9f9f9"); // Grigio medio-scuro per il testo nelle celle
+root.style.setProperty("--thcolor", "#000000"); // Testo scuro per i titoli delle colonne
+root.style.setProperty("--bodybackground", "#ffffff"); // Sfondo bianco per il corpo
+root.style.setProperty("--sconosciutavar", "#545454"); // Giallo brillante per mantenere un colore vivace
+root.style.setProperty("--thtdcolor", "black");
+    themeSwitch.textContent = "🌞";
+  } else {
+    // Passa al tema scuro
+    root.style.setProperty("--navbarbackground", "#343a40");
+    root.style.setProperty("--navbarcolor", "#fff");
+    root.style.setProperty("--formcontainerbackground", "#343a40");
+    root.style.setProperty("--formcontainercolor", "#fff");
+    root.style.setProperty("--h1backgroundcolor", "#343a40");
+    root.style.setProperty("--h1color", "white");
+    root.style.setProperty("--thchildcolor", "#666666");
+    root.style.setProperty("--tdcolor", "#555555");
+    root.style.setProperty("--thcolor", "white");
+    root.style.setProperty("--bodybackground", "#343a40");
+    root.style.setProperty("--sconosciutavar", "#FFFBB9");
+    root.style.setProperty("--thtdcolor", "white");
+    themeSwitch.textContent = "🌙";
+  }
+}
+function showTooltip(event, modName) {
+  const tooltip = document.querySelector(`#${modName} .tooltip`);
+  tooltip.style.display = 'block';
+}
+
+function hideTooltip(event) {
+  const tooltip = event.target.querySelector('.tooltip');
+  if (tooltip) {
+    tooltip.style.display = 'none';
+  }
+}
+function toggleDropdown(id) {
+  var dropdown = document.getElementById(id);
+  var button = dropdown.previousElementSibling;
+
+  // Cambia la visibilità con un fade
+  if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+    dropdown.style.display = 'block';
+    setTimeout(function() {
+      dropdown.style.opacity = 1;
+    }, 10);
+    button.innerHTML = '▲';
+  } else {
+    dropdown.style.opacity = 0;
+    setTimeout(function() {
+      dropdown.style.display = 'none';
+    }, 300); // Attendere il tempo della transizione
+    button.innerHTML = '▼';
+  }
+}
+// Funzione per alternare il tema e salvarlo
+function toggleTheme() {
+  const currentTheme = localStorage.getItem("theme") || "dark";
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  localStorage.setItem("theme", newTheme); // Salva il tema
+  applyTheme(newTheme); // Applica il tema
+}
+
+// Applica il tema al caricamento della pagina
+window.onload = function () {
+  const savedTheme = localStorage.getItem("theme") || "dark"; // Imposta tema di default
+  applyTheme(savedTheme); // Applica il tema salvato
+  loadModsFromJson(); // Carica i dati della tabella
+};
+
+window.addEventListener("scroll", function () {
+  const scrollToTopButton = document.getElementById("scrollToTop");
+  if (window.scrollY > 300) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+});
+
+// Gestione dell'evento beforeunload per svuotare sessionStorage
+window.addEventListener('beforeunload', () => {
+  // Cancella tutti i mod link salvati in sessionStorage quando la pagina viene chiusa o ricaricata
+  Object.keys(sessionStorage)
+    .filter(key => key !== 'favorites') // Esclude eventualmente altre chiavi (come i preferiti)
+    .forEach(key => sessionStorage.removeItem(key)); 
+});
+
+  // Scroll fluido verso l'alto
+  document.getElementById("scrollToTop").addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  themeSwitch.addEventListener("change", toggleTheme);
+  setInitialTheme();
+  </script>
+  <a href="#top" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
+</body>
+</html>
+

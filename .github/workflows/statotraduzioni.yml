@@ -1,0 +1,29 @@
+name: Tabella Traduzioni
+
+on:
+  push:
+    paths:
+      - 'Json/traduzioni.json' # Avvia il workflow solo se viene modificato Json/mods.json
+  workflow_dispatch: # Permette di avviare manualmente il workflow
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x' # Specifica la versione di Python
+
+    - name: Install dependencies
+      run: pip install requests python-telegram-bot==20.0
+
+    - name: Esegui lo script monitor
+      run: |
+            python ScriptPython/statotraduzioni.py
+env:
+  GITHUB_TOKEN: ${{ secrets.TOKEN }}
