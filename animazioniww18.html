@@ -337,7 +337,7 @@
 
   <script>
      function loadModsFromJson() {
-  fetch('https://raw.githubusercontent.com/PianetaSimSito/PianetaSim/main/Json/animazioniww18.json')
+  fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/animazioniww18.json')
     .then(response => response.json())
     .then(mods => {
       const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
