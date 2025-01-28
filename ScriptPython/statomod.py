@@ -109,7 +109,7 @@ def compare_status_only(old_state, new_state):
                     status_change_message = (
                         f"MOD\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
-                        f"Stato ➜ {icon} _{new_mod['Status']}_\n"
+                        f"Stato {icon} _{new_mod['Status']}_\n"
                         f"[SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
                     messages.append(status_change_message)
