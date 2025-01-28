@@ -684,9 +684,9 @@
   {
     "Author": "Danitysimmer",
     "ModName": "WNBA (WSBA) Career",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/posts/wnba-wsba-career-96813282",
-    "DataUltimaModifica": "14/01/2025",
+    "DataUltimaModifica": "26/01/2025",
     "Translation": "da-scaricare",
     "Categoria": "",
     "Dependency": "Core Library - Mood Pack - General Sports Pie Menu",
@@ -1178,13 +1178,13 @@
   },
   {
     "Author": "Lumpinou",
-    "ModName": "RPO Relationship & Pregnancy Overhaul",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/posts/118377994",
-    "DataUltimaModifica": "14/01/2025",
+    "ModName": "RPO Relationship & Pregnancy Overhaul - tutti i moduli",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.patreon.com/posts/75983577",
+    "DataUltimaModifica": "27/01/2025",
     "Translation": "da-scaricare",
     "Categoria": null,
-    "Dependency": null,
+    "Dependency": "L'aggiornamento dei singoli moduli vanno scaricati separatamente",
     "Descrizione": ""
   },
   {
