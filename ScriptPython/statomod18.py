@@ -3,7 +3,6 @@ import json
 import base64
 import asyncio
 import os
-from telegram.ext import Application
 
 # Recupera i valori dai segreti
 telegram_token = '7390613815:AAFZzCFSMnfomMqRXHkKzEqsrPo7Rh_0Yf4'
@@ -12,10 +11,11 @@ topic_id = '79558'
 github_token = os.getenv('GITHUB_TOKEN')
 
 # URL dei file su GitHub
-mods_url = 'https://raw.githubusercontent.com/PianetaSimSitoTS/PianetaSim/refs/heads/main/Json/mods18.json'
-state_url = 'https://raw.githubusercontent.com/PianetaSimSitoTS/PianetaSim/refs/heads/main/Json/telegramstato/last_statemod18.json'
-repo_api_url = 'https://api.github.com/repos/PianetaSimSitoTS/PianetaSim/contents/Json/telegramstato/last_statemod18.json'
+mods_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/mods18.json'
+state_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/telegramstato/last_statemod18.json'
+repo_api_url = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_statemod18.json'
 
+# Funzione per scaricare un file JSON da un URL
 def fetch_json(url):
     try:
         response = requests.get(url)
@@ -109,11 +109,10 @@ def compare_status_only(old_state, new_state):
                     status_change_message = (
                         f"MOD\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
-                        f"Stato ➜ {icon} _{new_mod['Status']}_\n"
+                        f"Stato {icon} _{new_mod['Status']}_\n"
                         f"[SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
                     messages.append(status_change_message)
-                break  # Interrompi il ciclo interno, una volta trovata la mod corrispondente
 
     return messages
 
