@@ -38,13 +38,15 @@
   position: absolute;
   background-color: #333;
   color: #fff;
-  padding: 5px;
+  padding: 5px 15px; /* Aumenta il padding orizzontale */
   border-radius: 5px;
   font-size: 14px;
   display: none;
   z-index: 1000; /* Ensures the tooltip appears above other elements */
-  width: 800px; /* Adjusts the width to fit the content */
-  max-width: 800px; /* Optional: limits the width if needed */
+  width: auto; /* Imposta la larghezza automatica */
+  min-width: 150px; /* Imposta una larghezza minima */
+  text-align: left; /* Allinea il testo a sinistra */
+  max-width: none; /* Rimuovi il limite di larghezza */
 }
 
 .mod-name {
@@ -59,11 +61,11 @@
   transform: translateX(10px); /* Aggiungi un offset per distanziarlo un po' */
   background-color: #333;
   color: #fff;
-  padding: 5px;
+  padding: 5px 15px; /* Aumenta il padding orizzontale */
   border-radius: 5px;
   font-size: 14px;
   z-index: 1000;
-  max-width: none; /* Consenti l'estensione orizzontale */
+  text-align: left; /* Allinea il testo a sinistra */
 }
 
 .mod-name:hover .tooltip {
