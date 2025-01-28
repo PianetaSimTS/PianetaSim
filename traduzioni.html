@@ -425,25 +425,36 @@ let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
       lastSortedColumn = columnIndex;
     }
 
-    function filterTable() {
+  function filterTable() {
   const searchValue = document.getElementById("search").value.toLowerCase();
   
   // Stato - raccogli i valori selezionati
   const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))
-                                  .map(input => input.value.toLowerCase());
+                                .map(input => input.value.toLowerCase());
   const filterFavorites = document.getElementById("filter-favorites").value.toLowerCase();
 
   const table = document.getElementById("modTable");
   const rows = table.getElementsByTagName("tr");
 
-  for (let i = 1; i < rows.length; i++) {
-        const row = rows[i];
-        const author = row.cells[1].textContent.toLowerCase();
-        const status = row.querySelector(".status").textContent.toLowerCase();
-        const isFavorite = row.querySelector(".star").classList.contains("favorite");
-        const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status);
-        const matchesSearch = author.includes(searchValue);
-        const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : !isFavorite);
+  for (let i = 1; i < rows.length; i++) { // Salta la riga di intestazione
+    const row = rows[i];
+    
+    // Contenuto delle celle per la ricerca
+    const author = row.cells[1]?.textContent.toLowerCase() || ""; // AUTORE MOD
+    const modName = row.cells[2]?.textContent.toLowerCase() || ""; // NOME MOD
+    
+    // Stato della traduzione
+    const status = row.querySelector(".status")?.textContent.toLowerCase() || "";
+
+    // Preferiti
+    const isFavorite = row.querySelector(".star").classList.contains("favorite");
+
+    // Verifica corrispondenza per ricerca, stato e preferiti
+    const matchesSearch = author.includes(searchValue) || modName.includes(searchValue);
+    const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status);
+    const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : !isFavorite);
+
+    // Mostra o nasconde la riga in base ai criteri
     row.style.display = (matchesSearch && matchesStatus && matchesFavorites) ? "" : "none";
   }
 }
