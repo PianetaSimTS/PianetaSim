@@ -2,35 +2,35 @@
   {
     "Author": "Adeepindigo",
     "ModName": "Babysitting Gigs",
-    "Status": "sconosciuta",
+    "Status": "rotta",
     "SiteLink": "https://adeepindigomods.itch.io/babysitting-gigs",
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Carriere",
     "Dependency": "General Pie Menus - DLC Vita sull'Isola - DLC Raccomandato (Genitorialità)",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge lavori fissi e part-time di babysitter. Il lavoro fisso è disponibile per gli adolescenti e il lavoro part-time per gli studenti universitari adolescenti o giovani adulti. I lavori sono disponibili principalmente di notte, anche se alcuni durante il giorno."
   },
   {
     "Author": "Adeepindigo",
     "ModName": "Better Daycare",
-    "Status": "sconosciuta",
+    "Status": "rotta",
     "SiteLink": "https://adeepindigomods.itch.io/better-daycare",
-    "DataUltimaModifica": "",
+    "DataUltimaModifica": null,
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "Core Library",
     "Descrizione": "Questa mod modifica le opzioni di asilo nido per i sim Neonati, Lattanti e Bebè. Potranno essere mandati in qualsiasi momento. I Sim all'asilo nido possono acquisire abilità e i bisogni verranno soddisfatti in modo più efficace."
   },
   {
     "Author": "Adeepindigo",
     "ModName": "Custom Nuptials",
-    "Status": "sconosciuta",
+    "Status": "rotta",
     "SiteLink": "https://adeepindigomods.itch.io/custom-nuptials",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - ATTENZIONE leggere attentamente la descrizione dei CONFLITTI con altre mod",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge nuove funzionalità al matrimonio come: la pianificazione, assumere un wedding planner, nuovi social e altro ancora. Modifica inoltre il modo in cui si svolgono i matrimoni del gioco base e i matrimoni con il mio matrimonio, nonché le proposte e altro ancora."
   },
   {
     "Author": "Adeepindigo",
@@ -39,20 +39,20 @@
     "SiteLink": "https://www.patreon.com/posts/rabbithole-mods-84780425",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - Core Library",
-    "Descrizione": ""
+    "Descrizione": " Aggiunge 8 nuove attività negli appuntamenti per far divertire insieme i tuoi Sim. Disponibile per i Sims adolescenti e più grandi."
   },
   {
     "Author": "Adeepindigo",
     "ModName": "Delinquent Teens",
-    "Status": "sconosciuta",
+    "Status": "rotta",
     "SiteLink": "https://adeepindigomods.itch.io/delinquent-teens",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - Shared Tuning - Mood Pack - DLC Alcuni Raccomandati",
-    "Descrizione": ""
+    "Descrizione": "Ora i tuoi sim adolescenti possono scappare (come rabbithole o in uno scenario), ribellarsi in modo grande o piccolo, legale o illegale. Possono farsi catturare insieme con possibili conseguenze che vanno dalla semplice punizione all'invio in centri di detenzione minorile."
   },
   {
     "Author": "Adeepindigo",
@@ -61,9 +61,9 @@
     "SiteLink": "https://adeepindigomods.itch.io/dental-care",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - Mood Pack",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge le Cure Dentistiche! Ora il tuo Sim può avere le carie, l'alito cattivo, aver bisogno dell'apparecchio, i bambini possono farsi togliere i denti e gli adolescenti possono farsi estrarre i denti del giudizio. Tutti possono godersi una visita dal dentista!"
   },
   {
     "Author": "Adeepindigo",
@@ -72,7 +72,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/divergent-sims",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - Mood Pack",
     "Descrizione": ""
   },
@@ -83,7 +83,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/dynamic-teen-life",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - Shared Tuning - Mood Pack - DLC Alcuni Raccomandati",
     "Descrizione": ""
   },
@@ -94,7 +94,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/education-overhaul",
     "DataUltimaModifica": "",
     "Translation": "in-lavorazione",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - Shared Tuning",
     "Descrizione": ""
   },
@@ -105,7 +105,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/errant-thoughts",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "Core Library - Mood Pack",
     "Descrizione": ""
   },
@@ -116,7 +116,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/eye-care",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus",
     "Descrizione": ""
   },
@@ -127,7 +127,7 @@
     "SiteLink": "https://www.patreon.com/posts/tweaks-and-84780471",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Oggetti Funzionali",
     "Dependency": "DLC Colpo di Fulmine",
     "Descrizione": ""
   },
@@ -138,7 +138,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/utility-mods",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Utilità",
     "Dependency": "Basta INSTALLARNE UNA per tutte le sue mod",
     "Descrizione": null
   },
@@ -149,7 +149,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/golden-years-elder-pack",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": " General Pie Menus - Universal Venue List o Venue Changes",
     "Descrizione": ""
   },
@@ -160,7 +160,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/healthcare-redux",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Mood Pack - General Pie Menus - DLC Al Lavoro",
     "Descrizione": " Mod completa per l'assistenza sanitaria che aggiunge nuove malattie, lesioni, condizioni croniche, allergie, emergenze mediche e condizioni di salute legate alla gravidanza, nonché cure preventive, sistema immunitario naturale, farmaci e integratori, visite mediche, vaccinazioni, malattie mortali e altro ancora."
   },
@@ -171,7 +171,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/utility-mods",
     "DataUltimaModifica": "",
     "Translation": "non necessaria",
-    "Categoria": "",
+    "Categoria": "Utilità",
     "Dependency": "Basta INSTALLARNE UNA per tutte le sue mod",
     "Descrizione": ""
   },
@@ -182,7 +182,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/simnation-travel",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - DLC Alcuni Raccomandati",
     "Descrizione": ""
   },
@@ -193,7 +193,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/summer-camps",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "DLC Stagioni",
     "Descrizione": ""
   },
@@ -204,7 +204,7 @@
     "SiteLink": "https://www.patreon.com/posts/rabbithole-mods-84780425",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - Core Library",
     "Descrizione": ""
   },
@@ -215,7 +215,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/writing-and-writer-career-overhaul",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Carriere",
     "Dependency": "General Pie Menus - DLC Alcuni Raccomandati ",
     "Descrizione": ""
   },
@@ -226,7 +226,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/itskatato-preteen-mod",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - Mood Pack - DLC Raccomandati (Genitorialità - Oasi Innevata)",
     "Descrizione": ""
   },
@@ -237,7 +237,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/healthy-living",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "General Pie Menus",
     "Descrizione": ""
   },
@@ -622,7 +622,7 @@
     "SiteLink": "https://sims4studio.com/post/43313",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Utilità",
     "Dependency": "",
     "Descrizione": ""
   },
@@ -633,7 +633,7 @@
     "SiteLink": "https://basementalcc.com/mods/universal-venue-list/",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": "",
+    "Categoria": "Utilità",
     "Dependency": "ATTENZIONE va usata una sola venue list",
     "Descrizione": ""
   },
@@ -644,7 +644,7 @@
     "SiteLink": "https://www.patreon.com/posts/dine-out-v2-64188681",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "DLC Mangiamo Fuori",
     "Descrizione": ""
   },
@@ -655,7 +655,7 @@
     "SiteLink": "https://www.patreon.com/posts/69926725",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Utilità",
     "Dependency": "",
     "Descrizione": ""
   },
@@ -666,7 +666,7 @@
     "SiteLink": "https://www.patreon.com/posts/fashion-designer-105152706",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Carriere",
     "Dependency": "Mood Pack - Core Library - Universal Venue List - DLC Al Lavoro, Nuove Stelle, Vita Universitaria, Usciamo Insieme",
     "Descrizione": ""
   },
@@ -677,7 +677,7 @@
     "SiteLink": "https://www.patreon.com/posts/97965674",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Carriere",
     "Dependency": "Core Library - Mood Pack - General Sports Pie Menu",
     "Descrizione": ""
   },
@@ -688,7 +688,7 @@
     "SiteLink": "https://www.patreon.com/posts/wnba-wsba-career-96813282",
     "DataUltimaModifica": "26/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Carriere",
     "Dependency": "Core Library - Mood Pack - General Sports Pie Menu",
     "Descrizione": ""
   },
@@ -699,7 +699,7 @@
     "SiteLink": "https://deaderpool-mccc.com/downloads.html",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": "",
+    "Categoria": "Utilità",
     "Dependency": "",
     "Descrizione": ""
   },
@@ -710,7 +710,7 @@
     "SiteLink": "https://frankkmods.com/#/mods/language-barriers",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "DLC Facoltativi",
     "Descrizione": ""
   },
@@ -721,7 +721,7 @@
     "SiteLink": "https://frankkmods.com/#/mods/pack-tests",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": "",
+    "Categoria": "Utilità",
     "Dependency": "",
     "Descrizione": ""
   },
@@ -732,7 +732,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/reaper-actions-unlocker",
     "DataUltimaModifica": "",
     "Translation": "non necessaria",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "",
     "Descrizione": ""
   },
@@ -743,7 +743,7 @@
     "SiteLink": "https://www.patreon.com/posts/71308728",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "XML Injector",
     "Descrizione": ""
   },
@@ -754,7 +754,7 @@
     "SiteLink": "https://www.patreon.com/posts/mod-rideable-116233866?utm_campaign=patron_engagement&utm_source=post_link&post_id=116233866&utm_id=0c4f54c0-49d4-493d-ba3b-5c5225dc1ae0&utm_medium=email",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "DLC Vita in Campagna",
     "Descrizione": ""
   },
@@ -765,7 +765,7 @@
     "SiteLink": "https://www.patreon.com/posts/mod-secret-92031811",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "The Custom Preferences Mod  ",
     "Descrizione": null
   },
@@ -776,7 +776,7 @@
     "SiteLink": "https://www.patreon.com/posts/mod-soulmates-78603754",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "",
     "Descrizione": ""
   },
@@ -787,7 +787,7 @@
     "SiteLink": "https://www.kawaii-stacie.com/post/slice-of-life-mod",
     "DataUltimaModifica": "",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Gameplay",
     "Dependency": "",
     "Descrizione": ""
   },
@@ -798,7 +798,7 @@
     "SiteLink": "https://legacy.curseforge.com/sims4/mods/child-of-the-ocean-trait",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Tratti",
     "Dependency": "DLC Vita sull'Isola",
     "Descrizione": ""
   },
@@ -820,7 +820,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/firefighter-career",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Carriere",
     "Dependency": "XML Injector",
     "Descrizione": ""
   },
@@ -831,7 +831,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/fortune-teller-career",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Carriere",
     "Dependency": "XML Injector - DLC Fenomeni Paranormali",
     "Descrizione": ""
   },
@@ -842,7 +842,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/geologist-career",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Carriere",
     "Dependency": "XML Injector - DLC Usciamo Insieme - DLC Al Lavoro - DLC Avventura nella Giungla",
     "Descrizione": ""
   },
@@ -853,7 +853,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/higher-education-active-career",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "",
+    "Categoria": "Carriere",
     "Dependency": "XML Injector - Universal Venue List - Work Interactions Pie Menu - DLC Vita Universitaria - DLC Al Lavoro",
     "Descrizione": ""
   },
@@ -864,7 +864,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/lawyer-active-career",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Carriere",
     "Dependency": "XML Injector - Universal Venue List - DLC Vita Universitaria - DLC Al Lavoro",
     "Descrizione": ""
   },
@@ -875,7 +875,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/model-career",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Carriere",
     "Dependency": "XML Injector - DLC Vita in Città - DLC Nuove Stelle - DLC Moschino Stuff",
     "Descrizione": ""
   },
@@ -886,7 +886,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/resort-owner-active-career",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Carriere",
     "Dependency": "XML Injector - Universal Venue List - Work Interactions Pie Menu - DLC Al Lavoro - DLC Un Giorno alla Spa",
     "Descrizione": ""
   },
@@ -897,7 +897,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/stylist-active-career",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Carriere",
     "Dependency": "XML Injector - Universal Venue List - DLC Al Lavoro - DLC Nuove Stelle",
     "Descrizione": ""
   },
@@ -908,7 +908,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/video-game-developer-career",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Carriere",
     "Dependency": "XML Injector",
     "Descrizione": ""
   },
@@ -919,7 +919,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/work-interactions",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": "XML Injector",
     "Descrizione": ""
   },
@@ -941,7 +941,7 @@
     "SiteLink": "https://www.patreon.com/posts/royalty-mod-3-4-115660572",
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Core Library - XML Injector - Pack Tests",
     "Descrizione": ""
   },
@@ -974,7 +974,7 @@
     "SiteLink": "https://loryy2818.wixsite.com/lory-na-traduzioni/le-mie-mods#halloweenspecialrecipes",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": "XML Injector - DLC Accessorio da Brivido",
     "Descrizione": ""
   },
@@ -985,7 +985,7 @@
     "SiteLink": "https://loryy2818.wixsite.com/lory-na-traduzioni/le-mie-mods#epimod",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "XML Injector - Mood Pack",
     "Descrizione": ""
   },
@@ -996,7 +996,7 @@
     "SiteLink": "https://loryy2818.wixsite.com/lory-na-traduzioni/update-aggiornamento#parentingstyleupdated",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Carriere",
     "Dependency": "XML Injector - DLC Vita da Genitori",
     "Descrizione": ""
   },
@@ -1007,7 +1007,7 @@
     "SiteLink": "https://loryy2818.wixsite.com/lory-na-traduzioni/le-mie-mods#youthfuldiscoveriesmod",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "XML Injector - Mood Pack",
     "Descrizione": ""
   },
@@ -1018,7 +1018,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/sweet-simsmas-recipes-3",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Varie",
     "Dependency": "XML Injector",
     "Descrizione": ""
   },
@@ -1029,7 +1029,7 @@
     "SiteLink": "https://lot51.cc/core",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1040,7 +1040,7 @@
     "SiteLink": "https://lot51.cc/mods/smart-doorbell",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1051,7 +1051,7 @@
     "SiteLink": "https://lot51.cc/mods/free-range",
     "DataUltimaModifica": "14/01/2025",
     "Translation": null,
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "DLC Vita in Campagna",
     "Descrizione": ""
   },
@@ -1062,7 +1062,7 @@
     "SiteLink": "https://lot51.cc/mods/suite-life",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Core Library - Universal Venue List",
     "Descrizione": ""
   },
@@ -1073,7 +1073,7 @@
     "SiteLink": "https://www.patreon.com/posts/109198259",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "in-lavorazione",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Toolbox",
     "Descrizione": ""
   },
@@ -1084,7 +1084,7 @@
     "SiteLink": "https://www.patreon.com/posts/mod-end-mod-for-112382548",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "in-lavorazione",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Toolbox",
     "Descrizione": ""
   },
@@ -1095,7 +1095,7 @@
     "SiteLink": "https://www.patreon.com/posts/lgbtqia-mod-v1-1-68337709",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1106,7 +1106,7 @@
     "SiteLink": "https://www.patreon.com/posts/mod-lovestruck-108890115",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "in-lavorazione",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Toolbox - DLC Colpo di Fulmine",
     "Descrizione": ""
   },
@@ -1117,7 +1117,7 @@
     "SiteLink": "https://www.patreon.com/posts/mod-lovestruck-4-108998699",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "DLC Colpo di Fulmine",
     "Descrizione": ""
   },
@@ -1128,7 +1128,7 @@
     "SiteLink": "https://www.patreon.com/posts/80693931",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "DLC Cresciamo Insieme",
     "Descrizione": ""
   },
@@ -1139,7 +1139,7 @@
     "SiteLink": "https://www.patreon.com/posts/mod-milestones-4-80639650",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "DLC Cresciamo Insieme",
     "Descrizione": ""
   },
@@ -1150,7 +1150,7 @@
     "SiteLink": "https://www.patreon.com/posts/43759541",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1161,7 +1161,7 @@
     "SiteLink": "https://www.patreon.com/posts/rambunctious-now-39824076",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Toolbox",
     "Descrizione": ""
   },
@@ -1172,7 +1172,7 @@
     "SiteLink": "https://www.patreon.com/posts/road-to-romance-39785932",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Toolbox - Mood Pack",
     "Descrizione": ""
   },
@@ -1183,7 +1183,7 @@
     "SiteLink": "https://www.patreon.com/posts/75983577",
     "DataUltimaModifica": "27/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "L'aggiornamento dei singoli moduli vanno scaricati separatamente",
     "Descrizione": ""
   },
@@ -1194,7 +1194,7 @@
     "SiteLink": "https://www.patreon.com/posts/110042191",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "in-lavorazione",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Toolbox",
     "Descrizione": ""
   },
@@ -1205,7 +1205,7 @@
     "SiteLink": "https://www.patreon.com/posts/mod-science-baby-80018691",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Toolbox",
     "Descrizione": ""
   },
@@ -1216,7 +1216,7 @@
     "SiteLink": "https://www.patreon.com/posts/86658397?utm_campaign=postshare_fan",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1227,7 +1227,7 @@
     "SiteLink": "https://www.patreon.com/posts/more-kisses-new-117744799",
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1238,7 +1238,7 @@
     "SiteLink": "https://www.patreon.com/posts/61538738",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1249,7 +1249,7 @@
     "SiteLink": "https://www.patreon.com/posts/65743472",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1260,7 +1260,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/gift-delivery-mod",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Core Library",
     "Descrizione": ""
   },
@@ -1271,7 +1271,7 @@
     "SiteLink": "https://nickyclem.itch.io/appliance-insurance",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "XML Injector - Insurance Company Phone App & Computer Menu",
     "Descrizione": ""
   },
@@ -1282,7 +1282,7 @@
     "SiteLink": "https://nickyclem.itch.io/ema-phone-menu",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1293,7 +1293,7 @@
     "SiteLink": "https://nickyclem.itch.io/insurance-company",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": null
   },
@@ -1304,7 +1304,7 @@
     "SiteLink": "https://www.patreon.com/posts/110919807",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "DLC Al Lavoro",
     "Descrizione": ""
   },
@@ -1315,7 +1315,7 @@
     "SiteLink": "https://www.patreon.com/posts/kids-trampoline-45283318",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1326,7 +1326,7 @@
     "SiteLink": "https://www.patreon.com/posts/toddler-changing-54496259",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1337,7 +1337,7 @@
     "SiteLink": "https://www.patreon.com/posts/52862857",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1348,7 +1348,7 @@
     "SiteLink": "https://www.patreon.com/posts/toddler-play-kit-56613427?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1359,7 +1359,7 @@
     "SiteLink": "https://www.patreon.com/posts/toddler-stuff-49517597?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=join_link",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1370,7 +1370,7 @@
     "SiteLink": "https://www.patreon.com/posts/mental-wellness-114872142",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "XML Injector",
     "Descrizione": ""
   },
@@ -1381,7 +1381,7 @@
     "SiteLink": "https://ravasheen.com/download/cake-a-break-buyable-cakes/",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1392,7 +1392,7 @@
     "SiteLink": "https://ravasheen.com/download/modern-family-portrait/",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1403,7 +1403,7 @@
     "SiteLink": "https://ravasheen.com/download/photographic-memory-2-0/",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1414,7 +1414,7 @@
     "SiteLink": "https://ravasheen.com/download/sims-portrait-maker/",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Oggetti Funzionali",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1425,7 +1425,7 @@
     "SiteLink": "https://sacrificialmods.com/individual-sim-autonomy-sac-jr-release-notes.html",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "in-lavorazione",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1436,7 +1436,7 @@
     "SiteLink": "https://sacrificialmods.com/downloads.html",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1447,7 +1447,7 @@
     "SiteLink": "https://sacrificialmods.com/downloads.html",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1458,7 +1458,7 @@
     "SiteLink": "https://sacrificialmods.com/downloads.html",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "in-lavorazione",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1469,7 +1469,7 @@
     "SiteLink": "https://sacrificialmods.com/downloads.html",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1480,7 +1480,7 @@
     "SiteLink": "https://sacrificialmods.com/downloads.html",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1491,7 +1491,7 @@
     "SiteLink": "https://scumbumbomods.com/set-filters-on-paintings-by-reference/",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": "XML Injector",
     "Descrizione": ""
   },
@@ -1502,7 +1502,7 @@
     "SiteLink": "https://scumbumbomods.com/xml-injector",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1513,7 +1513,7 @@
     "SiteLink": "https://simrealist.itch.io/public-flowfit",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1524,7 +1524,7 @@
     "SiteLink": "https://simrealist.itch.io/home-and-land-company",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1535,7 +1535,7 @@
     "SiteLink": "https://simrealist.itch.io/mortem",
     "DataUltimaModifica": null,
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1546,7 +1546,7 @@
     "SiteLink": "https://simrealist.itch.io/organic",
     "DataUltimaModifica": null,
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1557,7 +1557,7 @@
     "SiteLink": "https://simrealist.itch.io/private-practice-public",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": null
   },
@@ -1568,7 +1568,7 @@
     "SiteLink": "https://simrealist.itch.io/re-public",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1579,7 +1579,7 @@
     "SiteLink": "https://simrealist.itch.io/snb-bills",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1590,7 +1590,7 @@
     "SiteLink": "https://simrealist.itch.io/snb-financialcenter",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1601,7 +1601,7 @@
     "SiteLink": "https://simrealist.itch.io/snbank",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1612,7 +1612,7 @@
     "SiteLink": "https://www.patreon.com/posts/slower-redux-110414552",
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Healthcare Redux - DLC Al Lavoro",
     "Descrizione": ""
   },
@@ -1623,7 +1623,7 @@
     "SiteLink": "https://www.patreon.com/posts/twins-mod-1-0-107832232",
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "Core Library",
     "Descrizione": ""
   },
@@ -1634,7 +1634,7 @@
     "SiteLink": "https://www.patreon.com/posts/expanded-mod-2-0-78685209",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "DLC Vita sull'Isola",
     "Descrizione": ""
   },
@@ -1645,7 +1645,7 @@
     "SiteLink": "https://www.patreon.com/posts/expanded-mod-112231972",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "in-lavorazione",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1656,7 +1656,7 @@
     "SiteLink": "https://www.patreon.com/posts/sims-4-fairies-52330299",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": "DLC Regno della Magia",
     "Descrizione": ""
   },
@@ -1667,7 +1667,7 @@
     "SiteLink": "https://www.patreon.com/posts/color-sliders-62823244",
     "DataUltimaModifica": "16/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": null
   },
@@ -1678,7 +1678,7 @@
     "SiteLink": "https://www.patreon.com/posts/more-traits-in-62838078",
     "DataUltimaModifica": "18/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1689,7 +1689,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/unlimited-jobs",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Carriere",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1700,7 +1700,7 @@
     "SiteLink": "https://wonderfulwhims.com/download/",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": null,
+    "Categoria": "Gameplay",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1711,7 +1711,7 @@
     "SiteLink": "https://www.patreon.com/posts/112362395",
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1722,7 +1722,7 @@
     "SiteLink": "https://www.patreon.com/posts/115091872",
     "DataUltimaModifica": null,
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1733,7 +1733,7 @@
     "SiteLink": "https://www.patreon.com/posts/99403318",
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1744,7 +1744,7 @@
     "SiteLink": "https://www.patreon.com/posts/98126153",
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1755,7 +1755,7 @@
     "SiteLink": "https://www.patreon.com/posts/112895056",
     "DataUltimaModifica": null,
     "Translation": "inclusa",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": "Necessaria la Better BuildBuy per la Funzione Costruisci",
     "Descrizione": ""
   },
@@ -1766,7 +1766,7 @@
     "SiteLink": "https://www.patreon.com/posts/102974853?utm_campaign=postshare_creator",
     "DataUltimaModifica": "15/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1777,7 +1777,7 @@
     "SiteLink": "https://www.patreon.com/posts/more-columns-in-27751117",
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1788,7 +1788,7 @@
     "SiteLink": "https://www.patreon.com/posts/ui-cheats-v1-19-26240068",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1799,7 +1799,7 @@
     "SiteLink": "https://www.tumblr.com/zerbu/756892231287422976/the-sims-4-mod-the-custom-preferences-mod",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "in-lavorazione",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": null,
     "Descrizione": ""
   },
@@ -1810,7 +1810,7 @@
     "SiteLink": "https://zerbu.tumblr.com/post/160347810775/the-sims-4-mod-venue-changes",
     "DataUltimaModifica": "14/01/2025",
     "Translation": "non necessaria",
-    "Categoria": null,
+    "Categoria": "Utilità",
     "Dependency": "ATTENZIONE va usata una sola venue list",
     "Descrizione": ""
   }
