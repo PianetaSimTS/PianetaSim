@@ -21,7 +21,7 @@
       --thtdcolor: white;
     }
 
-    #filter-Status-dropdown, #filter-Translation-dropdown, #filter-category-dropdown {
+    #filter-status-dropdown, #filter-translation-dropdown, #filter-category-dropdown {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -240,7 +240,7 @@
       background-color: var(--thchildcolor);
     }
 
-    .Status {
+    .status {
       font-weight: bold;
       padding: 5px;
       border-radius: 5px;
@@ -251,23 +251,23 @@
       color: white;
     }
       
-    .Status.nuova {
+    .status.nuova {
       color: #9372ff;
     }
       
-    .Status.compatibile {
+    .status.compatibile {
       color: #008eff;
     }
 
-    .Status.rotta {
+    .status.rotta {
       color: #ff0015;
     }
     
-    .Status.sconosciuta {
+    .status.sconosciuta {
       color: var(--sconosciutavar);
     }
 
-    .Status.aggiornata {
+    .status.aggiornata {
       color: #00d517;
     }
 
@@ -359,23 +359,23 @@
       <input type="text" id="search" oninput="filterTable()" placeholder="Cerca...">
     </div>
     <div>
-      <label for="filter-Status">Stato:</label>
-      <button onclick="toggleDropdown('filter-Status-dropdown')">▼</button>
-      <div id="filter-Status-dropdown" style="display:none;">
-        <label><input type="checkbox" value="Compatibile" id="Status-compatibile" onchange="filterTable()"> Compatibile</label><br>
-        <label><input type="checkbox" value="Rotta" id="Status-rotta" onchange="filterTable()"> Rotta</label><br>
-        <label><input type="checkbox" value="Aggiornata" id="Status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
-        <label><input type="checkbox" value="Sconosciuta" id="Status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
-        <label><input type="checkbox" value="Nuova" id="Status-nuova" onchange="filterTable()"> Nuova</label>
+      <label for="filter-status">Stato:</label>
+      <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
+      <div id="filter-status-dropdown" style="display:none;">
+        <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
+        <label><input type="checkbox" value="Rotta" id="status-rotta" onchange="filterTable()"> Rotta</label><br>
+        <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
+        <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
+        <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label>
       </div>
     </div>
     <div>
-      <label for="filter-Translation">Traduzione:</label>
-      <button onclick="toggleDropdown('filter-Translation-dropdown')">▼</button>
-      <div id="filter-Translation-dropdown" style="display:none;">
-        <label><input type="checkbox" value="Inclusa" id="Translation-inclusa" onchange="filterTable()"> Inclusa</label><br>
-        <label><input type="checkbox" value="Non necessaria" id="Translation-non-necessaria" onchange="filterTable()"> Non necessaria</label><br>
-        <label><input type="checkbox" value="Da scaricare" id="Translation-da-scaricare" onchange="filterTable()"> Da scaricare</label>
+      <label for="filter-translation">Traduzione:</label>
+      <button onclick="toggleDropdown('filter-translation-dropdown')">▼</button>
+      <div id="filter-translation-dropdown" style="display:none;">
+        <label><input type="checkbox" value="Inclusa" id="translation-inclusa" onchange="filterTable()"> Inclusa</label><br>
+        <label><input type="checkbox" value="Non necessaria" id="translation-non-necessaria" onchange="filterTable()"> Non necessaria</label><br>
+        <label><input type="checkbox" value="Da scaricare" id="translation-da-scaricare" onchange="filterTable()"> Da scaricare</label>
       </div>
     </div>
     <div>
@@ -424,7 +424,7 @@ function loadModsFromJson() {
       table.innerHTML = '';
 
       // Estrai le categorie in modo sicuro
-      const Categories = [...new Set(mods
+      const categories = [...new Set(mods
         .map(mod => mod.Categoria || '') // Usa una stringa vuota per valori mancanti
         .filter(c => c !== '') // Filtra le categorie vuote
         .map(c => c.toLowerCase()) // Rendi tutte le categorie minuscole
@@ -433,7 +433,7 @@ function loadModsFromJson() {
       // Popola il filtro categorie
       const filterCategoryDropdown = document.getElementById("filter-category-dropdown");
       filterCategoryDropdown.innerHTML = ''; // Reset delle categorie
-      Categories.forEach(category => {
+      categories.forEach(category => {
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.value = category;
@@ -453,11 +453,11 @@ function loadModsFromJson() {
 
       // Crea righe per ogni mod
       mods.forEach(mod => {
-  console.log(mod.descrizione); // Aggiungi questo per vedere cosa c'è in Descrizione
+  console.log(mod.Descrizione); // Aggiungi questo per vedere cosa c'è in Descrizione
   const isFavorite = favorites.includes(mod.ModName);
   const newRow = table.insertRow();
 
- newRow.setAttribute("data-categories", (mod.Categoria || '').toLowerCase());
+  newRow.setAttribute("data-categories", (mod.Categoria || '').toLowerCase());
   const tooltip = document.createElement("div");
 tooltip.classList.add("tooltip");
 
@@ -547,11 +547,11 @@ function filterTable() {
   const searchValue = document.getElementById("search").value.toLowerCase();
   
   // Stato - raccogli i valori selezionati
-  const selectedStatuses = Array.from(document.querySelectorAll('#filter-Status-dropdown input:checked'))
+  const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))
                                   .map(input => input.value.toLowerCase());
   
   // Traduzione - raccogli i valori selezionati
-  const selectedTranslations = Array.from(document.querySelectorAll('#filter-Translation-dropdown input:checked'))
+  const selectedTranslations = Array.from(document.querySelectorAll('#filter-translation-dropdown input:checked'))
                                      .map(input => input.value.toLowerCase());
 
   // Categoria - raccogli i valori selezionati
@@ -565,31 +565,31 @@ function filterTable() {
 
   for (let i = 1; i < rows.length; i++) {
     const row = rows[i];
-    const ModName = row.querySelector(".mod-name").textContent.toLowerCase();
-    const Author = row.cells[1].textContent.toLowerCase(); // Colonna autore
-    const Status = row.querySelector(".Status").textContent.toLowerCase();
-    const Translation = row.querySelector(".traduzione").textContent.toLowerCase();
-    const Categories = row.getAttribute("data-Categories").toLowerCase();
+    const modName = row.querySelector(".mod-name").textContent.toLowerCase();
+    const author = row.cells[1].textContent.toLowerCase(); // Colonna autore
+    const status = row.querySelector(".status").textContent.toLowerCase();
+    const translation = row.querySelector(".traduzione").textContent.toLowerCase();
+    const categories = row.getAttribute("data-categories").toLowerCase();
     const isFavorite = row.querySelector(".star").classList.contains("favorite");
 
-    const matchesSearch = ModName.includes(searchValue) || Author.includes(searchValue);
-    const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(Status);
-    const matchesTranslation = selectedTranslations.length === 0 || selectedTranslations.includes(Translation);
-    const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(category => Categories.includes(category));
+    const matchesSearch = modName.includes(searchValue) || author.includes(searchValue);
+    const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status);
+    const matchesTranslation = selectedTranslations.length === 0 || selectedTranslations.includes(translation);
+    const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(category => categories.includes(category));
     const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : !isFavorite);
 
     row.style.display = (matchesSearch && matchesStatus && matchesTranslation && matchesCategory && matchesFavorites) ? "" : "none";
   }
 }
 
-    function toggleFavorite(ModName) {
+    function toggleFavorite(modName) {
       let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-      if (favorites.includes(ModName)) {
-        favorites = favorites.filter(favorite => favorite !== ModName);
-        alert(ModName + " è stato rimosso dai preferiti.");
+      if (favorites.includes(modName)) {
+        favorites = favorites.filter(favorite => favorite !== modName);
+        alert(modName + " è stato rimosso dai preferiti.");
       } else {
-        favorites.push(ModName);
-        alert(ModName + " è stato aggiunto ai preferiti!");
+        favorites.push(modName);
+        alert(modName + " è stato aggiunto ai preferiti!");
       }
       localStorage.setItem("favorites", JSON.stringify(favorites));
       loadModsFromJson();
@@ -632,8 +632,8 @@ root.style.setProperty("--thtdcolor", "black");
     themeSwitch.textContent = "🌙";
   }
 }
-function showTooltip(event, ModName) {
-  const tooltip = document.querySelector(`#${ModName} .tooltip`);
+function showTooltip(event, modName) {
+  const tooltip = document.querySelector(`#${modName} .tooltip`);
   tooltip.style.display = 'block';
 }
 
