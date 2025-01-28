@@ -113,7 +113,6 @@ def compare_status_only(old_state, new_state):
                         f"[SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
                     messages.append(status_change_message)
-                break  # Interrompi il ciclo interno, una volta trovata la mod corrispondente
 
     return messages
 
