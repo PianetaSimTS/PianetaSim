@@ -299,6 +299,13 @@
     }
 
     @media (max-width: 600px) {
+
+        .tooltip {
+    font-size: 12px; /* Riduci la dimensione del testo per dispositivi mobili */
+    max-width: 80%; /* La larghezza massima sarà l'80% dello schermo */
+    left: 50%; /* Centra il tooltip rispetto all'elemento */
+    transform: translateX(-50%); /* Assicurati che sia centrato */
+  }
       h1 {
         font-size: 1.5rem;
         padding: 10px;
