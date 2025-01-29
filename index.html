@@ -263,55 +263,51 @@ footer {
     }
 
 /* Stili responsivi */
-@media (max-width: 768px) {
-  .scritta-benvenuto {
-     width: 1300px;
-     max-width: 150vw; 
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: -48px;
-  }
+   @media (max-width: 768px) {
+      .scritta-benvenuto {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
 
-  .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+      header h1 {
+        font-size: 26px;
+      }
 
-  .button-container a {
-    width: 90%;
-    text-align: center;
-  }
-}
+      header p {
+        font-size: 14px;
+      }
 
-/* Adattamento per max 480px */
-@media (max-width: 480px) {
-  .scritta-benvenuto {
-     width: 1300px;
-     max-width: 150vw; 
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: -40px;
-  }
-  header h1 {
-    font-size: 22px;
-  }
+      .highlight {
+        font-size: 24px;
+      }
 
-  header p {
-    font-size: 14px;
-  }
+      .button-container a {
+        font-size: 16px;
+        padding: 12px;
+      }
+    }
 
-  .button-container {
-    width: 100%;
-  }
+    /* Adattamento per dispositivi con larghezza max 480px */
+    @media (max-width: 480px) {
+      .scritta-benvenuto {
+        margin-bottom: 10px;
+      }
 
-  .button-container a {
-    width: 95%;
-    font-size: 14px;
-    padding: 10px;
-  }
-}
+      header h1 {
+        font-size: 22px;
+      }
+
+      header p {
+        font-size: 14px;
+      }
+
+      .button-container a {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
