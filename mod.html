@@ -496,10 +496,40 @@ newRow.innerHTML = `
 
 newRow.querySelector('.mod-name').appendChild(tooltip);
 });
-
+      checkModUpdates(mods);
       filterTable();
     })
     .catch(error => console.error('Errore nel caricare il JSON:', error));
+}
+
+function checkModUpdates(mods) {
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  let savedMods = JSON.parse(localStorage.getItem("savedMods")) || {};
+
+  let updatedMods = [];
+
+  mods.forEach(mod => {
+    if (favorites.includes(mod.ModName)) {
+      let prevData = savedMods[mod.ModName];
+
+      if (!prevData || prevData.Status !== mod.Status || prevData.DataUltimaModifica !== mod.DataUltimaModifica) {
+        updatedMods.push(mod);
+      }
+
+      // Aggiorna i dati salvati
+      savedMods[mod.ModName] = {
+        Status: mod.Status,
+        DataUltimaModifica: mod.DataUltimaModifica
+      };
+    }
+  });
+  localStorage.setItem("savedMods", JSON.stringify(savedMods));
+  // Se ci sono mod aggiornate, mostra una notifica
+  if (updatedMods.length > 0) {
+    let message = "Le seguenti mod preferite sono state aggiornate:\n" + 
+                  updatedMods.map(mod => `${mod.ModName} - Stato: ${mod.Status} (${mod.DataUltimaModifica})`).join("\n");
+    alert(message); // Puoi sostituirlo con una notifica più elegante
+  }
 }
 
 let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
