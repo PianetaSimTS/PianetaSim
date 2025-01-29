@@ -265,10 +265,16 @@ footer {
 /* Stili responsivi */
 @media (max-width: 768px) {
   .scritta-benvenuto {
-  width: 550px; /* Cambia la dimensione a piacere */
-  margin: -40px
+     width: 1300px;
+     max-width: 130vw; 
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: -48px;
   }
-
+.intro-text {
+  font-size: 14px;  /* Ridotto per schermi più piccoli */
+  max-width: 90%;  /* Usa una percentuale per occupare una parte più piccola dello schermo */
+}
   .button-container {
     display: flex;
     flex-direction: column;
@@ -285,10 +291,16 @@ footer {
 /* Adattamento per max 480px */
 @media (max-width: 480px) {
   .scritta-benvenuto {
-  width: 550px; /* Cambia la dimensione a piacere */
-  margin: -40px
+     width: 1300px;
+     max-width: 130vw; 
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: -40px;
   }
-
+  .intro-text {
+  font-size: 14px;  /* Ridotto per schermi più piccoli */
+  max-width: 90%;  /* Usa una percentuale per occupare una parte più piccola dello schermo */
+}
   header h1 {
     font-size: 22px;
   }
