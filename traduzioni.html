@@ -388,12 +388,53 @@ newRow.innerHTML = `
   </td>
 `;
     });
-
+    checkModUpdates(mods);
     filterTable();
   })
   .catch(error => console.error('Errore nel caricare il JSON:', error));
 }
-let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
+
+function checkModUpdates(mods) {
+  let favorites = JSON.parse(localStorage.getItem("favorites_traduzioni")) || [];
+  let savedMods = JSON.parse(localStorage.getItem("savedTraduzioni")) || {};
+
+  let updatedMods = [];
+
+  mods.forEach(mod => {
+    if (favorites.includes(mod.Title)) {
+      let prevData = savedMods[mod.Title] || {};
+
+      // Controllo che CurrentVersion e ReleaseVersion siano correttamente lette
+      console.log(`Checking mod: ${mod.Title}`);
+      console.log(`CurrentVersion: ${mod.CurrentVersion}, ReleaseVersion: ${mod.ReleaseVersion}`);
+
+      // Usa CurrentVersion come data, se non c'è usa ReleaseVersion
+      let dataUltimaModifica = mod.CurrentVersion || mod.ReleaseVersion || "Data non disponibile";
+
+      if (!prevData.Status || !prevData.DataUltimaModifica || 
+          prevData.Status !== mod.Status || prevData.DataUltimaModifica !== dataUltimaModifica) {
+        updatedMods.push(mod);
+      }
+
+      // Aggiorna i dati salvati
+      savedMods[mod.Title] = {
+        Status: mod.Status || 'sconosciuto',
+        DataUltimaModifica: dataUltimaModifica
+      };
+    }
+  });
+
+  localStorage.setItem("savedTraduzioni", JSON.stringify(savedMods));
+
+  // Se ci sono mod aggiornate, mostra una notifica
+  if (updatedMods.length > 0) {
+    let message = "Le seguenti mod preferite sono state aggiornate:\n" + 
+                  updatedMods.map(mod => `${mod.Title} - Stato: ${mod.Status} (${mod.CurrentVersion || mod.ReleaseVersion || 'Data non disponibile'})`).join("\n");
+    alert(message);
+  }
+}
+
+ let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
     let lastSortDirection = 'asc'; // Ordine di ordinamento: ascendente (default) o discendente
 
     function sortTable(columnIndex) {
@@ -575,4 +616,3 @@ window.addEventListener('beforeunload', () => {
   <a href="#top" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
 </body>
 </html>
-
