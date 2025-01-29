@@ -265,59 +265,48 @@ footer {
 /* Stili responsivi */
 @media (max-width: 768px) {
   .scritta-benvenuto {
-    font-size: 18px;
-  }
-
-  header h1 {
-    font-size: 24px;
+    width: 100%; 
+    max-width: 90vw; 
+    text-align: center;
+    margin: 0 auto; 
   }
 
   .button-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .button-container a {
-    font-size: 14px;
-    padding: 12px;
-  }
-
-  footer {
-    font-size: 12px;
-  }
-
-  .social-icons a {
-    font-size: 20px;
+    width: 90%;
+    text-align: center;
   }
 }
 
+/* Adattamento per max 480px */
 @media (max-width: 480px) {
-  header img {
-    width: 100px;
-  }
-
   .scritta-benvenuto {
-    font-size: 16px;
+    font-size: 18px;
+    width: 95%;
   }
 
   header h1 {
     font-size: 22px;
   }
 
+  header p {
+    font-size: 14px;
+  }
+
   .button-container {
-    grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .button-container a {
-    font-size: 12px;
+    width: 95%;
+    font-size: 14px;
     padding: 10px;
-  }
-
-  footer {
-    font-size: 10px;
-  }
-
-  .social-icons a {
-    font-size: 18px;
   }
 }
   </style>
