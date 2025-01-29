@@ -94,7 +94,7 @@ def compare_status_only(old_state, new_state):
 
                 if new_status != old_status:  # Controlla se lo status è cambiato
                     status_icon = status_icons.get(new_status, "⚪️")  # Ottieni l'icona corrispondente allo status, se non esiste, usa il pallino bianco
-                    status_change_message = f"TRADUZIONE MOD\n\n*{new_mod['Title']}* ➜ *{new_mod['Creator']}*\n\n{status_icon} Stato {new_status}\n\n[SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                    status_change_message = f"TRADUZIONE MOD\n\n*{new_mod['Title']}* ➜ *{new_mod['Creator']}*\n\n{status_icon} Stato {new_status}\n\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     messages.append(status_change_message)
                 break
 
