@@ -264,57 +264,17 @@ footer {
 
 /* Stili responsivi */
 @media (max-width: 768px) {
-
-  .theme-toggle {
-    top: 15px;
-    left: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px; /* Ridurre la dimensione del testo */
-  }
-
-  .switch {
-    width: 60px; /* Aumentato per migliorare la visibilità */
-    height: 30px; /* Aumentato per migliorare la visibilità */
-  }
-
-  .slider:before {
-    height: 24px; /* Aumentato per migliorare la visibilità */
-    width: 24px;  /* Aumentato per migliorare la visibilità */
-  }
-
-  #theme-label {
-    font-size: 14px; /* Ridotto per adattarlo meglio agli schermi piccoli */
-  }
-
-  .button-hint {
-    margin-bottom: -15px; /* Rimuove il margin-bottom sui dispositivi mobili */
+  .scritta-benvenuto {
+    font-size: 18px;
   }
 
   header h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
-  header p {
-    font-size: 16px;
+  .button-container {
+    grid-template-columns: 1fr;
   }
-
-  .highlight {
-    font-weight: bold;
-    font-size: 18px;
-  }
-
-  .highlight .version {
-    font-size: 18px;
-  }
-
-.button-container a {
-  padding: 25px; /* Aumentato per più spazio cliccabile */
-  border-radius: 8px;
-  font-size: 18px; /* Font più grande per una visibilità migliore */
-  display: block;
-}
 
   .button-container a {
     font-size: 14px;
@@ -330,46 +290,17 @@ footer {
   }
 }
 
-/* Stili per dispositivi con larghezza massima 480px */
 @media (max-width: 480px) {
-
-  .theme-toggle {
-    top: 10px;
-    left: 10px;
+  header img {
+    width: 100px;
   }
 
-  .switch {
-    width: 50px; /* Le dimensioni sono ancora più ridotte sui dispositivi molto piccoli */
-    height: 25px;
-  }
-
-  .slider:before {
-    height: 20px;
-    width: 20px;
-  }
-
-  #theme-label {
-    font-size: 12px; /* Ancora più piccolo per schermi piccoli */
-  }
-  .button-hint {
-    margin-bottom: 0; /* Rimuove il margin-bottom sui dispositivi mobili */
+  .scritta-benvenuto {
+    font-size: 16px;
   }
 
   header h1 {
-    font-size: 24px;
-  }
-
-  header p {
-    font-size: 14px;
-  }
-
-  .highlight {
-    font-weight: bold;
-    font-size: 16px;
-  }
-
-  .highlight .version {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .button-container {
