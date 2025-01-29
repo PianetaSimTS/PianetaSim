@@ -926,9 +926,9 @@
   {
     "Author": "LittleMsSam",
     "ModName": "Elenco Generale",
-    "Status": "aggiornata",
+    "Status": "compatibile",
     "SiteLink": "https://littlemssam.tumblr.com/",
-    "DataUltimaModifica": "24/01/2025",
+    "DataUltimaModifica": "28/01/2025",
     "Translation": "non necessaria",
     "Categoria": null,
     "Dependency": "XML Injector",
