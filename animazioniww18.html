@@ -363,7 +363,7 @@
           <td>${mod.Note || ''}</td>
         `;
       });
-
+      checkModUpdates(mods);
       filterTable();
     })
     .catch(error => {
@@ -373,7 +373,38 @@
       `;
     });
 }
-     
+
+function checkModUpdates(mods) {
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  let savedMods = JSON.parse(localStorage.getItem("savedAnimazioni")) || {};
+
+  let updatedMods = [];
+
+  mods.forEach(mod => {
+    if (favorites.includes(mod.Autore)) { // Usa Autore invece di ModName
+      let prevData = savedMods[mod.Autore]; 
+
+      if (!prevData || prevData.Status !== mod.Status || prevData.DataAggiornamento !== mod.DataAggiornamento) {
+        updatedMods.push(mod);
+      }
+
+      // Aggiorna i dati salvati
+      savedMods[mod.Autore] = { 
+        Status: mod.Status,
+        DataAggiornamento: mod.DataAggiornamento 
+      };
+    }
+  });
+
+  localStorage.setItem("savedAnimazioni", JSON.stringify(savedMods));
+
+  if (updatedMods.length > 0) {
+    let message = "Le seguenti mod preferite sono state aggiornate:\n" + 
+                  updatedMods.map(mod => `${mod.Autore} - Stato: ${mod.Status} (${mod.DataAggiornamento})`).join("\n");
+    alert(message); 
+  }
+}
+
     let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
     let lastSortDirection = 'asc'; // Ordine di ordinamento: ascendente (default) o discendente
 
