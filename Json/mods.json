@@ -448,7 +448,7 @@
     "Translation": "non necessaria",
     "Categoria": "Oggetto Funzionale",
     "Dependency": "XML Injector - DLC Gita all'Aria Aperta - DLC Un Giorno alla Spa - DLC Vita in Città - DLC Nuove Stelle - DLC Bebè",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge opzioni e modifiche per rendere l'esperienza all'aria aperta più realistica e interessante, come nuove azioni, comportamenti e possibilità per i Sim che trascorrono del tempo all'esterno. Perfetto per chi vuole rendere le attività all'aperto ancora più coinvolgenti!"
   },
   {
     "Author": "Andirz",
@@ -470,7 +470,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Oggetto Funzionale",
     "Dependency": "Purchase Medicine",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge un chiosco farmaceutico nel gioco, permettendo ai Sim di acquistare medicinali, rimedi e altri articoli per la salute direttamente in un chiosco."
   },
   {
     "Author": "Andirz",
@@ -481,7 +481,7 @@
     "Translation": "non necessaria",
     "Categoria": "Oggetto Funzionale",
     "Dependency": "PSO Shared Library - Core Library",
-    "Descrizione": ""
+    "Descrizione": "Permette ai Sim di acquistare e consumare bevande in bottiglia, aggiungendo nuove opzioni per soddisfare la sete e arricchire l’esperienza di gioco."
   },
   {
     "Author": "Andirz",
@@ -492,7 +492,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "PSO Shared Library - Core Library",
-    "Descrizione": ""
+    "Descrizione": "Consente ai Sim di acquistare medicinali per curarsi da malattie o migliorare la loro salute, aggiungendo un nuovo livello di realismo nella gestione del benessere."
   },
   {
     "Author": "Andirz",
@@ -503,7 +503,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "XML Injector - DLC Vampiri e/o Regno della Magia",
-    "Descrizione": ""
+    "Descrizione": "Permette ai Sim di acquistare libri occulti, ampliando le loro conoscenze su magia, vampiri, streghe e altre creature soprannaturali, arricchendo l’esperienza di gioco."
   },
   {
     "Author": "Andirz",
@@ -514,7 +514,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": "Core Library",
-    "Descrizione": ""
+    "Descrizione": "Con questa piccola mod di cheat e debug puoi aggiungere più PNG alla tua famiglia contemporaneamente con un clic o rimuovere più membri della famiglia dalla famiglia con un clic e trasformarli in PNG senza dover cliccare su ogni Sim individualmente."
   },
   {
     "Author": "Andirz",
@@ -525,7 +525,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "Core Library - DLC Gita all'Aria Aperta e Avventura nella Giungla",
-    "Descrizione": null
+    "Descrizione": "Espande le opzioni di erboristeria nel gioco, introducendo nuove erbe e rimedi tipici di Selvadorada. I Sim possono raccogliere e utilizzare piante esotiche per creare pozioni e trattamenti, arricchendo le dinamiche di gioco legate alla cura e alla medicina naturale."
   },
   {
     "Author": "Andirz",
@@ -536,7 +536,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "PSO Shared Library - Core Library",
-    "Descrizione": ""
+    "Descrizione": "Permette ai Sim di ordinare cibo direttamente a casa, aggiungendo un'opzione di consegna di cibo rapida e comoda. Perfetto per soddisfare la fame dei Sim senza dover cucinare, rendendo la vita quotidiana ancora più semplice e realistica."
   },
   {
     "Author": "Andirz",
@@ -547,7 +547,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "PSO Shared Library - Core Library",
-    "Descrizione": ""
+    "Descrizione": "Consente ai Sim di fare acquisti online, offrendo una varietà di oggetti, abbigliamento e accessori direttamente da un negozio virtuale. Aggiunge un nuovo livello di realismo e comodità, permettendo ai Sim di acquistare comodamente senza uscire di casa."
   },
   {
     "Author": "Andirz",
@@ -558,7 +558,7 @@
     "Translation": "da scaricare",
     "Categoria": "Utilità",
     "Dependency": "Core Library - Smart Shared Core",
-    "Descrizione": null
+    "Descrizione": "Offre opzioni avanzate per modificare facilmente il genere dei Sim, consentendo di cambiare rapidamente il sesso, l'aspetto fisico o le caratteristiche di genere senza dover ricorrere a comandi complessi. Perfetto per chi desidera maggiore flessibilità nella gestione dei Sim e delle loro identità."
   },
   {
     "Author": "Andirz",
@@ -580,7 +580,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": "Core Library - Smart Shared Core",
-    "Descrizione": ""
+    "Descrizione": "Semplifica l'utilizzo dei trucchi per i Sim, permettendo di modificare facilmente aspetti come bisogni, emozioni, abilità e carriera senza dover usare comandi complessi. Perfetto per chi cerca un modo rapido per personalizzare i Sim e gestire il gameplay in modo più efficiente."
   },
   {
     "Author": "Andirz",
@@ -591,7 +591,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": "Core Library - Smart Shared Core",
-    "Descrizione": ""
+    "Descrizione": "Genera casualmente tratti, desideri e caratteristiche dei Sim, permettendo di creare personaggi unici con combinazioni imprevedibili. Perfetto per chi vuole aggiungere varietà e sorpresa nel gioco, senza dover decidere manualmente ogni dettaglio."
   },
   {
     "Author": "Andirz",
@@ -602,7 +602,7 @@
     "Translation": "non necessaria",
     "Categoria": "Carriera",
     "Dependency": "DLC Vita Universitaria",
-    "Descrizione": ""
+    "Descrizione": "Ottimizza le classi universitarie in The Sims 4, permettendo ai Sim di acquisire abilità extra durante i loro studi. Aggiunge nuove opzioni e migliora l'efficacia delle lezioni, arricchendo l’esperienza accademica e aumentando la varietà delle competenze che i Sim possono sviluppare durante il percorso universitario."
   },
   {
     "Author": "Andirz",
@@ -613,7 +613,7 @@
     "Translation": "non necessaria",
     "Categoria": "Tratto",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Rende visibile la mano dominante dei Sim durante le interazioni quotidiane, come scrivere, cucinare o usare il computer. Aggiunge un tocco di realismo e personalizzazione, rendendo ogni Sim più unico nella sua gestualità."
   },
   {
     "Author": "Andrew",
@@ -657,7 +657,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Permette di creare Sim direttamente nel gioco e filtrare le loro caratteristiche, come tratti e aspetto, per facilitarne la selezione e l’integrazione nel mondo di gioco."
   },
   {
     "Author": "Danitysimmer",
@@ -712,7 +712,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "DLC Facoltativi",
-    "Descrizione": ""
+    "Descrizione": "Introduce la difficoltà linguistica nel gioco, simulando le barriere linguistiche tra Sim di diverse nazionalità o culture. I Sim che non parlano la stessa lingua avranno difficoltà a comunicare, aggiungendo un livello di realismo e sfida nelle interazioni sociali."
   },
   {
     "Author": "Frankk",
@@ -734,7 +734,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Sblocca una serie di azioni speciali per il Mietitore e altri personaggi nel gioco, permettendo nuove interazioni e comportamenti che normalmente non sono disponibili, arricchendo l’esperienza di gioco."
   },
   {
     "Author": "JaneSimsten",
@@ -745,7 +745,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "XML Injector",
-    "Descrizione": ""
+    "Descrizione": "Simula le dinamiche sociali dell'epoca dell'alta società e introduce nuove opzioni di gioco storiche. E' ispirata dalla popolare serie Netflix Bridgerton, i tuoi Sim possono imparare la nuova abilità di galateo, organizzare balli, acquistare o ereditare grandi tenute, affrontare o evitare scandali e persino finire nei giornali di gossip di Lady Whistledown."
   },
   {
     "Author": "JaneSimsten",
@@ -756,7 +756,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "DLC Vita in Campagna",
-    "Descrizione": ""
+    "Descrizione": "Permette ai Sim di cavalcare draghi nel gioco. Aggiunge creature fantastiche che possono essere addestrate, montate e utilizzate per spostamenti veloci o semplicemente per vivere avventure epiche, arricchendo l’esperienza di gioco con un tocco di magia e fantasia."
   },
   {
     "Author": "JaneSimsten",
@@ -767,7 +767,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "The Custom Preferences Mod  ",
-    "Descrizione": null
+    "Descrizione": "Introduce nuove creature occulte segrete nel gioco, non disponibili tramite il gameplay standard. I Sim possono scoprire e interagire con queste misteriose entità, aggiungendo un livello di mistero e magia nascosta nel mondo di gioco."
   },
   {
     "Author": "JaneSimsten",
@@ -778,7 +778,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Arricchisce le relazioni romantiche in The Sims 4, introducendo la possibilità per i Sim di trovare la loro \"anima gemella\". I Sim che si considerano anime gemelle vivranno una connessione profonda e unica, con interazioni speciali e una relazione che va oltre le normali dinamiche di coppia."
   },
   {
     "Author": "KawaiiStacie",
@@ -789,7 +789,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge una varietà di nuove funzionalità in The Sims 4, migliorando l’esperienza quotidiana con nuove emozioni, interazioni sociali, eventi casuali e aspetti della vita come salute, bellezza, ciclo mestruale e cambiamenti fisici. I Sim vivranno situazioni più realistiche, come malesseri, trasformazioni fisiche, crisi adolescenziali, e altro, arricchendo le dinamiche del gioco."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -800,7 +800,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Tratti",
     "Dependency": "DLC Vita sull'Isola",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge il tratto \"Figlio dell'Oceano\", dando ai Sim un legame speciale con l'acqua, migliorando nuoto e felicità vicino al mare."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -822,7 +822,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "Dependency": "XML Injector",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge la carriera di pompieri in The Sims 4, permettendo ai Sim di diventare eroici salvatori, intervenendo in situazioni di emergenza e gestendo incendi, pericoli e missioni di salvataggio."
   },
   {
     "Author": "KiaraSims4Mods",
