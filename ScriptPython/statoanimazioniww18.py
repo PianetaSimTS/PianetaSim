@@ -88,21 +88,20 @@ def compare_status_only(old_state, new_state):
     for new_mod in normalized_new:
         for old_mod in normalized_old:
             if new_mod['Autore'] == old_mod['Autore']:  # Confronta per autore
-                if new_mod['Status'] != old_mod['Status']:  # Controlla se lo status è cambiato
+                if new_mod['Status'] != old_mod['Status'] or new_mod['DataAggiornamento'] != old_mod['DataAggiornamento']:
                     # Aggiungi il pallino corrispondente allo stato
                     status_icon = status_icons.get(new_mod['Status'].upper(), "⚪️")  # Usa il pallino predefinito se lo stato non è trovato
 
                     status_change_message = (
                         f"ANIMAZIONE\n\n"
                         f"*{new_mod['Autore'].title()}* ➜ Data: *{new_mod['DataAggiornamento']}*\n\n"
-                        f"Stato {status_icon} _{new_mod['Status'].capitalize()}\n_"
+                        f"Stato {status_icon} _{new_mod['Status'].capitalize()}_\n"
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
                     messages.append(status_change_message)
                 break  # Interrompi il ciclo interno se l'autore corrisponde
 
     return messages
-
 # Funzione per inviare un messaggio su Telegram
 def send_telegram_message(message, chat_id, topic_id):
     url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
