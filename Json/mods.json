@@ -1691,7 +1691,7 @@
     "Translation": "non necessaria",
     "Categoria": "Carriere",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Consente ai Sim di assumere più di un lavoro contemporaneamente, senza limiti. Grazie a questo mod, puoi far lavorare i tuoi Sim in diverse carriere o svolgere più attività a tempo parziale, offrendo maggiori opportunità di guadagno e una gestione più dinamica delle loro vite professionali."
   },
   {
     "Author": "TurboDriver",
@@ -1702,7 +1702,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": null
   },
   {
     "Author": "TwistedMexi",
@@ -1790,7 +1790,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": null
+    "Descrizione": "Semplifica l'interfaccia utente, consentendo di modificare facilmente le statistiche del gioco, come denaro, bisogni dei Sim, età e molto altro, direttamente tramite clic sulla schermata. Con questa estensione, puoi risparmiare tempo e personalizzare l’esperienza di gioco in modo rapido e intuitivo!"
   },
   {
     "Author": "Zerbu",
@@ -1801,7 +1801,7 @@
     "Translation": "in-lavorazione",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Permette di personalizzare le preferenze dei Sim in modo più dettagliato, aggiungendo opzioni extra come gusti e avversioni su cibi, stili di abbigliamento, attività e molto altro."
   },
   {
     "Author": "Zerbu",
@@ -1812,6 +1812,6 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": "ATTENZIONE va usata una sola venue list",
-    "Descrizione": ""
+    "Descrizione": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!"
   }
 ]
