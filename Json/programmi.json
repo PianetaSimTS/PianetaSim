@@ -1,1 +1,23 @@
-[{"programma":"Sims 4 Cleanup Script di Andirz","status":"rotta","link_programma":"https://simfileshare.net/download/LcaKjfxOQri2XcinPhxRfLgiiFdLu7jAY86Y2IZ9DzkGbYj2qoUbpfVd3vRPrBTq/","data_aggiornamento":"20/09/2024","video_spiegativo":"https://t.me/TheSims4ItaliaPianetaSim/228627/228636"},{"programma":"Sims 4 Studio di Andrew","status":"aggiornato","link_programma":"https://sims4studio.com/board/6/download-sims-studio-open-version","data_aggiornamento":"29/01/2025","video_spiegativo":"https://youtu.be/Cy-G5F0bq90?feature=shared"},{"programma":"Sims 4 Tray Importer di LuniverSims","status":"compatibile","link_programma":"https://luniversims.fr/files/file/73-sims-4-tray-importer/","data_aggiornamento":"02/03/2023","video_spiegativo":"https://youtu.be/IiHT_s7NBYw?feature=shared"}]
+[
+  {
+    "programma": "Sims 4 Cleanup Script di Andirz",
+    "status": "compatibile",
+    "link_programma": "https://simfileshare.net/download/LcaKjfxOQri2XcinPhxRfLgiiFdLu7jAY86Y2IZ9DzkGbYj2qoUbpfVd3vRPrBTq/",
+    "data_aggiornamento": "20/09/2024",
+    "video_spiegativo": "https://t.me/TheSims4ItaliaPianetaSim/228627/228636"
+  },
+  {
+    "programma": "Sims 4 Studio di Andrew",
+    "status": "aggiornato",
+    "link_programma": "https://sims4studio.com/board/6/download-sims-studio-open-version",
+    "data_aggiornamento": "29/01/2025",
+    "video_spiegativo": "https://youtu.be/Cy-G5F0bq90?feature=shared"
+  },
+  {
+    "programma": "Sims 4 Tray Importer di LuniverSims",
+    "status": "compatibile",
+    "link_programma": "https://luniversims.fr/files/file/73-sims-4-tray-importer/",
+    "data_aggiornamento": "02/03/2023",
+    "video_spiegativo": "https://youtu.be/IiHT_s7NBYw?feature=shared"
+  }
+]
