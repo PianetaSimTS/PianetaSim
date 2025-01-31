@@ -172,8 +172,17 @@
   },
   {
     "Creator": "Andirz",
+    "Title": "Better Live Shopping",
+    "ReleaseVersion": "2.1.5",
+    "CurrentVersion": "2.1.5",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-better-by-111756669?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Andirz",
     "Title": "Obscura Network (+18)",
-    "ReleaseVersion": "1.0.1",
+    "ReleaseVersion": "1.0.2",
     "CurrentVersion": "1.0.1",
     "Status": "in-lavorazione",
     "Translator": "di vale93_games",
@@ -227,47 +236,38 @@
   {
     "Creator": "Andirz",
     "Title": "Smart Gender Cheats",
-    "ReleaseVersion": "1.5.4",
-    "CurrentVersion": "1.5.4",
-    "Status": "nuova",
+    "ReleaseVersion": "1.5.5",
+    "CurrentVersion": "1.5.5",
+    "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-smart-by-119322735?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Andirz",
     "Title": "Smart Shared Core",
-    "ReleaseVersion": "1.12.1",
-    "CurrentVersion": "1.12.1",
-    "Status": "nuova",
+    "ReleaseVersion": "1.13.0",
+    "CurrentVersion": "1.13.0",
+    "Status": "aggiornata",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-smart-by-119256664?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Andirz",
     "Title": "Smart Sim Cheats",
-    "ReleaseVersion": "2.6.6",
-    "CurrentVersion": "2.6.6",
-    "Status": "nuova",
+    "ReleaseVersion": "2.6.7",
+    "CurrentVersion": "2.6.7",
+    "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-smart-sim-119257640?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Andirz",
     "Title": "Smart Sim Randomizer",
-    "ReleaseVersion": "2.6.2",
-    "CurrentVersion": "2.6.2",
-    "Status": "nuova",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-smart-sim-119326704?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Andirz",
-    "Title": "Better Live Shopping",
-    "ReleaseVersion": "2.1.5",
-    "CurrentVersion": "2.1.5",
+    "ReleaseVersion": "2.6.3",
+    "CurrentVersion": "2.6.3",
     "Status": "compatibile",
     "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-better-by-111756669?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+    "Link": "https://www.patreon.com/posts/sims-4-smart-sim-119326704?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Andrew",
@@ -421,6 +421,15 @@
     "Status": "da-aggiornare",
     "Translator": "di LoryNa",
     "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#tradsol"
+  },
+  {
+    "Creator": "Khlas",
+    "Title": "Big Dick Problems (+18)",
+    "ReleaseVersion": null,
+    "CurrentVersion": null,
+    "Status": "obsoleta",
+    "Translator": null,
+    "Link": "Inclusa nella Khlas males Interactions"
   },
   {
     "Creator": "Khlas",
@@ -704,7 +713,7 @@
   {
     "Creator": "PandaSama",
     "Title": "Child Birth Mod",
-    "ReleaseVersion": "1.73",
+    "ReleaseVersion": "1.76",
     "CurrentVersion": "1.65",
     "Status": "da-aggiornare",
     "Translator": "di Isy's",
@@ -713,7 +722,7 @@
   {
     "Creator": "PandaSama",
     "Title": "Child Birth Mod",
-    "ReleaseVersion": "1.73",
+    "ReleaseVersion": "1.76",
     "CurrentVersion": "1.73",
     "Status": "aggiornata",
     "Translator": "di LadyPsycoTrilly GT",
@@ -1015,14 +1024,5 @@
     "Status": "nuova",
     "Translator": "di LeooEthan",
     "Link": "https://www.patreon.com/posts/random-sex-118541745"
-  },
-  {
-    "Creator": "Khlas",
-    "Title": "Big Dick Problems (+18)",
-    "ReleaseVersion": null,
-    "CurrentVersion": null,
-    "Status": "obsoleta",
-    "Translator": null,
-    "Link": "Inclusa nella Khlas males Interactions"
   }
 ]
