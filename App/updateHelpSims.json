@@ -1,5 +1,5 @@
 { 
-    "version": "0.0.0.8", 
+    "version": "0.0.0.9", 
     "releaseNotes": "Rilascio", 
-    "updateUrl": "https://github.com/PianetaSimSito/PianetaSim/releases/download/HelpSims/HelpSims.exe" 
+    "updateUrl": "https://github.com/PianetaSimTS/PianetaSim/releases/download/HelpSim/HelpSim.exe" 
 }
