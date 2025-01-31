@@ -96,7 +96,7 @@
     "Translation": "in-lavorazione",
     "Categoria": "Gameplay",
     "Dependency": "General Pie Menus - Shared Tuning",
-    "Descrizione": "\n\"Education Overhaul\" è una mod per The Sims 4 che amplia il sistema educativo del gioco. Aggiunge nuove opzioni per l'apprendimento, migliorando la carriera scolastica dei Sims e introducendo nuove interazioni, eventi scolastici e opportunità per rendere l’esperienza educativa più realistica e coinvolgente."
+    "Descrizione": "Amplia il sistema educativo del gioco, aggiunge nuove opzioni per l'apprendimento, migliorando la carriera scolastica dei Sims e introducendo nuove interazioni, eventi scolastici e opportunità per rendere l’esperienza educativa più realistica e coinvolgente."
   },
   {
     "Author": "Adeepindigo",
@@ -107,7 +107,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "Core Library - Mood Pack",
-    "Descrizione": "\"Errant Thoughts\" è una mod per The Sims 4 che aggiunge pensieri casuali ai Sims, influenzando le loro emozioni e azioni, arricchendo così la loro vita mentale e rendendoli più realistici."
+    "Descrizione": "Aggiunge pensieri casuali ai Sims, influenzando le loro emozioni e azioni, arricchendo così la loro vita mentale e rendendoli più realistici."
   },
   {
     "Author": "Adeepindigo",
@@ -151,7 +151,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": " General Pie Menus - Universal Venue List o Venue Changes",
-    "Descrizione": ""
+    "Descrizione": "Migliora l'esperienza di gioco per i Sim anziani, aggiungendo nuove interazioni, attività e opzioni per una vita più ricca e soddisfacente. Con questo mod, gli anziani possono godere di hobby, relazioni e momenti speciali, portando una maggiore profondità e realismo alla loro fase della vita."
   },
   {
     "Author": "Adeepindigo",
@@ -162,7 +162,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "Mood Pack - General Pie Menus - DLC Al Lavoro",
-    "Descrizione": " Mod completa per l'assistenza sanitaria che aggiunge nuove malattie, lesioni, condizioni croniche, allergie, emergenze mediche e condizioni di salute legate alla gravidanza, nonché cure preventive, sistema immunitario naturale, farmaci e integratori, visite mediche, vaccinazioni, malattie mortali e altro ancora."
+    "Descrizione": "Mod completa per l'assistenza sanitaria che aggiunge nuove malattie, lesioni, condizioni croniche, allergie, emergenze mediche e condizioni di salute legate alla gravidanza, nonché cure preventive, sistema immunitario naturale, farmaci e integratori, visite mediche, vaccinazioni, malattie mortali e altro ancora."
   },
   {
     "Author": "Adeepindigo",
@@ -327,7 +327,7 @@
     "Translation": "in-lavorazione",
     "Categoria": "Gameplay",
     "Dependency": "DLC Vita Universitaria",
-    "Descrizione": ""
+    "Descrizione": "Serve per il funzionamento delle altre mod Custom Electives."
   },
   {
     "Author": "Andirz",
@@ -338,7 +338,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "Custom Electives (Core) - DLC Vita Universitaria",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge materie elettive personalizzate e costose per i Sim adolescenti, offrendo opportunità di apprendimento avanzato con un tocco di sfida economica."
   },
   {
     "Author": "Andirz",
@@ -349,7 +349,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "Custom Electives (Core) - DLC Vita Universitaria",
-    "Descrizione": ""
+    "Descrizione": "Introduce nuove materie elettive personalizzate per i Sim adolescenti, arricchendo l’esperienza scolastica con opzioni aggiuntive per sviluppare abilità senza il costo extra delle versioni più esclusive."
   },
   {
     "Author": "Andirz",
@@ -360,7 +360,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "DLC Vita Universitaria e Nuove Stelle",
-    "Descrizione": ""
+    "Descrizione": "Modifica la carriera universitaria in \"Arte Drammatica\", trasformandola nella carriera di Recitazione del pacchetto Famosi. Questo permette ai Sim che studiano arte drammatica all'università di intraprendere direttamente una carriera nella recitazione, creando una connessione più realistica tra l'istruzione e la carriera."
   },
   {
     "Author": "Andirz",
@@ -371,7 +371,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "Road to Fame  - DLC Vita Universitaria",
-    "Descrizione": ""
+    "Descrizione": "Trasforma la carriera universitaria in \"Arte Drammatica\" in una carriera di Recitazione del pacchetto Road To Fame. Questo consente ai Sim che studiano arte drammatica di entrare direttamente nel mondo della recitazione, creando una connessione più diretta tra l'istruzione e la carriera nel settore dello spettacolo."
   },
   {
     "Author": "Andirz",
@@ -382,7 +382,7 @@
     "Translation": "non necessaria",
     "Categoria": "Oggetto Funzionale",
     "Dependency": "Core Library - DLC Vita da Genitori",
-    "Descrizione": ""
+    "Descrizione": "Amplia le opzioni del diario privato in The Sims 4, permettendo ai Sim di scrivere su una maggiore varietà di emozioni ed eventi, arricchendo la loro storia personale."
   },
   {
     "Author": "Andirz",
@@ -393,7 +393,7 @@
     "Translation": "non necessaria",
     "Categoria": "Tratto",
     "Dependency": "Core Library - DLC Serata Cinema",
-    "Descrizione": ""
+    "Descrizione": "Permette ai Sim di scegliere e avere un genere cinematografico preferito, influenzando le loro emozioni e reazioni quando guardano film. Aggiunge un tocco di realismo, rendendo i gusti dei Sim più personalizzati."
   },
   {
     "Author": "Andirz",
@@ -404,7 +404,7 @@
     "Translation": "non necessaria",
     "Categoria": "Bug Fix",
     "Dependency": "Core Library",
-    "Descrizione": ""
+    "Descrizione": "Rende tutti i Sim nel gioco attratti da qualsiasi genere, permettendo loro di esplorare liberamente le loro preferenze romantiche e sessuali senza restrizioni. La versione \"Exploring\" consente ai Sim di scoprire la propria sessualità nel corso del gioco."
   },
   {
     "Author": "Andirz",
@@ -415,7 +415,7 @@
     "Translation": "non necessaria",
     "Categoria": "Bug Fix",
     "Dependency": "Core Library",
-    "Descrizione": ""
+    "Descrizione": "Rende tutti i Sim nel gioco attratti da qualsiasi genere, consentendo loro di esplorare liberamente le proprie preferenze romantiche e sessuali senza limitazioni. La versione \"Ultimate\" offre un'esperienza ancora più completa, permettendo ai Sim di scoprire la propria sessualità in modo naturale e senza restrizioni, arricchendo le interazioni romantiche e le dinamiche relazionali."
   },
   {
     "Author": "Andirz",
@@ -426,7 +426,7 @@
     "Translation": "non necessaria",
     "Categoria": "Tratto",
     "Dependency": "Core Library",
-    "Descrizione": ""
+    "Descrizione": "Elimina il dramma legato ai compleanni dimenticati in The Sims 4. Con questa mod, i Sim non si arrabbiano o si sentono trascurati se il loro compleanno passa inosservato, rendendo l'esperienza di gioco più tranquilla e meno frustrante. Perfetto per chi vuole evitare conflitti inutili legati ai compleanni!"
   },
   {
     "Author": "Andirz",
@@ -437,7 +437,7 @@
     "Translation": "non necessaria",
     "Categoria": "Tratto",
     "Dependency": "Core Library - DLC Stagioni",
-    "Descrizione": null
+    "Descrizione": "Rimuove il dramma legato ai fallimenti durante le festività in The Sims 4. Con questa mod, i Sim non si arrabbiano o si sentono delusi se le festività non vanno come previsto, rendendo l'esperienza di gioco più rilassata e senza conflitti inutili durante le celebrazioni."
   },
   {
     "Author": "Andirz",
@@ -448,7 +448,7 @@
     "Translation": "non necessaria",
     "Categoria": "Oggetto Funzionale",
     "Dependency": "XML Injector - DLC Gita all'Aria Aperta - DLC Un Giorno alla Spa - DLC Vita in Città - DLC Nuove Stelle - DLC Bebè",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge opzioni e modifiche per rendere l'esperienza all'aria aperta più realistica e interessante, come nuove azioni, comportamenti e possibilità per i Sim che trascorrono del tempo all'esterno. Perfetto per chi vuole rendere le attività all'aperto ancora più coinvolgenti!"
   },
   {
     "Author": "Andirz",
@@ -459,7 +459,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Serve per il funzionamento delle altre mod della serie P.S.O."
   },
   {
     "Author": "Andirz",
@@ -470,7 +470,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Oggetto Funzionale",
     "Dependency": "Purchase Medicine",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge un chiosco farmaceutico nel gioco, permettendo ai Sim di acquistare medicinali, rimedi e altri articoli per la salute direttamente in un chiosco."
   },
   {
     "Author": "Andirz",
@@ -481,7 +481,7 @@
     "Translation": "non necessaria",
     "Categoria": "Oggetto Funzionale",
     "Dependency": "PSO Shared Library - Core Library",
-    "Descrizione": ""
+    "Descrizione": "Permette ai Sim di acquistare e consumare bevande in bottiglia, aggiungendo nuove opzioni per soddisfare la sete e arricchire l’esperienza di gioco."
   },
   {
     "Author": "Andirz",
@@ -492,7 +492,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "PSO Shared Library - Core Library",
-    "Descrizione": ""
+    "Descrizione": "Consente ai Sim di acquistare medicinali per curarsi da malattie o migliorare la loro salute, aggiungendo un nuovo livello di realismo nella gestione del benessere."
   },
   {
     "Author": "Andirz",
@@ -503,7 +503,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "XML Injector - DLC Vampiri e/o Regno della Magia",
-    "Descrizione": ""
+    "Descrizione": "Permette ai Sim di acquistare libri occulti, ampliando le loro conoscenze su magia, vampiri, streghe e altre creature soprannaturali, arricchendo l’esperienza di gioco."
   },
   {
     "Author": "Andirz",
@@ -514,7 +514,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": "Core Library",
-    "Descrizione": ""
+    "Descrizione": "Con questa piccola mod di cheat e debug puoi aggiungere più PNG alla tua famiglia contemporaneamente con un clic o rimuovere più membri della famiglia dalla famiglia con un clic e trasformarli in PNG senza dover cliccare su ogni Sim individualmente."
   },
   {
     "Author": "Andirz",
@@ -525,7 +525,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "Core Library - DLC Gita all'Aria Aperta e Avventura nella Giungla",
-    "Descrizione": null
+    "Descrizione": "Espande le opzioni di erboristeria nel gioco, introducendo nuove erbe e rimedi tipici di Selvadorada. I Sim possono raccogliere e utilizzare piante esotiche per creare pozioni e trattamenti, arricchendo le dinamiche di gioco legate alla cura e alla medicina naturale."
   },
   {
     "Author": "Andirz",
@@ -536,7 +536,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "PSO Shared Library - Core Library",
-    "Descrizione": ""
+    "Descrizione": "Permette ai Sim di ordinare cibo direttamente a casa, aggiungendo un'opzione di consegna di cibo rapida e comoda. Perfetto per soddisfare la fame dei Sim senza dover cucinare, rendendo la vita quotidiana ancora più semplice e realistica."
   },
   {
     "Author": "Andirz",
@@ -547,7 +547,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "PSO Shared Library - Core Library",
-    "Descrizione": ""
+    "Descrizione": "Consente ai Sim di fare acquisti online, offrendo una varietà di oggetti, abbigliamento e accessori direttamente da un negozio virtuale. Aggiunge un nuovo livello di realismo e comodità, permettendo ai Sim di acquistare comodamente senza uscire di casa."
   },
   {
     "Author": "Andirz",
@@ -558,7 +558,7 @@
     "Translation": "da scaricare",
     "Categoria": "Utilità",
     "Dependency": "Core Library - Smart Shared Core",
-    "Descrizione": null
+    "Descrizione": "Offre opzioni avanzate per modificare facilmente il genere dei Sim, consentendo di cambiare rapidamente il sesso, l'aspetto fisico o le caratteristiche di genere senza dover ricorrere a comandi complessi. Perfetto per chi desidera maggiore flessibilità nella gestione dei Sim e delle loro identità."
   },
   {
     "Author": "Andirz",
@@ -569,7 +569,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": "Core Library",
-    "Descrizione": ""
+    "Descrizione": "Serve per il funzionamento delle mod della serie Smart."
   },
   {
     "Author": "Andirz",
@@ -580,7 +580,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": "Core Library - Smart Shared Core",
-    "Descrizione": ""
+    "Descrizione": "Semplifica l'utilizzo dei trucchi per i Sim, permettendo di modificare facilmente aspetti come bisogni, emozioni, abilità e carriera senza dover usare comandi complessi. Perfetto per chi cerca un modo rapido per personalizzare i Sim e gestire il gameplay in modo più efficiente."
   },
   {
     "Author": "Andirz",
@@ -591,7 +591,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": "Core Library - Smart Shared Core",
-    "Descrizione": ""
+    "Descrizione": "Genera casualmente tratti, desideri e caratteristiche dei Sim, permettendo di creare personaggi unici con combinazioni imprevedibili. Perfetto per chi vuole aggiungere varietà e sorpresa nel gioco, senza dover decidere manualmente ogni dettaglio."
   },
   {
     "Author": "Andirz",
@@ -602,7 +602,7 @@
     "Translation": "non necessaria",
     "Categoria": "Carriera",
     "Dependency": "DLC Vita Universitaria",
-    "Descrizione": ""
+    "Descrizione": "Ottimizza le classi universitarie in The Sims 4, permettendo ai Sim di acquisire abilità extra durante i loro studi. Aggiunge nuove opzioni e migliora l'efficacia delle lezioni, arricchendo l’esperienza accademica e aumentando la varietà delle competenze che i Sim possono sviluppare durante il percorso universitario."
   },
   {
     "Author": "Andirz",
@@ -613,7 +613,7 @@
     "Translation": "non necessaria",
     "Categoria": "Tratto",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Rende visibile la mano dominante dei Sim durante le interazioni quotidiane, come scrivere, cucinare o usare il computer. Aggiunge un tocco di realismo e personalizzazione, rendendo ogni Sim più unico nella sua gestualità."
   },
   {
     "Author": "Andrew",
@@ -657,7 +657,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Permette di creare Sim direttamente nel gioco e filtrare le loro caratteristiche, come tratti e aspetto, per facilitarne la selezione e l’integrazione nel mondo di gioco."
   },
   {
     "Author": "Danitysimmer",
@@ -712,7 +712,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "DLC Facoltativi",
-    "Descrizione": ""
+    "Descrizione": "Introduce la difficoltà linguistica nel gioco, simulando le barriere linguistiche tra Sim di diverse nazionalità o culture. I Sim che non parlano la stessa lingua avranno difficoltà a comunicare, aggiungendo un livello di realismo e sfida nelle interazioni sociali."
   },
   {
     "Author": "Frankk",
@@ -723,7 +723,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Serve per il funzionamento di altre mod."
   },
   {
     "Author": "Gauntlet101010",
@@ -734,7 +734,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Sblocca una serie di azioni speciali per il Mietitore e altri personaggi nel gioco, permettendo nuove interazioni e comportamenti che normalmente non sono disponibili, arricchendo l’esperienza di gioco."
   },
   {
     "Author": "JaneSimsten",
@@ -745,7 +745,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "XML Injector",
-    "Descrizione": ""
+    "Descrizione": "Simula le dinamiche sociali dell'epoca dell'alta società e introduce nuove opzioni di gioco storiche. E' ispirata dalla popolare serie Netflix Bridgerton, i tuoi Sim possono imparare la nuova abilità di galateo, organizzare balli, acquistare o ereditare grandi tenute, affrontare o evitare scandali e persino finire nei giornali di gossip di Lady Whistledown."
   },
   {
     "Author": "JaneSimsten",
@@ -756,7 +756,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "DLC Vita in Campagna",
-    "Descrizione": ""
+    "Descrizione": "Permette ai Sim di cavalcare draghi nel gioco. Aggiunge creature fantastiche che possono essere addestrate, montate e utilizzate per spostamenti veloci o semplicemente per vivere avventure epiche, arricchendo l’esperienza di gioco con un tocco di magia e fantasia."
   },
   {
     "Author": "JaneSimsten",
@@ -767,7 +767,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "The Custom Preferences Mod  ",
-    "Descrizione": null
+    "Descrizione": "Introduce nuove creature occulte segrete nel gioco, non disponibili tramite il gameplay standard. I Sim possono scoprire e interagire con queste misteriose entità, aggiungendo un livello di mistero e magia nascosta nel mondo di gioco."
   },
   {
     "Author": "JaneSimsten",
@@ -778,7 +778,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Arricchisce le relazioni romantiche in The Sims 4, introducendo la possibilità per i Sim di trovare la loro \"anima gemella\". I Sim che si considerano anime gemelle vivranno una connessione profonda e unica, con interazioni speciali e una relazione che va oltre le normali dinamiche di coppia."
   },
   {
     "Author": "KawaiiStacie",
@@ -789,7 +789,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge una varietà di nuove funzionalità in The Sims 4, migliorando l’esperienza quotidiana con nuove emozioni, interazioni sociali, eventi casuali e aspetti della vita come salute, bellezza, ciclo mestruale e cambiamenti fisici. I Sim vivranno situazioni più realistiche, come malesseri, trasformazioni fisiche, crisi adolescenziali, e altro, arricchendo le dinamiche del gioco."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -800,7 +800,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Tratti",
     "Dependency": "DLC Vita sull'Isola",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge il tratto \"Figlio dell'Oceano\", dando ai Sim un legame speciale con l'acqua, migliorando nuoto e felicità vicino al mare."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -811,7 +811,7 @@
     "Translation": "inclusa",
     "Categoria": "",
     "Dependency": "XML Injector",
-    "Descrizione": ""
+    "Descrizione": "Tabella generale con tutte le mod di KiaraSims4Mods."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -822,7 +822,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "Dependency": "XML Injector",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge la carriera di pompieri in The Sims 4, permettendo ai Sim di diventare eroici salvatori, intervenendo in situazioni di emergenza e gestendo incendi, pericoli e missioni di salvataggio."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -921,7 +921,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": "XML Injector",
-    "Descrizione": ""
+    "Descrizione": "Serve per il funzionamento di altre mod di KiaraSims4Mods."
   },
   {
     "Author": "LittleMsSam",
@@ -932,7 +932,7 @@
     "Translation": "non necessaria",
     "Categoria": null,
     "Dependency": "XML Injector",
-    "Descrizione": ""
+    "Descrizione": "Sito generale delle mod di LittleMsSam."
   },
   {
     "Author": "llazyneiph",
@@ -1031,7 +1031,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Serve per il funzionamento di altre mod."
   },
   {
     "Author": "Lot 51",
@@ -1218,7 +1218,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Serve per il funzionamento di altre mod di Lumpinou."
   },
   {
     "Author": "Maplebell",
@@ -1251,7 +1251,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": null
   },
   {
     "Author": "NerdyDoll",
@@ -1284,7 +1284,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Serve per il funzionamento di altre mod di NickyClem"
   },
   {
     "Author": "NickyClem",
@@ -1295,14 +1295,14 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": null
+    "Descrizione": "Serve per il funzionamento di altre mod di NickyClem"
   },
   {
     "Author": "PandaSama",
     "ModName": "Child Birth Mod",
     "Status": "aggiornata",
-    "SiteLink": "https://www.patreon.com/posts/110919807",
-    "DataUltimaModifica": "14/01/2025",
+    "SiteLink": "https://www.pandasama.com/child-birth-mod/#downloads",
+    "DataUltimaModifica": "24/01/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "DLC Al Lavoro",
@@ -1383,7 +1383,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Aggiunge una scatola CC dove potrai comprare tutti i dolci presenti nel gioco."
   },
   {
     "Author": "Ravasheen",
@@ -1394,7 +1394,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Aggiunge 2 cornici per i ritratti di famiglia, dove potrai cambiare posa, vestiti e tanto altro."
   },
   {
     "Author": "Ravasheen",
@@ -1405,7 +1405,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Aggiunge oltre 10 nuovi oggetti fotografici, potrai scattare le foto ai tuoi sim e creare un bellissimo quadro, polaroid, calendario e tanto altro."
   },
   {
     "Author": "Ravasheen",
@@ -1416,7 +1416,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Ti consente di realizzare ritratti del tuo Sim con il suo attuale abbigliamento e acconciatura, è utile per chi fa le challenge legacy ma non solo."
   },
   {
     "Author": "Sacrificial",
@@ -1493,7 +1493,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": "XML Injector",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge un menu per impostare il filtro a tutti i dipinti creati dai sim per renderli più chiari nel gioco, come se fossero delle foto."
   },
   {
     "Author": "Scumbumbo/Triplis",
@@ -1504,7 +1504,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Serve per il funzionamento di altre mod."
   },
   {
     "Author": "SimRealist",
@@ -1669,7 +1669,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": null
+    "Descrizione": "Aggiunge gli slider per poter modificare il colore ai capelli, vestiti e accessori."
   },
   {
     "Author": "Thepancake1 e MizoreYukii",
@@ -1680,7 +1680,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Ora i tuoi Sims possono avere fino a cinque tratti diversi con assoluta facilità, dando ai tuoi Sims la possibilità di avere più profondità e personalità di prima."
   },
   {
     "Author": "TurboDriver",
@@ -1691,7 +1691,7 @@
     "Translation": "non necessaria",
     "Categoria": "Carriere",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Consente ai Sim di assumere più di un lavoro contemporaneamente, senza limiti. Grazie a questo mod, puoi far lavorare i tuoi Sim in diverse carriere o svolgere più attività a tempo parziale, offrendo maggiori opportunità di guadagno e una gestione più dinamica delle loro vite professionali."
   },
   {
     "Author": "TurboDriver",
@@ -1702,7 +1702,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Amplia le dinamiche sociali e romantiche in The Sims 4, introducendo nuove opzioni come il ciclo mestruale, la fertilità, i desideri sessuali, le preferenze romantiche e altro ancora. Questo mod rende le relazioni tra i Sim più realistiche, personalizzabili e varie, aggiungendo anche nuove interazioni e emozioni legate alla sessualità e alla salute."
   },
   {
     "Author": "TwistedMexi",
@@ -1713,7 +1713,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Questa mod rimuove tutte le restrizioni di tempo sulle simulazioni EA."
   },
   {
     "Author": "TwistedMexi",
@@ -1724,7 +1724,7 @@
     "Translation": "inclusa",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Migliora l'esperienza di costruzione in The Sims 4, offrendo accesso a tutti gli oggetti nel catalogo senza filtri e semplificando la gestione degli oggetti già posizionati. Perfetto per una costruzione più veloce e intuitiva!"
   },
   {
     "Author": "TwistedMexi",
@@ -1735,7 +1735,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Migliora la gestione degli errori nel gioco, rilevando e segnalando automaticamente eventuali problemi con dettagli chiari e precisi. Ideale per chi utilizza molti mod, aiuta a identificare rapidamente le cause di crash o malfunzionamenti, permettendo di risolvere gli errori in modo semplice ed efficiente."
   },
   {
     "Author": "TwistedMexi",
@@ -1746,7 +1746,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "ModGuard blocca i vettori di virus più comuni, traccia il file mod che ha tentato di scaricarlo, ti avvisa e condivide il nome della mod con il team in modo che gli account dei modder compromessi possano essere avvisati il ​​prima possibile."
   },
   {
     "Author": "TwistedMexi",
@@ -1757,7 +1757,7 @@
     "Translation": "inclusa",
     "Categoria": "Utilità",
     "Dependency": "Necessaria la Better BuildBuy per la Funzione Costruisci",
-    "Descrizione": ""
+    "Descrizione": "Permette di spostare, ruotare e ridimensionare gli oggetti in modi impossibili con gli strumenti di gioco standard, offrendo una maggiore libertà creativa per costruzioni più dettagliate e personalizzate. Ideale per i giocatori che vogliono portare la loro creatività a un livello superiore!"
   },
   {
     "Author": "Vale93_games",
@@ -1768,7 +1768,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Sostituisce la normale chiave del gioco con una simpatica zampina disponibile in 6 colorazioni."
   },
   {
     "Author": "Weerbesu",
@@ -1779,7 +1779,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Aggiunge più colonne in CAS da 3 a 6, attenzione ne va scelta solo una."
   },
   {
     "Author": "Weerbesu",
@@ -1790,7 +1790,7 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Semplifica l'interfaccia utente, consentendo di modificare facilmente le statistiche del gioco, come denaro, bisogni dei Sim, età e molto altro, direttamente tramite clic sulla schermata. Con questa estensione, puoi risparmiare tempo e personalizzare l’esperienza di gioco in modo rapido e intuitivo!"
   },
   {
     "Author": "Zerbu",
@@ -1801,7 +1801,7 @@
     "Translation": "in-lavorazione",
     "Categoria": "Utilità",
     "Dependency": null,
-    "Descrizione": ""
+    "Descrizione": "Permette di personalizzare le preferenze dei Sim in modo più dettagliato, aggiungendo opzioni extra come gusti e avversioni su cibi, stili di abbigliamento, attività e molto altro."
   },
   {
     "Author": "Zerbu",
@@ -1812,6 +1812,6 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": "ATTENZIONE va usata una sola venue list",
-    "Descrizione": ""
+    "Descrizione": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!"
   }
 ]
