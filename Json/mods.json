@@ -1041,8 +1041,8 @@
     "DataUltimaModifica": "28/01/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Aggiunge una campanello intelligente al gioco. Quando un Sim suona il campanello, il proprietario può scegliere di rispondere, ignorare o addirittura far fuggire il visitatore, creando situazioni divertenti e inaspettate con gli ospiti. La mod offre un tocco di realismo e interattività in più per le dinamiche sociali del gioco."
   },
   {
     "Author": "Lot 51",
@@ -1053,7 +1053,7 @@
     "Translation": null,
     "Categoria": "Gameplay",
     "Dependency": "DLC Vita in Campagna",
-    "Descrizione": ""
+    "Descrizione": "Lascia che i tuoi amici della fattoria scorrazzino liberi! Mucche e lama sono finalmente separati dal loro rifugio per animali e possono vagare in giro come polli e conigli."
   },
   {
     "Author": "Lot 51",
@@ -1064,7 +1064,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "Core Library - Universal Venue List",
-    "Descrizione": ""
+    "Descrizione": "Ti permette di creare hotel personalizzati con camere per gli ospiti, servizio in camera e pulizia giornaliera. I Sims possono soggiornare, interagire nelle aree comuni e ricevere manutenzione su richiesta, rendendo le vacanze più immersive."
   },
   {
     "Author": "Lumpinou",
