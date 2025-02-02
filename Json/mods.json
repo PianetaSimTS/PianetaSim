@@ -248,7 +248,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/auto-service-career",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "Carriera",
+    "Categoria": "Carriere",
     "Dependency": "Core Library",
     "Descrizione": "Carriera del Servizio Auto, partirai dal lavare auto a diventare capo dell'officina."
   },
@@ -259,7 +259,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/autofill-personality-traits",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "non necessaria",
-    "Categoria": "Tratto",
+    "Categoria": "Tratti",
     "Dependency": "",
     "Descrizione": "Riempirà tutti i tuoi Sims (attivi e PNG) con tratti di personalità casuali fino al massimo consentito"
   },
@@ -380,7 +380,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/extended-private-journal",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "non necessaria",
-    "Categoria": "Oggetto Funzionale",
+    "Categoria": "Oggetti Funzionali",
     "Dependency": "Core Library - DLC Vita da Genitori",
     "Descrizione": "Amplia le opzioni del diario privato in The Sims 4, permettendo ai Sim di scrivere su una maggiore varietà di emozioni ed eventi, arricchendo la loro storia personale."
   },
@@ -391,7 +391,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/favorite-movie-genre",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "non necessaria",
-    "Categoria": "Tratto",
+    "Categoria": "Tratti",
     "Dependency": "Core Library - DLC Serata Cinema",
     "Descrizione": "Permette ai Sim di scegliere e avere un genere cinematografico preferito, influenzando le loro emozioni e reazioni quando guardano film. Aggiunge un tocco di realismo, rendendo i gusti dei Sim più personalizzati."
   },
@@ -424,7 +424,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/no-forgotten-birthday-drama",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "non necessaria",
-    "Categoria": "Tratto",
+    "Categoria": "Tratti",
     "Dependency": "Core Library",
     "Descrizione": "Elimina il dramma legato ai compleanni dimenticati in The Sims 4. Con questa mod, i Sim non si arrabbiano o si sentono trascurati se il loro compleanno passa inosservato, rendendo l'esperienza di gioco più tranquilla e meno frustrante. Perfetto per chi vuole evitare conflitti inutili legati ai compleanni!"
   },
@@ -435,7 +435,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/no-holidays-failure-drama",
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
-    "Categoria": "Tratto",
+    "Categoria": "Tratti",
     "Dependency": "Core Library - DLC Stagioni",
     "Descrizione": "Rimuove il dramma legato ai fallimenti durante le festività in The Sims 4. Con questa mod, i Sim non si arrabbiano o si sentono delusi se le festività non vanno come previsto, rendendo l'esperienza di gioco più rilassata e senza conflitti inutili durante le celebrazioni."
   },
@@ -446,7 +446,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/outdoor-tweaks",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "non necessaria",
-    "Categoria": "Oggetto Funzionale",
+    "Categoria": "Oggetti Funzionali",
     "Dependency": "XML Injector - DLC Gita all'Aria Aperta - DLC Un Giorno alla Spa - DLC Vita in Città - DLC Nuove Stelle - DLC Bebè",
     "Descrizione": "Aggiunge opzioni e modifiche per rendere l'esperienza all'aria aperta più realistica e interessante, come nuove azioni, comportamenti e possibilità per i Sim che trascorrono del tempo all'esterno. Perfetto per chi vuole rendere le attività all'aperto ancora più coinvolgenti!"
   },
@@ -468,7 +468,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/pharmacy-kiosk",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "da-scaricare",
-    "Categoria": "Oggetto Funzionale",
+    "Categoria": "Oggetti Funzionali",
     "Dependency": "Purchase Medicine",
     "Descrizione": "Aggiunge un chiosco farmaceutico nel gioco, permettendo ai Sim di acquistare medicinali, rimedi e altri articoli per la salute direttamente in un chiosco."
   },
@@ -479,7 +479,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/purchase-bottled-drinks",
     "DataUltimaModifica": "17/01/2025",
     "Translation": "non necessaria",
-    "Categoria": "Oggetto Funzionale",
+    "Categoria": "Oggetti Funzionali",
     "Dependency": "PSO Shared Library - Core Library",
     "Descrizione": "Permette ai Sim di acquistare e consumare bevande in bottiglia, aggiungendo nuove opzioni per soddisfare la sete e arricchire l’esperienza di gioco."
   },
@@ -600,7 +600,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/university-skill-class-tweaks",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "non necessaria",
-    "Categoria": "Carriera",
+    "Categoria": "Carriere",
     "Dependency": "DLC Vita Universitaria",
     "Descrizione": "Ottimizza le classi universitarie in The Sims 4, permettendo ai Sim di acquisire abilità extra durante i loro studi. Aggiunge nuove opzioni e migliora l'efficacia delle lezioni, arricchendo l’esperienza accademica e aumentando la varietà delle competenze che i Sim possono sviluppare durante il percorso universitario."
   },
@@ -611,7 +611,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/visible-handedness",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "non necessaria",
-    "Categoria": "Tratto",
+    "Categoria": "Tratti",
     "Dependency": "",
     "Descrizione": "Rende visibile la mano dominante dei Sim durante le interazioni quotidiane, come scrivere, cucinare o usare il computer. Aggiunge un tocco di realismo e personalizzazione, rendendo ogni Sim più unico nella sua gestualità."
   },
@@ -952,7 +952,7 @@
     "SiteLink": "https://loryy2818.wixsite.com/lory-na-traduzioni/le-mie-mods",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "inclusa",
-    "Categoria": "Carriera",
+    "Categoria": "Carriere",
     "Dependency": "XML Injector - DLC Vita da Genitori",
     "Descrizione": "Essere un Genitore è un duro lavoro e merita assolutamente un aiuto finanziario, specialmente quando sei un genitore single o il tuo partner è fuori tutto il giorno per un lavoro sottopagato e/o non puoi permetterti una babysitter. Inizia oggi, l'Associazione Casa Dolce Casa sarà felice di aiutarti!"
   },
@@ -963,7 +963,7 @@
     "SiteLink": "https://loryy2818.wixsite.com/lory-na-traduzioni/le-mie-mods",
     "DataUltimaModifica": "28/01/2025",
     "Translation": "inclusa",
-    "Categoria": "Carriera",
+    "Categoria": "Carriere",
     "Dependency": "XML Injector - DLC Al Lavoro",
     "Descrizione": "Hai mai desiderato far diventare il tuo Sim un Modder? Da oggi puoi con questa nuova carriera attiva!"
   },
