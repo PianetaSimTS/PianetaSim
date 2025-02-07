@@ -19,12 +19,32 @@
           --bodybackground: #343a40;
           --sconosciutavar: #545454;
           --thtdcolor: white;
+          --tdacolor: #B57EDC;
+          --tdahover: #FFB6C1;
+          --tdactive: #8E44AD;
         }
     
         #filter-status-dropdown, #filter-translation-dropdown, #filter-category-dropdown {
       opacity: 0;
       transition: opacity 0.3s ease;
     }
+
+    td a {
+  color: var(--tdacolor);
+}
+
+td a:visited {
+  color: var(--tdacolor);
+}
+
+td a:hover {
+  color: var(--tdahover);
+}
+
+td a:active {
+  color: var(--tdactive);
+}
+    
         .navbar {
       display: flex;
       flex-wrap: wrap;
@@ -496,6 +516,9 @@ root.style.setProperty("--thcolor", "#000000"); // Testo scuro per i titoli dell
 root.style.setProperty("--bodybackground", "#ffffff"); // Sfondo bianco per il corpo
 root.style.setProperty("--sconosciutavar", "#545454"); // Giallo brillante per mantenere un colore vivace
 root.style.setProperty("--thtdcolor", "black");
+root.style.setProperty("--tdacolor", "blue");
+root.style.setProperty("--tdahover", "#551A8B");
+root.style.setProperty("--tdactive", "#000080");    
     themeSwitch.textContent = "🌞";
   } else {
     // Passa al tema scuro
@@ -511,6 +534,9 @@ root.style.setProperty("--thtdcolor", "black");
     root.style.setProperty("--bodybackground", "#343a40");
     root.style.setProperty("--sconosciutavar", "#FFFBB9");
     root.style.setProperty("--thtdcolor", "white");
+    root.style.setProperty("--tdacolor", "#B57EDC");
+    root.style.setProperty("--tdahover", "#FFB6C1");
+    root.style.setProperty("--tdactive", "#8E44AD");
     themeSwitch.textContent = "🌙";
   }
 }
