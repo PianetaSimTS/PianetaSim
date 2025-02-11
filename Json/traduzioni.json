@@ -109,6 +109,15 @@
   },
   {
     "Creator": "Adeepindigo",
+    "Title": "Golden Years Elder Pack",
+    "ReleaseVersion": "2.1",
+    "CurrentVersion": "2.1",
+    "Status": "in-lavorazione",
+    "Translator": "di vale93_games",
+    "Link": ""
+  },
+  {
+    "Creator": "Adeepindigo",
     "Title": "Healthcare Redux",
     "ReleaseVersion": "9.7.9",
     "CurrentVersion": "9.7.9",
@@ -160,15 +169,6 @@
     "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-preteens-121599569?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": null,
-    "Title": null,
-    "ReleaseVersion": null,
-    "CurrentVersion": null,
-    "Status": "aggiornata",
-    "Translator": null,
-    "Link": ""
   },
   {
     "Creator": "Andirz",
