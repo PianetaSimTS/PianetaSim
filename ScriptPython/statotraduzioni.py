@@ -75,30 +75,37 @@ def normalize_mod(mod):
 def compare_status_only(old_state, new_state):
     messages = []
 
-    # Dizionario per associare lo status agli emoji
     status_icons = {
-        "AGGIORNATA": "🟢",  # Pallino verde
-        "COMPATIBILE": "🔵",  # Pallino blu
-        "ROTTA": "🔴",        # Pallino rosso
-        "NUOVA": "🟣",        # Pallino viola
-        "SCONOSCIUTA & OBSOLETA": "⚪️"  # Pallino bianco
+        "AGGIORNATA": "🟢",
+        "COMPATIBILE": "🔵",
+        "ROTTA": "🔴",
+        "NUOVA": "🟣",
+        "SCONOSCIUTA & OBSOLETA": "⚪️"
     }
 
-    # Verifica se lo status di una mod è cambiato
-    for new_mod in new_state:
-        for old_mod in old_state:
-            if new_mod['Title'] == old_mod['Title'] and new_mod['Translator'] == old_mod['Translator']:  # Verifica il titolo e il traduttore
-                # Gestione del caso in cui il valore di Status sia None
-                new_status = (new_mod.get('Status') or '').strip().upper()  # Default a stringa vuota se None
-                old_status = (old_mod.get('Status') or '').strip().upper()  # Default a stringa vuota se None
+    old_titles = {(mod['Title'], mod['Translator']) for mod in old_state}  # Set con titolo e traduttore
 
-                if new_status != old_status:  # Controlla se lo status è cambiato
-                    status_icon = status_icons.get(new_status, "⚪️")  # Ottieni l'icona corrispondente allo status, se non esiste, usa il pallino bianco
-                    status_change_message = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-                    messages.append(status_change_message)
-                break
+    for new_mod in new_state:
+        new_title_translator = (new_mod['Title'], new_mod['Translator'])
+        new_status = (new_mod.get('Status') or '').strip().upper()
+
+        if new_title_translator not in old_titles:  # Se la mod è nuova
+            status_icon = status_icons.get(new_status, "⚪️")
+            message = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+            messages.append(message)
+        else:
+            for old_mod in old_state:
+                if new_title_translator == (old_mod['Title'], old_mod['Translator']):
+                    old_status = (old_mod.get('Status') or '').strip().upper()
+
+                    if new_status != old_status:  # Se lo stato è cambiato
+                        status_icon = status_icons.get(new_status, "⚪️")
+                        message = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                        messages.append(message)
+                    break  # Evita controlli inutili dopo aver trovato la mod corrispondente
 
     return messages
+
 # Funzione per inviare un messaggio su Telegram
 def send_telegram_message(message, chat_id, topic_id):
     url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
