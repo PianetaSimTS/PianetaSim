@@ -84,24 +84,37 @@ def compare_status_only(old_state, new_state):
         "SCONOSCIUTA & OBSOLETA": "⚪️"  # Pallino bianco
     }
 
-    # Confronta lo stato delle mod una per una
-    for new_mod in normalized_new:
-        for old_mod in normalized_old:
-            if new_mod['Autore'] == old_mod['Autore']:  # Confronta per autore
-                if new_mod['Status'] != old_mod['Status'] or new_mod['DataAggiornamento'] != old_mod['DataAggiornamento']:
-                    # Aggiungi il pallino corrispondente allo stato
-                    status_icon = status_icons.get(new_mod['Status'].upper(), "⚪️")  # Usa il pallino predefinito se lo stato non è trovato
+    old_authors = {mod['Autore'] for mod in normalized_old}  # Set di autori esistenti prima
 
-                    status_change_message = (
-                        f"ANIMAZIONE\n\n"
-                        f"*{new_mod['Autore'].title()}* ➜ Data *{new_mod['DataAggiornamento']}*\n\n"
-                        f"Stato {status_icon} _{new_mod['Status'].capitalize()}_\n"
-                        f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-                    )
-                    messages.append(status_change_message)
-                break  # Interrompi il ciclo interno se l'autore corrisponde
+    # Controlla modifiche di stato
+    for new_mod in normalized_new:
+        if new_mod['Autore'] in old_authors:  # Se l'autore esiste già, verifica lo stato
+            for old_mod in normalized_old:
+                if new_mod['Autore'] == old_mod['Autore']:
+                    if new_mod['Status'] != old_mod['Status'] or new_mod['DataAggiornamento'] != old_mod['DataAggiornamento']:
+                        status_icon = status_icons.get(new_mod['Status'].upper(), "⚪️")
+
+                        status_change_message = (
+                            f"ANIMAZIONE\n\n"
+                            f"*{new_mod['Autore'].title()}* ➜ Data *{new_mod['DataAggiornamento']}*\n\n"
+                            f"Stato {status_icon} _{new_mod['Status'].capitalize()}_\n"
+                            f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                        )
+                        messages.append(status_change_message)
+                    break  # Interrompi il ciclo interno se l'autore corrisponde
+        else:
+            # Se l'autore non è nella lista precedente, è una nuova mod
+            status_icon = "🟣"  # Pallino viola per nuove mod
+            new_mod_message = (
+                f"ANIMAZIONE NUOVA\n\n"
+                f"*{new_mod['Autore'].title()}* ➜ Data *{new_mod['DataAggiornamento']}*\n\n"
+                f"Stato {status_icon} _{new_mod['Status'].capitalize()}_\n"
+                f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+            )
+            messages.append(new_mod_message)
 
     return messages
+
 # Funzione per inviare un messaggio su Telegram
 def send_telegram_message(message, chat_id, topic_id):
     url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
