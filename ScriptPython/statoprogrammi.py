@@ -62,28 +62,39 @@ def save_current_state(new_state):
 def compare_status_only(old_state, new_state):
     messages = []
     
-    # Dizionario per i pallini
+    # Dizionario per i pallini di stato
     status_icons = {
-        "AGGIORNATO": "🟢",  # Pallino verde
-        "COMPATIBILE": "🔵",  # Pallino blu
-        "ROTTO": "🔴",        # Pallino rosso
-        "NUOVO": "🟣",        # Pallino viola
-        "SCONOSCIUTO & OBSOLETO": "⚪️"  # Pallino bianco
+        "AGGIORNATO": "🟢",
+        "COMPATIBILE": "🔵",
+        "ROTTO": "🔴",
+        "NUOVO": "🟣",
+        "SCONOSCIUTO & OBSOLETO": "⚪️"
     }
-    
-    # Verifica se lo status di un programma è cambiato
-    for new_mod in new_state:
-        for old_mod in old_state:
-            if new_mod['programma'] == old_mod['programma']:  # Verifica il nome del programma
-                new_status = new_mod.get('status', '').upper() if new_mod.get('status') else 'Sconosciuto'
-                old_status = old_mod.get('status', '').upper() if old_mod.get('status') else 'Sconosciuto'
 
-                if new_status != old_status:  # Controlla se lo status è cambiato
-                    status_icon = status_icons.get(new_status, "⚪️")  # Ottieni il pallino corrispondente
-                    status_change_message = f"PROGRAMMA\n\n*{new_mod['programma']}* ➜ Data *{new_mod['data_aggiornamento']}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-                    messages.append(status_change_message)
-                break
-    
+    # Creiamo un set con i nomi dei programmi esistenti nello stato precedente
+    old_programs = {mod['programma'] for mod in old_state}
+
+    for new_mod in new_state:
+        new_program_name = new_mod['programma']
+        new_status = new_mod.get('status', '').upper() if new_mod.get('status') else 'SCONOSCIUTO'
+        new_date = new_mod.get('data_aggiornamento', 'Data non disponibile')
+
+        if new_program_name not in old_programs:  # Programma NUOVO
+            status_icon = status_icons.get("NUOVO", "🟣")
+            message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\nStato {status_icon} _NUOVO_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+            messages.append(message)
+        else:
+            # Trova il programma corrispondente nello stato precedente
+            for old_mod in old_state:
+                if new_program_name == old_mod['programma']:
+                    old_status = old_mod.get('status', '').upper() if old_mod.get('status') else 'SCONOSCIUTO'
+
+                    if new_status != old_status:  # Se lo stato è cambiato, invia il messaggio
+                        status_icon = status_icons.get(new_status, "⚪️")
+                        message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                        messages.append(message)
+                    break  # Esci dal loop una volta trovato il programma corrispondente
+
     return messages
 
 # Funzione per inviare un messaggio su Telegram
