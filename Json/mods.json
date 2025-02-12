@@ -1174,7 +1174,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "Toolbox - Mood Pack",
-    "Descrizione": "\"Road to Romance\" per The Sims 4 introduce una nuova abilità romantica, consentendo ai Sim di sviluppare e approfondire le loro relazioni amorose. Questa abilità offre nuove interazioni romantiche e stati d'animo, arricchendo l'esperienza di gioco e permettendo una personalizzazione più profonda delle dinamiche sentimentali tra i personaggi."
+    "Descrizione": "\"Road to Romance\" introduce una nuova abilità romantica, consentendo ai Sim di sviluppare e approfondire le loro relazioni amorose. Questa abilità offre nuove interazioni romantiche e stati d'animo, arricchendo l'esperienza di gioco e permettendo una personalizzazione più profonda delle dinamiche sentimentali tra i personaggi."
   },
   {
     "Author": "Lumpinou",
@@ -1196,7 +1196,7 @@
     "Translation": "in-lavorazione",
     "Categoria": "Gameplay",
     "Dependency": "Toolbox",
-    "Descrizione": ""
+    "Descrizione": "\"Say Something To\" introduce interazioni sociali speciali che permettono ai Sim di esprimere sentimenti o commenti specifici verso altri Sim. Queste interazioni includono opzioni come \"Dire qualcosa di amichevole\", \"Dire qualcosa di divertente\" o \"Dire qualcosa di negativo\". Questa funzionalità arricchisce le dinamiche sociali del gioco, offrendo maggiore varietà nelle conversazioni tra i personaggi. \nPATREON"
   },
   {
     "Author": "Lumpinou",
@@ -1207,7 +1207,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "Toolbox",
-    "Descrizione": ""
+    "Descrizione": "Questa mod ti permettere di scegliere se partorire subito o affrontare una normale gravidanza per i sim scelgono di avere un bambino con surrogazione artificale."
   },
   {
     "Author": "Lumpinou",
@@ -1228,8 +1228,8 @@
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "\"More Kisses: New Animation\" introduce nuove animazioni romantiche, arricchendo le interazioni tra i Sim. Queste animazioni offrono momenti più intimi e realistici, migliorando l'esperienza di gioco."
   },
   {
     "Author": "MizoreYukii",
@@ -1239,8 +1239,8 @@
     "DataUltimaModifica": "28/01/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "\"Matrimoni Arrangiati\" consente ai Sim di sposarsi senza la necessità di romanticismo, offrendo tre modalità diverse:\n\nMatrimoni tra famiglie: organizza matrimoni tra membri della famiglia attiva e quelli di un'altra famiglia.\n\nMatrimoni individuali: organizza matrimoni per un Sim selezionato con un membro di un'altra famiglia.\n\nMatrimoni di convenienza: consente a un Sim di sposare un altro Sim a scelta, senza romanticismo."
   },
   {
     "Author": "MizoreYukii",
