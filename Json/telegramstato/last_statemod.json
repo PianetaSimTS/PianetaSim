@@ -704,6 +704,17 @@
     "Descrizione": "MCCC è una mod per \"The Sims 4\" che offre un ampio controllo sul gameplay, permettendo di gestire le impostazioni del gioco, le dinamiche familiari e molte altre funzionalità avanzate."
   },
   {
+    "Author": "DQuiet ",
+    "ModName": "Sim Control Hub",
+    "Status": "aggiornata",
+    "SiteLink": " https://www.curseforge.com/sims4/mods/sim-control-hub",
+    "DataUltimaModifica": "12/02/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Utilità",
+    "Dependency": "",
+    "Descrizione": "Gioca nei panni di qualsiasi sim: Passa senza problemi il controllo tra i tuoi sim domestici attivi e qualsiasi altro sim nel mondo di gioco.\nQuesta mod per The Sims 4 ti consente di controllare i Sims e gli animali domestici di altre unità familiari, migliorando la flessibilità e la creatività nel tuo gameplay."
+  },
+  {
     "Author": "Frankk",
     "ModName": "Language Barriers",
     "Status": "compatibile",
@@ -1672,6 +1683,17 @@
     "Descrizione": ""
   },
   {
+    "Author": "Thatssojordy",
+    "ModName": "Business Casual",
+    "Status": "nuova",
+    "SiteLink": "https://www.patreon.com/posts/120367671",
+    "DataUltimaModifica": "13/02/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "Dependency": "Core Library - DLC Opzionali Al Lavoro, Cani e Gatti, Mangiamo Fuori",
+    "Descrizione": "Con questa mod i tuoi sims possono aprire il loro negozio online! Grazie all'azienda Outside the Box, i Sims possono creare liberamente le proprie vetrine e vendere vari oggetti online e fare dei simoleon. Prima di poter fare tutto questo però, dovrete affrontare varie tappe. "
+  },
+  {
     "Author": "Thepancake1 e MizoreYukii",
     "ModName": "Color Sliders ",
     "Status": "aggiornata",
@@ -1826,25 +1848,14 @@
     "Descrizione": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!"
   },
   {
-    "Author": "DQuiet ",
-    "ModName": "Sim Control Hub",
-    "Status": "aggiornata",
-    "SiteLink": " https://www.curseforge.com/sims4/mods/sim-control-hub",
-    "DataUltimaModifica": "12/02/2025",
-    "Translation": "da-scaricare",
-    "Categoria": "Utilità",
-    "Dependency": "",
-    "Descrizione": "Gioca nei panni di qualsiasi sim: Passa senza problemi il controllo tra i tuoi sim domestici attivi e qualsiasi altro sim nel mondo di gioco.\nQuesta mod per The Sims 4 ti consente di controllare i Sims e gli animali domestici di altre unità familiari, migliorando la flessibilità e la creatività nel tuo gameplay."
-  },
-  {
-    "Author": "thatssojordy",
-    "ModName": "Business Casual",
+    "Author": "Arnie",
+    "ModName": "Luminova",
     "Status": "nuova",
-    "SiteLink": "https://www.patreon.com/posts/120367671",
-    "DataUltimaModifica": "13/02/2025",
-    "Translation": "da-scaricare",
-    "Categoria": "Gameplay",
-    "Dependency": "Lot 51 Core Library - DLC AL LAVORO (OPZIONALE) - DLC CANI E GATTI (OPZIONALE) - DLC MANGIAMO FUORI (OPZIONALE)",
-    "Descrizione": "Con questa mod i tuoi sims possono aprire il loro negozio online! Grazie all'azienda Outside the Box, i Sims possono creare liberamente le proprie vetrine e vendere vari oggetti online e fare dei simoleon. Prima di poter fare tutto questo però, dovrete affrontare varie tappe. "
+    "SiteLink": "https://www.patreon.com/posts/luminova-v1-5-120949707",
+    "DataUltimaModifica": "14/02/2025",
+    "Translation": "inclusa",
+    "Categoria": "Utilità",
+    "Dependency": "Consigliati ma non necessari:\nDLC Stagioni & Pulizie di primavera.\n\nSe non possedete tali DLC semplicemente non avrete alcune funzionalità della mod",
+    "Descrizione": "Luminova è un nuovo marchio immaginario che ho creato e che presenta 17 nuovi oggetti intelligenti! Questo marchio potrebbe espandersi in futuro con ulteriori dispositivi intelligenti. "
   }
 ]
