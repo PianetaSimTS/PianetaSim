@@ -231,6 +231,17 @@
     "Descrizione": "Affronta anche tu uno splendido Apocalisse Zombie "
   },
   {
+    "Author": "SimsAlchemist",
+    "ModName": "Alchemist's Kinky Expansions",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.loverslab.com/files/file/30340-alchemists-kinky-expansions/",
+    "DataUltimaModifica": "08/02/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "Dependency": "WickedWhims - XML Injector",
+    "Descrizione": "Sblocca più interazioni in base alle relazioni/situazioni della simulazione.\nUn ottimo modo per ravvivare il sistema romantico del gioco e renderlo meno noioso.\nInterazioni che possono portare al sesso."
+  },
+  {
     "Author": "Spent",
     "ModName": "Cumshine (+18)",
     "Status": "aggiornata",
@@ -273,16 +284,5 @@
     "Categoria": "Gameplay",
     "Dependency": "",
     "Descrizione": "Questa aggiunge eventi intimi casuali tra i Sim, basati su desideri e situazioni spontanee. Introduce nuove interazioni, personalizzazioni e scenari dinamici, rendendo il gameplay più imprevedibile e realistico nelle relazioni."
-  },
-  {
-    "Author": "SimsAlchemist",
-    "ModName": "Alchemist's Kinky Expansions",
-    "Status": "aggiornata",
-    "SiteLink": "https://www.loverslab.com/files/file/30340-alchemists-kinky-expansions/",
-    "DataUltimaModifica": "08/02/2025",
-    "Translation": "da-scaricare",
-    "Categoria": "Gameplay",
-    "Dependency": "WickedWhims - XML Injector",
-    "Descrizione": "Sblocca più interazioni in base alle relazioni/situazioni della simulazione.\nUn ottimo modo per ravvivare il sistema romantico del gioco e renderlo meno noioso.\nInterazioni che possono portare al sesso."
   }
 ]
