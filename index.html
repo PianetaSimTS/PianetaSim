@@ -347,9 +347,6 @@ footer {
     <a href="traduzioni.html">TRADUZIONI</a>
     <a href="programmi.html">PROGRAMMI</a>
   </div>
-  <div id="in-arrivo" style="display: none; color: red; font-size: 24px;">
-    <span style="color: yellow; font-size: 30px;">⚠️</span> IN ARRIVO </span> ⚠️
-  </div>
   <div class="social-container">
     <p>Unisciti ai nostri social ed entra a far parte della community Pianeta Sim! Potrai trovare assistenza e molto altro ancora!</p>
     <div class="social-icons">
@@ -368,7 +365,15 @@ footer {
     const themeSwitch = document.getElementById("theme-switch");
     const themeLabel = document.getElementById("theme-label");
     const root = document.documentElement;
-
+document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
+    event.preventDefault();
+    const link = document.createElement("a");
+    link.href = "https://github.com/PianetaSimTS/HelpSim/releases/download/HelpSim/HelpSim.exe";
+    link.download = "HelpSim.exe"; // Suggerisce il nome del file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
     function toggleTheme() {
       const isDark = themeSwitch.checked;
       if (isDark) {
