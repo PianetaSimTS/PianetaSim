@@ -212,6 +212,38 @@ footer {
       color: var(--text-color);
     }
 
+    /* Stile per il popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-color);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup-content button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#download-btn {
+    background: #28a745;
+    color: white;
+}
+
+#close-btn {
+    background: #dc3545;
+    color: white;
+}
+
 /* Media query per schermi più grandi */
 @media (min-width: 1920px) and (min-height: 1080px) {
       header img {
@@ -346,7 +378,40 @@ footer {
     <a href="animazioniww18.html">ANIMAZIONI WW +18</a>
     <a href="traduzioni.html">TRADUZIONI</a>
     <a href="programmi.html">PROGRAMMI</a>
+</div>
+
+<!-- Popup per la descrizione -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+      <h2>🚀 HELP SIM</h2>
+      <p>
+        Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! 
+        Con pochi click, potrai aggiungere le tue mod preferite, tenere tutto sotto controllo e persino dare una bella ripulita ai file cache di The Sims 4!
+        Che tu voglia ampliare il tuo gioco con nuove mod o semplicemente tenere tutto in ordine, sei nel posto giusto.
+      </p>
+      
+      <p>Ora rilassati, personalizza il tuo gioco e lascia che <strong>Help Sim</strong> faccia il resto! 🎮✨</p>
+      
+      <hr>
+
+      <h3>⚠️ PICCOLE ATTENZIONI PRIMA DELLO SCARICO ⚠️</h3>
+      <ul style="list-style-type: none; padding-left: 0;">
+          <li>1️⃣ Se l’antivirus blocca il programma, clicca su <strong>"Esegui comunque"</strong> 
+            Il programma è sicuro! In quanto creato interamente da noi.</li>
+          <li>2️⃣ 📖 Prima dell’uso, <strong>leggi la guida</strong> disponibile nella home del programma.</li>
+          <li>3️⃣ 📦 Supporta solo file mod e traduzioni in <strong>formato ZIP</strong>.</li>
+          <li>4️⃣ 🚫 <strong>Non supporta</strong> file singoli <em>.package</em> (CC e mod non zip).</li>
+          <li>5️⃣ 💾 <strong>Non funziona</strong> con la cartella di The Sims su unità esterne (HDD, SSD, USB, ecc.).</li>
+      </ul>
+
+      <div class="popup-buttons">
+          <button id="download-btn">📥 Scarica</button>
+          <button id="close-btn">❌ Chiudi</button>
+      </div>
   </div>
+</div>
+
+</div>
   <div class="social-container">
     <p>Unisciti ai nostri social ed entra a far parte della community Pianeta Sim! Potrai trovare assistenza e molto altro ancora!</p>
     <div class="social-icons">
@@ -365,15 +430,6 @@ footer {
     const themeSwitch = document.getElementById("theme-switch");
     const themeLabel = document.getElementById("theme-label");
     const root = document.documentElement;
-document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
-    event.preventDefault();
-    const link = document.createElement("a");
-    link.href = "https://github.com/PianetaSimTS/HelpSim/releases/download/HelpSim/HelpSim.exe";
-    link.download = "HelpSim.exe"; // Suggerisce il nome del file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
     function toggleTheme() {
       const isDark = themeSwitch.checked;
       if (isDark) {
@@ -412,6 +468,25 @@ descModBtn.addEventListener("click", function(event) {
     inArrivo.style.display = "none";
   }, 5000); // 3000 ms = 3 secondi
 });
+document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("close-btn").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+});
+
+document.getElementById("download-btn").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "https://github.com/PianetaSimTS/HelpSim/releases/download/HelpSim/HelpSim.exe";
+    link.download = "HelpSim.exe";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    document.getElementById("popup").style.display = "none"; // Chiude il popup dopo il download
+});
   </script>
 </body>
 </html>
+
