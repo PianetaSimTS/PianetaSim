@@ -63,7 +63,7 @@ def normalize_mod(mod):
     """Normalizza i dati di una mod per il confronto."""
     return {
         'Autore': str(mod.get('Autore', '')).strip() if mod.get('Autore') else '',
-        'Status': str(mod.get('Status', '')).strip() if mod.get('Status') else '',
+        'Status': str(mod.get('Status', '')).strip().upper() if mod.get('Status') else '',
         'Link': str(mod.get('Link', '')).strip() if mod.get('Link') else '',
         'DataAggiornamento': str(mod.get('DataAggiornamento', '')).strip() if mod.get('DataAggiornamento') else '',
         'Note': str(mod.get('Note', '')).strip() if mod.get('Note') else '',
@@ -97,7 +97,7 @@ def compare_status_only(old_state, new_state):
                         status_change_message = (
                             f"ANIMAZIONE\n\n"
                             f"*{new_mod['Autore'].title()}* ➜ Data *{new_mod['DataAggiornamento']}*\n\n"
-                            f"Stato {status_icon} _{new_mod['Status']}_\n"
+                            f"Stato {status_icon} _{new_mod['Status'].upper()}_\n"
                             f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                         )
                         messages.append(status_change_message)
