@@ -62,8 +62,8 @@ def save_current_state(new_state):
 def normalize_mod(mod):
     """Normalizza i dati di una mod per il confronto."""
     return {
-        'Autore': str(mod.get('Autore', '')).strip().lower() if mod.get('Autore') else '',
-        'Status': str(mod.get('Status', '')).strip().lower() if mod.get('Status') else '',
+        'Autore': str(mod.get('Autore', '')).strip() if mod.get('Autore') else '',
+        'Status': str(mod.get('Status', '')).strip() if mod.get('Status') else '',
         'Link': str(mod.get('Link', '')).strip() if mod.get('Link') else '',
         'DataAggiornamento': str(mod.get('DataAggiornamento', '')).strip() if mod.get('DataAggiornamento') else '',
         'Note': str(mod.get('Note', '')).strip() if mod.get('Note') else '',
