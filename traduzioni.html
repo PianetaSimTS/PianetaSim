@@ -267,7 +267,38 @@ td a:active {
     .status.in-lavorazione{
     color: #ff57cb
     }
+/* Stile per il popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--navbarbackground);
+    color: var(--navbarcolor);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
 
+.popup-content button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#download-btn {
+    background: #28a745;
+    color: white;
+}
+
+#close-btn {
+    background: #dc3545;
+    color: white;
+}  
     @media (max-width: 600px) {
           h1 {
             font-size: 1.5rem;
@@ -322,8 +353,37 @@ td a:active {
     <a href="animazioniww18.html">ANIMAZIONI WICKED WHIMS +18</a>
     <a href="traduzioni.html">TRADUZIONI</a>
     <a href="programmi.html">PROGRAMMI</a>
-    <button onclick="toggleTable()">HELP SIM</button>
+    <a href="#" id="desc-mod-btn">HELP SIM</a>
     <button id="themeSwitch" onclick="toggleTheme()" class="theme-toggle" title="Cambia Tema">🌙</button>
+  </div>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <h2>🚀 HELP SIM</h2>
+        <p>
+          Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! 
+          Con pochi click, potrai aggiungere le tue mod preferite, tenere tutto sotto controllo e persino dare una bella ripulita ai file cache di The Sims 4!
+          Che tu voglia ampliare il tuo gioco con nuove mod o semplicemente tenere tutto in ordine, sei nel posto giusto.
+        </p>
+        
+        <p>Ora rilassati, personalizza il tuo gioco e lascia che <strong>Help Sim</strong> faccia il resto! 🎮✨</p>
+        
+        <hr>
+  
+        <h3>⚠️ PICCOLE ATTENZIONI PRIMA DELLO SCARICO ⚠️</h3>
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li>★ Se l’antivirus blocca il programma, clicca su <strong>"Esegui comunque"</strong>.<br>
+                Il programma è sicuro! In quanto creato interamente da noi.</li>
+            <li>★ Prima dell’uso, <strong>leggi la guida</strong> disponibile nella home del programma.</li>
+            <li>★ Supporta solo i file delle mod e delle traduzioni in <strong>formato ZIP</strong>.</li>
+            <li>★ <strong>Non supporta</strong> i file singoli <em>.package</em> (CC e mod non zip).</li>
+            <li>★ <strong>Non funziona</strong> con la cartella di The Sims in unità esterne (HDD, SSD, USB, ecc.).</li>
+        </ul>
+  
+        <div class="popup-buttons">
+            <button id="download-btn">📥 Scarica</button>
+            <button id="close-btn">❌ Chiudi</button>
+        </div>
+    </div>
   </div>
   <div class="form-container">
     <div>
@@ -372,6 +432,24 @@ td a:active {
   </div>
 
   <script>
+    document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("close-btn").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+});
+
+document.getElementById("download-btn").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "https://github.com/PianetaSimTS/HelpSim/releases/download/HelpSim/HelpSim.exe";
+    link.download = "HelpSim.exe";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    document.getElementById("popup").style.display = "none"; // Chiude il popup dopo il download
+});
     // Funzione per ottenere e visualizzare i dati della tabella
   function loadModsFromJson() {    
   fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/traduzioni.json')
