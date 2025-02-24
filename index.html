@@ -459,15 +459,6 @@ footer {
     themeSwitch.addEventListener("change", toggleTheme);
     setInitialTheme();
 
-    const descModBtn = document.getElementById("desc-mod-btn");
-const inArrivo = document.getElementById("in-arrivo");
-descModBtn.addEventListener("click", function(event) {
-  event.preventDefault();
-  inArrivo.style.display = "block";
-  setTimeout(function() {
-    inArrivo.style.display = "none";
-  }, 5000); // 3000 ms = 3 secondi
-});
 document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
     event.preventDefault();
     document.getElementById("popup").style.display = "block";
