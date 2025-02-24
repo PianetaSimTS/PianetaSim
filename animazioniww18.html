@@ -263,7 +263,8 @@ td a:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--bg-color);
+    background: var(--navbarbackground);
+    color: var(--navbarcolor);
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -375,6 +376,7 @@ td a:active {
       </div>
   </div>
 </div>
+
   <div class="form-container">
     <div>
       <input type="text" id="search" oninput="filterTable()" placeholder="Cerca...">
@@ -417,6 +419,26 @@ td a:active {
   </table>
 
   <script>
+document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("close-btn").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+});
+
+document.getElementById("download-btn").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "https://github.com/PianetaSimTS/HelpSim/releases/download/HelpSim/HelpSim.exe";
+    link.download = "HelpSim.exe";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    document.getElementById("popup").style.display = "none"; // Chiude il popup dopo il download
+});
+
+
      function loadModsFromJson() {
   fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/animazioniww18.json')
     .then(response => response.json())
@@ -657,27 +679,10 @@ window.addEventListener('beforeunload', () => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
-    event.preventDefault();
-    document.getElementById("popup").style.display = "block";
-});
-
-document.getElementById("close-btn").addEventListener("click", function() {
-    document.getElementById("popup").style.display = "none";
-});
-
-document.getElementById("download-btn").addEventListener("click", function() {
-    const link = document.createElement("a");
-    link.href = "https://github.com/PianetaSimTS/HelpSim/releases/download/HelpSim/HelpSim.exe";
-    link.download = "HelpSim.exe";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    document.getElementById("popup").style.display = "none"; // Chiude il popup dopo il download
-});
   themeSwitch.addEventListener("change", toggleTheme);
   setInitialTheme();
   </script>
   <a href="#top" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
 </body>
 </html>
+
