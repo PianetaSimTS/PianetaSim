@@ -2,7 +2,7 @@
   {
     "Author": "Adeepindigo",
     "ModName": "Babysitting Gigs",
-    "Status": "rotta",
+    "Status": "compatibile",
     "SiteLink": "https://adeepindigomods.itch.io/babysitting-gigs",
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
@@ -13,9 +13,9 @@
   {
     "Author": "Adeepindigo",
     "ModName": "Better Daycare",
-    "Status": "rotta",
+    "Status": "compatibile",
     "SiteLink": "https://adeepindigomods.itch.io/better-daycare",
-    "DataUltimaModifica": "25/02/2025",
+    "DataUltimaModifica": null,
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "Core Library",
