@@ -133,7 +133,6 @@ def compare_status_only(old_state, new_state):
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
                     messages.append(status_change_message)
-
     return messages
 
 # Funzione per inviare un messaggio su Telegram
