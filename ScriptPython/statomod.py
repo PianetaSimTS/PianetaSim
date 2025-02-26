@@ -121,11 +121,9 @@ def compare_status_only(old_state, new_state):
                 if new_mod['Status'] != old_mod['Status'] or new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
                     icon = status_icons.get(new_mod['Status'], "⚪️")  # Default a pallino bianco se lo stato non è trovato
 
-                    # Forza sempre lo stato a "AGGIORNATA" se cambia solo DataUltimaModifica
-                    if new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
-                        icon = "🟢"
-                        new_mod['Status'] = "AGGIORNATA"
-
+                # Se cambia lo stato, invia la notifica con l'icona giusta
+                if new_mod['Status'] != old_mod['Status']:
+                    icon = status_icons.get(new_mod['Status'], "⚪️")  # Usa l'icona giusta
                     status_change_message = (
                         f"MOD\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
@@ -133,6 +131,18 @@ def compare_status_only(old_state, new_state):
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
                     messages.append(status_change_message)
+
+                # Se cambia solo DataUltimaModifica, verifica se lo stato era SCONOSCIUTA e ora è COMPATIBILE, ROTTA o AGGIORNATA
+                elif new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
+                    if old_mod['Status'] == "SCONOSCIUTA" and new_mod['Status'] in ["COMPATIBILE", "ROTTA", "AGGIORNATA"]:
+                        icon = status_icons.get(new_mod['Status'], "⚪️")  # Usa l'icona corretta
+                        status_change_message = (
+                            f"MOD\n\n"
+                            f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
+                            f"Stato {icon} _{new_mod['Status']}_\n"
+                            f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                        )
+                        messages.append(status_change_message)
     return messages
 
 # Funzione per inviare un messaggio su Telegram
