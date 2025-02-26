@@ -143,6 +143,7 @@ def compare_status_only(old_state, new_state):
                     )
                     messages.append(status_change_message)
 
+    print(f"Messaggi generati: {len(messages)}")  # Debug: conteggio messaggi
     return messages
 
 # Funzione per inviare un messaggio su Telegram
@@ -178,7 +179,10 @@ async def monitor_mods():
 
             # Invio dei messaggi Telegram
             for message in messages:
-                send_telegram_message(message, group_id, topic_id)
+                try:
+                    send_telegram_message(message, group_id, topic_id)
+                except Exception as e:
+                    print(f"Errore durante l'invio del messaggio: {e}")
 
             # Dopo l'invio dei messaggi, aggiorna lo stato su GitHub
             save_current_state(new_state)
