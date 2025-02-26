@@ -122,9 +122,12 @@ def compare_status_only(old_state, new_state):
                     icon = status_icons.get(new_mod['Status'], "⚪️")  # Default a pallino bianco se lo stato non è trovato
 
                     # Forza sempre lo stato a "AGGIORNATA" se cambia solo DataUltimaModifica
-                    if new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
-                        icon = "🟢"
-                        new_mod['Status'] = "AGGIORNATA"
+if new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
+    if new_mod['Status'] == old_mod['Status']:
+        icon = status_icons.get(new_mod['Status'], "⚪️")  # Mantieni lo stesso stato
+    else:
+        icon = "🟢"
+        new_mod['Status'] = "AGGIORNATA"
 
                     status_change_message = (
                         f"MOD\n\n"
