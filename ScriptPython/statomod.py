@@ -75,6 +75,7 @@ def normalize_mod(mod):
         'Dependency': safe_strip(mod.get('Dependency')),
         'Descrizione': safe_strip(mod.get('Descrizione')),
     }
+
 # Funzione per confrontare gli stati e generare il messaggio
 def compare_status_only(old_state, new_state):
     messages = []
@@ -121,21 +122,19 @@ def compare_status_only(old_state, new_state):
                 if new_mod['Status'] != old_mod['Status'] or new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
                     icon = status_icons.get(new_mod['Status'], "⚪️")  # Default a pallino bianco se lo stato non è trovato
 
-                    # Forza sempre lo stato a "AGGIORNATA" se cambia solo DataUltimaModifica
-if new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
-    if new_mod['Status'] == old_mod['Status']:  # Se lo stato non è cambiato, mantieni l'icona corretta
-        icon = status_icons.get(new_mod['Status'], "⚪️")
-    else:
-        icon = "🟢"
-        new_mod['Status'] = "AGGIORNATA"
+                    # Non forzare lo stato a "AGGIORNATA" se è "COMPATIBILE"
+                    if new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
+                        if new_mod['Status'] != "COMPATIBILE":
+                            icon = "🟢"
+                            new_mod['Status'] = "AGGIORNATA"
 
-status_change_message = (
-    f"MOD\n\n"
-    f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
-    f"Stato {icon} _{new_mod['Status']}_\n"
-    f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-)
-messages.append(status_change_message)
+                    status_change_message = (
+                        f"MOD\n\n"
+                        f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
+                        f"Stato {icon} _{new_mod['Status']}_\n"
+                        f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                    )
+                    messages.append(status_change_message)
     return messages
 
 # Funzione per inviare un messaggio su Telegram
