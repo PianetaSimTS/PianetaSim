@@ -75,7 +75,6 @@ def normalize_mod(mod):
         'Dependency': safe_strip(mod.get('Dependency')),
         'Descrizione': safe_strip(mod.get('Descrizione')),
     }
-
 # Funzione per confrontare gli stati e generare il messaggio
 def compare_status_only(old_state, new_state):
     messages = []
@@ -83,15 +82,6 @@ def compare_status_only(old_state, new_state):
     # Normalizza lo stato vecchio e nuovo
     normalized_old = [normalize_mod(mod) for mod in old_state if normalize_mod(mod) is not None]
     normalized_new = [normalize_mod(mod) for mod in new_state if normalize_mod(mod) is not None]
-
-    # Mappa per lo stato con le relative icone
-    status_icons = {
-        "AGGIORNATA": "🟢",  # Pallino verde
-        "COMPATIBILE": "🔵",  # Pallino blu
-        "ROTTA": "🔴",       # Pallino rosso
-        "NUOVA": "🟣",       # Pallino viola
-        "SCONOSCIUTA & OBSOLETA": "⚪️"  # Pallino bianco
-    }
 
     # Identifica le nuove mod non presenti nello stato precedente
     old_mod_names = {mod['ModName'] for mod in normalized_old}
@@ -108,6 +98,15 @@ def compare_status_only(old_state, new_state):
             )
             messages.append(new_mod_message)
 
+    # Mappa per lo stato con le relative icone
+    status_icons = {
+        "AGGIORNATA": "🟢",  # Pallino verde
+        "COMPATIBILE": "🔵",  # Pallino blu
+        "ROTTA": "🔴",       # Pallino rosso
+        "NUOVA": "🟣",       # Pallino viola
+        "SCONOSCIUTA & OBSOLETA": "⚪️"  # Pallino bianco
+    }
+
     # Confronta lo stato delle mod una per una
     for new_mod in normalized_new:
         if not all(key in new_mod and new_mod[key] for key in ['ModName', 'Author', 'Status']):
@@ -119,11 +118,10 @@ def compare_status_only(old_state, new_state):
 
             # Confronta le mod per nome e autore per essere sicuri che stiamo confrontando la stessa mod
             if new_mod['ModName'] == old_mod['ModName'] and new_mod['Author'] == old_mod['Author']:
-                # Verifica se lo stato o la data di ultima modifica sono cambiati
-                if new_mod['Status'] != old_mod['Status'] or new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
+                if new_mod['Status'] != old_mod['Status']:
                     icon = status_icons.get(new_mod['Status'], "⚪️")  # Default a pallino bianco se lo stato non è trovato
-
-                    # Notifica il cambiamento dello stato corretto
+                    
+                    # Genera messaggio solo se lo stato è cambiato
                     status_change_message = (
                         f"MOD\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
@@ -132,18 +130,19 @@ def compare_status_only(old_state, new_state):
                     )
                     messages.append(status_change_message)
 
-                # Se la mod è rimasta aggiornata ma con data diversa, invia anche quella notifica
-                if new_mod['Status'] == "AGGIORNATA" and old_mod['DataUltimaModifica'] != new_mod['DataUltimaModifica']:
-                    new_mod['Status'] = "AGGIORNATA"
+                # Gestione del caso in cui cambia solo DataUltimaModifica
+                elif new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
+                    new_mod['Status'] = "AGGIORNATA"  # Aggiorna lo stato solo per questa situazione
+                    icon = status_icons["AGGIORNATA"]  # Usa l'icona di AGGIORNATA
+
                     status_change_message = (
                         f"MOD\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
-                        f"Stato {status_icons['AGGIORNATA']} _{new_mod['Status']}_ con nuova data di modifica: {new_mod['DataUltimaModifica']}\n"
+                        f"Stato {icon} _{new_mod['Status']}_\n"
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
                     messages.append(status_change_message)
 
-    print(f"Messaggi generati: {len(messages)}")  # Debug: conteggio messaggi
     return messages
 
 # Funzione per inviare un messaggio su Telegram
@@ -179,10 +178,7 @@ async def monitor_mods():
 
             # Invio dei messaggi Telegram
             for message in messages:
-                try:
-                    send_telegram_message(message, group_id, topic_id)
-                except Exception as e:
-                    print(f"Errore durante l'invio del messaggio: {e}")
+                send_telegram_message(message, group_id, topic_id)
 
             # Dopo l'invio dei messaggi, aggiorna lo stato su GitHub
             save_current_state(new_state)
@@ -196,4 +192,3 @@ if __name__ == "__main__":
         asyncio.run(monitor_mods())
     except Exception as e:
         print(f"Errore nell'esecuzione del programma: {e}")
-
