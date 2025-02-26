@@ -118,13 +118,22 @@ def compare_status_only(old_state, new_state):
 
             # Confronta le mod per nome e autore per essere sicuri che stiamo confrontando la stessa mod
             if new_mod['ModName'] == old_mod['ModName'] and new_mod['Author'] == old_mod['Author']:
-                if new_mod['Status'] != old_mod['Status'] or new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
+                if new_mod['Status'] != old_mod['Status']:
                     icon = status_icons.get(new_mod['Status'], "⚪️")  # Default a pallino bianco se lo stato non è trovato
+                    
+                    # Genera messaggio solo se lo stato è cambiato
+                    status_change_message = (
+                        f"MOD\n\n"
+                        f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
+                        f"Stato {icon} _{new_mod['Status']}_\n"
+                        f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                    )
+                    messages.append(status_change_message)
 
-                    # Forza sempre lo stato a "AGGIORNATA" se cambia solo DataUltimaModifica
-                    if new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
-                        icon = "🟢"
-                        new_mod['Status'] = "AGGIORNATA"
+                # Gestione del caso in cui cambia solo DataUltimaModifica
+                elif new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
+                    new_mod['Status'] = "AGGIORNATA"  # Aggiorna lo stato solo per questa situazione
+                    icon = status_icons["AGGIORNATA"]  # Usa l'icona di AGGIORNATA
 
                     status_change_message = (
                         f"MOD\n\n"
@@ -133,6 +142,7 @@ def compare_status_only(old_state, new_state):
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
                     messages.append(status_change_message)
+
     return messages
 
 # Funzione per inviare un messaggio su Telegram
