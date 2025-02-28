@@ -624,7 +624,7 @@ function checkModUpdates(mods) {
   localStorage.setItem("savedMods", JSON.stringify(savedMods));
   // Se ci sono mod aggiornate, mostra una notifica
   if (updatedMods.length > 0) {
-    let message = "Le seguenti mod preferite sono state aggiornate:\n" + 
+    let message = "Le seguenti mod preferite sono state modificate:\n" + 
                   updatedMods.map(mod => `${mod.ModName} - Stato: ${mod.Status} (${mod.DataUltimaModifica})`).join("\n");
     alert(message); // Puoi sostituirlo con una notifica più elegante
   }
