@@ -148,7 +148,7 @@
     "Status": "aggiornata",
     "SiteLink": "https://adeepindigomods.itch.io/golden-years-elder-pack",
     "DataUltimaModifica": "01/03/2025",
-    "Translation": "in-lavorazione",
+    "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": " General Pie Menus - Universal Venue List o Venue Changes",
     "Descrizione": "Migliora l'esperienza di gioco per i Sim anziani, aggiungendo nuove interazioni, attività e opzioni per una vita più ricca e soddisfacente. Con questo mod, gli anziani possono godere di hobby, relazioni e momenti speciali, portando una maggiore profondità e realismo alla loro fase della vita."
@@ -882,9 +882,9 @@
   {
     "Author": "KiaraSims4Mods",
     "ModName": "Lawyer (Active) Career",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/lawyer-active-career",
-    "DataUltimaModifica": "25/02/2025",
+    "DataUltimaModifica": "28/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "Dependency": "XML Injector - Universal Venue List - DLC Vita Universitaria - DLC Al Lavoro",
@@ -926,9 +926,9 @@
   {
     "Author": "KiaraSims4Mods",
     "ModName": "Video Game Developer Career",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/video-game-developer-career",
-    "DataUltimaModifica": "25/02/2025",
+    "DataUltimaModifica": "28/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "Dependency": "XML Injector",
