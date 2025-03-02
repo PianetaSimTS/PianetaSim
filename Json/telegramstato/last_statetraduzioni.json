@@ -1,30 +1,21 @@
 [
   {
     "Creator": "Adeepindigo",
+    "Title": "Education Overhaul",
+    "ReleaseVersion": "5.8",
+    "CurrentVersion": "5.7",
+    "Status": "in-lavorazione",
+    "Translator": "di vale93_games",
+    "Link": ""
+  },
+  {
+    "Creator": "Adeepindigo",
     "Title": "Babysitting Gigs",
     "ReleaseVersion": "01/03/2025",
     "CurrentVersion": "14/11/2024",
     "Status": "compatibile",
     "Translator": "di LoryNa",
     "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#babysitting-gigs"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Better Daycare",
-    "ReleaseVersion": "1.5",
-    "CurrentVersion": "1.4.5",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-better-by-117475045?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Custom Nuptials",
-    "ReleaseVersion": "2.9",
-    "CurrentVersion": "2.8",
-    "Status": "compatibile",
-    "Translator": "di _Niky_sims_05",
-    "Link": "https://www.tumblr.com/nikysims05?source=share"
   },
   {
     "Creator": "Adeepindigo",
@@ -37,30 +28,30 @@
   },
   {
     "Creator": "Adeepindigo",
+    "Title": "Tattoo Parlor",
+    "ReleaseVersion": "01/03/2025",
+    "CurrentVersion": "14/11/2024",
+    "Status": "da-aggiornare",
+    "Translator": "di LoryNa",
+    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#rabbithole-activity"
+  },
+  {
+    "Creator": "Adeepindigo",
+    "Title": "Writing and Writer Career Overhaul",
+    "ReleaseVersion": "01/03/2025",
+    "CurrentVersion": "14/11/2024",
+    "Status": "compatibile",
+    "Translator": "di LoryNa",
+    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#scrittore"
+  },
+  {
+    "Creator": "Adeepindigo",
     "Title": "Delinquent Teens",
     "ReleaseVersion": "01/03/2025",
     "CurrentVersion": "18/02/2025",
     "Status": "compatibile",
     "Translator": "di LoryNa",
     "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#traddelinquent-teens"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Dental Care",
-    "ReleaseVersion": "7.4",
-    "CurrentVersion": "7.3",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-dental-by-119532050?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Divergent Sims",
-    "ReleaseVersion": "01/02/2025",
-    "CurrentVersion": "29/10/2024",
-    "Status": "compatibile",
-    "Translator": "di LeooEthan",
-    "Link": "https://www.patreon.com/posts/divergent-sims-114938164?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
   },
   {
     "Creator": "Adeepindigo",
@@ -73,12 +64,21 @@
   },
   {
     "Creator": "Adeepindigo",
-    "Title": "Education Overhaul",
-    "ReleaseVersion": "5.8",
-    "CurrentVersion": "5.7",
-    "Status": "in-lavorazione",
-    "Translator": "di vale93_games",
-    "Link": ""
+    "Title": "Healthcare Redux",
+    "ReleaseVersion": "9.7.9",
+    "CurrentVersion": "9.7.9",
+    "Status": "compatibile",
+    "Translator": "di LoryNa",
+    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#tradhealthcare"
+  },
+  {
+    "Creator": "Adeepindigo",
+    "Title": "Divergent Sims",
+    "ReleaseVersion": "01/02/2025",
+    "CurrentVersion": "29/10/2024",
+    "Status": "compatibile",
+    "Translator": "di LeooEthan",
+    "Link": "https://www.patreon.com/posts/divergent-sims-114938164?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
   },
   {
     "Creator": "Adeepindigo",
@@ -100,30 +100,12 @@
   },
   {
     "Creator": "Adeepindigo",
-    "Title": "Functional Janitor Closet",
-    "ReleaseVersion": "29/07/2024",
-    "CurrentVersion": "31/07/2024",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-janitors-118634971?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Adeepindigo",
     "Title": "Golden Years Elder Pack",
     "ReleaseVersion": "01/03/2025",
     "CurrentVersion": "04/01/2025",
     "Status": "compatibile",
     "Translator": "di LeooEthan",
     "Link": "https://www.patreon.com/posts/golden-years-121284326?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Healthcare Redux",
-    "ReleaseVersion": "9.7.9",
-    "CurrentVersion": "9.7.9",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#tradhealthcare"
   },
   {
     "Creator": "Adeepindigo",
@@ -136,6 +118,33 @@
   },
   {
     "Creator": "Adeepindigo",
+    "Title": "Better Daycare",
+    "ReleaseVersion": "1.5",
+    "CurrentVersion": "1.4.5",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-better-by-117475045?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Adeepindigo",
+    "Title": "Dental Care",
+    "ReleaseVersion": "7.4",
+    "CurrentVersion": "7.3",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-dental-by-119532050?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Adeepindigo",
+    "Title": "Functional Janitor Closet",
+    "ReleaseVersion": "29/07/2024",
+    "CurrentVersion": "31/07/2024",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-janitors-118634971?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Adeepindigo",
     "Title": "Summer Camps",
     "ReleaseVersion": "01/03/2025",
     "CurrentVersion": "04/10/2024",
@@ -145,21 +154,12 @@
   },
   {
     "Creator": "Adeepindigo",
-    "Title": "Tattoo Parlor",
-    "ReleaseVersion": "01/03/2025",
-    "CurrentVersion": "14/11/2024",
-    "Status": "da-aggiornare",
-    "Translator": "di LoryNa",
-    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#rabbithole-activity"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Writing and Writer Career Overhaul",
-    "ReleaseVersion": "01/03/2025",
-    "CurrentVersion": "14/11/2024",
+    "Title": "Custom Nuptials",
+    "ReleaseVersion": "2.9",
+    "CurrentVersion": "2.8",
     "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#scrittore"
+    "Translator": "di _Niky_sims_05",
+    "Link": "https://www.tumblr.com/nikysims05?source=share"
   },
   {
     "Creator": "Adeepindigo/ItsKatato",
@@ -172,21 +172,21 @@
   },
   {
     "Creator": "Andirz",
-    "Title": "Better Live Shopping",
-    "ReleaseVersion": "2.1.5",
-    "CurrentVersion": "2.1.5",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-better-by-111756669?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Andirz",
     "Title": "Obscura Network (+18)",
     "ReleaseVersion": "1.0.3",
     "CurrentVersion": "1.0.3",
     "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "http://www.simfileshare.net/download/5277917/"
+  },
+  {
+    "Creator": "Andirz",
+    "Title": "Better Live Shopping",
+    "ReleaseVersion": "2.1.5",
+    "CurrentVersion": "2.1.5",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-better-by-111756669?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Andirz",
@@ -217,15 +217,6 @@
   },
   {
     "Creator": "Andirz",
-    "Title": "Sim Sim Online Store",
-    "ReleaseVersion": "4.9.4",
-    "CurrentVersion": "4./9.4",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-simsim-107757966?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Andirz",
     "Title": "Sim-Nom-Nom Food Delivery",
     "ReleaseVersion": "1.3.5",
     "CurrentVersion": "1.3.5",
@@ -235,12 +226,12 @@
   },
   {
     "Creator": "Andirz",
-    "Title": "Smart Gender Cheats",
-    "ReleaseVersion": "1.5.7",
-    "CurrentVersion": "1.5.7",
+    "Title": "Sim Sim Online Store",
+    "ReleaseVersion": "4.9.4",
+    "CurrentVersion": "4./9.4",
     "Status": "compatibile",
     "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-smart-by-119322735?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+    "Link": "https://www.patreon.com/posts/sims-4-simsim-107757966?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Andirz",
@@ -250,6 +241,15 @@
     "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-smart-by-119256664?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Andirz",
+    "Title": "Smart Gender Cheats",
+    "ReleaseVersion": "1.5.7",
+    "CurrentVersion": "1.5.7",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-smart-by-119322735?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Andirz",
@@ -280,21 +280,21 @@
   },
   {
     "Creator": "Basemental",
-    "Title": "Basemental Alcohol (+18)",
-    "ReleaseVersion": "6.8",
-    "CurrentVersion": "6.8",
-    "Status": "compatibile",
-    "Translator": "di Isy's",
-    "Link": "https://www.patreon.com/posts/mod-18-alcohol-8-67634406?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
-  },
-  {
-    "Creator": "Basemental",
     "Title": "Basemental Drugs (+18)",
     "ReleaseVersion": "7.17.174",
     "CurrentVersion": "7.17.165",
     "Status": "da-aggiornare",
     "Translator": "di Isy's",
     "Link": "https://www.patreon.com/posts/67633945"
+  },
+  {
+    "Creator": "Basemental",
+    "Title": "Basemental Alcohol (+18)",
+    "ReleaseVersion": "6.8",
+    "CurrentVersion": "6.8",
+    "Status": "compatibile",
+    "Translator": "di Isy's",
+    "Link": "https://www.patreon.com/posts/mod-18-alcohol-8-67634406?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
   },
   {
     "Creator": "Basemental",
@@ -325,12 +325,12 @@
   },
   {
     "Creator": "Danitysimmer",
-    "Title": "Fashion Designer Mod",
+    "Title": "WNBA (WSBA ) Career",
     "ReleaseVersion": "22/11/2024",
-    "CurrentVersion": "26/10/2024",
+    "CurrentVersion": "27/10/2024",
     "Status": "compatibile",
     "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/fashion-designer-114177319"
+    "Link": "https://www.patreon.com/posts/114797750?pr=true"
   },
   {
     "Creator": "Danitysimmer",
@@ -343,12 +343,12 @@
   },
   {
     "Creator": "Danitysimmer",
-    "Title": "WNBA (WSBA ) Career",
+    "Title": "Fashion Designer Mod",
     "ReleaseVersion": "22/11/2024",
-    "CurrentVersion": "27/10/2024",
+    "CurrentVersion": "26/10/2024",
     "Status": "compatibile",
     "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/114797750?pr=true"
+    "Link": "https://www.patreon.com/posts/fashion-designer-114177319"
   },
   {
     "Creator": "DQuiet",
@@ -433,15 +433,6 @@
   },
   {
     "Creator": "Khlas",
-    "Title": "Big Dick Problems (+18)",
-    "ReleaseVersion": null,
-    "CurrentVersion": null,
-    "Status": "obsoleta",
-    "Translator": null,
-    "Link": "Inclusa nella Khlas males Interactions"
-  },
-  {
-    "Creator": "Khlas",
     "Title": "Khlas Males Interactions (+18)",
     "ReleaseVersion": "1.5.2",
     "CurrentVersion": "1.5.2",
@@ -450,31 +441,49 @@
     "Link": "https://www.patreon.com/posts/kmi-khlas-males-118538655"
   },
   {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Child of the Ocean Trait",
-    "ReleaseVersion": "02/08/2024",
-    "CurrentVersion": "07/07/2024",
-    "Status": "compatibile",
-    "Translator": "di LeooEthan",
-    "Link": "https://www.patreon.com/posts/child-of-ocean-114969400"
+    "Creator": "Khlas",
+    "Title": "Big Dick Problems (+18)",
+    "ReleaseVersion": null,
+    "CurrentVersion": null,
+    "Status": "obsoleta",
+    "Translator": null,
+    "Link": "Inclusa nella Khlas males Interactions"
   },
   {
     "Creator": "KiaraSims4Mods",
-    "Title": "Firefighter Career",
-    "ReleaseVersion": "04/09/2024",
+    "Title": "Work Interactions Pie Menu",
+    "ReleaseVersion": "02/03/2024",
+    "CurrentVersion": "10/10/2024",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "http://www.simfileshare.net/download/5045529/"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Lawyer (Active) Career",
+    "ReleaseVersion": "28/02/2025",
     "CurrentVersion": "30/04/2023",
     "Status": "compatibile",
     "Translator": "di LoryNa",
-    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#vigile-del-fuoco"
+    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#avvocato"
   },
   {
     "Creator": "KiaraSims4Mods",
     "Title": "Fortune Teller Career",
-    "ReleaseVersion": "10/03/2024",
+    "ReleaseVersion": "23/02/2025",
     "CurrentVersion": "30/04/2023",
     "Status": "compatibile",
     "Translator": "di LoryNa",
     "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#chiaroveggente"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Stylist (Active) Career",
+    "ReleaseVersion": "22/02/2025",
+    "CurrentVersion": "30/04/2023",
+    "Status": "compatibile",
+    "Translator": "di LoryNa",
+    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#fashion-stylist"
   },
   {
     "Creator": "KiaraSims4Mods",
@@ -487,26 +496,8 @@
   },
   {
     "Creator": "KiaraSims4Mods",
-    "Title": "Higher Education (Active) Career",
-    "ReleaseVersion": "05/03/2024",
-    "CurrentVersion": "29/10/2024",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#prof-universitario"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Lawyer (Active) Career",
-    "ReleaseVersion": "05/03/2024",
-    "CurrentVersion": "30/04/2023",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#avvocato"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
     "Title": "Model Career",
-    "ReleaseVersion": "21/03/2024",
+    "ReleaseVersion": "20/03/2024",
     "CurrentVersion": "29/10/2024",
     "Status": "compatibile",
     "Translator": "di LoryNa",
@@ -514,8 +505,17 @@
   },
   {
     "Creator": "KiaraSims4Mods",
+    "Title": "Higher Education (Active) Career",
+    "ReleaseVersion": "21/02/2025",
+    "CurrentVersion": "29/10/2024",
+    "Status": "compatibile",
+    "Translator": "di LoryNa",
+    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#prof-universitario"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
     "Title": "Resort Owner (Active) Career",
-    "ReleaseVersion": "05/03/2024",
+    "ReleaseVersion": "22/02/2025",
     "CurrentVersion": "30/04/2023",
     "Status": "compatibile",
     "Translator": "di LoryNa",
@@ -523,17 +523,8 @@
   },
   {
     "Creator": "KiaraSims4Mods",
-    "Title": "Stylist (Active) Career",
-    "ReleaseVersion": "05/04/2024",
-    "CurrentVersion": "30/04/2023",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#fashion-stylist"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
     "Title": "Video Game Developer Career",
-    "ReleaseVersion": "25/06/2024",
+    "ReleaseVersion": "28/02/2025",
     "CurrentVersion": "27/06/2024",
     "Status": "compatibile",
     "Translator": "di LoryNa",
@@ -541,12 +532,21 @@
   },
   {
     "Creator": "KiaraSims4Mods",
-    "Title": "Work Interactions Pie Menu",
-    "ReleaseVersion": "02/03/2024",
-    "CurrentVersion": "10/10/2024",
+    "Title": "Firefighter Career",
+    "ReleaseVersion": "23/02/2025",
+    "CurrentVersion": "30/04/2023",
     "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "http://www.simfileshare.net/download/5045529/"
+    "Translator": "di LoryNa",
+    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#vigile-del-fuoco"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Child of the Ocean Trait",
+    "ReleaseVersion": "01/08/2024",
+    "CurrentVersion": "07/07/2024",
+    "Status": "compatibile",
+    "Translator": "di LeooEthan",
+    "Link": "https://www.patreon.com/posts/child-of-ocean-114969400"
   },
   {
     "Creator": "Kritical",
@@ -586,15 +586,6 @@
   },
   {
     "Creator": "Lumpinou",
-    "Title": "LGBTQIA+: Gender & Orientation Overhaul",
-    "ReleaseVersion": "2.3",
-    "CurrentVersion": "2.3",
-    "Status": "compatibile",
-    "Translator": "di LeooEthan",
-    "Link": "http://www.simfileshare.net/download/4263695/"
-  },
-  {
-    "Creator": "Lumpinou",
     "Title": "Milestone Cheats",
     "ReleaseVersion": "12/03/2024",
     "CurrentVersion": "24/04/2023",
@@ -613,33 +604,6 @@
   },
   {
     "Creator": "Lumpinou",
-    "Title": "Mood Pack Mod",
-    "ReleaseVersion": "1.674",
-    "CurrentVersion": "1.65",
-    "Status": "da-aggiornare",
-    "Translator": "di Isy's",
-    "Link": "https://www.patreon.com/posts/67726727"
-  },
-  {
-    "Creator": "Lumpinou",
-    "Title": "Rambunctious Religions",
-    "ReleaseVersion": "02/02/2025",
-    "CurrentVersion": "04/10/2024",
-    "Status": "compatibile",
-    "Translator": "di LeooEthan",
-    "Link": "http://www.simfileshare.net/download/4263370/"
-  },
-  {
-    "Creator": "Lumpinou",
-    "Title": "Road to Romance",
-    "ReleaseVersion": "02/02/2025",
-    "CurrentVersion": "23/11/2023",
-    "Status": "compatibile",
-    "Translator": "di LeooEthan",
-    "Link": "http://www.simfileshare.net/download/4303966/"
-  },
-  {
-    "Creator": "Lumpinou",
     "Title": "RPO Relationship & Pregnancy Overhaul",
     "ReleaseVersion": "2.984",
     "CurrentVersion": "2.984",
@@ -655,6 +619,51 @@
     "Status": "compatibile",
     "Translator": "di LoryNa",
     "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#tradscience-baby"
+  },
+  {
+    "Creator": "Lumpinou",
+    "Title": "Mood Pack Mod",
+    "ReleaseVersion": "11/07/2024",
+    "CurrentVersion": "02/03/2025",
+    "Status": "nuova",
+    "Translator": "di LadyPsycoTrilly",
+    "Link": "https://www.patreon.com/posts/123438415?pr=true"
+  },
+  {
+    "Creator": "Lumpinou",
+    "Title": "Mood Pack Mod",
+    "ReleaseVersion": "1.674",
+    "CurrentVersion": "1.65",
+    "Status": "da-aggiornare",
+    "Translator": "di Isy's",
+    "Link": "https://www.patreon.com/posts/67726727"
+  },
+  {
+    "Creator": "Lumpinou",
+    "Title": "LGBTQIA+: Gender & Orientation Overhaul",
+    "ReleaseVersion": "2.3",
+    "CurrentVersion": "2.3",
+    "Status": "compatibile",
+    "Translator": "di LeooEthan",
+    "Link": "https://www.patreon.com/posts/lgbtqia-italiana-121489195?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
+  },
+  {
+    "Creator": "Lumpinou",
+    "Title": "Rambunctious Religions",
+    "ReleaseVersion": "02/02/2025",
+    "CurrentVersion": "04/10/2024",
+    "Status": "compatibile",
+    "Translator": "di LeooEthan",
+    "Link": "https://www.patreon.com/posts/rambunctious-121491705?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
+  },
+  {
+    "Creator": "Lumpinou",
+    "Title": "Road to Romance",
+    "ReleaseVersion": "02/02/2025",
+    "CurrentVersion": "23/11/2023",
+    "Status": "compatibile",
+    "Translator": "di LeooEthan",
+    "Link": "https://www.patreon.com/posts/road-to-romance-121495901?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
   },
   {
     "Creator": "Maplebell",
@@ -721,24 +730,6 @@
   },
   {
     "Creator": "PandaSama",
-    "Title": "Child Birth Mod",
-    "ReleaseVersion": "1.78",
-    "CurrentVersion": "1.65",
-    "Status": "da-aggiornare",
-    "Translator": "di Isy's",
-    "Link": "https://www.patreon.com/posts/68375850"
-  },
-  {
-    "Creator": "PandaSama",
-    "Title": "Child Birth Mod",
-    "ReleaseVersion": "1.78",
-    "CurrentVersion": "1.76",
-    "Status": "compatibile",
-    "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/119285035?pr=true"
-  },
-  {
-    "Creator": "PandaSama",
     "Title": "Kids Trampoline",
     "ReleaseVersion": "28/02/2024",
     "CurrentVersion": "30/06/2023",
@@ -757,12 +748,12 @@
   },
   {
     "Creator": "PandaSama",
-    "Title": "Toddler Creativity Pack",
+    "Title": "Toddler Stuff Mod Pack",
     "ReleaseVersion": "28/02/2024",
-    "CurrentVersion": "19/03/2023",
+    "CurrentVersion": "30/06/2023",
     "Status": "compatibile",
     "Translator": "di LoryNa",
-    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#tradtoddler-creativity-pack"
+    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#toddler-stuff-mod-pack"
   },
   {
     "Creator": "PandaSama",
@@ -775,12 +766,30 @@
   },
   {
     "Creator": "PandaSama",
-    "Title": "Toddler Stuff Mod Pack",
+    "Title": "Toddler Creativity Pack",
     "ReleaseVersion": "28/02/2024",
-    "CurrentVersion": "30/06/2023",
+    "CurrentVersion": "19/03/2023",
     "Status": "compatibile",
     "Translator": "di LoryNa",
-    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#toddler-stuff-mod-pack"
+    "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#tradtoddler-creativity-pack"
+  },
+  {
+    "Creator": "PandaSama",
+    "Title": "Child Birth Mod",
+    "ReleaseVersion": "1.78",
+    "CurrentVersion": "1.76",
+    "Status": "compatibile",
+    "Translator": "di LadyPsycoTrilly",
+    "Link": "https://www.patreon.com/posts/119285035?pr=true"
+  },
+  {
+    "Creator": "PandaSama",
+    "Title": "Child Birth Mod",
+    "ReleaseVersion": "1.78",
+    "CurrentVersion": "1.65",
+    "Status": "da-aggiornare",
+    "Translator": "di Isy's",
+    "Link": "https://www.patreon.com/posts/68375850"
   },
   {
     "Creator": "Peco",
@@ -811,21 +820,21 @@
   },
   {
     "Creator": "Ravasheen",
-    "Title": "Modern Family Portrait",
-    "ReleaseVersion": "1.0.5",
-    "CurrentVersion": "1.0.5",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-modern-99995154?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Ravasheen",
     "Title": "Photographic Memory 2.0",
     "ReleaseVersion": "2.1.3",
     "CurrentVersion": "2.1.3",
     "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-memory-99798565?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Ravasheen",
+    "Title": "Modern Family Portrait",
+    "ReleaseVersion": "1.0.5",
+    "CurrentVersion": "1.0.5",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-modern-99995154?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Ravasheen",
@@ -844,33 +853,6 @@
     "Status": "compatibile",
     "Translator": "di LoryNa",
     "Link": "https://loryy2818.wixsite.com/lory-na-traduzioni/traduzioni#tradextreme-v"
-  },
-  {
-    "Creator": "Sacrificial",
-    "Title": "Hoe It Up (+18)",
-    "ReleaseVersion": "22/10/2024",
-    "CurrentVersion": "01/10/2024",
-    "Status": "compatibile",
-    "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/hoe-it-up-di-114185876"
-  },
-  {
-    "Creator": "Sacrificial",
-    "Title": "Life Tragedies (+18)",
-    "ReleaseVersion": "1.3.6",
-    "CurrentVersion": "1.3.1",
-    "Status": "compatibile",
-    "Translator": "di _Niky_sims_05",
-    "Link": "https://www.simfileshare.net/download/4602795/"
-  },
-  {
-    "Creator": "Sacrificial",
-    "Title": "Life's Drama",
-    "ReleaseVersion": "2.1.4",
-    "CurrentVersion": "2.1.2",
-    "Status": "compatibile",
-    "Translator": "di _Niky_sims_05",
-    "Link": "https://www.simfileshare.net/download/4592175/"
   },
   {
     "Creator": "Sacrificial",
@@ -925,6 +907,33 @@
     "Status": "compatibile",
     "Translator": "di SimTecnologic",
     "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+  },
+  {
+    "Creator": "Sacrificial",
+    "Title": "Hoe It Up (+18)",
+    "ReleaseVersion": "22/10/2024",
+    "CurrentVersion": "01/10/2024",
+    "Status": "compatibile",
+    "Translator": "di LadyPsycoTrilly",
+    "Link": "https://www.patreon.com/posts/hoe-it-up-di-114185876"
+  },
+  {
+    "Creator": "Sacrificial",
+    "Title": "Life's Drama",
+    "ReleaseVersion": "2.1.4",
+    "CurrentVersion": "2.1.2",
+    "Status": "compatibile",
+    "Translator": "di _Niky_sims_05",
+    "Link": "https://www.simfileshare.net/download/4592175/"
+  },
+  {
+    "Creator": "Sacrificial",
+    "Title": "Life Tragedies (+18)",
+    "ReleaseVersion": "1.3.6",
+    "CurrentVersion": "1.3.1",
+    "Status": "compatibile",
+    "Translator": "di _Niky_sims_05",
+    "Link": "https://www.simfileshare.net/download/4602795/"
   },
   {
     "Creator": "SimsAlchemist",
@@ -992,16 +1001,7 @@
   {
     "Creator": "TurboDriver",
     "Title": "WickedWhims (+18) - Patreon",
-    "ReleaseVersion": "186",
-    "CurrentVersion": "183",
-    "Status": "da-aggiornare",
-    "Translator": "di Isy's",
-    "Link": "https://www.patreon.com/posts/67607656"
-  },
-  {
-    "Creator": "TurboDriver",
-    "Title": "WickedWhims (+18) - Patreon",
-    "ReleaseVersion": "186",
+    "ReleaseVersion": "186.1",
     "CurrentVersion": "186",
     "Status": "aggiornata",
     "Translator": "di LadyPsycoTrilly",
@@ -1010,8 +1010,17 @@
   {
     "Creator": "TurboDriver",
     "Title": "WickedWhims (+18) - Pubblica",
-    "ReleaseVersion": "184a",
-    "CurrentVersion": "181d",
+    "ReleaseVersion": "184b",
+    "CurrentVersion": "184a",
+    "Status": "aggiornata",
+    "Translator": "di LadyPsycoTrilly",
+    "Link": "https://www.patreon.com/posts/123210058?pr=true"
+  },
+  {
+    "Creator": "TurboDriver",
+    "Title": "WickedWhims (+18) - Patreon",
+    "ReleaseVersion": "186.1",
+    "CurrentVersion": "183",
     "Status": "da-aggiornare",
     "Translator": "di Isy's",
     "Link": "https://www.patreon.com/posts/67607656"
@@ -1019,11 +1028,11 @@
   {
     "Creator": "TurboDriver",
     "Title": "WickedWhims (+18) - Pubblica",
-    "ReleaseVersion": "184a",
-    "CurrentVersion": "184a",
-    "Status": "aggiornata",
-    "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/123210058?pr=true"
+    "ReleaseVersion": "184b",
+    "CurrentVersion": "181d",
+    "Status": "da-aggiornare",
+    "Translator": "di Isy's",
+    "Link": "https://www.patreon.com/posts/67607656"
   },
   {
     "Creator": "TurboDriver",
