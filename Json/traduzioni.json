@@ -720,6 +720,15 @@
     "Link": "https://www.patreon.com/posts/115028441?pr=true"
   },
   {
+    "Creator": "Pandasama",
+    "Title": "Child Birth Mod",
+    "ReleaseVersion": "1.78",
+    "CurrentVersion": "1.78",
+    "Status": "nuova",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-childbirth-mod-di-pandasama"
+  },
+  {
     "Creator": "PandaSama",
     "Title": "Kids Trampoline",
     "ReleaseVersion": "28/02/2024",
@@ -763,24 +772,6 @@
     "Status": "compatibile",
     "Translator": "di LoryNa",
     "Link": "https://www.curseforge.com/sims4/mods/trad-ita-toddler-creativity-pack-di-pandasama"
-  },
-  {
-    "Creator": "PandaSama",
-    "Title": "Child Birth Mod",
-    "ReleaseVersion": "1.78",
-    "CurrentVersion": "1.76",
-    "Status": "compatibile",
-    "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/119285035?pr=true"
-  },
-  {
-    "Creator": "PandaSama",
-    "Title": "Child Birth Mod",
-    "ReleaseVersion": "1.78",
-    "CurrentVersion": "1.65",
-    "Status": "da-aggiornare",
-    "Translator": "di Isy's",
-    "Link": "https://www.patreon.com/posts/68375850"
   },
   {
     "Creator": "Peco",
@@ -1051,14 +1042,5 @@
     "Status": "compatibile",
     "Translator": "di LeooEthan",
     "Link": "https://www.patreon.com/posts/random-sex-118541745"
-  },
-  {
-    "Creator": "Pandasama",
-    "Title": "Child Birth Mod",
-    "ReleaseVersion": "1.78",
-    "CurrentVersion": "1.78",
-    "Status": "nuova",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-childbirth-mod-di-pandasama"
   }
 ]
