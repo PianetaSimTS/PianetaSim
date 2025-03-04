@@ -1629,6 +1629,17 @@
   },
   {
     "Author": "SonozakiSisters",
+    "ModName": "Choose High School Classmates 2.0",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/choose-high-2-0-121367985",
+    "DataUltimaModifica": "25/02/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Utilità",
+    "Dependency": "Core Library - DLC Vita da liceali",
+    "Descrizione": "Scegli i compagni di classe del liceo"
+  },
+  {
+    "Author": "SonozakiSisters",
     "ModName": "Slower Healthcare Redux",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/slower-redux-110414552",
