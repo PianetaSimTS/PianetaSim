@@ -290,7 +290,7 @@
     "ModName": "Better Pie Menu",
     "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/better-pie-menu",
-    "DataUltimaModifica": "25/02/2025",
+    "DataUltimaModifica": "06/03/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "Dependency": "Core Library",
@@ -321,9 +321,9 @@
   {
     "Author": "Andirz",
     "ModName": "Custom Electives (Core)",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/custom-university-electives",
-    "DataUltimaModifica": "25/02/2025",
+    "DataUltimaModifica": "06/03/2025",
     "Translation": "in-lavorazione",
     "Categoria": "Gameplay",
     "Dependency": "DLC Vita Universitaria",
@@ -394,6 +394,39 @@
     "Categoria": "Tratti",
     "Dependency": "Core Library - DLC Serata Cinema",
     "Descrizione": "Permette ai Sim di scegliere e avere un genere cinematografico preferito, influenzando le loro emozioni e reazioni quando guardano film. Aggiunge un tocco di realismo, rendendo i gusti dei Sim più personalizzati."
+  },
+  {
+    "Author": "Andirz",
+    "ModName": "Laundry Interactions",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/laundry-interactions",
+    "DataUltimaModifica": "25/02/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "Dependency": "Core Library - DLC Giorno di Bucato",
+    "Descrizione": "Aggiunge varie interazioni e trucchi alla pila del bucato, alla pila piegata, alla cesta del bucato, alla lavatrice e all'asciugatrice."
+  },
+  {
+    "Author": "Andirz",
+    "ModName": "Laundry Lot Trait",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/laundry-lot-trait",
+    "DataUltimaModifica": "25/02/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "Dependency": "Core Library - DLC Giorno di Bucato",
+    "Descrizione": "Il nuovo tratto del lotto Lavanderia a Pagamento Self-Service fa sì che tutte le lavatrici e le asciugatrici del lotto richiedano il pagamento! I tuoi Sims non potranno usarle finché non lanciano una moneta. Ora possono recarsi attivamente in una lavanderia a gettoni e lavare i propri vestiti di persona! Puoi abilitare questa caratteristica del lotto su lotti in affitto, lotti universitari o lotti della tua attività e utilizzarla. Anche il proprietario del lotto può riscuotere i guadagni! Trasforma il tuo lotto di proprietà  in una lavanderia a gettoni redditizia."
+  },
+  {
+    "Author": "Andirz",
+    "ModName": "Laundry Service ",
+    "Status": "compatibile",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/laundry-service",
+    "DataUltimaModifica": "25/02/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "Dependency": "Core Library - DLC Giorno di Bucato",
+    "Descrizione": "Troppo impegnato per fare il bucato? Lavare e asciugare richiedono troppo tempo? O forse vivi in ​​un piccolo appartamento senza spazio per lavatrice e asciugatrice? Questa mod introduce nuove interazioni per cesti della biancheria, pile di biancheria e pile piegate, consentendo ai tuoi Sims di inviare la biancheria sporca a una lavanderia a gettoni a pagamento. Una volta trascorso il tempo di pulizia, i vestiti torneranno nell'inventario del tuo Sim."
   },
   {
     "Author": "Andirz",
@@ -595,6 +628,28 @@
   },
   {
     "Author": "Andirz",
+    "ModName": "Take It Off: No Shoes! No Accessories!",
+    "Status": "compatibile",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/no-shoes-no-accessories",
+    "DataUltimaModifica": "06/03/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Utilità",
+    "Dependency": "Core Library",
+    "Descrizione": "Questa mod rimuove le scarpe, i calzini, gli occhiali e i copricapi dei tuoi Sims quando si addormentano nel letto o nel sacco a pelo, altrimenti sembra un po' strano."
+  },
+  {
+    "Author": "Andirz",
+    "ModName": "The Bill Master",
+    "Status": "compatibile",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/bill-master",
+    "DataUltimaModifica": "06/03/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Carriere",
+    "Dependency": "",
+    "Descrizione": "Non hai soldi per pagare le bollette o semplicemente non vuoi pagare le bollette? Questa è la mod che potrebbe aiutarti! Sono disponibili tre nuove interazioni per la \"gestirle\"."
+  },
+  {
+    "Author": "Andirz",
     "ModName": "University Skill Class Tweaks",
     "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/university-skill-class-tweaks",
@@ -614,6 +669,17 @@
     "Categoria": "Tratti",
     "Dependency": "",
     "Descrizione": "Rende visibile la mano dominante dei Sim durante le interazioni quotidiane, come scrivere, cucinare o usare il computer. Aggiunge un tocco di realismo e personalizzazione, rendendo ogni Sim più unico nella sua gestualità."
+  },
+  {
+    "Author": "Andirz",
+    "ModName": "Write Skill Book",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/write-skill-book",
+    "DataUltimaModifica": "06/03/2025",
+    "Translation": "inclusa",
+    "Categoria": "Carriere",
+    "Dependency": "Core Library",
+    "Descrizione": "Ti stai chiedendo anche perché il tuo Sim non riesce ancora a scrivere manuali (libri delle abilità) nonostante abbia tutte le abilità al livello massimo? Davvero? Sì, la descrizione dice: I Sim Professorali possono scrivere manuali utili su qualsiasi abilità in cui sono esperti."
   },
   {
     "Author": "Andrew",
@@ -1806,7 +1872,7 @@
   {
     "Author": "TwistedMexi",
     "ModName": "TOOL",
-    "Status": "sconosciuta",
+    "Status": "rotta",
     "SiteLink": "https://www.patreon.com/posts/122062193?utm_campaign=postshare_fan",
     "DataUltimaModifica": null,
     "Translation": "inclusa",
