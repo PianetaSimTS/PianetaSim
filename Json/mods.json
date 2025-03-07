@@ -792,6 +792,17 @@
     "Descrizione": "Gioca nei panni di qualsiasi sim: Passa senza problemi il controllo tra i tuoi sim domestici attivi e qualsiasi altro sim nel mondo di gioco.\nQuesta mod per The Sims 4 ti consente di controllare i Sims e gli animali domestici di altre unità familiari, migliorando la flessibilità e la creatività nel tuo gameplay."
   },
   {
+    "Author": "Ellesimsworld",
+    "ModName": "Plumjob",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.patreon.com/posts/download-plumjob-122583054",
+    "DataUltimaModifica": "07/03/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "Dependency": "Mod: Xml Injector\nDLC: Vita Universitaria\nDLC: Al Lavoro\nDLC: Vita da Liceali\n",
+    "Descrizione": "Sono finiti i giorni in cui i tuoi Sims potevano semplicemente andare al pannello della carriera e selezionare un lavoro. Con questa mod, il tuo sim dovrà superare un colloquio e avere la laurea richiesta."
+  },
+  {
     "Author": "Frankk",
     "ModName": "Language Barriers",
     "Status": "sconosciuta",
@@ -1934,16 +1945,5 @@
     "Categoria": "Utilità",
     "Dependency": "ATTENZIONE va usata una sola venue list",
     "Descrizione": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!"
-  },
-  {
-    "Author": "Ellesimsworld",
-    "ModName": "Plumjob",
-    "Status": "aggiornata",
-    "SiteLink": "https://www.patreon.com/posts/download-plumjob-122583054",
-    "DataUltimaModifica": "07/03/2025",
-    "Translation": "da-scaricare",
-    "Categoria": "Gameplay",
-    "Dependency": "Mod: Xml Injector\nDLC: Vita Universitaria\nDLC: Al Lavoro\nDLC: Vita da Liceali\n",
-    "Descrizione": "Sono finiti i giorni in cui i tuoi Sims potevano semplicemente andare al pannello della carriera e selezionare un lavoro. Con questa mod, il tuo sim dovrà superare un colloquio e avere la laurea richiesta."
   }
 ]
