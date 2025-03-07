@@ -12,6 +12,28 @@
   },
   {
     "Author": "Andirz",
+    "ModName": "Deadly Poisons (+18)",
+    "Status": "compatibile",
+    "SiteLink": "https://www.nexusmods.com/thesims4/mods/2839",
+    "DataUltimaModifica": "25/02/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "Dependency": "XML Injector - DLC Al Lavoro & Avventura nella Giungla",
+    "Descrizione": "Questa mod aggiunge nuovi veleni e antidoti al gioco. Tutti i veleni non solo possono essere bevuti dalla bottiglia per suicidarsi, ma possono anche essere aggiunti a tutti i drink del bar per avvelenare altri Sim! Per avvelenare un drink, il tuo Sim deve avere una bottiglia di veleno nel suo inventario!"
+  },
+  {
+    "Author": "Andirz",
+    "ModName": "Death Roulette Challenge (+18)",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.nexusmods.com/thesims4/mods/2835?tab=description",
+    "DataUltimaModifica": "06/03/2025",
+    "Translation": "inclusa",
+    "Categoria": "Gameplay",
+    "Dependency": "Smart Shared Core",
+    "Descrizione": "Questa semplice mod della roulette della morte consente morti rapide e casuali dei Sim, ideali per sfide basate su scenari come la guerra o la peste. I Sim affrontano probabilità di sopravvivenza con i sopravvissuti che ottengono un buff di sopravvivenza. Dopo questa interazione, il tuo Sim morirà all'istante se questo è il suo destino, o sopravviverà alla sfida e otterrà un buff di sopravvivenza fortunato. Il destino e il caso decidono tutto."
+  },
+  {
+    "Author": "Andirz",
     "ModName": "Obscura Network (+18)",
     "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/obscura-network",
