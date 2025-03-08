@@ -1,15 +1,6 @@
 [
   {
     "Creator": "Adeepindigo",
-    "Title": "Education Overhaul",
-    "ReleaseVersion": "5.8",
-    "CurrentVersion": "5.7",
-    "Status": "in-lavorazione",
-    "Translator": "di vale93_games",
-    "Link": ""
-  },
-  {
-    "Creator": "Adeepindigo",
     "Title": "Babysitting Gigs",
     "ReleaseVersion": "01/03/2025",
     "CurrentVersion": "14/11/2024",
@@ -19,39 +10,21 @@
   },
   {
     "Creator": "Adeepindigo",
-    "Title": "Writing and Writer Career Overhaul",
-    "ReleaseVersion": "01/03/2025",
-    "CurrentVersion": "14/11/2024",
+    "Title": "Better Daycare",
+    "ReleaseVersion": "1.5",
+    "CurrentVersion": "1.4.5",
     "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-di-scrittore-di-adeepindigo"
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-better-by-117475045?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Adeepindigo",
-    "Title": "Delinquent Teens",
-    "ReleaseVersion": "01/03/2025",
-    "CurrentVersion": "18/02/2025",
+    "Title": "Custom Nuptials",
+    "ReleaseVersion": "2.9",
+    "CurrentVersion": "2.8",
     "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-delinquent-teens-di-adeepindigo"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Dynamic Teen Life",
-    "ReleaseVersion": "01/03/2025",
-    "CurrentVersion": "14/11/2024",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-dynamic-teen-life-di-adeepindigo"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Healthcare Redux",
-    "ReleaseVersion": "9.7.9",
-    "CurrentVersion": "9.7.9",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-healthcare-redux-di-adeepindigo"
+    "Translator": "di _Niky_sims_05",
+    "Link": "https://www.tumblr.com/nikysims05?source=share"
   },
   {
     "Creator": "Adeepindigo",
@@ -64,12 +37,21 @@
   },
   {
     "Creator": "Adeepindigo",
-    "Title": "Tattoo Parlor",
+    "Title": "Delinquent Teens",
     "ReleaseVersion": "01/03/2025",
-    "CurrentVersion": "14/11/2024",
-    "Status": "da-aggiornare",
+    "CurrentVersion": "18/02/2025",
+    "Status": "compatibile",
     "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-rabbithole-activity-di-adeepindigo"
+    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-delinquent-teens-di-adeepindigo"
+  },
+  {
+    "Creator": "Adeepindigo",
+    "Title": "Dental Care",
+    "ReleaseVersion": "7.4",
+    "CurrentVersion": "7.3",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-dental-by-119532050?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Adeepindigo",
@@ -79,6 +61,24 @@
     "Status": "compatibile",
     "Translator": "di LeooEthan",
     "Link": "https://www.patreon.com/posts/divergent-sims-114938164?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
+  },
+  {
+    "Creator": "Adeepindigo",
+    "Title": "Dynamic Teen Life",
+    "ReleaseVersion": "01/03/2025",
+    "CurrentVersion": "14/11/2024",
+    "Status": "compatibile",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-dynamic-teen-life-di-adeepindigo"
+  },
+  {
+    "Creator": "Adeepindigo",
+    "Title": "Education Overhaul",
+    "ReleaseVersion": "5.8",
+    "CurrentVersion": "5.7",
+    "Status": "in-lavorazione",
+    "Translator": "di vale93_games",
+    "Link": ""
   },
   {
     "Creator": "Adeepindigo",
@@ -100,12 +100,30 @@
   },
   {
     "Creator": "Adeepindigo",
+    "Title": "Functional Janitor Closet",
+    "ReleaseVersion": "29/07/2024",
+    "CurrentVersion": "31/07/2024",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-janitors-118634971?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Adeepindigo",
     "Title": "Golden Years Elder Pack",
     "ReleaseVersion": "01/03/2025",
     "CurrentVersion": "04/01/2025",
     "Status": "compatibile",
     "Translator": "di LeooEthan",
     "Link": "https://www.patreon.com/posts/golden-years-121284326?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
+  },
+  {
+    "Creator": "Adeepindigo",
+    "Title": "Healthcare Redux",
+    "ReleaseVersion": "9.7.9",
+    "CurrentVersion": "9.7.9",
+    "Status": "compatibile",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-healthcare-redux-di-adeepindigo"
   },
   {
     "Creator": "Adeepindigo",
@@ -118,33 +136,6 @@
   },
   {
     "Creator": "Adeepindigo",
-    "Title": "Better Daycare",
-    "ReleaseVersion": "1.5",
-    "CurrentVersion": "1.4.5",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-better-by-117475045?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Dental Care",
-    "ReleaseVersion": "7.4",
-    "CurrentVersion": "7.3",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-dental-by-119532050?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Functional Janitor Closet",
-    "ReleaseVersion": "29/07/2024",
-    "CurrentVersion": "31/07/2024",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-janitors-118634971?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Adeepindigo",
     "Title": "Summer Camps",
     "ReleaseVersion": "01/03/2025",
     "CurrentVersion": "04/10/2024",
@@ -154,12 +145,21 @@
   },
   {
     "Creator": "Adeepindigo",
-    "Title": "Custom Nuptials",
-    "ReleaseVersion": "2.9",
-    "CurrentVersion": "2.8",
+    "Title": "Tattoo Parlor",
+    "ReleaseVersion": "01/03/2025",
+    "CurrentVersion": "14/11/2024",
+    "Status": "da-aggiornare",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-rabbithole-activity-di-adeepindigo"
+  },
+  {
+    "Creator": "Adeepindigo",
+    "Title": "Writing and Writer Career Overhaul",
+    "ReleaseVersion": "01/03/2025",
+    "CurrentVersion": "14/11/2024",
     "Status": "compatibile",
-    "Translator": "di _Niky_sims_05",
-    "Link": "https://www.tumblr.com/nikysims05?source=share"
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-di-scrittore-di-adeepindigo"
   },
   {
     "Creator": "Adeepindigo/ItsKatato",
@@ -181,21 +181,21 @@
   },
   {
     "Creator": "Andirz",
-    "Title": "Obscura Network (+18)",
-    "ReleaseVersion": "1.0.2",
-    "CurrentVersion": "1.0.2",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "http://www.simfileshare.net/download/5277917/"
-  },
-  {
-    "Creator": "Andirz",
     "Title": "Auto Service Career ",
     "ReleaseVersion": "2.2.2",
     "CurrentVersion": "2.2.2",
     "Status": "nuova",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/nuove-traduzioni-123749755?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Andirz",
+    "Title": "Better Live Shopping",
+    "ReleaseVersion": "2.1.5",
+    "CurrentVersion": "2.1.5",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-better-by-111756669?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Andirz",
@@ -244,39 +244,12 @@
   },
   {
     "Creator": "Andirz",
-    "Title": "Take It Off: No Shoes! No Accessories!",
-    "ReleaseVersion": "4.2.2",
-    "CurrentVersion": "4.2.2",
-    "Status": "nuova",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/nuove-traduzioni-123749755?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Andirz",
-    "Title": "The Bill Master",
-    "ReleaseVersion": "2.2.3",
-    "CurrentVersion": "2.2.3",
-    "Status": "nuova",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/nuove-traduzioni-123749755?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Andirz",
-    "Title": "Write Skill Book",
-    "ReleaseVersion": "1.1.0",
-    "CurrentVersion": "1.1.0",
-    "Status": "nuova",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/nuove-traduzioni-123749755?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Andirz",
-    "Title": "Better Live Shopping",
-    "ReleaseVersion": "2.1.5",
-    "CurrentVersion": "2.1.5",
+    "Title": "Obscura Network (+18)",
+    "ReleaseVersion": "1.0.2",
+    "CurrentVersion": "1.0.2",
     "Status": "compatibile",
     "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-better-by-111756669?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+    "Link": "http://www.simfileshare.net/download/5277917/"
   },
   {
     "Creator": "Andirz",
@@ -307,15 +280,6 @@
   },
   {
     "Creator": "Andirz",
-    "Title": "Sim-Nom-Nom Food Delivery",
-    "ReleaseVersion": "1.3.5",
-    "CurrentVersion": "1.3.5",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-sim-nom-111376987?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
-  },
-  {
-    "Creator": "Andirz",
     "Title": "Sim Sim Online Store",
     "ReleaseVersion": "4.9.4",
     "CurrentVersion": "4./9.4",
@@ -325,12 +289,12 @@
   },
   {
     "Creator": "Andirz",
-    "Title": "Smart Shared Core",
-    "ReleaseVersion": "1.15.0",
-    "CurrentVersion": "1.15.0",
+    "Title": "Sim-Nom-Nom Food Delivery",
+    "ReleaseVersion": "1.3.5",
+    "CurrentVersion": "1.3.5",
     "Status": "compatibile",
     "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-smart-by-119256664?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+    "Link": "https://www.patreon.com/posts/sims-4-sim-nom-111376987?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
   },
   {
     "Creator": "Andirz",
@@ -340,6 +304,15 @@
     "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-smart-by-119322735?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Andirz",
+    "Title": "Smart Shared Core",
+    "ReleaseVersion": "1.15.0",
+    "CurrentVersion": "1.15.0",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-smart-by-119256664?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Andirz",
@@ -360,6 +333,33 @@
     "Link": "https://www.patreon.com/posts/sims-4-smart-sim-119326704?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
+    "Creator": "Andirz",
+    "Title": "Take It Off: No Shoes! No Accessories!",
+    "ReleaseVersion": "4.2.2",
+    "CurrentVersion": "4.2.2",
+    "Status": "nuova",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/nuove-traduzioni-123749755?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Andirz",
+    "Title": "The Bill Master",
+    "ReleaseVersion": "2.2.3",
+    "CurrentVersion": "2.2.3",
+    "Status": "nuova",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/nuove-traduzioni-123749755?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Andirz",
+    "Title": "Write Skill Book",
+    "ReleaseVersion": "1.1.0",
+    "CurrentVersion": "1.1.0",
+    "Status": "nuova",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/nuove-traduzioni-123749755?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
     "Creator": "Andrew",
     "Title": "Pose Player",
     "ReleaseVersion": "10",
@@ -367,15 +367,6 @@
     "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-pose-by-117323994?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Basemental",
-    "Title": "Basemental Drugs (+18)",
-    "ReleaseVersion": "7.17.174",
-    "CurrentVersion": "7.17.165",
-    "Status": "da-aggiornare",
-    "Translator": "di Isy's",
-    "Link": "https://www.patreon.com/posts/67633945"
   },
   {
     "Creator": "Basemental",
@@ -388,21 +379,21 @@
   },
   {
     "Creator": "Basemental",
+    "Title": "Basemental Drugs (+18)",
+    "ReleaseVersion": "7.17.174",
+    "CurrentVersion": "7.17.165",
+    "Status": "da-aggiornare",
+    "Translator": "di Isy's",
+    "Link": "https://www.patreon.com/posts/67633945"
+  },
+  {
+    "Creator": "Basemental",
     "Title": "Basemental Gangs (+18)",
     "ReleaseVersion": "6.20.61",
     "CurrentVersion": "6.18.56",
     "Status": "da-aggiornare",
     "Translator": "di Isy's",
     "Link": "https://www.patreon.com/posts/mod-18-gangs-v6-67636228?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
-  },
-  {
-    "Creator": "Carl's Guides",
-    "Title": "Sim Spawner & Filter Tool",
-    "ReleaseVersion": "1.05",
-    "CurrentVersion": "1.05",
-    "Status": "compatibile",
-    "Translator": "di SimTecnologic",
-    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
   },
   {
     "Creator": "Carl's Guides",
@@ -414,13 +405,22 @@
     "Link": "https://www.curseforge.com/sims4/mods/trad-ita-dine-out-reloaded-di-carls-guide"
   },
   {
+    "Creator": "Carl's Guides",
+    "Title": "Sim Spawner & Filter Tool",
+    "ReleaseVersion": "1.05",
+    "CurrentVersion": "1.05",
+    "Status": "compatibile",
+    "Translator": "di SimTecnologic",
+    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+  },
+  {
     "Creator": "Danitysimmer",
-    "Title": "WNBA (WSBA ) Career",
+    "Title": "Fashion Designer Mod",
     "ReleaseVersion": "22/11/2024",
-    "CurrentVersion": "27/10/2024",
+    "CurrentVersion": "26/10/2024",
     "Status": "compatibile",
     "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/114797750?pr=true"
+    "Link": "https://www.patreon.com/posts/fashion-designer-114177319"
   },
   {
     "Creator": "Danitysimmer",
@@ -433,12 +433,12 @@
   },
   {
     "Creator": "Danitysimmer",
-    "Title": "Fashion Designer Mod",
+    "Title": "WNBA (WSBA ) Career",
     "ReleaseVersion": "22/11/2024",
-    "CurrentVersion": "26/10/2024",
+    "CurrentVersion": "27/10/2024",
     "Status": "compatibile",
     "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/fashion-designer-114177319"
+    "Link": "https://www.patreon.com/posts/114797750?pr=true"
   },
   {
     "Creator": "DQuiet",
@@ -532,93 +532,93 @@
   },
   {
     "Creator": "KiaraSims4Mods",
+    "Title": "Firefighter Career",
+    "ReleaseVersion": "24/02/2025",
+    "CurrentVersion": "04/03/2025",
+    "Status": "aggiornata",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-vigile-del-fuoco-di"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Fortune Teller Career",
+    "ReleaseVersion": "24/02/2025",
+    "CurrentVersion": "04/03/2025",
+    "Status": "aggiornata",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-chiaroveggente-di"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Geologist Career",
+    "ReleaseVersion": "07/03/2025",
+    "CurrentVersion": "04/03/2025",
+    "Status": "aggiornata",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-geologo-a-di-kiarasims4mods"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Higher Education (Active) Career",
+    "ReleaseVersion": "22/02/2025",
+    "CurrentVersion": "04/03/2025",
+    "Status": "aggiornata",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-prof-universitario-di"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Lawyer (Active) Career",
+    "ReleaseVersion": "28/02/2025",
+    "CurrentVersion": "04/03/2025",
+    "Status": "aggiornata",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-avvocato-di-kiarasims4mods"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Model Career",
+    "ReleaseVersion": "08/03/2025",
+    "CurrentVersion": "04/03/2025",
+    "Status": "aggiornata",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-modello-a-di-kiarasims4mods"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Resort Owner (Active) Career",
+    "ReleaseVersion": "23/02/2025",
+    "CurrentVersion": "04/03/2025",
+    "Status": "aggiornata",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-proprietario-a-di-resort-di"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Stylist (Active) Career",
+    "ReleaseVersion": "23/02/2025",
+    "CurrentVersion": "04/03/2025",
+    "Status": "aggiornata",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-stylist-di-kiarasims4mods"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
+    "Title": "Video Game Developer Career",
+    "ReleaseVersion": "01/03/2025",
+    "CurrentVersion": "04/03/2025",
+    "Status": "aggiornata",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-sviluppatore-di-videogiochi"
+  },
+  {
+    "Creator": "KiaraSims4Mods",
     "Title": "Work Interactions Pie Menu",
     "ReleaseVersion": "02/03/2024",
     "CurrentVersion": "10/10/2024",
     "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "http://www.simfileshare.net/download/5045529/"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Lawyer (Active) Career",
-    "ReleaseVersion": "28/02/2025",
-    "CurrentVersion": "30/04/2023",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-avvocato-di-kiarasims4mods"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Fortune Teller Career",
-    "ReleaseVersion": "23/02/2025",
-    "CurrentVersion": "04/03/2025",
-    "Status": "aggiornata",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-di-chiaroveggente-di"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Geologist Career",
-    "ReleaseVersion": "20/03/2024",
-    "CurrentVersion": "29/10/2024",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-di-geologo-a-di-kiarasims4mods"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Model Career",
-    "ReleaseVersion": "20/03/2024",
-    "CurrentVersion": "29/10/2024",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-di-modello-a-di-kiarasims4mods"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Higher Education (Active) Career",
-    "ReleaseVersion": "21/02/2025",
-    "CurrentVersion": "29/10/2024",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-di-prof-universitario-di"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Resort Owner (Active) Career",
-    "ReleaseVersion": "22/02/2025",
-    "CurrentVersion": "30/04/2023",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-di-prof-universitario-di"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Stylist (Active) Career",
-    "ReleaseVersion": "22/02/2025",
-    "CurrentVersion": "30/04/2023",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-di-stylist-di-kiarasims4mods"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Video Game Developer Career",
-    "ReleaseVersion": "28/02/2025",
-    "CurrentVersion": "27/06/2024",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-di-sviluppatore-di-videogiochi"
-  },
-  {
-    "Creator": "KiaraSims4Mods",
-    "Title": "Firefighter Career",
-    "ReleaseVersion": "23/02/2025",
-    "CurrentVersion": "04/03/2025",
-    "Status": "aggiornata",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-carriera-di-vigile-del-fuoco-di"
   },
   {
     "Creator": "Kritical",
@@ -658,6 +658,15 @@
   },
   {
     "Creator": "Lumpinou",
+    "Title": "LGBTQIA+: Gender & Orientation Overhaul",
+    "ReleaseVersion": "2.3",
+    "CurrentVersion": "2.3",
+    "Status": "compatibile",
+    "Translator": "di LeooEthan",
+    "Link": "https://www.patreon.com/posts/lgbtqia-italiana-121489195?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
+  },
+  {
+    "Creator": "Lumpinou",
     "Title": "Milestone Cheats",
     "ReleaseVersion": "12/03/2024",
     "CurrentVersion": "24/04/2023",
@@ -676,39 +685,12 @@
   },
   {
     "Creator": "Lumpinou",
-    "Title": "RPO Relationship & Pregnancy Overhaul",
-    "ReleaseVersion": "2.984",
-    "CurrentVersion": "2.984",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-relationship-pregnancy-overhaul-di"
-  },
-  {
-    "Creator": "Lumpinou",
-    "Title": "Science Baby Tweak",
-    "ReleaseVersion": "25/07/2024",
-    "CurrentVersion": "03/04/2023",
-    "Status": "compatibile",
-    "Translator": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-science-baby-tweak-di-lumpinou"
-  },
-  {
-    "Creator": "Lumpinou",
     "Title": "Mood Pack Mod",
     "ReleaseVersion": "03/03/2025",
     "CurrentVersion": "03/03/2025",
     "Status": "nuova",
     "Translator": "di LoryNa",
     "Link": "https://www.curseforge.com/sims4/translations/trad-ita-mood-pack-mod-di-lumpinou"
-  },
-  {
-    "Creator": "Lumpinou",
-    "Title": "LGBTQIA+: Gender & Orientation Overhaul",
-    "ReleaseVersion": "2.3",
-    "CurrentVersion": "2.3",
-    "Status": "compatibile",
-    "Translator": "di LeooEthan",
-    "Link": "https://www.patreon.com/posts/lgbtqia-italiana-121489195?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
   },
   {
     "Creator": "Lumpinou",
@@ -727,6 +709,24 @@
     "Status": "compatibile",
     "Translator": "di LeooEthan",
     "Link": "https://www.patreon.com/posts/road-to-romance-121495901?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
+  },
+  {
+    "Creator": "Lumpinou",
+    "Title": "RPO Relationship & Pregnancy Overhaul",
+    "ReleaseVersion": "2.984",
+    "CurrentVersion": "2.984",
+    "Status": "compatibile",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-relationship-pregnancy-overhaul-di"
+  },
+  {
+    "Creator": "Lumpinou",
+    "Title": "Science Baby Tweak",
+    "ReleaseVersion": "25/07/2024",
+    "CurrentVersion": "03/04/2023",
+    "Status": "compatibile",
+    "Translator": "di LoryNa",
+    "Link": "https://www.curseforge.com/sims4/mods/trad-ita-science-baby-tweak-di-lumpinou"
   },
   {
     "Creator": "Maplebell",
@@ -856,21 +856,21 @@
   },
   {
     "Creator": "Ravasheen",
-    "Title": "Photographic Memory 2.0",
-    "ReleaseVersion": "2.1.3",
-    "CurrentVersion": "2.1.3",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-memory-99798565?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Ravasheen",
     "Title": "Modern Family Portrait",
     "ReleaseVersion": "1.0.5",
     "CurrentVersion": "1.0.5",
     "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-modern-99995154?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+  },
+  {
+    "Creator": "Ravasheen",
+    "Title": "Photographic Memory 2.0",
+    "ReleaseVersion": "2.1.3",
+    "CurrentVersion": "2.1.3",
+    "Status": "compatibile",
+    "Translator": "di vale93_games",
+    "Link": "https://www.patreon.com/posts/sims-4-memory-99798565?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
     "Creator": "Ravasheen",
@@ -892,30 +892,39 @@
   },
   {
     "Creator": "Sacrificial",
-    "Title": "Sim Torments (+18)",
-    "ReleaseVersion": "1.3.1",
+    "Title": "Hoe It Up (+18)",
+    "ReleaseVersion": "22/10/2024",
+    "CurrentVersion": "01/10/2024",
+    "Status": "compatibile",
+    "Translator": "di LadyPsycoTrilly",
+    "Link": "https://www.patreon.com/posts/hoe-it-up-di-114185876"
+  },
+  {
+    "Creator": "Sacrificial",
+    "Title": "Life Manager",
+    "ReleaseVersion": "2.1.5",
+    "CurrentVersion": "2.1.5",
+    "Status": "compatibile",
+    "Translator": "di _Niky_sims_05",
+    "Link": "https://www.tumblr.com/nikysims05/745930562218475520/harry-potter-challenge-not-so-berry?source=share"
+  },
+  {
+    "Creator": "Sacrificial",
+    "Title": "Life Tragedies (+18)",
+    "ReleaseVersion": "1.3.6",
     "CurrentVersion": "1.3.1",
     "Status": "compatibile",
-    "Translator": "di SimTecnologic",
-    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+    "Translator": "di _Niky_sims_05",
+    "Link": "https://www.simfileshare.net/download/4602795/"
   },
   {
     "Creator": "Sacrificial",
-    "Title": "Torture & Chaos (+18)",
-    "ReleaseVersion": "1.6",
-    "CurrentVersion": "1.6",
+    "Title": "Life's Drama",
+    "ReleaseVersion": "2.1.4",
+    "CurrentVersion": "2.1.2",
     "Status": "compatibile",
-    "Translator": "di SimTecnologic",
-    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
-  },
-  {
-    "Creator": "Sacrificial",
-    "Title": "Zombie Apocalypse (+18)",
-    "ReleaseVersion": "2.2.4",
-    "CurrentVersion": "2.2.4",
-    "Status": "compatibile",
-    "Translator": "di SimTecnologic",
-    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+    "Translator": "di _Niky_sims_05",
+    "Link": "https://www.simfileshare.net/download/4592175/"
   },
   {
     "Creator": "Sacrificial",
@@ -946,39 +955,30 @@
   },
   {
     "Creator": "Sacrificial",
-    "Title": "Hoe It Up (+18)",
-    "ReleaseVersion": "22/10/2024",
-    "CurrentVersion": "01/10/2024",
-    "Status": "compatibile",
-    "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/hoe-it-up-di-114185876"
-  },
-  {
-    "Creator": "Sacrificial",
-    "Title": "Life's Drama",
-    "ReleaseVersion": "2.1.4",
-    "CurrentVersion": "2.1.2",
-    "Status": "compatibile",
-    "Translator": "di _Niky_sims_05",
-    "Link": "https://www.simfileshare.net/download/4592175/"
-  },
-  {
-    "Creator": "Sacrificial",
-    "Title": "Life Tragedies (+18)",
-    "ReleaseVersion": "1.3.6",
+    "Title": "Sim Torments (+18)",
+    "ReleaseVersion": "1.3.1",
     "CurrentVersion": "1.3.1",
     "Status": "compatibile",
-    "Translator": "di _Niky_sims_05",
-    "Link": "https://www.simfileshare.net/download/4602795/"
+    "Translator": "di SimTecnologic",
+    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
   },
   {
     "Creator": "Sacrificial",
-    "Title": "Life Manager",
-    "ReleaseVersion": "2.1.5",
-    "CurrentVersion": "2.1.5",
+    "Title": "Torture & Chaos (+18)",
+    "ReleaseVersion": "1.6",
+    "CurrentVersion": "1.6",
     "Status": "compatibile",
-    "Translator": "di _Niky_sims_05",
-    "Link": "https://www.tumblr.com/nikysims05/745930562218475520/harry-potter-challenge-not-so-berry?source=share"
+    "Translator": "di SimTecnologic",
+    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+  },
+  {
+    "Creator": "Sacrificial",
+    "Title": "Zombie Apocalypse (+18)",
+    "ReleaseVersion": "2.2.4",
+    "CurrentVersion": "2.2.4",
+    "Status": "compatibile",
+    "Translator": "di SimTecnologic",
+    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
   },
   {
     "Creator": "SimsAlchemist",
@@ -991,21 +991,21 @@
   },
   {
     "Creator": "SonozakiSisters",
-    "Title": "Twins Mod",
-    "ReleaseVersion": "03/02/2025",
-    "CurrentVersion": "03/02/2025",
-    "Status": "compatibile",
-    "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/114618802?pr=true"
-  },
-  {
-    "Creator": "SonozakiSisters",
     "Title": "Choose High School Classmates 2.0",
     "ReleaseVersion": "04/03/2025",
     "CurrentVersion": "04/03/2025",
     "Status": "nuova",
     "Translator": "di LadyPsycoTrilly",
     "Link": "https://www.patreon.com/posts/123593512?pr=true"
+  },
+  {
+    "Creator": "SonozakiSisters",
+    "Title": "Twins Mod",
+    "ReleaseVersion": "03/02/2025",
+    "CurrentVersion": "03/02/2025",
+    "Status": "compatibile",
+    "Translator": "di LadyPsycoTrilly",
+    "Link": "https://www.patreon.com/posts/114618802?pr=true"
   },
   {
     "Creator": "Spent",
@@ -1063,21 +1063,21 @@
   },
   {
     "Creator": "TurboDriver",
-    "Title": "WickedWhims (+18) - Pubblica",
-    "ReleaseVersion": "184b",
-    "CurrentVersion": "184b",
-    "Status": "aggiornata",
-    "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/123210058?pr=true"
-  },
-  {
-    "Creator": "TurboDriver",
     "Title": "WickedWhims (+18) - Patreon",
     "ReleaseVersion": "186.1",
     "CurrentVersion": "183",
     "Status": "da-aggiornare",
     "Translator": "di Isy's",
     "Link": "https://www.patreon.com/posts/67607656"
+  },
+  {
+    "Creator": "TurboDriver",
+    "Title": "WickedWhims (+18) - Pubblica",
+    "ReleaseVersion": "184b",
+    "CurrentVersion": "184b",
+    "Status": "aggiornata",
+    "Translator": "di LadyPsycoTrilly",
+    "Link": "https://www.patreon.com/posts/123210058?pr=true"
   },
   {
     "Creator": "TurboDriver",
