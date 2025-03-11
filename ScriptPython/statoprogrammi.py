@@ -97,9 +97,11 @@ def compare_status_only(old_state, new_state):
                     old_status_windows = old_mod.get('statuswindows', '')
                     old_status_macos = old_mod.get('statusmacos', '')
 
+                    # Controlla se lo stato di Windows è cambiato
                     if status_windows != old_status_windows:
                         system_message_windows = f"Stato {status_icon_windows} _{status_windows}_ (Windows)"
                     
+                    # Controlla se lo stato di macOS è cambiato
                     if status_macos != old_status_macos:
                         system_message_macos = f"Stato {status_icon_macos} _{status_macos}_ (macOS)"
                     break
@@ -109,7 +111,7 @@ def compare_status_only(old_state, new_state):
             message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message_windows}\n{system_message_macos}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
             messages.append(message)
         else:
-            # Se lo stato di Windows o macOS è cambiato, invia il messaggio
+            # Se solo uno degli stati è cambiato, invia il messaggio
             if system_message_windows or system_message_macos:
                 message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message_windows}\n{system_message_macos}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                 messages.append(message)
