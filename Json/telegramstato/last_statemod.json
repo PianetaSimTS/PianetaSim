@@ -1349,8 +1349,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "Dependency": null,
-    "Descrizione": null
+    "Dependency": "",
+    "Descrizione": "Questa mod salta il popup delle Storie CAS che appare per la prima volta quando si entra nella \"Nuova Partita\" ti porta direttamente al CAS."
   },
   {
     "Author": "NerdyDoll",
@@ -1361,7 +1361,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "Core Library",
-    "Descrizione": ""
+    "Descrizione": "Ordina dal menu \"Noleggia un servizio di consegna\" al telefono! Regala libri, nettare, gioielli o scatole per innamorati ai Sims!"
   },
   {
     "Author": "NickyClem",
@@ -1372,7 +1372,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "XML Injector - Insurance Company Phone App & Computer Menu",
-    "Descrizione": ""
+    "Descrizione": "L'assicurazione copre i tuoi elettrodomestici, così quando hanno bisogno di essere riparati non dovrai più pagare il riparatore!"
   },
   {
     "Author": "NickyClem",
@@ -1405,7 +1405,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "DLC Al Lavoro",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge opzioni più realistiche e dettagliate per il parto dei Sims. Include nuove modalità di nascita come il parto naturale, il cesareo e il parto in acqua, con animazioni, interazioni e reazioni più immersive. I Sims possono ricevere supporto dai partner o dai medici e vivere un'esperienza più realistica e personalizzata del parto."
   },
   {
     "Author": "PandaSama",
@@ -1415,8 +1415,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Questo trampolino può essere utilizzato da bambini e neonati, soddisfa il loro bisogno di divertimento  e aumenta anche le loro capacità  motorie/di movimento."
   },
   {
     "Author": "PandaSama",
@@ -1426,8 +1426,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Questo fasciatoio può essere utilizzato solo da adolescenti, anziani e bambini piccoli."
   },
   {
     "Author": "PandaSama",
@@ -1437,8 +1437,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Questa mod aggiunge 4 nuovi cc funzionali: Roccie in Pila, è un oggetto solo per i più piccoli ed è disponibile in 7 campioni. Xilofono, i bambini potranno suonare delle bellissime melodie questo oggetto è legato all'abilità di pensiero. Forniture per disegno per bambini piccoli, ci sono in totale 8 disegni che un bambino può fare da solo. Stazione di bricolage per bambini piccoli, ci sono in totale 5 cose che possono creare, ognuna delle quali si sblocca con un livello di abilità di immaginazione più alto."
   },
   {
     "Author": "PandaSama",
@@ -1448,8 +1448,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Questa mod aggiunge 2 oggetti cc funzionali: Tunnel gioco per bambini piccoli, è disponibile in un totale di 12 campioni e aumenta la sua abilità di movimento. Kit per il trucco, è disponibile in 6 swatch diversi e aumenta la loro capacità di immaginazione."
   },
   {
     "Author": "PandaSama",
@@ -1459,8 +1459,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Questa mod aggiunge 4 cc oggetti funionali: Cavallo a Dondolo, i sims di  tutte le età  possono cavalcare il cavallo a dondolo. Materassino per Dormire, questo è un oggetto solo per bambini piccoli ed è disponibile in 7 campioni. Sedia a Dondolo, è disponibile in 7 campioni i bambini piccoli possono giocare sull'altalena funziona anche come una sedia normale, quindi i Sims di tutte le età possono sedercisi e leggere o mangiare. Canestro da Basket per Bambini, potranno giocare con il basket e aumentare l'abilità del movimento.\n"
   },
   {
     "Author": "Plumlace",
@@ -1471,7 +1471,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "XML Injector",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge un sistema realistico di salute mentale per i Sims. Introduce stati emotivi come ansia, depressione e attacchi di panico, insieme a nuove interazioni, terapie e opzioni per migliorare il benessere mentale. I Sims possono praticare la meditazione, assumere farmaci prescritti e consultare uno psicologo, rendendo il gameplay più profondo e realistico."
   },
   {
     "Author": "Ravasheen",
@@ -1525,8 +1525,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Offre un controllo avanzato sull'albero genealogico, permettendo di creare, modificare o rimuovere legami familiari, correggere errori di parentela e personalizzare la discendenza dei Sims in modo semplice e rapido."
   },
   {
     "Author": "Sacrificial",
@@ -1536,8 +1536,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Aggiunge eventi drammatici e situazioni spontanee nel mondo di gioco. I Sims NPC possono litigare, tradire, essere rapinati o persino chiedere aiuto in strada. Il giocatore può intervenire o lasciare che il caos si sviluppi da solo, rendendo il gameplay più imprevedibile e realistico."
   },
   {
     "Author": "Sacrificial",
@@ -1547,8 +1547,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Aggiunge nuove interazioni romantiche più intense e realistiche. I Sims possono abbracciarsi in modo più passionale, scattare foto romantiche, ballare dolcemente e persino eseguire il \"dip kiss\" (bacio con inclinazione). Questa mod rende le relazioni più coinvolgenti e cinematografiche."
   },
   {
     "Author": "Sacrificial",
@@ -1558,8 +1558,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Introduce un sistema avanzato di celebrità, permettendo ai Sims di diventare famosi come influencer, attori o cantanti. Aggiunge follower sui social, paparazzi, guardie del corpo e nuove interazioni legate alla notorietà, rendendo l’ascesa alla fama più dettagliata e realistica."
   },
   {
     "Author": "Sacrificial",
@@ -1569,8 +1569,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Aggiunge un'interazione romantica in cui i Sims possono sdraiarsi insieme a guardare il cielo. Questo momento intimo rafforza le relazioni e crea un’atmosfera più dolce e cinematografica per le coppie."
   },
   {
     "Author": "Sacrificial",
@@ -1580,8 +1580,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Aggiunge l'interazione del ballo lento romantico. I Sims possono ballare teneramente con il partner, abbracciarsi durante il ballo e creare momenti intimi, perfetti per matrimoni, appuntamenti o serate speciali."
   },
   {
     "Author": "Scumbumbo/LittleMsSam",
@@ -1613,8 +1613,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Introduce un sistema di allenamento e benessere fisico focalizzato sulla salute mentale e fisica. Con questa mod, i Sims possono partecipare a sessioni di esercizi che combinano attività fisiche come yoga e meditazione, promuovendo uno stile di vita sano e equilibrato. Flowfit include nuovi tipi di allenamenti, migliorando la gestione del benessere dei Sims e aggiungendo un approccio più completo alla loro salute mentale e fisica nel gioco."
   },
   {
     "Author": "SimRealist",
@@ -1624,8 +1624,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Introduce un sistema avanzato di acquisto, vendita e gestione di proprietà immobiliari. Con questa mod, i Sims possono entrare nel mondo degli affari immobiliari, acquistando terreni, costruendo case e vendendo o affittando proprietà. Include anche un sistema di mutui e prestiti bancari, che consente ai Sims di finanziare le loro proprietà e gestire le finanze legate agli investimenti immobiliari. La mod arricchisce l'aspetto economico del gioco, offrendo un'esperienza più realistica e dinamica nel settore immobiliare."
   },
   {
     "Author": "SimRealist",
@@ -1635,8 +1635,8 @@
     "DataUltimaModifica": null,
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Introduce un sistema di morte e lutto più realistico e dettagliato. Con questa mod, la morte dei Sims diventa un evento più emotivo, con nuovi rituali e interazioni legate al lutto. I Sims che sopravvivono alla perdita possono affrontare il dolore in modo più profondo, vivendo stati d'animo legati al lutto e partecipando a cerimonie funebri. La mod arricchisce l'esperienza del gioco, aggiungendo una dimensione più realistica e toccante alla morte e alla gestione della perdita."
   },
   {
     "Author": "SimRealist",
@@ -1646,8 +1646,8 @@
     "DataUltimaModifica": null,
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Introduce una gestione più realistica dei capelli dei Sims, permettendo loro di mantenere e curare i propri capelli in modo naturale, senza l'uso di trattamenti chimici. Include opzioni per avere capelli più sani e realistici, con nuove interazioni per la cura dei capelli, come shampoo e trattamenti naturali, promuovendo uno stile di vita \"organico\" e più autentico."
   },
   {
     "Author": "SimRealist",
@@ -1657,8 +1657,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": null
+    "Dependency": "",
+    "Descrizione": "I Sims possono ammalarsi di varie malattie e debellarle con trattamenti specifici, che vanno da farmaci a rimedi casalinghi. Inoltre, possono sperimentare sintomi più realistici, come febbre o mal di testa, e il sistema sanitario diventa più dettagliato, con la possibilità di curarsi da un medico o recarsi in ospedale."
   },
   {
     "Author": "SimRealist",
@@ -1668,8 +1668,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Migliora e amplia il sistema immobiliare nel gioco. Con questa mod, i Sims possono gestire una carriera nel settore immobiliare, acquistando, vendendo e affittando proprietà. Introduce anche un sistema di prestiti bancari, mutui e gestione finanziaria per le transazioni immobiliari. Inoltre, la mod aggiunge nuove opzioni per la gestione di case e terreni, creando un'esperienza più realistica per chi vuole espandere le proprie attività economiche nel gioco."
   },
   {
     "Author": "SimRealist",
@@ -1679,8 +1679,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Introduce un sistema di bollette e gestione delle finanze domestiche più realistico. Con questa mod, i Sims devono pagare bollette per vari servizi come elettricità, acqua, rifiuti e internet, simili a come avviene nella vita reale. Le bollette variano in base all'uso e alle dimensioni della casa, aggiungendo una sfida economica in più nella gestione della vita quotidiana dei Sims. La mod rende il sistema delle finanze più dettagliato e realistico, obbligando i giocatori a prestare attenzione ai consumi e alle spese."
   },
   {
     "Author": "SimRealist",
@@ -1690,8 +1690,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Aggiunge un sistema finanziario avanzato, permettendo ai Sims di gestire in modo più realistico il denaro e le finanze. Con questa mod, i Sims possono accedere a servizi bancari come prestiti, mutui e conti bancari. Possono anche ottenere prestiti per acquistare case o avviare attività, oltre a gestire debiti e risparmi. L'introduzione di un centro finanziario consente una gestione più dettagliata delle finanze, aggiungendo un ulteriore livello di realismo e complessità al gioco."
   },
   {
     "Author": "SimRealist",
@@ -1701,8 +1701,8 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Introduce un sistema bancario completo nel gioco. Con questa mod, i Sims possono aprire conti bancari, fare depositi, prelevare denaro, richiedere prestiti e mutui, nonché guadagnare interessi sui risparmi. La mod aggiunge anche la possibilità di gestire le finanze personali in modo più realistico, offrendo nuove opzioni per la gestione dei soldi e l'accesso a crediti, rendendo l'economia del gioco più complessa e dettagliata."
   },
   {
     "Author": "SonozakiSisters",
@@ -1724,7 +1724,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "Healthcare Redux - DLC Al Lavoro",
-    "Descrizione": ""
+    "Descrizione": "Rallenta il sistema di cura introdotto dalla Healthcare Redux Mod. Questo significa che malattie e infortuni richiederanno più tempo per essere trattati e guariti, rendendo l'esperienza sanitaria nel gioco più realistica e impegnativa."
   },
   {
     "Author": "SonozakiSisters",
@@ -1735,7 +1735,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "Core Library",
-    "Descrizione": ""
+    "Descrizione": "Aggiunge una maggiore probabilità di far nascere gemelli durante il parto. La mod rende più frequente la possibilità di avere gemelli, introducendo nuove opzioni e interazioni legate alla gravidanza e alla nascita. Inoltre, migliora l'esperienza del parto multiplo, rendendo il processo più realistico e interessante per i giocatori che desiderano aggiungere più dinamiche familiari nel gioco."
   },
   {
     "Author": "SpinningPlumbobs",
@@ -1757,7 +1757,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "DLC Vita sull'Isola",
-    "Descrizione": ""
+    "Descrizione": "Amplia e migliora il sistema delle sirene nel gioco. La mod aggiunge nuove abilità, tratti e interazioni per le sirene, permettendo loro di vivere in modo più dinamico e immersivo. Le sirene possono ora interagire con l'ambiente in modi unici, come influenzare il mare, modificare il loro aspetto e creare nuove storie legate alla loro vita acquatica. Inoltre, la mod offre una maggiore personalizzazione e un'esperienza di gioco più ricca per chi ama giocare con le sirene."
   },
   {
     "Author": "SpinningPlumbobs",
@@ -1767,8 +1767,8 @@
     "DataUltimaModifica": "27/02/2025",
     "Translation": "in-lavorazione",
     "Categoria": "Gameplay",
-    "Dependency": null,
-    "Descrizione": ""
+    "Dependency": "",
+    "Descrizione": "Espande e arricchisce il sistema dei Plantsims. La mod introduce nuove interazioni, abilità e opzioni per i Plantsims, consentendo loro di vivere in modo più dettagliato e dinamico. I Sims possono ora coltivare la loro vita vegetale con nuove piante, potenziare le loro abilità naturali e sperimentare diversi aspetti del loro stato vegetale, migliorando l'esperienza di gioco per chi ama i Sims \"non convenzionali\"."
   },
   {
     "Author": "SpinningPlumbobs",
@@ -1779,7 +1779,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "Dependency": "DLC Regno della Magia",
-    "Descrizione": ""
+    "Descrizione": "Introduce un'interessante rivalità tra fate e streghe. Con questa mod, i Sims possono scegliere se essere fate o streghe, ognuna con le proprie abilità uniche e poteri speciali. La mod arricchisce il gioco con nuove interazioni, magie e storie, creando una dinamica di conflitto e alleanze tra le due fazioni. Inoltre, permette di esplorare e approfondire la lore di fate e streghe in modo più coinvolgente e dettagliato."
   },
   {
     "Author": "Thatssojordy",
@@ -1850,9 +1850,9 @@
   {
     "Author": "TwistedMexi",
     "ModName": "Better BuildBuy",
-    "Status": "rotta",
+    "Status": "aggiornata",
     "SiteLink": "https://twistedmexi.com/Mods/",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "11/03/2025",
     "Translation": "inclusa",
     "Categoria": "Utilità",
     "Dependency": null,
