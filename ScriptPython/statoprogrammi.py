@@ -88,15 +88,23 @@ def compare_status_only(old_state, new_state):
             for old_mod in old_state:
                 if new_program_name == old_mod['programma']:
                     old_status = old_mod.get('status', '').upper() if old_mod.get('status') else 'SCONOSCIUTO'
+                    old_date = old_mod.get('data_aggiornamento', '')
 
-                    if new_status != old_status:  # Se lo stato è cambiato, invia il messaggio
+                    # Se lo stato cambia, invia la notifica
+                    if new_status != old_status:
                         status_icon = status_icons.get(new_status, "⚪️")
                         message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                         messages.append(message)
+                    # Se la data cambia ma lo stato resta uguale, invia comunque una notifica con stato "AGGIORNATO"
+                    elif new_date != old_date:
+                        status_icon = status_icons.get("AGGIORNATO", "🟢")
+                        message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\nStato {status_icon} _AGGIORNATO_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                        messages.append(message)
+
                     break  # Esci dal loop una volta trovato il programma corrispondente
 
     return messages
-
+    
 # Funzione per inviare un messaggio su Telegram
 def send_telegram_message(message, chat_id, topic_id):
     url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
