@@ -24,7 +24,7 @@
     "windows": true,
     "macOS": true,
     "statuswindows": "aggiornato",
-    "statusmacos": "rotto",    
+    "statusmacos": "aggiornato",
     "link_programma": "https://sims4studio.com/board/6/download-sims-studio-open-version",
     "data_aggiornamento": "08/03/2025",
     "video_spiegativo": "https://youtu.be/Cy-G5F0bq90?feature=shared"
@@ -34,7 +34,7 @@
     "windows": true,
     "macOS": false,
     "statuswindows": "aggiornato",
-    "statusmacos": "non-disponibile",    
+    "statusmacos": "non-disponibile",
     "link_programma": "https://luniversims.fr/forums/topic/13520-s4ti-12530-8-mars-win/",
     "data_aggiornamento": "09/03/2025",
     "video_spiegativo": "https://youtu.be/IiHT_s7NBYw?feature=shared"
