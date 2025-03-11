@@ -103,7 +103,7 @@ def compare_status_only(old_state, new_state):
             # Invia una notifica se cambia lo stato o se cambia la ReleaseVersion
             if new_status != old_status or new_release_version != old_release_version:
                 # Gestione specifica per "DA AGGIORNARE"
-                if new_status == "DA-AGGIORNARE":
+                if new_status == "da-aggiornare":
                     new_status = "DA AGGIORNARE"
 
                 status_icon = status_icons.get(new_status, "⚪️")
