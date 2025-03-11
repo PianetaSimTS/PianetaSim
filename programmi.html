@@ -481,9 +481,10 @@ function loadModsFromJson() {
           statusMacOS = 'NON DISPONIBILE';
         }
 
+        // Crea le righe della tabella
         const newRow = table.insertRow();
-        newRow.innerHTML = 
-  `<td>
+        newRow.innerHTML = `
+  <td>
     <span class="star-container">
       <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.programma}')">&#9733;</span>
     </span>
@@ -494,16 +495,17 @@ function loadModsFromJson() {
   <td><span class="status windows ${statusWindows.toLowerCase().replace(/\s+/g, '-')}"">${statusWindows}</span></td> <!-- Stato Windows -->
   <td><span class="status macOS ${statusMacOS.toLowerCase().replace(/\s+/g, '-')}"">${statusMacOS}</span></td> <!-- Stato macOS -->
   <td><a href="${mod.link_programmawindows || '#'}" target="_blank">Link</a></td>
-  <td><a href="${mod.link_programmamacos || '#'}" target="_blank">Link</a></td>
+  <td>${mod.link_programmamacos ? `<a href="${mod.link_programmamacos}" target="_blank">Link</a>` : ''}</td> <!-- Link MacOS se disponibile -->
   <td>${dataAggiornamentoWindows || ''}</td>
   <td>${dataAggiornamentoMacOS || ''}</td>
-  <td><a href="${mod.video_spiegativo || '#'}" target="_blank">Video</a></td>`; // Aggiungi le colonne per i dati di aggiornamento separati
+  <td><a href="${mod.video_spiegativo || '#'}" target="_blank">Video</a></td>`;
       });
 
       filterTable();
     })
     .catch(error => console.error('Errore nel caricare il JSON:', error));
 }
+
 
 let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
 let lastSortDirection = 'asc'; // Ordine di ordinamento: ascendente (default) o discendente
