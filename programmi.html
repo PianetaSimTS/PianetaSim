@@ -411,7 +411,7 @@ td a:active {
         <th rowspan="2" onclick="sortTable(1)">PROGRAMMA <span class="sort-arrow" id="arrow-1"></span></th>
         <th colspan="2" onclick="sortTable(2)">SISTEMA OPERATIVO <span class="sort-arrow" id="arrow-2"></span></th>
         <th colspan="2" onclick="sortTable(3)">STATO PROGRAMMA <span class="sort-arrow" id="arrow-3"></span></th>
-        <th rowspan="2" onclick="sortTable(4)">LINK PROGRAMMA <span class="sort-arrow" id="arrow-4"></span></th>
+        <th colspan="2" onclick="sortTable(4)">LINK PROGRAMMA <span class="sort-arrow" id="arrow-4"></span></th>
         <th colspan="2" onclick="sortTable(4)">DATA AGGIORNAMENTO <span class="sort-arrow" id="arrow-4"></span></th>
         <th rowspan="2" onclick="sortTable(6)">VIDEO SPIEGATIVO <span class="sort-arrow" id="arrow-6"></span></th>
         
@@ -420,6 +420,8 @@ td a:active {
           <!-- La seconda riga rimane vuota per le celle che sono già unite nella prima -->
           <th>Windows</th> <!-- Header for Windows -->
           <th>macOS</th> <!-- Header for macOS -->
+          <th>Windows</th> <!-- Stato per Windows -->
+          <th>macOS</th> <!-- Stato per macOS -->
           <th>Windows</th> <!-- Stato per Windows -->
           <th>macOS</th> <!-- Stato per macOS -->
           <th>Windows</th> <!-- Stato per Windows -->
@@ -469,7 +471,7 @@ function loadModsFromJson() {
 
         // Gestisci la logica per data aggiornamento
         let dataAggiornamentoWindows = mod.data_aggiornamentowindows || '';
-        let dataAggiornamentoMacOS = mod.data_aggiornamentomacOS || '';
+        let dataAggiornamentoMacOS = mod.data_aggiornamentomacos || '';
 
         // Sostituisci 'NON-DISPONIBILE' o 'non-disponibile' con 'NON DISPONIBILE'
         if (statusWindows.toLowerCase() === 'non-disponibile') {
@@ -491,7 +493,8 @@ function loadModsFromJson() {
   <td>${checkMacOS}</td> <!-- Compatibilità con macOS -->
   <td><span class="status windows ${statusWindows.toLowerCase().replace(/\s+/g, '-')}"">${statusWindows}</span></td> <!-- Stato Windows -->
   <td><span class="status macOS ${statusmacos.toLowerCase().replace(/\s+/g, '-')}"">${statusmacos}</span></td> <!-- Stato macOS -->
-  <td><a href="${mod.link_programma || '#'}" target="_blank">Link</a></td>
+  <td><a href="${mod.link_programmawindows || '#'}" target="_blank">Link</a></td>
+  <td><a href="${mod.link_programmamacos || '#'}" target="_blank">Link</a></td>
   <td>${dataAggiornamentoWindows || ''}</td>
   <td>${dataAggiornamentoMacOS || ''}</td>
   <td><a href="${mod.video_spiegativo || '#'}" target="_blank">Video</a></td>`; // Aggiungi le colonne per i dati di aggiornamento separati
@@ -707,4 +710,3 @@ window.addEventListener('beforeunload', () => {
   <a href="#top" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
 </body>
 </html>
-
