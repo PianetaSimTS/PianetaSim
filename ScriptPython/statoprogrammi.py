@@ -79,7 +79,7 @@ def compare_status_only(old_state, new_state):
         new_date_macos = new_mod.get('data_aggiornamentomacos', 'Data non disponibile')
 
         if new_program_name not in old_programs:
-            message = f"PROGRAMMA NUOVO\n\n*{new_program_name}*\nWindows: {status_icons.get(new_status_windows, '⚪️')} _{new_status_windows}_ (Data: *{new_date_windows}*)\nmacOS: {status_icons.get(new_status_macos, '⚪️')} _{new_status_macos}_ (Data: *{new_date_macos}*)\nLink [SITO]({new_mod.get('link_programma', '#')})"
+            message = f"PROGRAMMA\n\n*{new_program_name}*\nWindows: {status_icons.get(new_status_windows, '⚪️')} _{new_status_windows}_ (Data: *{new_date_windows}*)\nmacOS: {status_icons.get(new_status_macos, '⚪️')} _{new_status_macos}_ (Data: *{new_date_macos}*)\nLink [SITO]({new_mod.get('link_programma', '#')})"
             messages.append(message)
         else:
             for old_mod in old_state:
@@ -90,10 +90,10 @@ def compare_status_only(old_state, new_state):
                     old_date_macos = old_mod.get('data_aggiornamentomacos', '')
 
                     if new_status_windows != old_status_windows or new_status_macos != old_status_macos:
-                        message = f"PROGRAMMA AGGIORNATO\n\n*{new_program_name}*\nWindows: {status_icons.get(new_status_windows, '⚪️')} _{new_status_windows}_ (Data: *{new_date_windows}*)\nmacOS: {status_icons.get(new_status_macos, '⚪️')} _{new_status_macos}_ (Data: *{new_date_macos}*)\nLink [SITO]({new_mod.get('link_programma', '#')})"
+                        message = f"PROGRAMMA\n\n*{new_program_name}*\nWindows: {status_icons.get(new_status_windows, '⚪️')} _{new_status_windows}_ (Data: *{new_date_windows}*)\nmacOS: {status_icons.get(new_status_macos, '⚪️')} _{new_status_macos}_ (Data: *{new_date_macos}*)\nLink [SITO]({new_mod.get('link_programma', '#')})"
                         messages.append(message)
                     elif new_date_windows != old_date_windows or new_date_macos != old_date_macos:
-                        message = f"PROGRAMMA AGGIORNATO (SOLO DATA)\n\n*{new_program_name}*\nWindows: {status_icons.get('AGGIORNATO', '🟢')} _{new_status_windows}_ (Data: *{new_date_windows}*)\nmacOS: {status_icons.get('AGGIORNATO', '🟢')} _{new_status_macos}_ (Data: *{new_date_macos}*)\nLink [SITO]({new_mod.get('link_programma', '#')})"
+                        message = f"PROGRAMMA\n\n*{new_program_name}*\nWindows: {status_icons.get('AGGIORNATO', '🟢')} _{new_status_windows}_ (Data: *{new_date_windows}*)\nmacOS: {status_icons.get('AGGIORNATO', '🟢')} _{new_status_macos}_ (Data: *{new_date_macos}*)\nLink [SITO]({new_mod.get('link_programma', '#')})"
                         messages.append(message)
                     break
     return messages
