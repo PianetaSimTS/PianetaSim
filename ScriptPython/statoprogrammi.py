@@ -59,9 +59,10 @@ def save_current_state(new_state):
         print(f"Errore nell'aggiornamento del file su GitHub: {e}")
 
 # Funzione per confrontare solo lo stato e generare il messaggio
+# Funzione per confrontare solo lo stato e generare il messaggio
 def compare_status_only(old_state, new_state):
     messages = []
-    
+
     # Dizionario per i pallini di stato
     status_icons = {
         "AGGIORNATO": "🟢",
@@ -85,38 +86,36 @@ def compare_status_only(old_state, new_state):
         status_macos = new_mod.get('statusmacos', 'SCONOSCIUTO').upper()
         status_icon_macos = status_icons.get(status_macos, "⚪️")
 
+        # Messaggi per Windows e macOS
         system_message_windows = ""
         system_message_macos = ""
 
-        # Verifica se lo stato di Windows è cambiato
-        if status_windows != new_mod.get('statuswindows', ''):
-            system_message_windows = f"Stato {status_icon_windows} _{status_windows}_ (Windows)"
-        
-        # Verifica se lo stato di macOS è cambiato
-        if status_macos != new_mod.get('statusmacos', ''):
-            system_message_macos = f"Stato {status_icon_macos} _{status_macos}_ (macOS)"
+        # Se lo stato di Windows è cambiato
+        if new_program_name in old_programs:
+            for old_mod in old_state:
+                if new_program_name == old_mod['programma']:
+                    old_status_windows = old_mod.get('statuswindows', '')
+                    old_status_macos = old_mod.get('statusmacos', '')
+
+                    if status_windows != old_status_windows:
+                        system_message_windows = f"Stato {status_icon_windows} _{status_windows}_ (Windows)"
+                    
+                    if status_macos != old_status_macos:
+                        system_message_macos = f"Stato {status_icon_macos} _{status_macos}_ (macOS)"
+                    break
         
         if new_program_name not in old_programs:  # Programma NUOVO
             status_icon = status_icons.get("NUOVO", "🟣")
             message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message_windows}\n{system_message_macos}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
             messages.append(message)
         else:
-            # Trova il programma corrispondente nello stato precedente
-            for old_mod in old_state:
-                if new_program_name == old_mod['programma']:
-                    old_date = old_mod.get('data_aggiornamento', '')
-
-                    # Se la data cambia, invia comunque una notifica con stato "AGGIORNATO"
-                    if new_date != old_date:
-                        status_icon = status_icons.get("AGGIORNATO", "🟢")
-                        message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message_windows}\n{system_message_macos}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-                        messages.append(message)
-
-                    break  # Esci dal loop una volta trovato il programma corrispondente
+            # Se lo stato di Windows o macOS è cambiato, invia il messaggio
+            if system_message_windows or system_message_macos:
+                message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message_windows}\n{system_message_macos}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                messages.append(message)
 
     return messages
 
-    
 # Funzione per inviare un messaggio su Telegram
 def send_telegram_message(message, chat_id, topic_id):
     url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
