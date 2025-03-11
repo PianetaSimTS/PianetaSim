@@ -470,8 +470,8 @@ function loadModsFromJson() {
           <td>${mod.programma || ''}</td>
           <td>${checkWindows}</td> <!-- Compatibilità con Windows -->
           <td>${checkMacOS}</td> <!-- Compatibilità con macOS -->
-          <td><span class="status ${statusWindows.toLowerCase().replace(/\s/g, '-')}"">${statusWindows}</span></td> <!-- Stato Windows -->
-          <td><span class="status ${statusMacOS.toLowerCase().replace(/\s/g, '-')}"">${statusMacOS}</span></td> <!-- Stato macOS -->
+          <td><span class="status ${statusWindows.toLowerCase().replace(/\s+/g, '-')}"">${statusWindows}</span></td> <!-- Stato Windows -->
+          <td><span class="status ${statusMacOS.toLowerCase().replace(/\s+/g, '-')}"">${statusMacOS}</span></td> <!-- Stato macOS -->
           <td><a href="${mod.link_programma || '#'}" target="_blank">Link</a></td>
           <td>${mod.data_aggiornamento || ''}</td>
           <td><a href="${mod.video_spiegativo || '#'}" target="_blank">Video</a></td>
