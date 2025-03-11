@@ -77,11 +77,13 @@ def compare_status_only(old_state, new_state):
 
     for new_mod in new_state:
         new_program_name = new_mod['programma']
-        new_date = new_mod.get('data_aggiornamento', 'Data non disponibile')
+        new_date_windows = new_mod.get('data_aggiornamentowindows', 'Data non disponibile')
+        new_date_macos = new_mod.get('data_aggiornamentomacos', 'Data non disponibile')
 
         # Verifica lo stato per Windows
         status_windows = new_mod.get('statuswindows', 'SCONOSCIUTO').upper()
         status_icon_windows = status_icons.get(status_windows, "⚪️")
+
         # Verifica lo stato per macOS
         status_macos = new_mod.get('statusmacos', 'SCONOSCIUTO').upper()
         status_icon_macos = status_icons.get(status_macos, "⚪️")
@@ -90,12 +92,13 @@ def compare_status_only(old_state, new_state):
         system_message_windows = ""
         system_message_macos = ""
 
-        # Se lo stato di Windows è cambiato
         if new_program_name in old_programs:
             for old_mod in old_state:
                 if new_program_name == old_mod['programma']:
                     old_status_windows = old_mod.get('statuswindows', '')
                     old_status_macos = old_mod.get('statusmacos', '')
+                    old_date_windows = old_mod.get('data_aggiornamentowindows', '')
+                    old_date_macos = old_mod.get('data_aggiornamentomacos', '')
 
                     # Controlla se lo stato di Windows è cambiato
                     if status_windows != old_status_windows:
@@ -104,16 +107,24 @@ def compare_status_only(old_state, new_state):
                     # Controlla se lo stato di macOS è cambiato
                     if status_macos != old_status_macos:
                         system_message_macos = f"Stato {status_icon_macos} _{status_macos}_ (macOS)"
+                    
+                    # Controlla se solo la data di aggiornamento è cambiata (Windows)
+                    if new_date_windows != old_date_windows:
+                        system_message_windows = f"Data aggiornamento {new_date_windows} (Windows)"
+                    
+                    # Controlla se solo la data di aggiornamento è cambiata (macOS)
+                    if new_date_macos != old_date_macos:
+                        system_message_macos = f"Data aggiornamento {new_date_macos} (macOS)"
                     break
         
         if new_program_name not in old_programs:  # Programma NUOVO
             status_icon = status_icons.get("NUOVO", "🟣")
-            message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message_windows}\n{system_message_macos}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+            message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date_windows}*\n\n{system_message_windows}\n{system_message_macos}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
             messages.append(message)
         else:
-            # Se solo uno degli stati è cambiato, invia il messaggio
+            # Se solo uno degli stati è cambiato o la data, invia il messaggio
             if system_message_windows or system_message_macos:
-                message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message_windows}\n{system_message_macos}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date_windows}*\n\n{system_message_windows}\n{system_message_macos}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                 messages.append(message)
 
     return messages
