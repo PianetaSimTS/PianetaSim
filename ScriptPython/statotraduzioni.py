@@ -80,6 +80,7 @@ def compare_status_only(old_state, new_state):
         "COMPATIBILE": "🔵",
         "ROTTA": "🔴",
         "NUOVA": "🟣",
+        "DA AGGIORNARE": "⚪️",  # Cambiato "DA-AGGIORNARE" in "DA AGGIORNARE"
         "SCONOSCIUTA & OBSOLETA": "⚪️"
     }
 
@@ -101,6 +102,10 @@ def compare_status_only(old_state, new_state):
 
             # Invia una notifica se cambia lo stato o se cambia la ReleaseVersion
             if new_status != old_status or new_release_version != old_release_version:
+                # Gestione specifica per "DA AGGIORNARE"
+                if new_status == "DA-AGGIORNARE":
+                    new_status = "DA AGGIORNARE"
+
                 status_icon = status_icons.get(new_status, "⚪️")
                 message = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {status_icon} _{new_status}_\nRelease Version: {new_release_version}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                 messages.append(message)
