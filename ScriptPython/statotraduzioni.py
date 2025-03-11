@@ -1,161 +1,104 @@
 import requests
 import json
-import base64
-import asyncio
 import os
 from telegram.ext import Application
+import asyncio
 
 # Recupera i valori dai segreti
 telegram_token = '7390613815:AAFZzCFSMnfomMqRXHkKzEqsrPo7Rh_0Yf4'
 group_id = '-1001771715212'
-topic_id = '79558'
 github_token = os.getenv('GITHUB_TOKEN')
 
 # URL dei file su GitHub
-mods_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/traduzioni.json'
-state_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/telegramstato/last_statetraduzioni.json'
-repo_api_url = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_statetraduzioni.json'
+mods_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/programmi.json'
+state_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/telegramstato/last_stateprogrammi.json'
 
-def fetch_json(url):
-    try:
-        response = requests.get(url)
-        response.raise_for_status()  # Rilancia l'eccezione per status code >= 400
+# Funzione per inviare messaggi su Telegram
+async def send_telegram_message(message: str):
+    url = f"https://api.telegram.org/bot{telegram_token}/sendMessage"
+    payload = {
+        "chat_id": group_id,
+        "text": message
+    }
+    response = requests.post(url, data=payload)
+    if response.status_code == 200:
+        print("Messaggio inviato con successo")
+    else:
+        print(f"Errore nell'invio del messaggio: {response.status_code}")
+
+# Funzione per scaricare i file JSON
+def download_json(url):
+    headers = {'Authorization': f'token {github_token}'}
+    response = requests.get(url, headers=headers)
+    if response.status_code == 200:
         return response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"Errore nel recuperare il file {url}: {e}")
+    else:
+        print(f"Errore nel download del file: {response.status_code}")
         return None
 
-# Funzione per caricare lo stato precedente
-def load_last_state():
-    print("Caricando lo stato precedente...")  # Debug print
-    return fetch_json(state_url) or []
-
-# Funzione per salvare il nuovo stato su GitHub
-def save_current_state(new_state):
-    try:
-        headers = {
-            "Authorization": f"token {github_token}",
-            "Accept": "application/vnd.github.v3+json",
-        }
-
-        # Recupera il SHA del file esistente
-        current_file = requests.get(repo_api_url, headers=headers).json()
-        sha = current_file['sha']
-
-        # Codifica il contenuto in base64 mantenendo tutti i caratteri speciali
-        content = base64.b64encode(json.dumps(new_state, indent=2, ensure_ascii=False).encode('utf-8')).decode('utf-8')
-
-        # Aggiorna il file su GitHub
-        data = {
-            "message": "Aggiornamento stato mod con supporto per caratteri speciali",
-            "content": content,
-            "sha": sha,
-        }
-
-        response = requests.put(repo_api_url, headers=headers, json=data)
-        response.raise_for_status()  # Rilancia l'eccezione se status code >= 400
-        print("Stato aggiornato con successo su GitHub.")
-    except requests.exceptions.RequestException as e:
-        print(f"Errore nell'aggiornamento del file su GitHub: {e}")
-
-# Funzione per normalizzare i dati di una mod
-def normalize_mod(mod):
-    """Normalizza i dati di una mod per il confronto."""
-    return {
-        'Creator': mod.get('Creator', '').strip(),
-        'Title': mod.get('Title', '').strip(),
-        'ReleaseVersion': mod.get('ReleaseVersion', '').strip(),
-        'CurrentVersion': mod.get('CurrentVersion', '').strip(),
-        'Status': mod.get('Status', '').strip().upper(),
-        'Translator': mod.get('Translator', '').strip(),
-        'Link': mod.get('Link', '').strip() or '',
-    }
-
-# Funzione per confrontare gli stati e generare il messaggio
-def compare_status_only(old_state, new_state):
+# Funzione per confrontare due JSON
+def compare_json(json1, json2):
     messages = []
-
     status_icons = {
         "AGGIORNATA": "🟢",
         "COMPATIBILE": "🔵",
         "ROTTA": "🔴",
         "NUOVA": "🟣",
-        "DA AGGIORNARE": "⚪️",  # Cambiato "DA-AGGIORNARE" in "DA AGGIORNARE"
+        "DA AGGIORNARE": "⚪️",
         "SCONOSCIUTA & OBSOLETA": "⚪️"
     }
-
-    old_mods = {(mod['Title'], mod['Translator']): mod for mod in old_state}
-
-    for new_mod in new_state:
-        new_key = (new_mod['Title'], new_mod['Translator'])
-        new_status = (new_mod.get('Status') or '').strip().upper()
-        new_release_version = (new_mod.get('ReleaseVersion') or '').strip()
-
-        if new_key not in old_mods:  # Mod nuova
-            status_icon = status_icons.get(new_status, "⚪️")
-            message = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-            messages.append(message)
-        else:
-            old_mod = old_mods[new_key]
-            old_status = (old_mod.get('Status') or '').strip().upper()
-            old_release_version = (old_mod.get('ReleaseVersion') or '').strip()
-
-            # Invia una notifica se cambia lo stato o se cambia la ReleaseVersion
-            if new_status != old_status or new_release_version != old_release_version:
-                # Gestione specifica per "DA AGGIORNARE"
-                if new_status == "da-aggiornare":
-                    new_status = "DA AGGIORNARE"
-
-                status_icon = status_icons.get(new_status, "⚪️")
-                message = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {status_icon} _{new_status}_\nRelease Version: {new_release_version}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-                messages.append(message)
-
+    
+    for item1, item2 in zip(json1, json2):
+        if item1["programma"] == item2["programma"]:
+            # Confronta lo stato di Windows
+            if item1["statuswindows"] != item2["statuswindows"]:
+                messages.append(f"{item1['programma']}\n"
+                                f"Stato Windows {status_icons.get(item2['statuswindows'], '')} {item2['statuswindows']}\n"
+                                f"Link SITO: {item2['link_programma']}\n"
+                                f"Ultimo aggiornamento Windows: {item2['data_aggiornamentowindows']}")
+            
+            # Confronta lo stato di macOS
+            if item1["statusmacos"] != item2["statusmacos"]:
+                messages.append(f"{item1['programma']}\n"
+                                f"Stato macOS {status_icons.get(item2['statusmacos'], '')} {item2['statusmacos']}\n"
+                                f"Link SITO: {item2['link_programma']}\n"
+                                f"Ultimo aggiornamento macOS: {item2['data_aggiornamentomacos']}")
+    
     return messages
-    
-# Funzione per inviare un messaggio su Telegram
-def send_telegram_message(message, chat_id, topic_id):
-    url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
-    
-    payload = {
-        'chat_id': chat_id,
-        'text': message,
-        'message_thread_id': topic_id,
-        'parse_mode': 'Markdown',  # Usa MarkdownV2 per supporto caratteri
-        'disable_web_page_preview': True
-    }
-    
-    try:
-        response = requests.post(url, data=payload)
-        response.raise_for_status()  # Se il codice di stato non è 200, solleva un'eccezione
-        print(f"Messaggio inviato con successo: {message}")
-    except requests.exceptions.RequestException as e:
-        print(f"Errore nell'invio del messaggio a Telegram: {e}")
 
-# Funzione per monitorare le modifiche
-async def monitor_mods():
-    print("Monitorando le modifiche...")  # Debug print
-    last_state = load_last_state()
-    new_state = fetch_json(mods_url)
-
-    if new_state:
-        messages = compare_status_only(last_state, new_state)
-
-        if messages:
-            print("Modifiche di status rilevate! Inviando notifiche...")
-
-            # Invio dei messaggi Telegram
-            for message in messages:
-                send_telegram_message(message, group_id, topic_id)  # Invio del messaggio
-
-            # Dopo l'invio dei messaggi, aggiorna lo stato su GitHub
-            save_current_state(new_state)  # Salva lo stato aggiornato su GitHub
+# Funzione per aggiornare il file last_stateprogrammi.json
+def update_state_file(json_data):
+    headers = {'Authorization': f'token {github_token}'}
+    response = requests.get(state_url, headers=headers)
+    if response.status_code == 200:
+        file_info = response.json()
+        update_url = file_info['download_url']
+        update_response = requests.put(update_url, json=json_data, headers=headers)
+        if update_response.status_code == 200:
+            print("File aggiornato con successo")
         else:
-            print("Nessuna modifica dello status trovata.")
+            print(f"Errore nell'aggiornamento del file: {update_response.status_code}")
     else:
-        print("Errore nel recupero delle informazioni sui mods.")
+        print(f"Errore nel recupero del file: {response.status_code}")
 
-if __name__ == "__main__":
-    try:
-        asyncio.run(monitor_mods())  # Ensure that asyncio.run() is called properly
-    except Exception as e:
-        print(f"Errore nell'esecuzione del programma: {e}")
+# Funzione principale
+async def main():
+    # Scarica i file JSON da GitHub
+    json_mods = download_json(mods_url)
+    json_state = download_json(state_url)
+    
+    if json_mods and json_state:
+        # Confronta i JSON
+        messages = compare_json(json_mods, json_state)
+        
+        if messages:
+            # Invia i messaggi su Telegram
+            for message in messages:
+                await send_telegram_message(message)
+            
+            # Aggiorna il file state con i dati di programmi
+            update_state_file(json_mods)
+
+# Avvia l'app
+if __name__ == '__main__':
+    asyncio.run(main())
