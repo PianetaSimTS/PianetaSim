@@ -78,10 +78,20 @@ def compare_status_only(old_state, new_state):
         new_program_name = new_mod['programma']
         new_status = new_mod.get('status', '').upper() if new_mod.get('status') else 'SCONOSCIUTO'
         new_date = new_mod.get('data_aggiornamento', 'Data non disponibile')
+        
+        # Controlla la compatibilità su Windows o macOS
+        if new_mod.get('windows') and new_mod.get('macos'):
+            system_message = f"Stato 🟢 AGGIORNATO (Windows, macOS)"
+        elif new_mod.get('windows'):
+            system_message = f"Stato 🟢 AGGIORNATO (Windows)"
+        elif new_mod.get('macos'):
+            system_message = f"Stato 🟢 AGGIORNATO (macOS)"
+        else:
+            system_message = "Stato ⚪️ SCONOSCIUTO"
 
         if new_program_name not in old_programs:  # Programma NUOVO
             status_icon = status_icons.get("NUOVO", "🟣")
-            message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\nStato {status_icon} _NUOVO_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+            message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
             messages.append(message)
         else:
             # Trova il programma corrispondente nello stato precedente
@@ -93,12 +103,12 @@ def compare_status_only(old_state, new_state):
                     # Se lo stato cambia, invia la notifica
                     if new_status != old_status:
                         status_icon = status_icons.get(new_status, "⚪️")
-                        message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                        message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                         messages.append(message)
                     # Se la data cambia ma lo stato resta uguale, invia comunque una notifica con stato "AGGIORNATO"
                     elif new_date != old_date:
                         status_icon = status_icons.get("AGGIORNATO", "🟢")
-                        message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\nStato {status_icon} _AGGIORNATO_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                        message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                         messages.append(message)
 
                     break  # Esci dal loop una volta trovato il programma corrispondente
