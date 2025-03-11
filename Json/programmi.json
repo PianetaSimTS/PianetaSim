@@ -2,7 +2,7 @@
   {
     "programma": "Help Sim di Pianeta Sim",
     "windows": true,
-    "macos": false,
+    "macOS": false,
     "statuswindows": "compatibile",
     "statusmacos": "non-disponibile",
     "link_programma": "https://pianetasimts.github.io/PianetaSim/index.html",
@@ -12,7 +12,7 @@
   {
     "programma": "Sims 4 Cleanup Script di Andirz",
     "windows": true,
-    "macos": false,
+    "macOS": false,
     "statuswindows": "compatibile",
     "statusmacos": "non-disponibile",
     "link_programma": "https://simfileshare.net/download/LcaKjfxOQri2XcinPhxRfLgiiFdLu7jAY86Y2IZ9DzkGbYj2qoUbpfVd3vRPrBTq/",
@@ -22,9 +22,9 @@
   {
     "programma": "Sims 4 Studio di Andrew",
     "windows": true,
-    "macos": true,
+    "macOS": true,
     "statuswindows": "aggiornato",
-    "statusmacos": "rotto",    
+    "statusmacos": "aggiornato",
     "link_programma": "https://sims4studio.com/board/6/download-sims-studio-open-version",
     "data_aggiornamento": "08/03/2025",
     "video_spiegativo": "https://youtu.be/Cy-G5F0bq90?feature=shared"
@@ -32,12 +32,11 @@
   {
     "programma": "Sims 4 Tray Importer di LuniverSims",
     "windows": true,
-    "macos": false,
+    "macOS": false,
     "statuswindows": "aggiornato",
-    "statusmacos": "non-disponibile",    
+    "statusmacos": "non-disponibile",
     "link_programma": "https://luniversims.fr/forums/topic/13520-s4ti-12530-8-mars-win/",
     "data_aggiornamento": "09/03/2025",
     "video_spiegativo": "https://youtu.be/IiHT_s7NBYw?feature=shared"
   }
 ]
-
