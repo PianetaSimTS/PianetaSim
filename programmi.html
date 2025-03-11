@@ -253,7 +253,7 @@ td a:active {
         }
     
         .status.non-disponibile {
-          color: grey;
+          color: lightgrey;
         }
     
         .status.aggiornato {
@@ -390,6 +390,7 @@ td a:active {
         <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
         <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
         <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label>
+        <label><input type="checkbox" value="Non Disponibile" id="status-non-disponibile" onchange="filterTable()"> Nuova</label>
       </div>
     </div>
     <div>
@@ -443,7 +444,7 @@ document.getElementById("download-btn").addEventListener("click", function() {
     document.body.removeChild(link);
     document.getElementById("popup").style.display = "none"; // Chiude il popup dopo il download
 });
- function loadModsFromJson() {
+function loadModsFromJson() {
   fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/programmi.json')
     .then(response => response.json())
     .then(mods => {
@@ -456,8 +457,8 @@ document.getElementById("download-btn").addEventListener("click", function() {
         const isFavorite = favorites.includes(mod.programma);
         const checkWindows = mod.windows ? '✔' : '❌';
         const checkMacOS = mod.macos ? '✔' : '❌';
-        const statusWindows = mod.statuswindows || 'sconosciuto';
-        const statusMacOS = mod.statusmacos || 'sconosciuto';
+        const statusWindows = mod.statuswindows || 'Sconosciuto'; // Cambiato 'sconosciuto' in maiuscolo
+        const statusMacOS = mod.statusmacos || 'Sconosciuto'; // Cambiato 'sconosciuto' in maiuscolo
 
         const newRow = table.insertRow();
         newRow.innerHTML = `
@@ -469,8 +470,8 @@ document.getElementById("download-btn").addEventListener("click", function() {
           <td>${mod.programma || ''}</td>
           <td>${checkWindows}</td> <!-- Compatibilità con Windows -->
           <td>${checkMacOS}</td> <!-- Compatibilità con macOS -->
-          <td><span class="status ${statusWindows}">${statusWindows.toUpperCase()}</span></td> <!-- Stato Windows -->
-          <td><span class="status ${statusMacOS}">${statusMacOS.toUpperCase()}</span></td> <!-- Stato macOS -->
+          <td><span class="status ${statusWindows.toLowerCase().replace(/\s/g, '-')}"">${statusWindows}</span></td> <!-- Stato Windows -->
+          <td><span class="status ${statusMacOS.toLowerCase().replace(/\s/g, '-')}"">${statusMacOS}</span></td> <!-- Stato macOS -->
           <td><a href="${mod.link_programma || '#'}" target="_blank">Link</a></td>
           <td>${mod.data_aggiornamento || ''}</td>
           <td><a href="${mod.video_spiegativo || '#'}" target="_blank">Video</a></td>
@@ -481,7 +482,6 @@ document.getElementById("download-btn").addEventListener("click", function() {
     })
     .catch(error => console.error('Errore nel caricare il JSON:', error));
 }
-
     let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
     let lastSortDirection = 'asc'; // Ordine di ordinamento: ascendente (default) o discendente
 
