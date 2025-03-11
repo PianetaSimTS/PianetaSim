@@ -83,29 +83,30 @@ def compare_status_only(old_state, new_state):
         "SCONOSCIUTA & OBSOLETA": "⚪️"
     }
 
-    old_titles = {(mod['Title'], mod['Translator']) for mod in old_state}  # Set con titolo e traduttore
+    old_mods = {(mod['Title'], mod['Translator']): mod for mod in old_state}
 
     for new_mod in new_state:
-        new_title_translator = (new_mod['Title'], new_mod['Translator'])
+        new_key = (new_mod['Title'], new_mod['Translator'])
         new_status = (new_mod.get('Status') or '').strip().upper()
+        new_release_version = (new_mod.get('ReleaseVersion') or '').strip()
 
-        if new_title_translator not in old_titles:  # Se la mod è nuova
+        if new_key not in old_mods:  # Mod nuova
             status_icon = status_icons.get(new_status, "⚪️")
             message = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
             messages.append(message)
         else:
-            for old_mod in old_state:
-                if new_title_translator == (old_mod['Title'], old_mod['Translator']):
-                    old_status = (old_mod.get('Status') or '').strip().upper()
+            old_mod = old_mods[new_key]
+            old_status = (old_mod.get('Status') or '').strip().upper()
+            old_release_version = (old_mod.get('ReleaseVersion') or '').strip()
 
-                    if new_status != old_status:  # Se lo stato è cambiato
-                        status_icon = status_icons.get(new_status, "⚪️")
-                        message = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-                        messages.append(message)
-                    break  # Evita controlli inutili dopo aver trovato la mod corrispondente
+            # Invia una notifica se cambia lo stato o se cambia la ReleaseVersion
+            if new_status != old_status or new_release_version != old_release_version:
+                status_icon = status_icons.get(new_status, "⚪️")
+                message = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {status_icon} _{new_status}_\nRelease Version: {new_release_version}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                messages.append(message)
 
     return messages
-
+    
 # Funzione per inviare un messaggio su Telegram
 def send_telegram_message(message, chat_id, topic_id):
     url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
