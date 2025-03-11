@@ -400,13 +400,20 @@ td a:active {
   <table id="programmi-table">
     <thead>
       <tr>
-        <th onclick="sortTable(0)">PREFERITE <span class="sort-arrow" id="arrow-0"></span></th>
-        <th onclick="sortTable(1)">PROGRAMMA <span class="sort-arrow" id="arrow-1"></span></th>
-        <th onclick="sortTable(2)">STATO PROGRAMMA <span class="sort-arrow" id="arrow-2"></span></th>
-        <th onclick="sortTable(3)">LINK PROGRAMMA <span class="sort-arrow" id="arrow-3"></span></th>
-        <th onclick="sortTable(4)">DATA AGGIORNAMENTO <span class="sort-arrow" id="arrow-4"></span></th>
-        <th onclick="sortTable(5)">VIDEO SPIEGATIVO <span class="sort-arrow" id="arrow-5"></span></th>
-      </tr>
+        <th rowspan="2">PREFERITE <span class="sort-arrow" id="arrow-0"></span></th>
+        <th rowspan="2">PROGRAMMA <span class="sort-arrow" id="arrow-1"></span></th>
+        <th colspan="2">S.O. <span class="sort-arrow" id="arrow-2"></span></th> <!-- Merged column for S.O. -->
+        <th rowspan="2">STATO PROGRAMMA <span class="sort-arrow" id="arrow-3"></span></th>
+        <th rowspan="2">LINK PROGRAMMA <span class="sort-arrow" id="arrow-4"></span></th>
+        <th rowspan="2">DATA AGGIORNAMENTO <span class="sort-arrow" id="arrow-5"></span></th>
+        <th rowspan="2">VIDEO SPIEGATIVO <span class="sort-arrow" id="arrow-6"></span></th>
+    </tr>
+    <tr>
+        <!-- La seconda riga rimane vuota per le celle che sono già unite nella prima -->
+        <th>Windows</th> <!-- Header for Windows -->
+        <th>macOS</th> <!-- Header for macOS -->
+    </tr>
+    
     </thead>
     <tbody>
       <!-- Le righe verranno caricate dinamicamente dal JSON -->
@@ -444,6 +451,8 @@ document.getElementById("download-btn").addEventListener("click", function() {
       mods.forEach(mod => {
         const isFavorite = favorites.includes(mod.programma);
         const newRow = table.insertRow();
+        const checkWindows = mod.windows ? '✔' : '❌';
+        const checkMacOS = mod.macos ? '✔' : '❌';
         newRow.innerHTML = `
   <td>
     <span class="star-container">
@@ -451,6 +460,8 @@ document.getElementById("download-btn").addEventListener("click", function() {
     </span>
   </td>
   <td>${mod.programma || ''}</td>
+  <td>${checkWindows}</td> <!-- Compatibilità con Windows -->
+  <td>${checkMacOS}</td> <!-- Compatibilità con macOS -->
   <td><span class="status ${mod.status || 'sconosciuta'}">${(mod.status || '').toUpperCase()}</span></td>
   <td><a href="${mod.link_programma || '#'}" target="_blank">Link</a></td>
   <td>${mod.data_aggiornamento || ''}</td>
