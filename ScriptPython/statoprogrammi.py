@@ -89,11 +89,11 @@ def compare_status_only(old_state, new_state):
         system_message_macos = ""
 
         # Verifica se lo stato di Windows è cambiato
-        if status_windows != old_mod.get('statuswindows', ''):
+        if status_windows != new_mod.get('statuswindows', ''):
             system_message_windows = f"Stato {status_icon_windows} _{status_windows}_ (Windows)"
         
         # Verifica se lo stato di macOS è cambiato
-        if status_macos != old_mod.get('statusmacos', ''):
+        if status_macos != new_mod.get('statusmacos', ''):
             system_message_macos = f"Stato {status_icon_macos} _{status_macos}_ (macOS)"
         
         if new_program_name not in old_programs:  # Programma NUOVO
@@ -115,6 +115,7 @@ def compare_status_only(old_state, new_state):
                     break  # Esci dal loop una volta trovato il programma corrispondente
 
     return messages
+
     
 # Funzione per inviare un messaggio su Telegram
 def send_telegram_message(message, chat_id, topic_id):
