@@ -467,7 +467,7 @@ function loadModsFromJson() {
 
         // Gestisci la logica per status
         let statusWindows = mod.statuswindows || 'Sconosciuto';
-        let statusmacos = mod.statusmacos || 'Sconosciuto';
+        let statusMacOS = mod.statusmacos || 'Sconosciuto';
 
         // Gestisci la logica per data aggiornamento
         let dataAggiornamentoWindows = mod.data_aggiornamentowindows || '';
@@ -477,8 +477,8 @@ function loadModsFromJson() {
         if (statusWindows.toLowerCase() === 'non-disponibile') {
           statusWindows = 'NON DISPONIBILE';
         }
-        if (statusmacos.toLowerCase() === 'non-disponibile') {
-          statusmacos = 'NON DISPONIBILE';
+        if (statusMacOS.toLowerCase() === 'non-disponibile') {
+          statusMacOS = 'NON DISPONIBILE';
         }
 
         const newRow = table.insertRow();
@@ -492,7 +492,7 @@ function loadModsFromJson() {
   <td>${checkWindows}</td> <!-- Compatibilità con Windows -->
   <td>${checkMacOS}</td> <!-- Compatibilità con macOS -->
   <td><span class="status windows ${statusWindows.toLowerCase().replace(/\s+/g, '-')}"">${statusWindows}</span></td> <!-- Stato Windows -->
-  <td><span class="status macOS ${statusmacos.toLowerCase().replace(/\s+/g, '-')}"">${statusmacos}</span></td> <!-- Stato macOS -->
+  <td><span class="status macOS ${statusMacOS.toLowerCase().replace(/\s+/g, '-')}"">${statusMacOS}</span></td> <!-- Stato macOS -->
   <td><a href="${mod.link_programmawindows || '#'}" target="_blank">Link</a></td>
   <td><a href="${mod.link_programmamacos || '#'}" target="_blank">Link</a></td>
   <td>${dataAggiornamentoWindows || ''}</td>
@@ -545,7 +545,7 @@ function sortTable(columnIndex) {
   lastSortedColumn = columnIndex;
 }
 
-    function filterTable() {
+function filterTable() {
   const searchValue = document.getElementById("search").value.toLowerCase();
 
   // Stato - raccogli i valori selezionati (quindi solo "Rotto", "Aggiornato", ecc.)
@@ -564,14 +564,14 @@ function sortTable(columnIndex) {
 
     // Ottieni i dati per Windows e macOS
     const statusWindowsElement = row.querySelector(".status.windows");
-const statusmacosElement = row.querySelector(".status.macOS");
+const statusMacOSElement = row.querySelector(".status.macos");
 
 const statusWindows = statusWindowsElement ? statusWindowsElement.textContent.toLowerCase() : '';
-const statusMacOS = statusmacosElement ? statusmacosElement.textContent.toLowerCase() : '';
+const statusMacOS = statusMacOSElement ? statusMacOSElement.textContent.toLowerCase() : '';
 
     // Controlla se uno dei due stati (Windows o macOS) corrisponde a uno dei selezionati
     const matchesWindowsStatus = selectedStatuses.length === 0 || selectedStatuses.some(status => statusWindows.includes(status));
-    const matchesMacOSStatus = selectedStatuses.length === 0 || selectedStatuses.some(status => statusmacos.includes(status));
+    const matchesMacOSStatus = selectedStatuses.length === 0 || selectedStatuses.some(status => statusMacOS.includes(status));
 
     // Controllo se la riga corrisponde alla ricerca
     const matchesSearch = programName.includes(searchValue);
@@ -586,7 +586,6 @@ const statusMacOS = statusmacosElement ? statusmacosElement.textContent.toLowerC
     row.style.display = shouldShowRow ? "" : "none";
   }
 }
-
 
     function toggleFavorite(author) {
   // Remove the apostrophe when toggling favorites
