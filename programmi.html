@@ -387,11 +387,11 @@ td a:active {
       <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
       <div id="filter-status-dropdown" style="display:none;">
         <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
-        <label><input type="checkbox" value="Rotta" id="status-rotta" onchange="filterTable()"> Rotta</label><br>
-        <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
-        <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
+        <label><input type="checkbox" value="Rotto" id="status-rotto" onchange="filterTable()"> Rotto</label><br>
+        <label><input type="checkbox" value="Aggiornato" id="status-aggiornato" onchange="filterTable()"> Aggiornato</label><br>
+        <label><input type="checkbox" value="Sconosciuto" id="status-sconosciuto" onchange="filterTable()"> Sconosciuto</label><br>
         <label><input type="checkbox" value="Non Disponibile" id="status-non-disponibile" onchange="filterTable()"> Non Disponibile</label><br>
-        <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label>
+        <label><input type="checkbox" value="Nuova" id="status-nuovo" onchange="filterTable()"> Nuovo</label>
 
       </div>
     </div>
@@ -407,13 +407,14 @@ td a:active {
 <table id="programmi-table">
   <thead>
       <tr>
-          <th rowspan="2">PREFERITE <span class="sort-arrow" id="arrow-0"></span></th>
-          <th rowspan="2">PROGRAMMA <span class="sort-arrow" id="arrow-1"></span></th>
-          <th colspan="2">S.O. <span class="sort-arrow" id="arrow-2"></span></th> <!-- Merged column for S.O. -->
-          <th colspan="2">STATO PROGRAMMA <span class="sort-arrow" id="arrow-3"></span></th> <!-- Stato per S.O. -->
-          <th rowspan="2">LINK PROGRAMMA <span class="sort-arrow" id="arrow-4"></span></th>
-          <th rowspan="2">DATA AGGIORNAMENTO <span class="sort-arrow" id="arrow-5"></span></th>
-          <th rowspan="2">VIDEO SPIEGATIVO <span class="sort-arrow" id="arrow-6"></span></th>
+        <th rowspan="2" onclick="sortTable(0)">PREFERITE <span class="sort-arrow" id="arrow-0"></span></th>
+        <th rowspan="2" onclick="sortTable(1)">PROGRAMMA <span class="sort-arrow" id="arrow-1"></span></th>
+        <th colspan="2" onclick="sortTable(2)">S.O. <span class="sort-arrow" id="arrow-2"></span></th>
+        <th colspan="2" onclick="sortTable(3)">STATO PROGRAMMA <span class="sort-arrow" id="arrow-3"></span></th>
+        <th rowspan="2" onclick="sortTable(4)">LINK PROGRAMMA <span class="sort-arrow" id="arrow-4"></span></th>
+        <th rowspan="2" onclick="sortTable(5)">DATA AGGIORNAMENTO <span class="sort-arrow" id="arrow-5"></span></th>
+        <th rowspan="2" onclick="sortTable(6)">VIDEO SPIEGATIVO <span class="sort-arrow" id="arrow-6"></span></th>
+        
       </tr>
       <tr>
           <!-- La seconda riga rimane vuota per le celle che sono già unite nella prima -->
@@ -459,12 +460,22 @@ function loadModsFromJson() {
         const isFavorite = favorites.includes(mod.programma);
         const checkWindows = mod.windows ? '✔' : '❌';
         const checkMacOS = mod.macos ? '✔' : '❌';
-        const statusWindows = mod.statuswindows || 'Sconosciuto'; // Cambiato 'sconosciuto' in maiuscolo
-        const statusMacOS = mod.statusmacos || 'Sconosciuto'; // Cambiato 'sconosciuto' in maiuscolo
 
-const newRow = table.insertRow();
-newRow.innerHTML = `
-  <td>
+        // Gestisci la logica per status
+        let statusWindows = mod.statuswindows || 'Sconosciuto';
+        let statusMacOS = mod.statusmacos || 'Sconosciuto';
+
+        // Sostituisci 'NON-DISPONIBILE' o 'non-disponibile' con 'NON DISPONIBILE'
+        if (statusWindows.toLowerCase() === 'non-disponibile') {
+          statusWindows = 'NON DISPONIBILE';
+        }
+        if (statusMacOS.toLowerCase() === 'non-disponibile') {
+          statusMacOS = 'NON DISPONIBILE';
+        }
+
+        const newRow = table.insertRow();
+        newRow.innerHTML = 
+  `<td>
     <span class="star-container">
       <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.programma}')">&#9733;</span>
     </span>
@@ -472,87 +483,101 @@ newRow.innerHTML = `
   <td>${mod.programma || ''}</td>
   <td>${checkWindows}</td> <!-- Compatibilità con Windows -->
   <td>${checkMacOS}</td> <!-- Compatibilità con macOS -->
-  <td><span class="status ${formatStatus(statusWindows)}">${formatStatus(statusWindows)}</span></td> <!-- Stato Windows -->
-  <td><span class="status ${formatStatus(statusMacOS)}">${formatStatus(statusMacOS)}</span></td> <!-- Stato macOS -->
+  <td><span class="status windows ${statusWindows.toLowerCase().replace(/\s+/g, '-')}"">${statusWindows}</span></td> <!-- Stato Windows -->
+  <td><span class="status macos ${statusMacOS.toLowerCase().replace(/\s+/g, '-')}"">${statusMacOS}</span></td> <!-- Stato macOS -->
   <td><a href="${mod.link_programma || '#'}" target="_blank">Link</a></td>
   <td>${mod.data_aggiornamento || ''}</td>
-  <td><a href="${mod.video_spiegativo || '#'}" target="_blank">Video</a></td>
-`;
+  <td><a href="${mod.video_spiegativo || '#'}" target="_blank">Video</a></td>`;
+      });
 
-filterTable();
-})
-.catch(error => console.error('Errore nel caricare il JSON:', error));
-
-// Funzione per formattare lo stato
-function formatStatus(status) {
-  if (status.toLowerCase() === 'non-disponibile' || status === 'NON-DISPONIBILE') {
-    return 'NON DISPONIBILE';
-  }
-  return status;
+      filterTable();
+    })
+    .catch(error => console.error('Errore nel caricare il JSON:', error));
 }
-    let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
-    let lastSortDirection = 'asc'; // Ordine di ordinamento: ascendente (default) o discendente
 
-    function sortTable(columnIndex) {
-      const table = document.getElementById("programmi-table");
-      const rows = Array.from(table.rows).slice(1); // Esclude l'intestazione
-      const arrow = document.getElementById(`arrow-${columnIndex}`);
+let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
+let lastSortDirection = 'asc'; // Ordine di ordinamento: ascendente (default) o discendente
 
-      if (lastSortedColumn === columnIndex) {
-        lastSortDirection = (lastSortDirection === 'asc') ? 'desc' : 'asc';
-      } else {
-        lastSortDirection = 'asc';
-      }
+function sortTable(columnIndex) {
+  const table = document.getElementById("programmi-table");
+  const rows = Array.from(table.rows).slice(2); // Esclude l'intestazione e la seconda riga
+  const arrow = document.getElementById(`arrow-${columnIndex}`);
 
-      const compare = (a, b) => {
-        let valA = a.cells[columnIndex].textContent.trim().toLowerCase();
-        let valB = b.cells[columnIndex].textContent.trim().toLowerCase();
+  // Determina la direzione di ordinamento
+  if (lastSortedColumn === columnIndex) {
+    lastSortDirection = (lastSortDirection === 'asc') ? 'desc' : 'asc';
+  } else {
+    lastSortDirection = 'asc';
+  }
 
-        if (valA < valB) return lastSortDirection === 'asc' ? -1 : 1;
-        if (valA > valB) return lastSortDirection === 'asc' ? 1 : -1;
-        return 0;
-      };
+  // Funzione di comparazione per ordinare i dati
+  const compare = (a, b) => {
+    let valA = a.cells[columnIndex].textContent.trim().toLowerCase();
+    let valB = b.cells[columnIndex].textContent.trim().toLowerCase();
 
-      rows.sort(compare);
-      rows.forEach(row => table.appendChild(row));
+    // Gestione di valori "non disponibili" o altri casi speciali
+    if (valA === 'non disponibile') valA = '';
+    if (valB === 'non disponibile') valB = '';
 
-      document.querySelectorAll('.sort-arrow').forEach(arrow => arrow.className = 'sort-arrow');
-      arrow.classList.add(lastSortDirection);
+    if (valA < valB) return lastSortDirection === 'asc' ? -1 : 1;
+    if (valA > valB) return lastSortDirection === 'asc' ? 1 : -1;
+    return 0;
+  };
 
-      lastSortedColumn = columnIndex;
-    }
+  // Ordinamento delle righe
+  rows.sort(compare);
+  rows.forEach(row => table.appendChild(row));
+
+  // Modifica la direzione della freccia
+  document.querySelectorAll('.sort-arrow').forEach(arrow => arrow.className = 'sort-arrow');
+  arrow.classList.add(lastSortDirection);
+
+  lastSortedColumn = columnIndex;
+}
 
     function filterTable() {
   const searchValue = document.getElementById("search").value.toLowerCase();
-  
-  // Stato - raccogli i valori selezionati
+
+  // Stato - raccogli i valori selezionati (quindi solo "Rotto", "Aggiornato", ecc.)
   const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))
                                   .map(input => input.value.toLowerCase());
-  
+
   const filterFavorites = document.getElementById("filter-favorites").value.toLowerCase();
 
   const table = document.getElementById("programmi-table");
   const rows = table.getElementsByTagName("tr");
 
   for (let i = 1; i < rows.length; i++) {
-        const row = rows[i];
-        const author = row.cells[1].textContent.toLowerCase();
-        
-        // Controllo che esista un elemento con classe .status
-        const statusElement = row.querySelector(".status");
-        const status = statusElement ? statusElement.textContent.toLowerCase() : ''; // Imposta una stringa vuota se non esiste
-        
-        // Controllo che esista un elemento con classe .star
-        const starElement = row.querySelector(".star");
-        const isFavorite = starElement && starElement.classList.contains("favorite"); // Verifica se .star esiste prima
-        
-        const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status);
-        const matchesSearch = author.includes(searchValue);
-        const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : !isFavorite);
-        
-        row.style.display = (matchesSearch && matchesStatus && matchesFavorites) ? "" : "none";
+    const row = rows[i];
+    const programName = row.cells[1].textContent.toLowerCase();
+
+
+    // Ottieni i dati per Windows e macOS
+    const statusWindowsElement = row.querySelector(".status.windows");
+const statusMacOSElement = row.querySelector(".status.macos");
+
+const statusWindows = statusWindowsElement ? statusWindowsElement.textContent.toLowerCase() : '';
+const statusMacOS = statusMacOSElement ? statusMacOSElement.textContent.toLowerCase() : '';
+
+    // Controlla se uno dei due stati (Windows o macOS) corrisponde a uno dei selezionati
+    const matchesWindowsStatus = selectedStatuses.length === 0 || selectedStatuses.some(status => statusWindows.includes(status));
+    const matchesMacOSStatus = selectedStatuses.length === 0 || selectedStatuses.some(status => statusMacOS.includes(status));
+
+    // Controllo se la riga corrisponde alla ricerca
+    const matchesSearch = programName.includes(searchValue);
+
+    // Verifica per i preferiti
+    const starElement = row.querySelector(".star");
+    const isFavorite = starElement && starElement.classList.contains("favorite");
+    const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : !isFavorite);
+
+    // Mostra o nascondi la riga in base ai filtri
+    const shouldShowRow = matchesSearch && (matchesWindowsStatus || matchesMacOSStatus) && matchesFavorites;
+    row.style.display = shouldShowRow ? "" : "none";
   }
 }
+
+
     function toggleFavorite(author) {
   // Remove the apostrophe when toggling favorites
   const cleanedAuthor = author.replace("'", "");
