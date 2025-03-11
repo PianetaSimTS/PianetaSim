@@ -76,16 +76,22 @@ def compare_status_only(old_state, new_state):
 
     for new_mod in new_state:
         new_program_name = new_mod['programma']
-        new_status = new_mod.get('status', '').upper() if new_mod.get('status') else 'SCONOSCIUTO'
         new_date = new_mod.get('data_aggiornamento', 'Data non disponibile')
-        
-        # Controlla la compatibilità su Windows o macOS
+
+        # Verifica lo stato per Windows
+        status_windows = new_mod.get('statuswindows', 'SCONOSCIUTO').upper()
+        status_icon_windows = status_icons.get(status_windows, "⚪️")
+        # Verifica lo stato per macOS
+        status_macos = new_mod.get('statusmacos', 'SCONOSCIUTO').upper()
+        status_icon_macos = status_icons.get(status_macos, "⚪️")
+
+        system_message = ""
         if new_mod.get('windows') and new_mod.get('macos'):
-            system_message = f"Stato 🟢 AGGIORNATO (Windows, macOS)"
+            system_message = f"Stato {status_icon_windows} _{status_windows}_ (Windows) e {status_icon_macos} _{status_macos}_ (macOS)"
         elif new_mod.get('windows'):
-            system_message = f"Stato 🟢 AGGIORNATO (Windows)"
+            system_message = f"Stato {status_icon_windows} _{status_windows}_ (Windows)"
         elif new_mod.get('macos'):
-            system_message = f"Stato 🟢 AGGIORNATO (macOS)"
+            system_message = f"Stato {status_icon_macos} _{status_macos}_ (macOS)"
         else:
             system_message = "Stato ⚪️ SCONOSCIUTO"
 
@@ -97,16 +103,10 @@ def compare_status_only(old_state, new_state):
             # Trova il programma corrispondente nello stato precedente
             for old_mod in old_state:
                 if new_program_name == old_mod['programma']:
-                    old_status = old_mod.get('status', '').upper() if old_mod.get('status') else 'SCONOSCIUTO'
                     old_date = old_mod.get('data_aggiornamento', '')
 
-                    # Se lo stato cambia, invia la notifica
-                    if new_status != old_status:
-                        status_icon = status_icons.get(new_status, "⚪️")
-                        message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-                        messages.append(message)
-                    # Se la data cambia ma lo stato resta uguale, invia comunque una notifica con stato "AGGIORNATO"
-                    elif new_date != old_date:
+                    # Se la data cambia, invia comunque una notifica con stato "AGGIORNATO"
+                    if new_date != old_date:
                         status_icon = status_icons.get("AGGIORNATO", "🟢")
                         message = f"PROGRAMMA\n\n*{new_program_name}* ➜ Data *{new_date}*\n\n{system_message}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                         messages.append(message)
@@ -162,3 +162,4 @@ if __name__ == "__main__":
         asyncio.run(monitor_mods())  # Ensure that asyncio.run() is called properly
     except Exception as e:
         print(f"Errore nell'esecuzione del programma: {e}")
+
