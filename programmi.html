@@ -461,15 +461,15 @@ function loadModsFromJson() {
       mods.forEach(mod => {
         const isFavorite = favorites.includes(mod.programma);
         const checkWindows = mod.windows ? '✔' : '❌';
-        const checkMacOS = mod.macos ? '✔' : '❌';
+        const checkMacOS = mod.macOS ? '✔' : '❌';
 
         // Gestisci la logica per status
         let statusWindows = mod.statuswindows || 'Sconosciuto';
-        let statusMacOS = mod.statusmacos || 'Sconosciuto';
+        let statusMacOS = mod.statusmacOS || 'Sconosciuto';
 
         // Gestisci la logica per data aggiornamento
         let dataAggiornamentoWindows = mod.data_aggiornamentowindows || '';
-        let dataAggiornamentoMacOS = mod.data_aggiornamentomacos || '';
+        let dataAggiornamentoMacOS = mod.data_aggiornamentomacOS || '';
 
         // Sostituisci 'NON-DISPONIBILE' o 'non-disponibile' con 'NON DISPONIBILE'
         if (statusWindows.toLowerCase() === 'non-disponibile') {
@@ -490,7 +490,7 @@ function loadModsFromJson() {
   <td>${checkWindows}</td> <!-- Compatibilità con Windows -->
   <td>${checkMacOS}</td> <!-- Compatibilità con macOS -->
   <td><span class="status windows ${statusWindows.toLowerCase().replace(/\s+/g, '-')}"">${statusWindows}</span></td> <!-- Stato Windows -->
-  <td><span class="status macos ${statusMacOS.toLowerCase().replace(/\s+/g, '-')}"">${statusMacOS}</span></td> <!-- Stato macOS -->
+  <td><span class="status macOS ${statusMacOS.toLowerCase().replace(/\s+/g, '-')}"">${statusMacOS}</span></td> <!-- Stato macOS -->
   <td><a href="${mod.link_programma || '#'}" target="_blank">Link</a></td>
   <td>${dataAggiornamentoWindows || ''}</td>
   <td>${dataAggiornamentoMacOS || ''}</td>
@@ -561,7 +561,7 @@ function sortTable(columnIndex) {
 
     // Ottieni i dati per Windows e macOS
     const statusWindowsElement = row.querySelector(".status.windows");
-const statusMacOSElement = row.querySelector(".status.macos");
+const statusMacOSElement = row.querySelector(".status.macOS");
 
 const statusWindows = statusWindowsElement ? statusWindowsElement.textContent.toLowerCase() : '';
 const statusMacOS = statusMacOSElement ? statusMacOSElement.textContent.toLowerCase() : '';
