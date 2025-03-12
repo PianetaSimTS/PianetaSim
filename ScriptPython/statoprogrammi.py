@@ -66,7 +66,7 @@ def compare_status_only(old_state, new_state):
         "ROTTO": "🔴",
         "NUOVO": "🟣",
         "SCONOSCIUTO & OBSOLETO": "⚪️",
-        "NON-DISPONIBILE": "⚫️"
+        "NON DISPONIBILE": "⚫️"
     }
     
     old_programs = {mod['programma'] for mod in old_state}
