@@ -1945,5 +1945,16 @@
     "Categoria": "Utilità",
     "Dependency": "ATTENZIONE va usata una sola venue list",
     "Descrizione": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!"
+  },
+  {
+    "Author": "Amellce",
+    "ModName": "Steady Sit & Seat Any Sim",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.patreon.com/posts/mod-steady-sit-83645525",
+    "DataUltimaModifica": "11/03/2025",
+    "Translation": "inclusa",
+    "Categoria": "Utilità",
+    "Dependency": "XML Injector",
+    "Descrizione": "Permette al giocatore di far sedere i sim in modo composto"
   }
 ]
