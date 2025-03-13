@@ -242,6 +242,17 @@
     "Descrizione": "Questa mod è stata creata per incoraggiare e introdurre nuovi modi di vivere uno stile di vita più sano per i tuoi Sims."
   },
   {
+    "Author": "Amellce",
+    "ModName": "Steady Sit & Seat Any Sim",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.patreon.com/posts/mod-steady-sit-83645525",
+    "DataUltimaModifica": "11/03/2025",
+    "Translation": "inclusa",
+    "Categoria": "Utilità",
+    "Dependency": "XML Injector",
+    "Descrizione": "Permette al giocatore di far sedere i sim in modo composto"
+  },
+  {
     "Author": "Andirz",
     "ModName": "Auto Service Career",
     "Status": "compatibile",
@@ -1320,6 +1331,28 @@
     "Descrizione": "Serve per il funzionamento di altre mod di Lumpinou."
   },
   {
+    "Author": "LunarBritney",
+    "ModName": "Higher Business Activity Limit",
+    "Status": "nuova",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/higher-business-activity-limit",
+    "DataUltimaModifica": "08/03/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Gameplay",
+    "Dependency": "DLC Hobby & Attività",
+    "Descrizione": "Ti consente di impostare più di 5 attività commerciali aggiungendo altri 3 slot."
+  },
+  {
+    "Author": "LunarBritney",
+    "ModName": "More Small Business Employees",
+    "Status": "nuova",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/more-small-business-employees",
+    "DataUltimaModifica": "10/03/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Gameplay",
+    "Dependency": "DLC Hobby & Attività",
+    "Descrizione": "Ti consente di assumere altri 3 dipendenti."
+  },
+  {
     "Author": "Maplebell",
     "ModName": "More Kisses",
     "Status": "aggiornata",
@@ -1945,16 +1978,5 @@
     "Categoria": "Utilità",
     "Dependency": "ATTENZIONE va usata una sola venue list",
     "Descrizione": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!"
-  },
-  {
-    "Author": "Amellce",
-    "ModName": "Steady Sit & Seat Any Sim",
-    "Status": "aggiornata",
-    "SiteLink": "https://www.patreon.com/posts/mod-steady-sit-83645525",
-    "DataUltimaModifica": "11/03/2025",
-    "Translation": "inclusa",
-    "Categoria": "Utilità",
-    "Dependency": "XML Injector",
-    "Descrizione": "Permette al giocatore di far sedere i sim in modo composto"
   }
 ]
