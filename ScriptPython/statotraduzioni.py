@@ -92,6 +92,9 @@ def compare_status_only(old_state, new_state):
         new_release_version = (new_mod.get('ReleaseVersion') or '').strip()
 
         if new_key not in old_mods:  # Mod nuova
+            if new_status == "DA-AGGIORNARE":  # Normalizzazione dello stato
+                new_status = "DA AGGIORNARE"
+
             status_icon = status_icons.get(new_status, "⚪️")
             message = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {status_icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
             messages.append(message)
@@ -102,8 +105,7 @@ def compare_status_only(old_state, new_state):
 
             # Invia una notifica se cambia lo stato o se cambia la ReleaseVersion
             if new_status != old_status or new_release_version != old_release_version:
-                # Gestione specifica per "DA AGGIORNARE"
-                if new_status == "da-aggiornare":
+                if new_status == "DA-AGGIORNARE":  # Normalizzazione dello stato
                     new_status = "DA AGGIORNARE"
 
                 status_icon = status_icons.get(new_status, "⚪️")
@@ -111,7 +113,6 @@ def compare_status_only(old_state, new_state):
                 messages.append(message)
 
     return messages
-    
 # Funzione per inviare un messaggio su Telegram
 def send_telegram_message(message, chat_id, topic_id):
     url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
