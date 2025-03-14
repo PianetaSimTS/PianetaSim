@@ -22,6 +22,7 @@
           --tdacolor: #B57EDC;
           --tdahover: #FFB6C1;
           --tdactive: #8E44AD;
+          --text-color: #fff;
         }
     
         #filter-status-dropdown, #filter-translation-dropdown, #filter-category-dropdown {
@@ -44,6 +45,60 @@ td a:hover {
 td a:active {
   color: var(--tdactive);
 }
+
+.language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Spostato in alto a destra */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color)
+}
+.switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      border-radius: 24px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #16ab63;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
     
         .navbar {
       display: flex;
@@ -336,15 +391,22 @@ td a:active {
     <img src="Immagini/plumboblogonoscritte.png" alt="Home Logo" width="50" height="auto">
     <span class="home-text">HOME</span>
   </a>
-  <h1>Tabella - Animazioni Wicked Whims +18</h1>
+  <h1 id="page-title">Tabella - Animazioni Wicked Whims +18</h1>
   <div class="navbar">
-    <a href="mod.html">MOD</a>
-    <a href="mod18.html">MOD +18</a>
-    <a href="animazioniww18.html">ANIMAZIONI WICKED WHIMS +18</a>
-    <a href="traduzioni.html">TRADUZIONI</a>
-    <a href="programmi.html">PROGRAMMI</a>
+    <a href="mod.html" id="mod-link">MOD</a>
+    <a href="mod18.html" id="mod18-link">MOD +18</a>
+    <a href="animazioniww18.html" id="animazioniww18-link">ANIMAZIONI WICKED WHIMS +18</a>
+    <a href="traduzioni.html" id="traduzioni-link">TRADUZIONI</a>
+    <a href="programmi.html" id="programmi-link">PROGRAMMI</a>
     <a href="#" id="desc-mod-btn">HELP SIM</a>
     <button id="themeSwitch" onclick="toggleTheme()" class="theme-toggle" title="Cambia Tema">🌙</button>
+  </div>
+  <div class="language-toggle">
+    <label class="switch">
+      <input type="checkbox" id="language-switch">
+      <span class="slider"></span>
+    </label>
+    <span id="language-label">Italiano</span>
   </div>
   <!-- Popup per la descrizione -->
 <div id="popup" class="popup">
@@ -382,7 +444,7 @@ td a:active {
       <input type="text" id="search" oninput="filterTable()" placeholder="Cerca...">
     </div>
     <div>
-      <label for="filter-status">Stato:</label>
+      <label for="filter-status" id="filter-status-label">Stato:</label>
       <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
       <div id="filter-status-dropdown" style="display:none;">
         <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
@@ -393,7 +455,7 @@ td a:active {
       </div>
     </div>
     <div>
-      <label for="filter-favorites">Preferiti:</label>
+      <label for="filter-favorites" id="filter-favorites-label">Preferiti:</label>
       <select id="filter-favorites" onchange="filterTable()">
         <option value="">Tutti</option>
         <option value="true">Preferiti</option>
@@ -601,7 +663,8 @@ root.style.setProperty("--sconosciutavar", "#545454"); // Giallo brillante per m
 root.style.setProperty("--thtdcolor", "black");
 root.style.setProperty("--tdacolor", "blue");
 root.style.setProperty("--tdahover", "#551A8B");
-root.style.setProperty("--tdactive", "#000080");    
+root.style.setProperty("--tdactive", "#000080");
+root.style.setProperty("--text-color", "#000");    
     themeSwitch.textContent = "🌞";
   } else {
     // Passa al tema scuro
@@ -620,7 +683,123 @@ root.style.setProperty("--tdactive", "#000080");
     root.style.setProperty("--tdacolor", "#B57EDC");
     root.style.setProperty("--tdahover", "#FFB6C1");
     root.style.setProperty("--tdactive", "#8E44AD");
+    root.style.setProperty("--text-color", "#fff");
     themeSwitch.textContent = "🌙";
+  }
+}
+
+const languageSwitch = document.getElementById("language-switch");
+const languageLabel = document.getElementById("language-label");
+const texts = {
+  it: {
+    helpSimTitle: "🚀 HELP SIM",
+    helpSimDesc: "Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! Con pochi click, potrai aggiungere le tue mod preferite, tenere tutto sotto controllo e persino dare una bella ripulita ai file cache di The Sims 4! Che tu voglia ampliare il tuo gioco con nuove mod o semplicemente tenere tutto in ordine, sei nel posto giusto.",
+    relax: "Ora rilassati, personalizza il tuo gioco e lascia che <strong>Help Sim</strong> faccia il resto! 🎮✨",
+    precautions: "⚠️ PICCOLE ATTENZIONI PRIMA DELLO SCARICO ⚠️",
+    download: "📥 Scarica",
+    close: "❌ Chiudi",
+    pageTitle: "Tabella - Animazioni Wicked Whims +18",
+    modLink: "MOD",
+    mod18Link: "MOD +18",
+    animazioniww18Link: "ANIMAZIONI WICKED WHIMS +18",
+    traduzioniLink: "TRADUZIONI",
+    programmiLink: "PROGRAMMI",
+    helpSimLink: "HELP SIM",
+    searchPlaceholder: "Cerca...",
+    filterStatusLabel: "Stato:",
+    filterFavoritesLabel: "Preferiti:",
+    tableHeaders: {
+      favorites: "PREFERITE",
+      author: "AUTORE",
+      mod: "MOD",
+      status: "STATO ANIMAZIONE",
+      modLink: "LINK ANIMAZIONE",
+      lastModified: "DATA AGGIORNAMENTO ANIMAZIONE",
+      translation: "TRADUZIONE",
+      requirements: "NOTE"
+    }
+  },
+  en: {
+    helpSimTitle: "🚀 HELP SIM",
+    helpSimDesc: "Tired of installing mods and translations manually? Help Sim is here to save you! With just a few clicks, you can add your favorite mods, keep everything under control, and even clean up The Sims 4 cache files! Whether you want to expand your game with new mods or simply keep everything organized, you're in the right place.",
+    relax: "Now relax, customize your game, and let <strong>Help Sim</strong> do the rest! 🎮✨",
+    precautions: "⚠️ IMPORTANT NOTES BEFORE DOWNLOADING ⚠️",
+    download: "📥 Download",
+    close: "❌ Close",
+    pageTitle: "Table - Animations Wicked Whims +18",
+    modLink: "MOD",
+    mod18Link: "MOD +18",
+    animazioniww18Link: "WICKED WHIMS ANIMATIONS +18",
+    traduzioniLink: "TRANSLATIONS",
+    programmiLink: "PROGRAMS",
+    helpSimLink: "HELP SIM",
+    searchPlaceholder: "Search...",
+    filterStatusLabel: "Status:",
+    filterFavoritesLabel: "Favorites:",
+    tableHeaders: {
+      favorites: "FAVORITES",
+      author: "AUTHOR",
+      mod: "MOD",
+      status: "ANIMATION STATUS",
+      modLink: "ANIMATION LINK",
+      lastModified: "ANIMATION UPDATE DATE",
+      translation: "TRANSLATION",
+      requirements: "NOTES"
+    }
+  }
+};
+
+// Funzione per cambiare lingua
+function toggleLanguage() {
+  const isEnglish = languageSwitch.checked;
+  const lang = isEnglish ? "en" : "it";
+  languageLabel.textContent = isEnglish ? "English" : "Italiano";
+  localStorage.setItem("language", lang);
+
+  // Aggiornamento dinamico dei testi
+  document.querySelector("#popup h2").textContent = texts[lang].helpSimTitle;
+  document.querySelector("#popup p").innerHTML = texts[lang].helpSimDesc;
+  document.querySelector("#popup p:nth-of-type(2)").innerHTML = texts[lang].relax;
+  document.querySelector("#popup h3").textContent = texts[lang].precautions;
+  document.getElementById("download-btn").textContent = texts[lang].download;
+  document.getElementById("close-btn").textContent = texts[lang].close;
+  document.getElementById("page-title").textContent = texts[lang].pageTitle;
+  document.getElementById("mod-link").textContent = texts[lang].modLink;
+  document.getElementById("mod18-link").textContent = texts[lang].mod18Link;
+  document.getElementById("animazioniww18-link").textContent = texts[lang].animazioniww18Link;
+  document.getElementById("traduzioni-link").textContent = texts[lang].traduzioniLink;
+  document.getElementById("programmi-link").textContent = texts[lang].programmiLink;
+  document.getElementById("desc-mod-btn").textContent = texts[lang].helpSimLink;
+  document.querySelector("#search").placeholder = texts[lang].searchPlaceholder;
+  document.getElementById("filter-status-label").textContent = texts[lang].filterStatusLabel;
+  document.getElementById("filter-favorites-label").textContent = texts[lang].filterFavoritesLabel;
+document.querySelector("th:nth-child(1)").textContent = texts[lang].tableHeaders.favorites;
+document.querySelector("th:nth-child(2)").textContent = texts[lang].tableHeaders.author;
+document.querySelector("th:nth-child(3)").textContent = texts[lang].tableHeaders.status;
+document.querySelector("th:nth-child(4)").textContent = texts[lang].tableHeaders.modLink;
+document.querySelector("th:nth-child(5)").textContent = texts[lang].tableHeaders.lastModified;
+document.querySelector("th:nth-child(6)").textContent = texts[lang].tableHeaders.requirements;
+}
+
+// Impostazione della lingua iniziale
+function setInitialLanguage() {
+  const savedLanguage = localStorage.getItem("language") || "it";
+  languageSwitch.checked = savedLanguage === "en";
+  toggleLanguage();
+}
+
+languageSwitch.addEventListener("change", toggleLanguage);
+setInitialLanguage();
+
+function showTooltip(event, modName) {
+  const tooltip = document.querySelector(`#${modName} .tooltip`);
+  tooltip.style.display = 'block';
+}
+
+function hideTooltip(event) {
+  const tooltip = event.target.querySelector('.tooltip');
+  if (tooltip) {
+    tooltip.style.display = 'none';
   }
 }
 function toggleDropdown(id) {
