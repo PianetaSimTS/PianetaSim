@@ -152,7 +152,14 @@ footer {
 .social-container .social-icons {
   margin-top: 0px;
 }
-
+.language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Spostato in alto a destra */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .theme-toggle {
       position: absolute;
       top: 20px;
@@ -353,6 +360,13 @@ footer {
     </label>
     <span id="theme-label">Tema Scuro</span>
   </div>
+  <div class="language-toggle">
+    <label class="switch">
+      <input type="checkbox" id="language-switch">
+      <span class="slider"></span>
+    </label>
+    <span id="language-label">Italiano</span>
+  </div>
   <header>
     <img src="Immagini/plumboblogonoscritte.png" alt="Logo Pianeta Sim">
     <br>
@@ -413,7 +427,7 @@ footer {
 
 </div>
   <div class="social-container">
-    <p>Unisciti ai nostri social ed entra a far parte della community Pianeta Sim! Potrai trovare assistenza e molto altro ancora!</p>
+    <p id="social-text">Unisciti ai nostri social ed entra a far parte della community Pianeta Sim! Potrai trovare assistenza e molto altro ancora!</p>
     <div class="social-icons">
       <a href="https://t.me/TheSims4ItaliaPianetaSim" target="_blank">
         <img src="Immagini/icons8-telegramma-app-48.png" alt="Telegram" />
@@ -459,6 +473,76 @@ footer {
     themeSwitch.addEventListener("change", toggleTheme);
     setInitialTheme();
 
+
+    const languageSwitch = document.getElementById("language-switch");
+const languageLabel = document.getElementById("language-label");
+
+// Testi in italiano e inglese
+const texts = {
+  it: {
+    welcome: "Benvenuti",
+    intro: "Qui troverai gli aggiornamenti più recenti su mod, mod +18, animazioni per la mod WickedWhims, traduzioni italiane e programmi per The Sims 4. Monitoriamo costantemente lo stato dei contenuti per offrirti informazioni accurate.<br><br>Rimani aggiornato e migliora la tua esperienza di gioco con noi!",
+    patch: "PATCH + HOTFIX",
+    patchDate: "del",
+    tableHint: "⬇ PREMI QUI SOTTO PER RECARTI NELLA TABELLA DESIDERATA ⬇",
+    helpSimTitle: "🚀 HELP SIM",
+    helpSimDesc: "Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! Con pochi click, potrai aggiungere le tue mod preferite, tenere tutto sotto controllo e persino dare una bella ripulita ai file cache di The Sims 4! Che tu voglia ampliare il tuo gioco con nuove mod o semplicemente tenere tutto in ordine, sei nel posto giusto.",
+    relax: "Ora rilassati, personalizza il tuo gioco e lascia che <strong>Help Sim</strong> faccia il resto! 🎮✨",
+    precautions: "⚠️ PICCOLE ATTENZIONI PRIMA DELLO SCARICO ⚠️",
+    download: "📥 Scarica",
+    close: "❌ Chiudi",
+    social: "Unisciti ai nostri social ed entra a far parte della community Pianeta Sim! Potrai trovare assistenza e molto altro ancora!"
+  },
+  en: {
+    welcome: "Welcome",
+    intro: "Here you will find the latest updates on mods, 18+ mods, animations for the WickedWhims mod, Italian translations, and programs for The Sims 4. We constantly monitor content status to provide you with accurate information.<br><br>Stay up to date and enhance your gaming experience with us!",
+    patch: "PATCH + HOTFIX",
+    patchDate: "on",
+    tableHint: "⬇ CLICK BELOW TO ACCESS THE DESIRED TABLE ⬇",
+    helpSimTitle: "🚀 HELP SIM",
+    helpSimDesc: "Tired of installing mods and translations manually? Help Sim is here to save you! With just a few clicks, you can add your favorite mods, keep everything under control, and even clean up The Sims 4 cache files! Whether you want to expand your game with new mods or simply keep everything organized, you're in the right place.",
+    relax: "Now relax, customize your game, and let <strong>Help Sim</strong> do the rest! 🎮✨",
+    precautions: "⚠️ IMPORTANT NOTES BEFORE DOWNLOADING ⚠️",
+    download: "📥 Download",
+    close: "❌ Close",
+    social: "Join our social networks and become part of the Pianeta Sim community! You will find support and much more!"
+  }
+};
+
+// Funzione per cambiare lingua
+function toggleLanguage() {
+  const isEnglish = languageSwitch.checked;
+  const lang = isEnglish ? "en" : "it";
+  languageLabel.textContent = isEnglish ? "English" : "Italiano";
+  localStorage.setItem("language", lang);
+
+  // Aggiornamento dinamico dei testi
+  document.querySelector(".scritta-benvenuto").setAttribute("alt", texts[lang].welcome);
+  document.querySelector(".intro-text").innerHTML = texts[lang].intro;
+  document.querySelector(".highlight").firstChild.textContent = texts[lang].patch + " ";
+  document.querySelector(".highlight .version").nextSibling.textContent = ` ${texts[lang].patchDate} `;
+  document.querySelector(".button-hint").textContent = texts[lang].tableHint;
+  document.querySelector("#popup h2").textContent = texts[lang].helpSimTitle;
+  document.querySelector("#popup p").innerHTML = texts[lang].helpSimDesc;
+  document.querySelector("#popup p:nth-of-type(2)").innerHTML = texts[lang].relax;
+  document.querySelector("#popup h3").textContent = texts[lang].precautions;
+  document.getElementById("download-btn").textContent = texts[lang].download;
+  document.getElementById("close-btn").textContent = texts[lang].close;
+  document.getElementById("social-text").textContent = texts[lang].social;
+}
+
+// Impostazione della lingua iniziale
+function setInitialLanguage() {
+  const savedLanguage = localStorage.getItem("language") || "it";
+  languageSwitch.checked = savedLanguage === "en";
+  toggleLanguage();
+}
+
+languageSwitch.addEventListener("change", toggleLanguage);
+setInitialLanguage();
+
+
+
 document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
     event.preventDefault();
     document.getElementById("popup").style.display = "block";
@@ -480,4 +564,3 @@ document.getElementById("download-btn").addEventListener("click", function() {
   </script>
 </body>
 </html>
-
