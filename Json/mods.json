@@ -1353,6 +1353,17 @@
     "Descrizione": "Ti consente di assumere altri 3 dipendenti."
   },
   {
+    "Author": "LunarBritney",
+    "ModName": "More Small Business Visitors",
+    "Status": "nuova",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/more-small-business-visitors",
+    "DataUltimaModifica": "08/03/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Gameplay",
+    "Dependency": "DLC Hobby & Attività",
+    "Descrizione": "Ti consente di avere più visitatori su piccoli lotti commerciali (inclusi i negozi residenziali, eccetto gli appartamenti) pur restando sotto il limite di 20 sim per mantenere le prestazioni ma con un'immersione migliorata."
+  },
+  {
     "Author": "Maplebell",
     "ModName": "More Kisses",
     "Status": "aggiornata",
