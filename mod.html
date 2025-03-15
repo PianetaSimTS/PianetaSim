@@ -523,8 +523,8 @@ td a:active {
       <button onclick="toggleDropdown('filter-translation-dropdown')">▼</button>
       <div id="filter-translation-dropdown" style="display:none;">
         <label><input type="checkbox" value="Inclusa" id="translation-inclusa" onchange="filterTable()"> Inclusa</label><br>
-        <label><input type="checkbox" value="Non necessaria" id="translation-non-necessaria" onchange="filterTable()"> Non necessaria</label><br>
-        <label><input type="checkbox" value="Da scaricare" id="translation-da-scaricare" onchange="filterTable()"> Da scaricare</label>
+        <label><input type="checkbox" value="Non necessaria" id="translation-non-necessaria" onchange="filterTable()"> Non Necessaria</label><br>
+        <label><input type="checkbox" value="Da scaricare" id="translation-da-scaricare" onchange="filterTable()"> Da Scaricare</label>
       </div>
     </div>
     <div>
@@ -535,11 +535,11 @@ td a:active {
       </div>
     </div>
     <div>
-      <label for="filter-favorites" id="filter-favorites-label">Preferiti:</label>
+      <label for="filter-favorites" id="filter-favorites-label">Preferite:</label>
       <select id="filter-favorites" onchange="filterTable()">
-        <option value="">Tutti</option>
-        <option value="true">Preferiti</option>
-        <option value="false">Non preferiti</option>
+        <option value="">Tutte</option>
+        <option value="true">Preferite</option>
+        <option value="false">Non Preferite</option>
       </select>
     </div>
 </div>
@@ -775,10 +775,10 @@ function filterTable() {
       let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
       if (favorites.includes(modName)) {
         favorites = favorites.filter(favorite => favorite !== modName);
-        alert(modName + " è stato rimosso dai preferiti.");
+        alert(modName + " è stata rimossa dai preferiti.");
       } else {
         favorites.push(modName);
-        alert(modName + " è stato aggiunto ai preferiti!");
+        alert(modName + " è stata aggiunta ai preferiti!");
       }
       localStorage.setItem("favorites", JSON.stringify(favorites));
       loadModsFromJson();
@@ -854,7 +854,7 @@ const texts = {
     filterStatusLabel: "Stato:",
     filterTranslationLabel: "Traduzione:",
     filterCategoryLabel: "Categoria:",
-    filterFavoritesLabel: "Preferiti:",
+    filterFavoritesLabel: "Preferite:",
     tableHeaders: {
       favorites: "PREFERITE",
       author: "AUTORE",
