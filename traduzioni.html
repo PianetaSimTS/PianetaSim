@@ -404,7 +404,7 @@ td a:active {
   <div class="navbar">
     <a href="mod.html" id="mod-link">MOD</a>
     <a href="mod18.html" id="mod18-link">MOD +18</a>
-    <a href="animazioniww18.html" id="animazioniww18-link">ANIMAZIONI WICKED WHIMS +18</a>
+    <a href="animazioniww18.html" id="animazioniww18-link">ANIMAZIONI WICKEDWHIMS +18</a>
     <a href="traduzioni.html" id="traduzioni-link">TRADUZIONI</a>
     <a href="programmi.html" id="programmi-link">PROGRAMMI</a>
     <a href="#" id="desc-mod-btn">HELP SIM</a>
@@ -464,11 +464,11 @@ td a:active {
       </div>
     </div>
     <div>
-      <label for="filter-favorites" id="filter-favorites-label">Preferiti:</label>
+      <label for="filter-favorites" id="filter-favorites-label">Preferite:</label>
       <select id="filter-favorites" onchange="filterTable()">
-        <option value="">Tutti</option>
-        <option value="true">Preferiti</option>
-        <option value="false">Non preferiti</option>
+        <option value="">Tutte</option>
+        <option value="true">Preferite</option>
+        <option value="false">Non Preferite</option>
       </select>
     </div>
 </div>
@@ -586,7 +586,7 @@ function checkModUpdates(mods) {
 
   // Se ci sono mod aggiornate, mostra una notifica
   if (updatedMods.length > 0) {
-    let message = "Le seguenti mod preferite sono state aggiornate:\n" + 
+    let message = "Le seguenti traduzioni preferite sono state modificate:\n" + 
                   updatedMods.map(mod => `${mod.Title} - Stato: ${mod.Status} (${mod.CurrentVersion || mod.ReleaseVersion || 'Data non disponibile'})`).join("\n");
     alert(message);
   }
@@ -665,10 +665,10 @@ function checkModUpdates(mods) {
   
   if (favorites.includes(cleanedAuthor)) {
     favorites = favorites.filter(favorite => favorite !== cleanedAuthor);
-    alert(author + " è stato rimosso dai preferiti.");
+    alert(author + " è stata rimossa dai preferiti.");
   } else {
     favorites.push(cleanedAuthor);
-    alert(author + " è stato aggiunto ai preferiti!");
+    alert(author + " è stata aggiunta ai preferiti!");
   }
   
   localStorage.setItem("favorites_" + pageId, JSON.stringify(favorites));  // Usa l'identificatore per questa pagina
@@ -733,13 +733,13 @@ const texts = {
     pageTitle: "Tabella - Traduzioni",
     modLink: "MOD",
     mod18Link: "MOD +18",
-    animazioniww18Link: "ANIMAZIONI WICKED WHIMS +18",
+    animazioniww18Link: "ANIMAZIONI WICKEDWHIMS +18",
     traduzioniLink: "TRADUZIONI",
     programmiLink: "PROGRAMMI",
     helpSimLink: "HELP SIM",
     searchPlaceholder: "Cerca...",
     filterStatusLabel: "Stato:",
-    filterFavoritesLabel: "Preferiti:",
+    filterFavoritesLabel: "Preferite:",
     tableHeaders: {
       favorites: "PREFERITE",
       autoremod: "AUTORE MOD",
@@ -753,16 +753,16 @@ const texts = {
   },
   en: {
     helpSimTitle: "🚀 HELP SIM",
-    helpSimDesc: "Tired of installing mods and translations manually? Help Sim is here to save you! With just a few clicks, you can add your favorite mods, keep everything under control, and even clean up The Sims 4 cache files! Whether you want to expand your game with new mods or simply keep everything organized, you're in the right place.",
-    relax: "Now relax, customize your game, and let <strong>Help Sim</strong> do the rest! 🎮✨",
-    precautions: "⚠️ IMPORTANT NOTES BEFORE DOWNLOADING ⚠️",
+    helpSimDesc: "Tired of installing mods and translations manually? Help Sim is here to save you! With just a few clicks, you can add your favorite mods, keep everything under control and even give The Sims 4 cache files a good clean! Whether you want to expand your game with new mods or simply keep everything in order, you are in the right place.",
+    relax: "Now relax, customize your game and let <strong>Help Sim</strong> do the rest! 🎮✨",
+    precautions: "⚠️ SMALL PRECAUTIONS BEFORE DOWNLOADING ⚠️",
     download: "📥 Download",
     close: "❌ Close",
-    pageTitle: "Table - Translations",
+    pageTitle: "Table - Italian Translations",
     modLink: "MOD",
     mod18Link: "MOD +18",
-    animazioniww18Link: "WICKED WHIMS ANIMATIONS +18",
-    traduzioniLink: "TRANSLATIONS",
+    animazioniww18Link: "ANIMATIONS WICKEDWHIMS +18",
+    traduzioniLink: "ITALIAN TRANSLATIONS",
     programmiLink: "PROGRAMS",
     helpSimLink: "HELP SIM",
     searchPlaceholder: "Search...",
@@ -770,13 +770,13 @@ const texts = {
     filterFavoritesLabel: "Favorites:",
     tableHeaders: {
       favorites: "FAVORITES",
-      autoremod: "AUTHOR MOD",
+      autoremod: "MOD AUTHOR",
       nomemod: "MOD NAME",
       dataversionemod: "MOD DATE OR VERSION",
-      dataversionetraduzione: "DATE OR VERSION TRANSLATION",
+      dataversionetraduzione: "ITALIAN TRANSLATION DATE OR VERSION",
       linkprogramma: "LINK PROGRAM",
-      statotraduzione: "TRANSLATION STATUS",
-      traduzione: "TRANSLATION"
+      statotraduzione: "ITALIAN TRANSLATION STATUS",
+      traduzione: "ITALIAN TRANSLATION"
     }
   }
 };
