@@ -686,12 +686,19 @@ function checkModUpdates(mods) {
     }
   });
   localStorage.setItem("savedMods", JSON.stringify(savedMods));
-  // Se ci sono mod aggiornate, mostra una notifica
-  if (updatedMods.length > 0) {
-    let message = "Le seguenti mod preferite sono state modificate:\n" + 
-                  updatedMods.map(mod => `${mod.ModName} - Stato: ${mod.Status} (${mod.DataUltimaModifica})`).join("\n");
-    alert(message); // Puoi sostituirlo con una notifica più elegante
-  }
+
+// Definizione dei testi per la notifica in entrambe le lingue
+const notificationTexts = {
+  it: "Le seguenti mod preferite sono state modificate:\n",
+  en: "The following favorite mods have been updated:\n"
+};
+
+// Se ci sono mod aggiornate, mostra una notifica
+if (updatedMods.length > 0) {
+  let message = notificationTexts[lang] + 
+                updatedMods.map(mod => `${mod.ModName} - Status: ${mod.Status} (${mod.DataUltimaModifica})`).join("\n");
+  alert(message); // Puoi sostituirlo con una notifica più elegante
+}
 }
 
 let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
@@ -774,18 +781,27 @@ function filterTable() {
   }
 }
 
-    function toggleFavorite(modName) {
-      let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-      if (favorites.includes(modName)) {
-        favorites = favorites.filter(favorite => favorite !== modName);
-        alert(modName + " è stata rimossa dai preferiti.");
-      } else {
-        favorites.push(modName);
-        alert(modName + " è stata aggiunta ai preferiti!");
-      }
-      localStorage.setItem("favorites", JSON.stringify(favorites));
-      loadModsFromJson();
-    }
+function toggleFavorite(modName) {
+  // Prendi la lingua attuale dal localStorage
+  const lang = localStorage.getItem("language") || "it";
+  
+  // Carica i preferiti dal localStorage
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  
+  if (favorites.includes(modName)) {
+    favorites = favorites.filter(favorite => favorite !== modName);
+    // Usa il testo corretto in base alla lingua
+    alert(modName + (lang === "en" ? " has been removed from favorites." : " è stata rimossa dai preferiti."));
+  } else {
+    favorites.push(modName);
+    // Usa il testo corretto in base alla lingua
+    alert(modName + (lang === "en" ? " has been added to favorites!" : " è stata aggiunta ai preferiti!"));
+  }
+  
+  // Salva nuovamente i preferiti nel localStorage
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+  loadModsFromJson();
+}
     window.onload = loadModsFromJson;
 
 
@@ -1037,4 +1053,3 @@ window.addEventListener('beforeunload', () => {
   <a href="#top" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
 </body>
 </html>
-
