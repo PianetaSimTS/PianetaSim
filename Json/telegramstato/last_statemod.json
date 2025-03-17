@@ -258,7 +258,7 @@
     "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/auto-service-career",
     "DataUltimaModifica": "25/02/2025",
-    "Translation": "inclusa",
+    "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "Dependency": "Core Library",
     "Descrizione": "Carriera del Servizio Auto, partirai dal lavare auto a diventare capo dell'officina."
@@ -687,7 +687,7 @@
     "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/write-skill-book",
     "DataUltimaModifica": "06/03/2025",
-    "Translation": "inclusa",
+    "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "Dependency": "Core Library",
     "Descrizione": "Ti stai chiedendo anche perché il tuo Sim non riesce ancora a scrivere manuali (libri delle abilità) nonostante abbia tutte le abilità al livello massimo? Davvero? Sì, la descrizione dice: I Sim Professorali possono scrivere manuali utili su qualsiasi abilità in cui sono esperti."
@@ -1339,7 +1339,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "DLC Hobby & Attività",
-    "Descrizione": "Ti consente di impostare più di 5 attività commerciali aggiungendo altri 3 slot."
+    "Descrizione": "Ti consente di impostare più di 5 attività commerciali aggiungendo altri 3 slot, per un totale di 8 attività commerciali."
   },
   {
     "Author": "LunarBritney",
@@ -1395,6 +1395,17 @@
     "Categoria": "Utilità",
     "Dependency": "",
     "Descrizione": "Questa mod salta il popup delle Storie CAS che appare per la prima volta quando si entra nella \"Nuova Partita\" ti porta direttamente al CAS."
+  },
+  {
+    "Author": "Natabear",
+    "ModName": "More Small Business Logos",
+    "Status": "nuova",
+    "SiteLink": "https://www.patreon.com/posts/123866365",
+    "DataUltimaModifica": "07/03/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Varie",
+    "Dependency": "DLC Hobby & Attività",
+    "Descrizione": "Questa mod aggiunge 130 nuovi loghi/icone per le piccole imprese, ci sono 2 versioni: una loghi + icone e una solo loghi, ne va messa solo una."
   },
   {
     "Author": "NerdyDoll",
