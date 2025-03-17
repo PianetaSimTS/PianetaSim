@@ -562,12 +562,19 @@ function checkModUpdates(mods) {
   });
 
   localStorage.setItem("savedAnimazioni", JSON.stringify(savedMods));
+  const lang = localStorage.getItem("language") || "it";
 
-  if (updatedMods.length > 0) {
-    let message = "Le seguenti animazioni preferite sono state modificate:\n" + 
-                  updatedMods.map(mod => `${mod.Autore} - Stato: ${mod.Status} (${mod.DataAggiornamento})`).join("\n");
-    alert(message); 
-  }
+const notificationTexts = {
+  it: "Le seguenti mod preferite sono state modificate:\n",
+  en: "The following favorite mods have been updated:\n"
+};
+
+// Se ci sono mod aggiornate, mostra una notifica
+if (updatedMods.length > 0) {
+  let message = notificationTexts[lang] + 
+  updatedMods.map(mod => `${mod.Autore} - Stato: ${mod.Status} (${mod.DataAggiornamento})`).join("\n");
+  alert(message); // Puoi sostituirlo con una notifica più elegante
+}
 }
 
     let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
@@ -627,16 +634,17 @@ function checkModUpdates(mods) {
 
     
     function toggleFavorite(author) {
+      const lang = localStorage.getItem("language") || "it";
   // Remove the apostrophe when toggling favorites
   const cleanedAuthor = author.replace("'", "");
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
   
   if (favorites.includes(cleanedAuthor)) {
     favorites = favorites.filter(favorite => favorite !== cleanedAuthor);
-    alert(author + " è stata rimossa dai preferiti.");
+    alert(author + (lang === "en" ? " has been removed from favorites." : " è stata rimossa dai preferiti."));
   } else {
     favorites.push(cleanedAuthor);
-    alert(author + " è stata aggiunta ai preferiti!");
+    alert(author + (lang === "en" ? " has been added to favorites!" : " è stata aggiunta ai preferiti!"));
   }
   
   localStorage.setItem("favorites", JSON.stringify(favorites));
@@ -882,4 +890,3 @@ window.addEventListener('beforeunload', () => {
   <a href="#top" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
 </body>
 </html>
-
