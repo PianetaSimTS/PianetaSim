@@ -485,10 +485,23 @@ const texts = {
     patch: "PATCH + HOTFIX",
     patchDate: "del",
     tableHint: "⬇ PREMI QUI SOTTO PER RECARTI NELLA TABELLA DESIDERATA ⬇",
+    buttons: {
+      helpSim: "HELP SIM",
+      mods: "MOD",
+      mods18: "MOD +18",
+      animationsWW18: "ANIMAZIONI WW +18",
+      translations: "TRADUZIONI",
+      programs: "PROGRAMMI"
+    },
     helpSimTitle: "🚀 HELP SIM",
     helpSimDesc: "Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! Con pochi click, potrai aggiungere le tue mod preferite, tenere tutto sotto controllo e persino dare una bella ripulita ai file cache di The Sims 4! Che tu voglia ampliare il tuo gioco con nuove mod o semplicemente tenere tutto in ordine, sei nel posto giusto.",
     relax: "Ora rilassati, personalizza il tuo gioco e lascia che <strong>Help Sim</strong> faccia il resto! 🎮✨",
     precautions: "⚠️ PICCOLE ATTENZIONI PRIMA DELLO SCARICO ⚠️",
+    antivirus: "★ Se l’antivirus blocca il programma, clicca su <strong>\"Esegui comunque\"</strong>.<br>Il programma è sicuro! In quanto creato interamente da noi.",
+    guide: "★ Prima dell’uso, <strong>leggi la guida</strong> disponibile nella home del programma.",
+    zipSupport: "★ Supporta solo i file delle mod e delle traduzioni in <strong>formato ZIP</strong>.",
+    noPackage: "★ <strong>Non supporta</strong> i file singoli <em>.package</em> (CC e mod non zip).",
+    noExternal: "★ <strong>Non funziona</strong> con la cartella di The Sims in unità esterne (HDD, SSD, USB, ecc.).",
     download: "📥 Scarica",
     close: "❌ Chiudi",
     social: "Unisciti ai nostri social ed entra a far parte della community Pianeta Sim! Potrai trovare assistenza e molto altro ancora!"
@@ -499,10 +512,23 @@ const texts = {
     patch: "PATCH + HOTFIX",
     patchDate: "on",
     tableHint: "⬇ CLICK BELOW TO GO TO THE DESIRED TABLE  ⬇",
+    buttons: {
+      helpSim: "HELP SIM",
+      mods: "MODS",
+      mods18: "MODS +18",
+      animationsWW18: "WW ANIMATIONS +18",
+      translations: "TRANSLATIONS",
+      programs: "PROGRAMS"
+    },
     helpSimTitle: "🚀 HELP SIM",
     helpSimDesc: "Tired of installing mods and translations manually? Help Sim is here to save you! With just a few clicks, you can add your favorite mods, keep everything under control and even give The Sims 4 cache files a good clean! Whether you want to expand your game with new mods or simply keep everything in order, you are in the right place",
     relax: "Now relax, customize your game and let <strong>Help Sim</strong> do the rest! 🎮✨",
     precautions: "⚠️ SMALL PRECAUTIONS BEFORE DOWNLOADING  ⚠️",
+    antivirus: "★ If the antivirus blocks the program, click on <strong>\"Run anyway\"</strong>.<br>The program is safe! It was entirely created by us.",
+    guide: "★ Before using it, <strong>read the guide</strong> available on the program’s home page.",
+    zipSupport: "★ Supports only mod and translation files in <strong>ZIP format</strong>.",
+    noPackage: "★ <strong>Does not support</strong> single <em>.package</em> files (CC and non-zipped mods).",
+    noExternal: "★ <strong>Does not work</strong> with The Sims folder on external drives (HDD, SSD, USB, etc.).",
     download: "📥 Download",
     close: "❌ Close",
     social: "Join our social media and become part of the Pianeta Sim community! You’ll find support and much more!"
@@ -517,6 +543,12 @@ function toggleLanguage() {
   localStorage.setItem("language", lang);
 
   // Aggiornamento dinamico dei testi
+  document.getElementById("desc-mod-btn").textContent = texts[lang].buttons.helpSim;
+document.querySelector(".button-container a:nth-of-type(2)").textContent = texts[lang].buttons.mods;
+document.querySelector(".button-container a:nth-of-type(3)").textContent = texts[lang].buttons.mods18;
+document.querySelector(".button-container a:nth-of-type(4)").textContent = texts[lang].buttons.animationsWW18;
+document.querySelector(".button-container a:nth-of-type(5)").textContent = texts[lang].buttons.translations;
+document.querySelector(".button-container a:nth-of-type(6)").textContent = texts[lang].buttons.programs;
   document.querySelector(".scritta-benvenuto").setAttribute("alt", texts[lang].welcome);
   document.querySelector(".intro-text").innerHTML = texts[lang].intro;
   document.querySelector(".highlight").firstChild.textContent = texts[lang].patch + " ";
@@ -526,6 +558,15 @@ function toggleLanguage() {
   document.querySelector("#popup p").innerHTML = texts[lang].helpSimDesc;
   document.querySelector("#popup p:nth-of-type(2)").innerHTML = texts[lang].relax;
   document.querySelector("#popup h3").textContent = texts[lang].precautions;
+  const precautionsList = document.querySelector("#popup ul");
+precautionsList.innerHTML = `
+  <li>${texts[lang].antivirus}</li>
+  <li>${texts[lang].guide}</li>
+  <li>${texts[lang].zipSupport}</li>
+  <li>${texts[lang].noPackage}</li>
+  <li>${texts[lang].noExternal}</li>
+`;
+
   document.getElementById("download-btn").textContent = texts[lang].download;
   document.getElementById("close-btn").textContent = texts[lang].close;
   document.getElementById("social-text").textContent = texts[lang].social;
