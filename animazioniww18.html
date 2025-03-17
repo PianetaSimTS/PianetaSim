@@ -771,6 +771,14 @@ function toggleLanguage() {
   document.querySelector("#popup p").innerHTML = texts[lang].helpSimDesc;
   document.querySelector("#popup p:nth-of-type(2)").innerHTML = texts[lang].relax;
   document.querySelector("#popup h3").textContent = texts[lang].precautions;
+  const precautionsList = document.querySelector("#popup ul");
+precautionsList.innerHTML = `
+  <li>${texts[lang].antivirus}</li>
+  <li>${texts[lang].guide}</li>
+  <li>${texts[lang].zipSupport}</li>
+  <li>${texts[lang].noPackage}</li>
+  <li>${texts[lang].noExternal}</li>
+`;
   document.getElementById("download-btn").textContent = texts[lang].download;
   document.getElementById("close-btn").textContent = texts[lang].close;
   document.getElementById("page-title").textContent = texts[lang].pageTitle;
@@ -874,3 +882,4 @@ window.addEventListener('beforeunload', () => {
   <a href="#top" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
 </body>
 </html>
+
