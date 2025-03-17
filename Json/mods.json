@@ -1339,7 +1339,7 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "Dependency": "DLC Hobby & Attività",
-    "Descrizione": "Ti consente di impostare più di 5 attività commerciali aggiungendo altri 3 slot."
+    "Descrizione": "Ti consente di impostare più di 5 attività commerciali aggiungendo altri 3 slot, per un totale di 8 attività commerciali."
   },
   {
     "Author": "LunarBritney",
@@ -1395,6 +1395,17 @@
     "Categoria": "Utilità",
     "Dependency": "",
     "Descrizione": "Questa mod salta il popup delle Storie CAS che appare per la prima volta quando si entra nella \"Nuova Partita\" ti porta direttamente al CAS."
+  },
+  {
+    "Author": "Natabear",
+    "ModName": "More Small Business Logos",
+    "Status": "nuova",
+    "SiteLink": "https://www.patreon.com/posts/123866365",
+    "DataUltimaModifica": "07/03/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Varie",
+    "Dependency": "DLC Hobby & Attività",
+    "Descrizione": "Questa mod aggiunge 130 nuovi loghi/icone per le piccole imprese, ci sono 2 versioni: una loghi + icone e una solo loghi, ne va messa solo una."
   },
   {
     "Author": "NerdyDoll",
