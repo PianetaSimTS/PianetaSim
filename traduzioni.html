@@ -585,8 +585,8 @@ function checkModUpdates(mods) {
   localStorage.setItem("savedTraduzioni", JSON.stringify(savedMods));
   const lang = localStorage.getItem("language") || "it";
   const notificationTexts = {
-  it: "Le seguenti mod preferite sono state modificate:\n",
-  en: "The following favorite mods have been updated:\n"
+  it: "Le seguenti traduzioni preferite sono state modificate:\n",
+  en: "The following favorite translations have been changed:\n"
 };
   // Se ci sono mod aggiornate, mostra una notifica
   if (updatedMods.length > 0) {
