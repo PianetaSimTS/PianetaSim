@@ -88,10 +88,12 @@ def compare_status_only(old_state, new_state):
     for new_mod in normalized_new:
         if new_mod['ModName'] not in old_mod_names:
             icon = "🟣"  # Icona per mod nuove
-            new_mod['Status'] = "NUOVA"
-            
+            # Assegna lo stato effettivo della mod nuova, non "NUOVA"
+            if 'Status' not in new_mod or not new_mod['Status']:
+                new_mod['Status'] = "NUOVA"  # Imposta a "NUOVA" se non esiste stato
+
             new_mod_message = (
-                f"MOD\n\n"
+                f"MOD AGGIUNTA AL SITO\n\n"
                 f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
                 f"Stato {icon} _{new_mod['Status']}_\n"
                 f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
