@@ -568,19 +568,15 @@ function loadModsFromJson() {
 }
     
 const notificationTexts = {
-  it: "Le seguenti mod preferite sono state modificate:\n",
-  en: "The following favorite mods have been updated:\n"
+  it: (mods) => `Le seguenti mod preferite sono state aggiornate:\n\n` + 
+    mods.map(mod => `${mod.programma} - Stato: ${mod.statusWindows || mod.statusMacOS} (${mod.dataAggiornamentoWindows || mod.dataAggiornamentoMacOS})`).join("\n"),
+  
+  en: (mods) => `The following favorite mods have been updated:\n\n` + 
+    mods.map(mod => `${mod.programma} - Status: ${mod.statusWindows || mod.statusMacOS} (${mod.dataAggiornamentoWindows || mod.dataAggiornamentoMacOS})`).join("\n")
 };
   const lang = localStorage.getItem("language") || "it";
-// Se ci sono mod aggiornate, mostra una notifica
 if (updatedMods.length > 0) {
-  let message = notificationTexts[lang] + 
-updatedMods.map(mod => {
-  const status = mod.statusWindows || mod.statusMacOS;
-  const dataAggiornamento = mod.dataAggiornamentoWindows || mod.dataAggiornamentoMacOS;
-  return `${mod.programma} - Status: ${status} (${dataAggiornamento})`;
-}).join("\n");
-  alert(message); // Puoi sostituirlo con una notifica più elegante
+  alert(notificationTexts[lang](updatedMods)); // Puoi sostituire alert con una notifica più elegante
 }
 
 let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
