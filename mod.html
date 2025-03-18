@@ -503,31 +503,29 @@ td a:active {
         </div>
     </div>
   </div>
-<div class="form-container">
-  <div>
-    <input type="text" id="search" oninput="filterTable()" placeholder="Search...">
-  </div>
-  <div>
-    <label for="filter-status" id="filter-status-label">Status:</label>
-    <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
-    <div id="filter-status-dropdown" style="display:none;">
-      <label><input type="checkbox" value="Compatible" id="status-compatible" onchange="filterTable()"> Compatible</label><br>
-      <label><input type="checkbox" value="Broken" id="status-broken" onchange="filterTable()"> Broken</label><br>
-      <label><input type="checkbox" value="Updated" id="status-updated" onchange="filterTable()"> Updated</label><br>
-      <label><input type="checkbox" value="Unknown" id="status-unknown" onchange="filterTable()"> Unknown</label><br>
-      <label><input type="checkbox" value="New" id="status-new" onchange="filterTable()"> New</label>
+  <div class="form-container">
+    <div>
+      <input type="text" id="search" oninput="filterTable()" placeholder="Cerca...">
     </div>
-  </div>
-  <div>
-    <label for="filter-translation" id="filter-translation-label">Translation:</label>
-    <button onclick="toggleDropdown('filter-translation-dropdown')">▼</button>
-    <div id="filter-translation-dropdown" style="display:none;">
-      <label><input type="checkbox" value="Included" id="translation-included" onchange="filterTable()"> Included</label><br>
-      <label><input type="checkbox" value="Not Needed" id="translation-not-needed" onchange="filterTable()"> Not Needed</label><br>
-      <label><input type="checkbox" value="To Download" id="translation-to-download" onchange="filterTable()"> To Download</label>
+    <div>
+      <label for="filter-status" id="filter-status-label">Stato:</label>
+      <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
+      <div id="filter-status-dropdown" style="display:none;">
+        <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
+        <label><input type="checkbox" value="Rotta" id="status-rotta" onchange="filterTable()"> Rotta</label><br>
+        <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
+        <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
+        <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label>
+      </div>
     </div>
-  </div>
-</div>
+    <div>
+      <label for="filter-translation" id="filter-translation-label">Traduzione:</label>
+      <button onclick="toggleDropdown('filter-translation-dropdown')">▼</button>
+      <div id="filter-translation-dropdown" style="display:none;">
+        <label><input type="checkbox" value="Inclusa" id="translation-inclusa" onchange="filterTable()"> Inclusa</label><br>
+        <label><input type="checkbox" value="Non necessaria" id="translation-non-necessaria" onchange="filterTable()"> Non Necessaria</label><br>
+        <label><input type="checkbox" value="Da scaricare" id="translation-da-scaricare" onchange="filterTable()"> Da Scaricare</label>
+      </div>
     <div>
       <label for="filter-category" id="filter-category-label">Categoria:</label>
       <button onclick="toggleDropdown('filter-category-dropdown')">▼</button>
