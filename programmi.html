@@ -586,9 +586,9 @@ function sendNotifications(updatedMods) {
   if (updatedMods.length === 0) return;
 
   const notificationTexts = {
-    it: (mods) => `Le seguenti mod preferite sono state aggiornate:\n\n` + 
+    it: (mods) => `I seguenti programmi preferiti sono stati modificati:\n` + 
       mods.map(mod => `${mod.programma} - Stato: ${mod.status} (${mod.data})`).join("\n"),
-    en: (mods) => `The following favorite mods have been updated:\n\n` + 
+    en: (mods) => `The following favorite programs have been changed:\n` + 
       mods.map(mod => `${mod.programma} - Status: ${mod.status} (${mod.data})`).join("\n")
   };
 
@@ -685,10 +685,10 @@ const statusMacOS = statusMacOSElement ? statusMacOSElement.textContent.toLowerC
     const lang = localStorage.getItem("language") || "it";
   if (favorites.includes(cleanedAuthor)) {
     favorites = favorites.filter(favorite => favorite !== cleanedAuthor);
-    alert(author + (lang === "en" ? " has been removed from favorites." : " è stata rimossa dai preferiti."));
+    alert(author + (lang === "en" ? " has been removed from favorites." : " è stato rimosso dai preferiti."));
   } else {
     favorites.push(cleanedAuthor);
-    alert(author + (lang === "en" ? " has been added to favorites!" : " è stata aggiunta ai preferiti!"));
+    alert(author + (lang === "en" ? " has been added to favorites!" : " è stato aggiunto ai preferiti!"));
   }
   
   localStorage.setItem("favorites", JSON.stringify(favorites));
