@@ -563,15 +563,16 @@ function checkModUpdates(mods) {
 
   localStorage.setItem("savedAnimazioni", JSON.stringify(savedMods));
 
+// Definizione dei testi per la notifica in entrambe le lingue
 const notificationTexts = {
-  it: "Le seguenti mod preferite sono state modificate:\n",
-  en: "The following favorite mods have been updated:\n"
+  it: "Le seguenti animazioni preferite sono state modificate:\n",
+  en: "The following favorite animations have been changed:\n"
 };
   const lang = localStorage.getItem("language") || "it";
 // Se ci sono mod aggiornate, mostra una notifica
 if (updatedMods.length > 0) {
   let message = notificationTexts[lang] + 
-  updatedMods.map(mod => `${mod.Autore} - Stato: ${mod.Status} (${mod.DataAggiornamento})`).join("\n");
+                updatedMods.map(mod => `${mod.Autore} - Stato: ${mod.Status} (${mod.DataAggiornamento})`).join("\n");
   alert(message); // Puoi sostituirlo con una notifica più elegante
 }
 }
