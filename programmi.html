@@ -517,24 +517,23 @@ function loadModsFromJson() {
     .then(response => response.json())
     .then(mods => {
       const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+      const lastUpdate = JSON.parse(localStorage.getItem("lastUpdate")) || {};
+      const updatedMods = [];
+      
       const table = document.getElementById("programmi-table").getElementsByTagName("tbody")[0];
       table.innerHTML = '';
 
-      // Crea righe per ogni mod
       mods.forEach(mod => {
         const isFavorite = favorites.includes(mod.programma);
         const checkWindows = mod.windows ? '✔' : '❌';
         const checkMacOS = mod.macOS ? '✔' : '❌';
 
-        // Gestisci la logica per status
         let statusWindows = mod.statuswindows || 'Sconosciuto';
         let statusMacOS = mod.statusmacos || 'Sconosciuto';
 
-        // Gestisci la logica per data aggiornamento
         let dataAggiornamentoWindows = mod.data_aggiornamentowindows || '';
         let dataAggiornamentoMacOS = mod.data_aggiornamentomacos || '';
 
-        // Sostituisci 'NON-DISPONIBILE' o 'non-disponibile' con 'NON DISPONIBILE'
         if (statusWindows.toLowerCase() === 'non-disponibile') {
           statusWindows = 'NON DISPONIBILE';
         }
@@ -542,40 +541,58 @@ function loadModsFromJson() {
           statusMacOS = 'NON DISPONIBILE';
         }
 
-        // Crea le righe della tabella
+        // Controllo aggiornamenti per le mod preferite
+        if (isFavorite) {
+          const lastWinUpdate = lastUpdate[mod.programma]?.windows || '';
+          const lastMacUpdate = lastUpdate[mod.programma]?.macOS || '';
+          
+          if (dataAggiornamentoWindows && dataAggiornamentoWindows !== lastWinUpdate) {
+            updatedMods.push({ programma: mod.programma, status: statusWindows, data: dataAggiornamentoWindows });
+            lastUpdate[mod.programma] = { ...lastUpdate[mod.programma], windows: dataAggiornamentoWindows };
+          }
+          if (dataAggiornamentoMacOS && dataAggiornamentoMacOS !== lastMacUpdate) {
+            updatedMods.push({ programma: mod.programma, status: statusMacOS, data: dataAggiornamentoMacOS });
+            lastUpdate[mod.programma] = { ...lastUpdate[mod.programma], macOS: dataAggiornamentoMacOS };
+          }
+        }
+
         const newRow = table.insertRow();
         newRow.innerHTML = `
-  <td>
-    <span class="star-container">
-      <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.programma}')">&#9733;</span>
-    </span>
-  </td>
-  <td>${mod.programma || ''}</td>
-  <td>${checkWindows}</td> <!-- Compatibilità con Windows -->
-  <td>${checkMacOS}</td> <!-- Compatibilità con macOS -->
-  <td><span class="status windows ${statusWindows.toLowerCase().replace(/\s+/g, '-')}"">${statusWindows}</span></td> <!-- Stato Windows -->
-  <td><span class="status macOS ${statusMacOS.toLowerCase().replace(/\s+/g, '-')}"">${statusMacOS}</span></td> <!-- Stato macOS -->
-  <td><a href="${mod.link_programmawindows || '#'}" target="_blank">Link</a></td>
-  <td>${mod.link_programmamacos ? `<a href="${mod.link_programmamacos}" target="_blank">Link</a>` : ''}</td> <!-- Link MacOS se disponibile -->
-  <td>${dataAggiornamentoWindows || ''}</td>
-  <td>${dataAggiornamentoMacOS || ''}</td>
-  <td><a href="${mod.video_spiegativo || '#'}" target="_blank">Video</a></td>`;
+          <td>
+            <span class="star-container">
+              <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.programma}')">&#9733;</span>
+            </span>
+          </td>
+          <td>${mod.programma || ''}</td>
+          <td>${checkWindows}</td>
+          <td>${checkMacOS}</td>
+          <td><span class="status windows ${statusWindows.toLowerCase().replace(/\s+/g, '-')}">${statusWindows}</span></td>
+          <td><span class="status macOS ${statusMacOS.toLowerCase().replace(/\s+/g, '-')}">${statusMacOS}</span></td>
+          <td><a href="${mod.link_programmawindows || '#'}" target="_blank">Link</a></td>
+          <td>${mod.link_programmamacos ? `<a href="${mod.link_programmamacos}" target="_blank">Link</a>` : ''}</td>
+          <td>${dataAggiornamentoWindows || ''}</td>
+          <td>${dataAggiornamentoMacOS || ''}</td>
+          <td><a href="${mod.video_spiegativo || '#'}" target="_blank">Video</a></td>`;
       });
 
+      localStorage.setItem("lastUpdate", JSON.stringify(lastUpdate));
+      sendNotifications(updatedMods);
       filterTable();
     })
     .catch(error => console.error('Errore nel caricare il JSON:', error));
 }
-    
-const notificationTexts = {
-  it: (mods) => `Le seguenti mod preferite sono state aggiornate:\n\n` + 
-    mods.map(mod => `${mod.programma} - Stato: ${mod.statusWindows || mod.statusMacOS} (${mod.dataAggiornamentoWindows || mod.dataAggiornamentoMacOS})`).join("\n"),
-  
-  en: (mods) => `The following favorite mods have been updated:\n\n` + 
-    mods.map(mod => `${mod.programma} - Status: ${mod.statusWindows || mod.statusMacOS} (${mod.dataAggiornamentoWindows || mod.dataAggiornamentoMacOS})`).join("\n")
-};
+
+function sendNotifications(updatedMods) {
+  if (updatedMods.length === 0) return;
+
+  const notificationTexts = {
+    it: (mods) => `Le seguenti mod preferite sono state aggiornate:\n\n` + 
+      mods.map(mod => `${mod.programma} - Stato: ${mod.status} (${mod.data})`).join("\n"),
+    en: (mods) => `The following favorite mods have been updated:\n\n` + 
+      mods.map(mod => `${mod.programma} - Status: ${mod.status} (${mod.data})`).join("\n")
+  };
+
   const lang = localStorage.getItem("language") || "it";
-if (updatedMods.length > 0) {
   alert(notificationTexts[lang](updatedMods)); // Puoi sostituire alert con una notifica più elegante
 }
 
