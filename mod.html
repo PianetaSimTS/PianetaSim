@@ -560,9 +560,20 @@ td a:active {
     <div>
       <label for="filter-favorites" id="filter-favorites-label">Preferite:</label>
       <select id="filter-favorites" onchange="filterTable()">
+        <!-- It -->
+      <div class="it-label">
         <option value="">Tutte</option>
         <option value="true">Preferite</option>
         <option value="false">Non Preferite</option>
+      </div>
+  
+      <!-- En -->
+      <div class="en-label" style="display:none;">
+        <option value="">All</option>
+        <option value="true">Favorites</option>
+        <option value="false">No favourites</option>
+      </div>  
+
       </select>
     </div>
 </div>
