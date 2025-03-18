@@ -568,7 +568,7 @@ const notificationTexts = {
   it: "Le seguenti mod preferite sono state modificate:\n",
   en: "The following favorite mods have been updated:\n"
 };
-
+  const lang = localStorage.getItem("language") || "it";
 // Se ci sono mod aggiornate, mostra una notifica
 if (updatedMods.length > 0) {
   let message = notificationTexts[lang] + 
