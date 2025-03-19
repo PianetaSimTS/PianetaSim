@@ -507,30 +507,53 @@ td a:active {
         </div>
     </div>
   </div>
-  <div class="form-container">
-    <div>
-      <input type="text" id="search" oninput="filterTable()" placeholder="Cerca...">
-    </div>
-    <div>
-      <label for="filter-status" id="filter-status-label">Stato:</label>
-      <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
-      <div id="filter-status-dropdown" style="display:none;">
+  div class="form-container">
+  <div>
+    <input type="text" id="search" oninput="filterTable()" placeholder="Search...">
+  </div>
+  <div>
+    <label for="filter-status" id="filter-status-label">Status:</label>
+    <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
+    <div id="filter-status-dropdown" style="display:none;">
+      <!-- It -->
+      <div class="it-label">
         <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
         <label><input type="checkbox" value="Rotta" id="status-rotta" onchange="filterTable()"> Rotta</label><br>
         <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
         <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
         <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label>
       </div>
+  
+      <!-- En -->
+      <div class="en-label" style="display:none;">
+        <label><input type="checkbox" value="Compatible" id="status-compatible" onchange="filterTable()"> Compatible</label><br>
+        <label><input type="checkbox" value="Broken" id="status-broken" onchange="filterTable()"> Broken</label><br>
+        <label><input type="checkbox" value="Updated" id="status-updated" onchange="filterTable()"> Updated</label><br>
+        <label><input type="checkbox" value="Unknown" id="status-unknown" onchange="filterTable()"> Unknown</label><br>
+        <label><input type="checkbox" value="New" id="status-new" onchange="filterTable()"> New</label>
+      </div>
     </div>
-    <div>
-      <label for="filter-translation" id="filter-translation-label">Traduzione:</label>
-      <button onclick="toggleDropdown('filter-translation-dropdown')">▼</button>
-      <div id="filter-translation-dropdown" style="display:none;">
+  </div>
+  
+  <div>
+    <label for="filter-translation" id="filter-translation-label">Translation:</label>
+    <button onclick="toggleDropdown('filter-translation-dropdown')">▼</button>
+    <div id="filter-translation-dropdown" style="display:none;">
+      <!-- It -->
+      <div class="it-label">
         <label><input type="checkbox" value="Inclusa" id="translation-inclusa" onchange="filterTable()"> Inclusa</label><br>
         <label><input type="checkbox" value="Non necessaria" id="translation-non-necessaria" onchange="filterTable()"> Non Necessaria</label><br>
         <label><input type="checkbox" value="Da scaricare" id="translation-da-scaricare" onchange="filterTable()"> Da Scaricare</label>
       </div>
+  
+      <!-- En -->
+      <div class="en-label" style="display:none;">
+        <label><input type="checkbox" value="Included" id="translation-included" onchange="filterTable()"> Included</label><br>
+        <label><input type="checkbox" value="Not Needed" id="translation-not-needed" onchange="filterTable()"> Not Needed</label><br>
+        <label><input type="checkbox" value="To Download" id="translation-to-download" onchange="filterTable()"> To Download</label>
+      </div>    
     </div>
+  </div>
     <div>
       <label for="filter-category" id="filter-category-label">Categoria:</label>
       <button onclick="toggleDropdown('filter-category-dropdown')">▼</button>
@@ -541,9 +564,15 @@ td a:active {
     <div>
       <label for="filter-favorites" id="filter-favorites-label">Preferite:</label>
       <select id="filter-favorites" onchange="filterTable()">
+        <!-- Italian version -->
         <option value="">Tutte</option>
         <option value="true">Preferite</option>
         <option value="false">Non Preferite</option>
+      
+        <!-- English version -->
+        <option value="">All</option>
+        <option value="true">Favorites</option>
+        <option value="false">No Favorites</option>
       </select>
     </div>
 </div>
@@ -692,11 +721,15 @@ const notificationTexts = {
   it: "Le seguenti mod preferite sono state modificate:\n",
   en: "The following favorite mods have been changed:\n"
 };
-  const lang = localStorage.getItem("language") || "it";
+const lang = localStorage.getItem("language") || "it";
+
+// Modifica il nome della proprietà a seconda della lingua
+const statusLabel = lang === "it" ? "Stato" : "Status";
+
 // Se ci sono mod aggiornate, mostra una notifica
 if (updatedMods.length > 0) {
   let message = notificationTexts[lang] + 
-                updatedMods.map(mod => `${mod.ModName} - Status: ${mod.Status} (${mod.DataUltimaModifica})`).join("\n");
+                updatedMods.map(mod => `${mod.ModName} - ${statusLabel}: ${mod.Status} (${mod.DataUltimaModifica})`).join("\n");
   alert(message); // Puoi sostituirlo con una notifica più elegante
 }
 }
@@ -968,6 +1001,38 @@ precautionsList.innerHTML = `
   document.querySelector("th:nth-child(6)").textContent = texts[lang].tableHeaders.lastModified;
   document.querySelector("th:nth-child(7)").textContent = texts[lang].tableHeaders.translation;
   document.querySelector("th:nth-child(8)").textContent = texts[lang].tableHeaders.requirements;
+  languageLabel.textContent = isEnglish ? "English" : "Italiano";
+  localStorage.setItem("language", lang);
+  
+  const italianLabels = document.querySelectorAll('.it-label');
+  const englishLabels = document.querySelectorAll('.en-label');
+  
+  italianLabels.forEach(label => label.style.display = isEnglish ? 'none' : 'block');
+  englishLabels.forEach(label => label.style.display = isEnglish ? 'block' : 'none');
+  const filterFavorites = document.getElementById('filter-favorites');
+  
+  if (isEnglish) {
+    filterFavorites.innerHTML = `
+      <option value="">All</option>
+      <option value="true">Favorites</option>
+      <option value="false">No Favorites</option>
+    `;
+  } else {
+    filterFavorites.innerHTML = `
+      <option value="">Tutte</option>
+      <option value="true">Preferite</option>
+      <option value="false">Non Preferite</option>
+    `;
+  }
+
+  // Reset the dropdown to the default value (All or Tutte)
+  filterFavorites.selectedIndex = 0;  // This will select the first option (All or Tutte)
+  
+  // Reset the search field
+  document.getElementById("search").value = ""; 
+
+  // Call filterTable() again to apply the reset
+  filterTable();
 }
 
 // Impostazione della lingua iniziale
