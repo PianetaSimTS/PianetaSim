@@ -718,11 +718,15 @@ const notificationTexts = {
   it: "Le seguenti mod preferite sono state modificate:\n",
   en: "The following favorite mods have been changed:\n"
 };
-  const lang = localStorage.getItem("language") || "it";
+const lang = localStorage.getItem("language") || "it";
+
+// Modifica il nome della proprietà a seconda della lingua
+const statusLabel = lang === "it" ? "Stato" : "Status";
+
 // Se ci sono mod aggiornate, mostra una notifica
 if (updatedMods.length > 0) {
   let message = notificationTexts[lang] + 
-                updatedMods.map(mod => `${mod.ModName} - Status: ${mod.Status} (${mod.DataUltimaModifica})`).join("\n");
+                updatedMods.map(mod => `${mod.ModName} - ${statusLabel}: ${mod.Status} (${mod.DataUltimaModifica})`).join("\n");
   alert(message); // Puoi sostituirlo con una notifica più elegante
 }
 }
