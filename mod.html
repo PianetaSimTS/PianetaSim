@@ -612,7 +612,8 @@ document.getElementById("download-btn").addEventListener("click", function() {
     document.body.removeChild(link);
     document.getElementById("popup").style.display = "none"; // Chiude il popup dopo il download
 });
-function loadModsFromJson() {
+
+    function loadModsFromJson() {
   fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/mods.json')
     .then(response => response.json())
     .then(mods => {
@@ -634,11 +635,11 @@ function loadModsFromJson() {
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.value = category;
-        checkbox.id = category-${category};
+        checkbox.id = `category-${category}`;
         checkbox.onchange = filterTable;
 
         const label = document.createElement("label");
-        label.setAttribute("for", category-${category});
+        label.setAttribute("for", `category-${category}`);
         label.textContent = category.charAt(0).toUpperCase() + category.slice(1); // Capitalizza la prima lettera
 
         // Appendi la checkbox e il label al dropdown
@@ -664,7 +665,7 @@ tooltip.textContent = mod.Descrizione || "Nessuna descrizione disponibile";
 const modLink = mod.SiteLink || '#';
 sessionStorage.setItem(mod.ModName, modLink);
 
-newRow.innerHTML = 
+newRow.innerHTML = `
   <td>
     <span class="star-container">
       <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.ModName}')">&#9733;</span>
@@ -680,7 +681,7 @@ newRow.innerHTML =
   <td>${mod.DataUltimaModifica || ''}</td>
   <td><span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">${(mod.Translation || '').replace("-", " ").toUpperCase()}</span></td>
   <td>${mod.Dependency || ''}</td>
-;
+`;
 
 newRow.querySelector('.mod-name').appendChild(tooltip);
 });
