@@ -620,16 +620,21 @@ function loadModsFromJson() {
       const table = document.getElementById("mods-table").getElementsByTagName("tbody")[0];
       table.innerHTML = '';
 
-      // Estrai le categorie in modo sicuro
+      // Ottieni la lingua corrente
+      const lang = localStorage.getItem("language") || "it";
+      const dependencyKey = lang === "en" ? "DependencyEN" : "DependencyIT";
+      const descriptionKey = lang === "en" ? "DescrizioneEN" : "DescrizioneIT";
+
+      // Estrai le categorie
       const categories = [...new Set(mods
-        .map(mod => mod.Categoria || '') // Usa una stringa vuota per valori mancanti
-        .filter(c => c !== '') // Filtra le categorie vuote
-        .map(c => c.toLowerCase()) // Rendi tutte le categorie minuscole
+        .map(mod => mod.Categoria || '')
+        .filter(c => c !== '')
+        .map(c => c.toLowerCase())
       )];
 
       // Popola il filtro categorie
       const filterCategoryDropdown = document.getElementById("filter-category-dropdown");
-      filterCategoryDropdown.innerHTML = ''; // Reset delle categorie
+      filterCategoryDropdown.innerHTML = '';
       categories.forEach(category => {
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
@@ -639,55 +644,66 @@ function loadModsFromJson() {
 
         const label = document.createElement("label");
         label.setAttribute("for", `category-${category}`);
-        label.textContent = category.charAt(0).toUpperCase() + category.slice(1); // Capitalizza la prima lettera
+        label.textContent = category.charAt(0).toUpperCase() + category.slice(1);
 
-        // Appendi la checkbox e il label al dropdown
         filterCategoryDropdown.appendChild(checkbox);
         filterCategoryDropdown.appendChild(label);
         filterCategoryDropdown.appendChild(document.createElement("br"));
       });
 
-
-      // Crea righe per ogni mod
+      // Creazione righe tabella
       mods.forEach(mod => {
-  const isFavorite = favorites.includes(mod.ModName);
-  const newRow = table.insertRow();
+        const isFavorite = favorites.includes(mod.ModName);
+        const newRow = table.insertRow();
 
-  newRow.setAttribute("data-categories", (mod.Categoria || '').toLowerCase());
-  const tooltip = document.createElement("div");
-tooltip.classList.add("tooltip");
+        newRow.setAttribute("data-categories", (mod.Categoria || '').toLowerCase());
+        const tooltip = document.createElement("div");
+        tooltip.classList.add("tooltip");
 
-// Imposta il testo del tooltip dal JSON
-tooltip.textContent = mod.Descrizione || "Nessuna descrizione disponibile";
+        // Usa la descrizione nella lingua selezionata
+        tooltip.textContent = mod[descriptionKey] || "Nessuna descrizione disponibile";
 
-const modLink = mod.SiteLink || '#';
-sessionStorage.setItem(mod.ModName, modLink);
+        const modLink = mod.SiteLink || '#';
+        sessionStorage.setItem(mod.ModName, modLink);
 
-newRow.innerHTML = `
-  <td>
-    <span class="star-container">
-      <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.ModName}')">&#9733;</span>
-    </span>
-  </td>
-  <td>${mod.Author || ''}</td>
-  <td class="mod-name" onmouseover="showTooltip(event, '${mod.ModName}')" onmouseout="hideTooltip(event)">
-    ${mod.ModName || ''}
-    <div class="tooltip">${mod.Descrizione || "Nessuna descrizione disponibile"}</div>
-  </td>
-  <td><span class="status ${mod.Status || 'sconosciuta'}">${(mod.Status || '').toUpperCase()}</span></td>
-  <td><a href="${modLink}" target="_blank" rel="noopener noreferrer">Visita</a></td>
-  <td>${mod.DataUltimaModifica || ''}</td>
-  <td><span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">${(mod.Translation || '').replace("-", " ").toUpperCase()}</span></td>
-  <td>${mod.Dependency || ''}</td>
-`;
+        newRow.innerHTML = `
+          <td>
+            <span class="star-container">
+              <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.ModName}')">&#9733;</span>
+            </span>
+          </td>
+          <td>${mod.Author || ''}</td>
+          <td class="mod-name" onmouseover="showTooltip(event, '${mod.ModName}')" onmouseout="hideTooltip(event)">
+            ${mod.ModName || ''}
+            <div class="tooltip">${mod[descriptionKey] || "Nessuna descrizione disponibile"}</div>
+          </td>
+          <td><span class="status ${mod.Status || 'sconosciuta'}">${(mod.Status || '').toUpperCase()}</span></td>
+          <td><a href="${modLink}" target="_blank" rel="noopener noreferrer">Visita</a></td>
+          <td>${mod.DataUltimaModifica || ''}</td>
+          <td><span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">${(mod.Translation || '').replace("-", " ").toUpperCase()}</span></td>
+          <td>${mod[dependencyKey] || ''}</td>
+        `;
 
-newRow.querySelector('.mod-name').appendChild(tooltip);
-});
+        newRow.querySelector('.mod-name').appendChild(tooltip);
+      });
+
       checkModUpdates(mods);
       filterTable();
     })
     .catch(error => console.error('Errore nel caricare il JSON:', error));
 }
+
+// Funzione per cambiare lingua e ricaricare i dati
+function toggleLanguage() {
+  const isEnglish = languageSwitch.checked;
+  const lang = isEnglish ? "en" : "it";
+  languageLabel.textContent = isEnglish ? "English" : "Italiano";
+  localStorage.setItem("language", lang);
+
+  // Ricarica la tabella con la lingua aggiornata
+  loadModsFromJson();
+}
+
 
 function checkModUpdates(mods) {
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -1032,6 +1048,7 @@ precautionsList.innerHTML = `
 
   // Call filterTable() again to apply the reset
   filterTable();
+  setTimeout(loadModsFromJson, 100); 
 }
 
 
