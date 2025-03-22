@@ -7,10 +7,8 @@
     "DataUltimaModifica": "06/03/2025",
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
-    "DependencyIT": "General Pie Menus - DLC Vita sull'Isola - DLC Raccomandato (Genitorialità)",
-    "DescrizioneIT": "Aggiunge lavori fissi e part-time di babysitter. Il lavoro fisso è disponibile per gli adolescenti e il lavoro part-time per gli studenti universitari adolescenti o giovani adulti. I lavori sono disponibili principalmente di notte, anche se alcuni durante il giorno.",
-    "DependencyEN": "TEST",
-    "DescrizioneEN": "Test"
+    "Dependency": "General Pie Menus - DLC Vita sull'Isola - DLC Raccomandato (Genitorialità)",
+    "Descrizione": "Aggiunge lavori fissi e part-time di babysitter. Il lavoro fisso è disponibile per gli adolescenti e il lavoro part-time per gli studenti universitari adolescenti o giovani adulti. I lavori sono disponibili principalmente di notte, anche se alcuni durante il giorno."
   },
   {
     "Author": "Adeepindigo",
@@ -31,7 +29,7 @@
     "DataUltimaModifica": "06/03/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "Dependency": "General Pie Menus - ATTENZIONE leggere attentamente la descrizione dei CONFLITTI con altre mod",
+    "Dependency": "General Pie Menus - ATTENZIONE leggere attentamente la Descrizione dei CONFLITTI con altre mod",
     "Descrizione": "Aggiunge nuove funzionalità al matrimonio come: la pianificazione, assumere un wedding planner, nuovi social e altro ancora. Modifica inoltre il modo in cui si svolgono i matrimoni del gioco base e i matrimoni con il mio matrimonio, nonché le proposte e altro ancora."
   },
   {
@@ -692,7 +690,7 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "Dependency": "Core Library",
-    "Descrizione": "Ti stai chiedendo anche perché il tuo Sim non riesce ancora a scrivere manuali (libri delle abilità) nonostante abbia tutte le abilità al livello massimo? Davvero? Sì, la descrizione dice: I Sim Professorali possono scrivere manuali utili su qualsiasi abilità in cui sono esperti."
+    "Descrizione": "Ti stai chiedendo anche perché il tuo Sim non riesce ancora a scrivere manuali (libri delle abilità) nonostante abbia tutte le abilità al livello massimo? Davvero? Sì, la Descrizione dice: I Sim Professorali possono scrivere manuali utili su qualsiasi abilità in cui sono esperti."
   },
   {
     "Author": "Andrew",
@@ -1049,12 +1047,12 @@
   {
     "Author": "llazyneiph",
     "ModName": "Royalty Mod",
-    "Status": "sconosciuta",
-    "SiteLink": "https://www.patreon.com/posts/royalty-mod-3-4-115660572",
-    "DataUltimaModifica": null,
+    "Status": "aggiornata",
+    "SiteLink": "https://www.patreon.com/posts/royalty-mod-3-5-123202100?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share",
+    "DataUltimaModifica": "21/03/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "Dependency": "Core Library - XML Injector - Pack Tests",
+    "Dependency": "Core Library - Pack Tests",
     "Descrizione": "Introduce il concetto di nobiltà e monarchia nel gioco. I Sims possono diventare membri della famiglia reale, governare terre, avere titoli nobiliari e partecipare a eventi di corte. Questa mod aggiunge nuove carriere, interazioni e possibilità di gioco legate alla vita di corte, creando un'esperienza più regale e aristocratica per i giocatori."
   },
   {
