@@ -7,8 +7,10 @@
     "DataUltimaModifica": "06/03/2025",
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
-    "Dependency": "General Pie Menus - DLC Vita sull'Isola - DLC Raccomandato (Genitorialità)",
-    "Descrizione": "Aggiunge lavori fissi e part-time di babysitter. Il lavoro fisso è disponibile per gli adolescenti e il lavoro part-time per gli studenti universitari adolescenti o giovani adulti. I lavori sono disponibili principalmente di notte, anche se alcuni durante il giorno."
+    "DependencyIT": "General Pie Menus - DLC Vita sull'Isola - DLC Raccomandato (Genitorialità)",
+    "DescrizioneIT": "Aggiunge lavori fissi e part-time di babysitter. Il lavoro fisso è disponibile per gli adolescenti e il lavoro part-time per gli studenti universitari adolescenti o giovani adulti. I lavori sono disponibili principalmente di notte, anche se alcuni durante il giorno.",
+    "DependencyEN": "Test",
+    "DescrizioneEN": "Test"
   },
   {
     "Author": "Adeepindigo",
