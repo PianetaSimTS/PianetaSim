@@ -72,8 +72,8 @@ def normalize_mod(mod):
         'DataUltimaModifica': safe_strip(mod.get('DataUltimaModifica')),
         'Translation': safe_strip(mod.get('Translation')),
         'Categoria': safe_strip(mod.get('Categoria')),
-        'Dependency': safe_strip(mod.get('Dependency')),
-        'Descrizione': safe_strip(mod.get('Descrizione')),
+        'DependencyIT': safe_strip(mod.get('DependencyIT')),
+        'DescrizioneIT': safe_strip(mod.get('DescrizioneIT')),
     }
 # Funzione per confrontare gli stati e generare il messaggio
 def compare_status_only(old_state, new_state):
