@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabella - MOD +18</title>
+  <title>Tabella - MOD</title>
   <link rel="icon" type="image/png" href="Immagini/plumboblogo.png">
     <style>
 :root {
@@ -29,8 +29,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-      
-      td a {
+td a {
   color: var(--tdacolor);
 }
 
@@ -164,7 +163,6 @@ td a:active {
   background-color: #0f7041; /* Colore hover più intenso */
   transform: scale(1.05); /* Leggero ingrandimento al passaggio del mouse */
 }
-      
 .sort-arrow {
   margin-left: 5px;
   font-size: 20px;
@@ -339,10 +337,6 @@ td a:active {
     .status.rotta {
       color: #ff0015;
     }
-      
-    .status.obsoleta{
-      color: var(--sconosciutavar)
-    }
     
     .status.sconosciuta {
       color: var(--sconosciutavar);
@@ -376,8 +370,8 @@ td a:active {
     .traduzione.da-scaricare {
       color: #ff9800;
     }
-     /* Stile per il popup */
-     .popup {
+      /* Stile per il popup */
+.popup {
     display: none;
     position: fixed;
     top: 50%;
@@ -408,8 +402,10 @@ td a:active {
     background: #dc3545;
     color: white;
 }  
+
     @media (max-width: 600px) {
-      .tooltip {
+
+        .tooltip {
     font-size: 12px; /* Riduci la dimensione del testo per dispositivi mobili */
     max-width: 80%; /* La larghezza massima sarà l'80% dello schermo */
     left: 50%; /* Centra il tooltip rispetto all'elemento */
@@ -461,7 +457,7 @@ td a:active {
     <img src="Immagini/plumboblogonoscritte.png" alt="Home Logo" width="50" height="auto">
     <span class="home-text">HOME</span>
   </a>
-  <h1 id="page-title">Tabella - Mod +18</h1>
+  <h1 id="page-title">Tabella - Mod</h1>
   <div class="navbar">
     <a href="mod.html" id="mod-link">MOD</a>
     <a href="mod18.html" id="mod18-link">MOD +18</a>
@@ -507,7 +503,7 @@ td a:active {
         </div>
     </div>
   </div>
-  <div class="form-container">
+<div class="form-container">
   <div>
     <input type="text" id="search" oninput="filterTable()" placeholder="Search...">
   </div>
@@ -539,21 +535,24 @@ td a:active {
     <label for="filter-translation" id="filter-translation-label">Translation:</label>
     <button onclick="toggleDropdown('filter-translation-dropdown')">▼</button>
     <div id="filter-translation-dropdown" style="display:none;">
-      <!-- It -->
+      <!-- Selezione in Italiano -->
       <div class="it-label">
         <label><input type="checkbox" value="Inclusa" id="translation-inclusa" onchange="filterTable()"> Inclusa</label><br>
         <label><input type="checkbox" value="Non necessaria" id="translation-non-necessaria" onchange="filterTable()"> Non Necessaria</label><br>
-        <label><input type="checkbox" value="Da scaricare" id="translation-da-scaricare" onchange="filterTable()"> Da Scaricare</label>
+        <label><input type="checkbox" value="Da scaricare" id="translation-da-scaricare" onchange="filterTable()"> Da Scaricare</label><br>
+        <label><input type="checkbox" value="In lavorazione" id="translation-in-lavorazione" onchange="filterTable()"> In Lavorazione</label>
       </div>
   
-      <!-- En -->
+      <!-- Selezione in Inglese -->
       <div class="en-label" style="display:none;">
         <label><input type="checkbox" value="Included" id="translation-included" onchange="filterTable()"> Included</label><br>
         <label><input type="checkbox" value="Not Needed" id="translation-not-needed" onchange="filterTable()"> Not Needed</label><br>
-        <label><input type="checkbox" value="To Download" id="translation-to-download" onchange="filterTable()"> To Download</label>
+        <label><input type="checkbox" value="To Download" id="translation-to-download" onchange="filterTable()"> To Download</label><br>
+        <label><input type="checkbox" value="To Do" id="translation-to-do" onchange="filterTable()"> To Do</label>
       </div>    
     </div>
   </div>
+  
     <div>
       <label for="filter-category" id="filter-category-label">Categoria:</label>
       <button onclick="toggleDropdown('filter-category-dropdown')">▼</button>
@@ -597,7 +596,8 @@ td a:active {
   </table>
 
   <script>
-    document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
+
+document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
     event.preventDefault();
     document.getElementById("popup").style.display = "block";
 });
@@ -623,16 +623,21 @@ function loadModsFromJson() {
       const table = document.getElementById("mods-table").getElementsByTagName("tbody")[0];
       table.innerHTML = '';
 
-      // Estrai le categorie in modo sicuro
+      // Ottieni la lingua corrente
+      const lang = localStorage.getItem("language") || "it";
+      const dependencyKey = lang === "en" ? "DependencyEN" : "DependencyIT";
+      const descriptionKey = lang === "en" ? "DescrizioneEN" : "DescrizioneIT";
+
+      // Estrai le categorie
       const categories = [...new Set(mods
-        .map(mod => mod.Categoria || '') // Usa una stringa vuota per valori mancanti
-        .filter(c => c !== '') // Filtra le categorie vuote
-        .map(c => c.toLowerCase()) // Rendi tutte le categorie minuscole
+        .map(mod => mod.Categoria || '')
+        .filter(c => c !== '')
+        .map(c => c.toLowerCase())
       )];
 
       // Popola il filtro categorie
       const filterCategoryDropdown = document.getElementById("filter-category-dropdown");
-      filterCategoryDropdown.innerHTML = ''; // Reset delle categorie
+      filterCategoryDropdown.innerHTML = '';
       categories.forEach(category => {
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
@@ -642,56 +647,74 @@ function loadModsFromJson() {
 
         const label = document.createElement("label");
         label.setAttribute("for", `category-${category}`);
-        label.textContent = category.charAt(0).toUpperCase() + category.slice(1); // Capitalizza la prima lettera
+        label.textContent = category.charAt(0).toUpperCase() + category.slice(1);
 
-        // Appendi la checkbox e il label al dropdown
         filterCategoryDropdown.appendChild(checkbox);
         filterCategoryDropdown.appendChild(label);
         filterCategoryDropdown.appendChild(document.createElement("br"));
       });
 
-
-      // Crea righe per ogni mod
+      // Creazione righe tabella
       mods.forEach(mod => {
-  console.log(mod.Descrizione); // Aggiungi questo per vedere cosa c'è in Descrizione
-  const isFavorite = favorites.includes(mod.ModName);
-  const newRow = table.insertRow();
+        const isFavorite = favorites.includes(mod.ModName);
+        const newRow = table.insertRow();
 
-  newRow.setAttribute("data-categories", (mod.Categoria || '').toLowerCase());
-  const tooltip = document.createElement("div");
-tooltip.classList.add("tooltip");
+        newRow.setAttribute("data-categories", (mod.Categoria || '').toLowerCase());
+        const tooltip = document.createElement("div");
+        tooltip.classList.add("tooltip");
 
-// Imposta il testo del tooltip dal JSON
-tooltip.textContent = mod.Descrizione || "Nessuna descrizione disponibile";
+        // Usa la descrizione nella lingua selezionata
+        tooltip.textContent = mod[descriptionKey] || "Nessuna descrizione disponibile";
 
-const modLink = mod.SiteLink || '#';
-sessionStorage.setItem(mod.ModName, modLink);
+        const modLink = mod.SiteLink || '#';
+        sessionStorage.setItem(mod.ModName, modLink);
 
-newRow.innerHTML = `
-  <td>
-    <span class="star-container">
-      <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.ModName}')">&#9733;</span>
-    </span>
-  </td>
-  <td>${mod.Author || ''}</td>
-  <td class="mod-name" onmouseover="showTooltip(event, '${mod.ModName}')" onmouseout="hideTooltip(event)">
-    ${mod.ModName || ''}
-    <div class="tooltip">${mod.Descrizione || "Nessuna descrizione disponibile"}</div>
-  </td>
-  <td><span class="status ${mod.Status || 'sconosciuta'}">${(mod.Status || '').toUpperCase()}</span></td>
-  <td><a href="${modLink}" target="_blank" rel="noopener noreferrer">Visita</a></td>
-  <td>${mod.DataUltimaModifica || ''}</td>
-  <td><span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">${(mod.Translation || '').replace("-", " ").toUpperCase()}</span></td>
-  <td>${mod.Dependency || ''}</td>
-`;
+        newRow.innerHTML = `
+          <td>
+            <span class="star-container">
+              <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.ModName}')">&#9733;</span>
+            </span>
+          </td>
+          <td>${mod.Author || ''}</td>
+          <td class="mod-name" onmouseover="showTooltip(event, '${mod.ModName}')" onmouseout="hideTooltip(event)">
+            ${mod.ModName || ''}
+            <div class="tooltip">${mod[descriptionKey] || "Nessuna descrizione disponibile"}</div>
+          </td>
+<td>
+  <span class="status ${(mod.Status || 'sconosciuta').toLowerCase()}">
+    ${lang === "en" ? (translations[mod.Status.trim().charAt(0).toUpperCase() + mod.Status.trim().slice(1)] || mod.Status) : mod.Status}
+  </span>
+</td>
+          <td><a href="${modLink}" target="_blank" rel="noopener noreferrer">Visita</a></td>
+          <td>${mod.DataUltimaModifica || ''}</td>
+<td>
+  <span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">
+    ${lang === "en" ? (translationTranslations[mod.Translation] || mod.Translation).toUpperCase().replace("-", " ") : mod.Translation.toUpperCase().replace("-", " ")}
+  </span>
+</td>
+          <td>${mod[dependencyKey] || ''}</td>
+        `;
 
-newRow.querySelector('.mod-name').appendChild(tooltip);
-});
+        newRow.querySelector('.mod-name').appendChild(tooltip);
+      });
+
       checkModUpdates(mods);
       filterTable();
     })
     .catch(error => console.error('Errore nel caricare il JSON:', error));
 }
+
+// Funzione per cambiare lingua e ricaricare i dati
+function toggleLanguage() {
+  const isEnglish = languageSwitch.checked;
+  const lang = isEnglish ? "en" : "it";
+  languageLabel.textContent = isEnglish ? "English" : "Italiano";
+  localStorage.setItem("language", lang);
+
+  // Ricarica la tabella con la lingua aggiornata
+  loadModsFromJson();
+}
+
 
 function checkModUpdates(mods) {
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -775,16 +798,55 @@ function sortTable(columnIndex) {
   lastSortedColumn = columnIndex;
 }
 
+const translations = {
+  "Compatibile": "Compatible",
+  "Rotta": "Broken",
+  "Aggiornata": "Updated",
+  "Sconosciuta": "Unknown",
+  "Nuova": "New",
+  "Compatible": "Compatibile",
+  "Broken": "Rotta",
+  "Updated": "Aggiornata",
+  "Unknown": "Sconosciuta",
+  "New": "Nuova"
+};
+
+const translationTranslations = {
+  "inclusa": "Included",
+  "non necessaria": "Not Needed",
+  "da-scaricare": "To Download",
+  "in-lavorazione": "To Do",
+  "Included": "Inclusa",
+  "Not Needed": "Non necessaria",
+  "To Download": "Da scaricare",
+  "To Do": "In lavorazione"
+};
+
+
 function filterTable() {
   const searchValue = document.getElementById("search").value.toLowerCase();
-  
-  // Stato - raccogli i valori selezionati
+
+  // Identificare la lingua attuale
+  const isEnglish = document.querySelector(".en-label").style.display !== "none";
+
+  // Stato - raccogli i valori selezionati e convertirli in un formato uniforme
   const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))
-                                  .map(input => input.value.toLowerCase());
-  
-  // Traduzione - raccogli i valori selezionati
+                                .map(input => {
+                                  let value = input.value;
+                                  return isEnglish ? translations[value] : value; 
+                                }).map(v => v.toLowerCase()); // Converte in lowercase
+
+  // Traduzione - raccogli i valori selezionati e applica la traduzione corretta in base alla lingua
   const selectedTranslations = Array.from(document.querySelectorAll('#filter-translation-dropdown input:checked'))
-                                     .map(input => input.value.toLowerCase());
+                                     .map(input => {
+                                       let value = input.value.toLowerCase();
+                                       // Traduzione corretta in base alla lingua
+                                       if (isEnglish) {
+                                         return translationTranslations[value] ? translationTranslations[value].toLowerCase() : value; 
+                                       } else {
+                                         return value; // In italiano, il valore è già corretto
+                                       }
+                                     });
 
   // Categoria - raccogli i valori selezionati
   const selectedCategories = Array.from(document.querySelectorAll('#filter-category-dropdown input:checked'))
@@ -799,20 +861,23 @@ function filterTable() {
     const row = rows[i];
     const modName = row.querySelector(".mod-name").textContent.toLowerCase();
     const author = row.cells[1].textContent.toLowerCase(); // Colonna autore
-    const status = row.querySelector(".status").textContent.toLowerCase();
+    let status = row.querySelector(".status").textContent.trim();
+    status = isEnglish ? (translations[status] || status) : status;
+    status = status.toLowerCase(); // Per evitare problemi di maiuscole/minuscole
     const translation = row.querySelector(".traduzione").textContent.toLowerCase();
     const categories = row.getAttribute("data-categories").toLowerCase();
     const isFavorite = row.querySelector(".star").classList.contains("favorite");
-
+    // Confronto con i valori tradotti
     const matchesSearch = modName.includes(searchValue) || author.includes(searchValue);
     const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status);
-    const matchesTranslation = selectedTranslations.length === 0 || selectedTranslations.includes(translation);
+    // Verifica se la traduzione è selezionata e se corrisponde
+    const matchesTranslation = selectedTranslations.length === 0 || selectedTranslations.some(translationVal => translation.includes(translationVal));
     const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(category => categories.includes(category));
     const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : !isFavorite);
-
     row.style.display = (matchesSearch && matchesStatus && matchesTranslation && matchesCategory && matchesFavorites) ? "" : "none";
   }
 }
+
 
 function toggleFavorite(modName) {
   // Prendi la lingua attuale dal localStorage
@@ -857,8 +922,8 @@ root.style.setProperty("--sconosciutavar", "#545454"); // Giallo brillante per m
 root.style.setProperty("--thtdcolor", "black");
 root.style.setProperty("--tdacolor", "blue");
 root.style.setProperty("--tdahover", "#551A8B");
-root.style.setProperty("--tdactive", "#000080"); 
-root.style.setProperty("--text-color", "#000"); 
+root.style.setProperty("--tdactive", "#000080");    
+root.style.setProperty("--text-color", "#000");
     themeSwitch.textContent = "🌞";
   } else {
     // Passa al tema scuro
@@ -882,6 +947,7 @@ root.style.setProperty("--text-color", "#000");
   }
 }
 
+
 const languageSwitch = document.getElementById("language-switch");
 const languageLabel = document.getElementById("language-label");
 
@@ -899,7 +965,7 @@ const texts = {
     noExternal: "★ <strong>Non funziona</strong> con la cartella di The Sims in unità esterne (HDD, SSD, USB, ecc.).",
     download: "📥 Scarica",
     close: "❌ Chiudi",
-    pageTitle: "Tabella - Mod +18",
+    pageTitle: "Tabella - Mod",
     modLink: "MOD",
     mod18Link: "MOD +18",
     animazioniww18Link: "ANIMAZIONI WICKEDWHIMS +18",
@@ -924,9 +990,9 @@ const texts = {
   },
   en: {
     helpSimTitle: "🚀 HELP SIM",
-    helpSimDesc: "Tired of installing mods and translations manually? Help Sim is here to save you! With just a few clicks, you can add your favorite mods, keep everything under control and even give The Sims 4 cache files a good clean! Whether you want to expand your game with new mods or simply keep everything in order, you are in the right place.",
+    helpSimDesc: "Tired of installing mods and translations manually? Help Sim is here to save you! With just a few clicks, you can add your favorite mods, keep everything under control and even clean up The Sims 4 cache files! Whether you want to expand your game with new mods or simply keep everything in order, you are in the right place.",
     relax: "Now relax, customize your game and let <strong>Help Sim</strong> do the rest! 🎮✨",
-    precautions: "⚠️ SMALL PRECAUTIONS BEFORE DOWNLOADING ⚠️",
+    precautions: "⚠️ SMALL PRECAUTIONS BEFORE DOWNLOADING  ⚠️",
     antivirus: "★ If the antivirus blocks the program, click on <strong>\"Run anyway\"</strong>.<br>The program is safe! It was entirely created by us.",
     guide: "★ Before using it, <strong>read the guide</strong> available on the program’s home page.",
     zipSupport: "★ Supports only mod and translation files in <strong>ZIP format</strong>.",
@@ -934,11 +1000,11 @@ const texts = {
     noExternal: "★ <strong>Does not work</strong> with The Sims folder on external drives (HDD, SSD, USB, etc.).",
     download: "📥 Download",
     close: "❌ Close",
-    pageTitle: "Table - Mod +18",
+    pageTitle: "Table - Mod",
     modLink: "MOD",
     mod18Link: "MOD +18",
     animazioniww18Link: "ANIMATIONS WICKEDWHIMS +18",
-    traduzioniLink: "ITALIAN TRANSLATION",
+    traduzioniLink: "ITALIAN TRANSLATIONS",
     programmiLink: "PROGRAMS",
     helpSimLink: "HELP SIM",
     searchPlaceholder: "Search...",
@@ -953,7 +1019,7 @@ const texts = {
       status: "STATUS",
       modLink: "LINK MOD",
       lastModified: "LAST MODIFICATION DATE MOD STATUS",
-      translation: "ITALIAN TRANSLATION",
+      translation: " ITALIAN TRANSLATION",
       requirements: "FOR OPERATION IS NECESSARY"
     }
   }
@@ -979,6 +1045,7 @@ precautionsList.innerHTML = `
   <li>${texts[lang].noPackage}</li>
   <li>${texts[lang].noExternal}</li>
 `;
+
   document.getElementById("download-btn").textContent = texts[lang].download;
   document.getElementById("close-btn").textContent = texts[lang].close;
   document.getElementById("page-title").textContent = texts[lang].pageTitle;
@@ -1001,6 +1068,7 @@ precautionsList.innerHTML = `
   document.querySelector("th:nth-child(6)").textContent = texts[lang].tableHeaders.lastModified;
   document.querySelector("th:nth-child(7)").textContent = texts[lang].tableHeaders.translation;
   document.querySelector("th:nth-child(8)").textContent = texts[lang].tableHeaders.requirements;
+
   languageLabel.textContent = isEnglish ? "English" : "Italiano";
   localStorage.setItem("language", lang);
   
@@ -1033,7 +1101,9 @@ precautionsList.innerHTML = `
 
   // Call filterTable() again to apply the reset
   filterTable();
+  setTimeout(loadModsFromJson, 100); 
 }
+
 
 // Impostazione della lingua iniziale
 function setInitialLanguage() {
@@ -1044,6 +1114,7 @@ function setInitialLanguage() {
 
 languageSwitch.addEventListener("change", toggleLanguage);
 setInitialLanguage();
+
 function showTooltip(event, modName) {
   const tooltip = document.querySelector(`#${modName} .tooltip`);
   tooltip.style.display = 'block';
