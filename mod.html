@@ -535,21 +535,24 @@ td a:active {
     <label for="filter-translation" id="filter-translation-label">Translation:</label>
     <button onclick="toggleDropdown('filter-translation-dropdown')">▼</button>
     <div id="filter-translation-dropdown" style="display:none;">
-      <!-- It -->
+      <!-- Selezione in Italiano -->
       <div class="it-label">
         <label><input type="checkbox" value="Inclusa" id="translation-inclusa" onchange="filterTable()"> Inclusa</label><br>
         <label><input type="checkbox" value="Non necessaria" id="translation-non-necessaria" onchange="filterTable()"> Non Necessaria</label><br>
-        <label><input type="checkbox" value="Da scaricare" id="translation-da-scaricare" onchange="filterTable()"> Da Scaricare</label>
+        <label><input type="checkbox" value="Da scaricare" id="translation-da-scaricare" onchange="filterTable()"> Da Scaricare</label><br>
+        <label><input type="checkbox" value="In lavorazione" id="translation-in-lavorazione" onchange="filterTable()"> In Lavorazione</label>
       </div>
   
-      <!-- En -->
+      <!-- Selezione in Inglese -->
       <div class="en-label" style="display:none;">
         <label><input type="checkbox" value="Included" id="translation-included" onchange="filterTable()"> Included</label><br>
         <label><input type="checkbox" value="Not Needed" id="translation-not-needed" onchange="filterTable()"> Not Needed</label><br>
-        <label><input type="checkbox" value="To Download" id="translation-to-download" onchange="filterTable()"> To Download</label>
+        <label><input type="checkbox" value="To Download" id="translation-to-download" onchange="filterTable()"> To Download</label><br>
+        <label><input type="checkbox" value="To Do" id="translation-to-do" onchange="filterTable()"> To Do</label>
       </div>    
     </div>
   </div>
+  
     <div>
       <label for="filter-category" id="filter-category-label">Categoria:</label>
       <button onclick="toggleDropdown('filter-category-dropdown')">▼</button>
@@ -677,10 +680,18 @@ function loadModsFromJson() {
             ${mod.ModName || ''}
             <div class="tooltip">${mod[descriptionKey] || "Nessuna descrizione disponibile"}</div>
           </td>
-          <td><span class="status ${mod.Status || 'sconosciuta'}">${(mod.Status || '').toUpperCase()}</span></td>
+<td>
+  <span class="status ${(mod.Status || 'sconosciuta').toLowerCase()}">
+    ${lang === "en" ? (translations[mod.Status.trim().charAt(0).toUpperCase() + mod.Status.trim().slice(1)] || mod.Status) : mod.Status}
+  </span>
+</td>
           <td><a href="${modLink}" target="_blank" rel="noopener noreferrer">Visita</a></td>
           <td>${mod.DataUltimaModifica || ''}</td>
-          <td><span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">${(mod.Translation || '').replace("-", " ").toUpperCase()}</span></td>
+<td>
+  <span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">
+    ${lang === "en" ? (translationTranslations[mod.Translation] || mod.Translation).toUpperCase().replace("-", " ") : mod.Translation.toUpperCase().replace("-", " ")}
+  </span>
+</td>
           <td>${mod[dependencyKey] || ''}</td>
         `;
 
@@ -787,16 +798,55 @@ function sortTable(columnIndex) {
   lastSortedColumn = columnIndex;
 }
 
+const translations = {
+  "Compatibile": "Compatible",
+  "Rotta": "Broken",
+  "Aggiornata": "Updated",
+  "Sconosciuta": "Unknown",
+  "Nuova": "New",
+  "Compatible": "Compatibile",
+  "Broken": "Rotta",
+  "Updated": "Aggiornata",
+  "Unknown": "Sconosciuta",
+  "New": "Nuova"
+};
+
+const translationTranslations = {
+  "inclusa": "Included",
+  "non necessaria": "Not Needed",
+  "da-scaricare": "To Download",
+  "in-lavorazione": "To Do",
+  "Included": "Inclusa",
+  "Not Needed": "Non necessaria",
+  "To Download": "Da scaricare",
+  "To Do": "In lavorazione"
+};
+
+
 function filterTable() {
   const searchValue = document.getElementById("search").value.toLowerCase();
-  
-  // Stato - raccogli i valori selezionati
+
+  // Identificare la lingua attuale
+  const isEnglish = document.querySelector(".en-label").style.display !== "none";
+
+  // Stato - raccogli i valori selezionati e convertirli in un formato uniforme
   const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))
-                                  .map(input => input.value.toLowerCase());
-  
-  // Traduzione - raccogli i valori selezionati
+                                .map(input => {
+                                  let value = input.value;
+                                  return isEnglish ? translations[value] : value; 
+                                }).map(v => v.toLowerCase()); // Converte in lowercase
+
+  // Traduzione - raccogli i valori selezionati e applica la traduzione corretta in base alla lingua
   const selectedTranslations = Array.from(document.querySelectorAll('#filter-translation-dropdown input:checked'))
-                                     .map(input => input.value.toLowerCase());
+                                     .map(input => {
+                                       let value = input.value.toLowerCase();
+                                       // Traduzione corretta in base alla lingua
+                                       if (isEnglish) {
+                                         return translationTranslations[value] ? translationTranslations[value].toLowerCase() : value; 
+                                       } else {
+                                         return value; // In italiano, il valore è già corretto
+                                       }
+                                     });
 
   // Categoria - raccogli i valori selezionati
   const selectedCategories = Array.from(document.querySelectorAll('#filter-category-dropdown input:checked'))
@@ -811,20 +861,23 @@ function filterTable() {
     const row = rows[i];
     const modName = row.querySelector(".mod-name").textContent.toLowerCase();
     const author = row.cells[1].textContent.toLowerCase(); // Colonna autore
-    const status = row.querySelector(".status").textContent.toLowerCase();
+    let status = row.querySelector(".status").textContent.trim();
+    status = isEnglish ? (translations[status] || status) : status;
+    status = status.toLowerCase(); // Per evitare problemi di maiuscole/minuscole
     const translation = row.querySelector(".traduzione").textContent.toLowerCase();
     const categories = row.getAttribute("data-categories").toLowerCase();
     const isFavorite = row.querySelector(".star").classList.contains("favorite");
-
+    // Confronto con i valori tradotti
     const matchesSearch = modName.includes(searchValue) || author.includes(searchValue);
     const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status);
-    const matchesTranslation = selectedTranslations.length === 0 || selectedTranslations.includes(translation);
+    // Verifica se la traduzione è selezionata e se corrisponde
+    const matchesTranslation = selectedTranslations.length === 0 || selectedTranslations.some(translationVal => translation.includes(translationVal));
     const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(category => categories.includes(category));
     const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : !isFavorite);
-
     row.style.display = (matchesSearch && matchesStatus && matchesTranslation && matchesCategory && matchesFavorites) ? "" : "none";
   }
 }
+
 
 function toggleFavorite(modName) {
   // Prendi la lingua attuale dal localStorage
