@@ -8,7 +8,9 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "DependencyIT": "Basemental Drugs - WickedWhims - Custom Electives (Core) - DLC Vita Universitaria",
-    "DescrizioneIT": "Ulteriori corsi opzionali basati sulle competenze acquisite in Basemental Drugs e Wicked Whims."
+    "DescrizioneIT": "Ulteriori corsi opzionali basati sulle competenze acquisite in Basemental Drugs e Wicked Whims.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Andirz",
@@ -19,7 +21,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "XML Injector - DLC Al Lavoro & Avventura nella Giungla",
-    "DescrizioneIT": "Questa mod aggiunge nuovi veleni e antidoti al gioco. Tutti i veleni non solo possono essere bevuti dalla bottiglia per suicidarsi, ma possono anche essere aggiunti a tutti i drink del bar per avvelenare altri Sim! Per avvelenare un drink, il tuo Sim deve avere una bottiglia di veleno nel suo inventario!"
+    "DescrizioneIT": "Questa mod aggiunge nuovi veleni e antidoti al gioco. Tutti i veleni non solo possono essere bevuti dalla bottiglia per suicidarsi, ma possono anche essere aggiunti a tutti i drink del bar per avvelenare altri Sim! Per avvelenare un drink, il tuo Sim deve avere una bottiglia di veleno nel suo inventario!",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Andirz",
@@ -30,7 +34,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "Smart Shared Core",
-    "DescrizioneIT": "Questa semplice mod della roulette della morte consente morti rapide e casuali dei Sim, ideali per sfide basate su scenari come la guerra o la peste. I Sim affrontano probabilità di sopravvivenza con i sopravvissuti che ottengono un buff di sopravvivenza. Dopo questa interazione, il tuo Sim morirà all'istante se questo è il suo destino, o sopravviverà alla sfida e otterrà un buff di sopravvivenza fortunato. Il destino e il caso decidono tutto."
+    "DescrizioneIT": "Questa semplice mod della roulette della morte consente morti rapide e casuali dei Sim, ideali per sfide basate su scenari come la guerra o la peste. I Sim affrontano probabilità di sopravvivenza con i sopravvissuti che ottengono un buff di sopravvivenza. Dopo questa interazione, il tuo Sim morirà all'istante se questo è il suo destino, o sopravviverà alla sfida e otterrà un buff di sopravvivenza fortunato. Il destino e il caso decidono tutto.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Andirz",
@@ -41,7 +47,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "PSO Shared Library - Core Library - DLC Vita Universitaria (Facoltativo)",
-    "DescrizioneIT": "Aggiunge il dark web e la possibilità di comprare gli oggetti proibiti"
+    "DescrizioneIT": "Aggiunge il dark web e la possibilità di comprare gli oggetti proibiti",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Basemental",
@@ -52,7 +60,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "ATTENZIONE non installatela insieme alla Basemental Drugs",
-    "DescrizioneIT": "Questa mod che introduce alcolici, effetti di dipendenza, nuove interazioni sociali e comportamenti legati all'alcol, arricchendo l'esperienza di gioco con dinamiche adulte e realistiche."
+    "DescrizioneIT": "Questa mod che introduce alcolici, effetti di dipendenza, nuove interazioni sociali e comportamenti legati all'alcol, arricchendo l'esperienza di gioco con dinamiche adulte e realistiche.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Basemental",
@@ -63,7 +73,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "Universal Venue List",
-    "DescrizioneIT": "Questa mod che aggiunge droghe, dipendenza e comportamenti associati, offrendo nuove interazioni sociali, effetti su umore e relazioni, e dinamiche adulte più realistiche nel gioco."
+    "DescrizioneIT": "Questa mod che aggiunge droghe, dipendenza e comportamenti associati, offrendo nuove interazioni sociali, effetti su umore e relazioni, e dinamiche adulte più realistiche nel gioco.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Basemental",
@@ -74,7 +86,9 @@
     "Translation": "inclusa",
     "Categoria": "Gameplay",
     "DependencyIT": "Universal Venue List",
-    "DescrizioneIT": "Questa mod introduce il gioco d'azzardo, con nuove attività come slot machine, scommesse e l'opportunità di vincere o perdere denaro, creando dinamiche adulte più complesse."
+    "DescrizioneIT": "Questa mod introduce il gioco d'azzardo, con nuove attività come slot machine, scommesse e l'opportunità di vincere o perdere denaro, creando dinamiche adulte più complesse.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Basemental",
@@ -85,7 +99,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "Basemental Drugs - Universal Venue List - DLC Al Lavoro",
-    "DescrizioneIT": "Questa mod aggiunge bande criminali, attività illegali e nuove interazioni sociali, permettendo ai Sim di entrare in organizzazioni mafiose e vivere dinamiche più oscure."
+    "DescrizioneIT": "Questa mod aggiunge bande criminali, attività illegali e nuove interazioni sociali, permettendo ai Sim di entrare in organizzazioni mafiose e vivere dinamiche più oscure.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "EllaNoir",
@@ -96,7 +112,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "Questa mod introduce elementi BDSM e nuove interazioni romantiche e sessuali. Aggiunge dinamiche di dominazione e sottomissione, preferenze feticistiche e oggetti dedicati, arricchendo il gameplay con relazioni più profonde e realistiche."
+    "DescrizioneIT": "Questa mod introduce elementi BDSM e nuove interazioni romantiche e sessuali. Aggiunge dinamiche di dominazione e sottomissione, preferenze feticistiche e oggetti dedicati, arricchendo il gameplay con relazioni più profonde e realistiche.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Jughandle",
@@ -107,7 +125,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "Core Library - WickedWhims - DLC Nuove Stelle - DLC Al Lavoro - Universal Venue List",
-    "DescrizioneIT": "Questa mod introduce una carriera nell'industria per adulti. I Sims possono diventare attori, registi o produttori di film per adulti, guadagnando fama, denaro e avanzando attraverso livelli con eventi realistici."
+    "DescrizioneIT": "Questa mod introduce una carriera nell'industria per adulti. I Sims possono diventare attori, registi o produttori di film per adulti, guadagnando fama, denaro e avanzando attraverso livelli con eventi realistici.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Khlas",
@@ -118,7 +138,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "WickedWhims",
-    "DescrizioneIT": "Questa mod aggiunge nuove interazioni per personaggi maschili, arricchendo il gioco con opzioni di flirt, seduzione e comportamenti sessuali più complessi. Include anche nuove animazioni per un'esperienza più coinvolgente."
+    "DescrizioneIT": "Questa mod aggiunge nuove interazioni per personaggi maschili, arricchendo il gioco con opzioni di flirt, seduzione e comportamenti sessuali più complessi. Include anche nuove animazioni per un'esperienza più coinvolgente.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Kritical",
@@ -129,7 +151,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "WickedWhims - Discreet Frame - Brainwashing Machine “Atropos” - Dungeon Clutter 3",
-    "DescrizioneIT": "Questa mod introduce elementi narrativi dark e per adulti, arricchendo il gameplay con dinamiche di controllo, seduzione e potere.\nNon solo aggiunge nuove interazioni, abilità, tratti... ma integra anche i miei vecchi oggetti BDSM in modo che tu possa usarli sia per giocare che per allenarti."
+    "DescrizioneIT": "Questa mod introduce elementi narrativi dark e per adulti, arricchendo il gameplay con dinamiche di controllo, seduzione e potere.\nNon solo aggiunge nuove interazioni, abilità, tratti... ma integra anche i miei vecchi oggetti BDSM in modo che tu possa usarli sia per giocare che per allenarti.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Kuttoe",
@@ -140,7 +164,9 @@
     "Translation": "inclusa",
     "Categoria": "Gameplay",
     "DependencyIT": "Basemental Drugs",
-    "DescrizioneIT": "Questa mod espande le funzionalità di Basemental Drugs, aggiungendo nuove interazioni e modifiche al gameplay. Introduce scenari più realistici e complessi legati al crimine e alle dipendenze, arricchendo l’esperienza di gioco in modo immersivo."
+    "DescrizioneIT": "Questa mod espande le funzionalità di Basemental Drugs, aggiungendo nuove interazioni e modifiche al gameplay. Introduce scenari più realistici e complessi legati al crimine e alle dipendenze, arricchendo l’esperienza di gioco in modo immersivo.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "NisaK",
@@ -151,7 +177,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "WickedWhims",
-    "DescrizioneIT": "Questa mod introduce nuove meccaniche legate a romanticismo, seduzione e desideri. Aggiunge tratti, aspirazioni e interazioni uniche, offrendo un gameplay più profondo e personalizzabile con tematiche adulte e complesse come la prostituzione e molto altro."
+    "DescrizioneIT": "Questa mod introduce nuove meccaniche legate a romanticismo, seduzione e desideri. Aggiunge tratti, aspirazioni e interazioni uniche, offrendo un gameplay più profondo e personalizzabile con tematiche adulte e complesse come la prostituzione e molto altro.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Peco",
@@ -162,7 +190,9 @@
     "Translation": "",
     "Categoria": "Gameplay",
     "DependencyIT": "Funzionalità Aggiuntive con WickedWhims",
-    "DescrizioneIT": "Questa mod aggiunge 7 canali TV per adulti, un servizio di Video On-Demand, funzionalità di gioco aggiuntive, ricompense e oggetti da collezione esclusivi."
+    "DescrizioneIT": "Questa mod aggiunge 7 canali TV per adulti, un servizio di Video On-Demand, funzionalità di gioco aggiuntive, ricompense e oggetti da collezione esclusivi.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Peco",
@@ -173,18 +203,22 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "Questa mod autonoma è incentrata sulla pittura. Presenta opere d'arte erotiche originali che i tuoi sims possono dipingere, più una funzione \"Dipingi dal catalogo\" che ti consente di scegliere il dipinto esatto da far creare ai tuoi sims."
+    "DescrizioneIT": "Questa mod autonoma è incentrata sulla pittura. Presenta opere d'arte erotiche originali che i tuoi sims possono dipingere, più una funzione \"Dipingi dal catalogo\" che ti consente di scegliere il dipinto esatto da far creare ai tuoi sims.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Sacrificial",
     "ModName": "Extreme Violence (+18)",
     "Status": "aggiornata",
     "SiteLink": "https://sacrificialmods.com/downloads.html",
-    "DataUltimaModifica": "18/03/2025",
+    "DataUltimaModifica": "25/03/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "Con questa mod puoi uccidere i sim in moltissimi modi diversi, avere l'aspirazione da serial killer e altro ancora"
+    "DescrizioneIT": "Con questa mod puoi uccidere i sim in moltissimi modi diversi, avere l'aspirazione da serial killer e altro ancora",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Sacrificial",
@@ -195,7 +229,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "Aggiunge attività legate alla prostituzione, lap dance e altre interazioni più adulte. I Sims possono intraprendere carriere legate al mondo del lavoro sessuale, come la prostituzione, esibirsi in lap dance o gestire locali di intrattenimento per adulti. La mod introduce anche nuove animazioni e opzioni per esplorare questi aspetti più maturi e controversi del gameplay."
+    "DescrizioneIT": "Aggiunge attività legate alla prostituzione, lap dance e altre interazioni più adulte. I Sims possono intraprendere carriere legate al mondo del lavoro sessuale, come la prostituzione, esibirsi in lap dance o gestire locali di intrattenimento per adulti. La mod introduce anche nuove animazioni e opzioni per esplorare questi aspetti più maturi e controversi del gameplay.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Sacrificial",
@@ -206,7 +242,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Facoltativo (Al Lavoro)",
-    "DescrizioneIT": "Questa mod introduce eventi tragici e criminali come rapimenti, sparatorie, malattie e incidenti. Aggiunge nuove interazioni drammatiche, rendendo il gameplay più realistico, intenso e ricco di colpi di scena."
+    "DescrizioneIT": "Questa mod introduce eventi tragici e criminali come rapimenti, sparatorie, malattie e incidenti. Aggiunge nuove interazioni drammatiche, rendendo il gameplay più realistico, intenso e ricco di colpi di scena.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Sacrificial",
@@ -217,7 +255,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "Questa mod introduce eventi macabri e interazioni cruente, permettendo di infliggere sofferenze ai Sim in modi estremi. Aggiunge scenari horror, meccaniche oscure e situazioni drammatiche, rendendo il gameplay più crudo e imprevedibile."
+    "DescrizioneIT": "Questa mod introduce eventi macabri e interazioni cruente, permettendo di infliggere sofferenze ai Sim in modi estremi. Aggiunge scenari horror, meccaniche oscure e situazioni drammatiche, rendendo il gameplay più crudo e imprevedibile.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Sacrificial",
@@ -228,7 +268,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "Questa mod aggiunge interazioni estreme e caotiche, permettendo ai Sim di infliggere torture e creare scenari distruttivi. Introduce eventi drammatici, nuove animazioni e opzioni oscure."
+    "DescrizioneIT": "Questa mod aggiunge interazioni estreme e caotiche, permettendo ai Sim di infliggere torture e creare scenari distruttivi. Introduce eventi drammatici, nuove animazioni e opzioni oscure.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Sacrificial",
@@ -239,7 +281,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "Affronta anche tu uno splendido Apocalisse Zombie "
+    "DescrizioneIT": "Affronta anche tu uno splendido Apocalisse Zombie ",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "SimsAlchemist",
@@ -250,7 +294,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "WickedWhims - XML Injector",
-    "DescrizioneIT": "Sblocca più interazioni in base alle relazioni/situazioni della simulazione.\nUn ottimo modo per ravvivare il sistema romantico del gioco e renderlo meno noioso.\nInterazioni che possono portare al sesso."
+    "DescrizioneIT": "Sblocca più interazioni in base alle relazioni/situazioni della simulazione.\nUn ottimo modo per ravvivare il sistema romantico del gioco e renderlo meno noioso.\nInterazioni che possono portare al sesso.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Spent",
@@ -261,7 +307,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "WickedWhims",
-    "DescrizioneIT": "Questa mod rivoluziona il modo in cui i tuoi sim interagiscono con lo sperma, aggiungendo tratti e molto altro."
+    "DescrizioneIT": "Questa mod rivoluziona il modo in cui i tuoi sim interagiscono con lo sperma, aggiungendo tratti e molto altro.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "True AI",
@@ -272,7 +320,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "ATTENZIONE sostituisce alcune stringhe della traduzione Originale della WickedWhims",
-    "DescrizioneIT": "Questa mod aggiunge dialoghi espliciti e linguaggio volgare alle interazioni di WickedWhims. Migliora l'immersione con espressioni più realistiche e dirette, rendendo le conversazioni tra Sim più audaci e provocatorie."
+    "DescrizioneIT": "Questa mod aggiunge dialoghi espliciti e linguaggio volgare alle interazioni di WickedWhims. Migliora l'immersione con espressioni più realistiche e dirette, rendendo le conversazioni tra Sim più audaci e provocatorie.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "TurboDriver",
@@ -283,7 +333,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "Questa mod introduce un sistema avanzato di interazioni romantiche e sessuali esplicite, arricchendo il gameplay con nudità, animazioni personalizzate, tratti unici e dinamiche relazionali più realistiche. Offre un’esperienza più immersiva e profondamente personalizzabile."
+    "DescrizioneIT": "Questa mod introduce un sistema avanzato di interazioni romantiche e sessuali esplicite, arricchendo il gameplay con nudità, animazioni personalizzate, tratti unici e dinamiche relazionali più realistiche. Offre un’esperienza più immersiva e profondamente personalizzabile.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   },
   {
     "Author": "Wicked Pixxel",
@@ -294,6 +346,8 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "Questa aggiunge eventi intimi casuali tra i Sim, basati su desideri e situazioni spontanee. Introduce nuove interazioni, personalizzazioni e scenari dinamici, rendendo il gameplay più imprevedibile e realistico nelle relazioni."
+    "DescrizioneIT": "Questa aggiunge eventi intimi casuali tra i Sim, basati su desideri e situazioni spontanee. Introduce nuove interazioni, personalizzazioni e scenari dinamici, rendendo il gameplay più imprevedibile e realistico nelle relazioni.",
+    "DependencyEN": null,
+    "DescrizioneEN": null
   }
 ]
