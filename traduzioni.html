@@ -456,25 +456,28 @@ td a:active {
       <div id="filter-status-dropdown" style="display:none;">
         <!-- It -->
         <div class="it-label">
-        
-        <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()">Compatibile</label><br>
-        <label><input type="checkbox" value="Rotta" id="status-rotta" onchange="filterTable()"> Rotta</label><br>
-        <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()">Aggiornata</label><br>
-        <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()">Sconosciuta</label><br>
-        <label><input type="checkbox" value="Da Aggiornare" id="status-daaggiornare" onchange="filterTable()">Da Aggiornare</label><br>
-        <label><input type="checkbox" value="Obsoleta" id="status-obsoleta" onchange="filterTable()">Obsoleta</label><br>
-        <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()">Nuova</label>
+          <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
+          <label><input type="checkbox" value="Rotta" id="status-rotta" onchange="filterTable()"> Rotta</label><br>
+          <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
+          <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
+          <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label><br>
+          <label><input type="checkbox" value="Da Aggiornare" id="status-daaggiornare" onchange="filterTable()">Da Aggiornare</label><br>
+          <label><input type="checkbox" value="In Lavorazione" id="status-inlavorazione" onchange="filterTable()">In lavorazione</label><br>        
+          <label><input type="checkbox" value="Obsoleta" id="status-obsoleta" onchange="filterTable()">Obsoleta</label><br>
+        </div>
+    
+        <!-- En -->
+        <div class="en-label" style="display:none;">
+          <label><input type="checkbox" value="Compatible" id="status-compatible" onchange="filterTable()"> Compatible</label><br>
+          <label><input type="checkbox" value="Broken" id="status-broken" onchange="filterTable()"> Broken</label><br>
+          <label><input type="checkbox" value="Updated" id="status-updated" onchange="filterTable()"> Updated</label><br>
+          <label><input type="checkbox" value="Unknown" id="status-unknown" onchange="filterTable()"> Unknown</label><br>
+          <label><input type="checkbox" value="New" id="status-new" onchange="filterTable()"> New</label><br>
+          <label><input type="checkbox" value="To Do" id="status-todo" onchange="filterTable()"> To Do</label><br>
+          <label><input type="checkbox" value="To be updated" id="status-tobeupdated" onchange="filterTable()"> To be updated</label><br>           
+          <label><input type="checkbox" value="Obsolete" id="status-obsolete" onchange="filterTable()"> Obsolete</label><br>
+        </div>
       </div>
-    </div>
-    <div class="en-label" style="display:none;">
-      <label><input type="checkbox" value="Compatible" id="status-compatibile" onchange="filterTable()"> Compatible</label><br>
-      <label><input type="checkbox" value="Broken" id="status-rotta" onchange="filterTable()"> Broken</label><br>
-      <label><input type="checkbox" value="Updated" id="status-aggiornata" onchange="filterTable()"> Updated</label><br>
-      <label><input type="checkbox" value="Unknown" id="status-sconosciuta" onchange="filterTable()"> Unknown</label><br>
-      <label><input type="checkbox" value="To be updated" id="status-daaggiornare" onchange="filterTable()"> To be updated</label><br>
-      <label><input type="checkbox" value="Obsolete" id="status-obsoleta" onchange="filterTable()"> Obsolete</label><br>
-      <label><input type="checkbox" value="New" id="status-nuova" onchange="filterTable()"> New</label>
-    </div>
     </div>
     <div>
       <label for="filter-favorites" id="filter-favorites-label">Preferite:</label>
@@ -524,6 +527,14 @@ document.getElementById("download-btn").addEventListener("click", function() {
     document.body.removeChild(link);
     document.getElementById("popup").style.display = "none"; // Chiude il popup dopo il download
 });
+function toggleLanguage() {
+  const isEnglish = languageSwitch.checked;
+  const lang = isEnglish ? "en" : "it";
+  languageLabel.textContent = isEnglish ? "English" : "Italiano";
+  localStorage.setItem("language", lang);
+
+  loadModsFromJson(); // Ricarica i dati con la lingua aggiornata
+}
     // Funzione per ottenere e visualizzare i dati della tabella
   function loadModsFromJson() {    
   fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/traduzioni.json')
@@ -533,6 +544,7 @@ document.getElementById("download-btn").addEventListener("click", function() {
     const favorites = JSON.parse(localStorage.getItem("favorites_" + pageId)) || [];
     const table = document.getElementById("modTable").getElementsByTagName("tbody")[0];
     table.innerHTML = '';
+    const lang = localStorage.getItem("language") || "it";
     mods.forEach(mod => {
       const isFavorite = favorites.includes(mod.Title);
       const newRow = table.insertRow();
@@ -540,7 +552,7 @@ document.getElementById("download-btn").addEventListener("click", function() {
       const modLink = mod.Link || '#';
       sessionStorage.setItem(mod.Creator, modLink);
 
-newRow.innerHTML = `
+      newRow.innerHTML = `
   <td>
     <span class="star-container">
       <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${mod.Title}')">&#9733;</span>
@@ -550,14 +562,20 @@ newRow.innerHTML = `
   <td class="mod-name">${mod.Title || ''}</td>
   <td>${mod.ReleaseVersion || ''}</td>
   <td>${mod.CurrentVersion || ''}</td>
-  <td><span class="status ${mod.Status === 'in-lavorazione' ? 'in-lavorazione' : mod.Status === 'da-aggiornare' ? 'da-aggiornare' : mod.Status === 'obsoleta' ? 'obsoleta' : mod.Status || 'sconosciuta'}">
-    ${mod.Status === 'in-lavorazione' ? 'IN LAVORAZIONE' : mod.Status === 'da-aggiornare' ? 'DA AGGIORNARE' : mod.Status === 'obsoleta' ? 'OBSOLETA' : (mod.Status || 'Sconosciuta').toUpperCase()}</span></td>
+  <td>
+    <span class="status ${(mod.Status || 'Sconosciuta').toLowerCase()}">
+      ${lang === "en"
+        ? (translations[mod.Status.trim().replace('-', ' ').replace(/\b\w/g, char => char.toUpperCase())] || mod.Status)
+        : mod.Status.replace('-', ' ')}
+    </span>
+  </td>
   <td>
     <span class="traduzione ${(mod.Translator || '').replace(" ", "-").toLowerCase()}">
       <a href="${mod.Link || '#'}" target="_blank">${mod.Translator || ''}</a>
     </span>
   </td>
 `;
+
     });
     checkModUpdates(mods);
     filterTable();
@@ -641,12 +659,37 @@ function checkModUpdates(mods) {
       lastSortedColumn = columnIndex;
     }
 
- function filterTable() {
-  const searchValue = document.getElementById("search").value.toLowerCase();
+    const translations = {
+  "Compatibile": "Compatible",
+  "Rotta": "Broken",
+  "Aggiornata": "Updated",
+  "Sconosciuta": "Unknown",
+  "Nuova": "New",
+  "Da Aggiornare": "To be updated",
+  "Obsoleta": "Obsolete",
+  "In Lavorazione": "To Do",
+  "To Do": "In Lavorazione",
+  "Compatible": "Compatibile",
+  "Broken": "Rotta",
+  "Updated": "Aggiornata",
+  "Unknown": "Sconosciuta",
+  "New": "Nuova",
+  "To be updated": "Da Aggiornare",
+  "Obsolete": "Obsoleta"
+};
 
+
+function filterTable() {
+  const searchValue = document.getElementById("search").value.toLowerCase();
+  const isEnglish = document.querySelector(".en-label").style.display !== "none";
+  
   // Stato - raccogli i valori selezionati
   const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))
-    .map(input => input.value.toLowerCase());
+                                .map(input => {
+                                  let value = input.value;
+                                  return isEnglish ? translations[value] : value; 
+                                }).map(v => v.toLowerCase()); // Converte in lowercase
+
   const filterFavorites = document.getElementById("filter-favorites").value.toLowerCase();
 
   const table = document.getElementById("modTable");
@@ -660,20 +703,23 @@ function checkModUpdates(mods) {
     const modName = row.cells[2]?.textContent.toLowerCase() || ""; // NOME MOD
 
     // Stato della traduzione
-    const status = row.querySelector(".status")?.textContent.trim().toLowerCase() || ""; // Rimuove eventuali spazi extra
+    let status = row.querySelector(".status").textContent.trim();
+    let translatedStatus = isEnglish ? translations[status] || status : status;
+    translatedStatus = translatedStatus.toLowerCase(); // Per evitare problemi di maiuscole/minuscole
 
     // Preferiti
     const isFavorite = row.querySelector(".star").classList.contains("favorite");
 
     // Verifica corrispondenza per ricerca, stato e preferiti
     const matchesSearch = author.includes(searchValue) || modName.includes(searchValue);
-    const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.some(selected => status.includes(selected));
+    const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(translatedStatus);
     const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : !isFavorite);
 
     // Mostra o nasconde la riga in base ai criteri
     row.style.display = (matchesSearch && matchesStatus && matchesFavorites) ? "" : "none";
   }
 }
+
 
   function toggleFavorite(author) {
     const lang = localStorage.getItem("language") || "it";
@@ -879,6 +925,7 @@ languageLabel.textContent = isEnglish ? "English" : "Italiano";
 
   // Call filterTable() again to apply the reset
   filterTable();
+  setTimeout(loadModsFromJson, 100); 
 }
 
 // Impostazione della lingua iniziale
