@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabella - MOD</title>
+  <title>Tabella - MOD +18</title>
   <link rel="icon" type="image/png" href="Immagini/plumboblogo.png">
     <style>
 :root {
@@ -457,7 +457,7 @@ td a:active {
     <img src="Immagini/plumboblogonoscritte.png" alt="Home Logo" width="50" height="auto">
     <span class="home-text">HOME</span>
   </a>
-  <h1 id="page-title">Tabella - Mod</h1>
+  <h1 id="page-title">Tabella - Mod +18</h1>
   <div class="navbar">
     <a href="mod.html" id="mod-link">MOD</a>
     <a href="mod18.html" id="mod18-link">MOD +18</a>
@@ -615,6 +615,54 @@ document.getElementById("download-btn").addEventListener("click", function() {
     document.body.removeChild(link);
     document.getElementById("popup").style.display = "none"; // Chiude il popup dopo il download
 });
+
+// Funzione per ottenere la traduzione della categoria in base alla lingua selezionata
+function translateCategory(category, lang) {
+  if (lang === "en") {
+    return categoryTranslation[category] || category;
+  } else {
+    return Object.keys(categoryTranslation).find(key => categoryTranslation[key] === category) || category;
+  }
+}
+
+// Funzione per aggiornare il dropdown delle categorie con la lingua selezionata
+function updateCategoryDropdown(mods) {
+  const lang = localStorage.getItem("language") || "it"; // Recupera la lingua dal localStorage
+  const dropdown = document.getElementById("filter-category-dropdown");
+  dropdown.innerHTML = ""; // Pulisce il contenuto precedente
+
+  // Estrai le categorie uniche e le traduce in base alla lingua
+  const categories = [...new Set(mods.map(mod => mod.Categoria || '').filter(c => c !== ''))];
+
+  categories.forEach(category => {
+    const translatedCategory = translateCategory(category, lang);
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = translatedCategory;
+    checkbox.id = `category-${translatedCategory.replace(/\s+/g, "-").toLowerCase()}`;
+    checkbox.onchange = filterTable;
+
+    const label = document.createElement("label");
+    label.setAttribute("for", checkbox.id);
+    label.textContent = translatedCategory;
+
+    dropdown.appendChild(checkbox);
+    dropdown.appendChild(label);
+    dropdown.appendChild(document.createElement("br"));
+  });
+}
+
+// Funzione per cambiare lingua e aggiornare le categorie
+function toggleLanguage() {
+  const isEnglish = languageSwitch.checked;
+  const lang = isEnglish ? "en" : "it";
+  languageLabel.textContent = isEnglish ? "English" : "Italiano";
+  localStorage.setItem("language", lang);
+
+  loadModsFromJson(); // Ricarica i dati con la lingua aggiornata
+}
+
 function loadModsFromJson() {
   fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/mods18.json')
     .then(response => response.json())
@@ -628,38 +676,18 @@ function loadModsFromJson() {
       const dependencyKey = lang === "en" ? "DependencyEN" : "DependencyIT";
       const descriptionKey = lang === "en" ? "DescrizioneEN" : "DescrizioneIT";
 
-      // Estrai le categorie
-      const categories = [...new Set(mods
-        .map(mod => mod.Categoria || '')
-        .filter(c => c !== '')
-        .map(c => c.toLowerCase())
-      )];
-
-      // Popola il filtro categorie
-      const filterCategoryDropdown = document.getElementById("filter-category-dropdown");
-      filterCategoryDropdown.innerHTML = '';
-      categories.forEach(category => {
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.value = category;
-        checkbox.id = `category-${category}`;
-        checkbox.onchange = filterTable;
-
-        const label = document.createElement("label");
-        label.setAttribute("for", `category-${category}`);
-        label.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-
-        filterCategoryDropdown.appendChild(checkbox);
-        filterCategoryDropdown.appendChild(label);
-        filterCategoryDropdown.appendChild(document.createElement("br"));
-      });
+      // Aggiorna il filtro categorie con la traduzione corretta
+      updateCategoryDropdown(mods);
 
       // Creazione righe tabella
       mods.forEach(mod => {
         const isFavorite = favorites.includes(mod.ModName);
         const newRow = table.insertRow();
 
-        newRow.setAttribute("data-categories", (mod.Categoria || '').toLowerCase());
+        // Traduci la categoria prima di inserirla nell'attributo data-categories
+        const translatedCategory = translateCategory(mod.Categoria || '', lang);
+
+        newRow.setAttribute("data-categories", translatedCategory.toLowerCase());
         const tooltip = document.createElement("div");
         tooltip.classList.add("tooltip");
 
@@ -680,18 +708,18 @@ function loadModsFromJson() {
             ${mod.ModName || ''}
             <div class="tooltip">${mod[descriptionKey] || "Nessuna descrizione disponibile"}</div>
           </td>
-<td>
-  <span class="status ${(mod.Status || 'sconosciuta').toLowerCase()}">
-    ${lang === "en" ? (translations[mod.Status.trim().charAt(0).toUpperCase() + mod.Status.trim().slice(1)] || mod.Status) : mod.Status}
-  </span>
-</td>
+          <td>
+            <span class="status ${(mod.Status || 'sconosciuta').toLowerCase()}">
+              ${lang === "en" ? (translations[mod.Status.trim().charAt(0).toUpperCase() + mod.Status.trim().slice(1)] || mod.Status) : mod.Status}
+            </span>
+          </td>
           <td><a href="${modLink}" target="_blank" rel="noopener noreferrer">Visita</a></td>
           <td>${mod.DataUltimaModifica || ''}</td>
-<td>
-  <span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">
-    ${lang === "en" ? (translationTranslations[mod.Translation] || mod.Translation).toUpperCase().replace("-", " ") : mod.Translation.toUpperCase().replace("-", " ")}
-  </span>
-</td>
+          <td>
+            <span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">
+              ${lang === "en" ? (translationTranslations[mod.Translation] || mod.Translation).toUpperCase().replace("-", " ") : mod.Translation.toUpperCase().replace("-", " ")}
+            </span>
+          </td>
           <td>${mod[dependencyKey] || ''}</td>
         `;
 
@@ -704,17 +732,16 @@ function loadModsFromJson() {
     .catch(error => console.error('Errore nel caricare il JSON:', error));
 }
 
-// Funzione per cambiare lingua e ricaricare i dati
+// Funzione per cambiare lingua e aggiornare le categorie
 function toggleLanguage() {
   const isEnglish = languageSwitch.checked;
   const lang = isEnglish ? "en" : "it";
   languageLabel.textContent = isEnglish ? "English" : "Italiano";
   localStorage.setItem("language", lang);
 
-  // Ricarica la tabella con la lingua aggiornata
-  loadModsFromJson();
+  updateCategoryDropdown(); // Aggiorna le categorie
+  loadModsFromJson(); // Ricarica i dati con la lingua aggiornata
 }
-
 
 function checkModUpdates(mods) {
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -820,6 +847,16 @@ const translationTranslations = {
   "Not Needed": "Non necessaria",
   "To Download": "Da scaricare",
   "To Do": "In lavorazione"
+};
+
+const categoryTranslation = {
+  "Carriere": "Careers",
+  "Gameplay": "Gameplay",
+  "Oggetti Funzionali": "Functional Items",
+  "Utilità": "Utilities",
+  "Tratti": "Traits",
+  "Bug fix": "Bug Fixes",
+  "Varie": "Miscellaneous"
 };
 
 
@@ -965,7 +1002,7 @@ const texts = {
     noExternal: "★ <strong>Non funziona</strong> con la cartella di The Sims in unità esterne (HDD, SSD, USB, ecc.).",
     download: "📥 Scarica",
     close: "❌ Chiudi",
-    pageTitle: "Tabella - Mod",
+    pageTitle: "Tabella - Mod +18",
     modLink: "MOD",
     mod18Link: "MOD +18",
     animazioniww18Link: "ANIMAZIONI WICKEDWHIMS +18",
@@ -1000,7 +1037,7 @@ const texts = {
     noExternal: "★ <strong>Does not work</strong> with The Sims folder on external drives (HDD, SSD, USB, etc.).",
     download: "📥 Download",
     close: "❌ Close",
-    pageTitle: "Table - Mod",
+    pageTitle: "Table - Mod +18",
     modLink: "MOD",
     mod18Link: "MOD +18",
     animazioniww18Link: "ANIMATIONS WICKEDWHIMS +18",
