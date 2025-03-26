@@ -147,8 +147,8 @@
     "Creator": "Adeepindigo",
     "Title": "Tattoo Parlor",
     "ReleaseVersion": "26/02/2025",
-    "CurrentVersion": "24/04/2023",
-    "Status": "da-aggiornare",
+    "CurrentVersion": "26/03/2023",
+    "Status": "aggiornata",
     "Translator": "di LoryNa",
     "Link": "https://www.curseforge.com/sims4/translations/trad-ita-rabbithole-activity-di-adeepindigo"
   },
@@ -884,9 +884,9 @@
   {
     "Creator": "Sacrificial",
     "Title": "Extreme Violence (+18)",
-    "ReleaseVersion": "2.5.7",
+    "ReleaseVersion": "2.5.71",
     "CurrentVersion": "2.5.7",
-    "Status": "aggiornata",
+    "Status": "compatibile",
     "Translator": "di LoryNa",
     "Link": "https://www.simfileshare.net/download/3728330/"
   },
