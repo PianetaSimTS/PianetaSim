@@ -464,13 +464,18 @@ td a:active {
       </div>
     </div>
   </div>
-    </div>
     <div>
       <label for="filter-favorites" id="filter-favorites-label">Preferite:</label>
       <select id="filter-favorites" onchange="filterTable()">
+        <!-- Italian version -->
         <option value="">Tutte</option>
         <option value="true">Preferite</option>
         <option value="false">Non Preferite</option>
+      
+        <!-- English version -->
+        <option value="">All</option>
+        <option value="true">Favorites</option>
+        <option value="false">No Favorites</option>
       </select>
     </div>
 </div>
@@ -519,6 +524,7 @@ document.getElementById("download-btn").addEventListener("click", function() {
       const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
       const table = document.getElementById("animazioni-table").getElementsByTagName("tbody")[0];
       table.innerHTML = '';
+      const lang = localStorage.getItem("language") || "it";
 
       // Crea righe per ogni mod
       mods.forEach(mod => {
@@ -533,7 +539,11 @@ document.getElementById("download-btn").addEventListener("click", function() {
             </span>
           </td>
           <td>${mod.Autore || ''}</td>
-          <td><span class="status ${mod.Status || 'sconosciuta'}">${(mod.Status || '').toUpperCase()}</span></td>
+                    <td>
+            <span class="status ${(mod.Status || 'sconosciuta').toLowerCase()}">
+              ${lang === "en" ? (translations[mod.Status.trim().charAt(0).toUpperCase() + mod.Status.trim().slice(1)] || mod.Status) : mod.Status}
+            </span>
+          </td>
           <td><a href="${mod.Link || '#'}" target="_blank">Visita</a></td>
           <td>${mod.DataAggiornamento || ''}</td>
           <td>${mod.Note || ''}</td>
@@ -619,13 +629,31 @@ if (updatedMods.length > 0) {
 
       lastSortedColumn = columnIndex;
     }
+    const translations = {
+  "Compatibile": "Compatible",
+  "Rotta": "Broken",
+  "Aggiornata": "Updated",
+  "Sconosciuta": "Unknown",
+  "Nuova": "New",
+  "Compatible": "Compatibile",
+  "Broken": "Rotta",
+  "Updated": "Aggiornata",
+  "Unknown": "Sconosciuta",
+  "New": "Nuova"
+};
 
     function filterTable() {
-  const searchValue = document.getElementById("search").value.toLowerCase();
-  
-  // Stato - raccogli i valori selezionati
-  const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))
-                                  .map(input => input.value.toLowerCase());
+      const searchValue = document.getElementById("search").value.toLowerCase();
+
+// Identificare la lingua attuale
+const isEnglish = document.querySelector(".en-label").style.display !== "none";
+
+// Stato - raccogli i valori selezionati e convertirli in un formato uniforme
+const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))
+                                .map(input => {
+                                  let value = input.value;
+                                  return isEnglish ? translations[value] : value; 
+                                }).map(v => v.toLowerCase());
   const filterFavorites = document.getElementById("filter-favorites").value.toLowerCase();
 
   const table = document.getElementById("animazioni-table");
@@ -634,7 +662,9 @@ if (updatedMods.length > 0) {
   for (let i = 1; i < rows.length; i++) {
         const row = rows[i];
         const author = row.cells[1].textContent.toLowerCase();
-        const status = row.querySelector(".status").textContent.toLowerCase();
+        let status = row.querySelector(".status").textContent.trim();
+    status = isEnglish ? (translations[status] || status) : status;
+    status = status.toLowerCase();
         const isFavorite = row.querySelector(".star").classList.contains("favorite");
         const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status);
         const matchesSearch = author.includes(searchValue);
