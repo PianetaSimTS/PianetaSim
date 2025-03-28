@@ -206,7 +206,6 @@ footer {
 
 .slider:before {
     position: absolute;
-    content: "TC"; /* Imposta "TC" per il tema chiaro di default */
     color: white;
     font-size: 12px;
     font-weight: bold;
@@ -221,7 +220,13 @@ footer {
     transition: 0.4s;
     border-radius: 50%;
 }
-
+.language-slider:before {
+    content: "IT"; /* Imposta "IT" per la lingua italiana di default */
+}
+/* Tema slider */
+.theme-slider:before {
+    content: "TC"; /* Imposta "TC" per il tema chiaro di default */
+}
 /* Slider per il tema */
 input#theme-switch:checked + .slider {
     background-color: #ccc;
@@ -419,7 +424,7 @@ body.light-theme {
     <div class="switch-container">
         <label class="switch">
             <input type="checkbox" id="language-switch">
-            <span class="slider"></span>
+            <span class="slider language-slider"></span>
         </label>
         <span id="language-label">Italiano</span>
     </div>
@@ -427,7 +432,7 @@ body.light-theme {
     <div class="theme-toggle">
         <label class="switch">
             <input type="checkbox" id="theme-switch">
-            <span class="slider"></span>
+            <span class="slider theme-slider"></span>
         </label>
         <span id="theme-label">Tema Scuro</span>
     </div>
