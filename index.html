@@ -160,20 +160,22 @@ footer {
   align-items: center;
   gap: 10px;
 }
-.theme-toggle {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-          .switch-container {
+.switch-container, .theme-toggle {
             display: flex;
             align-items: center;
-            font-family: Arial, sans-serif;
             font-size: 16px;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        .switch-container {
+            top: 10px;
+            left: 10px;
+        }
+
+        .theme-toggle {
+            top: 10px;
+            right: 10px;
         }
 
         .switch {
@@ -191,50 +193,94 @@ footer {
         }
 
         .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            transition: 0.4s;
-            border-radius: 24px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "TC"; /* Imposta "TC" per il tema chiaro di default */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #16ab63;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Slider per il tema */
+input#theme-switch:checked + .slider {
+    background-color: #ccc;
+}
+
+input#theme-switch:checked + .slider:before {
+    transform: translateX(26px);
+    content: "TS"; /* Cambia in "TS" per il tema scuro */
+    background-color: white;
+    color: black;
+}
+
+/* Slider per la lingua */
+input#language-switch:checked + .slider {
+    background-color: #ccc;
+}
+
+input#language-switch:checked + .slider:before {
+    transform: translateX(26px);
+    content: "EN"; /* Cambia in "EN" per la lingua inglese */
+    background-color: white;
+    color: black;
+}
+
+/* Tema scuro */
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-theme .switch-container span {
+    color: white;
+}
+
+/* Tema chiaro */
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+/* Separazione e stile per ciascun label */
+#theme-label, #language-label {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+        #theme-label {
+            font-size: 14px;
         }
 
-        .slider:before {
-            position: absolute;
-            content: "IT";
+        /* Dark Theme Example (Add your own implementation) */
+        body.dark-theme {
+            background-color: #121212;
             color: white;
-            font-size: 12px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 20px;
-            width: 20px;
-            left: 2px;
-            bottom: 2px;
-            background-color: #16ab63;
-            transition: 0.4s;
-            border-radius: 50%;
         }
 
-        input:checked + .slider {
-            background-color: #ccc;
+        body.dark-theme .switch-container span {
+            color: white;
         }
-
-        input:checked + .slider:before {
-            transform: translateX(26px);
-            content: "EN";
-            background-color: white;
-            color: black;
-        }
-
-    #theme-label {
-      font-size: 16px;
-      color: var(--text-color);
-    }
 
     /* Stile per il popup */
 .popup {
@@ -370,21 +416,22 @@ footer {
   </style>
 </head>
 <body>
-  <div class="theme-toggle">
-    <label class="switch">
-      <input type="checkbox" id="theme-switch">
-      <span class="slider"></span>
-    </label>
-    <span id="theme-label">Tema Scuro</span>
-  </div>
     <div class="switch-container">
-        <span>IT</span>
         <label class="switch">
-            <input type="checkbox" id="lang-switch">
+            <input type="checkbox" id="language-switch">
             <span class="slider"></span>
         </label>
-        <span>Italiano</span>
+        <span id="language-label">Italiano</span>
     </div>
+
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider"></span>
+        </label>
+        <span id="theme-label">Tema Scuro</span>
+    </div>
+</div>
   <header>
     <img src="Immagini/plumboblogonoscritte.png" alt="Logo Pianeta Sim">
     <br>
