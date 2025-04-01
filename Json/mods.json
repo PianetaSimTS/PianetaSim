@@ -308,8 +308,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "Core Library",
     "DescrizioneIT": "Carriera del Servizio Auto, partirai dal lavare auto a diventare capo dell'officina.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "Auto Service career, you will start from washing cars to becoming workshop leader."
   },
   {
     "Author": "Andirz",
@@ -320,9 +320,9 @@
     "Translation": "non necessaria",
     "Categoria": "Tratti",
     "DependencyIT": "",
-    "DescrizioneIT": "Riempirà tutti i tuoi Sims (attivi e PNG) con tratti di personalità casuali fino al massimo consentito",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Riempirà tutti i tuoi Sims (attivi e PNG) con tratti di personalità casuali fino al massimo consentito.",
+    "DependencyEN": "",
+    "DescrizioneEN": "It will fill all your Sims (active and NPCs) with random personality traits up to the maximum allowed."
   },
   {
     "Author": "Andirz",
@@ -332,10 +332,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "XML Injector - DLC Vita sull'Isola e Un Giorno alla Spa",
-    "DescrizioneIT": "Potrai fare yoga direttamente sulla spiaggia",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyIT": "XML Injector - DLC Vita sull'Isola & Un Giorno alla Spa",
+    "DescrizioneIT": "Potrai fare yoga direttamente sulla spiaggia.",
+    "DependencyEN": "XML Injector - DLC Island Living & Spa Day",
+    "DescrizioneEN": "You can do yoga right on the beach."
   },
   {
     "Author": "Andirz",
@@ -346,9 +346,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "PSO Shared Library - Core Library",
-    "DescrizioneIT": "Aggiunge più oggetti nei chioschi, nei distributori automatici e nelle bancarelle del mercato",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Aggiunge più oggetti nei chioschi, nei distributori automatici e nelle bancarelle del mercato.",
+    "DependencyEN": "PSO Shared Library - Core Library",
+    "DescrizioneEN": "It adds more items in kiosks, vending machines and market stalls."
   },
   {
     "Author": "Andirz",
@@ -359,9 +359,9 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "DependencyIT": "Core Library",
-    "DescrizioneIT": "Migliora l'aspetto del menu e l'organizzazione nei sim e in alcuni oggetti",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Migliora l'aspetto del menu, l'organizzazione nei sim e in alcuni oggetti.",
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "Improves menu appearance, organization in sims and some objects."
   },
   {
     "Author": "Andirz",
@@ -372,9 +372,9 @@
     "Translation": "non necessaria",
     "Categoria": "Bug Fix",
     "DependencyIT": "",
-    "DescrizioneIT": "Sostituisce le texture dei peli corporei originali di EA con le splendide texture dei peli corporei di Luumia",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Sostituisce le texture dei peli corporei originali di EA con le splendide texture dei peli corporei di Luumia.",
+    "DependencyEN": "",
+    "DescrizioneEN": "Replaces EA's original body hair textures with Luumia's beautiful body hair textures."
   },
   {
     "Author": "Andirz",
@@ -385,9 +385,9 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "DependencyIT": "Core Library",
-    "DescrizioneIT": "Aggiunge la possibilità di creare un Sim con un semplice click (umano, robot, cavallo, cane, gatto, volpe o piccoli animali da fattoria)",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Aggiunge la possibilità di creare un Sim con un semplice click (umano, robot, cavallo, cane, gatto, volpe o piccoli animali da fattoria).",
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "Adds the ability to create a Sim with one click (human, robot, horse, dog, cat, fox or small farm animal)."
   },
   {
     "Author": "Andirz",
@@ -399,8 +399,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Vita Universitaria",
     "DescrizioneIT": "Serve per il funzionamento delle altre mod Custom Electives.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Discover University",
+    "DescrizioneEN": "It is needed for the operation of the other Custom Electives mods."
   },
   {
     "Author": "Andirz",
@@ -412,8 +412,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Custom Electives (Core) - DLC Vita Universitaria",
     "DescrizioneIT": "Aggiunge materie elettive personalizzate e costose per i Sim adolescenti, offrendo opportunità di apprendimento avanzato con un tocco di sfida economica.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Custom Electives (Core) - DLC Discover University",
+    "DescrizioneEN": "Adds customized and expensive elective subjects for teen Sims, offering advanced learning opportunities with a touch of economic challenge."
   },
   {
     "Author": "Andirz",
@@ -425,8 +425,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Custom Electives (Core) - DLC Vita Universitaria",
     "DescrizioneIT": "Introduce nuove materie elettive personalizzate per i Sim adolescenti, arricchendo l’esperienza scolastica con opzioni aggiuntive per sviluppare abilità senza il costo extra delle versioni più esclusive.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Custom Electives (Core) - DLC Discover University",
+    "DescrizioneEN": "Introduces new elective subjects customized for teen Sims, enriching the school experience with additional options for developing skills without the extra cost of the more exclusive versions."
   },
   {
     "Author": "Andirz",
@@ -436,10 +436,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "DLC Vita Universitaria e Nuove Stelle",
+    "DependencyIT": "DLC Vita Universitaria & Nuove Stelle",
     "DescrizioneIT": "Modifica la carriera universitaria in \"Arte Drammatica\", trasformandola nella carriera di Recitazione del pacchetto Famosi. Questo permette ai Sim che studiano arte drammatica all'università di intraprendere direttamente una carriera nella recitazione, creando una connessione più realistica tra l'istruzione e la carriera.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Discover University & Get Famous",
+    "DescrizioneEN": "Changes college career to \"Dramatic Arts,\" turning it into the acting career of the Famous package. This allows Sims who study drama in college to directly pursue a career in acting, creating a more realistic connection between education and career."
   },
   {
     "Author": "Andirz",
@@ -451,8 +451,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Road to Fame  - DLC Vita Universitaria",
     "DescrizioneIT": "Trasforma la carriera universitaria in \"Arte Drammatica\" in una carriera di Recitazione del pacchetto Road To Fame. Questo consente ai Sim che studiano arte drammatica di entrare direttamente nel mondo della recitazione, creando una connessione più diretta tra l'istruzione e la carriera nel settore dello spettacolo.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Road to Fame  - DLC Discover University",
+    "DescrizioneEN": "Turns college career in \"Dramatic Arts\" into acting career of Road To Fame package. This allows Sims studying Drama to enter the acting world directly, creating a more direct connection between education and a career in the entertainment industry."
   },
   {
     "Author": "Andirz",
@@ -464,8 +464,8 @@
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "Core Library - DLC Vita da Genitori",
     "DescrizioneIT": "Amplia le opzioni del diario privato in The Sims 4, permettendo ai Sim di scrivere su una maggiore varietà di emozioni ed eventi, arricchendo la loro storia personale.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - DLC Discover University",
+    "DescrizioneEN": "Expands the private diary options in The Sims 4, allowing Sims to write about a greater variety of emotions and events, enriching their personal history."
   },
   {
     "Author": "Andirz",
@@ -477,8 +477,8 @@
     "Categoria": "Tratti",
     "DependencyIT": "Core Library - DLC Serata Cinema",
     "DescrizioneIT": "Permette ai Sim di scegliere e avere un genere cinematografico preferito, influenzando le loro emozioni e reazioni quando guardano film. Aggiunge un tocco di realismo, rendendo i gusti dei Sim più personalizzati.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - DLC Movie Hangout",
+    "DescrizioneEN": "It allows Sims to choose and have a favorite movie genre, influencing their emotions and reactions when watching movies. It adds a touch of realism, making Sims' tastes more personalized."
   },
   {
     "Author": "Andirz",
@@ -490,8 +490,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Core Library - DLC Giorno di Bucato",
     "DescrizioneIT": "Aggiunge varie interazioni e trucchi alla pila del bucato, alla pila piegata, alla cesta del bucato, alla lavatrice e all'asciugatrice.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - DLC Laundry Day",
+    "DescrizioneEN": "Adds various interactions and tricks to the laundry pile, folded pile, laundry basket, washer and dryer."
   },
   {
     "Author": "Andirz",
@@ -503,8 +503,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Core Library - DLC Giorno di Bucato",
     "DescrizioneIT": "Il nuovo tratto del lotto Lavanderia a Pagamento Self-Service fa sì che tutte le lavatrici e le asciugatrici del lotto richiedano il pagamento! I tuoi Sims non potranno usarle finché non lanciano una moneta. Ora possono recarsi attivamente in una lavanderia a gettoni e lavare i propri vestiti di persona! Puoi abilitare questa caratteristica del lotto su lotti in affitto, lotti universitari o lotti della tua attività e utilizzarla. Anche il proprietario del lotto può riscuotere i guadagni! Trasforma il tuo lotto di proprietà  in una lavanderia a gettoni redditizia.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - DLC Laundry Day",
+    "DescrizioneEN": "The new stretch of the Self-Service Paying Laundry Lot makes all the washers and dryers in the lot require payment! Your Sims can't use them until they flip a coin. Now they can actively go to a laundromat and wash their clothes themselves! You can enable this lot feature on rented lots, college lots or lots in your business and use it. Even the lot owner can collect the earnings! Turn your owned lot into a profitable laundromat."
   },
   {
     "Author": "Andirz",
@@ -516,8 +516,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Core Library - DLC Giorno di Bucato",
     "DescrizioneIT": "Troppo impegnato per fare il bucato? Lavare e asciugare richiedono troppo tempo? O forse vivi in ​​un piccolo appartamento senza spazio per lavatrice e asciugatrice? Questa mod introduce nuove interazioni per cesti della biancheria, pile di biancheria e pile piegate, consentendo ai tuoi Sims di inviare la biancheria sporca a una lavanderia a gettoni a pagamento. Una volta trascorso il tempo di pulizia, i vestiti torneranno nell'inventario del tuo Sim.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - DLC Laundry Day",
+    "DescrizioneEN": "Too busy to do laundry? Washing and drying taking too long? Or maybe you live in a small apartment with no space for a washer and dryer? This mod introduces new interactions for laundry baskets, laundry piles, and folded piles, allowing your Sims to send dirty laundry to a paid laundromat. Once the cleaning time has passed, the clothes will return to your Sim's inventory."
   },
   {
     "Author": "Andirz",
@@ -529,8 +529,8 @@
     "Categoria": "Bug Fix",
     "DependencyIT": "Core Library",
     "DescrizioneIT": "Rende tutti i Sim nel gioco attratti da qualsiasi genere, permettendo loro di esplorare liberamente le loro preferenze romantiche e sessuali senza restrizioni. La versione \"Exploring\" consente ai Sim di scoprire la propria sessualità nel corso del gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "It makes all Sims in the game attracted to any gender, allowing them to freely explore their romantic and sexual preferences without restriction. The \"Exploring\" version allows Sims to discover their sexuality throughout the game."
   },
   {
     "Author": "Andirz",
@@ -542,8 +542,8 @@
     "Categoria": "Bug Fix",
     "DependencyIT": "Core Library",
     "DescrizioneIT": "Rende tutti i Sim nel gioco attratti da qualsiasi genere, consentendo loro di esplorare liberamente le proprie preferenze romantiche e sessuali senza limitazioni. La versione \"Ultimate\" offre un'esperienza ancora più completa, permettendo ai Sim di scoprire la propria sessualità in modo naturale e senza restrizioni, arricchendo le interazioni romantiche e le dinamiche relazionali.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "It makes all Sims in the game attracted to any gender, allowing them to freely explore their romantic and sexual preferences without restriction. The \"Ultimate\" version offers an even more complete experience, allowing Sims to discover their sexuality naturally and without restriction, enriching romantic interactions and relationship dynamics."
   },
   {
     "Author": "Andirz",
@@ -555,8 +555,8 @@
     "Categoria": "Tratti",
     "DependencyIT": "Core Library",
     "DescrizioneIT": "Elimina il dramma legato ai compleanni dimenticati in The Sims 4. Con questa mod, i Sim non si arrabbiano o si sentono trascurati se il loro compleanno passa inosservato, rendendo l'esperienza di gioco più tranquilla e meno frustrante. Perfetto per chi vuole evitare conflitti inutili legati ai compleanni!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "It eliminates the drama associated with forgotten birthdays in The Sims 4. With this mod, Sims don't get upset or feel neglected if their birthday goes unnoticed, making the gaming experience quieter and less frustrating. Perfect for those who want to avoid unnecessary birthday-related conflicts!"
   },
   {
     "Author": "Andirz",
@@ -568,8 +568,8 @@
     "Categoria": "Tratti",
     "DependencyIT": "Core Library - DLC Stagioni",
     "DescrizioneIT": "Rimuove il dramma legato ai fallimenti durante le festività in The Sims 4. Con questa mod, i Sim non si arrabbiano o si sentono delusi se le festività non vanno come previsto, rendendo l'esperienza di gioco più rilassata e senza conflitti inutili durante le celebrazioni.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - DLC Seasons",
+    "DescrizioneEN": "Removes the drama associated with failures during the holidays in The Sims 4. With this mod, Sims don't get angry or feel disappointed if the holidays don't go as planned, making the gaming experience more relaxed and without unnecessary conflict during celebrations."
   },
   {
     "Author": "Andirz",
@@ -581,8 +581,8 @@
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "XML Injector - DLC Gita all'Aria Aperta - DLC Un Giorno alla Spa - DLC Vita in Città - DLC Nuove Stelle - DLC Bebè",
     "DescrizioneIT": "Aggiunge opzioni e modifiche per rendere l'esperienza all'aria aperta più realistica e interessante, come nuove azioni, comportamenti e possibilità per i Sim che trascorrono del tempo all'esterno. Perfetto per chi vuole rendere le attività all'aperto ancora più coinvolgenti!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - DLC Outdoor Retreat - DLC Spa Day - DLC City Living - DLC Get Famous - DLC Toddler",
+    "DescrizioneEN": "Adds options and modifications to make the outdoor experience more realistic and interesting, such as new actions, behaviors, and possibilities for Sims spending time outdoors. Perfect for those who want to make outdoor activities even more engaging!"
   },
   {
     "Author": "Andirz",
@@ -594,8 +594,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "",
     "DescrizioneIT": "Serve per il funzionamento delle altre mod della serie P.S.O.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It is needed for the operation of the other mods in the P.S.O. series."
   },
   {
     "Author": "Andirz",
@@ -607,8 +607,8 @@
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "Purchase Medicine",
     "DescrizioneIT": "Aggiunge un chiosco farmaceutico nel gioco, permettendo ai Sim di acquistare medicinali, rimedi e altri articoli per la salute direttamente in un chiosco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Purchase Medicine",
+    "DescrizioneEN": "Adds a pharmaceutical kiosk in the game, allowing Sims to purchase medicines, remedies and other health items directly at a kiosk."
   },
   {
     "Author": "Andirz",
@@ -620,8 +620,8 @@
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "PSO Shared Library - Core Library",
     "DescrizioneIT": "Permette ai Sim di acquistare e consumare bevande in bottiglia, aggiungendo nuove opzioni per soddisfare la sete e arricchire l’esperienza di gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "PSO Shared Library - Core Library",
+    "DescrizioneEN": "Allows Sims to purchase and consume bottled drinks, adding new options to quench thirst and enrich the gaming experience."
   },
   {
     "Author": "Andirz",
@@ -633,8 +633,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "PSO Shared Library - Core Library",
     "DescrizioneIT": "Consente ai Sim di acquistare medicinali per curarsi da malattie o migliorare la loro salute, aggiungendo un nuovo livello di realismo nella gestione del benessere.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "PSO Shared Library - Core Library",
+    "DescrizioneEN": "It allows Sims to purchase medicines to cure themselves of diseases or improve their health, adding a new level of realism to wellness management."
   },
   {
     "Author": "Andirz",
@@ -646,8 +646,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "XML Injector - DLC Vampiri e/o Regno della Magia",
     "DescrizioneIT": "Permette ai Sim di acquistare libri occulti, ampliando le loro conoscenze su magia, vampiri, streghe e altre creature soprannaturali, arricchendo l’esperienza di gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - DLC Vampires and/or Realm of Magic",
+    "DescrizioneEN": "Allows Sims to purchase occult books, expanding their knowledge of magic, vampires, witches and other supernatural creatures, enriching the gaming experience."
   },
   {
     "Author": "Andirz",
@@ -659,8 +659,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "Core Library",
     "DescrizioneIT": "Con questa piccola mod di cheat e debug puoi aggiungere più PNG alla tua famiglia contemporaneamente con un clic o rimuovere più membri della famiglia dalla famiglia con un clic e trasformarli in PNG senza dover cliccare su ogni Sim individualmente.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "With this small cheat and debug mod you can add multiple NPCs to your family at once with one click or remove multiple family members from the family with one click and turn them into NPCs without having to click on each Sim individually."
   },
   {
     "Author": "Andirz",
@@ -670,10 +670,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "Core Library - DLC Gita all'Aria Aperta e Avventura nella Giungla",
+    "DependencyIT": "Core Library - DLC Gita all'Aria Aperta & Avventura nella Giungla",
     "DescrizioneIT": "Espande le opzioni di erboristeria nel gioco, introducendo nuove erbe e rimedi tipici di Selvadorada. I Sim possono raccogliere e utilizzare piante esotiche per creare pozioni e trattamenti, arricchendo le dinamiche di gioco legate alla cura e alla medicina naturale.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - DLC Outdoor Retreat & Jungle Adventure",
+    "DescrizioneEN": "Expands herbalism options in the game, introducing new herbs and remedies typical of Selvadorada. Sims can collect and use exotic plants to create potions and treatments, enriching the game dynamics related to healing and natural medicine."
   },
   {
     "Author": "Andirz",
@@ -685,8 +685,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "PSO Shared Library - Core Library",
     "DescrizioneIT": "Permette ai Sim di ordinare cibo direttamente a casa, aggiungendo un'opzione di consegna di cibo rapida e comoda. Perfetto per soddisfare la fame dei Sim senza dover cucinare, rendendo la vita quotidiana ancora più semplice e realistica.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "PSO Shared Library - Core Library",
+    "DescrizioneEN": "It allows Sims to order food directly to their homes, adding a quick and convenient food delivery option. Perfect for satisfying Sims' hunger without having to cook, making daily life even easier and more realistic."
   },
   {
     "Author": "Andirz",
@@ -698,8 +698,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "PSO Shared Library - Core Library",
     "DescrizioneIT": "Consente ai Sim di fare acquisti online, offrendo una varietà di oggetti, abbigliamento e accessori direttamente da un negozio virtuale. Aggiunge un nuovo livello di realismo e comodità, permettendo ai Sim di acquistare comodamente senza uscire di casa.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "PSO Shared Library - Core Library",
+    "DescrizioneEN": "Allows Sims to shop online, offering a variety of items, clothing and accessories directly from a virtual store. Adds a new level of realism and convenience, allowing Sims to shop conveniently without leaving home."
   },
   {
     "Author": "Andirz",
@@ -711,8 +711,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "Core Library - Smart Shared Core",
     "DescrizioneIT": "Offre opzioni avanzate per modificare facilmente il genere dei Sim, consentendo di cambiare rapidamente il sesso, l'aspetto fisico o le caratteristiche di genere senza dover ricorrere a comandi complessi. Perfetto per chi desidera maggiore flessibilità nella gestione dei Sim e delle loro identità.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - Smart Shared Core",
+    "DescrizioneEN": "It offers advanced options to easily change the gender of Sims, allowing them to quickly change sex, physical appearance, or gender characteristics without having to resort to complex commands. Perfect for those who want more flexibility in managing Sims and their identities."
   },
   {
     "Author": "Andirz",
@@ -724,8 +724,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "Core Library",
     "DescrizioneIT": "Serve per il funzionamento delle mod della serie Smart.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "It is used for the operation of the Smart series mods."
   },
   {
     "Author": "Andirz",
@@ -737,8 +737,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "Core Library - Smart Shared Core",
     "DescrizioneIT": "Semplifica l'utilizzo dei trucchi per i Sim, permettendo di modificare facilmente aspetti come bisogni, emozioni, abilità e carriera senza dover usare comandi complessi. Perfetto per chi cerca un modo rapido per personalizzare i Sim e gestire il gameplay in modo più efficiente.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - Smart Shared Core",
+    "DescrizioneEN": "Simplifies the use of tricks for Sims, allowing them to easily change aspects such as needs, emotions, skills and careers without having to use complex commands. Perfect for those looking for a quick way to customize Sims and manage gameplay more efficiently."
   },
   {
     "Author": "Andirz",
@@ -750,8 +750,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "Core Library - Smart Shared Core",
     "DescrizioneIT": "Genera casualmente tratti, desideri e caratteristiche dei Sim, permettendo di creare personaggi unici con combinazioni imprevedibili. Perfetto per chi vuole aggiungere varietà e sorpresa nel gioco, senza dover decidere manualmente ogni dettaglio.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - Smart Shared Core",
+    "DescrizioneEN": "It randomly generates Sim traits, desires and characteristics, allowing you to create unique characters with unpredictable combinations. Perfect for those who want to add variety and surprise in the game, without having to manually decide every detail."
   },
   {
     "Author": "Andirz",
@@ -763,8 +763,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "Core Library",
     "DescrizioneIT": "Questa mod rimuove le scarpe, i calzini, gli occhiali e i copricapi dei tuoi Sims quando si addormentano nel letto o nel sacco a pelo, altrimenti sembra un po' strano.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "This mod removes your Sims' shoes, socks, glasses and headgear when they fall asleep in bed or sleeping bag, otherwise it looks a little strange."
   },
   {
     "Author": "Andirz",
@@ -776,8 +776,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "",
     "DescrizioneIT": "Non hai soldi per pagare le bollette o semplicemente non vuoi pagare le bollette? Questa è la mod che potrebbe aiutarti! Sono disponibili tre nuove interazioni per la \"gestirle\".",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Don't have money to pay your bills or just don't want to pay your bills? This is the mod that might help you! Three new \"manage them\" interactions are available."
   },
   {
     "Author": "Andirz",
@@ -789,8 +789,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "DLC Vita Universitaria",
     "DescrizioneIT": "Ottimizza le classi universitarie in The Sims 4, permettendo ai Sim di acquisire abilità extra durante i loro studi. Aggiunge nuove opzioni e migliora l'efficacia delle lezioni, arricchendo l’esperienza accademica e aumentando la varietà delle competenze che i Sim possono sviluppare durante il percorso universitario.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Discover University",
+    "DescrizioneEN": "Optimizes university classes in The Sims 4, allowing Sims to gain extra skills during their studies. Adds new options and improves the effectiveness of classes, enriching the academic experience and increasing the variety of skills Sims can develop while in college."
   },
   {
     "Author": "Andirz",
@@ -802,8 +802,8 @@
     "Categoria": "Tratti",
     "DependencyIT": "",
     "DescrizioneIT": "Rende visibile la mano dominante dei Sim durante le interazioni quotidiane, come scrivere, cucinare o usare il computer. Aggiunge un tocco di realismo e personalizzazione, rendendo ogni Sim più unico nella sua gestualità.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It makes the Sims' dominant hand visible during everyday interactions, such as writing, cooking or using the computer. It adds a touch of realism and customization, making each Sim more unique in its gestures."
   },
   {
     "Author": "Andirz",
@@ -815,8 +815,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "Core Library",
     "DescrizioneIT": "Ti stai chiedendo anche perché il tuo Sim non riesce ancora a scrivere manuali (libri delle abilità) nonostante abbia tutte le abilità al livello massimo? Davvero? Sì, la DescrizioneIT dice: I Sim Professorali possono scrivere manuali utili su qualsiasi abilità in cui sono esperti.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "Are you also wondering why your Sim still can't write manuals (skill books) despite having all skills at the highest level? Really? Yes, the DescriptionIT says: Professorial Sims can write useful manuals on any skill in which they are proficient."
   },
   {
     "Author": "Andrew",
@@ -827,9 +827,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "DependencyIT": "",
-    "DescrizioneIT": "Questa mod serve per utilizzare le pose e animazioni in gioco",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Questa mod serve per utilizzare le pose e animazioni in gioco.",
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod is for using in-game poses and animations."
   },
   {
     "Author": "Arnie",
@@ -839,10 +839,10 @@
     "DataUltimaModifica": null,
     "Translation": "inclusa",
     "Categoria": "Oggetti Funzionali",
-    "DependencyIT": "DLC Consigliati Stagioni & Pulizie di Primavera (se non possedete questi DLC semplicemente non avrete alcune funzionalità della mod)",
+    "DependencyIT": "DLC Stagioni & Pulizie di Primavera (Raccomandati)",
     "DescrizioneIT": "Luminova è un nuovo marchio immaginario che presenta 17 nuovi oggetti intelligenti! Questo marchio potrebbe espandersi in futuro con ulteriori dispositivi intelligenti. ",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Seasons & Bust The Dust (Recommended)",
+    "DescrizioneEN": "Luminova is a new imaginary brand that introduces 17 new smart objects! This brand may expand in the future with additional smart devices."
   },
   {
     "Author": "Basemental",
@@ -852,10 +852,10 @@
     "DataUltimaModifica": "06/03/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": "ATTENZIONE va usata una sola venue list",
-    "DescrizioneIT": "Questa mod sblocca tutti i tipi di lotto",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyIT": "ATTENZIONE va usata una sola Venue",
+    "DescrizioneIT": "Questa mod sblocca tutti i tipi di lotto.",
+    "DependencyEN": "CAUTION only one Venue is to be used",
+    "DescrizioneEN": "This mod unlocks all lot types."
   },
   {
     "Author": "Carl's Guides",
@@ -867,8 +867,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Mangiamo Fuori",
     "DescrizioneIT": "Questa mod migliora l'esperienza del ristorante, aggiungendo nuove funzionalità, interazioni e opzioni per rendere più coinvolgenti le esperienze culinarie nel gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Dine Out",
+    "DescrizioneEN": "This mod enhances the restaurant experience, adding new features, interactions and options to make in-game dining experiences more engaging."
   },
   {
     "Author": "Carl's Guides",
@@ -880,8 +880,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "",
     "DescrizioneIT": "Permette di creare Sim direttamente nel gioco e filtrare le loro caratteristiche, come tratti e aspetto, per facilitarne la selezione e l’integrazione nel mondo di gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It allows you to create Sims directly in the game and filter their characteristics, such as traits and appearance, to facilitate their selection and integration into the game world."
   },
   {
     "Author": "Danitysimmer",
@@ -893,8 +893,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "Mood Pack Mod - Core Library - Universal Venue List - DLC Al Lavoro, Nuove Stelle, Vita Universitaria, Usciamo Insieme",
     "DescrizioneIT": "Questa mod aggiunge una carriera e interazioni creative legate alla moda, permettendo ai Sim di lavorare come stilisti professionisti.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Mood Pack Mod - Core Library - Universal Venue List - DLC Get to Work, Get Famous, Discover University, Get Together",
+    "DescrizioneEN": "This mod adds fashion-related career and creative interactions, allowing Sims to work as professional stylists."
   },
   {
     "Author": "Danitysimmer",
@@ -906,8 +906,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "Core Library - Mood Pack Mod - General Sports Pie Menu",
     "DescrizioneIT": "Questa mod introduce una carriera basata sul basket maschile. I giocatori possono creare e gestire atlete professioniste, affrontando nuove sfide e interazioni legate al mondo dello sport, ampliando le opzioni di carriera nel gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - Mood Pack Mod - General Sports Pie Menu",
+    "DescrizioneEN": "This mod introduces a career based on men's basketball. Players can create and manage professional female athletes, facing new challenges and interactions related to the sports world, expanding career options in the game."
   },
   {
     "Author": "Danitysimmer",
@@ -919,8 +919,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "Core Library - Mood Pack Mod - General Sports Pie Menu",
     "DescrizioneIT": "Questa mod introduce una carriera basata sul basket femminile. I giocatori possono creare e gestire atlete professioniste, affrontando nuove sfide e interazioni legate al mondo dello sport, ampliando le opzioni di carriera nel gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - Mood Pack Mod - General Sports Pie Menu",
+    "DescrizioneEN": "This mod introduces a career based on women's basketball. Players can create and manage professional female athletes, facing new challenges and interactions related to the sports world, expanding the career options in the game."
   },
   {
     "Author": "Deaderpool",
@@ -931,9 +931,9 @@
     "Translation": "inclusa",
     "Categoria": "Utilità",
     "DependencyIT": "",
-    "DescrizioneIT": "MCCC è una mod per \"The Sims 4\" che offre un ampio controllo sul gameplay, permettendo di gestire le impostazioni del gioco, le dinamiche familiari e molte altre funzionalità avanzate.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "MCCC è una mod che offre un ampio controllo sul gameplay, permettendo di gestire le impostazioni del gioco, le dinamiche familiari e molte altre funzionalità avanzate.",
+    "DependencyEN": "",
+    "DescrizioneEN": "MCCC is a mod that offers extensive control over gameplay, allowing you to manage game settings, family dynamics, and many other advanced features."
   },
   {
     "Author": "DQuiet ",
@@ -944,9 +944,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "DependencyIT": "",
-    "DescrizioneIT": "Gioca nei panni di qualsiasi sim: Passa senza problemi il controllo tra i tuoi sim domestici attivi e qualsiasi altro sim nel mondo di gioco.\nQuesta mod per The Sims 4 ti consente di controllare i Sims e gli animali domestici di altre unità familiari, migliorando la flessibilità e la creatività nel tuo gameplay.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Gioca nei panni di qualsiasi sim: Passa senza problemi il controllo tra i tuoi sim domestici attivi e qualsiasi altro sim nel mondo di gioco. Questa mod per The Sims 4 ti consente di controllare i Sims e gli animali domestici di altre unità familiari, migliorando la flessibilità e la creatività nel tuo gameplay.",
+    "DependencyEN": "",
+    "DescrizioneEN": "Play as any sim: Seamlessly switch control between your active home sims and any other sim in the game world. This mod for The Sims 4 allows you to control Sims and pets from other family units, enhancing flexibility and creativity in your gameplay."
   },
   {
     "Author": "Ellesimsworld",
@@ -958,8 +958,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Xml Injector - DLC Vita Universitaria - DLC Al Lavoro - DLC Vita da Liceali\n",
     "DescrizioneIT": "Sono finiti i giorni in cui i tuoi Sims potevano semplicemente andare al pannello della carriera e selezionare un lavoro. Con questa mod, il tuo sim dovrà superare un colloquio e avere la laurea richiesta.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Xml Injector - DLC Discover University - DLC Get to Work - DLC High School Years",
+    "DescrizioneEN": "Gone are the days when your Sims could simply go to the career panel and select a job. With this mod, your sim will have to pass an interview and have the required degree."
   },
   {
     "Author": "Frankk",
@@ -971,8 +971,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Facoltativi",
     "DescrizioneIT": "Introduce la difficoltà linguistica nel gioco, simulando le barriere linguistiche tra Sim di diverse nazionalità o culture. I Sim che non parlano la stessa lingua avranno difficoltà a comunicare, aggiungendo un livello di realismo e sfida nelle interazioni sociali.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Optional",
+    "DescrizioneEN": "Introduces language difficulty into the game, simulating language barriers between Sims of different nationalities or cultures. Sims who do not speak the same language will have difficulty communicating, adding a level of realism and challenge in social interactions."
   },
   {
     "Author": "Frankk",
@@ -984,8 +984,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "",
     "DescrizioneIT": "Serve per il funzionamento di altre mod.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It is needed for the operation of other mods."
   },
   {
     "Author": "Gauntlet101010",
@@ -997,8 +997,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Sblocca una serie di azioni speciali per il Mietitore e altri personaggi nel gioco, permettendo nuove interazioni e comportamenti che normalmente non sono disponibili, arricchendo l’esperienza di gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It unlocks a number of special actions for the Reaper and other characters in the game, allowing new interactions and behaviors that are not normally available, enriching the gameplay experience."
   },
   {
     "Author": "JaneSimsten",
@@ -1010,8 +1010,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "XML Injector",
     "DescrizioneIT": "Simula le dinamiche sociali dell'epoca dell'alta società e introduce nuove opzioni di gioco storiche. E' ispirata dalla popolare serie Netflix Bridgerton, i tuoi Sim possono imparare la nuova abilità di galateo, organizzare balli, acquistare o ereditare grandi tenute, affrontare o evitare scandali e persino finire nei giornali di gossip di Lady Whistledown.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "It simulates the social dynamics of the high society era and introduces new historical game options. It's inspired by the popular Netflix series Bridgerton, your Sims can learn the new skill of etiquette, arranging balls, buying or inheriting grand estates, facing or avoiding scandal, and even ending up in Lady Whistledown's gossip papers."
   },
   {
     "Author": "JaneSimsten",
@@ -1023,8 +1023,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Vita in Campagna",
     "DescrizioneIT": "Permette ai Sim di cavalcare draghi nel gioco. Aggiunge creature fantastiche che possono essere addestrate, montate e utilizzate per spostamenti veloci o semplicemente per vivere avventure epiche, arricchendo l’esperienza di gioco con un tocco di magia e fantasia.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Cottage Living",
+    "DescrizioneEN": "Allows Sims to ride dragons in the game. Adds fantastical creatures that can be trained, mounted and used for fast travel or simply for epic adventures, enriching the gaming experience with a touch of magic and fantasy."
   },
   {
     "Author": "JaneSimsten",
@@ -1034,10 +1034,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "The Custom Preferences Mod  ",
+    "DependencyIT": "The Custom Preferences Mod",
     "DescrizioneIT": "Introduce nuove creature occulte segrete nel gioco, non disponibili tramite il gameplay standard. I Sim possono scoprire e interagire con queste misteriose entità, aggiungendo un livello di mistero e magia nascosta nel mondo di gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "The Custom Preferences Mod",
+    "DescrizioneEN": "Introduces new secret occult creatures into the game, unavailable through standard gameplay. Sims can discover and interact with these mysterious entities, adding a layer of mystery and hidden magic to the game world."
   },
   {
     "Author": "JaneSimsten",
@@ -1049,8 +1049,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Arricchisce le relazioni romantiche in The Sims 4, introducendo la possibilità per i Sim di trovare la loro \"anima gemella\". I Sim che si considerano anime gemelle vivranno una connessione profonda e unica, con interazioni speciali e una relazione che va oltre le normali dinamiche di coppia.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Enriches romantic relationships in The Sims 4 by introducing the possibility for Sims to find their \"soulmate.\" Sims who consider themselves soul mates will experience a deep and unique connection, with special interactions and a relationship that goes beyond normal couple dynamics."
   },
   {
     "Author": "KawaiiStacie",
@@ -1062,8 +1062,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Aggiunge una varietà di nuove funzionalità in The Sims 4, migliorando l’esperienza quotidiana con nuove emozioni, interazioni sociali, eventi casuali e aspetti della vita come salute, bellezza, ciclo mestruale e cambiamenti fisici. I Sim vivranno situazioni più realistiche, come malesseri, trasformazioni fisiche, crisi adolescenziali, e altro, arricchendo le dinamiche del gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Adds a variety of new features in The Sims 4, enhancing the daily experience with new emotions, social interactions, random events and aspects of life such as health, beauty, menstrual cycle and physical changes. Sims will experience more realistic situations, such as illnesses, physical transformations, teenage crises, and more, enriching the dynamics of the game."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1075,8 +1075,8 @@
     "Categoria": "Tratti",
     "DependencyIT": "DLC Vita sull'Isola",
     "DescrizioneIT": "Aggiunge il tratto \"Figlio dell'Oceano\", dando ai Sim un legame speciale con l'acqua, migliorando nuoto e felicità vicino al mare.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Island Living",
+    "DescrizioneEN": "Adds the \"Child of the Ocean\" trait, giving Sims a special connection with water, enhancing swimming and happiness near the sea."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1088,8 +1088,8 @@
     "Categoria": "",
     "DependencyIT": "XML Injector",
     "DescrizioneIT": "Tabella generale con tutte le mod di KiaraSims4Mods.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "General table with all the mods of KiaraSims4Mods."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1101,8 +1101,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "XML Injector",
     "DescrizioneIT": "Aggiunge la carriera di pompieri in The Sims 4, permettendo ai Sim di diventare eroici salvatori, intervenendo in situazioni di emergenza e gestendo incendi, pericoli e missioni di salvataggio.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "Adds firefighting career in The Sims 4, allowing Sims to become heroic rescuers, intervening in emergency situations and handling fires, hazards and rescue missions."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1114,8 +1114,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "XML Injector - DLC Fenomeni Paranormali",
     "DescrizioneIT": "La carriera consente ai Sim di diventare esperti di lettura dei tarocchi e previsioni, offrendo consulenze psichiche e sviluppando abilità misteriose per scoprire il futuro.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - DLC Paranormal",
+    "DescrizioneEN": "The career allows Sims to become experts in tarot card reading and predictions, offering psychic consultations and developing mysterious skills to discover the future."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1127,8 +1127,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "XML Injector - DLC Usciamo Insieme - DLC Al Lavoro - DLC Avventura nella Giungla",
     "DescrizioneIT": "La carriera permette ai Sim di esplorare il mondo della geologia, studiare rocce, minerali e vulcani, e fare scoperte scientifiche. I Sim possono lavorare in campo, raccogliere campioni e fare ricerche, salendo di livello fino a diventare esperti nel settore.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - DLC Get Together - DLC Get to Work - DLC Jungle Adventure",
+    "DescrizioneEN": "The career allows Sims to explore the world of geology, study rocks, minerals and volcanoes, and make scientific discoveries. Sims can work in the field, collect samples and do research, leveling up to become experts in the field."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1140,8 +1140,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "XML Injector - Universal Venue List - Work Interactions Pie Menu - DLC Vita Universitaria - DLC Al Lavoro",
     "DescrizioneIT": "La carriera consente ai Sim di lavorare nel campo dell'istruzione superiore, insegnando e svolgendo ricerche accademiche. I Sim possono intraprendere una carriera attiva come professori universitari, partecipando alle lezioni, conferenze e contribuendo al progresso scientifico, con l'opportunità di avanzamento accademico.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - Universal Venue List - Work Interactions Pie Menu - DLC Discover University - DLC Get to Work",
+    "DescrizioneEN": "The career allows Sims to work in higher education, teaching and conducting academic research. Sims can pursue an active career as university professors, participating in lectures, conferences and contributing to scientific progress, with the opportunity for academic advancement."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1153,8 +1153,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "XML Injector - Universal Venue List - DLC Vita Universitaria - DLC Al Lavoro",
     "DescrizioneIT": "La carriera consente ai Sim di intraprendere una professione legale attiva, lavorando in tribunale e difendendo i propri clienti. I Sim possono specializzarsi in diverse aree del diritto, come difesa o accusa, partecipare alle cause e guadagnare l'esperienza permette di avanzare nella carriera legale.\n",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - Universal Venue List - DLC Discover University - DLC Get to Work",
+    "DescrizioneEN": "The career allows Sims to enter an active legal profession, working in court and defending their clients. Sims can specialize in different areas of law, such as defense or prosecution, participate in cases, and gain the experience allows them to advance in their legal careers."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1164,10 +1164,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
-    "DependencyIT": "XML Injector - DLC Vita in Città - DLC Nuove Stelle - DLC Moschino Stuff",
+    "DependencyIT": "XML Injector - DLC Vita in Città - DLC Nuove Stelle - DLC Moschino",
     "DescrizioneIT": "La carriera permette ai Sim di entrare nel mondo della moda, partecipare a sfilate, shooting fotografici e campagne pubblicitarie. I Sim possono aumentare la loro fama, migliorare la loro presenza sulla passerella e diventare modelli di successo, guadagnare con lavori esclusivi e opportunità nel settore della moda.\n\n\n",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - DLC City Living - DLC Get Famous - DLC Moschino",
+    "DescrizioneEN": "The career allows Sims to enter the fashion world, participate in fashion shows, photo shoots and advertising campaigns. Sims can increase their fame, improve their catwalk presence and become successful models, earn money with exclusive jobs and opportunities in the fashion industry."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1179,8 +1179,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "XML Injector - Universal Venue List - Work Interactions Pie Menu - DLC Al Lavoro - DLC Un Giorno alla Spa",
     "DescrizioneIT": "La carriera permette ai Sim di gestire attivamente un Resort. I Sim possono occuparsi della gestione quotidiana, migliorare le strutture, soddisfare i clienti e fare crescere il loro business per trasformarlo in una destinazione di lusso. Più il resort ha successo, maggiori sono le opportunità di guadagno e avanzamento.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - Universal Venue List - Work Interactions Pie Menu - DLC Get to Work - DLC Spa Day",
+    "DescrizioneEN": "A career allows Sims to actively manage a resort. Sims can take care of day-to-day management, improve facilities, satisfy customers and grow their business into a luxury destination. The more successful the resort, the greater the opportunities for income and advancement."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1192,8 +1192,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "XML Injector - Universal Venue List - DLC Al Lavoro - DLC Nuove Stelle",
     "DescrizioneIT": "La carriera permette ai Sim di lavorare come consulenti di moda, di aiutare altri Sim a rinnovare il loro look. I Sim possono svolgere sessioni di makeover, scegliere nuovi outfit e pettinature, guadagnare fama e ricompense mentre costruiscono la loro carriera nel mondo della moda.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - Universal Venue List - DLC Get to Work - DLC Get Famous",
+    "DescrizioneEN": "The career allows Sims to work as fashion consultants, to help other Sims revamp their look. Sims can conduct makeover sessions, choose new outfits and hairstyles, and earn fame and rewards as they build their fashion careers."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1205,8 +1205,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "XML Injector",
     "DescrizioneIT": "La carriera permette ai Sim di lavorare nell'industria dei videogiochi, creando giochi e sviluppando software. I Sim possono migliorare le loro abilità tecniche, lavorare su progetti innovativi e guadagnare fama e denaro, salendo di livello fino a diventare esperti nel campo del game design.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "The career allows Sims to work in the video game industry, creating games and developing software. Sims can improve their technical skills, work on innovative projects, and earn fame and money by leveling up to become experts in the field of game design."
   },
   {
     "Author": "KiaraSims4Mods",
@@ -1218,8 +1218,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "XML Injector",
     "DescrizioneIT": "Serve per il funzionamento di altre mod di KiaraSims4Mods.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "It is needed for the operation of other mods of KiaraSims4Mods."
   },
   {
     "Author": "LittleMsSam",
@@ -1231,8 +1231,8 @@
     "Categoria": null,
     "DependencyIT": "XML Injector",
     "DescrizioneIT": "Sito generale delle mod di LittleMsSam.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "LittleMsSam's general mod site."
   },
   {
     "Author": "llazyneiph",
@@ -1244,8 +1244,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Core Library - Pack Tests",
     "DescrizioneIT": "Introduce il concetto di nobiltà e monarchia nel gioco. I Sims possono diventare membri della famiglia reale, governare terre, avere titoli nobiliari e partecipare a eventi di corte. Questa mod aggiunge nuove carriere, interazioni e possibilità di gioco legate alla vita di corte, creando un'esperienza più regale e aristocratica per i giocatori.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - Pack Tests",
+    "DescrizioneEN": "Introduces the concept of nobility and monarchy into the game. Sims can become members of the royal family, rule lands, have titles of nobility and participate in court events. This mod adds new careers, interactions and gameplay possibilities related to court life, creating a more regal and aristocratic experience for players."
   },
   {
     "Author": "LoryNa",
@@ -1257,8 +1257,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "XML Injector - DLC Vita da Genitori",
     "DescrizioneIT": "Essere un Genitore è un duro lavoro e merita assolutamente un aiuto finanziario, specialmente quando sei un genitore single o il tuo partner è fuori tutto il giorno per un lavoro sottopagato e/o non puoi permetterti una babysitter. Inizia oggi, l'Associazione Casa Dolce Casa sarà felice di aiutarti!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - DLC Parenthood",
+    "DescrizioneEN": "Being a Parent is hard work and definitely deserves financial help, especially when you are a single parent or your partner is out all day at an underpaid job and/or you cannot afford a babysitter. Start today, the Home Sweet Home Association will be happy to help!"
   },
   {
     "Author": "LoryNa",
@@ -1270,8 +1270,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "XML Injector - DLC Al Lavoro",
     "DescrizioneIT": "Hai mai desiderato far diventare il tuo Sim un Modder? Da oggi puoi con questa nuova carriera attiva!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - DLC Get to Work",
+    "DescrizioneEN": "Have you ever wanted to make your Sim a Modder? From today you can with this new active career!"
   },
   {
     "Author": "LoryNa",
@@ -1283,8 +1283,8 @@
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "XML Injector - DLC Accessorio da Brivido",
     "DescrizioneIT": "Piccola mod per festeggiare Halloween! Dal menu \"Ricette Speciali Halloween\" troverete 3 nuove ricette e da oggi i vostri Sims potranno diventare temporaneamente fantasmi con il nuovo drink \"Drink Fantasmagorico\"! Infatti se lo berranno, potranno godersi l'esperienza per circa 3 ore! Non è fantasmagorico?!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - DLC Spooky",
+    "DescrizioneEN": "Small mod to celebrate Halloween! From the \"Special Halloween Recipes\" menu you will find 3 new recipes and from today your Sims can temporarily become ghosts with the new drink \"Phantasmagoric Drink\"! In fact, if they drink it, they can enjoy the experience for about 3 hours! Isn't that phantasmagoric!"
   },
   {
     "Author": "LoryNa",
@@ -1295,9 +1295,9 @@
     "Translation": "inclusa",
     "Categoria": "Gameplay",
     "DependencyIT": "XML Injector - Mood Pack Mod",
-    "DescrizioneIT": "In questa mod sono presenti un'app di monitoraggio di gravidanza, un nuovo Npc, nuove interazioni al computer e la possibilità di scegliere la preferenza di nutrizione per il neonato.\n ",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "In questa mod sono presenti un'app di monitoraggio di gravidanza, un nuovo NPC, nuove interazioni al computer e la possibilità di scegliere la preferenza di nutrizione per il neonato.\n ",
+    "DependencyEN": "XML Injector - Mood Pack Mod",
+    "DescrizioneEN": "This mod features a pregnancy monitoring app, a new NPC, new computer interactions, and the ability to choose the infant's feeding preference."
   },
   {
     "Author": "LoryNa",
@@ -1309,8 +1309,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "XML Injector - DLC Vita da Genitori",
     "DescrizioneIT": "Introduce 8 tratti genitoriali (perfetto, naturalista, sportivo, creativo, nerd, religioso, amante della carriera, casalingo) che influenzano lo sviluppo dei bambini e le dinamiche familiari, offrendo una genitorialità più realistica e personalizzata.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - DLC Parenthood",
+    "DescrizioneEN": "Introduces 8 parenting traits (perfect, naturalist, sportsman, creative, nerd, religious, career lover, homemaker) that influence child development and family dynamics, offering more realistic and personalized parenting."
   },
   {
     "Author": "LoryNa",
@@ -1322,8 +1322,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "XML Injector - Mood Pack Mod",
     "DescrizioneIT": "Questa mod è un interpretazione di come i Sims bambini ed adolescenti iniziano a scoprire l'amore. La mod è divisa in 2 moduli così da permettervi di scegliere autonomamente se voler giocare sia con la parte che riguarda i bambini che adolescenti, oppure no.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - Mood Pack Mod",
+    "DescrizioneEN": "This mod is an interpretation of how child and teen Sims begin to discover love. The mod is divided into 2 modules so you can choose for yourself whether you want to play with both the child and teen parts, or not."
   },
   {
     "Author": "LoryNa",
@@ -1335,8 +1335,8 @@
     "Categoria": "Varie",
     "DependencyIT": "XML Injector",
     "DescrizioneIT": "Cosa non manca mai sulle tavole italiane a Natale? Pandoro e Panettone, ovviamente! In questa mod sono presenti 6 nuove ricette natalizie, 2 nuovi tratti.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "What is never missing on Italian tables at Christmas? Pandoro and Panettone, of course! In this mod there are 6 new Christmas recipes, 2 new features."
   },
   {
     "Author": "Lot 51",
@@ -1346,10 +1346,10 @@
     "DataUltimaModifica": "30/03/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Serve per il funzionamento di altre mod.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It is needed for the operation of other mods."
   },
   {
     "Author": "Lot 51",
@@ -1361,8 +1361,8 @@
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "",
     "DescrizioneIT": "Aggiunge una campanello intelligente al gioco. Quando un Sim suona il campanello, il proprietario può scegliere di rispondere, ignorare o addirittura far fuggire il visitatore, creando situazioni divertenti e inaspettate con gli ospiti. La mod offre un tocco di realismo e interattività in più per le dinamiche sociali del gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Adds an intelligent doorbell to the game. When a Sim rings the doorbell, the owner can choose to answer, ignore, or even let the visitor escape, creating fun and unexpected situations with guests. The mod provides an extra touch of realism and interactivity to the game's social dynamics."
   },
   {
     "Author": "Lot 51",
@@ -1374,8 +1374,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Vita in Campagna",
     "DescrizioneIT": "Lascia che i tuoi amici della fattoria scorrazzino liberi! Mucche e lama sono finalmente separati dal loro rifugio per animali e possono vagare in giro come polli e conigli.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Cottage Living",
+    "DescrizioneEN": "Let your farm friends run free! Cows and llamas are finally separated from their animal shelter and can roam around like chickens and rabbits."
   },
   {
     "Author": "Lot 51",
@@ -1387,8 +1387,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Core Library - Universal Venue List",
     "DescrizioneIT": "Ti permette di creare hotel personalizzati con camere per gli ospiti, servizio in camera e pulizia giornaliera. I Sims possono soggiornare, interagire nelle aree comuni e ricevere manutenzione su richiesta, rendendo le vacanze più immersive.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - Universal Venue List",
+    "DescrizioneEN": "It allows you to create custom hotels with guest rooms, room service, and daily housekeeping. Sims can stay, interact in common areas and receive maintenance on demand, making vacations more immersive."
   },
   {
     "Author": "Lumpinou",
@@ -1400,8 +1400,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Toolbox",
     "DescrizioneIT": "Questa mod arricchisce le interazioni durante gli appuntamenti dei Sim. Durante un appuntamento, i giocatori possono scegliere se orientare l'incontro verso un semplice \"hookup\" o mantenere una relazione puramente amichevole, aggiungendo profondità alle dinamiche sociali e romantiche del gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Toolbox",
+    "DescrizioneEN": "This mod enriches interactions during Sim appointments. During a date, players can choose whether to steer the meeting toward a simple hookup or maintain a purely friendly relationship, adding depth to the game's social and romantic dynamics."
   },
   {
     "Author": "Lumpinou",
@@ -1412,9 +1412,9 @@
     "Translation": "",
     "Categoria": "Gameplay",
     "DependencyIT": "Toolbox",
-    "DescrizioneIT": "Questa mod consente ai Sim di porre fine a un'amicizia in modo definitivo. Quando utilizzato, il livello di amicizia viene azzerato e il Sim interessato viene rimosso dal pannello delle relazioni, a meno che non esista anche una relazione romantica tra i due. La mod offre un maggiore controllo sulle dinamiche sociali dei Sim",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Questa mod consente ai Sim di porre fine a un'amicizia in modo definitivo. Quando utilizzato, il livello di amicizia viene azzerato e il Sim interessato viene rimosso dal pannello delle relazioni, a meno che non esista anche una relazione romantica tra i due. La mod offre un maggiore controllo sulle dinamiche sociali dei Sim.",
+    "DependencyEN": "Toolbox",
+    "DescrizioneEN": "This mod allows Sims to end a friendship permanently. When used, the friendship level is reset and the affected Sim is removed from the relationship panel unless a romantic relationship also exists between the two. The mod offers greater control over Sims' social dynamics."
   },
   {
     "Author": "Lumpinou",
@@ -1426,8 +1426,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Questa mod introduce una rappresentazione più inclusiva delle identità di genere e degli orientamenti sessuali nel gioco. Aggiunge nuove preferenze romantiche, interazioni e caratteristiche uniche per i Sim, offrendo un'esperienza più realistica e diversificata. La mod amplia le possibilità di narrazione e personalizzazione, rendendo le relazioni più sfumate e autentiche. ",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod introduces a more inclusive representation of gender identities and sexual orientations in the game. It adds new romantic preferences, interactions and unique features for Sims, providing a more realistic and diverse experience. The mod expands the possibilities for storytelling and personalization, making relationships more nuanced and authentic."
   },
   {
     "Author": "Lumpinou",
@@ -1439,8 +1439,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Toolbox - DLC Colpo di Fulmine",
     "DescrizioneIT": "Questa mod consente ai giocatori di impostare le attrazioni e le avversioni dei Sim direttamente in modalità Live. Questa funzione è accessibile tramite l'opzione \"azioni\" sul proprio Sim o su altri presenti nel lotto. Ciò permette una personalizzazione più immediata delle dinamiche relazionali tra i personaggi. ",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Toolbox - DLC Lovestruck",
+    "DescrizioneEN": "This mod allows players to set Sim attractions and aversions directly in Live mode. This function can be accessed via the \"actions\" option on one's Sim or others in the lot. This allows for more immediate customization of the relational dynamics between characters."
   },
   {
     "Author": "Lumpinou",
@@ -1452,8 +1452,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Colpo di Fulmine",
     "DescrizioneIT": "Questa mod aggiunge una nuova funzionalità romantica per i Sim adolescenti. Con il Cupid's Corner, i teen possono esplorare nuove dinamiche sociali e relazionali, interagendo con altri adolescenti in modo speciale. La mod offre una personalizzazione avanzata dei legami romantici e amplifica le esperienze di gioco, aggiungendo più profondità alle connessioni e agli appuntamenti tra i giovani Sim.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Lovestruck",
+    "DescrizioneEN": "This mod adds a new romantic feature for teen Sims. With Cupid's Corner, teens can explore new social and relationship dynamics, interacting with other teens in a special way. The mod offers advanced customization of romantic bonds and amplifies game experiences, adding more depth to connections and dating between young Sims."
   },
   {
     "Author": "Lumpinou",
@@ -1465,8 +1465,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Cresciamo Insieme",
     "DescrizioneIT": "Questa mod aggiungere o rimuovere qualsiasi pietra miliare per i Sim, indipendentemente dall'età o dallo stato attuale. Questa funzionalità permette una personalizzazione avanzata delle esperienze dei Sim, facilitando la gestione dei traguardi mancanti o desiderati. È compatibile con le pietre miliari originari del gioco o aggiunti da altri mod.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Growing Together",
+    "DescrizioneEN": "This mod add or remove any milestone for Sims, regardless of age or current status. This feature allows advanced customization of Sim experiences, making it easier to manage missing or desired milestones. It is compatible with milestones originally in the game or added by other mods."
   },
   {
     "Author": "Lumpinou",
@@ -1478,8 +1478,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Cresciamo Insieme",
     "DescrizioneIT": "Questa mod aggiunge oltre 50 pietre miliari personalizzate al gioco, alcune delle quali retroattive. Inoltre, sviluppa ulteriormente il comportamento di alcuni traguardi originali del gioco, offrendo una maggiore varietà e profondità nelle esperienze dei Sim. Questa mod arricchisce le dinamiche di gioco, permettendo ai giocatori di esplorare nuove sfide e obiettivi per i loro personaggi.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Growing Together",
+    "DescrizioneEN": "This mod adds more than 50 custom milestones to the game, some of them retroactive. It also further develops the behavior of some of the game's original milestones, providing greater variety and depth in the Sims' experiences. This mod enriches the game dynamics, allowing players to explore new challenges and goals for their characters."
   },
   {
     "Author": "Lumpinou",
@@ -1490,9 +1490,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "Questa mod consente ai Sim adolescenti di utilizzare il \"L'angolo di cupido\" per incontrare altri adolescenti, facilitando la formazione di amicizie e relazioni romantiche. ",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Serve per il funzionamento di altre Mod.",
+    "DependencyEN": "",
+    "DescrizioneEN": "It is needed for the operation of other Mods."
   },
   {
     "Author": "Lumpinou",
@@ -1504,8 +1504,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Toolbox",
     "DescrizioneIT": "Questa mod consente ai Sim di praticare diverse religioni, interagendo con altri Sim all'interno della stessa comunità religiosa. Questa funzionalità arricchisce le dinamiche sociali e culturali del gioco, offrendo nuove opportunità di interazione e sviluppo per i personaggi.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Toolbox",
+    "DescrizioneEN": "This mod allows Sims to practice different religions, interacting with other Sims within the same religious community. This feature enriches the social and cultural dynamics of the game, providing new opportunities for character interaction and development."
   },
   {
     "Author": "Lumpinou",
@@ -1516,9 +1516,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "Toolbox - Mood Pack Mod",
-    "DescrizioneIT": "\"Road to Romance\" introduce una nuova abilità romantica, consentendo ai Sim di sviluppare e approfondire le loro relazioni amorose. Questa abilità offre nuove interazioni romantiche e stati d'animo, arricchendo l'esperienza di gioco e permettendo una personalizzazione più profonda delle dinamiche sentimentali tra i personaggi.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Introduce una nuova abilità romantica, consentendo ai Sim di sviluppare e approfondire le loro relazioni amorose. Questa abilità offre nuove interazioni romantiche e stati d'animo, arricchendo l'esperienza di gioco e permettendo una personalizzazione più profonda delle dinamiche sentimentali tra i personaggi.",
+    "DependencyEN": "Toolbox - Mood Pack Mod",
+    "DescrizioneEN": "Introduces a new romantic skill, allowing Sims to develop and deepen their love relationships. This skill offers new romantic interactions and moods, enriching the game experience and allowing deeper customization of the sentimental dynamics between characters."
   },
   {
     "Author": "Lumpinou",
@@ -1530,8 +1530,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "L'aggiornamento dei singoli moduli vanno scaricati separatamente",
     "DescrizioneIT": "Arricchisce le dinamiche di relazione e gravidanza, aggiungendo nuove interazioni, emozioni e opzioni per rendere l'esperienza di gioco più realistica e immersiva.\n\n\n",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "The update of individual modules should be downloaded separately",
+    "DescrizioneEN": "It enriches the relationship and pregnancy dynamics, adding new interactions, emotions and options to make the gaming experience more realistic and immersive."
   },
   {
     "Author": "Lumpinou",
@@ -1542,9 +1542,9 @@
     "Translation": "",
     "Categoria": "Gameplay",
     "DependencyIT": "Toolbox",
-    "DescrizioneIT": "\"Say Something To\" introduce interazioni sociali speciali che permettono ai Sim di esprimere sentimenti o commenti specifici verso altri Sim. Queste interazioni includono opzioni come \"Dire qualcosa di amichevole\", \"Dire qualcosa di divertente\" o \"Dire qualcosa di negativo\". Questa funzionalità arricchisce le dinamiche sociali del gioco, offrendo maggiore varietà nelle conversazioni tra i personaggi. \nPATREON",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Introduce interazioni sociali speciali che permettono ai Sim di esprimere sentimenti o commenti specifici verso altri Sim. Queste interazioni includono opzioni come \"Dire qualcosa di amichevole\", \"Dire qualcosa di divertente\" o \"Dire qualcosa di negativo\". Questa funzionalità arricchisce le dinamiche sociali del gioco, offrendo maggiore varietà nelle conversazioni tra i personaggi.",
+    "DependencyEN": "Toolbox",
+    "DescrizioneEN": "Introduces special social interactions that allow Sims to express specific feelings or comments toward other Sims. These interactions include options such as \"Say something friendly,\" \"Say something funny,\" or \"Say something negative.\" This feature enriches the social dynamics of the game, offering more variety in conversations between characters."
   },
   {
     "Author": "Lumpinou",
@@ -1555,9 +1555,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "Toolbox",
-    "DescrizioneIT": "Questa mod ti permettere di scegliere se partorire subito o affrontare una normale gravidanza per i sim scelgono di avere un bambino con surrogazione artificale.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Questa mod ti permettere di scegliere se far partorire subito o se di affrontare una normale gravidanza i sim quando scelgono di avere un bambino con surrogazione artificale.",
+    "DependencyEN": "Toolbox",
+    "DescrizioneEN": "This mod allows you to choose whether to have sims give birth immediately or go through a normal pregnancy when they choose to have a baby by artificial surrogacy."
   },
   {
     "Author": "Lumpinou",
@@ -1567,10 +1567,10 @@
     "DataUltimaModifica": "27/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Serve per il funzionamento di altre mod di Lumpinou.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It is needed for the operation of other mods of Lumpinou."
   },
   {
     "Author": "LunarBritney",
@@ -1582,8 +1582,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Hobby & Attività",
     "DescrizioneIT": "Ti consente di impostare più di 5 attività commerciali aggiungendo altri 3 slot, per un totale di 8 attività commerciali.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Businesses & Hobbies",
+    "DescrizioneEN": "It allows you to set up more than 5 businesses by adding 3 more slots, for a total of 8 businesses."
   },
   {
     "Author": "LunarBritney",
@@ -1595,8 +1595,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Hobby & Attività",
     "DescrizioneIT": "Ti consente di assumere altri 3 dipendenti.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Businesses & Hobbies",
+    "DescrizioneEN": "It allows you to hire 3 more employees."
   },
   {
     "Author": "LunarBritney",
@@ -1608,8 +1608,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Hobby & Attività",
     "DescrizioneIT": "Ti consente di avere più visitatori su piccoli lotti commerciali (inclusi i negozi residenziali, eccetto gli appartamenti) pur restando sotto il limite di 20 sim per mantenere le prestazioni ma con un'immersione migliorata.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Businesses & Hobbies",
+    "DescrizioneEN": "It allows you to have more visitors on small commercial lots (including residential stores, except apartments) while staying under the 20 sim limit to maintain performance but with improved immersion."
   },
   {
     "Author": "Maplebell",
@@ -1620,9 +1620,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "\"More Kisses: New Animation\" introduce nuove animazioni romantiche, arricchendo le interazioni tra i Sim. Queste animazioni offrono momenti più intimi e realistici, migliorando l'esperienza di gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Introduce nuove animazioni romantiche, arricchendo le interazioni tra i Sim. Queste animazioni offrono momenti più intimi e realistici, migliorando l'esperienza di gioco.",
+    "DependencyEN": "",
+    "DescrizioneEN": "Introduces new romantic animations, enriching interactions between Sims. These animations offer more intimate and realistic moments, enhancing the gaming experience."
   },
   {
     "Author": "MizoreYukii",
@@ -1633,9 +1633,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "\"Matrimoni Arrangiati\" consente ai Sim di sposarsi senza la necessità di romanticismo, offrendo tre modalità diverse:\n\nMatrimoni tra famiglie: organizza matrimoni tra membri della famiglia attiva e quelli di un'altra famiglia.\n\nMatrimoni individuali: organizza matrimoni per un Sim selezionato con un membro di un'altra famiglia.\n\nMatrimoni di convenienza: consente a un Sim di sposare un altro Sim a scelta, senza romanticismo.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Consente ai Sim di sposarsi senza la necessità di romanticismo, offrendo tre modalità diverse: Matrimoni tra Famiglie: organizza matrimoni tra membri della famiglia attiva e quelli di un'altra famiglia. Matrimoni Individuali: organizza matrimoni per un Sim selezionato con un membro di un'altra famiglia. Matrimoni di Convenienza: consente a un Sim di sposare un altro Sim a scelta, senza romanticismo.",
+    "DependencyEN": "",
+    "DescrizioneEN": "Allows Sims to marry without the need for romance, offering three different modes: Family Marriages: arranges marriages between members of the active family and those of another family. Individual Marriages: arranges marriages for a selected Sim with a member of another family. Convenience Marriages: allows a Sim to marry another Sim of their choice, without romance."
   },
   {
     "Author": "MizoreYukii",
@@ -1647,8 +1647,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "",
     "DescrizioneIT": "Questa mod salta il popup delle Storie CAS che appare per la prima volta quando si entra nella \"Nuova Partita\" ti porta direttamente al CAS.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod skips the CAS Stories popup that first appears when you enter the \"New Match\" takes you directly to CAS."
   },
   {
     "Author": "Natabear",
@@ -1660,8 +1660,8 @@
     "Categoria": "Varie",
     "DependencyIT": "DLC Hobby & Attività",
     "DescrizioneIT": "Questa mod aggiunge 130 nuovi loghi/icone per le piccole imprese, ci sono 2 versioni: una loghi + icone e una solo loghi, ne va messa solo una.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Businesses & Hobbies",
+    "DescrizioneEN": "This mod adds 130 new logos/icons for small businesses, there are 2 versions: one logos + icons and one just logos, only one needs to be put on."
   },
   {
     "Author": "NerdyDoll",
@@ -1673,8 +1673,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Core Library",
     "DescrizioneIT": "Ordina dal menu \"Noleggia un servizio di consegna\" al telefono! Regala libri, nettare, gioielli o scatole per innamorati ai Sims!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "Order from the \"Hire a delivery service\" menu over the phone! Gift books, nectar, jewelry or love boxes to Sims!"
   },
   {
     "Author": "NickyClem",
@@ -1686,21 +1686,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "XML Injector - Insurance Company Phone App & Computer Menu",
     "DescrizioneIT": "L'assicurazione copre i tuoi elettrodomestici, così quando hanno bisogno di essere riparati non dovrai più pagare il riparatore!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
-  },
-  {
-    "Author": "NickyClem",
-    "ModName": "EMA Phone Menu",
-    "Status": "compatibile",
-    "SiteLink": "https://nickyclem.itch.io/ema-phone-menu",
-    "DataUltimaModifica": "25/02/2025",
-    "Translation": "",
-    "Categoria": "Utilità",
-    "DependencyIT": null,
-    "DescrizioneIT": "Serve per il funzionamento di altre mod di NickyClem",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector - Insurance Company Phone App & Computer Menu",
+    "DescrizioneEN": "Insurance covers your appliances, so when they need repair, you no longer have to pay the repairman!"
   },
   {
     "Author": "NickyClem",
@@ -1710,10 +1697,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Serve per il funzionamento di altre mod di NickyClem",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It is needed for the operation of other mods of NickyClem"
   },
   {
     "Author": "PandaSama",
@@ -1725,8 +1712,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Al Lavoro",
     "DescrizioneIT": "Aggiunge opzioni più realistiche e dettagliate per il parto dei Sims. Include nuove modalità di nascita come il parto naturale, il cesareo e il parto in acqua, con animazioni, interazioni e reazioni più immersive. I Sims possono ricevere supporto dai partner o dai medici e vivere un'esperienza più realistica e personalizzata del parto.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Get to Work",
+    "DescrizioneEN": "Adds more realistic and detailed options for Sims' childbirth. Includes new birth modes such as natural childbirth, C-section and water birth, with more immersive animations, interactions and reactions. Sims can receive support from partners or doctors and have a more realistic and personalized birthing experience."
   },
   {
     "Author": "PandaSama",
@@ -1737,9 +1724,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "",
-    "DescrizioneIT": "Questo trampolino può essere utilizzato da bambini e neonati, soddisfa il loro bisogno di divertimento  e aumenta anche le loro capacità  motorie/di movimento.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Questo trampolino può essere utilizzato da bambini e neonati, soddisfa il loro bisogno di divertimento  e aumenta anche le loro capacità  motorie/movimento.",
+    "DependencyEN": "",
+    "DescrizioneEN": "This trampoline can be used by babies and toddlers, satisfies their need for fun and also increases their motor/movement skills."
   },
   {
     "Author": "PandaSama",
@@ -1751,8 +1738,8 @@
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "",
     "DescrizioneIT": "Questo fasciatoio può essere utilizzato solo da adolescenti, anziani e bambini piccoli.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "This changing table can only be used by teenagers, the elderly and young children."
   },
   {
     "Author": "PandaSama",
@@ -1764,8 +1751,8 @@
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "",
     "DescrizioneIT": "Questa mod aggiunge 4 nuovi cc funzionali: Roccie in Pila, è un oggetto solo per i più piccoli ed è disponibile in 7 campioni. Xilofono, i bambini potranno suonare delle bellissime melodie questo oggetto è legato all'abilità di pensiero. Forniture per disegno per bambini piccoli, ci sono in totale 8 disegni che un bambino può fare da solo. Stazione di bricolage per bambini piccoli, ci sono in totale 5 cose che possono creare, ognuna delle quali si sblocca con un livello di abilità di immaginazione più alto.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod adds 4 new functional cc: Rocks in Stacks, this is an item just for toddlers and is available in 7 samples. Xylophone, children will be able to play beautiful melodies this item is related to thinking skills. Drawing Supplies for Young Children, there are a total of 8 drawings that a child can make by himself. Craft station for young children, there are a total of 5 things they can create, each of which unlocks with a higher level of imagination skill."
   },
   {
     "Author": "PandaSama",
@@ -1777,8 +1764,8 @@
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "",
     "DescrizioneIT": "Questa mod aggiunge 2 oggetti cc funzionali: Tunnel gioco per bambini piccoli, è disponibile in un totale di 12 campioni e aumenta la sua abilità di movimento. Kit per il trucco, è disponibile in 6 swatch diversi e aumenta la loro capacità di immaginazione.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod adds 2 functional cc items: Tunnel game for young children, comes in a total of 12 samples and increases its movement ability. Makeup kit, comes in 6 different swatches and increases their imagination skills."
   },
   {
     "Author": "PandaSama",
@@ -1790,8 +1777,8 @@
     "Categoria": "Oggetti Funzionali",
     "DependencyIT": "",
     "DescrizioneIT": "Questa mod aggiunge 4 cc oggetti funionali: Cavallo a Dondolo, i sims di  tutte le età  possono cavalcare il cavallo a dondolo. Materassino per Dormire, questo è un oggetto solo per bambini piccoli ed è disponibile in 7 campioni. Sedia a Dondolo, è disponibile in 7 campioni i bambini piccoli possono giocare sull'altalena funziona anche come una sedia normale, quindi i Sims di tutte le età possono sedercisi e leggere o mangiare. Canestro da Basket per Bambini, potranno giocare con il basket e aumentare l'abilità del movimento.\n",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod adds 4 cc funional items: Rocking Horse, sims of all ages can ride the rocking horse. Sleeping Mattress, this is an item only for young children and is available in 7 samples. Rocking Chair, it is available in 7 samples young children can play on the swing it also works as a regular chair, so Sims of all ages can sit on it and read or eat. Basketball Hoop for Kids, they will be able to play with basketball and increase the skill of movement."
   },
   {
     "Author": "Plumlace",
@@ -1803,8 +1790,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "XML Injector",
     "DescrizioneIT": "Aggiunge un sistema realistico di salute mentale per i Sims. Introduce stati emotivi come ansia, depressione e attacchi di panico, insieme a nuove interazioni, terapie e opzioni per migliorare il benessere mentale. I Sims possono praticare la meditazione, assumere farmaci prescritti e consultare uno psicologo, rendendo il gameplay più profondo e realistico.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "Adds a realistic mental health system for Sims. Introduces emotional states such as anxiety, depression and panic attacks, along with new interactions, therapies and options for improving mental well-being. Sims can practice meditation, take prescribed medication and consult a psychologist, making gameplay deeper and more realistic."
   },
   {
     "Author": "Ravasheen",
@@ -1814,10 +1801,10 @@
     "DataUltimaModifica": "06/03/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Aggiunge una scatola CC dove potrai comprare tutti i dolci presenti nel gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It adds a CC box where you can buy all the sweets in the game."
   },
   {
     "Author": "Ravasheen",
@@ -1827,10 +1814,10 @@
     "DataUltimaModifica": "06/03/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Aggiunge 2 cornici per i ritratti di famiglia, dove potrai cambiare posa, vestiti e tanto altro.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Adds 2 frames for family portraits, where you can change poses, clothes and more."
   },
   {
     "Author": "Ravasheen",
@@ -1840,10 +1827,10 @@
     "DataUltimaModifica": "06/03/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Aggiunge oltre 10 nuovi oggetti fotografici, potrai scattare le foto ai tuoi sim e creare un bellissimo quadro, polaroid, calendario e tanto altro.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It adds over 10 new photo objects, you can take photos of your sims and create a beautiful picture, polaroid, calendar and more."
   },
   {
     "Author": "Ravasheen",
@@ -1853,10 +1840,10 @@
     "DataUltimaModifica": "06/03/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Ti consente di realizzare ritratti del tuo Sim con il suo attuale abbigliamento e acconciatura, è utile per chi fa le challenge legacy ma non solo.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It allows you to make portraits of your Sim in his or her current clothing and hairstyle; it is useful for those doing legacy challenges but not only."
   },
   {
     "Author": "Sacrificial",
@@ -1868,8 +1855,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Offre un controllo avanzato sull'albero genealogico, permettendo di creare, modificare o rimuovere legami familiari, correggere errori di parentela e personalizzare la discendenza dei Sims in modo semplice e rapido.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It offers advanced control over the family tree, allowing you to create, edit or remove family ties, correct kinship errors and customize Sims' lineage quickly and easily."
   },
   {
     "Author": "Sacrificial",
@@ -1881,8 +1868,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Aggiunge eventi drammatici e situazioni spontanee nel mondo di gioco. I Sims NPC possono litigare, tradire, essere rapinati o persino chiedere aiuto in strada. Il giocatore può intervenire o lasciare che il caos si sviluppi da solo, rendendo il gameplay più imprevedibile e realistico.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Adds dramatic events and spontaneous situations in the game world. NPC Sims can fight, betray, get mugged, or even ask for help on the street. The player can intervene or let the chaos unfold on its own, making gameplay more unpredictable and realistic."
   },
   {
     "Author": "Sacrificial",
@@ -1894,8 +1881,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Aggiunge nuove interazioni romantiche più intense e realistiche. I Sims possono abbracciarsi in modo più passionale, scattare foto romantiche, ballare dolcemente e persino eseguire il \"dip kiss\" (bacio con inclinazione). Questa mod rende le relazioni più coinvolgenti e cinematografiche.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Adds new, more intense and realistic romantic interactions. Sims can hug more passionately, take romantic photos, dance softly, and even perform the \"dip kiss\" (kiss with tilt). This mod makes relationships more engaging and cinematic."
   },
   {
     "Author": "Sacrificial",
@@ -1907,8 +1894,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Introduce un sistema avanzato di celebrità, permettendo ai Sims di diventare famosi come influencer, attori o cantanti. Aggiunge follower sui social, paparazzi, guardie del corpo e nuove interazioni legate alla notorietà, rendendo l’ascesa alla fama più dettagliata e realistica.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Introduces an advanced celebrity system, allowing Sims to become famous as influencers, actors or singers. Adds social media followers, paparazzi, bodyguards and new interactions related to fame, making the rise to fame more detailed and realistic."
   },
   {
     "Author": "Sacrificial",
@@ -1920,8 +1907,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Aggiunge un'interazione romantica in cui i Sims possono sdraiarsi insieme a guardare il cielo. Questo momento intimo rafforza le relazioni e crea un’atmosfera più dolce e cinematografica per le coppie.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It adds a romantic interaction where Sims can lie together and look at the sky. This intimate moment strengthens relationships and creates a sweeter, more cinematic atmosphere for couples."
   },
   {
     "Author": "Sacrificial",
@@ -1933,8 +1920,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Aggiunge l'interazione del ballo lento romantico. I Sims possono ballare teneramente con il partner, abbracciarsi durante il ballo e creare momenti intimi, perfetti per matrimoni, appuntamenti o serate speciali.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It adds the interaction of romantic slow dance. Sims can dance tenderly with their partners, embrace during the dance and create intimate moments perfect for weddings, dates or special evenings."
   },
   {
     "Author": "Scumbumbo/LittleMsSam",
@@ -1946,8 +1933,8 @@
     "Categoria": "Utilità",
     "DependencyIT": "XML Injector",
     "DescrizioneIT": "Aggiunge un menu per impostare il filtro a tutti i dipinti creati dai sim per renderli più chiari nel gioco, come se fossero delle foto.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "Adds a menu to set the filter to all paintings created by sims to make them clearer in the game, as if they were photos."
   },
   {
     "Author": "Scumbumbo/Triplis",
@@ -1957,10 +1944,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Serve per il funzionamento di altre mod.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It is needed for the operation of other mods."
   },
   {
     "Author": "SimRealist",
@@ -1972,8 +1959,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Introduce un sistema di allenamento e benessere fisico focalizzato sulla salute mentale e fisica. Con questa mod, i Sims possono partecipare a sessioni di esercizi che combinano attività fisiche come yoga e meditazione, promuovendo uno stile di vita sano e equilibrato.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Introduces a physical training and wellness system focused on mental and physical health. With this mod, Sims can participate in exercise sessions that combine physical activities such as yoga and meditation, promoting a healthy and balanced lifestyle."
   },
   {
     "Author": "SimRealist",
@@ -1985,8 +1972,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Aggiunge oggetti e attività quotidiane in The Sims 4 per un realismo maggiore. Include un set di asciugamani, un sistema per tagliare il prato, detersivo per il bucato e un’asse da stiro, rendendo la vita domestica dei Sim più immersiva.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Adds everyday objects and activities in The Sims 4 for enhanced realism. Includes a set of towels, a lawn mowing system, laundry detergent and an ironing board, making the Sims' home life more immersive."
   },
   {
     "Author": "SimRealist",
@@ -1998,8 +1985,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Introduce un sistema di morte e lutto più realistico e dettagliato. Con questa mod, la morte dei Sims diventa un evento più emotivo, con nuovi rituali e interazioni legate al lutto. I Sims che sopravvivono alla perdita possono affrontare il dolore in modo più profondo, vivendo stati d'animo legati al lutto e partecipando a cerimonie funebri.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Introduces a more realistic and detailed death and mourning system. With this mod, Sims' death becomes a more emotional event, with new rituals and interactions related to mourning. Sims who survive the loss can deal with grief in a deeper way, experiencing states of mind related to mourning and participating in funeral ceremonies."
   },
   {
     "Author": "SimRealist",
@@ -2011,8 +1998,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Introduce una gestione più realistica dei capelli dei Sims, permettendo loro di mantenere e curare i propri capelli in modo naturale, senza l'uso di trattamenti chimici. Include opzioni per avere capelli più sani e realistici, con nuove interazioni per la cura dei capelli, come shampoo e trattamenti naturali, promuovendo uno stile di vita \"organico\" e più autentico.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Introduces more realistic hair management for Sims, allowing them to maintain and care for their hair naturally, without the use of chemical treatments. Includes options for healthier, more realistic hair, with new hair care interactions such as natural shampoos and treatments, promoting a more authentic \"organic\" lifestyle."
   },
   {
     "Author": "SimRealist",
@@ -2024,8 +2011,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "I Sims possono ammalarsi di varie malattie e debellarle con trattamenti specifici, che vanno da farmaci a rimedi casalinghi. Inoltre, possono sperimentare sintomi più realistici, come febbre o mal di testa, e il sistema sanitario diventa più dettagliato, con la possibilità di curarsi da un medico o recarsi in ospedale.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Sims can become ill with various diseases and eradicate them with specific treatments, ranging from drugs to home remedies. In addition, they can experience more realistic symptoms, such as fever or headache, and the health care system becomes more detailed, with the option of treating themselves at a doctor's office or going to a hospital."
   },
   {
     "Author": "SimRealist",
@@ -2037,8 +2024,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Migliora e amplia il sistema immobiliare nel gioco. Con questa mod, i Sims possono gestire una carriera nel settore immobiliare, acquistando, vendendo e affittando proprietà.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Improve and expand the real estate system in the game. With this mod, Sims can manage a career in real estate, buying, selling and renting properties."
   },
   {
     "Author": "SimRealist",
@@ -2050,8 +2037,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Questo componente aggiuntivo rinnoverà il sistema di fatturazione di EA separando Acqua e fognatura, Elettricità, Rifiuti, Cavo, Internet, Cellulare e Tasse sulla proprietà. Ogni bolletta crea un effetto negativo se non pagata. Questa aggiunta fornirà anche un ulteriore supporto per le famiglie a basso reddito o per le famiglie che hanno visto un cambiamento nelle circostanze.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "This add-on will revamp EA's billing system by separating Water and Sewer, Electricity, Waste, Cable, Internet, Cellular, and Property Taxes. Each bill creates a negative effect if not paid. This addition will also provide additional support for low-income families or families who have seen a change in circumstances."
   },
   {
     "Author": "SimRealist",
@@ -2063,8 +2050,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Financial Center è una mod adiacente di SNBank che porta una banca fisica nel gioco. I tuoi Sims potranno ora accedere alle opzioni SNB e altro di persona. Questo mantiene l'opzione off-the-grid in cui non hai bisogno di usare il cellulare del tuo Sim per ogni servizio SNB.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Financial Center is an adjacent mod of SNBank that brings a physical bank into the game. Your Sims will now be able to access SNB options and more in person. This keeps the off-the-grid option where you don't need to use your Sim's cell phone for every SNB service."
   },
   {
     "Author": "SimRealist",
@@ -2075,9 +2062,9 @@
     "Translation": "inclusa",
     "Categoria": "Gameplay",
     "DependencyIT": "",
-    "DescrizioneIT": "In definitiva, questa mod intende creare un esteso sistema finanziario/bancario simile a quello che noi umani abbiamo nella vita reale. Con l'ultima funzionalità aggiungere e potenzia le tue trame nel gioco o persino riproduce qualsiasi situazione finanziaria che sia limitata solo alla tua immaginazione. ",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Questa mod intende creare un esteso sistema finanziario/bancario simile a quello che noi umani abbiamo nella vita reale. Con l'ultima funzionalità aggiungere e potenzia le tue trame nel gioco o persino riproduce qualsiasi situazione finanziaria che sia limitata solo alla tua immaginazione. ",
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod intends to create an extensive financial/banking system similar to what we humans have in real life. With the latest feature add and enhance your own plots in the game or even reproduce any financial situation that is limited only to your imagination."
   },
   {
     "Author": "SonozakiSisters",
@@ -2087,10 +2074,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "DependencyIT": "Core Library - DLC Vita da liceali",
-    "DescrizioneIT": "Scegli i compagni di classe del liceo",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyIT": "Core Library - DLC Vita da Liceali",
+    "DescrizioneIT": "Ti permette di scegliere i compagni di classe.",
+    "DependencyEN": "Core Library - DLC High School Years",
+    "DescrizioneEN": "It allows you to choose classmates."
   },
   {
     "Author": "SonozakiSisters",
@@ -2101,9 +2088,9 @@
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
     "DependencyIT": "Healthcare Redux - DLC Al Lavoro",
-    "DescrizioneIT": "Rallenta il sistema di cura introdotto dalla Healthcare Redux Mod. Questo significa che malattie e infortuni richiederanno più tempo per essere trattati e guariti, rendendo l'esperienza sanitaria nel gioco più realistica e impegnativa.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Rallenta il sistema di cura introdotto dalla Healthcare Redux. Questo significa che malattie e infortuni richiederanno più tempo per essere trattati e guariti, rendendo l'esperienza sanitaria nel gioco più realistica e impegnativa.",
+    "DependencyEN": "Healthcare Redux - DLC Get to Work",
+    "DescrizioneEN": "Slowing down the system of care introduced by Healthcare Redux. This means that illnesses and injuries will take longer to treat and heal, making the in-game healthcare experience more realistic and challenging."
   },
   {
     "Author": "SonozakiSisters",
@@ -2115,8 +2102,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Core Library",
     "DescrizioneIT": "Aggiunge una maggiore probabilità di far nascere gemelli durante il parto. La mod rende più frequente la possibilità di avere gemelli, introducendo nuove opzioni e interazioni legate alla gravidanza e alla nascita. Inoltre, migliora l'esperienza del parto multiplo, rendendo il processo più realistico e interessante per i giocatori che desiderano aggiungere più dinamiche familiari nel gioco.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library",
+    "DescrizioneEN": "Adds increased probability of delivering twins during birth. The mod makes the possibility of twins more frequent by introducing new options and interactions related to pregnancy and birth. It also enhances the multiple birth experience, making the process more realistic and interesting for players who wish to add more family dynamics into the game."
   },
   {
     "Author": "SpinningPlumbobs",
@@ -2127,9 +2114,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Varie",
     "DependencyIT": "",
-    "DescrizioneIT": "Questa mod introduce le code animate per tutti i tuoi Sims Rettili, Demoniaci, Felini, Canini e tutto ciò che sta nel mezzo!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Questa mod introduce le code animate per tutti i tuoi Sims da Rettile, da Demone, da Gatto, da Cane e tutto ciò che sta nel mezzo!",
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod introduces animated tails for all your Sims from Reptile, from Demon, from Cat, from Dog and everything in between!"
   },
   {
     "Author": "SpinningPlumbobs",
@@ -2141,8 +2128,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Vita sull'Isola",
     "DescrizioneIT": "Amplia e migliora il sistema delle sirene nel gioco. La mod aggiunge nuove abilità, tratti e interazioni per le sirene, permettendo loro di vivere in modo più dinamico e immersivo. Le sirene possono ora interagire con l'ambiente in modi unici, come influenzare il mare, modificare il loro aspetto e creare nuove storie legate alla loro vita acquatica. Inoltre, la mod offre una maggiore personalizzazione e un'esperienza di gioco più ricca per chi ama giocare con le sirene.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Island Living",
+    "DescrizioneEN": "Expands and improves the mermaid system in the game. The mod adds new abilities, traits and interactions for mermaids, allowing them to live more dynamically and immersively. Mermaids can now interact with the environment in unique ways, such as influencing the sea, changing their appearance, and creating new stories related to their aquatic lives. In addition, the mod offers greater customization and a richer gaming experience for those who enjoy playing with mermaids."
   },
   {
     "Author": "SpinningPlumbobs",
@@ -2154,8 +2141,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "",
     "DescrizioneIT": "Espande e arricchisce il sistema dei Plantsims. La mod introduce nuove interazioni, abilità e opzioni per i Plantsims, consentendo loro di vivere in modo più dettagliato e dinamico. I Sims possono ora coltivare la loro vita vegetale con nuove piante, potenziare le loro abilità naturali e sperimentare diversi aspetti del loro stato vegetale, migliorando l'esperienza di gioco per chi ama i Sims \"non convenzionali\".",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Expands and enriches the Plantsims system. The mod introduces new interactions, skills and options for Plantsims, allowing them to live in more detail and dynamically. Sims can now cultivate their plant life with new plants, enhance their natural abilities and experiment with different aspects of their plant state, enhancing the gaming experience for those who enjoy \"unconventional\" Sims."
   },
   {
     "Author": "SpinningPlumbobs",
@@ -2167,8 +2154,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Regno della Magia",
     "DescrizioneIT": "Introduce un'interessante rivalità tra fate e streghe. Con questa mod, i Sims possono scegliere se essere fate o streghe, ognuna con le proprie abilità uniche e poteri speciali. La mod arricchisce il gioco con nuove interazioni, magie e storie, creando una dinamica di conflitto e alleanze tra le due fazioni. Inoltre, permette di esplorare e approfondire la lore di fate e streghe in modo più coinvolgente e dettagliato.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "DLC Realm of Magic",
+    "DescrizioneEN": "Introduces an interesting rivalry between fairies and witches. With this mod, Sims can choose to be fairies or witches, each with their own unique abilities and special powers. The mod enriches the game with new interactions, spells and stories, creating a dynamic of conflict and alliances between the two factions. It also allows for more engaging and detailed exploration and exploration of the lore of fairies and witches."
   },
   {
     "Author": "Thatssojordy",
@@ -2178,10 +2165,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "Core Library - DLC Opzionali Al Lavoro, Cani e Gatti, Mangiamo Fuori",
+    "DependencyIT": "Core Library - DLC Al Lavoro, Cani & Gatti, Mangiamo Fuori (Facoltativi)",
     "DescrizioneIT": "Con questa mod i tuoi sims possono aprire il loro negozio online! Grazie all'azienda Outside the Box, i Sims possono creare liberamente le proprie vetrine e vendere vari oggetti online e fare dei simoleon. Prima di poter fare tutto questo però, dovrete affrontare varie tappe. ",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Core Library - DLC Get to Work, Cats & Dogs, Dine Out (Optional)",
+    "DescrizioneEN": "With this mod your sims can open their own online store! Thanks to the Outside the Box company, Sims can freely create their own storefronts and sell various items online and make simoleons. Before you can do all this, however, you will have to go through several stages."
   },
   {
     "Author": "Thepancake1 e MizoreYukii",
@@ -2191,10 +2178,10 @@
     "DataUltimaModifica": "26/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Aggiunge gli slider per poter modificare il colore ai capelli, vestiti e accessori.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Adds sliders so you can change color to hair, clothes and accessories."
   },
   {
     "Author": "Thepancake1 e MizoreYukii",
@@ -2204,10 +2191,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Ora i tuoi Sims possono avere fino a cinque tratti diversi con assoluta facilità, dando ai tuoi Sims la possibilità di avere più profondità e personalità di prima.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Now your Sims can have up to five different traits with absolute ease, giving your Sims the ability to have more depth and personality than before."
   },
   {
     "Author": "TurboDriver",
@@ -2217,10 +2204,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Carriere",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Consente ai Sim di assumere più di un lavoro contemporaneamente, senza limiti. Grazie a questo mod, puoi far lavorare i tuoi Sim in diverse carriere o svolgere più attività a tempo parziale, offrendo maggiori opportunità di guadagno e una gestione più dinamica delle loro vite professionali.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Allows Sims to take on more than one job at the same time, with no limits. With this mod, you can have your Sims work in different careers or take on multiple part-time jobs, providing more income opportunities and more dynamic management of their professional lives."
   },
   {
     "Author": "TurboDriver",
@@ -2230,10 +2217,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Amplia le dinamiche sociali e romantiche in The Sims 4, introducendo nuove opzioni come il ciclo mestruale, la fertilità, i desideri sessuali, le preferenze romantiche e altro ancora. Questo mod rende le relazioni tra i Sim più realistiche, personalizzabili e varie, aggiungendo anche nuove interazioni e emozioni legate alla sessualità e alla salute.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Expands social and romantic dynamics in The Sims 4, introducing new options such as menstrual cycle, fertility, sexual desires, romantic preferences and more. This mod makes relationships between Sims more realistic, customizable, and varied, while also adding new interactions and emotions related to sexuality and health."
   },
   {
     "Author": "TwistedMexi",
@@ -2243,10 +2230,10 @@
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Questa mod rimuove tutte le restrizioni di tempo sulle simulazioni EA.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod removes all time restrictions on EA simulations."
   },
   {
     "Author": "TwistedMexi",
@@ -2256,10 +2243,10 @@
     "DataUltimaModifica": "23/03/2025",
     "Translation": "inclusa",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Migliora l'esperienza di costruzione in The Sims 4, offrendo accesso a tutti gli oggetti nel catalogo senza filtri e semplificando la gestione degli oggetti già posizionati. Perfetto per una costruzione più veloce e intuitiva!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Enhances the building experience in The Sims 4 by providing access to all objects in the catalog without filters and simplifying the management of objects already placed. Perfect for faster and more intuitive construction!"
   },
   {
     "Author": "TwistedMexi",
@@ -2269,10 +2256,10 @@
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Migliora la gestione degli errori nel gioco, rilevando e segnalando automaticamente eventuali problemi con dettagli chiari e precisi. Ideale per chi utilizza molti mod, aiuta a identificare rapidamente le cause di crash o malfunzionamenti, permettendo di risolvere gli errori in modo semplice ed efficiente.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Improves error management in the game by automatically detecting and reporting any problems with clear and precise details. Ideal for those who use many mods, it helps quickly identify the causes of crashes or malfunctions, allowing errors to be resolved easily and efficiently."
   },
   {
     "Author": "TwistedMexi",
@@ -2282,10 +2269,10 @@
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "ModGuard blocca i vettori di virus più comuni, traccia il file mod che ha tentato di scaricarlo, ti avvisa e condivide il nome della mod con il team in modo che gli account dei modder compromessi possano essere avvisati il ​​prima possibile.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "ModGuard blocks common virus vectors, tracks the mod file that attempted to download it, alerts you, and shares the mod name with the team so that compromised modder accounts can be alerted as soon as possible."
   },
   {
     "Author": "TwistedMexi",
@@ -2295,10 +2282,10 @@
     "DataUltimaModifica": "09/03/2025",
     "Translation": "inclusa",
     "Categoria": "Utilità",
-    "DependencyIT": "Necessaria la Better BuildBuy per la Funzione Costruisci",
+    "DependencyIT": "E' necessaria la Better BuildBuy per usare la mod nel Compra/Costruisci",
     "DescrizioneIT": "Permette di spostare, ruotare e ridimensionare gli oggetti in modi impossibili con gli strumenti di gioco standard, offrendo una maggiore libertà creativa per costruzioni più dettagliate e personalizzate. Ideale per i giocatori che vogliono portare la loro creatività a un livello superiore!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Better BuildBuy is required to use the mod in the Buy/Build",
+    "DescrizioneEN": "It allows you to move, rotate and resize objects in ways impossible with standard game tools, providing greater creative freedom for more detailed and customized constructions. Ideal for players who want to take their creativity to the next level!"
   },
   {
     "Author": "Vale93_games",
@@ -2308,10 +2295,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Sostituisce la normale chiave del gioco con una simpatica zampina disponibile in 6 colorazioni.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "Replaces the regular game key with a cute little paw available in 6 colors."
   },
   {
     "Author": "Weerbesu",
@@ -2321,10 +2308,10 @@
     "DataUltimaModifica": "26/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "ATTENZIONE va scelto solo un file package",
     "DescrizioneIT": "Aggiunge più colonne in CAS da 3 a 6, attenzione ne va scelta solo una.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "CAUTION only one file package should be chosen",
+    "DescrizioneEN": "Adds multiple columns in CAS from 3 to 6, mind you only need to choose one."
   },
   {
     "Author": "Weerbesu",
@@ -2334,10 +2321,10 @@
     "DataUltimaModifica": "26/02/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Semplifica l'interfaccia utente, consentendo di modificare facilmente le statistiche del gioco, come denaro, bisogni dei Sim, età e molto altro, direttamente tramite clic sulla schermata. Con questa estensione, puoi risparmiare tempo e personalizzare l’esperienza di gioco in modo rapido e intuitivo!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It simplifies the user interface, allowing easy editing of game statistics, such as money, Sim needs, age, and more, directly through screen clicks. With this extension, you can save time and customize the game experience quickly and intuitively!"
   },
   {
     "Author": "Zerbu",
@@ -2347,10 +2334,10 @@
     "DataUltimaModifica": "28/03/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "DependencyIT": null,
+    "DependencyIT": "",
     "DescrizioneIT": "Permette di personalizzare le preferenze dei Sim in modo più dettagliato, aggiungendo opzioni extra come gusti e avversioni su cibi, stili di abbigliamento, attività e molto altro.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "",
+    "DescrizioneEN": "It allows Sim preferences to be customized in more detail, adding extra options such as likes and dislikes on foods, clothing styles, activities and more."
   },
   {
     "Author": "Zerbu",
@@ -2360,9 +2347,9 @@
     "DataUltimaModifica": "06/03/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": "ATTENZIONE va usata una sola venue list",
+    "DependencyIT": "ATTENZIONE va usata una sola Venue",
     "DescrizioneIT": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "CAUTION only one Venue is to be used",
+    "DescrizioneEN": "It allows you to easily change the features of the game lots, such as their type and functionality. With this mod, you can turn any lot into a venue for specific events, such as restaurants, nightclubs or libraries, without having to create a new lot from scratch. An easy way to expand your game possibilities and customize the experience!"
   }
 ]
