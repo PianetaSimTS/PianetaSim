@@ -164,9 +164,9 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "DependencyIT": "Basta INSTALLARNE UNA per tutte le sue mod",
-    "DescrizioneIT": "Mod che serve per il funzionamento di altre mod",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Mod che serve per il funzionamento di altre mod.",
+    "DependencyEN": "Just INSTALL ONE for all its mods.",
+    "DescrizioneEN": "Mod that serves for the operation of other mods."
   },
   {
     "Author": "Adeepindigo",
@@ -178,8 +178,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": " General Pie Menus - Universal Venue List o Venue Changes",
     "DescrizioneIT": "Migliora l'esperienza di gioco per i Sim anziani, aggiungendo nuove interazioni, attività e opzioni per una vita più ricca e soddisfacente. Con questo mod, gli anziani possono godere di hobby, relazioni e momenti speciali, portando una maggiore profondità e realismo alla loro fase della vita.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "General Pie Menus - Universal Venue List o Venue Changes",
+    "DescrizioneEN": "Enhances the gaming experience for elderly Sims by adding new interactions, activities and options for a richer and more satisfying life. With this mod, seniors can enjoy hobbies, relationships and special moments, bringing greater depth and realism to their stage of life."
   },
   {
     "Author": "Adeepindigo",
@@ -191,8 +191,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "Mood Pack Mod - General Pie Menus - DLC Al Lavoro",
     "DescrizioneIT": "Mod completa per l'assistenza sanitaria che aggiunge nuove malattie, lesioni, condizioni croniche, allergie, emergenze mediche e condizioni di salute legate alla gravidanza, nonché cure preventive, sistema immunitario naturale, farmaci e integratori, visite mediche, vaccinazioni, malattie mortali e altro ancora.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "Mood Pack Mod - General Pie Menus - DLC Get to Work",
+    "DescrizioneEN": "Comprehensive health care mod that adds new diseases, injuries, chronic conditions, allergies, medical emergencies, and pregnancy-related health conditions, as well as preventive care, natural immune system, drugs and supplements, doctor visits, vaccinations, life-threatening diseases, and more."
   },
   {
     "Author": "Adeepindigo",
@@ -203,9 +203,9 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "DependencyIT": "Basta INSTALLARNE UNA per tutte le sue mod",
-    "DescrizioneIT": "Mod che serve per il funzionamento di altre mod",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Mod che serve per il funzionamento di altre mod.",
+    "DependencyEN": "Just INSTALL ONE for all its mods.",
+    "DescrizioneEN": "Mod that serves for the operation of other mods."
   },
   {
     "Author": "Adeepindigo",
@@ -217,8 +217,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "General Pie Menus - DLC Alcuni Raccomandati",
     "DescrizioneIT": "Viaggia in The Sims 4, puoi avere auto e molto altro! ",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "General Pie Menus - DLC Some Recommended",
+    "DescrizioneEN": "Travel in The Sims 4, you can have cars and more!"
   },
   {
     "Author": "Adeepindigo",
@@ -229,9 +229,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "DLC Stagioni",
-    "DescrizioneIT": "Campi estivi da esplorare per bambini e adolescenti ",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Campi estivi da esplorare per bambini e adolescenti.",
+    "DependencyEN": "DLC Seasons",
+    "DescrizioneEN": "Summer camps for children and teenagers to explore."
   },
   {
     "Author": "Adeepindigo",
@@ -242,9 +242,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "General Pie Menus - Core Library",
-    "DescrizioneIT": "Questa mod aggiunge da la possibilità ai vostri sim di farsi un tatuaggio tramite rabbithole. Avranno la possibilità di scegliere un tatuaggio o ricevere un tatuaggio casuale. Ottenere tatuaggi temporanei a parti del corpo specifiche. Disponibile per i Sims da adolescenti a superiori.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Questa mod aggiunge la possibilità ai vostri sim di farsi un tatuaggio tramite rabbithole. Avranno la possibilità di scegliere un tatuaggio o ricevere un tatuaggio casuale. Ottenere tatuaggi temporanei a parti del corpo specifiche. Disponibile per i Sims da adolescenti a superiori.",
+    "DependencyEN": "General Pie Menus - Core Library",
+    "DescrizioneEN": "This mod adds the ability for your sims to get a tattoo via rabbithole. They will have the option to choose a tattoo or receive a random tattoo. Get temporary tattoos to specific body parts. Available for Sims from teens to high school."
   },
   {
     "Author": "Adeepindigo",
@@ -256,8 +256,8 @@
     "Categoria": "Carriere",
     "DependencyIT": "General Pie Menus - DLC Alcuni Raccomandati ",
     "DescrizioneIT": "Questa mod rivisita la carriera dello scrittore, aggiungendo nuove interazioni, obiettivi e opzioni di carriera, rendendo l'esperienza più ricca e dinamica.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "General Pie Menus - DLC Some Recommended",
+    "DescrizioneEN": "This mod revisits the writer's career, adding new interactions, goals and career options, making the experience richer and more dynamic."
   },
   {
     "Author": "Adeepindigo/ItsKatato",
@@ -267,10 +267,10 @@
     "DataUltimaModifica": "25/02/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "General Pie Menus - Mood Pack Mod - DLC Raccomandati (Genitorialità - Oasi Innevata)",
+    "DependencyIT": "General Pie Menus - Mood Pack Mod - DLC Vita da Genitori - Oasi Innevata (Raccomandati)",
     "DescrizioneIT": "Aggiunge la Pre-Adolescenza, i sim passano dall'essere bambini ad essere pre-adolescenti prima di diventare adolescenti. Saranno più bassi rispetto gli adolescenti e avranno il tratto preadolescente.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "General Pie Menus - Mood Pack Mod - DLC Parenthood - Snowy Escape (Recommended)",
+    "DescrizioneEN": "Adds Pre-Adolescence, sims go from being children to being pre-adolescents before becoming teenagers. They will be shorter than adolescents and have the pre-adolescent trait."
   },
   {
     "Author": "Adeepindigo/Pandasama",
@@ -282,8 +282,8 @@
     "Categoria": "Gameplay",
     "DependencyIT": "General Pie Menus",
     "DescrizioneIT": "Questa mod è stata creata per incoraggiare e introdurre nuovi modi di vivere uno stile di vita più sano per i tuoi Sims.",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DependencyEN": "General Pie Menus",
+    "DescrizioneEN": "This mod was created to encourage and introduce new ways of living a healthier lifestyle for your Sims."
   },
   {
     "Author": "Amellce",
@@ -294,9 +294,9 @@
     "Translation": "inclusa",
     "Categoria": "Utilità",
     "DependencyIT": "XML Injector",
-    "DescrizioneIT": "Permette al giocatore di far sedere i sim in modo composto",
-    "DependencyEN": null,
-    "DescrizioneEN": null
+    "DescrizioneIT": "Permette al giocatore di far sedere i sim in modo composto.",
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "Allows the player to seat the sims in a composed manner."
   },
   {
     "Author": "Andirz",
