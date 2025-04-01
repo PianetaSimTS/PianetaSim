@@ -619,10 +619,14 @@ function checkModUpdates(mods) {
   it: "Le seguenti traduzioni preferite sono state modificate:\n",
   en: "The following favorite translations have been changed:\n"
 };
+
+  // Modifica il nome della proprietà a seconda della lingua
+   const statusLabel = lang === "it" ? "Stato" : "Status";
+
   // Se ci sono mod aggiornate, mostra una notifica
   if (updatedMods.length > 0) {
     let message = notificationTexts[lang] + 
-                  updatedMods.map(mod => `${mod.Title} - Stato: ${mod.Status} (${mod.CurrentVersion || mod.ReleaseVersion || 'Data non disponibile'})`).join("\n");
+                  updatedMods.map(mod => `${mod.Title} - ${statusLabel}: ${mod.CurrentVersion || mod.ReleaseVersion || 'Data non disponibile'}`).join("\n");
     alert(message);
   }
 }
