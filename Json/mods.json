@@ -884,6 +884,19 @@
     "DescrizioneEN": "It allows you to create Sims directly in the game and filter their characteristics, such as traits and appearance, to facilitate their selection and integration into the game world."
   },
   {
+    "Author": "Cowplant's Cake",
+    "ModName": "New Random Names",
+    "Status": "compatibile",
+    "SiteLink": "https://modthesims.info/d/633909/new-random-names.html",
+    "DataUltimaModifica": "20/03/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Utilità",
+    "DependencyIT": "",
+    "DescrizioneIT": "Aggiungerà più nomi al pulsante random (per umani, animali domestici, robot...) e ai townies del tuo gioco da tutto il mondo, come nomi francesi, italiani, inglesi, latini e altri con compatibilità con tutte le lingue di gioco.",
+    "DependencyEN": "",
+    "DescrizioneEN": "It will add more names to the random button (for humans, pets, robots...) and to the townies of your game from all around the world, like French, Itallian, english, latinos and others names with compatibility to all game languages."
+  },
+  {
     "Author": "Danitysimmer",
     "ModName": "Fashion Designer Mod",
     "Status": "compatibile",
