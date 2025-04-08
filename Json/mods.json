@@ -1509,6 +1509,19 @@
   },
   {
     "Author": "Lumpinou",
+    "ModName": "Open Love Life",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/42086339",
+    "DataUltimaModifica": "20/03/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "DependencyIT": "Toolbox",
+    "DescrizioneIT": "Con questa mod, i Sim avranno delle Preferenze di Relazione (esclusiva o non esclusiva) e possono vivere la loro vita romantica ideale. Possono chiedere di aprire la relazione al partner, il che può significare diventare poliamorosi, avere una relazione aperta o semplicemente qualsiasi cosa desiderino! Le definizioni di queste relazioni sono volutamente vaghe, libere e aperte.",
+    "DependencyEN": "Toolbox",
+    "DescrizioneEN": "With this mod, Sims will have Relationship Preferences (exclusive or non-exclusive) and can live their ideal romantic life. They can ask to open up their relationship to their partner, which can mean becoming polyamorous, having an open relationship, or simply anything they desire! The definitions of these relationships are intentionally vague, free and open."
+  },
+  {
+    "Author": "Lumpinou",
     "ModName": "Rambunctious Religions",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/rambunctious-now-39824076",
@@ -1714,6 +1727,19 @@
     "DescrizioneIT": "Serve per il funzionamento di altre mod di NickyClem",
     "DependencyEN": "",
     "DescrizioneEN": "It is needed for the operation of other mods of NickyClem"
+  },
+  {
+    "Author": "Northern siberia winds",
+    "ModName": "Controlled Position Mod v2.2",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/controlled-mod-2-103628223",
+    "DataUltimaModifica": "20/03/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Utilità",
+    "DependencyIT": "",
+    "DescrizioneIT": "Tiene in posa i sim nel CAS per poterli modificare meglio.",
+    "DependencyEN": "",
+    "DescrizioneEN": "It holds the sims in the CAS for better editing."
   },
   {
     "Author": "PandaSama",
