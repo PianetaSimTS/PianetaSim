@@ -1561,6 +1561,19 @@
   },
   {
     "Author": "Lumpinou",
+    "ModName": "Romance Style Behavior Tweaks - Marks in Menus and Autonomy",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/mod-romance-in-4-117575893",
+    "DataUltimaModifica": "20/03/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Utilità",
+    "DependencyIT": "Toolbox - DLC Colpo di Fulmine",
+    "DescrizioneIT": "MarkInMenus: Ti mostra  quali interazioni un Sim sa  essere allineate o contrarie allo stile romantico dell'altro Sim. AffectAutonomy: dice ai Sims di NON eseguire autonomamente interazioni che sanno essere contrarie allo stile romantico dell'altro Sim.",
+    "DependencyEN": "Toolbox- DLC Lovestruck",
+    "DescrizioneEN": "MarkInMenus: Shows you which interactions one Sim knows are aligned with or contrary to the other Sim's romantic style. AffectAutonomy: tells Sims to NOT independently perform interactions that they know are contrary to the other Sim's romantic style."
+  },
+  {
+    "Author": "Lumpinou",
     "ModName": "RPO Relationship & Pregnancy Overhaul - tutti i moduli",
     "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/posts/75983577",
