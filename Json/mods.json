@@ -1249,19 +1249,6 @@
   },
   {
     "Author": "LoryNa",
-    "ModName": "Genitore a Casa - Carriera Semi-Attiva",
-    "Status": "aggiornata",
-    "SiteLink": "https://www.lorynamods.com/genitore-a-casa/",
-    "DataUltimaModifica": "24/03/2025",
-    "Translation": "inclusa",
-    "Categoria": "Carriere",
-    "DependencyIT": "XML Injector - DLC Vita da Genitori",
-    "DescrizioneIT": "Essere un Genitore è un duro lavoro e merita assolutamente un aiuto finanziario, specialmente quando sei un genitore single o il tuo partner è fuori tutto il giorno per un lavoro sottopagato e/o non puoi permetterti una babysitter. Inizia oggi, l'Associazione Casa Dolce Casa sarà felice di aiutarti!",
-    "DependencyEN": "XML Injector - DLC Parenthood",
-    "DescrizioneEN": "Being a Parent is hard work and definitely deserves financial help, especially when you are a single parent or your partner is out all day at an underpaid job and/or you cannot afford a babysitter. Start today, the Home Sweet Home Association will be happy to help!"
-  },
-  {
-    "Author": "LoryNa",
     "ModName": "Carriera Modder - Attiva",
     "Status": "compatibile",
     "SiteLink": "https://www.lorynamods.com/carriera-modder/?doing_wp_cron=1743536343.3856940269470214843750",
@@ -1272,6 +1259,19 @@
     "DescrizioneIT": "Hai mai desiderato far diventare il tuo Sim un Modder? Da oggi puoi con questa nuova carriera attiva!",
     "DependencyEN": "XML Injector - DLC Get to Work",
     "DescrizioneEN": "Have you ever wanted to make your Sim a Modder? From today you can with this new active career!"
+  },
+  {
+    "Author": "LoryNa",
+    "ModName": "Genitore a Casa - Carriera Semi-Attiva",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.lorynamods.com/genitore-a-casa/",
+    "DataUltimaModifica": "24/03/2025",
+    "Translation": "inclusa",
+    "Categoria": "Carriere",
+    "DependencyIT": "XML Injector - DLC Vita da Genitori",
+    "DescrizioneIT": "Essere un Genitore è un duro lavoro e merita assolutamente un aiuto finanziario, specialmente quando sei un genitore single o il tuo partner è fuori tutto il giorno per un lavoro sottopagato e/o non puoi permetterti una babysitter. Inizia oggi, l'Associazione Casa Dolce Casa sarà felice di aiutarti!",
+    "DependencyEN": "XML Injector - DLC Parenthood",
+    "DescrizioneEN": "Being a Parent is hard work and definitely deserves financial help, especially when you are a single parent or your partner is out all day at an underpaid job and/or you cannot afford a babysitter. Start today, the Home Sweet Home Association will be happy to help!"
   },
   {
     "Author": "LoryNa",
@@ -1792,6 +1792,19 @@
     "DescrizioneIT": "Aggiunge un sistema realistico di salute mentale per i Sims. Introduce stati emotivi come ansia, depressione e attacchi di panico, insieme a nuove interazioni, terapie e opzioni per migliorare il benessere mentale. I Sims possono praticare la meditazione, assumere farmaci prescritti e consultare uno psicologo, rendendo il gameplay più profondo e realistico.",
     "DependencyEN": "XML Injector",
     "DescrizioneEN": "Adds a realistic mental health system for Sims. Introduces emotional states such as anxiety, depression and panic attacks, along with new interactions, therapies and options for improving mental well-being. Sims can practice meditation, take prescribed medication and consult a psychologist, making gameplay deeper and more realistic."
+  },
+  {
+    "Author": "Ravasheen",
+    "ModName": "Bus Upon a Time – Travel Mod",
+    "Status": "compatibile",
+    "SiteLink": "https://ravasheen.com/download/bus-upon-a-time-travel-mod/?utm_content=cmp-true",
+    "DataUltimaModifica": "20/03/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "DependencyIT": "",
+    "DescrizioneIT": "Questa modalità di viaggio ti permette di recarti in qualsiasi lotto, sia nascosto che regolare, a un costo! Acquistate l'abbonamento dell'autobus per una tariffa scontata!",
+    "DependencyEN": "",
+    "DescrizioneEN": "This travel mod lets you travel to any lot – both hidden and regular lots – for a cost! Buy the bus pass for a discounted rate!"
   },
   {
     "Author": "Ravasheen",
