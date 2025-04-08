@@ -5,7 +5,7 @@ import asyncio
 import os
 
 # Recupera i valori dai segreti
-telegram_token = '7390613815:AAFZzCFSMnfomMqRXHkKzEqsrPo7Rh_0Yf4'
+telegram_token = '7390613815:AAEyjjGxBGdIaWGrCXR-8MSsjdtZ_tqxW1Y'
 group_id = '-1001771715212'
 topic_id = '79558'
 github_token = os.getenv('GITHUB_TOKEN')
