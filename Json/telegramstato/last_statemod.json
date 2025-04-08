@@ -1404,6 +1404,19 @@
     "DescrizioneEN": "It allows you to create custom hotels with guest rooms, room service, and daily housekeeping. Sims can stay, interact in common areas and receive maintenance on demand, making vacations more immersive."
   },
   {
+    "Author": "Loulicorn",
+    "ModName": "Ultimate CAS items Unlocker",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/ultimate-cas-items-unlocker",
+    "DataUltimaModifica": "07/03/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Utilità",
+    "DependencyIT": "",
+    "DescrizioneIT": "Questa mod sblocca tutti gli oggetti CAS nascosti/bloccati del gioco! Assicurati di eliminare i file dai pacchetti che non ti appartengono! Questi oggetti vengono visualizzati come contenuti personalizzati, ma non lo sono! Basta rimuovere la mod quando hai finito e gli oggetti rimarranno sui Sims senza essere contrassegnati come cc. Si consiglia di non mantenere la mod mentre si è in modalità live.",
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod unlocks all hidden/blocked CAS items in the game! Be sure to delete files from packages that don't belong to you! These items are displayed as custom content, but they are not! Just remove the mod when you are done and the items will remain on the Sims without being marked as cc. It is recommended that you do not keep the mod while in live mode."
+  },
+  {
     "Author": "Lumpinou",
     "ModName": "Additional In-Date Choices",
     "Status": "compatibile",
