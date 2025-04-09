@@ -1912,6 +1912,19 @@
   },
   {
     "Author": "Ravasheen",
+    "ModName": "Sims Inventory Management System (S.I.M.S.)",
+    "Status": "compatibile",
+    "SiteLink": "https://ravasheen.com/download/sims-inventory-management-system-s-i-m-s/",
+    "DataUltimaModifica": "20/03/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Utilità",
+    "DependencyIT": "",
+    "DescrizioneIT": "S.I.M.S. vi dà il pieno controllo sugli inventari, compresi i trasferimenti in blocco, le vendite e, soprattutto, il recupero della proprietà degli oggetti bloccati o danneggiati da traslochi e fusioni!",
+    "DependencyEN": "",
+    "DescrizioneEN": "S.I.M.S. gives you full control over inventories including bulk transfer, sell, and most importantly, regaining ownership of items stuck or bugged from moving/merging households!"
+  },
+  {
+    "Author": "Ravasheen",
     "ModName": "Sims Portrait Maker",
     "Status": "compatibile",
     "SiteLink": "https://ravasheen.com/download/sims-portrait-maker/",
