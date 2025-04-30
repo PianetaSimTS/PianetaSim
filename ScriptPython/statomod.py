@@ -85,67 +85,52 @@ def compare_status_only(old_state, new_state):
     normalized_old = [normalize_mod(mod) for mod in old_state if normalize_mod(mod) is not None]
     normalized_new = [normalize_mod(mod) for mod in new_state if normalize_mod(mod) is not None]
 
-status_icons = {
-    "AGGIORNATA": "🟢",
-    "COMPATIBILE": "🔵",
-    "ROTTA": "🔴",
-    "NUOVA": "🟣",
-    "SCONOSCIUTA & OBSOLETA": "⚪️"
-}
+    status_icons = {
+        "AGGIORNATA": "🟢",
+        "COMPATIBILE": "🔵",
+        "ROTTA": "🔴",
+        "NUOVA": "🟣",
+        "SCONOSCIUTA & OBSOLETA": "⚪️"
+    }
 
-# Identifica le nuove mod non presenti nello stato precedente
-old_mod_names = {mod['ModName'] for mod in normalized_old}
-for new_mod in normalized_new:
-    if new_mod['ModName'] not in old_mod_names:
-        # Assegna lo stato effettivo della mod nuova, se non presente metti "NUOVA"
-        if 'Status' not in new_mod or not new_mod['Status']:
-            new_mod['Status'] = "NUOVA"
+    old_mod_names = {mod['ModName'] for mod in normalized_old}
 
-        icon = status_icons.get(new_mod['Status'], "⚪️")  # Ottieni l'icona in base allo stato
-
-        new_mod_message = (
-            f"MOD AGGIUNTA AL SITO\n\n"
-            f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
-            f"Stato {icon} _{new_mod['Status']}_\n"
-            f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-        )
-        messages.append(new_mod_message)
-
-    # Confronta lo stato delle mod una per una
     for new_mod in normalized_new:
-        if not all(key in new_mod and new_mod[key] for key in ['ModName', 'Author', 'Status']):
+        if not all(key in new_mod and new_mod[key] for key in ['ModName', 'Author']):
             continue  # Salta se mancano campi essenziali
 
-        for old_mod in normalized_old:
-            if not all(key in old_mod and old_mod[key] for key in ['ModName', 'Author', 'Status']):
-                continue  # Salta se mancano campi essenziali
-
-            # Confronta le mod per nome e autore per essere sicuri che stiamo confrontando la stessa mod
-            if new_mod['ModName'] == old_mod['ModName'] and new_mod['Author'] == old_mod['Author']:
-               if new_mod['Status'] != old_mod['Status'] and "SCONOSCIUTA" not in new_mod['Status']:
-                    icon = status_icons.get(new_mod['Status'], "⚪️")  # Default a pallino bianco se lo stato non è trovato
-                    
-                    # Genera messaggio solo se lo stato è cambiato
-                    status_change_message = (
+        # Mod nuova
+        if new_mod['ModName'] not in old_mod_names:
+            if 'Status' not in new_mod or not new_mod['Status']:
+                new_mod['Status'] = "NUOVA"
+            icon = status_icons.get(new_mod['Status'], "⚪️")
+            messages.append(
+                f"MOD AGGIUNTA AL SITO\n\n"
+                f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
+                f"Stato {icon} _{new_mod['Status']}_\n"
+                f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+            )
+        else:
+            # Cerca la versione vecchia della mod
+            old_mod = next((mod for mod in normalized_old if mod['ModName'] == new_mod['ModName'] and mod['Author'] == new_mod['Author']), None)
+            if old_mod:
+                if new_mod.get('Status') != old_mod.get('Status') and "SCONOSCIUTA" not in new_mod['Status']:
+                    icon = status_icons.get(new_mod['Status'], "⚪️")
+                    messages.append(
                         f"MOD\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
                         f"Stato {icon} _{new_mod['Status']}_\n"
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
-                    messages.append(status_change_message)
-
-                # Gestione del caso in cui cambia solo DataUltimaModifica
-              elif new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica'] and "SCONOSCIUTA" not in new_mod['Status']:
-                    new_mod['Status'] = "AGGIORNATA"  # Aggiorna lo stato solo per questa situazione
-                    icon = status_icons["AGGIORNATA"]  # Usa l'icona di AGGIORNATA
-
-                    status_change_message = (
+                elif new_mod.get('DataUltimaModifica') != old_mod.get('DataUltimaModifica') and "SCONOSCIUTA" not in new_mod['Status']:
+                    new_mod['Status'] = "AGGIORNATA"
+                    icon = status_icons["AGGIORNATA"]
+                    messages.append(
                         f"MOD\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
                         f"Stato {icon} _{new_mod['Status']}_\n"
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                     )
-                    messages.append(status_change_message)
 
     return messages
 
