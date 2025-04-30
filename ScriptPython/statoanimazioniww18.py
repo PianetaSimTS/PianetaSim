@@ -104,7 +104,7 @@ def compare_status_only(old_state, new_state):
                     break  # Interrompi il ciclo interno se l'autore corrisponde
         else:
             # Se l'autore non è nella lista precedente, è una nuova mod
-            status_icon = "🟣"  # Pallino viola per nuove mod
+            status_icon = "🔵"  # Pallino viola per nuove mod
             new_mod_message = (
                 f"ANIMAZIONE NUOVA\n\n"
                 f"*{new_mod['Autore'].title()}* ➜ Data *{new_mod['DataAggiornamento']}*\n\n"
