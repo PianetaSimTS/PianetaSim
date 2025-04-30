@@ -85,31 +85,31 @@ def compare_status_only(old_state, new_state):
     normalized_old = [normalize_mod(mod) for mod in old_state if normalize_mod(mod) is not None]
     normalized_new = [normalize_mod(mod) for mod in new_state if normalize_mod(mod) is not None]
 
-    # Identifica le nuove mod non presenti nello stato precedente
-    old_mod_names = {mod['ModName'] for mod in normalized_old}
-    for new_mod in normalized_new:
-        if new_mod['ModName'] not in old_mod_names:
-            icon = "🟣"  # Icona per mod nuove
-            # Assegna lo stato effettivo della mod nuova, non "NUOVA"
-            if 'Status' not in new_mod or not new_mod['Status']:
-                new_mod['Status'] = "NUOVA"  # Imposta a "NUOVA" se non esiste stato
+status_icons = {
+    "AGGIORNATA": "🟢",
+    "COMPATIBILE": "🔵",
+    "ROTTA": "🔴",
+    "NUOVA": "🟣",
+    "SCONOSCIUTA & OBSOLETA": "⚪️"
+}
 
-            new_mod_message = (
-                f"MOD AGGIUNTA AL SITO\n\n"
-                f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
-                f"Stato {icon} _{new_mod['Status']}_\n"
-                f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-            )
-            messages.append(new_mod_message)
+# Identifica le nuove mod non presenti nello stato precedente
+old_mod_names = {mod['ModName'] for mod in normalized_old}
+for new_mod in normalized_new:
+    if new_mod['ModName'] not in old_mod_names:
+        # Assegna lo stato effettivo della mod nuova, se non presente metti "NUOVA"
+        if 'Status' not in new_mod or not new_mod['Status']:
+            new_mod['Status'] = "NUOVA"
 
-    # Mappa per lo stato con le relative icone
-    status_icons = {
-        "AGGIORNATA": "🟢",  # Pallino verde
-        "COMPATIBILE": "🔵",  # Pallino blu
-        "ROTTA": "🔴",       # Pallino rosso
-        "NUOVA": "🟣",       # Pallino viola
-        "SCONOSCIUTA & OBSOLETA": "⚪️"  # Pallino bianco
-    }
+        icon = status_icons.get(new_mod['Status'], "⚪️")  # Ottieni l'icona in base allo stato
+
+        new_mod_message = (
+            f"MOD AGGIUNTA AL SITO\n\n"
+            f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
+            f"Stato {icon} _{new_mod['Status']}_\n"
+            f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+        )
+        messages.append(new_mod_message)
 
     # Confronta lo stato delle mod una per una
     for new_mod in normalized_new:
