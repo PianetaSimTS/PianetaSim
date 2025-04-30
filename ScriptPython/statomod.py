@@ -122,7 +122,7 @@ def compare_status_only(old_state, new_state):
 
             # Confronta le mod per nome e autore per essere sicuri che stiamo confrontando la stessa mod
             if new_mod['ModName'] == old_mod['ModName'] and new_mod['Author'] == old_mod['Author']:
-                if new_mod['Status'] != old_mod['Status']:
+               if new_mod['Status'] != old_mod['Status'] and "SCONOSCIUTA" not in new_mod['Status']:
                     icon = status_icons.get(new_mod['Status'], "⚪️")  # Default a pallino bianco se lo stato non è trovato
                     
                     # Genera messaggio solo se lo stato è cambiato
@@ -135,7 +135,7 @@ def compare_status_only(old_state, new_state):
                     messages.append(status_change_message)
 
                 # Gestione del caso in cui cambia solo DataUltimaModifica
-                elif new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica']:
+              elif new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica'] and "SCONOSCIUTA" not in new_mod['Status']:
                     new_mod['Status'] = "AGGIORNATA"  # Aggiorna lo stato solo per questa situazione
                     icon = status_icons["AGGIORNATA"]  # Usa l'icona di AGGIORNATA
 
