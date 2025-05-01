@@ -4,6 +4,7 @@ import base64
 import asyncio
 import os
 import time
+import aiohttp
 
 # Recupera i valori dai segreti
 telegram_token = '7390613815:AAEyjjGxBGdIaWGrCXR-8MSsjdtZ_tqxW1Y'
@@ -136,23 +137,26 @@ def compare_status_only(old_state, new_state):
     return messages
 
 # Funzione per inviare un messaggio su Telegram
-def send_telegram_message(message, chat_id, topic_id):
+async def send_telegram_message(message, chat_id, topic_id):
     url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
-    
     payload = {
         'chat_id': chat_id,
         'text': message,
         'message_thread_id': topic_id,
-        'parse_mode': 'Markdown',  # Usa MarkdownV2 per supporto caratteri
+        'parse_mode': 'Markdown',
         'disable_web_page_preview': True
     }
-    
+
     try:
-        response = requests.post(url, data=payload)
-        response.raise_for_status()  # Se il codice di stato non è 200, solleva un'eccezione
-        print(f"Messaggio inviato con successo: {message}")
-    except requests.exceptions.RequestException as e:
-        print(f"Errore nell'invio del messaggio a Telegram: {e}")
+        async with aiohttp.ClientSession() as session:
+            async with session.post(url, data=payload) as response:
+                if response.status == 200:
+                    print(f"Messaggio inviato con successo.")
+                else:
+                    error_text = await response.text()
+                    print(f"Errore nell'invio ({response.status}): {error_text}")
+    except Exception as e:
+        print(f"Eccezione durante l'invio del messaggio: {e}")
 
 # Funzione per monitorare le modifiche
 async def monitor_mods():
@@ -164,12 +168,16 @@ async def monitor_mods():
         messages = compare_status_only(last_state, new_state)
 
         if messages:
-            print("Modifiche di status rilevate! Inviando notifiche...")
+            print(f"{len(messages)} modifiche di status rilevate! Inviando notifiche...")
 
-            # Invio dei messaggi Telegram
-            for message in messages:
-             send_telegram_message(message, group_id, topic_id)
-            time.sleep(2) 
+            for i, message in enumerate(messages):
+                await send_telegram_message(message, group_id, topic_id)
+                await asyncio.sleep(1)  # Pausa breve tra ogni invio
+
+                # Pausa lunga ogni 20 messaggi
+                if (i + 1) % 20 == 0:
+                    print("Raggiunto limite Telegram, pausa di 60 secondi...")
+                    await asyncio.sleep(60)
 
             # Dopo l'invio dei messaggi, aggiorna lo stato su GitHub
             save_current_state(new_state)
