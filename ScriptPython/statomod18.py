@@ -167,7 +167,8 @@ async def monitor_mods():
 
             # Invio dei messaggi Telegram
             for message in messages:
-                send_telegram_message(message, group_id, topic_id)
+             send_telegram_message(message, group_id, topic_id)
+            time.sleep(2) 
 
             # Dopo l'invio dei messaggi, aggiorna lo stato su GitHub
             save_current_state(new_state)
