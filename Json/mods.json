@@ -573,16 +573,29 @@
   },
   {
     "Author": "Andirz",
-    "ModName": "Outdoor Tweaks",
-    "Status": "compatibile",
-    "SiteLink": "https://www.curseforge.com/sims4/mods/outdoor-tweaks",
-    "DataUltimaModifica": "29/04/2025",
+    "ModName": "Object Tuning Replacement",
+    "Status": "nuova",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/object-tuning-replacement",
+    "DataUltimaModifica": "06/05/2025",
     "Translation": "non necessaria",
     "Categoria": "Oggetti Funzionali",
-    "DependencyIT": "XML Injector - DLC Gita all'Aria Aperta - DLC Un Giorno alla Spa - DLC Vita in Città - DLC Nuove Stelle - DLC Bebè",
-    "DescrizioneIT": "Aggiunge opzioni e modifiche per rendere l'esperienza all'aria aperta più realistica e interessante, come nuove azioni, comportamenti e possibilità per i Sim che trascorrono del tempo all'esterno. Perfetto per chi vuole rendere le attività all'aperto ancora più coinvolgenti!",
-    "DependencyEN": "XML Injector - DLC Outdoor Retreat - DLC Spa Day - DLC City Living - DLC Get Famous - DLC Toddler",
-    "DescrizioneEN": "Adds options and modifications to make the outdoor experience more realistic and interesting, such as new actions, behaviors, and possibilities for Sims spending time outdoors. Perfect for those who want to make outdoor activities even more engaging!"
+    "DependencyIT": "Alcuni DLC (opzionali)",
+    "DescrizioneIT": "Aggiunge opzioni e modifiche ai vari oggetti del gioco per rendere l'esperienza all'aria aperta più realistica e interessante, come nuove azioni, comportamenti e possibilità per i Sim che trascorrono del tempo all'esterno. Perfetto per chi vuole rendere le attività all'aperto ancora più coinvolgenti!",
+    "DependencyEN": "Some DLC (optional)",
+    "DescrizioneEN": "Adds options and modifications to various objects in the game to make the outdoor experience more realistic and interesting, such as new actions, behaviors, and possibilities for Sims spending time outside. Perfect for those who want to make outdoor activities even more engaging!"
+  },
+  {
+    "Author": "Andirz",
+    "ModName": "Outdoor Tweaks",
+    "Status": "obsoleta",
+    "SiteLink": null,
+    "DataUltimaModifica": "",
+    "Translation": "non necessaria",
+    "Categoria": "Oggetti Funzionali",
+    "DependencyIT": "",
+    "DescrizioneIT": "",
+    "DependencyEN": "",
+    "DescrizioneEN": ""
   },
   {
     "Author": "Andirz",
