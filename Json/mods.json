@@ -605,9 +605,9 @@
     "DataUltimaModifica": "29/04/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "DependencyIT": "",
+    "DependencyIT": "Core Library",
     "DescrizioneIT": "Serve per il funzionamento delle altre mod della serie P.S.O.",
-    "DependencyEN": "",
+    "DependencyEN": "Core Library",
     "DescrizioneEN": "It is needed for the operation of the other mods in the P.S.O. series."
   },
   {
