@@ -161,7 +161,7 @@ def send_telegram_batch(messages, chat_id, topic_id, batch_size=20, delay=60):
         batch = messages[i:i+batch_size]
         for message in batch:
             send_telegram_message(message, chat_id, topic_id)
-            time.sleep(2)  # Ritardo tra i singoli messaggi per sicurezza
+            time.sleep(6)  # Ritardo tra i singoli messaggi per sicurezza
         if i + batch_size < total:
             print(f"Aspetto {delay} secondi per evitare limiti Telegram...")
             time.sleep(delay)
