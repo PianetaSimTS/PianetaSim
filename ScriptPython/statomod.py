@@ -4,173 +4,192 @@ import base64
 import asyncio
 import os
 import time
-from typing import List
+import math
 
-# Configurazione
-TELEGRAM_TOKEN = '7390613815:AAEyjjGxBGdIaWGrCXR-8MSsjdtZ_tqxW1Y'
-GROUP_ID = '-1001771715212'
-TOPIC_ID = '79558'
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+# Recupera i valori dai segreti
+telegram_token = '7390613815:AAEyjjGxBGdIaWGrCXR-8MSsjdtZ_tqxW1Y'
+group_id = '-1001771715212'
+topic_id = '79558'
+github_token = os.getenv('GITHUB_TOKEN')
 
-# URL GitHub
-MODS_URL = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/main/Json/mods.json'
-STATE_URL = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/main/Json/telegramstato/last_statemod.json'
-REPO_API_URL = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_statemod.json'
+# URL dei file su GitHub
+mods_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/mods.json'
+state_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/telegramstato/last_statemod.json'
+repo_api_url = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_statemod.json'
 
-# Costanti per il rate limiting
-BATCH_SIZE = 8  # Messaggi per batch
-DELAY_WITHIN_BATCH = 1.2  # Secondi tra messaggi nello stesso batch
-DELAY_BETWEEN_BATCHES = 25  # Secondi tra batch diversi
-
-def fetch_json(url: str) -> dict:
-    """Scarica un file JSON da un URL con gestione errori."""
+# Funzione per scaricare un file JSON da un URL
+def fetch_json(url):
     try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
+        response = requests.get(url)
+        response.raise_for_status()  # Rilancia l'eccezione per status code >= 400
         return response.json()
     except requests.exceptions.RequestException as e:
-        print(f"Errore nel fetch di {url}: {e}")
+        print(f"Errore nel recuperare il file {url}: {e}")
         return None
 
-def load_last_state() -> List[dict]:
-    """Carica lo stato precedente delle mod."""
-    print("Caricamento stato precedente...")
-    return fetch_json(STATE_URL) or []
+# Funzione per caricare lo stato precedente
+def load_last_state():
+    print("Caricando lo stato precedente...")
+    return fetch_json(state_url) or []
 
-def save_current_state(new_state: List[dict]) -> None:
-    """Salva lo stato corrente su GitHub."""
+# Funzione per salvare il nuovo stato su GitHub
+def save_current_state(new_state):
     try:
         headers = {
-            "Authorization": f"token {GITHUB_TOKEN}",
-            "Accept": "application/vnd.github.v3+json"
+            "Authorization": f"token {github_token}",
+            "Accept": "application/vnd.github.v3+json",
         }
-        
-        # Ottieni SHA del file esistente
-        current_file = requests.get(REPO_API_URL, headers=headers).json()
-        content = base64.b64encode(
-            json.dumps(new_state, indent=2, ensure_ascii=False).encode('utf-8')
-        ).decode('utf-8')
 
-        response = requests.put(
-            REPO_API_URL,
-            headers=headers,
-            json={
-                "message": "Auto-aggiornamento stato mod",
-                "content": content,
-                "sha": current_file['sha']
-            }
-        )
-        response.raise_for_status()
-        print("Stato salvato su GitHub")
-    except Exception as e:
-        print(f"Errore salvataggio stato: {e}")
+        # Recupera il SHA del file esistente
+        current_file = requests.get(repo_api_url, headers=headers).json()
+        sha = current_file['sha']
 
-def normalize_mod(mod: dict) -> dict:
+        # Codifica il contenuto in base64 mantenendo tutti i caratteri speciali
+        content = base64.b64encode(json.dumps(new_state, indent=2, ensure_ascii=False).encode('utf-8')).decode('utf-8')
+
+        # Aggiorna il file su GitHub
+        data = {
+            "message": "Aggiornamento stato mod con supporto per caratteri speciali",
+            "content": content,
+            "sha": sha,
+        }
+
+        response = requests.put(repo_api_url, headers=headers, json=data)
+        response.raise_for_status()  # Rilancia l'eccezione se status code >= 400
+        print("Stato aggiornato con successo su GitHub.")
+    except requests.exceptions.RequestException as e:
+        print(f"Errore nell'aggiornamento del file su GitHub: {e}")
+
+# Funzione per normalizzare i dati di una mod
+def normalize_mod(mod):
     """Normalizza i dati di una mod per il confronto."""
     def safe_strip(value):
-        return value.strip() if isinstance(value, str) else ''
-    
+        return value.strip() if isinstance(value, str) else ''  # Gestisce valori None
+
     return {
         'Author': safe_strip(mod.get('Author')),
         'ModName': safe_strip(mod.get('ModName')),
-        'Status': safe_strip(mod.get('Status', '')).upper(),
+        'Status': safe_strip(mod.get('Status')).upper(),
+        'SiteLink': safe_strip(mod.get('SiteLink')),
         'DataUltimaModifica': safe_strip(mod.get('DataUltimaModifica')),
-        # ... (altri campi come nel tuo originale)
+        'Translation': safe_strip(mod.get('Translation')),
+        'Categoria': safe_strip(mod.get('Categoria')),
+        'DependencyIT': safe_strip(mod.get('DependencyIT')),
+        'DescrizioneIT': safe_strip(mod.get('DescrizioneIT')),
+        'DependencyEN': safe_strip(mod.get('DependencyEN')),
+        'DescrizioneEN': safe_strip(mod.get('DescrizioneEN')),
     }
-
-def compare_status_only(old_state: List[dict], new_state: List[dict]) -> List[str]:
-    """Genera i messaggi delle modifiche rilevate."""
+# Funzione per confrontare gli stati e generare il messaggio
+def compare_status_only(old_state, new_state):
     messages = []
+
+    # Normalizza lo stato vecchio e nuovo
+    normalized_old = [normalize_mod(mod) for mod in old_state if normalize_mod(mod) is not None]
+    normalized_new = [normalize_mod(mod) for mod in new_state if normalize_mod(mod) is not None]
+
     status_icons = {
-        "AGGIORNATA": "🟢", "COMPATIBILE": "🔵", "ROTTA": "🔴",
-        "NUOVA": "🟣", "SCONOSCIUTA & OBSOLETA": "⚪️"
+        "AGGIORNATA": "🟢",
+        "COMPATIBILE": "🔵",
+        "ROTTA": "🔴",
+        "NUOVA": "🟣",
+        "SCONOSCIUTA & OBSOLETA": "⚪️"
     }
 
-    old_mods = {mod['ModName']: mod for mod in map(normalize_mod, old_state) if mod}
-    
-    for new_mod in map(normalize_mod, new_state):
-        if not new_mod or not all(k in new_mod for k in ['ModName', 'Author']):
-            continue
+    old_mod_names = {mod['ModName'] for mod in normalized_old}
 
-        old_mod = old_mods.get(new_mod['ModName'])
-        
-        if not old_mod:  # Nuova mod
-            status = new_mod.get('Status', 'NUOVA')
-            icon = status_icons.get(status, "⚪️")
-            messages.append(
-                f"MOD AGGIUNTA AL SITO\n\n*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
-                f"Stato {icon} _{status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-            )
-        elif (new_mod.get('Status') != old_mod.get('Status') and "SCONOSCIUTA" not in new_mod['Status']:
+    for new_mod in normalized_new:
+        if not all(key in new_mod and new_mod[key] for key in ['ModName', 'Author']):
+            continue  # Salta se mancano campi essenziali
+
+        # Mod nuova
+        if new_mod['ModName'] not in old_mod_names:
+            if 'Status' not in new_mod or not new_mod['Status']:
+                new_mod['Status'] = "NUOVA"
             icon = status_icons.get(new_mod['Status'], "⚪️")
             messages.append(
-                f"MOD\n\n*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
-                f"Stato {icon} _{new_mod['Status']}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                f"MOD AGGIUNTA AL SITO\n\n"
+                f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
+                f"Stato {icon} _{new_mod['Status']}_\n"
+                f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
             )
-        elif new_mod.get('DataUltimaModifica') != old_mod.get('DataUltimaModifica'):
-            messages.append(
-                f"MOD\n\n*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
-                f"Stato 🟢 _AGGIORNATA_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
-            )
+        else:
+            # Cerca la versione vecchia della mod
+            old_mod = next((mod for mod in normalized_old if mod['ModName'] == new_mod['ModName'] and mod['Author'] == new_mod['Author']), None)
+            if old_mod:
+                if new_mod.get('Status') != old_mod.get('Status') and "SCONOSCIUTA" not in new_mod['Status']:
+                    icon = status_icons.get(new_mod['Status'], "⚪️")
+                    messages.append(
+                        f"MOD\n\n"
+                        f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
+                        f"Stato {icon} _{new_mod['Status']}_\n"
+                        f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                    )
+                elif new_mod.get('DataUltimaModifica') != old_mod.get('DataUltimaModifica') and "SCONOSCIUTA" not in new_mod['Status']:
+                    new_mod['Status'] = "AGGIORNATA"
+                    icon = status_icons["AGGIORNATA"]
+                    messages.append(
+                        f"MOD\n\n"
+                        f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
+                        f"Stato {icon} _{new_mod['Status']}_\n"
+                        f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                    )
 
     return messages
 
-def send_telegram_batch(messages: List[str]) -> None:
-    """Invia messaggi in batch con rate limiting."""
-    total_messages = len(messages)
-    print(f"Preparando l'invio di {total_messages} messaggi in batch...")
+# Funzione per inviare un messaggio su Telegram
+def send_telegram_message(message, chat_id, topic_id):
+    url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
     
-    for i in range(0, total_messages, BATCH_SIZE):
-        batch = messages[i:i+BATCH_SIZE]
-        print(f"Inviando batch {i//BATCH_SIZE + 1}/{(total_messages-1)//BATCH_SIZE + 1}")
-        
-        for msg in batch:
-            send_telegram_message(msg)
-            time.sleep(DELAY_WITHIN_BATCH)
-        
-        if i + BATCH_SIZE < total_messages:
-            print(f"Pausa di {DELAY_BETWEEN_BATCHES} secondi...")
-            time.sleep(DELAY_BETWEEN_BATCHES)
-
-def send_telegram_message(text: str) -> None:
-    """Invia un singolo messaggio a Telegram."""
-    url = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage'
     payload = {
-        'chat_id': GROUP_ID,
-        'text': text,
-        'message_thread_id': TOPIC_ID,
-        'parse_mode': 'Markdown',
+        'chat_id': chat_id,
+        'text': message,
+        'message_thread_id': topic_id,
+        'parse_mode': 'Markdown',  # Usa MarkdownV2 per supporto caratteri
         'disable_web_page_preview': True
     }
     
     try:
-        response = requests.post(url, json=payload, timeout=10)
-        response.raise_for_status()
-        print(f"Messaggio inviato: {text[:50]}...")
-    except Exception as e:
-        print(f"Errore invio Telegram: {e}")
-
+        response = requests.post(url, data=payload)
+        response.raise_for_status()  # Se il codice di stato non è 200, solleva un'eccezione
+        print(f"Messaggio inviato con successo: {message}")
+    except requests.exceptions.RequestException as e:
+        print(f"Errore nell'invio del messaggio a Telegram: {e}")
+        
+def send_telegram_batch(messages, chat_id, topic_id, batch_size=20, delay=60):
+    total = len(messages)
+    for i in range(0, total, batch_size):
+        batch = messages[i:i+batch_size]
+        for message in batch:
+            send_telegram_message(message, chat_id, topic_id)
+            time.sleep(2)  # Ritardo tra i singoli messaggi per sicurezza
+        if i + batch_size < total:
+            print(f"Aspetto {delay} secondi per evitare limiti Telegram...")
+            time.sleep(delay)
+            
+# Funzione per monitorare le modifiche
 async def monitor_mods():
-    """Monitor principale."""
-    print("Avvio monitoraggio...")
+    print("Monitorando le modifiche...")
     last_state = load_last_state()
-    new_state = fetch_json(MODS_URL)
-    
-    if not new_state:
-        print("Errore: impossibile ottenere i dati delle mod")
-        return
+    new_state = fetch_json(mods_url)
 
-    messages = compare_status_only(last_state, new_state)
-    
-    if messages:
-        print(f"Trovate {len(messages)} modifiche")
-        send_telegram_batch(messages)
-        save_current_state(new_state)
+    if new_state:
+        messages = compare_status_only(last_state, new_state)
+
+        if messages:
+          print("Modifiche di status rilevate! Inviando notifiche...")
+
+    # Invio in batch dei messaggi Telegram per evitare rate limit
+            send_telegram_batch(messages, group_id, topic_id)
+
+    # Dopo l'invio dei messaggi, aggiorna lo stato su GitHub
+         save_current_state(new_state)
+        else:
+            print("Nessuna modifica dello status trovata.")
     else:
-        print("Nessuna modifica rilevata")
+        print("Errore nel recupero delle informazioni sui mods.")
 
 if __name__ == "__main__":
     try:
         asyncio.run(monitor_mods())
     except Exception as e:
-        print(f"Errore critico: {e}")
+        print(f"Errore nell'esecuzione del programma: {e}")
