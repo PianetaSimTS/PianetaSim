@@ -3,6 +3,8 @@ import json
 import base64
 import asyncio
 import os
+import time
+import math
 
 # Recupera i valori dai segreti
 telegram_token = '7390613815:AAEyjjGxBGdIaWGrCXR-8MSsjdtZ_tqxW1Y'
