@@ -4,6 +4,7 @@ import base64
 import asyncio
 import os
 import time
+import math
 
 # Recupera i valori dai segreti
 telegram_token = '7390613815:AAEyjjGxBGdIaWGrCXR-8MSsjdtZ_tqxW1Y'
@@ -154,6 +155,17 @@ def send_telegram_message(message, chat_id, topic_id):
     except requests.exceptions.RequestException as e:
         print(f"Errore nell'invio del messaggio a Telegram: {e}")
 
+def send_telegram_batch(messages, chat_id, topic_id, batch_size=20, delay=60):
+    total = len(messages)
+    for i in range(0, total, batch_size):
+        batch = messages[i:i+batch_size]
+        for message in batch:
+            send_telegram_message(message, chat_id, topic_id)
+            time.sleep(2)  # Ritardo tra i singoli messaggi per sicurezza
+        if i + batch_size < total:
+            print(f"Aspetto {delay} secondi per evitare limiti Telegram...")
+            time.sleep(delay)
+
 # Funzione per monitorare le modifiche
 async def monitor_mods():
     print("Monitorando le modifiche...")
@@ -163,16 +175,14 @@ async def monitor_mods():
     if new_state:
         messages = compare_status_only(last_state, new_state)
 
-        if messages:
-            print("Modifiche di status rilevate! Inviando notifiche...")
+       if messages:
+        print("Modifiche di status rilevate! Inviando notifiche...")
 
-            # Invio dei messaggi Telegram
-            for message in messages:
-             send_telegram_message(message, group_id, topic_id)
-            time.sleep(2) 
+    # Invio in batch dei messaggi Telegram per evitare rate limit
+       send_telegram_batch(messages, group_id, topic_id)
 
-            # Dopo l'invio dei messaggi, aggiorna lo stato su GitHub
-            save_current_state(new_state)
+    # Dopo l'invio dei messaggi, aggiorna lo stato su GitHub
+       save_current_state(new_state)
         else:
             print("Nessuna modifica dello status trovata.")
     else:
