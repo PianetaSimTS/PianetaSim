@@ -173,20 +173,20 @@ async def monitor_mods():
     new_state = fetch_json(mods_url)
 
     if new_state:
-        messages = compare_status_only(last_state, new_state)
+      messages = compare_status_only(last_state, new_state)
 
-        if messages:
-          print("Modifiche di status rilevate! Inviando notifiche...")
+      if messages:
+        print("Modifiche di status rilevate! Inviando notifiche...")
 
-    # Invio in batch dei messaggi Telegram per evitare rate limit
-            send_telegram_batch(messages, group_id, topic_id)
+        # Invio in batch dei messaggi Telegram per evitare rate limit
+        send_telegram_batch(messages, group_id, topic_id)
 
-    # Dopo l'invio dei messaggi, aggiorna lo stato su GitHub
-         save_current_state(new_state)
-        else:
-            print("Nessuna modifica dello status trovata.")
+        # Dopo l'invio dei messaggi, aggiorna lo stato su GitHub
+        save_current_state(new_state)
+      else:
+        print("Nessuna modifica dello status trovata.")
     else:
-        print("Errore nel recupero delle informazioni sui mods.")
+     print("Errore nel recupero delle informazioni sui mods.")
 
 if __name__ == "__main__":
     try:
