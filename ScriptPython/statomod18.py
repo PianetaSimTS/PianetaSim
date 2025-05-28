@@ -107,7 +107,7 @@ def compare_status_only(old_state, new_state):
                 new_mod['Status'] = "NUOVA"
             icon = status_icons.get(new_mod['Status'], "⚪️")
             messages.append(
-                f"MOD 18+ AGGIUNTA AL SITO\n\n"
+                f"MOD AGGIUNTA AL SITO\n\n"
                 f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
                 f"Stato {icon} _{new_mod['Status']}_\n"
                 f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
@@ -119,7 +119,7 @@ def compare_status_only(old_state, new_state):
                 if new_mod.get('Status') != old_mod.get('Status') and "SCONOSCIUTA" not in new_mod['Status']:
                     icon = status_icons.get(new_mod['Status'], "⚪️")
                     messages.append(
-                        f"MOD 18+\n\n"
+                        f"MOD\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
                         f"Stato {icon} _{new_mod['Status']}_\n"
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
@@ -128,7 +128,7 @@ def compare_status_only(old_state, new_state):
                     new_mod['Status'] = "AGGIORNATA"
                     icon = status_icons["AGGIORNATA"]
                     messages.append(
-                        f"MOD 18+\n\n"
+                        f"MOD\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
                         f"Stato {icon} _{new_mod['Status']}_\n"
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
@@ -154,7 +154,7 @@ def send_telegram_message(message, chat_id, topic_id):
         print(f"Messaggio inviato con successo: {message}")
     except requests.exceptions.RequestException as e:
         print(f"Errore nell'invio del messaggio a Telegram: {e}")
-        
+
 def send_telegram_batch(messages, chat_id, topic_id, batch_size=20, delay=60):
     total = len(messages)
     for i in range(0, total, batch_size):
@@ -187,6 +187,7 @@ async def monitor_mods():
         print("Nessuna modifica dello status trovata.")
     else:
      print("Errore nel recupero delle informazioni sui mods.")
+
 
 if __name__ == "__main__":
     try:
