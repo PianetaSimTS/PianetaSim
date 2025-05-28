@@ -107,7 +107,7 @@ def compare_status_only(old_state, new_state):
                 new_mod['Status'] = "NUOVA"
             icon = status_icons.get(new_mod['Status'], "⚪️")
             messages.append(
-                f"MOD AGGIUNTA AL SITO\n\n"
+                f"MOD 18+ AGGIUNTA AL SITO\n\n"
                 f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
                 f"Stato {icon} _{new_mod['Status']}_\n"
                 f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
@@ -119,7 +119,7 @@ def compare_status_only(old_state, new_state):
                 if new_mod.get('Status') != old_mod.get('Status') and "SCONOSCIUTA" not in new_mod['Status']:
                     icon = status_icons.get(new_mod['Status'], "⚪️")
                     messages.append(
-                        f"MOD\n\n"
+                        f"MOD 18+\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
                         f"Stato {icon} _{new_mod['Status']}_\n"
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
@@ -128,7 +128,7 @@ def compare_status_only(old_state, new_state):
                     new_mod['Status'] = "AGGIORNATA"
                     icon = status_icons["AGGIORNATA"]
                     messages.append(
-                        f"MOD\n\n"
+                        f"MOD 18+\n\n"
                         f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
                         f"Stato {icon} _{new_mod['Status']}_\n"
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
