@@ -41,14 +41,14 @@
   {
     "Author": "Andirz",
     "ModName": "Obscura Network (+18)",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/obscura-network",
-    "DataUltimaModifica": "27/05/2025",
+    "DataUltimaModifica": "02/06/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "PSO Shared Library - Core Library - DLC Vita Universitaria (Facoltativo)",
+    "DependencyIT": "Smart Core Script & Package - P.S.O. Common Package - DLC Vita Universitaria (Facoltativo)",
     "DescrizioneIT": "Aggiunge il dark web e la possibilità di comprare gli oggetti proibiti.",
-    "DependencyEN": "PSO Shared Library - Core Library - DLC Discover University (Optional)",
+    "DependencyEN": "Smart Core Script & Package - P.S.O. Common Package - DLC Discover University (Optional)",
     "DescrizioneEN": "Adds the dark web and the ability to buy prohibited items."
   },
   {
