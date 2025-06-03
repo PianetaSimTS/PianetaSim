@@ -2368,9 +2368,9 @@
   {
     "Author": "SimRealist",
     "ModName": "Mortem",
-    "Status": "compatibile",
+    "Status": "rotta",
     "SiteLink": "https://simrealist.itch.io/mortem",
-    "DataUltimaModifica": "27/05/2025",
+    "DataUltimaModifica": "",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
     "DependencyIT": "",
@@ -2381,9 +2381,9 @@
   {
     "Author": "SimRealist",
     "ModName": "Organic",
-    "Status": "rotta",
+    "Status": "compatibile",
     "SiteLink": "https://simrealist.itch.io/organic",
-    "DataUltimaModifica": "",
+    "DataUltimaModifica": "27/05/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
     "DependencyIT": "",
