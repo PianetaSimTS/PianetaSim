@@ -12,25 +12,32 @@ group_id = '-1001771715212'
 topic_id = '79558'
 github_token = os.getenv('GITHUB_TOKEN')
 
-# URL dei file su GitHub
-mods_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/mods18.json'
-state_url = 'https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/telegramstato/last_statemod18.json'
-repo_api_url = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_statemod18.json'
+# URL dell'API GitHub per i file
+repo_api_url_mods = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/mods18.json'
+repo_api_url_state = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_statemod18.json'
 
-# Funzione per scaricare un file JSON da un URL
-def fetch_json(url):
+# Funzione per scaricare un file JSON utilizzando l'API di GitHub
+def fetch_json_from_github(api_url):
     try:
-        response = requests.get(url)
+        headers = {
+            "Authorization": f"token {github_token}",
+            "Accept": "application/vnd.github.v3+json",
+        }
+        response = requests.get(api_url, headers=headers)
         response.raise_for_status()  # Rilancia l'eccezione per status code >= 400
-        return response.json()
+        content = response.json()
+        
+        # Decodifica il contenuto in base64
+        file_content = base64.b64decode(content['content']).decode('utf-8')
+        return json.loads(file_content)
     except requests.exceptions.RequestException as e:
-        print(f"Errore nel recuperare il file {url}: {e}")
+        print(f"Errore nel recuperare il file da GitHub: {e}")
         return None
 
 # Funzione per caricare lo stato precedente
 def load_last_state():
     print("Caricando lo stato precedente...")
-    return fetch_json(state_url) or []
+    return fetch_json_from_github(repo_api_url_state) or []
 
 # Funzione per salvare il nuovo stato su GitHub
 def save_current_state(new_state):
@@ -41,7 +48,7 @@ def save_current_state(new_state):
         }
 
         # Recupera il SHA del file esistente
-        current_file = requests.get(repo_api_url, headers=headers).json()
+        current_file = requests.get(repo_api_url_state, headers=headers).json()
         sha = current_file['sha']
 
         # Codifica il contenuto in base64 mantenendo tutti i caratteri speciali
@@ -54,7 +61,7 @@ def save_current_state(new_state):
             "sha": sha,
         }
 
-        response = requests.put(repo_api_url, headers=headers, json=data)
+        response = requests.put(repo_api_url_state, headers=headers, json=data)
         response.raise_for_status()  # Rilancia l'eccezione se status code >= 400
         print("Stato aggiornato con successo su GitHub.")
     except requests.exceptions.RequestException as e:
@@ -79,6 +86,7 @@ def normalize_mod(mod):
         'DependencyEN': safe_strip(mod.get('DependencyEN')),
         'DescrizioneEN': safe_strip(mod.get('DescrizioneEN')),
     }
+
 # Funzione per confrontare gli stati e generare il messaggio
 def compare_status_only(old_state, new_state):
     messages = []
@@ -154,7 +162,7 @@ def send_telegram_message(message, chat_id, topic_id):
         print(f"Messaggio inviato con successo: {message}")
     except requests.exceptions.RequestException as e:
         print(f"Errore nell'invio del messaggio a Telegram: {e}")
-
+        
 def send_telegram_batch(messages, chat_id, topic_id, batch_size=20, delay=60):
     total = len(messages)
     for i in range(0, total, batch_size):
@@ -170,7 +178,7 @@ def send_telegram_batch(messages, chat_id, topic_id, batch_size=20, delay=60):
 async def monitor_mods():
     print("Monitorando le modifiche...")
     last_state = load_last_state()
-    new_state = fetch_json(mods_url)
+    new_state = fetch_json_from_github(repo_api_url_mods)
 
     if new_state:
       messages = compare_status_only(last_state, new_state)
@@ -188,9 +196,9 @@ async def monitor_mods():
     else:
      print("Errore nel recupero delle informazioni sui mods.")
 
-
 if __name__ == "__main__":
     try:
         asyncio.run(monitor_mods())
     except Exception as e:
         print(f"Errore nell'esecuzione del programma: {e}")
+
