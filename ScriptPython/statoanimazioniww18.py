@@ -79,7 +79,7 @@ def compare_status_only(old_state, new_state):
         "AGGIORNATA": "🟢",
         "COMPATIBILE": "🔵",
         "ROTTA": "🔴",
-        "NUOVA": "🟣",
+        "NUOVA": "🔵",
         "SCONOSCIUTA & OBSOLETA": "⚪️"
     }
 
