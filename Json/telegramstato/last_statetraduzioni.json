@@ -282,8 +282,8 @@
     "Creator": "Andirz",
     "Title": "SimSim Online Store",
     "ReleaseVersion": "5.0.0",
-    "CurrentVersion": "4.9.6",
-    "Status": "da-aggiornare",
+    "CurrentVersion": "5.0.0",
+    "Status": "aggiornata",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-simsim-107757966?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
@@ -1150,14 +1150,5 @@
     "Status": "compatibile",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/nuove-traduzioni-123892248?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
-  },
-  {
-    "Creator": "Test",
-    "Title": "test",
-    "ReleaseVersion": "17/04/2025",
-    "CurrentVersion": "17/04/2025",
-    "Status": "compatibile",
-    "Translator": "di nico",
-    "Link": "test"
   }
 ]
