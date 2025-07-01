@@ -5,7 +5,7 @@ import asyncio
 import os
 
 # Token e ID Telegram
-telegram_token = '7390613815:AAEyjjGxBGdIaWGrCXR-8MSsjdtZ_tqxW1Y'
+telegram_token = os.getenv("TELEGRAM_TOKEN")
 group_id = '-1001516258837'
 topic_id = '26621'
 
