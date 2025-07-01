@@ -27,3 +27,4 @@ jobs:
             python ScriptPython/statotraduzioni.py
 env:
   GITHUB_TOKEN: ${{ secrets.TOKEN }}
+  TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
