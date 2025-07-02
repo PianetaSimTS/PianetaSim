@@ -1340,6 +1340,19 @@
   },
   {
     "Author": "LoryNa",
+    "ModName": "Negozio Premaman per mod MIG ",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/maternity-shop-epi-mod",
+    "DataUltimaModifica": "02/07/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Gameplay",
+    "DependencyIT": "Necessario DLC Vita da Liceali",
+    "DescrizioneIT": "Questo è il negozio di maternità per la mod Maggiori interazioni in gravidanza.",
+    "DependencyEN": "Requires High School Years EP",
+    "DescrizioneEN": "This is the Maternity Shop for Expanded Pregnancy Interactions mod."
+  },
+  {
+    "Author": "LoryNa",
     "ModName": "Scoperte Giovanili",
     "Status": "compatibile",
     "SiteLink": "https://www.lorynamods.com/scoperte-giovanili/",
