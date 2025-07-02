@@ -683,9 +683,9 @@
     "DataUltimaModifica": "03/07/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "Core Library - DLC Gita all'Aria Aperta & Avventura nella Giungla",
+    "DependencyIT": "Smart Core Script - DLC Gita all'Aria Aperta & Avventura nella Giungla",
     "DescrizioneIT": "Espande le opzioni di erboristeria nel gioco, introducendo nuove erbe e rimedi tipici di Selvadorada. I Sim possono raccogliere e utilizzare piante esotiche per creare pozioni e trattamenti, arricchendo le dinamiche di gioco legate alla cura e alla medicina naturale.",
-    "DependencyEN": "Core Library - DLC Outdoor Retreat & Jungle Adventure",
+    "DependencyEN": "Smart Core Script - DLC Outdoor Retreat & Jungle Adventure",
     "DescrizioneEN": "Expands herbalism options in the game, introducing new herbs and remedies typical of Selvadorada. Sims can collect and use exotic plants to create potions and treatments, enriching the game dynamics related to healing and natural medicine."
   },
   {
@@ -723,9 +723,9 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "DependencyIT": "",
-    "DescrizioneIT": "Serve per il funzionamento delle mod della serie Smart.",
+    "DescrizioneIT": "Serve per il funzionamento delle altre mod di Andirz.",
     "DependencyEN": "",
-    "DescrizioneEN": "It is used for the operation of the Smart series mods."
+    "DescrizioneEN": "It is required for the other Andirz mods to work."
   },
   {
     "Author": "Andirz",
@@ -735,9 +735,9 @@
     "DataUltimaModifica": "03/07/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "DependencyIT": "Core Library - Smart Core Script",
+    "DependencyIT": "Smart Core Script",
     "DescrizioneIT": "Offre opzioni avanzate per modificare facilmente il genere dei Sim, consentendo di cambiare rapidamente il sesso, l'aspetto fisico o le caratteristiche di genere senza dover ricorrere a comandi complessi. Perfetto per chi desidera maggiore flessibilità nella gestione dei Sim e delle loro identità.",
-    "DependencyEN": "Core Library - Smart Core Script",
+    "DependencyEN": "Smart Core Script",
     "DescrizioneEN": "It offers advanced options to easily change the gender of Sims, allowing them to quickly change sex, physical appearance, or gender characteristics without having to resort to complex commands. Perfect for those who want more flexibility in managing Sims and their identities."
   },
   {
@@ -748,9 +748,9 @@
     "DataUltimaModifica": "03/07/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "DependencyIT": "Core Library - Smart Core Script",
+    "DependencyIT": "Smart Core Script",
     "DescrizioneIT": "Semplifica l'utilizzo dei trucchi per i Sim, permettendo di modificare facilmente aspetti come bisogni, emozioni, abilità e carriera senza dover usare comandi complessi. Perfetto per chi cerca un modo rapido per personalizzare i Sim e gestire il gameplay in modo più efficiente.",
-    "DependencyEN": "Core Library - Smart Core Script",
+    "DependencyEN": "Smart Core Script",
     "DescrizioneEN": "Simplifies the use of tricks for Sims, allowing them to easily change aspects such as needs, emotions, skills and careers without having to use complex commands. Perfect for those looking for a quick way to customize Sims and manage gameplay more efficiently."
   },
   {
