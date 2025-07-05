@@ -586,19 +586,6 @@
   },
   {
     "Author": "Andirz",
-    "ModName": "Outdoor Tweaks",
-    "Status": "obsoleta",
-    "SiteLink": null,
-    "DataUltimaModifica": "",
-    "Translation": "non necessaria",
-    "Categoria": "Oggetti Funzionali",
-    "DependencyIT": "",
-    "DescrizioneIT": "",
-    "DependencyEN": "",
-    "DescrizioneEN": ""
-  },
-  {
-    "Author": "Andirz",
     "ModName": "P.S.O. Common Package",
     "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/pso-shared-library",
@@ -817,6 +804,19 @@
     "DescrizioneIT": "Rende visibile la mano dominante dei Sim durante le interazioni quotidiane, come scrivere, cucinare o usare il computer. Aggiunge un tocco di realismo e personalizzazione, rendendo ogni Sim più unico nella sua gestualità.",
     "DependencyEN": "",
     "DescrizioneEN": "It makes the Sims' dominant hand visible during everyday interactions, such as writing, cooking or using the computer. It adds a touch of realism and customization, making each Sim more unique in its gestures."
+  },
+  {
+    "Author": "Andirz",
+    "ModName": "Visible Weather Preferences",
+    "Status": "compatibile",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/weather-preferences-likes-dislikes",
+    "DataUltimaModifica": "01/07/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Tratti",
+    "DependencyIT": "The Custom Preferences Mod - DLC Stagioni",
+    "DescrizioneIT": "Con questa mod puoi rendere visibili le preferenze meteo dei tuoi Sims (sole, pioggia, neve e vento)! Normalmente, queste preferenze sono nascoste sotto forma di tratti nascosti. Questa mod non aggiunge alcun nuovo elemento al gameplay! Solo ciò che è già presente nel gioco ma è stato nascosto dal giocatore viene visualizzato come tratti \"Mi piace\" e \"Non mi piace\" . ",
+    "DependencyEN": "The Custom Preferences Mod - DLC Seasons",
+    "DescrizioneEN": "With this mod you can make the weather preferences of your Sims (for sun, rain, snow and wind) visible! Normally, these preferences are hidden from you as so-called hidden traits. This mod does not add any new gameplay! Only what is already present in the game but has been hidden by the player is visualized as Likes and Dislikes traits. "
   },
   {
     "Author": "Andirz",
