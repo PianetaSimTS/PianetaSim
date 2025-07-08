@@ -1120,7 +1120,7 @@
   {
     "Author": "KiaraSims4Mods",
     "ModName": "Elenco Generale",
-    "Status": null,
+    "Status": "aggiornata",
     "SiteLink": "https://docs.google.com/spreadsheets/d/1Rk3K_Z_6Wf1t5V02PDA008wOOKfKjVwIWpw8mlglngM/edit?gid=1364221733#gid=1364221733",
     "DataUltimaModifica": null,
     "Translation": "",
@@ -2511,9 +2511,9 @@
   {
     "Author": "SonozakiSisters",
     "ModName": "Twins Mod",
-    "Status": "rotta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/twins-mod-1-0-107832232",
-    "DataUltimaModifica": "",
+    "DataUltimaModifica": "01/07/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "Core Library",
