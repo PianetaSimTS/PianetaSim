@@ -1120,7 +1120,7 @@
   {
     "Author": "KiaraSims4Mods",
     "ModName": "Elenco Generale",
-    "Status": "aggiornata",
+    "Status": null,
     "SiteLink": "https://docs.google.com/spreadsheets/d/1Rk3K_Z_6Wf1t5V02PDA008wOOKfKjVwIWpw8mlglngM/edit?gid=1364221733#gid=1364221733",
     "DataUltimaModifica": null,
     "Translation": "",
@@ -2485,9 +2485,9 @@
   {
     "Author": "SonozakiSisters",
     "ModName": "Choose High School Classmates 2.0",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/choose-high-2-0-121367985",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "01/07/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "DependencyIT": "Core Library - DLC Vita da Liceali",
