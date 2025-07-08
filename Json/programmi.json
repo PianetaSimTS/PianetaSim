@@ -51,11 +51,11 @@
     "programma": "teste",
     "windows": false,
     "macOS": false,
-    "statuswindows": "compatibile",
+    "statuswindows": "rotto",
     "statusmacos": "rotto",
     "link_programmawindows": "test",
     "link_programmamacos": "test",
-    "data_aggiornamentowindows": "01/07/2025",
+    "data_aggiornamentowindows": "",
     "data_aggiornamentomacos": "te",
     "video_spiegativo": "te"
   }
