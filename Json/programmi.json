@@ -46,17 +46,5 @@
     "data_aggiornamentowindows": "01/07/2025",
     "data_aggiornamentomacos": "01/07/2025",
     "video_spiegativo": "https://youtu.be/IiHT_s7NBYw?feature=shared"
-  },
-  {
-    "programma": "teste",
-    "windows": false,
-    "macOS": false,
-    "statuswindows": "nuovo",
-    "statusmacos": "compatibile",
-    "link_programmawindows": "test",
-    "link_programmamacos": "test",
-    "data_aggiornamentowindows": null,
-    "data_aggiornamentomacos": "01/07/2025",
-    "video_spiegativo": "te"
   }
 ]
