@@ -1133,7 +1133,7 @@
   {
     "Author": "KiaraSims4Mods",
     "ModName": "Elenco Generale",
-    "Status": null,
+    "Status": "aggiornata",
     "SiteLink": "https://docs.google.com/spreadsheets/d/1Rk3K_Z_6Wf1t5V02PDA008wOOKfKjVwIWpw8mlglngM/edit?gid=1364221733#gid=1364221733",
     "DataUltimaModifica": null,
     "Translation": "",
@@ -1276,7 +1276,7 @@
   {
     "Author": "LittleMsSam",
     "ModName": "Elenco Generale",
-    "Status": null,
+    "Status": "aggiornata",
     "SiteLink": "https://littlemssam.tumblr.com/",
     "DataUltimaModifica": "10/07/2025",
     "Translation": "inclusa",
@@ -2537,9 +2537,9 @@
   {
     "Author": "SpinningPlumbobs",
     "ModName": "Animated Tails",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/posts/animated-tails-120904590",
-    "DataUltimaModifica": "01/07/2025",
+    "DataUltimaModifica": "20/07/2025",
     "Translation": "da-scaricare",
     "Categoria": "Varie",
     "DependencyIT": "",
