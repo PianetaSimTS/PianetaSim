@@ -1496,6 +1496,19 @@
   },
   {
     "Author": "Lumpinou",
+    "ModName": "Immortalize Moments",
+    "Status": "nuova",
+    "SiteLink": "https://www.patreon.com/posts/135400579",
+    "DataUltimaModifica": "01/08/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Utilità",
+    "DependencyIT": "Toolbox di Lumpinou",
+    "DescrizioneIT": "La mod Immortalize Moments permette di salvare screenshot dal gioco con testo personalizzato, accompagnati da dati come umore del Sim, lotto e orario. Le immagini possono essere visualizzate e condivise fuori dal gioco, creando un diario emozionale delle sessioni.",
+    "DependencyEN": "Toolbox by Lumpinou",
+    "DescrizioneEN": "The Immortalize Moments mod allows screenshots from the game to be saved with custom text, accompanied by data such as Sim's mood, plot and time. The images can be viewed and shared outside the game, creating an emotional diary of the sessions."
+  },
+  {
+    "Author": "Lumpinou",
     "ModName": "LGBTQIA+: Gender & Orientation Overhaul",
     "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/posts/lgbtqia-mod-v1-1-68337709",
