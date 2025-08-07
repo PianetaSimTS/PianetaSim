@@ -379,6 +379,15 @@
   },
   {
     "Creator": "Basemental",
+    "Title": "Basemental Drugs (+18)",
+    "ReleaseVersion": "7.18.178",
+    "CurrentVersion": "7.18.178",
+    "Status": "nuova",
+    "Translator": "di LadyPsycoTrilly",
+    "Link": "https://www.patreon.com/posts/135560754"
+  },
+  {
+    "Creator": "Basemental",
     "Title": "Basemental Gangs (+18)",
     "ReleaseVersion": "6.20.62",
     "CurrentVersion": "6.18.56",
@@ -394,15 +403,6 @@
     "Status": "compatibile",
     "Translator": "di LadyPsycoTrilly",
     "Link": "https://www.simfileshare.net/download/5394453/"
-  },
-  {
-    "Creator": "Basemental",
-    "Title": "Basemental Drugs (+18)",
-    "ReleaseVersion": "7.18.178",
-    "CurrentVersion": "7.18.178",
-    "Status": "nuova",
-    "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/135560754"
   },
   {
     "Creator": "Carl's Guides",
@@ -676,6 +676,15 @@
   },
   {
     "Creator": "Lumpinou",
+    "Title": "Immortalize Moments",
+    "ReleaseVersion": "01/08/2025",
+    "CurrentVersion": "01/08/2025",
+    "Status": "nuova",
+    "Translator": "di LadyPsycoTrilly",
+    "Link": "https://www.patreon.com/posts/135451277?pr=true"
+  },
+  {
+    "Creator": "Lumpinou",
     "Title": "LGBTQIA+: Gender & Orientation Overhaul",
     "ReleaseVersion": "2.3",
     "CurrentVersion": "2.3",
@@ -745,15 +754,6 @@
     "Status": "compatibile",
     "Translator": "di LoryNa",
     "Link": "https://www.curseforge.com/sims4/translations/trad-ita-science-baby-tweak-di-lumpinou"
-  },
-  {
-    "Creator": "Lumpinou",
-    "Title": "Immortalize Moments",
-    "ReleaseVersion": "01/08/2025",
-    "CurrentVersion": "01/08/2025",
-    "Status": "nuova",
-    "Translator": "di LadyPsycoTrilly",
-    "Link": "https://www.patreon.com/posts/135451277?pr=true"
   },
   {
     "Creator": "Maplebell",
@@ -1168,6 +1168,15 @@
     "Status": "da-aggiornare",
     "Translator": "di Isy's",
     "Link": "https://www.patreon.com/posts/wonderful-whims-67413206"
+  },
+  {
+    "Creator": "TwistedMexi",
+    "Title": "Better BuildBuy",
+    "ReleaseVersion": "4.0",
+    "CurrentVersion": "4.0",
+    "Status": "nuova",
+    "Translator": "di vale93_games",
+    "Link": "https://vale93games.it/download/3263/"
   },
   {
     "Creator": "Waronkcc",
