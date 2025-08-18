@@ -106,7 +106,7 @@ def compare_status_only(old_state, new_state):
             if new_status == "DA-AGGIORNARE":
                 new_status = "DA AGGIORNARE"
             icon = status_icons.get(new_status, "⚪️")
-            msg = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+            msg = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
             messages.append(msg)
         else:
             old_mod = old_mods[new_key]
@@ -116,7 +116,7 @@ def compare_status_only(old_state, new_state):
                 if new_status == "DA-AGGIORNARE":
                     new_status = "DA AGGIORNARE"
                 icon = status_icons.get(new_status, "⚪️")
-                msg = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {icon} _{new_status}_\nVersione Mod: {new_release_version}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+                msg = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {icon} _{new_status}_\nVersione Mod: {new_release_version}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
                 messages.append(msg)
 
     return messages
