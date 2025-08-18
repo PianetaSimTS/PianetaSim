@@ -89,7 +89,7 @@ def compare_status_only(old_state, new_state):
 
         if not old_mod:
             # Nuovo programma
-            message = f"PROGRAMMA\n\n*{name}*\n\nWindows {status_icons.get(new_win, '⚪️')} _{new_win}_ Data ➜ *{new_date_win}*\nmacOS {status_icons.get(new_mac, '⚪️')} _{new_mac}_ Data ➜ *{new_date_mac}*\n\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
+            message = f"PROGRAMMA\n\n*{name}*\n\nWindows {status_icons.get(new_win, '⚪️')} _{new_win}_ Data ➜ *{new_date_win}*\nmacOS {status_icons.get(new_mac, '⚪️')} _{new_mac}_ Data ➜ *{new_date_mac}*\n\nLink [SITO]()"
             messages.append(message)
         else:
             old_win = old_mod.get('statuswindows', 'SCONOSCIUTO').upper()
