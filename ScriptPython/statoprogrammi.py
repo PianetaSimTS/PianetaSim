@@ -89,7 +89,7 @@ def compare_status_only(old_state, new_state):
 
         if not old_mod:
             # Nuovo programma
-            message = f"PROGRAMMA\n\n*{name}*\n\nWindows {status_icons.get(new_win, '⚪️')} _{new_win}_ Data ➜ *{new_date_win}*\nmacOS {status_icons.get(new_mac, '⚪️')} _{new_mac}_ Data ➜ *{new_date_mac}*\n\nLink [SITO](https://pianetasimts.github.io/PianetaSim/)"
+            message = f"PROGRAMMA\n\n*{name}*\n\nWindows {status_icons.get(new_win, '⚪️')} _{new_win}_ Data ➜ *{new_date_win}*\nmacOS {status_icons.get(new_mac, '⚪️')} _{new_mac}_ Data ➜ *{new_date_mac}*\n\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
             messages.append(message)
         else:
             old_win = old_mod.get('statuswindows', 'SCONOSCIUTO').upper()
@@ -98,7 +98,7 @@ def compare_status_only(old_state, new_state):
             old_date_mac = old_mod.get('data_aggiornamentomacos', '')
 
             if new_win != old_win or new_mac != old_mac or new_date_win != old_date_win or new_date_mac != old_date_mac:
-                message = f"PROGRAMMA\n\n*{name}*\n\nWindows {status_icons.get(new_win, '⚪️')} _{new_win}_ Data ➜ *{new_date_win}*\nmacOS {status_icons.get(new_mac, '⚪️')} _{new_mac}_ Data ➜ *{new_date_mac}*\n\nLink [SITO](https://pianetasimts.github.io/PianetaSim/)"
+                message = f"PROGRAMMA\n\n*{name}*\n\nWindows {status_icons.get(new_win, '⚪️')} _{new_win}_ Data ➜ *{new_date_win}*\nmacOS {status_icons.get(new_mac, '⚪️')} _{new_mac}_ Data ➜ *{new_date_mac}*\n\nLink [SITO](https://pianetasimts.github.io/PianetaSim/index.html)"
                 messages.append(message)
 
     return messages
