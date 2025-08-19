@@ -2394,9 +2394,9 @@
   {
     "Author": "Scumbumbo/LittleMsSam",
     "ModName": "Set Filters On Paintings by Reference",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://scumbumbomods.com/set-filters-on-paintings-by-reference/",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "19/08/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "DependencyIT": "XML Injector",
@@ -2407,9 +2407,9 @@
   {
     "Author": "Scumbumbo/Triplis/LittleMsSam",
     "ModName": "XML Injector",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://scumbumbomods.com/xml-injector",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "19/08/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "DependencyIT": "",
