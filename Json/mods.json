@@ -1978,15 +1978,15 @@
   {
     "Author": "LunarBritney",
     "ModName": "2025 Main Menu Readjusted",
-    "Status": "rotta",
+    "Status": "obsoleta",
     "SiteLink": "https://modthesims.info/d/688934/2025-main-menu-readjusted.html",
     "DataUltimaModifica": "",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": "",
+    "DependencyIT": "Sostituita dalla Refreshed Main Menu 3.0 di SimMattically",
     "DescrizioneIT": "Questa mod aumenta le dimensioni dell'immagine della famiglia. In piú ci sono vari file che puoi scegliere da mettere oppure no, NON sono necessari tutti. Leggete BENE la descrizione prima di scaricarlo!",
-    "DependencyEN": "This mod increases the size of the family image. Plus there are various files you can choose to put in or not, NOT all are needed. Please read the description WELL before downloading it!",
-    "DescrizioneEN": ""
+    "DependencyEN": "Replaced by Refreshed Main Menu 3.0 from SimMattically",
+    "DescrizioneEN": "This mod increases the size of the family image. Plus there are various files you can choose to put in or not, NOT all are needed. Please read the description WELL before downloading it!"
   },
   {
     "Author": "LunarBritney",
@@ -2429,6 +2429,32 @@
     "DescrizioneIT": "Serve per il funzionamento di altre mod.",
     "DependencyEN": "",
     "DescrizioneEN": "It is needed for the operation of other mods."
+  },
+  {
+    "Author": "SimMattically",
+    "ModName": "Better Simology Panel",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.patreon.com/posts/better-simology-130566542?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share",
+    "DataUltimaModifica": "20/08/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Utilità",
+    "DependencyIT": "",
+    "DescrizioneIT": "Filtra le informazioni dei tuoi Sims con nuove categorie. Personalità: tratti del Sim, stili di vita, valori del personaggio, poteri fantasma e moduli robot. Preferenze: Mi piace e non mi piace e Preferenze relazionali. Risultati e crescita: traguardi raggiunti, titoli di studio conseguiti e buoni propositi. Posizione pubblica: immagine pubblica e reputazione della fazione. nArmonia interiore: fortuna ed equilibrio. Piani d'azione di quartiere.",
+    "DependencyEN": "",
+    "DescrizioneEN": "Filter Your Sims' Info with New Categories. Personality: Sim's Traits, Lifestyles, Character Values, Ghost Powers, and Robot Modules. Preferences: Likes and Dislikes and Relationship Preferences. Accomplishments & Growth: Milestones, earned Degrees, and Resolutions. Public Standing: Public Image and Faction Reputations. Inner Harmony: Luck and Balance. Neighborhood Action Plans."
+  },
+  {
+    "Author": "SimMattically",
+    "ModName": "Refreshed Main Menu 3.0",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.patreon.com/posts/refreshed-main-3-133777443?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share",
+    "DataUltimaModifica": "21/08/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Utilità",
+    "DependencyIT": "",
+    "DescrizioneIT": "Il Menu principale 3 è stato rinnovato con un look nuovo di zecca, tonnellate di miglioramenti della qualità della vita e sfondi personalizzati completamente modulari che potete creare e condividere, tutti realizzati per adattarsi al vostro stile.",
+    "DependencyEN": "",
+    "DescrizioneEN": "Refreshed Main Menu 3 brings a brand-new look, tons of quality-of-life improvements, and fully modular custom backgrounds that you can create yourself and share — all made to fit your style."
   },
   {
     "Author": "SimRealist",
