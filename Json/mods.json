@@ -2405,6 +2405,19 @@
     "DescrizioneEN": "It adds the interaction of romantic slow dance. Sims can dance tenderly with their partners, embrace during the dance and create intimate moments perfect for weddings, dates or special evenings."
   },
   {
+    "Author": "Scumbumbo/Basemental",
+    "ModName": "Packing Crates",
+    "Status": "aggiornata",
+    "SiteLink": "https://scumbumbomods.com/packing-crates/",
+    "DataUltimaModifica": "27/08/2025",
+    "Translation": "inclusa",
+    "Categoria": "Utilità",
+    "DependencyIT": "",
+    "DescrizioneIT": "Questa mod aggiunge una voce di menu \"Imballa nella cassa\" a tutti gli oggetti del gioco (con alcune eccezioni) che non possono essere inseriti normalmente nell'inventario. Per imballare gli oggetti: Vai in modalità compra/costruisci, cerca la voce \"cassa da imballaggio\" e posziona la cassa nel lotto. Torna in modalità vivi, clicca sulla cassa e scegli l'opzione \"abilita imballaggio\". Ora cliccando sugli oggetti troverai l'opzione \"metti nella cassa\". Attenzione, se non è consentito posizionare una cassa nel lotto, la mod non può essere utilizzata.",
+    "DependencyEN": "",
+    "DescrizioneEN": "This mod adds a “Pack in crate” menu item to all items in the game (with a few exceptions) that cannot normally be placed in your inventory. To pack items: Go to buy/build mode, search for “packing crate,” and place the crate on your lot. Return to live mode, click on the crate, and select the “enable packing” option. Now, when you click on items, you will see the “put in crate” option. Please note that if you are not allowed to place a crate on the lot, the mod cannot be used."
+  },
+  {
     "Author": "Scumbumbo/LittleMsSam",
     "ModName": "Set Filters On Paintings by Reference",
     "Status": "compatibile",
