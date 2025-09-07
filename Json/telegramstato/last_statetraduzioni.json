@@ -1,5 +1,14 @@
 [
   {
+    "Creator": null,
+    "Title": null,
+    "ReleaseVersion": null,
+    "CurrentVersion": null,
+    "Status": null,
+    "Translator": null,
+    "Link": null
+  },
+  {
     "Creator": "Adeepindigo",
     "Title": "Babysitting Gigs",
     "ReleaseVersion": "01/03/2025",
@@ -88,6 +97,15 @@
     "Status": "compatibile",
     "Translator": "di Leo",
     "Link": "https://www.patreon.com/posts/errant-thoughts-114949530?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
+  },
+  {
+    "Creator": "Adeepindigo",
+    "Title": "Errant Thoughts",
+    "ReleaseVersion": "30/05/2024",
+    "CurrentVersion": "28/08/2025",
+    "Status": "compatibile",
+    "Translator": "di Sha",
+    "Link": "https://www.patreon.com/posts/ita-errant-di-137567670"
   },
   {
     "Creator": "Adeepindigo",
@@ -685,6 +703,15 @@
   },
   {
     "Creator": "Lumpinou",
+    "Title": "Curious Inquiries",
+    "ReleaseVersion": "23/06/2024",
+    "CurrentVersion": "19/08/2025",
+    "Status": "compatibile",
+    "Translator": "di Sha",
+    "Link": "https://www.patreon.com/posts/ita-curious-di-136861243"
+  },
+  {
+    "Creator": "Lumpinou",
     "Title": "Immortalize Moments",
     "ReleaseVersion": "01/08/2025",
     "CurrentVersion": "01/08/2025",
@@ -765,6 +792,24 @@
     "Link": "https://www.curseforge.com/sims4/translations/trad-ita-science-baby-tweak-di-lumpinou"
   },
   {
+    "Creator": "Lumpinou",
+    "Title": "Talents & Weaknesses",
+    "ReleaseVersion": "22/08/2025",
+    "CurrentVersion": "01/08/2025",
+    "Status": "compatibile",
+    "Translator": "di Sha",
+    "Link": "https://www.patreon.com/posts/ita-talents-di-135459774"
+  },
+  {
+    "Creator": "Maplebell",
+    "Title": "Expanded Storytelling Relationship Bits Mod (+2) ",
+    "ReleaseVersion": "16/07/2025",
+    "CurrentVersion": "12/08/2025",
+    "Status": "compatibile",
+    "Translator": "di Sha",
+    "Link": "https://www.patreon.com/posts/ita-expanded-mod-136310236"
+  },
+  {
     "Creator": "Maplebell",
     "Title": "More Kisses",
     "ReleaseVersion": "2.5",
@@ -772,6 +817,15 @@
     "Status": "aggiornata",
     "Translator": "di LadyPsycoTrilly",
     "Link": "https://www.patreon.com/posts/115008351?pr=true"
+  },
+  {
+    "Creator": "Maplebell",
+    "Title": "More Kisses",
+    "ReleaseVersion": "16/07/2025",
+    "CurrentVersion": "13/08/2025",
+    "Status": "compatibile",
+    "Translator": "di Sha",
+    "Link": "https://www.patreon.com/posts/ita-more-kisses-136333005"
   },
   {
     "Creator": "MizoreYukii",
@@ -1042,6 +1096,24 @@
     "Status": "compatibile",
     "Translator": "di SimTecnologic",
     "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+  },
+  {
+    "Creator": "Sacrificial (Junior)",
+    "Title": "Life Manager",
+    "ReleaseVersion": "21/08/2025",
+    "CurrentVersion": "05/08/2025",
+    "Status": "compatibile",
+    "Translator": "di Sha",
+    "Link": "https://www.patreon.com/posts/ita-life-manager-135712138"
+  },
+  {
+    "Creator": "Simkatu",
+    "Title": "Take a Nap with Infant",
+    "ReleaseVersion": "26/02/2025",
+    "CurrentVersion": "02/08/2025",
+    "Status": "compatibile",
+    "Translator": "di Sha",
+    "Link": "https://www.patreon.com/posts/ita-take-nap-di-135540914"
   },
   {
     "Creator": "SimsAlchemist",
