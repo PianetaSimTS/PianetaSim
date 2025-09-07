@@ -1,14 +1,5 @@
 [
   {
-    "Creator": null,
-    "Title": null,
-    "ReleaseVersion": null,
-    "CurrentVersion": null,
-    "Status": null,
-    "Translator": null,
-    "Link": null
-  },
-  {
     "Creator": "Adeepindigo",
     "Title": "Babysitting Gigs",
     "ReleaseVersion": "01/03/2025",
@@ -87,7 +78,7 @@
     "CurrentVersion": "5.7",
     "Status": "in-lavorazione",
     "Translator": "di vale93_games",
-    "Link": ""
+    "Link": "https://www.example.com"
   },
   {
     "Creator": "Adeepindigo",
@@ -695,8 +686,8 @@
   {
     "Creator": "Lot 51",
     "Title": "Suite Life",
-    "ReleaseVersion": "1.7",
-    "CurrentVersion": "1.7",
+    "ReleaseVersion": "1.8",
+    "CurrentVersion": "1.8",
     "Status": "aggiornata",
     "Translator": "di LadyPsycoTrilly",
     "Link": "https://www.patreon.com/posts/suite-life-di-114178116"
