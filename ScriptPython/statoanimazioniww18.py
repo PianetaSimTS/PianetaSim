@@ -100,6 +100,7 @@ def compare_status_only(old_state, new_state):
                         messages.append(msg)
                     break
         else:
+            icon = "🟣"
             msg = (
                 f"ANIMAZIONE AGGIUNTA AL SITO\n\n"
                 f"*{new_mod['Autore'].title()}* ➜ Data *{new_mod['DataAggiornamento']}*\n\n"
