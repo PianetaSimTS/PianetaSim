@@ -79,7 +79,7 @@ def compare_status_only(old_state, new_state):
         "AGGIORNATA": "🟢",
         "COMPATIBILE": "🔵",
         "ROTTA": "🔴",
-        "NUOVA": "🔵",
+        "NUOVA": "🟣",
         "SCONOSCIUTA & OBSOLETA": "⚪️"
     }
 
@@ -100,9 +100,8 @@ def compare_status_only(old_state, new_state):
                         messages.append(msg)
                     break
         else:
-            icon = "🟣"
             msg = (
-                f"ANIMAZIONE NUOVA\n\n"
+                f"ANIMAZIONE AGGIUNTA AL SITO\n\n"
                 f"*{new_mod['Autore'].title()}* ➜ Data *{new_mod['DataAggiornamento']}*\n\n"
                 f"Stato {icon} _{new_mod['Status']}_\n"
                 f"Link [SITO](https://pianetasimts.github.io/PianetaSim/animazioniww18.html)"
