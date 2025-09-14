@@ -897,6 +897,19 @@
     "DescrizioneEN": "This mod unlocks all lot types."
   },
   {
+    "Author": "Batsandbabydolls",
+    "ModName": "Trick or Treat Tradition Overhaul",
+    "Status": "sconosciuta",
+    "SiteLink": "https://alice-in-strangetown.tumblr.com/post/764069502996643840/trick-or-treat-tradition-overhaul",
+    "DataUltimaModifica": "",
+    "Translation": "da-scaricare",
+    "Categoria": "Eventi",
+    "DependencyIT": "XML Injector di Scumbumbo - DLC Stagioni",
+    "DescrizioneIT": "Aggiunge un'interazione sociale personalizzata \"Dolcetto o scherzetto!\" è disponibile in qualsiasi festività aggiungendo la tradizione del Dolcetto Scherzetto.",
+    "DependencyEN": "XML Injector di Scumbumbo - DLC Season",
+    "DescrizioneEN": "Adds personalized social interaction \"Trick or Treat!\" is available on any holiday by adding the tradition of Trick or Treating."
+  },
+  {
     "Author": "Carl's Guides",
     "ModName": "Dine Out Reloaded",
     "Status": "aggiornata",
