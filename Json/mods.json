@@ -1027,6 +1027,19 @@
     "DescrizioneEN": "Gone are the days when your Sims could simply go to the career panel and select a job. With this mod, your sim will have to pass an interview and have the required degree."
   },
   {
+    "Author": "Ellesimsworld",
+    "ModName": "Romantica: A Lover's Type Mod",
+    "Status": "nuova",
+    "SiteLink": "https://www.patreon.com/posts/download-lovers-137991992",
+    "DataUltimaModifica": null,
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "DependencyIT": "XML Injector",
+    "DescrizioneIT": "Romantica: A Lover’s Type Mod” di ellesimsworld espande il tratto “Romantico” rendendolo più definito. Permette ai Sims dai giovani adulti agli anziani di scegliere fra sei tipi di amante (Passionale, Gentile, Piccante, Possessivo, Viziato, Noncurante), ognuno con interazioni sociali uniche, buff personalizzati e notifiche. Include anche un addon opzionale “Lovey Dovey.",
+    "DependencyEN": "XML Injector",
+    "DescrizioneEN": "Romantic: A Lover's Type Mod by ellesimsworld expands on the “Romantic” trait, making it more defined. It allows Sims from young adults to elders to choose between six types of lovers (Passionate, Gentle, Spicy, Possessive, Spoiled, Careless), each with unique social interactions, custom buffs, and notifications. It also includes an optional add-on called “Lovey Dovey.”"
+  },
+  {
     "Author": "Frankk",
     "ModName": "Language Barriers",
     "Status": "compatibile",
