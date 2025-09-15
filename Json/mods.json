@@ -1300,6 +1300,19 @@
     "DescrizioneEN": "It is needed for the operation of other mods of KiaraSims4Mods."
   },
   {
+    "Author": "Ksuihuh's Corner",
+    "ModName": "High School Uniform",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.patreon.com/posts/high-school-70363137",
+    "DataUltimaModifica": "04/09/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Oggetti Funzionali",
+    "DependencyIT": "",
+    "DescrizioneIT": "Questa impone un’uniforme scolastica identica per tutti gli studenti (anche quelli di squadra o club), sceglie una sola opzione colore tra le cinque disponibili (nero, grigio, rosa, plaid verde, bordeaux).",
+    "DependencyEN": "",
+    "DescrizioneEN": "This imposes an identical school uniform for all students (including those in teams or clubs), choosing only one color option from the five available (black, gray, pink, green plaid, burgundy)."
+  },
+  {
     "Author": "LittleMsSam",
     "ModName": "Elenco Generale",
     "Status": "sconosciuta",
