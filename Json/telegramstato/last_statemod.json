@@ -301,9 +301,9 @@
   {
     "Author": "Amethyst-Lilac",
     "ModName": "More Sim Names",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/more-sim-names-126517152",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Varie",
     "DependencyIT": "",
@@ -1484,9 +1484,9 @@
   {
     "Author": "Lot 51",
     "ModName": "Suite Life",
-    "Status": "sconosciuta",
+    "Status": "rotta",
     "SiteLink": "https://lot51.cc/mods/suite-life",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": "Core Library - Universal Venue List",
