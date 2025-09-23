@@ -2849,15 +2849,28 @@
   {
     "Author": "Vale93_games",
     "ModName": "CC Wrench Animal Paw",
-    "Status": "rotta",
-    "SiteLink": "https://www.patreon.com/posts/102974853?utm_campaign=postshare_creator",
-    "DataUltimaModifica": "",
+    "Status": "aggiornata",
+    "SiteLink": "https://vale93games.it/mods-sims4/",
+    "DataUltimaModifica": "23/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "DependencyIT": "",
     "DescrizioneIT": "Sostituisce la normale chiave del gioco con una simpatica zampina disponibile in 6 colorazioni.",
     "DependencyEN": "",
     "DescrizioneEN": "Replaces the regular game key with a cute little paw available in 6 colors."
+  },
+  {
+    "Author": "Vale93_games",
+    "ModName": "CC Wrench Bow Pink",
+    "Status": "nuova",
+    "SiteLink": "https://vale93games.it/mods-sims4/",
+    "DataUltimaModifica": "23/09/2025",
+    "Translation": "non necessaria",
+    "Categoria": "Utilità",
+    "DependencyIT": "",
+    "DescrizioneIT": "Sostituisce la normale chiave del gioco con un fiocco rosa.",
+    "DependencyEN": "Replaces the normal game key with a pink bow.",
+    "DescrizioneEN": ""
   },
   {
     "Author": "Weerbesu",
