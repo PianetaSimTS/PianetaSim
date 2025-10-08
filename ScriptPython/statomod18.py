@@ -132,16 +132,15 @@ def compare_status_only(old_state, new_state):
                         f"Stato {icon} _{new_mod['Status']}_\n"
                         f"Link [SITO](https://pianetasimts.github.io/PianetaSim/mod18.html)"
                     )
-                elif new_mod.get('DataUltimaModifica') != old_mod.get('DataUltimaModifica') and "SCONOSCIUTA" not in new_mod['Status']:
-                    new_mod['Status'] = "AGGIORNATA"
-                    icon = status_icons["AGGIORNATA"]
-                    messages.append(
-                        f"MOD\n\n"
-                        f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
-                        f"Stato {icon} _{new_mod['Status']}_\n"
-                        f"Link [SITO](https://pianetasimts.github.io/PianetaSim/mod18.html)"
-                    )
-
+                elif new_mod.get('DataUltimaModifica') != old_mod.get('DataUltimaModifica'):
+                    if new_mod['Status'] in ["COMPATIBILE", "AGGIORNATA"]:
+                        icon = status_icons.get(new_mod['Status'], "⚪️")
+                        messages.append(
+                            f"MOD\n\n"
+                            f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
+                            f"Stato {icon} _{new_mod['Status']}_\n"
+                            f"Link [SITO](https://pianetasimts.github.io/PianetaSim/mod.html)"
+                        )
     return messages
 
 # Funzione per inviare un messaggio su Telegram
