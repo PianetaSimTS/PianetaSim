@@ -81,9 +81,13 @@ def normalize_mod(mod):
         'DataUltimaModifica': safe_strip(mod.get('DataUltimaModifica')),
         'Translation': safe_strip(mod.get('Translation')),
         'Categoria': safe_strip(mod.get('Categoria')),
-        'DependencyIT': safe_strip(mod.get('DependencyIT')),
+
+        # Nuovi campi per la gestione MOD/DLC/Descrizione IT/EN
+        'MODIT': safe_strip(mod.get('MODIT')),
+        'DLCIT': safe_strip(mod.get('DLCIT')),
         'DescrizioneIT': safe_strip(mod.get('DescrizioneIT')),
-        'DependencyEN': safe_strip(mod.get('DependencyEN')),
+        'MODEN': safe_strip(mod.get('MODEN')),
+        'DLCEN': safe_strip(mod.get('DLCEN')),
         'DescrizioneEN': safe_strip(mod.get('DescrizioneEN')),
     }
 
