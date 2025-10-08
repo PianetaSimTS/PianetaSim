@@ -1305,21 +1305,12 @@
     "Link": "https://www.patreon.com/posts/nuove-traduzioni-123892248?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
   {
-    "Creator": "test",
-    "Title": "test",
+    "Creator": "supernuova",
+    "Title": "supernuova",
     "ReleaseVersion": "1.5",
-    "CurrentVersion": "1.6",
-    "Status": "compatibile",
-    "Translator": "test",
+    "CurrentVersion": "1.8",
+    "Status": "aggiornata",
+    "Translator": "supernuova",
     "Link": "test"
-  },
-  {
-    "Creator": "nuova",
-    "Title": "nuova",
-    "ReleaseVersion": "1.4",
-    "CurrentVersion": "1.7",
-    "Status": "compatibile",
-    "Translator": "nuovissima",
-    "Link": "nuoverrima"
   }
 ]
