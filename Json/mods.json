@@ -3388,35 +3388,5 @@
     "MODEN": null,
     "DLCEN": null,
     "DescrizioneEN": "It allows you to easily change the features of the game lots, such as their type and functionality. With this mod, you can turn any lot into a venue for specific events, such as restaurants, nightclubs or libraries, without having to create a new lot from scratch. An easy way to expand your game possibilities and customize the experience!"
-  },
-  {
-    "Author": "test",
-    "ModName": "test",
-    "Status": "aggiornata",
-    "SiteLink": "test",
-    "DataUltimaModifica": "08/10/2025",
-    "Translation": "da-scaricare",
-    "Categoria": "Gameplay",
-    "MODIT": "test",
-    "DLCIT": "test",
-    "DescrizioneIT": "test",
-    "MODEN": "teste",
-    "DLCEN": "test",
-    "DescrizioneEN": "test"
-  },
-  {
-    "Author": "nuova",
-    "ModName": "nuova",
-    "Status": "aggiornata",
-    "SiteLink": "nuova",
-    "DataUltimaModifica": "08/10/2025",
-    "Translation": "inclusa",
-    "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
-    "DescrizioneIT": null,
-    "MODEN": null,
-    "DLCEN": null,
-    "DescrizioneEN": null
   }
 ]
