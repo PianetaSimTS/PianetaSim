@@ -116,7 +116,7 @@ def compare_status_only(old_state, new_state):
             icon = status_icons.get(new_status, "⚪️")
             msg = (
                 f"TRADUZIONE AGGIUNTA AL SITO\n\n"
-                f"*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n"
+                f"*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\n"
                 f"Stato {icon} *{new_status}*\n"
                 f"Versione Mod: {new_release_version}\n"
                 f"Link [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
