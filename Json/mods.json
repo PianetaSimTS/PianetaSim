@@ -262,11 +262,11 @@
     "DataUltimaModifica": "24/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "Stagioni",
     "DescrizioneIT": "Campi estivi da esplorare per bambini e adolescenti.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "Seasons",
     "DescrizioneEN": "Summer camps for children and teenagers to explore."
   },
   {
@@ -277,11 +277,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "General Pie Menus di Adeepindigo - Core Library di Lot 51",
+    "DLCIT": "",
     "DescrizioneIT": "Questa mod aggiunge la possibilità ai vostri sim di farsi un tatuaggio tramite rabbithole. Avranno la possibilità di scegliere un tatuaggio o ricevere un tatuaggio casuale. Ottenere tatuaggi temporanei a parti del corpo specifiche. Disponibile per i Sims da adolescenti a superiori.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "General Pie Menus by Adeepindigo - Core Library by Lot 51",
+    "DLCEN": "",
     "DescrizioneEN": "This mod adds the ability for your sims to get a tattoo via rabbithole. They will have the option to choose a tattoo or receive a random tattoo. Get temporary tattoos to specific body parts. Available for Sims from teens to high school."
   },
   {
