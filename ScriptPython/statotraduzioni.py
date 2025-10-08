@@ -10,14 +10,14 @@ telegram_token = os.getenv("TELEGRAM_TOKEN")
 group_id = '-1001771715212'
 topic_id = '79558'
 
-# Token GitHub (direttamente in variabile per esempio)
+# Token GitHub
 github_token = os.getenv('GITHUB_TOKEN')
 
-# Info del repository GitHub
+# Info repository
 repo_owner = "PianetaSimTS"
 repo_name = "PianetaSim"
 
-# Percorsi dei file JSON nel repository
+# Percorsi JSON
 mods_path = "Json/traduzioni.json"
 state_path = "Json/telegramstato/last_statetraduzioni.json"
 
@@ -40,13 +40,15 @@ def fetch_json_from_github(path):
         print(f"Errore nel recupero di {path} da GitHub: {e}")
     return None
 
-# Carica lo stato precedente
+
 def load_last_state():
+    """Carica lo stato precedente."""
     print("Caricando lo stato precedente...")
     return fetch_json_from_github(state_path) or []
 
-# Salva lo stato aggiornato su GitHub
+
 def save_current_state(new_state):
+    """Salva lo stato aggiornato su GitHub."""
     url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{state_path}"
     headers = {
         "Authorization": f"token {github_token}",
@@ -58,9 +60,8 @@ def save_current_state(new_state):
         sha = current_file['sha']
 
         content = base64.b64encode(json.dumps(new_state, indent=2, ensure_ascii=False).encode('utf-8')).decode('utf-8')
-
         data = {
-            "message": "Aggiornamento stato mod con supporto per caratteri speciali",
+            "message": "Aggiornamento stato traduzioni con versione inclusa",
             "content": content,
             "sha": sha,
         }
@@ -71,8 +72,9 @@ def save_current_state(new_state):
     except Exception as e:
         print(f"Errore nell'aggiornamento del file su GitHub: {e}")
 
-# Normalizza i dati
+
 def normalize_mod(mod):
+    """Normalizza i dati delle traduzioni."""
     return {
         'Creator': mod.get('Creator', '').strip(),
         'Title': mod.get('Title', '').strip(),
@@ -83,8 +85,9 @@ def normalize_mod(mod):
         'Link': mod.get('Link', '').strip() or '',
     }
 
-# Confronta stati
+
 def compare_status_only(old_state, new_state):
+    """Confronta i due stati e genera i messaggi Telegram."""
     messages = []
     status_icons = {
         "AGGIORNATA": "🟢",
@@ -101,37 +104,46 @@ def compare_status_only(old_state, new_state):
         new_key = (new_mod['Title'], new_mod['Translator'])
         new_status = (new_mod.get('Status') or '').strip().upper()
         new_release_version = (new_mod.get('ReleaseVersion') or '').strip()
+        new_current_version = (new_mod.get('CurrentVersion') or '').strip()
 
-        # 🔹 Caso: nuova traduzione (non esisteva prima)
+        # 🔹 Caso: nuova traduzione
         if new_key not in old_mods:
             if not new_status:
                 new_status = "NUOVA"
             elif new_status == "DA-AGGIORNARE":
                 new_status = "DA AGGIORNARE"
+
             icon = status_icons.get(new_status, "⚪️")
             msg = (
                 f"TRADUZIONE AGGIUNTA AL SITO\n\n"
                 f"*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n"
-                f"Tradotta da *{new_mod['Translator']}*\n\n"
-                f"Stato {icon} _{new_status}_\n"
+                f"Tradotta da _{new_mod['Translator']}_\n\n"
+                f"Stato {icon} *{new_status}*\n"
+                f"Versione Mod: {new_release_version}\n"
                 f"Link [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
             )
             messages.append(msg)
 
-        # 🔹 Caso: traduzione già presente, ma con stato/versione cambiati
+        # 🔹 Caso: traduzione già presente → verifica cambiamenti
         else:
             old_mod = old_mods[new_key]
             old_status = (old_mod.get('Status') or '').strip().upper()
             old_release_version = (old_mod.get('ReleaseVersion') or '').strip()
+            old_current_version = (old_mod.get('CurrentVersion') or '').strip()
 
-            if new_status != old_status or new_release_version != old_release_version:
+            # Confronta modifiche di stato o versione
+            if (
+                new_status != old_status
+                or new_release_version != old_release_version
+                or new_current_version != old_current_version
+            ):
                 if new_status == "DA-AGGIORNARE":
                     new_status = "DA AGGIORNARE"
                 icon = status_icons.get(new_status, "⚪️")
                 msg = (
-                    f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n"
+                    f"TRADUZIONE MOD di _{new_mod['Translator']}_\n\n"
                     f"*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\n"
-                    f"Stato {icon} _{new_status}_\n"
+                    f"Stato {icon} *{new_status}*\n"
                     f"Versione Mod: {new_release_version}\n"
                     f"Link [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
                 )
@@ -140,8 +152,8 @@ def compare_status_only(old_state, new_state):
     return messages
 
 
-# Invio messaggio su Telegram
 def send_telegram_message(message, chat_id, topic_id):
+    """Invia un messaggio su Telegram."""
     url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
     payload = {
         'chat_id': chat_id,
@@ -157,8 +169,9 @@ def send_telegram_message(message, chat_id, topic_id):
     except Exception as e:
         print(f"Errore nell'invio del messaggio a Telegram: {e}")
 
-# Monitoraggio modifiche
+
 async def monitor_mods():
+    """Monitora le modifiche alle traduzioni."""
     print("Monitorando le modifiche...")
     last_state = load_last_state()
     new_state = fetch_json_from_github(mods_path)
@@ -167,19 +180,18 @@ async def monitor_mods():
         messages = compare_status_only(last_state, new_state)
 
         if messages:
-            print("Modifiche di status rilevate! Inviando notifiche...")
+            print("Modifiche rilevate! Inviando notifiche...")
             for message in messages:
                 send_telegram_message(message, group_id, topic_id)
             save_current_state(new_state)
         else:
-            print("Nessuna modifica dello status trovata.")
+            print("Nessuna modifica trovata.")
     else:
-        print("Errore nel recupero delle informazioni sui mods.")
+        print("Errore nel recupero del file delle traduzioni.")
 
-# Entry point
+
 if __name__ == "__main__":
     try:
         asyncio.run(monitor_mods())
     except Exception as e:
         print(f"Errore nell'esecuzione del programma: {e}")
-
