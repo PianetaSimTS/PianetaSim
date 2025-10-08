@@ -2940,9 +2940,9 @@
   {
     "Author": "Test",
     "ModName": "test",
-    "Status": "aggiornata",
+    "Status": "compatibile",
     "SiteLink": "link",
-    "DataUltimaModifica": "08/10/2025",
+    "DataUltimaModifica": "02/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "DependencyIT": null,
