@@ -1312,5 +1312,14 @@
     "Status": "compatibile",
     "Translator": "test",
     "Link": "test"
+  },
+  {
+    "Creator": "nuova",
+    "Title": "nuova",
+    "ReleaseVersion": "1.4",
+    "CurrentVersion": "1.7",
+    "Status": "compatibile",
+    "Translator": "nuovissima",
+    "Link": "nuoverrima"
   }
 ]
