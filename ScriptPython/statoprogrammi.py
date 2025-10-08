@@ -79,29 +79,55 @@ def compare_status_only(old_state, new_state):
 
     for new_mod in new_state:
         name = new_mod['programma']
-        new_win = new_mod.get('statuswindows', 'SCONOSCIUTO').upper()
-        new_mac = new_mod.get('statusmacos', 'SCONOSCIUTO').upper()
+        new_win = (new_mod.get('statuswindows') or 'SCONOSCIUTO').upper()
+        new_mac = (new_mod.get('statusmacos') or 'SCONOSCIUTO').upper()
         new_date_win = new_mod.get('data_aggiornamentowindows', 'Data non disponibile')
         new_date_mac = new_mod.get('data_aggiornamentomacos', 'Data non disponibile')
         link = new_mod.get('link_programmawindows') or new_mod.get('link_programma') or '#'
 
         old_mod = old_programs.get(name)
 
+        # 🔹 Caso: nuovo programma aggiunto
         if not old_mod:
-            # Nuovo programma
-            message = f"PROGRAMMA\n\n*{name}*\n\nWindows {status_icons.get(new_win, '⚪️')} _{new_win}_ Data ➜ *{new_date_win}*\nmacOS {status_icons.get(new_mac, '⚪️')} _{new_mac}_ Data ➜ *{new_date_mac}*\n\nLink [SITO](https://pianetasimts.github.io/PianetaSim/programmi.html)"
+            if not new_win:
+                new_win = "NUOVO"
+            if not new_mac:
+                new_mac = "NUOVO"
+
+            message = (
+                f"PROGRAMMA AGGIUNTO AL SITO\n\n"
+                f"*{name}*\n\n"
+                f"Windows {status_icons.get(new_win, '⚪️')} _{new_win}_ ➜ *{new_date_win}*\n"
+                f"macOS {status_icons.get(new_mac, '⚪️')} _{new_mac}_ ➜ *{new_date_mac}*\n\n"
+                f"Link [SITO](https://pianetasimts.github.io/PianetaSim/programmi.html)"
+            )
             messages.append(message)
+
+        # 🔹 Caso: programma già presente → controlla variazioni
         else:
-            old_win = old_mod.get('statuswindows', 'SCONOSCIUTO').upper()
-            old_mac = old_mod.get('statusmacos', 'SCONOSCIUTO').upper()
+            old_win = (old_mod.get('statuswindows') or 'SCONOSCIUTO').upper()
+            old_mac = (old_mod.get('statusmacos') or 'SCONOSCIUTO').upper()
             old_date_win = old_mod.get('data_aggiornamentowindows', '')
             old_date_mac = old_mod.get('data_aggiornamentomacos', '')
 
-            if new_win != old_win or new_mac != old_mac or new_date_win != old_date_win or new_date_mac != old_date_mac:
-                message = f"PROGRAMMA\n\n*{name}*\n\nWindows {status_icons.get(new_win, '⚪️')} _{new_win}_ Data ➜ *{new_date_win}*\nmacOS {status_icons.get(new_mac, '⚪️')} _{new_mac}_ Data ➜ *{new_date_mac}*\n\nLink [SITO](https://pianetasimts.github.io/PianetaSim/programmi.html)"
+            # Se cambia stato o data, invia messaggio
+            if (
+                new_win != old_win
+                or new_mac != old_mac
+                or new_date_win != old_date_win
+                or new_date_mac != old_date_mac
+            ):
+                message = (
+                    f"PROGRAMMA\n\n"
+                    f"*{name}*\n\n"
+                    f"Windows {status_icons.get(new_win, '⚪️')} _{new_win}_ ➜ *{new_date_win}*\n"
+                    f"macOS {status_icons.get(new_mac, '⚪️')} _{new_mac}_ ➜ *{new_date_mac}*\n\n"
+                    f"Link [SITO](https://pianetasimts.github.io/PianetaSim/programmi.html)"
+                )
                 messages.append(message)
 
     return messages
+
 
 # Invia un messaggio Telegram
 def send_telegram_message(message, chat_id, topic_id):
