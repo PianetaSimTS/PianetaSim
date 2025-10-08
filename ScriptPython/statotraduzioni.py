@@ -102,24 +102,43 @@ def compare_status_only(old_state, new_state):
         new_status = (new_mod.get('Status') or '').strip().upper()
         new_release_version = (new_mod.get('ReleaseVersion') or '').strip()
 
+        # 🔹 Caso: nuova traduzione (non esisteva prima)
         if new_key not in old_mods:
-            if new_status == "DA-AGGIORNARE":
+            if not new_status:
+                new_status = "NUOVA"
+            elif new_status == "DA-AGGIORNARE":
                 new_status = "DA AGGIORNARE"
             icon = status_icons.get(new_status, "⚪️")
-            msg = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {icon} _{new_status}_\nLink [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
+            msg = (
+                f"TRADUZIONE AGGIUNTA AL SITO\n\n"
+                f"*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n"
+                f"Tradotta da *{new_mod['Translator']}*\n\n"
+                f"Stato {icon} _{new_status}_\n"
+                f"Link [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
+            )
             messages.append(msg)
+
+        # 🔹 Caso: traduzione già presente, ma con stato/versione cambiati
         else:
             old_mod = old_mods[new_key]
             old_status = (old_mod.get('Status') or '').strip().upper()
             old_release_version = (old_mod.get('ReleaseVersion') or '').strip()
+
             if new_status != old_status or new_release_version != old_release_version:
                 if new_status == "DA-AGGIORNARE":
                     new_status = "DA AGGIORNARE"
                 icon = status_icons.get(new_status, "⚪️")
-                msg = f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\nStato {icon} _{new_status}_\nVersione Mod: {new_release_version}\nLink [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
+                msg = (
+                    f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n"
+                    f"*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\n"
+                    f"Stato {icon} _{new_status}_\n"
+                    f"Versione Mod: {new_release_version}\n"
+                    f"Link [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
+                )
                 messages.append(msg)
 
     return messages
+
 
 # Invio messaggio su Telegram
 def send_telegram_message(message, chat_id, topic_id):
