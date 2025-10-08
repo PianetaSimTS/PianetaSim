@@ -86,9 +86,11 @@ def compare_status_only(old_state, new_state):
     old_authors = {mod['Autore'] for mod in normalized_old}
 
     for new_mod in normalized_new:
+        # Caso: autore già presente nello stato precedente
         if new_mod['Autore'] in old_authors:
             for old_mod in normalized_old:
                 if new_mod['Autore'] == old_mod['Autore']:
+                    # Notifica se cambia lo stato o la data di aggiornamento
                     if new_mod['Status'] != old_mod['Status'] or new_mod['DataAggiornamento'] != old_mod['DataAggiornamento']:
                         icon = status_icons.get(new_mod['Status'].upper(), "⚪️")
                         msg = (
@@ -99,17 +101,24 @@ def compare_status_only(old_state, new_state):
                         )
                         messages.append(msg)
                     break
+
+        # Caso: autore NON presente => nuova animazione
         else:
-            icon = "🟣"
+            # Se manca lo status, consideralo NUOVA
+            status = new_mod['Status'].upper() if new_mod.get('Status') else "NUOVA"
+            # Imposta lo status interno (opzionale, utile se poi salvi lo stato)
+            new_mod['Status'] = status
+            icon = status_icons.get(status, "⚪️")
             msg = (
                 f"ANIMAZIONE AGGIUNTA AL SITO\n\n"
                 f"*{new_mod['Autore'].title()}* ➜ Data *{new_mod['DataAggiornamento']}*\n\n"
-                f"Stato {icon} _{new_mod['Status']}_\n"
+                f"Stato {icon} _{status}_\n"
                 f"Link [SITO](https://pianetasimts.github.io/PianetaSim/animazioniww18.html)"
             )
             messages.append(msg)
 
     return messages
+
 
 def send_telegram_message(message, chat_id, topic_id):
     url = f'https://api.telegram.org/bot{telegram_token}/sendMessage'
