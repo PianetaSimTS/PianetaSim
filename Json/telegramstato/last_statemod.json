@@ -353,15 +353,15 @@
   {
     "Author": "Andirz",
     "ModName": "Better Live Shopping",
-    "Status": "compatibile",
-    "SiteLink": "https://www.curseforge.com/sims4/mods/better-live-shopping",
-    "DataUltimaModifica": "18/09/2025",
+    "Status": "obsoleta",
+    "SiteLink": null,
+    "DataUltimaModifica": "",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "PSO Shared Library - Core Library",
-    "DescrizioneIT": "Aggiunge più oggetti nei chioschi, nei distributori automatici e nelle bancarelle del mercato.",
-    "DependencyEN": "PSO Shared Library - Core Library",
-    "DescrizioneEN": "It adds more items in kiosks, vending machines and market stalls."
+    "DependencyIT": "Inclusa nella PSO Better Vending Machines di Andirz",
+    "DescrizioneIT": "",
+    "DependencyEN": "Included in the PSO Better Vending Machines by Andirz",
+    "DescrizioneEN": ""
   },
   {
     "Author": "Andirz",
@@ -378,9 +378,9 @@
   },
   {
     "Author": "Andirz",
-    "ModName": "Body Hair: Luumia Edition",
+    "ModName": "Body Hair Replacement: Luumia Edition ",
     "Status": "compatibile",
-    "SiteLink": "https://www.curseforge.com/sims4/mods/body-hair-replacement-luumia-edition-also-women",
+    "SiteLink": "https://sims4andirz.my.curseforge.com/?projectsSearch=body+hair&projectsSort=3#projects",
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Bug Fix",
@@ -410,9 +410,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "in-lavorazione",
     "Categoria": "Gameplay",
-    "DependencyIT": "DLC Vita Universitaria",
+    "DependencyIT": "DLC: Vita Universitaria",
     "DescrizioneIT": "Serve per il funzionamento delle altre mod Custom Electives.",
-    "DependencyEN": "DLC Discover University",
+    "DependencyEN": "DLC: Discover University",
     "DescrizioneEN": "It is needed for the operation of the other Custom Electives mods."
   },
   {
@@ -423,9 +423,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "Custom Electives (Core) - DLC Vita Universitaria",
+    "DependencyIT": "MOD: Custom Electives (Core) di Andirz - DLC: Vita Universitaria",
     "DescrizioneIT": "Aggiunge materie elettive personalizzate e costose per i Sim adolescenti, offrendo opportunità di apprendimento avanzato con un tocco di sfida economica.",
-    "DependencyEN": "Custom Electives (Core) - DLC Discover University",
+    "DependencyEN": "MOD: Custom Electives (Core) by Andirz - DLC: Discover University",
     "DescrizioneEN": "Adds customized and expensive elective subjects for teen Sims, offering advanced learning opportunities with a touch of economic challenge."
   },
   {
@@ -436,9 +436,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "Custom Electives (Core) - DLC Vita Universitaria",
+    "DependencyIT": "MOD: Custom Electives (Core) di Andirz - DLC: Vita Universitaria",
     "DescrizioneIT": "Introduce nuove materie elettive personalizzate per i Sim adolescenti, arricchendo l’esperienza scolastica con opzioni aggiuntive per sviluppare abilità senza il costo extra delle versioni più esclusive.",
-    "DependencyEN": "Custom Electives (Core) - DLC Discover University",
+    "DependencyEN": "MOD: Custom Electives (Core) by Andirz - DLC: Discover University",
     "DescrizioneEN": "Introduces new elective subjects customized for teen Sims, enriching the school experience with additional options for developing skills without the extra cost of the more exclusive versions."
   },
   {
@@ -449,9 +449,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "DLC Vita Universitaria & Nuove Stelle",
+    "DependencyIT": "DLC: Vita Universitaria & Nuove Stelle",
     "DescrizioneIT": "Modifica la carriera universitaria in \"Arte Drammatica\", trasformandola nella carriera di Recitazione del pacchetto Famosi. Questo permette ai Sim che studiano arte drammatica all'università di intraprendere direttamente una carriera nella recitazione, creando una connessione più realistica tra l'istruzione e la carriera.",
-    "DependencyEN": "DLC Discover University & Get Famous",
+    "DependencyEN": "DLC: Discover University & Get Famous",
     "DescrizioneEN": "Changes college career to \"Dramatic Arts,\" turning it into the acting career of the Famous package. This allows Sims who study drama in college to directly pursue a career in acting, creating a more realistic connection between education and career."
   },
   {
@@ -462,9 +462,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "Road to Fame  - DLC Vita Universitaria",
+    "DependencyIT": "MOD: Road to Fame di Sacrificial - DLC: Vita Universitaria",
     "DescrizioneIT": "Trasforma la carriera universitaria in \"Arte Drammatica\" in una carriera di Recitazione del pacchetto Road To Fame. Questo consente ai Sim che studiano arte drammatica di entrare direttamente nel mondo della recitazione, creando una connessione più diretta tra l'istruzione e la carriera nel settore dello spettacolo.",
-    "DependencyEN": "Road to Fame  - DLC Discover University",
+    "DependencyEN": "MOD: Road to Fame by Sacrificial- DLC: Discover University",
     "DescrizioneEN": "Turns college career in \"Dramatic Arts\" into acting career of Road To Fame package. This allows Sims studying Drama to enter the acting world directly, creating a more direct connection between education and a career in the entertainment industry."
   },
   {
@@ -475,9 +475,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Oggetti Funzionali",
-    "DependencyIT": "Core Library - DLC Vita da Genitori",
+    "DependencyIT": "MOD: Core Library di Lot 51- DLC: Vita da Genitori",
     "DescrizioneIT": "Amplia le opzioni del diario privato in The Sims 4, permettendo ai Sim di scrivere su una maggiore varietà di emozioni ed eventi, arricchendo la loro storia personale.",
-    "DependencyEN": "Core Library - DLC Discover University",
+    "DependencyEN": "MOD: Core Library by Lot 51- DLC: Discover University",
     "DescrizioneEN": "Expands the private diary options in The Sims 4, allowing Sims to write about a greater variety of emotions and events, enriching their personal history."
   },
   {
@@ -488,10 +488,10 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Tratti",
-    "DependencyIT": "Core Library - DLC Serata Cinema",
+    "DependencyIT": "MOD: Core Library di Lot 51- DLC: Serata Cinema",
     "DescrizioneIT": "Permette ai Sim di scegliere e avere un genere cinematografico preferito, influenzando le loro emozioni e reazioni quando guardano film. Aggiunge un tocco di realismo, rendendo i gusti dei Sim più personalizzati.",
-    "DependencyEN": "Core Library - DLC Movie Hangout",
-    "DescrizioneEN": "It allows Sims to choose and have a favorite movie genre, influencing their emotions and reactions when watching movies. It adds a touch of realism, making Sims' tastes more personalized."
+    "DependencyEN": "MOD: Core Library by Lot 51- DLC: Movie Hangout",
+    "DescrizioneEN": "It allows Sims to choose and have a favorite movie genre, influencing their emotions and reactions when watching movies. It adds a touch of realism, making Sims tastes more personalized."
   },
   {
     "Author": "Andirz",
@@ -501,9 +501,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "Core Library - DLC Giorno di Bucato",
+    "DependencyIT": "MOD: Core Library di Lot 51 - DLC: Giorno di Bucato",
     "DescrizioneIT": "Aggiunge varie interazioni e trucchi alla pila del bucato, alla pila piegata, alla cesta del bucato, alla lavatrice e all'asciugatrice.",
-    "DependencyEN": "Core Library - DLC Laundry Day",
+    "DependencyEN": "MOD: Core Library by Lot 51- DLC: Laundry Day",
     "DescrizioneEN": "Adds various interactions and tricks to the laundry pile, folded pile, laundry basket, washer and dryer."
   },
   {
@@ -514,9 +514,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "Core Library - DLC Giorno di Bucato",
+    "DependencyIT": "MOD: Core Library di Lot 51- DLC: Giorno di Bucato",
     "DescrizioneIT": "Il nuovo tratto del lotto Lavanderia a Pagamento Self-Service fa sì che tutte le lavatrici e le asciugatrici del lotto richiedano il pagamento! I tuoi Sims non potranno usarle finché non lanciano una moneta. Ora possono recarsi attivamente in una lavanderia a gettoni e lavare i propri vestiti di persona! Puoi abilitare questa caratteristica del lotto su lotti in affitto, lotti universitari o lotti della tua attività e utilizzarla. Anche il proprietario del lotto può riscuotere i guadagni! Trasforma il tuo lotto di proprietà  in una lavanderia a gettoni redditizia.",
-    "DependencyEN": "Core Library - DLC Laundry Day",
+    "DependencyEN": "MOD: Core Library by Lot 51- DLC: Laundry Day",
     "DescrizioneEN": "The new stretch of the Self-Service Paying Laundry Lot makes all the washers and dryers in the lot require payment! Your Sims can't use them until they flip a coin. Now they can actively go to a laundromat and wash their clothes themselves! You can enable this lot feature on rented lots, college lots or lots in your business and use it. Even the lot owner can collect the earnings! Turn your owned lot into a profitable laundromat."
   },
   {
@@ -527,10 +527,10 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "Core Library - DLC Giorno di Bucato",
+    "DependencyIT": "MOD: Library di Lot 51 - DLC: Giorno di Bucato",
     "DescrizioneIT": "Troppo impegnato per fare il bucato? Lavare e asciugare richiedono troppo tempo? O forse vivi in ​​un piccolo appartamento senza spazio per lavatrice e asciugatrice? Questa mod introduce nuove interazioni per cesti della biancheria, pile di biancheria e pile piegate, consentendo ai tuoi Sims di inviare la biancheria sporca a una lavanderia a gettoni a pagamento. Una volta trascorso il tempo di pulizia, i vestiti torneranno nell'inventario del tuo Sim.",
-    "DependencyEN": "Core Library - DLC Laundry Day",
-    "DescrizioneEN": "Too busy to do laundry? Washing and drying taking too long? Or maybe you live in a small apartment with no space for a washer and dryer? This mod introduces new interactions for laundry baskets, laundry piles, and folded piles, allowing your Sims to send dirty laundry to a paid laundromat. Once the cleaning time has passed, the clothes will return to your Sim's inventory."
+    "DependencyEN": "MOD: Core Library by Lot 51 - DLC: Laundry Day",
+    "DescrizioneEN": "Too busy to do laundry? Washing and drying taking too long? Or maybe you live in a small apartment with no space for a washer and dryer? This mod introduces new interactions for laundry baskets, laundry piles, and folded piles, allowing your Sims to send dirty laundry to a paid laundromat. Once the cleaning time has passed, the clothes will return to your Sim inventory."
   },
   {
     "Author": "Andirz",
@@ -540,9 +540,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Bug Fix",
-    "DependencyIT": "Core Library",
+    "DependencyIT": "MOD: Core Library di Lot 51",
     "DescrizioneIT": "Rende tutti i Sim nel gioco attratti da qualsiasi genere, permettendo loro di esplorare liberamente le loro preferenze romantiche e sessuali senza restrizioni. La versione \"Exploring\" consente ai Sim di scoprire la propria sessualità nel corso del gioco.",
-    "DependencyEN": "Core Library",
+    "DependencyEN": "MOD: Core Library by Lot 51",
     "DescrizioneEN": "It makes all Sims in the game attracted to any gender, allowing them to freely explore their romantic and sexual preferences without restriction. The \"Exploring\" version allows Sims to discover their sexuality throughout the game."
   },
   {
@@ -553,9 +553,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Bug Fix",
-    "DependencyIT": "Core Library",
+    "DependencyIT": "MOD: Core Library di Lot 51",
     "DescrizioneIT": "Rende tutti i Sim nel gioco attratti da qualsiasi genere, consentendo loro di esplorare liberamente le proprie preferenze romantiche e sessuali senza limitazioni. La versione \"Ultimate\" offre un'esperienza ancora più completa, permettendo ai Sim di scoprire la propria sessualità in modo naturale e senza restrizioni, arricchendo le interazioni romantiche e le dinamiche relazionali.",
-    "DependencyEN": "Core Library",
+    "DependencyEN": "MOD: Core Library by Lot 51",
     "DescrizioneEN": "It makes all Sims in the game attracted to any gender, allowing them to freely explore their romantic and sexual preferences without restriction. The \"Ultimate\" version offers an even more complete experience, allowing Sims to discover their sexuality naturally and without restriction, enriching romantic interactions and relationship dynamics."
   },
   {
@@ -563,25 +563,25 @@
     "ModName": "No Forgotten Birthday Drama",
     "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/no-forgotten-birthday-drama",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "non necessaria",
     "Categoria": "Tratti",
-    "DependencyIT": "Smart Core Script",
+    "DependencyIT": "MOD: Smart Core Script di Andirz",
     "DescrizioneIT": "Elimina il dramma legato ai compleanni dimenticati in The Sims 4. Con questa mod, i Sim non si arrabbiano o si sentono trascurati se il loro compleanno passa inosservato, rendendo l'esperienza di gioco più tranquilla e meno frustrante. Perfetto per chi vuole evitare conflitti inutili legati ai compleanni!",
-    "DependencyEN": "Smart Core Script",
+    "DependencyEN": "MOD: Smart Core Script by Andirz",
     "DescrizioneEN": "It eliminates the drama associated with forgotten birthdays in The Sims 4. With this mod, Sims don't get upset or feel neglected if their birthday goes unnoticed, making the gaming experience quieter and less frustrating. Perfect for those who want to avoid unnecessary birthday-related conflicts!"
   },
   {
     "Author": "Andirz",
     "ModName": "No Holidays Failure Drama",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/no-holidays-failure-drama",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "non necessaria",
     "Categoria": "Tratti",
-    "DependencyIT": "Smart Core Script - DLC Stagioni",
+    "DependencyIT": "MOD: Smart Core Script di Andirz- DLC: Stagioni",
     "DescrizioneIT": "Rimuove il dramma legato ai fallimenti durante le festività in The Sims 4. Con questa mod, i Sim non si arrabbiano o si sentono delusi se le festività non vanno come previsto, rendendo l'esperienza di gioco più rilassata e senza conflitti inutili durante le celebrazioni.",
-    "DependencyEN": "Smart Core Script - DLC Seasons",
+    "DependencyEN": "MOD: Smart Core Script by Andirz - DLC: Seasons",
     "DescrizioneEN": "Removes the drama associated with failures during the holidays in The Sims 4. With this mod, Sims don't get angry or feel disappointed if the holidays don't go as planned, making the gaming experience more relaxed and without unnecessary conflict during celebrations."
   },
   {
@@ -600,14 +600,14 @@
   {
     "Author": "Andirz",
     "ModName": "P.S.O. Common Package",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/pso-shared-library",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": "Smart Core Script",
+    "DependencyIT": "MOD: Smart Core Script di Andirz",
     "DescrizioneIT": "Serve per il funzionamento delle altre mod della serie P.S.O.",
-    "DependencyEN": "Smart Core Script",
+    "DependencyEN": "MOD: Smart Core Script by Andirz",
     "DescrizioneEN": "It is needed for the operation of the other mods in the P.S.O. series."
   },
   {
@@ -618,9 +618,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "DependencyIT": "Purchase Medicine",
+    "DependencyIT": "MOD: Purchase Medicine di Andirz",
     "DescrizioneIT": "Aggiunge un chiosco farmaceutico nel gioco, permettendo ai Sim di acquistare medicinali, rimedi e altri articoli per la salute direttamente in un chiosco.",
-    "DependencyEN": "Purchase Medicine",
+    "DependencyEN": "MOD: Purchase Medicine by Andirz",
     "DescrizioneEN": "Adds a pharmaceutical kiosk in the game, allowing Sims to purchase medicines, remedies and other health items directly at a kiosk."
   },
   {
@@ -631,62 +631,62 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "Core Library - Avventure nella Giungla",
+    "DependencyIT": "MOD: Core Library di Lot 51 - DLC: Avventura nella Giungla",
     "DescrizioneIT": "Alcune funzionalità di questa mod erano precedentemente incluse nella mod Selvadoradian Herbalism. Questa mod modifica alcune funzionalità del pacchetto Avventure della Giungla, cambia l'antidodo rendendolo migliore, rende le trappole dei tempi di pericolose e cambia altre cose del pacchetto.",
-    "DependencyEN": "Core Library - Jungle Adventures",
+    "DependencyEN": "MOD: Core Library by Lot 51 - DLC: Jungle Adventures",
     "DescrizioneEN": "Some features of this mod were previously included in the Selvadoradian Herbalism mod. This mod modifies some features of the Jungle Adventures package, changes the antidote making it better, makes the traps of dangerous times and changes other things in the package."
   },
   {
     "Author": "Andirz",
     "ModName": "Purchase Bottled Drinks",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/purchase-bottled-drinks",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "non necessaria",
     "Categoria": "Oggetti Funzionali",
-    "DependencyIT": "Smart Core Script - P.S.O. Common Package",
+    "DependencyIT": "MOD: Smart Core Script & P.S.O. Common Package di Andirz",
     "DescrizioneIT": "Permette ai Sim di acquistare e consumare bevande in bottiglia, aggiungendo nuove opzioni per soddisfare la sete e arricchire l’esperienza di gioco.",
-    "DependencyEN": "Smart Core Script - P.S.O. Common Package",
+    "DependencyEN": "MOD: Smart Core Script & P.S.O. Common Package by Andirz",
     "DescrizioneEN": "Allows Sims to purchase and consume bottled drinks, adding new options to quench thirst and enrich the gaming experience."
   },
   {
     "Author": "Andirz",
     "ModName": "Purchase Medicine",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/purchase-medicine",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "Smart Core Script - P.S.O. Common Package",
+    "DependencyIT": "MOD: Smart Core Script & P.S.O. Common Package di Andirz",
     "DescrizioneIT": "Consente ai Sim di acquistare medicinali per curarsi da malattie o migliorare la loro salute, aggiungendo un nuovo livello di realismo nella gestione del benessere.",
-    "DependencyEN": "Smart Core Script - P.S.O. Common Package",
+    "DependencyEN": "MOD: Smart Core Script & P.S.O. Common Package by Andirz",
     "DescrizioneEN": "It allows Sims to purchase medicines to cure themselves of diseases or improve their health, adding a new level of realism to wellness management."
   },
   {
     "Author": "Andirz",
     "ModName": "Purchase Occult Books",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/purchase-occult-books",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "XML Injector - DLC Vampiri e/o Regno della Magia",
+    "DependencyIT": "MOD: XML Injector - DLC: Vampiri e/o Regno della Magia",
     "DescrizioneIT": "Permette ai Sim di acquistare libri occulti, ampliando le loro conoscenze su magia, vampiri, streghe e altre creature soprannaturali, arricchendo l’esperienza di gioco.",
-    "DependencyEN": "XML Injector - DLC Vampires and/or Realm of Magic",
+    "DependencyEN": "MOD: XML Injector - DLC: Vampires and/or Realm of Magic",
     "DescrizioneEN": "Allows Sims to purchase occult books, expanding their knowledge of magic, vampires, witches and other supernatural creatures, enriching the gaming experience."
   },
   {
     "Author": "Andirz",
     "ModName": "Rapid Household Management",
-    "Status": "compatibile",
-    "SiteLink": "https://www.curseforge.com/sims4/mods/rapid-household-management",
-    "DataUltimaModifica": "18/09/2025",
+    "Status": "obsoleta",
+    "SiteLink": null,
+    "DataUltimaModifica": "",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "DependencyIT": "Smart Core Script",
-    "DescrizioneIT": "Con questa piccola mod di cheat e debug puoi aggiungere più PNG alla tua famiglia contemporaneamente con un clic o rimuovere più membri della famiglia dalla famiglia con un clic e trasformarli in PNG senza dover cliccare su ogni Sim individualmente.",
-    "DependencyEN": "Smart Core Script",
-    "DescrizioneEN": "With this small cheat and debug mod you can add multiple NPCs to your family at once with one click or remove multiple family members from the family with one click and turn them into NPCs without having to click on each Sim individually."
+    "DependencyIT": "Unita alla Smart Sim Cheats",
+    "DescrizioneIT": "",
+    "DependencyEN": "Merged with Smart Sim Cheats",
+    "DescrizioneEN": ""
   },
   {
     "Author": "Andirz",
@@ -696,35 +696,35 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "Smart Core Script - DLC Gita all'Aria Aperta & Avventura nella Giungla",
+    "DependencyIT": "MOD: Smart Core Script di Andirz - DLC: Gita all'Aria Aperta & Avventura nella Giungla",
     "DescrizioneIT": "Espande le opzioni di erboristeria nel gioco, introducendo nuove erbe e rimedi tipici di Selvadorada. I Sim possono raccogliere e utilizzare piante esotiche per creare pozioni e trattamenti, arricchendo le dinamiche di gioco legate alla cura e alla medicina naturale.",
-    "DependencyEN": "Smart Core Script - DLC Outdoor Retreat & Jungle Adventure",
+    "DependencyEN": "MOD: Smart Core Script by Andirz - DLC: Outdoor Retreat & Jungle Adventure",
     "DescrizioneEN": "Expands herbalism options in the game, introducing new herbs and remedies typical of Selvadorada. Sims can collect and use exotic plants to create potions and treatments, enriching the game dynamics related to healing and natural medicine."
   },
   {
     "Author": "Andirz",
     "ModName": "Sim-Nom-Nom Food Delivery",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/simnomnom-delivery",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "Smart Core Script - P.S.O. Common Package",
+    "DependencyIT": "MOD: Smart Core Script & P.S.O. Common Package di Andirz",
     "DescrizioneIT": "Permette ai Sim di ordinare cibo direttamente a casa, aggiungendo un'opzione di consegna di cibo rapida e comoda. Perfetto per soddisfare la fame dei Sim senza dover cucinare, rendendo la vita quotidiana ancora più semplice e realistica.",
-    "DependencyEN": "Smart Core Script - P.S.O. Common Package",
+    "DependencyEN": "MOD: Smart Core Script & P.S.O. Common Package by Andirz",
     "DescrizioneEN": "It allows Sims to order food directly to their homes, adding a quick and convenient food delivery option. Perfect for satisfying Sims' hunger without having to cook, making daily life even easier and more realistic."
   },
   {
     "Author": "Andirz",
     "ModName": "SimSim Online Store",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/simsim-online-store",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "Smart Core Script - P.S.O. Common Package",
+    "DependencyIT": "MOD: Smart Core Script & P.S.O. Common Package di Andirz",
     "DescrizioneIT": "Consente ai Sim di fare acquisti online, offrendo una varietà di oggetti, abbigliamento e accessori direttamente da un negozio virtuale. Aggiunge un nuovo livello di realismo e comodità, permettendo ai Sim di acquistare comodamente senza uscire di casa.",
-    "DependencyEN": "Smart Core Script - P.S.O. Common Package",
+    "DependencyEN": "MOD: Smart Core Script & P.S.O. Common Package by Andirz",
     "DescrizioneEN": "Allows Sims to shop online, offering a variety of items, clothing and accessories directly from a virtual store. Adds a new level of realism and convenience, allowing Sims to shop conveniently without leaving home."
   },
   {
@@ -735,9 +735,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Carriere",
-    "DependencyIT": "DLC Vita Universitaria",
+    "DependencyIT": "MOD: Smart Core Script di Andirz - DLC: Vita Universitaria",
     "DescrizioneIT": "Ottimizza le classi universitarie in The Sims 4, permettendo ai Sim di acquisire abilità extra durante i loro studi. Aggiunge nuove opzioni e migliora l'efficacia delle lezioni, arricchendo l’esperienza accademica e aumentando la varietà delle competenze che i Sim possono sviluppare durante il percorso universitario.",
-    "DependencyEN": "DLC Discover University",
+    "DependencyEN": "MOD: Smart Core Script by Andirz - DLC: Discover University",
     "DescrizioneEN": "Optimizes university classes in The Sims 4, allowing Sims to gain extra skills during their studies. Adds new options and improves the effectiveness of classes, enriching the academic experience and increasing the variety of skills Sims can develop while in college."
   },
   {
@@ -745,7 +745,7 @@
     "ModName": "Smart Core Script",
     "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/smart-shared-core",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "DependencyIT": "",
@@ -756,27 +756,27 @@
   {
     "Author": "Andirz",
     "ModName": "Smart Gender Cheats",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/smart-gender-cheats",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "DependencyIT": "Smart Core Script",
+    "DependencyIT": "MOD: Smart Core Script di Andirz",
     "DescrizioneIT": "Offre opzioni avanzate per modificare facilmente il genere dei Sim, consentendo di cambiare rapidamente il sesso, l'aspetto fisico o le caratteristiche di genere senza dover ricorrere a comandi complessi. Perfetto per chi desidera maggiore flessibilità nella gestione dei Sim e delle loro identità.",
-    "DependencyEN": "Smart Core Script",
+    "DependencyEN": "MOD: Smart Core Script by Andirz",
     "DescrizioneEN": "It offers advanced options to easily change the gender of Sims, allowing them to quickly change sex, physical appearance, or gender characteristics without having to resort to complex commands. Perfect for those who want more flexibility in managing Sims and their identities."
   },
   {
     "Author": "Andirz",
     "ModName": "Smart Sim Cheats",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/smart-sim-cheats",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "DependencyIT": "Smart Core Script",
+    "DependencyIT": "MOD: Smart Core Script di Andirz",
     "DescrizioneIT": "Semplifica l'utilizzo dei trucchi per i Sim, permettendo di modificare facilmente aspetti come bisogni, emozioni, abilità e carriera senza dover usare comandi complessi. Perfetto per chi cerca un modo rapido per personalizzare i Sim e gestire il gameplay in modo più efficiente.",
-    "DependencyEN": "Smart Core Script",
+    "DependencyEN": "MOD: Smart Core Script by Andirz",
     "DescrizioneEN": "Simplifies the use of tricks for Sims, allowing them to easily change aspects such as needs, emotions, skills and careers without having to use complex commands. Perfect for those looking for a quick way to customize Sims and manage gameplay more efficiently."
   },
   {
@@ -787,9 +787,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "DependencyIT": "Core Library - Smart Core Script",
+    "DependencyIT": "MOD: Core Library di Lot 51 & Smart Core Script di Andirz",
     "DescrizioneIT": "Genera casualmente tratti, desideri e caratteristiche dei Sim, permettendo di creare personaggi unici con combinazioni imprevedibili. Perfetto per chi vuole aggiungere varietà e sorpresa nel gioco, senza dover decidere manualmente ogni dettaglio.",
-    "DependencyEN": "Core Library - Smart Core Script",
+    "DependencyEN": "MOD: Core Library by Lot 51 & Smart Core Script by Andirz",
     "DescrizioneEN": "It randomly generates Sim traits, desires and characteristics, allowing you to create unique characters with unpredictable combinations. Perfect for those who want to add variety and surprise in the game, without having to manually decide every detail."
   },
   {
@@ -800,9 +800,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "DependencyIT": "Core Library",
+    "DependencyIT": "MOD: Core Library di Lot 51",
     "DescrizioneIT": "Questa mod rimuove le scarpe, i calzini, gli occhiali e i copricapi dei tuoi Sims quando si addormentano nel letto o nel sacco a pelo, altrimenti sembra un po' strano.",
-    "DependencyEN": "Core Library",
+    "DependencyEN": "MOD: Core Library by Lot 51",
     "DescrizioneEN": "This mod removes your Sims' shoes, socks, glasses and headgear when they fall asleep in bed or sleeping bag, otherwise it looks a little strange."
   },
   {
@@ -833,28 +833,28 @@
   },
   {
     "Author": "Andirz",
-    "ModName": "Visible Weather Preferences",
+    "ModName": "Weather Preferences",
     "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/weather-preferences-likes-dislikes",
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Tratti",
-    "DependencyIT": "The Custom Preferences Mod - DLC Stagioni",
+    "DependencyIT": "MOD: The Custom Preferences Mod di Zerbu - DLC: Stagioni",
     "DescrizioneIT": "Con questa mod puoi rendere visibili le preferenze meteo dei tuoi Sims (sole, pioggia, neve e vento)! Normalmente, queste preferenze sono nascoste sotto forma di tratti nascosti. Questa mod non aggiunge alcun nuovo elemento al gameplay! Solo ciò che è già presente nel gioco ma è stato nascosto dal giocatore viene visualizzato come tratti \"Mi piace\" e \"Non mi piace\" . ",
-    "DependencyEN": "The Custom Preferences Mod - DLC Seasons",
+    "DependencyEN": "MOD: The Custom Preferences Mod by Zerbu - DLC: Seasons",
     "DescrizioneEN": "With this mod you can make the weather preferences of your Sims (for sun, rain, snow and wind) visible! Normally, these preferences are hidden from you as so-called hidden traits. This mod does not add any new gameplay! Only what is already present in the game but has been hidden by the player is visualized as Likes and Dislikes traits. "
   },
   {
     "Author": "Andirz",
     "ModName": "Write Skill Book",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/write-skill-book",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
-    "DependencyIT": "Smart Core Script",
+    "DependencyIT": "MOD: Smart Core Script di Andirz",
     "DescrizioneIT": "Ti stai chiedendo anche perché il tuo Sim non riesce ancora a scrivere manuali (libri delle abilità) nonostante abbia tutte le abilità al livello massimo? Davvero? Sì, la DescrizioneIT dice: I Sim Professorali possono scrivere manuali utili su qualsiasi abilità in cui sono esperti.",
-    "DependencyEN": "Smart Core Script",
+    "DependencyEN": "MOD: Smart Core Script by Andirz",
     "DescrizioneEN": "Are you also wondering why your Sim still can't write manuals (skill books) despite having all skills at the highest level? Really? Yes, the DescriptionIT says: Professorial Sims can write useful manuals on any skill in which they are proficient."
   },
   {
