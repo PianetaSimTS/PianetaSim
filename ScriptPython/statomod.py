@@ -144,7 +144,7 @@ def compare_status_only(old_state, new_state):
                     if new_mod['Status'] in ["COMPATIBILE", "AGGIORNATA"]:
                         icon = status_icons.get(new_mod['Status'], "⚪️")
                         messages.append(
-                            f"MOD AGGIORNATA\n\n"
+                            f"MOD\n\n"
                             f"*{new_mod['ModName']}* ➜ Di *{new_mod['Author']}*\n\n"
                             f"Stato {icon} _{new_mod['Status']}_\n"
                             f"Link [SITO](https://pianetasimts.github.io/PianetaSim/mod.html)"
