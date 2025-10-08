@@ -3392,9 +3392,9 @@
   {
     "Author": "test",
     "ModName": "test",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "test",
-    "DataUltimaModifica": "02/10/2025",
+    "DataUltimaModifica": "08/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "test",
@@ -3403,5 +3403,20 @@
     "MODEN": "teste",
     "DLCEN": "test",
     "DescrizioneEN": "test"
+  },
+  {
+    "Author": "nuova",
+    "ModName": "nuova",
+    "Status": "aggiornata",
+    "SiteLink": "nuova",
+    "DataUltimaModifica": "08/10/2025",
+    "Translation": "inclusa",
+    "Categoria": "Gameplay",
+    "MODIT": null,
+    "DLCIT": null,
+    "DescrizioneIT": null,
+    "MODEN": null,
+    "DLCEN": null,
+    "DescrizioneEN": null
   }
 ]
