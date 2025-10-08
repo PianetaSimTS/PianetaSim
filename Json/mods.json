@@ -1012,11 +1012,11 @@
     "DataUltimaModifica": "24/09/2025",
     "Translation": "inclusa",
     "Categoria": "Oggetti Funzionali",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "RACCOMANDATI: Stagioni & Pulizie di Primavera ",
     "DescrizioneIT": "Luminova è un nuovo marchio immaginario che presenta 17 nuovi oggetti intelligenti! Questo marchio potrebbe espandersi in futuro con ulteriori dispositivi intelligenti. ",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "RECOMMENDED: Seasons & Bust The Dust ",
     "DescrizioneEN": "Luminova is a new imaginary brand that introduces 17 new smart objects! This brand may expand in the future with additional smart devices."
   },
   {
@@ -1042,11 +1042,11 @@
     "DataUltimaModifica": "07/10/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "ATTENZIONE: va usata una sola Venue List",
+    "DLCIT": "",
     "DescrizioneIT": "Questa mod sblocca tutti i tipi di lotto.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "PLEASE NOTE: only one Venue List should be used",
+    "DLCEN": "",
     "DescrizioneEN": "This mod unlocks all lot types."
   },
   {
