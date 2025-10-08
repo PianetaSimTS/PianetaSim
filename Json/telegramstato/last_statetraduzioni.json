@@ -1307,8 +1307,8 @@
   {
     "Creator": "test",
     "Title": "test",
-    "ReleaseVersion": "10/10/2025",
-    "CurrentVersion": "10/10/2025",
+    "ReleaseVersion": "1.5",
+    "CurrentVersion": "1.6",
     "Status": "compatibile",
     "Translator": "test",
     "Link": "test"
