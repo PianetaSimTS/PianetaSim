@@ -1057,11 +1057,11 @@
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
     "Categoria": "Eventi",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam ",
+    "DLCIT": "Stagioni",
     "DescrizioneIT": "Aggiunge un'interazione sociale personalizzata \"Dolcetto o scherzetto!\" è disponibile in qualsiasi festività aggiungendo la tradizione del Dolcetto Scherzetto.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam ",
+    "DLCEN": "Seasons",
     "DescrizioneEN": "Adds personalized social interaction \"Trick or Treat!\" is available on any holiday by adding the tradition of Trick or Treating."
   },
   {
@@ -1072,11 +1072,11 @@
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "Mangiamo Fuori",
     "DescrizioneIT": "Questa mod migliora l'esperienza del ristorante, aggiungendo nuove funzionalità, interazioni e opzioni per rendere più coinvolgenti le esperienze culinarie nel gioco.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "Dine Out",
     "DescrizioneEN": "This mod enhances the restaurant experience, adding new features, interactions and options to make in-game dining experiences more engaging."
   },
   {
@@ -1117,11 +1117,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Mood Pack di Lumpinou - Core Library di Lot 51 - Universal Venue List di Basemental",
+    "DLCIT": "Al Lavoro - Nuove Stelle - Vita Universitaria - Usciamo Insieme",
     "DescrizioneIT": "Questa mod aggiunge una carriera e interazioni creative legate alla moda, permettendo ai Sim di lavorare come stilisti professionisti.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Mood Pack by Lumpinou - Core Library by Lot 51 - Universal Venue List by Basemental",
+    "DLCEN": "Get to Work - Get Famous - Discover University - Get Together",
     "DescrizioneEN": "This mod adds fashion-related career and creative interactions, allowing Sims to work as professional stylists."
   },
   {
@@ -1132,11 +1132,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Core Library di Lot 51 - Mood Pack di Lumpinou - General Sports Pie Menu di Danitysimmer",
+    "DLCIT": "",
     "DescrizioneIT": "Questa mod introduce una carriera basata sul basket maschile. I giocatori possono creare e gestire atlete professioniste, affrontando nuove sfide e interazioni legate al mondo dello sport, ampliando le opzioni di carriera nel gioco.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Lot 51 Core Library - Mood Pack by Lumpinou - General Sports Pie Menu by Danitysimmer",
+    "DLCEN": "",
     "DescrizioneEN": "This mod introduces a career based on men's basketball. Players can create and manage professional female athletes, facing new challenges and interactions related to the sports world, expanding career options in the game."
   },
   {
