@@ -322,11 +322,11 @@
     "DataUltimaModifica": "24/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "General Pie Menus di Adeepindigo",
+    "DLCIT": "",
     "DescrizioneIT": "Questa mod è stata creata per incoraggiare e introdurre nuovi modi di vivere uno stile di vita più sano per i tuoi Sims.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "General Pie Menus by Adeepindigo",
+    "DLCEN": "",
     "DescrizioneEN": "This mod was created to encourage and introduce new ways of living a healthier lifestyle for your Sims."
   },
   {
@@ -337,11 +337,11 @@
     "DataUltimaModifica": null,
     "Translation": "inclusa",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
+    "DLCIT": "",
     "DescrizioneIT": "Permette al giocatore di far sedere i sim in modo composto.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
+    "DLCEN": "",
     "DescrizioneEN": "Allows the player to seat the sims in a composed manner."
   },
   {
