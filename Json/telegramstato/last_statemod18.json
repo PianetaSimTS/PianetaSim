@@ -7,9 +7,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "DependencyIT": "Basemental Drugs - WickedWhims - Custom Electives (Core) - DLC Vita Universitaria",
+    "DependencyIT": "MOD: Basemental Drugs di Basemental - WickedWhims di TurboDriver - Custom Electives (Core) di Andirz - DLC: Vita Universitaria",
     "DescrizioneIT": "Ulteriori corsi opzionali basati sulle competenze acquisite in Basemental Drugs e Wicked Whims.",
-    "DependencyEN": "Basemental Drugs - WickedWhims - Custom Electives (Core) - DLC Discover University",
+    "DependencyEN": "MOD: Basemental Drugs by Basemental - WickedWhims by TurboDriver - Custom Electives (Core) by Andirz - DLC: Discover University",
     "DescrizioneEN": "Additional elective courses based on skills acquired in Basemental Drugs and Wicked Whims."
   },
   {
@@ -20,9 +20,9 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "XML Injector - DLC Al Lavoro & Avventura nella Giungla",
+    "DependencyIT": "MOD: XML Injector di Scumbumbo - DLC: Al Lavoro & Avventura nella Giungla",
     "DescrizioneIT": "Questa mod aggiunge nuovi veleni e antidoti al gioco. Tutti i veleni non solo possono essere bevuti dalla bottiglia per suicidarsi, ma possono anche essere aggiunti a tutti i drink del bar per avvelenare altri Sim! Per avvelenare un drink, il tuo Sim deve avere una bottiglia di veleno nel suo inventario!",
-    "DependencyEN": "XML Injector - DLC Get to Work & Jungle Adventure",
+    "DependencyEN": "MOD: XML Injector by Scumbumbo - DLC: Get to Work & Jungle Adventure",
     "DescrizioneEN": "This mod adds new poisons and antidotes to the game. All poisons can not only be drunk from the bottle to commit suicide, but can also be added to all drinks in the bar to poison other Sims! To poison a drink, your Sim must have a bottle of poison in his or her inventory!"
   },
   {
@@ -33,22 +33,22 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "Smart Shared Core",
+    "DependencyIT": "MOD: Smart Core Script di Andirz",
     "DescrizioneIT": "Questa semplice mod della roulette della morte consente morti rapide e casuali dei Sim, ideali per sfide basate su scenari come la guerra o la peste. I Sim affrontano probabilità di sopravvivenza con i sopravvissuti che ottengono un buff di sopravvivenza. Dopo questa interazione, il tuo Sim morirà all'istante se questo è il suo destino, o sopravviverà alla sfida e otterrà un buff di sopravvivenza fortunato. Il destino e il caso decidono tutto.",
-    "DependencyEN": "Smart Shared Core",
+    "DependencyEN": "MOD: Smart Core Script by Andirz",
     "DescrizioneEN": "This simple death roulette mod allows quick and random Sim deaths, ideal for challenges based on scenarios such as war or plague. Sims face survival odds with survivors getting a survival buff. After this interaction, your Sim will die instantly if that is his fate, or survive the challenge and get a lucky survival buff. Fate and chance decide everything."
   },
   {
     "Author": "Andirz",
     "ModName": "Obscura Network (+18)",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/obscura-network",
-    "DataUltimaModifica": "18/09/2025",
+    "DataUltimaModifica": "07/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "DependencyIT": "Smart Core Script - P.S.O. Common Package - DLC Vita Universitaria (Facoltativo)",
+    "DependencyIT": "MOD: Smart Core Script & P.S.O. Common Package di Andirz",
     "DescrizioneIT": "Aggiunge il dark web e la possibilità di comprare gli oggetti proibiti.",
-    "DependencyEN": "Smart Core Script - P.S.O. Common Package - DLC Discover University (Optional)",
+    "DependencyEN": "MOD: Smart Core Script & P.S.O. Common Package by Andirz",
     "DescrizioneEN": "Adds the dark web and the ability to buy prohibited items."
   },
   {
