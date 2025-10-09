@@ -1268,10 +1268,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Simula le dinamiche sociali dell'epoca dell'alta società e introduce nuove opzioni di gioco storiche. E' ispirata dalla popolare serie Netflix Bridgerton, i tuoi Sim possono imparare la nuova abilità di galateo, organizzare balli, acquistare o ereditare grandi tenute, affrontare o evitare scandali e persino finire nei giornali di gossip di Lady Whistledown.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "It simulates the social dynamics of the high society era and introduces new historical game options. It's inspired by the popular Netflix series Bridgerton, your Sims can learn the new skill of etiquette, arranging balls, buying or inheriting grand estates, facing or avoiding scandal, and even ending up in Lady Whistledown's gossip papers."
   },
   {
@@ -1283,10 +1283,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "",
-    "DLCIT": "Vita in Campagna",
+    "DLCIT": "NECESSARI: Gioco Base - Vita in Campagna",
     "DescrizioneIT": "Permette ai Sim di cavalcare draghi nel gioco. Aggiunge creature fantastiche che possono essere addestrate, montate e utilizzate per spostamenti veloci o semplicemente per vivere avventure epiche, arricchendo l’esperienza di gioco con un tocco di magia e fantasia.",
     "MODEN": "",
-    "DLCEN": "Cottage Living",
+    "DLCEN": "REQUIRED: Base Game - Cottage Living",
     "DescrizioneEN": "Allows Sims to ride dragons in the game. Adds fantastical creatures that can be trained, mounted and used for fast travel or simply for epic adventures, enriching the gaming experience with a touch of magic and fantasy."
   },
   {
@@ -1298,10 +1298,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "The Custom Preferences Mod di Zerbu",
-    "DLCIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Introduce nuove creature occulte segrete nel gioco, non disponibili tramite il gameplay standard. I Sim possono scoprire e interagire con queste misteriose entità, aggiungendo un livello di mistero e magia nascosta nel mondo di gioco.",
     "MODEN": "The Custom Preferences Mod by Zerbu",
-    "DLCEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Introduces new secret occult creatures into the game, unavailable through standard gameplay. Sims can discover and interact with these mysterious entities, adding a layer of mystery and hidden magic to the game world."
   },
   {
@@ -1312,11 +1312,11 @@
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Arricchisce le relazioni romantiche in The Sims 4, introducendo la possibilità per i Sim di trovare la loro \"anima gemella\". I Sim che si considerano anime gemelle vivranno una connessione profonda e unica, con interazioni speciali e una relazione che va oltre le normali dinamiche di coppia.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Enriches romantic relationships in The Sims 4 by introducing the possibility for Sims to find their \"soulmate.\" Sims who consider themselves soul mates will experience a deep and unique connection, with special interactions and a relationship that goes beyond normal couple dynamics."
   },
   {
@@ -1327,11 +1327,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Aggiunge una varietà di nuove funzionalità in The Sims 4, migliorando l’esperienza quotidiana con nuove emozioni, interazioni sociali, eventi casuali e aspetti della vita come salute, bellezza, ciclo mestruale e cambiamenti fisici. I Sim vivranno situazioni più realistiche, come malesseri, trasformazioni fisiche, crisi adolescenziali, e altro, arricchendo le dinamiche del gioco.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Adds a variety of new features in The Sims 4, enhancing the daily experience with new emotions, social interactions, random events and aspects of life such as health, beauty, menstrual cycle and physical changes. Sims will experience more realistic situations, such as illnesses, physical transformations, teenage crises, and more, enriching the dynamics of the game."
   },
   {
@@ -1343,10 +1343,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Tratti",
     "MODIT": "",
-    "DLCIT": "NECESSARI: Vita sull'Isola",
+    "DLCIT": "NECESSARI: Gioco Base - Vita sull'Isola",
     "DescrizioneIT": "Aggiunge il tratto \"Figlio dell'Oceano\", dando ai Sim un legame speciale con l'acqua, migliorando nuoto e felicità vicino al mare.",
     "MODEN": "",
-    "DLCEN": "REQUIRED: Island Living",
+    "DLCEN": "REQUIRED: Base Game - Island Living",
     "DescrizioneEN": "Adds the \"Child of the Ocean\" trait, giving Sims a special connection with water, enhancing swimming and happiness near the sea."
   },
   {
@@ -1373,10 +1373,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Aggiunge la carriera di pompieri in The Sims 4, permettendo ai Sim di diventare eroici salvatori, intervenendo in situazioni di emergenza e gestendo incendi, pericoli e missioni di salvataggio.",
-    "MODEN": "",
-    "DLCEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
+    "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Adds firefighting career in The Sims 4, allowing Sims to become heroic rescuers, intervening in emergency situations and handling fires, hazards and rescue missions."
   },
   {
@@ -1388,10 +1388,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "NECESSARI: Fenomeni Paranormali",
+    "DLCIT": "NECESSARI: Gioco Base - Fenomeni Paranormali",
     "DescrizioneIT": "La carriera consente ai Sim di diventare esperti di lettura dei tarocchi e previsioni, offrendo consulenze psichiche e sviluppando abilità misteriose per scoprire il futuro.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "REQUIRED: Paranormal",
+    "DLCEN": "REQUIRED: Base Game - Paranormal",
     "DescrizioneEN": "The career allows Sims to become experts in tarot card reading and predictions, offering psychic consultations and developing mysterious skills to discover the future."
   },
   {
@@ -1403,10 +1403,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "NECESSARI: Usciamo Insieme - Al Lavoro - Avventura nella Giungla",
+    "DLCIT": "NECESSARI: Gioco Base - Usciamo Insieme - Al Lavoro - Avventura nella Giungla",
     "DescrizioneIT": "La carriera permette ai Sim di esplorare il mondo della geologia, studiare rocce, minerali e vulcani, e fare scoperte scientifiche. I Sim possono lavorare in campo, raccogliere campioni e fare ricerche, salendo di livello fino a diventare esperti nel settore.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "REQUIRED: Get Together - Get to Work - Jungle Adventure",
+    "DLCEN": "REQUIRED: Base Game - Get Together - Get to Work - Jungle Adventure",
     "DescrizioneEN": "The career allows Sims to explore the world of geology, study rocks, minerals and volcanoes, and make scientific discoveries. Sims can work in the field, collect samples and do research, leveling up to become experts in the field."
   },
   {
@@ -1418,10 +1418,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam - Universal Venue List di Basemental - Work Interactions Pie Menu di KiaraSims4Mods",
-    "DLCIT": "NECESSARI: Vita Universitaria - Al Lavoro",
+    "DLCIT": "NECESSARI: Gioco Base - Vita Universitaria - Al Lavoro",
     "DescrizioneIT": "La carriera consente ai Sim di lavorare nel campo dell'istruzione superiore, insegnando e svolgendo ricerche accademiche. I Sim possono intraprendere una carriera attiva come professori universitari, partecipando alle lezioni, conferenze e contribuendo al progresso scientifico, con l'opportunità di avanzamento accademico.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam - Universal Venue List by Basemental - Work Interactions Pie Menu by KiaraSims4Mods",
-    "DLCEN": "REQUIRED: Discover University - Get to Work",
+    "DLCEN": "REQUIRED: Base Game - Discover University - Get to Work",
     "DescrizioneEN": "The career allows Sims to work in higher education, teaching and conducting academic research. Sims can pursue an active career as university professors, participating in lectures, conferences and contributing to scientific progress, with the opportunity for academic advancement."
   },
   {
@@ -1433,10 +1433,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam - Universal Venue List di Basemental",
-    "DLCIT": "NECESSARI: Vita Universitaria - Al Lavoro",
+    "DLCIT": "NECESSARI: Gioco Base - Vita Universitaria - Al Lavoro",
     "DescrizioneIT": "La carriera consente ai Sim di intraprendere una professione legale attiva, lavorando in tribunale e difendendo i propri clienti. I Sim possono specializzarsi in diverse aree del diritto, come difesa o accusa, partecipare alle cause e guadagnare l'esperienza permette di avanzare nella carriera legale.\n",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam - Universal Venue List by Basemental",
-    "DLCEN": "REQUIRED: Discover University - Get to Work",
+    "DLCEN": "REQUIRED: Base Game - Discover University - Get to Work",
     "DescrizioneEN": "The career allows Sims to enter an active legal profession, working in court and defending their clients. Sims can specialize in different areas of law, such as defense or prosecution, participate in cases, and gain the experience allows them to advance in their legal careers."
   },
   {
@@ -1448,10 +1448,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "NECESSARI: Vita in Città - Nuove Stelle - Moschino",
+    "DLCIT": "NECESSARI: Gioco Base - Vita in Città - Nuove Stelle - Moschino",
     "DescrizioneIT": "La carriera permette ai Sim di entrare nel mondo della moda, partecipare a sfilate, shooting fotografici e campagne pubblicitarie. I Sim possono aumentare la loro fama, migliorare la loro presenza sulla passerella e diventare modelli di successo, guadagnare con lavori esclusivi e opportunità nel settore della moda.\n\n\n",
     "MODEN": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "REQUIRED: City Living - Get Famous - Moschino",
+    "DLCEN": "REQUIRED: Base Game - City Living - Get Famous - Moschino",
     "DescrizioneEN": "The career allows Sims to enter the fashion world, participate in fashion shows, photo shoots and advertising campaigns. Sims can increase their fame, improve their catwalk presence and become successful models, earn money with exclusive jobs and opportunities in the fashion industry."
   },
   {
@@ -1463,10 +1463,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam - Universal Venue List di Basemental - Work Interactions Pie Menu di KiaraSims4Mods",
-    "DLCIT": "NECESSARI: Al Lavoro - Un Giorno alla Spa",
+    "DLCIT": "NECESSARI: Gioco Base - Al Lavoro - Un Giorno alla Spa",
     "DescrizioneIT": "La carriera permette ai Sim di gestire attivamente un Resort. I Sim possono occuparsi della gestione quotidiana, migliorare le strutture, soddisfare i clienti e fare crescere il loro business per trasformarlo in una destinazione di lusso. Più il resort ha successo, maggiori sono le opportunità di guadagno e avanzamento.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam - Universal Venue List by Basemental - Work Interactions Pie Menu by KiaraSims4Mods",
-    "DLCEN": "REQUIRED: Get to Work - Spa Day",
+    "DLCEN": "REQUIRED: Base Game - Get to Work - Spa Day",
     "DescrizioneEN": "A career allows Sims to actively manage a resort. Sims can take care of day-to-day management, improve facilities, satisfy customers and grow their business into a luxury destination. The more successful the resort, the greater the opportunities for income and advancement."
   },
   {
@@ -1478,10 +1478,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam - Universal Venue List di Basemental ",
-    "DLCIT": "NECESSARI: Al Lavoro - Nuove Stelle",
+    "DLCIT": "NECESSARI: Gioco Base - Al Lavoro - Nuove Stelle",
     "DescrizioneIT": "La carriera permette ai Sim di lavorare come consulenti di moda, di aiutare altri Sim a rinnovare il loro look. I Sim possono svolgere sessioni di makeover, scegliere nuovi outfit e pettinature, guadagnare fama e ricompense mentre costruiscono la loro carriera nel mondo della moda.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam - Universal Venue List by Basemental ",
-    "DLCEN": "REQUIRED: Get to Work - Get Famous",
+    "DLCEN": "REQUIRED: Base Game - Get to Work - Get Famous",
     "DescrizioneEN": "The career allows Sims to work as fashion consultants, to help other Sims revamp their look. Sims can conduct makeover sessions, choose new outfits and hairstyles, and earn fame and rewards as they build their fashion careers."
   },
   {
@@ -1493,10 +1493,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "La carriera permette ai Sim di lavorare nell'industria dei videogiochi, creando giochi e sviluppando software. I Sim possono migliorare le loro abilità tecniche, lavorare su progetti innovativi e guadagnare fama e denaro, salendo di livello fino a diventare esperti nel campo del game design.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "The career allows Sims to work in the video game industry, creating games and developing software. Sims can improve their technical skills, work on innovative projects, and earn fame and money by leveling up to become experts in the field of game design."
   },
   {
@@ -1508,10 +1508,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Serve per il funzionamento di altre mod di KiaraSims4Mods.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "It is needed for the operation of other mods of KiaraSims4Mods."
   },
   {
@@ -1522,11 +1522,11 @@
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
     "Categoria": "Oggetti Funzionali",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa impone un’uniforme scolastica identica per tutti gli studenti (anche quelli di squadra o club), sceglie una sola opzione colore tra le cinque disponibili (nero, grigio, rosa, plaid verde, bordeaux).",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This imposes an identical school uniform for all students (including those in teams or clubs), choosing only one color option from the five available (black, gray, pink, green plaid, burgundy)."
   },
   {
@@ -1553,10 +1553,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "Core Library di Lot 51 - Pack Tests di Frankk",
-    "DLCIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Introduce il concetto di nobiltà e monarchia nel gioco. I Sims possono diventare membri della famiglia reale, governare terre, avere titoli nobiliari e partecipare a eventi di corte. Questa mod aggiunge nuove carriere, interazioni e possibilità di gioco legate alla vita di corte, creando un'esperienza più regale e aristocratica per i giocatori.",
     "MODEN": "Core Library by Lot 51 - Pack Tests by Frankk",
-    "DLCEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Introduces the concept of nobility and monarchy into the game. Sims can become members of the royal family, rule lands, have titles of nobility and participate in court events. This mod adds new careers, interactions and gameplay possibilities related to court life, creating a more regal and aristocratic experience for players."
   },
   {
@@ -1568,10 +1568,10 @@
     "Translation": "inclusa",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "NECESSARI: Al Lavoro",
+    "DLCIT": "NECESSARI: Gioco Base - Al Lavoro",
     "DescrizioneIT": "Hai mai desiderato far diventare il tuo Sim un Modder? Da oggi puoi con questa nuova carriera attiva!",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "REQUIRED: Get to Work",
+    "DLCEN": "REQUIRED: Base Game - Get to Work",
     "DescrizioneEN": "Have you ever wanted to make your Sim a Modder? From today you can with this new active career!"
   },
   {
@@ -1583,10 +1583,10 @@
     "Translation": "inclusa",
     "Categoria": "Carriere",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "NECESSARI: Vita da Genitori",
+    "DLCIT": "NECESSARI: Gioco Base - Vita da Genitori",
     "DescrizioneIT": "Essere un Genitore è un duro lavoro e merita assolutamente un aiuto finanziario, specialmente quando sei un genitore single o il tuo partner è fuori tutto il giorno per un lavoro sottopagato e/o non puoi permetterti una babysitter. Inizia oggi, l'Associazione Casa Dolce Casa sarà felice di aiutarti!",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "REQUIRED: Parenthood",
+    "DLCEN": "REQUIRED: Base Game - Parenthood",
     "DescrizioneEN": "Being a Parent is hard work and definitely deserves financial help, especially when you are a single parent or your partner is out all day at an underpaid job and/or you cannot afford a babysitter. Start today, the Home Sweet Home Association will be happy to help!"
   },
   {
@@ -1598,10 +1598,10 @@
     "Translation": "inclusa",
     "Categoria": "Oggetti Funzionali",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "NECESSARI: Accessorio da Brivido",
+    "DLCIT": "NECESSARI: Gioco Base - Accessorio da Brivido",
     "DescrizioneIT": "Piccola mod per festeggiare Halloween! Dal menu \"Ricette Speciali Halloween\" troverete 3 nuove ricette e da oggi i vostri Sims potranno diventare temporaneamente fantasmi con il nuovo drink \"Drink Fantasmagorico\"! Infatti se lo berranno, potranno godersi l'esperienza per circa 3 ore! Non è fantasmagorico?!",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "REQUIRED: Spooky",
+    "DLCEN": "REQUIRED: Base Game - Spooky",
     "DescrizioneEN": "Small mod to celebrate Halloween! From the \"Special Halloween Recipes\" menu you will find 3 new recipes and from today your Sims can temporarily become ghosts with the new drink \"Phantasmagoric Drink\"! In fact, if they drink it, they can enjoy the experience for about 3 hours! Isn't that phantasmagoric!"
   },
   {
@@ -1612,11 +1612,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam - Mood Pack Mod di Lumpinou - Mod Negozio Premaman di LoryNa",
-    "DLCIT": "",
+    "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam - Mood Pack Mod di Lumpinou - Negozio di Maternità di LoryNa",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "In questa mod sono presenti un'app di monitoraggio di gravidanza, un nuovo NPC, nuove interazioni al computer e la possibilità di scegliere la preferenza di nutrizione per il neonato.\n ",
-    "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam - Mood Pack Mod by Lumpinou - Expanded Pregnancy Interactions by LoryNa",
-    "DLCEN": "",
+    "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam - Mood Pack Mod by Lumpinou - Maternity Shop by LoryNa",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This mod features a pregnancy monitoring app, a new NPC, new computer interactions, and the ability to choose the infant's feeding preference."
   },
   {
@@ -1627,26 +1627,26 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
+    "DLCIT": "NECESSARI: Gioco Base - Vita da Genitori",
     "DescrizioneIT": "Introduce 8 tratti genitoriali (perfetto, naturalista, sportivo, creativo, nerd, religioso, amante della carriera, casalingo) che influenzano lo sviluppo dei bambini e le dinamiche familiari, offrendo una genitorialità più realistica e personalizzata.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
+    "DLCEN": "REQUIRED: Base Game - Parenthood",
     "DescrizioneEN": "Introduces 8 parenting traits (perfect, naturalist, sportsman, creative, nerd, religious, career lover, homemaker) that influence child development and family dynamics, offering more realistic and personalized parenting."
   },
   {
     "Author": "LoryNa",
-    "ModName": "Negozio Premaman per mod MIG ",
+    "ModName": "Negozio di Maternità - EPI Mod",
     "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/maternity-shop-epi-mod",
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Maggiori Interazioni di Gravidanza di LoryNa",
+    "DLCIT": "NECESSARI: Gioco Base - Vita da Liceali",
     "DescrizioneIT": "Questo è il negozio di maternità per la mod Maggiori interazioni in gravidanza.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Expanded Pregnancy Interactions by LoryNa",
+    "DLCEN": "REQUIRED: Base Game - High School Years",
     "DescrizioneEN": "This is the Maternity Shop for Expanded Pregnancy Interactions mod."
   },
   {
@@ -1657,11 +1657,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "inclusa",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam - Mood Pack Mod di Lumpinou",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod è un interpretazione di come i Sims bambini ed adolescenti iniziano a scoprire l'amore. La mod è divisa in 2 moduli così da permettervi di scegliere autonomamente se voler giocare sia con la parte che riguarda i bambini che adolescenti, oppure no.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam - Mood Pack Mod by Lumpinou",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This mod is an interpretation of how child and teen Sims begin to discover love. The mod is divided into 2 modules so you can choose for yourself whether you want to play with both the child and teen parts, or not."
   },
   {
@@ -1672,11 +1672,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "inclusa",
     "Categoria": "Varie",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Cosa non manca mai sulle tavole italiane a Natale? Pandoro e Panettone, ovviamente! In questa mod sono presenti 6 nuove ricette natalizie, 2 nuovi tratti.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "What is never missing on Italian tables at Christmas? Pandoro and Panettone, of course! In this mod there are 6 new Christmas recipes, 2 new features."
   },
   {
@@ -1687,11 +1687,11 @@
     "DataUltimaModifica": "08/10/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Serve per il funzionamento di altre mod.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "It is needed for the operation of other mods."
   },
   {
@@ -1702,11 +1702,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Aggiunge una campanello intelligente al gioco. Quando un Sim suona il campanello, il proprietario può scegliere di rispondere, ignorare o addirittura far fuggire il visitatore, creando situazioni divertenti e inaspettate con gli ospiti. La mod offre un tocco di realismo e interattività in più per le dinamiche sociali del gioco.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Adds an intelligent doorbell to the game. When a Sim rings the doorbell, the owner can choose to answer, ignore, or even let the visitor escape, creating fun and unexpected situations with guests. The mod provides an extra touch of realism and interactivity to the game's social dynamics."
   },
   {
@@ -1717,11 +1717,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base - Vita in Campagna",
     "DescrizioneIT": "Lascia che i tuoi amici della fattoria scorrazzino liberi! Mucche e lama sono finalmente separati dal loro rifugio per animali e possono vagare in giro come polli e conigli.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game - Cottage Living",
     "DescrizioneEN": "Let your farm friends run free! Cows and llamas are finally separated from their animal shelter and can roam around like chickens and rabbits."
   },
   {
@@ -1732,11 +1732,11 @@
     "DataUltimaModifica": "08/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Core Library di Lot 51 - Universal Venue List di Basemental",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Ti permette di creare hotel personalizzati con camere per gli ospiti, servizio in camera e pulizia giornaliera. I Sims possono soggiornare, interagire nelle aree comuni e ricevere manutenzione su richiesta, rendendo le vacanze più immersive.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Core Library by Lot 51 - Universal Venue List by Basemental",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "It allows you to create custom hotels with guest rooms, room service, and daily housekeeping. Sims can stay, interact in common areas and receive maintenance on demand, making vacations more immersive."
   },
   {
@@ -1747,11 +1747,11 @@
     "DataUltimaModifica": "22/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod sblocca tutti gli oggetti CAS nascosti/bloccati del gioco! Assicurati di eliminare i file dai pacchetti che non ti appartengono! Questi oggetti vengono visualizzati come contenuti personalizzati, ma non lo sono! Basta rimuovere la mod quando hai finito e gli oggetti rimarranno sui Sims senza essere contrassegnati come cc. Si consiglia di non mantenere la mod mentre si è in modalità live.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This mod unlocks all hidden/blocked CAS items in the game! Be sure to delete files from packages that don't belong to you! These items are displayed as custom content, but they are not! Just remove the mod when you are done and the items will remain on the Sims without being marked as cc. It is recommended that you do not keep the mod while in live mode."
   },
   {
@@ -1762,11 +1762,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Toolbox di Lumpinou",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod arricchisce le interazioni durante gli appuntamenti dei Sim. Durante un appuntamento, i giocatori possono scegliere se orientare l'incontro verso un semplice \"hookup\" o mantenere una relazione puramente amichevole, aggiungendo profondità alle dinamiche sociali e romantiche del gioco.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Toolbox by Lumpinou",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This mod enriches interactions during Sim appointments. During a date, players can choose whether to steer the meeting toward a simple hookup or maintain a purely friendly relationship, adding depth to the game's social and romantic dynamics."
   },
   {
@@ -1777,11 +1777,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Toolbox di Lumpinou",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod consente ai Sim di porre fine a un'amicizia in modo definitivo. Quando utilizzato, il livello di amicizia viene azzerato e il Sim interessato viene rimosso dal pannello delle relazioni, a meno che non esista anche una relazione romantica tra i due. La mod offre un maggiore controllo sulle dinamiche sociali dei Sim.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Toolbox by Lumpinou",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This mod allows Sims to end a friendship permanently. When used, the friendship level is reset and the affected Sim is removed from the relationship panel unless a romantic relationship also exists between the two. The mod offers greater control over Sims' social dynamics."
   },
   {
@@ -1792,11 +1792,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Toolbox di Lumpinou",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "La mod Immortalize Moments permette di salvare screenshot dal gioco con testo personalizzato, accompagnati da dati come umore del Sim, lotto e orario. Le immagini possono essere visualizzate e condivise fuori dal gioco, creando un diario emozionale delle sessioni.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Toolbox by Lumpinou",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "The Immortalize Moments mod allows screenshots from the game to be saved with custom text, accompanied by data such as Sim's mood, plot and time. The images can be viewed and shared outside the game, creating an emotional diary of the sessions."
   },
   {
@@ -1807,11 +1807,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod introduce una rappresentazione più inclusiva delle identità di genere e degli orientamenti sessuali nel gioco. Aggiunge nuove preferenze romantiche, interazioni e caratteristiche uniche per i Sim, offrendo un'esperienza più realistica e diversificata. La mod amplia le possibilità di narrazione e personalizzazione, rendendo le relazioni più sfumate e autentiche. ",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This mod introduces a more inclusive representation of gender identities and sexual orientations in the game. It adds new romantic preferences, interactions and unique features for Sims, providing a more realistic and diverse experience. The mod expands the possibilities for storytelling and personalization, making relationships more nuanced and authentic."
   },
   {
@@ -1822,11 +1822,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Toolbox di Lumpinou",
+    "DLCIT": "NECESSARI: Gioco Base - Colpo di Fulmine",
     "DescrizioneIT": "Questa mod consente ai giocatori di impostare le attrazioni e le avversioni dei Sim direttamente in modalità Live. Questa funzione è accessibile tramite l'opzione \"azioni\" sul proprio Sim o su altri presenti nel lotto. Ciò permette una personalizzazione più immediata delle dinamiche relazionali tra i personaggi. ",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Toolbox by Lumpinou",
+    "DLCEN": "REQUIRED: Base Game - Lovestruck",
     "DescrizioneEN": "This mod allows players to set Sim attractions and aversions directly in Live mode. This function can be accessed via the \"actions\" option on one's Sim or others in the lot. This allows for more immediate customization of the relational dynamics between characters."
   },
   {
@@ -1837,11 +1837,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base - Colpo di Fulmine",
     "DescrizioneIT": "Questa mod aggiunge una nuova funzionalità romantica per i Sim adolescenti. Con il Cupid's Corner, i teen possono esplorare nuove dinamiche sociali e relazionali, interagendo con altri adolescenti in modo speciale. La mod offre una personalizzazione avanzata dei legami romantici e amplifica le esperienze di gioco, aggiungendo più profondità alle connessioni e agli appuntamenti tra i giovani Sim.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game - Lovestruck",
     "DescrizioneEN": "This mod adds a new romantic feature for teen Sims. With Cupid's Corner, teens can explore new social and relationship dynamics, interacting with other teens in a special way. The mod offers advanced customization of romantic bonds and amplifies game experiences, adding more depth to connections and dating between young Sims."
   },
   {
@@ -1852,11 +1852,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base - Cresciamo Insieme",
     "DescrizioneIT": "Questa mod aggiungere o rimuovere qualsiasi pietra miliare per i Sim, indipendentemente dall'età o dallo stato attuale. Questa funzionalità permette una personalizzazione avanzata delle esperienze dei Sim, facilitando la gestione dei traguardi mancanti o desiderati. È compatibile con le pietre miliari originari del gioco o aggiunti da altri mod.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game - Growing Together",
     "DescrizioneEN": "This mod add or remove any milestone for Sims, regardless of age or current status. This feature allows advanced customization of Sim experiences, making it easier to manage missing or desired milestones. It is compatible with milestones originally in the game or added by other mods."
   },
   {
@@ -1867,11 +1867,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base - Cresciamo Insieme",
     "DescrizioneIT": "Questa mod aggiunge oltre 50 pietre miliari personalizzate al gioco, alcune delle quali retroattive. Inoltre, sviluppa ulteriormente il comportamento di alcuni traguardi originali del gioco, offrendo una maggiore varietà e profondità nelle esperienze dei Sim. Questa mod arricchisce le dinamiche di gioco, permettendo ai giocatori di esplorare nuove sfide e obiettivi per i loro personaggi.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game - Growing Together",
     "DescrizioneEN": "This mod adds more than 50 custom milestones to the game, some of them retroactive. It also further develops the behavior of some of the game's original milestones, providing greater variety and depth in the Sims' experiences. This mod enriches the game dynamics, allowing players to explore new challenges and goals for their characters."
   },
   {
@@ -1882,11 +1882,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Serve per il funzionamento di altre Mod.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "It is needed for the operation of other Mods."
   },
   {
@@ -1897,11 +1897,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Toolbox di Lumpinou",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Con questa mod, i Sim avranno delle Preferenze di Relazione (esclusiva o non esclusiva) e possono vivere la loro vita romantica ideale. Possono chiedere di aprire la relazione al partner, il che può significare diventare poliamorosi, avere una relazione aperta o semplicemente qualsiasi cosa desiderino! Le definizioni di queste relazioni sono volutamente vaghe, libere e aperte.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Toolbox by Lumpinou",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "With this mod, Sims will have Relationship Preferences (exclusive or non-exclusive) and can live their ideal romantic life. They can ask to open up their relationship to their partner, which can mean becoming polyamorous, having an open relationship, or simply anything they desire! The definitions of these relationships are intentionally vague, free and open."
   },
   {
@@ -1912,11 +1912,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Toolbox di Lumpinou",
+    "DLCIT": "",
     "DescrizioneIT": "Questa mod consente ai Sim di praticare diverse religioni, interagendo con altri Sim all'interno della stessa comunità religiosa. Questa funzionalità arricchisce le dinamiche sociali e culturali del gioco, offrendo nuove opportunità di interazione e sviluppo per i personaggi.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Toolbox by Lumpinou",
+    "DLCEN": "",
     "DescrizioneEN": "This mod allows Sims to practice different religions, interacting with other Sims within the same religious community. This feature enriches the social and cultural dynamics of the game, providing new opportunities for character interaction and development."
   },
   {
@@ -1927,11 +1927,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Toolbox - Mood Pack Mod di Lumpinou",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Introduce una nuova abilità romantica, consentendo ai Sim di sviluppare e approfondire le loro relazioni amorose. Questa abilità offre nuove interazioni romantiche e stati d'animo, arricchendo l'esperienza di gioco e permettendo una personalizzazione più profonda delle dinamiche sentimentali tra i personaggi.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Toolbox - Mood Pack Mod by Lumpinou ",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Introduces a new romantic skill, allowing Sims to develop and deepen their love relationships. This skill offers new romantic interactions and moods, enriching the game experience and allowing deeper customization of the sentimental dynamics between characters."
   },
   {
@@ -1942,11 +1942,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "Toolbox di Lumpinou",
+    "DLCIT": " NECESSARI: Gioco Base - Colpo di Fulmine",
     "DescrizioneIT": "MarkInMenus: Ti mostra  quali interazioni un Sim sa  essere allineate o contrarie allo stile romantico dell'altro Sim. AffectAutonomy: dice ai Sims di NON eseguire autonomamente interazioni che sanno essere contrarie allo stile romantico dell'altro Sim.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "Toolbox by Lumpinou",
+    "DLCEN": "REQUIRED: Base Game - Lovestruck",
     "DescrizioneEN": "MarkInMenus: Shows you which interactions one Sim knows are aligned with or contrary to the other Sim's romantic style. AffectAutonomy: tells Sims to NOT independently perform interactions that they know are contrary to the other Sim's romantic style."
   },
   {
