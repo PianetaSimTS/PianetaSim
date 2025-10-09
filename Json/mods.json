@@ -1267,11 +1267,11 @@
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
+    "DLCIT": "",
     "DescrizioneIT": "Simula le dinamiche sociali dell'epoca dell'alta società e introduce nuove opzioni di gioco storiche. E' ispirata dalla popolare serie Netflix Bridgerton, i tuoi Sim possono imparare la nuova abilità di galateo, organizzare balli, acquistare o ereditare grandi tenute, affrontare o evitare scandali e persino finire nei giornali di gossip di Lady Whistledown.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
+    "DLCEN": "",
     "DescrizioneEN": "It simulates the social dynamics of the high society era and introduces new historical game options. It's inspired by the popular Netflix series Bridgerton, your Sims can learn the new skill of etiquette, arranging balls, buying or inheriting grand estates, facing or avoiding scandal, and even ending up in Lady Whistledown's gossip papers."
   },
   {
@@ -1282,11 +1282,11 @@
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "Vita in Campagna",
     "DescrizioneIT": "Permette ai Sim di cavalcare draghi nel gioco. Aggiunge creature fantastiche che possono essere addestrate, montate e utilizzate per spostamenti veloci o semplicemente per vivere avventure epiche, arricchendo l’esperienza di gioco con un tocco di magia e fantasia.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "Cottage Living",
     "DescrizioneEN": "Allows Sims to ride dragons in the game. Adds fantastical creatures that can be trained, mounted and used for fast travel or simply for epic adventures, enriching the gaming experience with a touch of magic and fantasy."
   },
   {
@@ -1297,11 +1297,11 @@
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "The Custom Preferences Mod di Zerbu",
+    "DLCIT": "",
     "DescrizioneIT": "Introduce nuove creature occulte segrete nel gioco, non disponibili tramite il gameplay standard. I Sim possono scoprire e interagire con queste misteriose entità, aggiungendo un livello di mistero e magia nascosta nel mondo di gioco.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "The Custom Preferences Mod by Zerbu",
+    "DLCEN": "",
     "DescrizioneEN": "Introduces new secret occult creatures into the game, unavailable through standard gameplay. Sims can discover and interact with these mysterious entities, adding a layer of mystery and hidden magic to the game world."
   },
   {
