@@ -1133,10 +1133,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "",
-    "DLCIT": "Mangiamo Fuori",
+    "DLCIT": "NECESSARI: Gioco Base - Mangiamo Fuori",
     "DescrizioneIT": "Questa mod migliora l'esperienza del ristorante, aggiungendo nuove funzionalità, interazioni e opzioni per rendere più coinvolgenti le esperienze culinarie nel gioco.",
     "MODEN": "",
-    "DLCEN": "Dine Out",
+    "DLCEN": "REQUIRED: Base Game - Dine Out",
     "DescrizioneEN": "This mod enhances the restaurant experience, adding new features, interactions and options to make in-game dining experiences more engaging."
   },
   {
@@ -1147,11 +1147,11 @@
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Permette di creare Sim direttamente nel gioco e filtrare le loro caratteristiche, come tratti e aspetto, per facilitarne la selezione e l’integrazione nel mondo di gioco.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "It allows you to create Sims directly in the game and filter their characteristics, such as traits and appearance, to facilitate their selection and integration into the game world."
   },
   {
@@ -1162,11 +1162,11 @@
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Aggiungerà più nomi al pulsante random (per umani, animali domestici, robot...) e ai townies del tuo gioco da tutto il mondo, come nomi francesi, italiani, inglesi, latini e altri con compatibilità con tutte le lingue di gioco.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "It will add more names to the random button (for humans, pets, robots...) and to the townies of your game from all around the world, like French, Itallian, english, latinos and others names with compatibility to all game languages."
   },
   {
@@ -1178,10 +1178,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "Mood Pack di Lumpinou - Core Library di Lot 51 - Universal Venue List di Basemental",
-    "DLCIT": "Al Lavoro - Nuove Stelle - Vita Universitaria - Usciamo Insieme",
+    "DLCIT": "NECESSARI: Gioco Base - Al Lavoro - Nuove Stelle - Vita Universitaria - Usciamo Insieme",
     "DescrizioneIT": "Questa mod aggiunge una carriera e interazioni creative legate alla moda, permettendo ai Sim di lavorare come stilisti professionisti.",
     "MODEN": "Mood Pack by Lumpinou - Core Library by Lot 51 - Universal Venue List by Basemental",
-    "DLCEN": "Get to Work - Get Famous - Discover University - Get Together",
+    "DLCEN": "REQUIRED: Base Game - Get to Work - Get Famous - Discover University - Get Together",
     "DescrizioneEN": "This mod adds fashion-related career and creative interactions, allowing Sims to work as professional stylists."
   },
   {
