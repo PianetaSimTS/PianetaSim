@@ -2017,11 +2017,11 @@
     "DataUltimaModifica": "24/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "NECESSARIA per gli altri moduli RPO",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Arricchisce le dinamiche di relazione e gravidanza, aggiungendo nuove interazioni, emozioni e opzioni per rendere l'esperienza di gioco più realistica e immersiva.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "REQUIRED for other RPO modules",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "It enriches the relationship and pregnancy dynamics, adding new interactions, emotions and options to make the gaming experience more realistic and immersive."
   },
   {
@@ -2032,11 +2032,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "RPO M00 Core Library di Lumpinou",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Il tuo Sim desidera avere figli in questo momento, è d'accordo con tutto o non vuole figli? E il suo partner? E come andrà a finire se non condividono lo stesso desiderio? I figli del tuo Sim vogliono fratelli? I loro genitori vogliono nipoti? Quali sono le preferenze del tuo Sim riguardo ai nomi per i bambini?Come reagiranno tutti all'arrivo di un nuovo membro della famiglia?",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "RPO M00 Core Library by Lumpinou",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Does your Sim want children right now, is ok with anything, or does not want children? What about their partner? And how will all that play out if they don’t share the same wish? Do your Sim’s kids want siblings? Do their parents want grandchildren? What’s your Sim’s preference regarding baby names? How will everyone react to a new family member?"
   },
   {
@@ -2047,11 +2047,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Rischio di gravidanza individuale o globale, controllo delle nascite, interventi chirurgici, interazioni sociali!",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "RPO M0 Core Library"
   },
   {
