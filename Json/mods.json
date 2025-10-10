@@ -7,10 +7,10 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
-    "MODIT": "General Pie Menus di Adeepindigo",
+    "MODIT": "",
     "DLCIT": "NECESSARI: Gioco Base - Vita sull'Isola  RACCOMANDATI: Vita da Genitori",
     "DescrizioneIT": "Aggiunge lavori fissi e part-time di babysitter. Il lavoro fisso è disponibile per gli adolescenti e il lavoro part-time per gli studenti universitari adolescenti o giovani adulti. I lavori sono disponibili principalmente di notte, anche se alcuni durante il giorno.",
-    "MODEN": "General Pie Menus by Adeepindigo",
+    "MODEN": "",
     "DLCEN": "REQUIRED: Base Game - Island Living - RECOMMENDED: Parenthood",
     "DescrizioneEN": "Adds permanent and part-time babysitting jobs. Permanent work is available for teenagers and part-time work for teenage or young adult college students. Jobs are available mainly at night, although some during the day."
   },
@@ -1193,10 +1193,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "Core Library di Lot 51 - Mood Pack di Lumpinou - General Sports Pie Menu di Danitysimmer",
-    "DLCIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod introduce una carriera basata sul basket maschile. I giocatori possono creare e gestire atlete professioniste, affrontando nuove sfide e interazioni legate al mondo dello sport, ampliando le opzioni di carriera nel gioco.",
     "MODEN": "Lot 51 Core Library - Mood Pack by Lumpinou - General Sports Pie Menu by Danitysimmer",
-    "DLCEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This mod introduces a career based on men's basketball. Players can create and manage professional female athletes, facing new challenges and interactions related to the sports world, expanding career options in the game."
   },
   {
@@ -1208,10 +1208,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Carriere",
     "MODIT": "Core Library di Lot 51 - Mood Pack di Lumpinou - General Sports Pie Menu di Danitysimmer",
-    "DLCIT": "",
+    "DLCIT": "RICHIESTI: Gioco base",
     "DescrizioneIT": "Questa mod introduce una carriera basata sul basket femminile. I giocatori possono creare e gestire atlete professioniste, affrontando nuove sfide e interazioni legate al mondo dello sport, ampliando le opzioni di carriera nel gioco.",
     "MODEN": "Lot 51 Core Library - Mood Pack by Lumpinou - General Sports Pie Menu by Danitysimmer",
-    "DLCEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This mod introduces a career based on women's basketball. Players can create and manage professional female athletes, facing new challenges and interactions related to the sports world, expanding the career options in the game."
   },
   {
@@ -1222,11 +1222,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "RICHIESTI: Gioco base",
     "DescrizioneIT": "MCCC è una mod che offre un ampio controllo sul gameplay, permettendo di gestire le impostazioni del gioco, le dinamiche familiari e molte altre funzionalità avanzate.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIREMENTS: Base game",
     "DescrizioneEN": "MCCC is a mod that offers extensive control over gameplay, allowing you to manage game settings, family dynamics, and many other advanced features."
   },
   {
@@ -1237,11 +1237,11 @@
     "DataUltimaModifica": null,
     "Translation": "da-scaricare",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "RICHIESTI: Gioco base",
     "DescrizioneIT": "Gioca nei panni di qualsiasi sim: Passa senza problemi il controllo tra i tuoi sim domestici attivi e qualsiasi altro sim nel mondo di gioco. Questa mod per The Sims 4 ti consente di controllare i Sims e gli animali domestici di altre unità familiari, migliorando la flessibilità e la creatività nel tuo gameplay.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIREMENTS: Base game",
     "DescrizioneEN": "Play as any sim: Seamlessly switch control between your active home sims and any other sim in the game world. This mod for The Sims 4 allows you to control Sims and pets from other family units, enhancing flexibility and creativity in your gameplay."
   },
   {
@@ -1253,10 +1253,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam ",
-    "DLCIT": "Vita Universitaria - Al Lavoro - Vita da Liceali",
+    "DLCIT": "RICHIESTI: Gioco base - Vita Universitaria - Al Lavoro - Vita da Liceali",
     "DescrizioneIT": "Sono finiti i giorni in cui i tuoi Sims potevano semplicemente andare al pannello della carriera e selezionare un lavoro. Con questa mod, il tuo sim dovrà superare un colloquio e avere la laurea richiesta.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "Discover University - Get to Work - High School Years",
+    "DLCEN": "REQUIREMENTS: Base game - Discover University - Get to Work - High School Years",
     "DescrizioneEN": "Gone are the days when your Sims could simply go to the career panel and select a job. With this mod, your sim will have to pass an interview and have the required degree."
   },
   {
@@ -1268,10 +1268,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "",
+    "DLCIT": "RICHIESTI: Gioco base",
     "DescrizioneIT": "Romantica: A Lover’s Type Mod” di ellesimsworld espande il tratto “Romantico” rendendolo più definito. Permette ai Sims dai giovani adulti agli anziani di scegliere fra sei tipi di amante (Passionale, Gentile, Piccante, Possessivo, Viziato, Noncurante), ognuno con interazioni sociali uniche, buff personalizzati e notifiche. Include anche un addon opzionale “Lovey Dovey.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "",
+    "DLCEN": "REQUIREMENTS: Base game",
     "DescrizioneEN": "Romantic: A Lover's Type Mod by ellesimsworld expands on the “Romantic” trait, making it more defined. It allows Sims from young adults to elders to choose between six types of lovers (Passionate, Gentle, Spicy, Possessive, Spoiled, Careless), each with unique social interactions, custom buffs, and notifications. It also includes an optional add-on called “Lovey Dovey.”"
   },
   {
@@ -1283,10 +1283,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "",
-    "DLCIT": "RACCOMANDATI: In affitto - Al lavoro - Usciamo insieme - Cresciamo Insieme - Vita da liceali - Vita sull'isola - Vita e morte - Oasi innevata - Hobby e attività - Avventura nella giungla - Il mio matrimonio",
+    "DLCIT": "RICHIESTI: Gioco base RACCOMANDATI: In affitto - Al lavoro - Usciamo insieme - Cresciamo Insieme - Vita da liceali - Vita sull'isola - Vita e morte - Oasi innevata - Hobby e attività - Avventura nella giungla - Il mio matrimonio",
     "DescrizioneIT": "Introduce la difficoltà linguistica nel gioco, simulando le barriere linguistiche tra Sim di diverse nazionalità o culture. I Sim che non parlano la stessa lingua avranno difficoltà a comunicare, aggiungendo un livello di realismo e sfida nelle interazioni sociali.",
     "MODEN": "",
-    "DLCEN": "RECOMMENDED: For Rent - Get to Work - Get Together - Growing Together - High School Years - Island Living - Life & Death - Snowy Escape - Businesses & Hobbies - Jungle Adventure -  ",
+    "DLCEN": "REQUIREMENTS: Base game RECOMMENDED: For Rent - Get to Work - Get Together - Growing Together - High School Years - Island Living - Life & Death - Snowy Escape - Businesses & Hobbies - Jungle Adventure -  ",
     "DescrizioneEN": "Introduces language difficulty into the game, simulating language barriers between Sims of different nationalities or cultures. Sims who do not speak the same language will have difficulty communicating, adding a level of realism and challenge in social interactions."
   },
   {
@@ -1297,11 +1297,11 @@
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
     "Categoria": "Utilità",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "RICHIESTI: Gioco base",
     "DescrizioneIT": "Serve per il funzionamento di altre mod.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIREMENTS: Base game",
     "DescrizioneEN": "It is needed for the operation of other mods."
   },
   {
@@ -1312,11 +1312,11 @@
     "DataUltimaModifica": null,
     "Translation": "non necessaria",
     "Categoria": "Gameplay",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "RICHIESTI: Gioco base",
     "DescrizioneIT": "Sblocca una serie di azioni speciali per il Mietitore e altri personaggi nel gioco, permettendo nuove interazioni e comportamenti che normalmente non sono disponibili, arricchendo l’esperienza di gioco.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIREMENTS: Base game",
     "DescrizioneEN": "It unlocks a number of special actions for the Reaper and other characters in the game, allowing new interactions and behaviors that are not normally available, enriching the gameplay experience."
   },
   {
