@@ -338,10 +338,10 @@
     "Translation": "inclusa",
     "Categoria": "Utilità",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Permette al giocatore di far sedere i sim in modo composto.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
-    "DLCEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Allows the player to seat the sims in a composed manner."
   },
   {
@@ -352,11 +352,11 @@
     "DataUltimaModifica": "18/09/2025",
     "Translation": "non necessaria",
     "Categoria": "Varie",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod aggiunge un sacco di nomi al gioco, ma davvero un sacco! Soprattutto sono nomi che derivano da culture diverse il che rende il gioco molto più realistico. Vi consiglio di leggere attentamente il post della modder, dove troverete anche l'elenco dei nomi inseriti.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This mod adds a lot of names to the game, but really a lot! Especially they are names that come from different cultures which makes the game much more realistic. I recommend that you read the modder's post carefully, where you will also find the list of names added."
   },
   {
@@ -1073,10 +1073,10 @@
     "Translation": "inclusa",
     "Categoria": "Oggetti Funzionali",
     "MODIT": "",
-    "DLCIT": "RACCOMANDATI: Stagioni & Pulizie di Primavera ",
+    "DLCIT": "NECESSARI: Gioco Base RACCOMANDATI: Stagioni - Pulizie di Primavera ",
     "DescrizioneIT": "Luminova è un nuovo marchio immaginario che presenta 17 nuovi oggetti intelligenti! Questo marchio potrebbe espandersi in futuro con ulteriori dispositivi intelligenti. ",
     "MODEN": "",
-    "DLCEN": "RECOMMENDED: Seasons & Bust The Dust ",
+    "DLCEN": "REQUIRED: Base Game RECOMMENDED: Seasons - Bust The Dust ",
     "DescrizioneEN": "Luminova is a new imaginary brand that introduces 17 new smart objects! This brand may expand in the future with additional smart devices."
   },
   {
@@ -1087,11 +1087,11 @@
     "DataUltimaModifica": "24/09/2025",
     "Translation": "inclusa",
     "Categoria": "Oggetti Funzionali",
-    "MODIT": null,
-    "DLCIT": null,
+    "MODIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Plumfruit Essentials è una mod che introduce una linea di prodotti ispirata ad Apple, elegante e minimalista. Include smartphone, computer, tablet e accessori high-tech con design moderni. Offre nuove funzionalità realistiche e opzioni decorative, arricchendo il gameplay con uno stile tecnologico raffinato. Perfetto per simulazioni contemporanee.",
-    "MODEN": null,
-    "DLCEN": null,
+    "MODEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Plumfruit Essentials is a mod that introduces a line of Apple-inspired products, elegant and minimalist. It includes smartphones, computers, tablets, and high-tech accessories with modern designs. It offers new realistic features and decorative options, enriching gameplay with a refined technological style. Perfect for contemporary simulations."
   },
   {
@@ -1103,10 +1103,10 @@
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "MODIT": "ATTENZIONE: va usata una sola Venue List",
-    "DLCIT": "",
+    "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod sblocca tutti i tipi di lotto.",
     "MODEN": "PLEASE NOTE: only one Venue List should be used",
-    "DLCEN": "",
+    "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "This mod unlocks all lot types."
   },
   {
@@ -1118,10 +1118,10 @@
     "Translation": "da-scaricare",
     "Categoria": "Eventi",
     "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam ",
-    "DLCIT": "Stagioni",
+    "DLCIT": "NECESSARI: Gioco Base - Stagioni",
     "DescrizioneIT": "Aggiunge un'interazione sociale personalizzata \"Dolcetto o scherzetto!\" è disponibile in qualsiasi festività aggiungendo la tradizione del Dolcetto Scherzetto.",
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam ",
-    "DLCEN": "Seasons",
+    "DLCEN": "REQUIRED: Base Game - Seasons",
     "DescrizioneEN": "Adds personalized social interaction \"Trick or Treat!\" is available on any holiday by adding the tradition of Trick or Treating."
   },
   {
