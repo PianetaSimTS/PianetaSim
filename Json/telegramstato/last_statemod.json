@@ -1066,11 +1066,26 @@
   },
   {
     "Author": "Arnie",
+    "ModName": "FutureFruit",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.patreon.com/posts/futurefruit-mod-137406781",
+    "DataUltimaModifica": "24/09/2025",
+    "Translation": "da-scaricare",
+    "Categoria": "Oggetti Funzionali",
+    "MODIT": null,
+    "DLCIT": null,
+    "DescrizioneIT": null,
+    "MODEN": null,
+    "DLCEN": null,
+    "DescrizioneEN": null
+  },
+  {
+    "Author": "Arnie",
     "ModName": "Luminova",
     "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/posts/luminova-v1-5-120949707",
     "DataUltimaModifica": "24/09/2025",
-    "Translation": "inclusa",
+    "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
     "MODIT": "",
     "DLCIT": "NECESSARI: Gioco Base RACCOMANDATI: Stagioni - Pulizie di Primavera ",
@@ -1085,7 +1100,7 @@
     "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/posts/download-1-2-125833481",
     "DataUltimaModifica": "24/09/2025",
-    "Translation": "inclusa",
+    "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
     "MODIT": "",
     "DLCIT": "NECESSARI: Gioco Base",
@@ -2400,7 +2415,7 @@
     "DescrizioneEN": "It is needed for the operation of other mods of Lumpinou."
   },
   {
-    "Author": "LunarBritney",
+    "Author": "Lunar Britney",
     "ModName": "Higher Business Activity Limit",
     "Status": "aggiornata",
     "SiteLink": "https://www.curseforge.com/sims4/mods/higher-business-activity-limit",
@@ -2415,7 +2430,7 @@
     "DescrizioneEN": "It allows you to set up more than 5 businesses by adding 3 more slots, for a total of 8 businesses."
   },
   {
-    "Author": "LunarBritney",
+    "Author": "Lunar Britney",
     "ModName": "More Small Business Employees",
     "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/more-small-business-employees",
@@ -2430,7 +2445,7 @@
     "DescrizioneEN": "It allows you to hire 3 more employees."
   },
   {
-    "Author": "LunarBritney",
+    "Author": "Lunar Britney",
     "ModName": "More Small Business Visitors",
     "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/more-small-business-visitors",
