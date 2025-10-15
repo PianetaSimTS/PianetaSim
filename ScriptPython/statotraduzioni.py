@@ -115,9 +115,9 @@ def compare_status_only(old_state, new_state):
 
             icon = status_icons.get(new_status, "⚪️")
             msg = (
-                f"TRADUZIONE AGGIUNTA AL SITO\n\n"
+                f"TRADUZIONE AGGIUNTA AL SITO *{new_mod['Translator']}*\n\n"
                 f"*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\n"
-                f"Stato {icon} *{new_status}*\n"
+                f"Stato {icon} _{new_status}_\n"
                 f"Versione Mod: {new_release_version}\n"
                 f"Link [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
             )
@@ -140,9 +140,9 @@ def compare_status_only(old_state, new_state):
                     new_status = "DA AGGIORNARE"
                 icon = status_icons.get(new_status, "⚪️")
                 msg = (
-                    f"TRADUZIONE MOD di _{new_mod['Translator']}_\n\n"
+                    f"TRADUZIONE MOD *{new_mod['Translator']}*\n\n"
                     f"*{new_mod['Title']}* ➜ Di *{new_mod['Creator']}*\n\n"
-                    f"Stato {icon} *{new_status}*\n"
+                    f"Stato {icon} _{new_status}_\n"
                     f"Versione Mod: {new_release_version}\n"
                     f"Link [SITO](https://pianetasimts.github.io/PianetaSim/traduzioni.html)"
                 )
