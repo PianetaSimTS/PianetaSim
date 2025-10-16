@@ -450,3 +450,187 @@ tr:nth-child(even) td {
 .star:hover {
   transform: scale(1.2);
 }
+
+/* Riduzione dimensioni colonne specifiche */
+#mods-table th:nth-child(1), /* PREFERITE */
+#mods-table td:nth-child(1) {
+  width: 80px;
+  min-width: 80px;
+  max-width: 80px;
+}
+
+#mods-table th:nth-child(2), /* AUTORE */
+#mods-table td:nth-child(2) {
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
+}
+
+#mods-table th:nth-child(3), /* MOD */
+#mods-table td:nth-child(3) {
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Assicurati che il testo nelle celle ridotte si adatti */
+#mods-table td {
+  font-size: 14px;
+  padding: 10px 8px;
+  word-break: break-word;
+}
+
+/* Riduci ulteriormente il padding per le colonne strette */
+#mods-table th:nth-child(1),
+#mods-table td:nth-child(1),
+#mods-table th:nth-child(2),
+#mods-table td:nth-child(2) {
+  padding: 8px 5px;
+}
+
+/* Migliora la visualizzazione delle stelle nelle colonne ridotte */
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.star {
+  font-size: 20px; /* Leggermente più piccolo */
+}
+
+/* Colonne ultra compatte */
+#mods-table th:nth-child(1), /* PREFERITE */
+#mods-table td:nth-child(1) {
+  width: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  padding: 5px 2px;
+}
+
+#mods-table th:nth-child(6), /* DATA ULTIMA MODIFICA */
+#mods-table td:nth-child(6) {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  padding: 8px 5px;
+  font-size: 12px;
+}
+
+/* ALLARGATA - TRADUZIONE */
+#mods-table th:nth-child(7), /* TRADUZIONE */
+#mods-table td:nth-child(7) {
+  width: 120px;  /* Aumentata da 80px a 120px */
+  min-width: 120px;
+  max-width: 120px;
+  padding: 8px 5px;
+}
+
+/* ALLARGATA - STATO */
+#mods-table th:nth-child(4), /* STATO */
+#mods-table td:nth-child(4) {
+  width: 110px;  /* Aggiunta larghezza fissa per Stato */
+  min-width: 110px;
+  max-width: 110px;
+  padding: 8px 5px;
+}
+
+/* Riduzione AUTORE e MOD */
+#mods-table th:nth-child(2), /* AUTORE */
+#mods-table td:nth-child(2) {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  padding: 8px 5px;
+}
+
+#mods-table th:nth-child(3), /* MOD */
+#mods-table td:nth-child(3) {
+  width: 170px; /* Leggermente ridotta per compensare */
+  min-width: 170px;
+  max-width: 170px;
+  padding: 8px 5px;
+}
+
+/* Stelle più piccole per colonna ultra stretta */
+.star {
+  font-size: 18px;
+}
+
+/* Testo più compatto per le colonne ridotte */
+#mods-table td:nth-child(6) {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+/* Status e traduzione - testo più leggibile */
+.status, .traduzione {
+  padding: 4px 8px;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  min-width: 80px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+/* Status colors - mantenuti ma con testo più leggibile */
+.status.nuova {
+  background-color: #9372ff;
+  color: white;
+}
+
+.status.obsoleta {
+  background-color: #545454;
+  color: white;
+}
+
+.status.compatibile {
+  background-color: #008eff;
+  color: white;
+}
+
+.status.rotta {
+  background-color: #ff0015;
+  color: white;
+}
+
+.status.sconosciuta {
+  background-color: #545454;
+  color: white;
+}
+
+.status.aggiornata {
+  background-color: #00d517;
+  color: white;
+}
+
+/* Traduzione colors - migliorata leggibilità */
+.traduzione.inclusa {
+  background-color: #54d41d;
+  color: white;
+}
+
+.traduzione.non-necessaria {
+  background-color: #38b6ff;
+  color: white;
+}
+
+.traduzione.in-lavorazione {
+  background-color: #ff57cb;
+  color: white;
+}
+
+.traduzione.da-scaricare {
+  background-color: #ff9800;
+  color: white;
+}
+
+/* Link più compatti */
+#mods-table td:nth-child(5) {
+  padding: 8px 5px;
+}
