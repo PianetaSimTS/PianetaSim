@@ -190,5 +190,12 @@ function toggleLanguage() {
   setTimeout(loadModsFromJson, 100);
 }
 
+// Impostazione della lingua iniziale
+function setInitialLanguage() {
+  const savedLanguage = localStorage.getItem("language") || "it";
+  languageSwitch.checked = savedLanguage === "en";
+  toggleLanguage();
+}
+
 languageSwitch.addEventListener("change", toggleLanguage);
 setInitialLanguage();
