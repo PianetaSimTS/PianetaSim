@@ -1695,7 +1695,7 @@
     "DescrizioneEN": "Introduces the concept of nobility and monarchy into the game. Sims can become members of the royal family, rule lands, have titles of nobility and participate in court events. This mod adds new careers, interactions and gameplay possibilities related to court life, creating a more regal and aristocratic experience for players."
   },
   {
-    "Author": "LoryNa",
+    "Author": "LoryNa Mods",
     "ModName": "Carriera Modder - Attiva",
     "Status": "compatibile",
     "SiteLink": "https://www.lorynamods.com/carriera-modder/?doing_wp_cron=1743536343.3856940269470214843750",
@@ -1710,7 +1710,7 @@
     "DescrizioneEN": "Have you ever wanted to make your Sim a Modder? From today you can with this new active career!"
   },
   {
-    "Author": "LoryNa",
+    "Author": "LoryNa Mods",
     "ModName": "Genitore a Casa - Carriera Semi-Attiva",
     "Status": "compatibile",
     "SiteLink": "https://www.lorynamods.com/genitore-a-casa/",
@@ -1725,7 +1725,7 @@
     "DescrizioneEN": "Being a Parent is hard work and definitely deserves financial help, especially when you are a single parent or your partner is out all day at an underpaid job and/or you cannot afford a babysitter. Start today, the Home Sweet Home Association will be happy to help!"
   },
   {
-    "Author": "LoryNa",
+    "Author": "LoryNa Mods",
     "ModName": "Halloween Special Recipes",
     "Status": "compatibile",
     "SiteLink": "https://www.lorynamods.com/halloween-special-recipes/",
@@ -1740,7 +1740,7 @@
     "DescrizioneEN": "Small mod to celebrate Halloween! From the \"Special Halloween Recipes\" menu you will find 3 new recipes and from today your Sims can temporarily become ghosts with the new drink \"Phantasmagoric Drink\"! In fact, if they drink it, they can enjoy the experience for about 3 hours! Isn't that phantasmagoric!"
   },
   {
-    "Author": "LoryNa",
+    "Author": "LoryNa Mods",
     "ModName": "Maggiori Interazioni di Gravidanza",
     "Status": "compatibile",
     "SiteLink": "https://www.lorynamods.com/maggiori-interazioni-di-gravidanza/?doing_wp_cron=1743536375.9614200592041015625000",
@@ -1755,7 +1755,7 @@
     "DescrizioneEN": "This mod features a pregnancy monitoring app, a new NPC, new computer interactions, and the ability to choose the infant's feeding preference."
   },
   {
-    "Author": "LoryNa",
+    "Author": "LoryNa Mods",
     "ModName": "Mod Stili Genitoriali",
     "Status": "compatibile",
     "SiteLink": "https://www.lorynamods.com/mod-stili-genitoriali/",
@@ -1770,7 +1770,7 @@
     "DescrizioneEN": "Introduces 8 parenting traits (perfect, naturalist, sportsman, creative, nerd, religious, career lover, homemaker) that influence child development and family dynamics, offering more realistic and personalized parenting."
   },
   {
-    "Author": "LoryNa",
+    "Author": "LoryNa Mods",
     "ModName": "Negozio di Maternità - EPI Mod",
     "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/maternity-shop-epi-mod",
@@ -1785,7 +1785,7 @@
     "DescrizioneEN": "This is the Maternity Shop for Expanded Pregnancy Interactions mod."
   },
   {
-    "Author": "LoryNa",
+    "Author": "LoryNa Mods",
     "ModName": "Scoperte Giovanili",
     "Status": "compatibile",
     "SiteLink": "https://www.lorynamods.com/scoperte-giovanili/",
@@ -1800,7 +1800,7 @@
     "DescrizioneEN": "This mod is an interpretation of how child and teen Sims begin to discover love. The mod is divided into 2 modules so you can choose for yourself whether you want to play with both the child and teen parts, or not."
   },
   {
-    "Author": "LoryNa",
+    "Author": "LoryNa Mods",
     "ModName": "Sweet Simsmas Ricette ",
     "Status": "compatibile",
     "SiteLink": "https://www.lorynamods.com/sweet-simsmas-recipes/",
@@ -1813,6 +1813,21 @@
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
     "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "What is never missing on Italian tables at Christmas? Pandoro and Panettone, of course! In this mod there are 6 new Christmas recipes, 2 new features."
+  },
+  {
+    "Author": "LoryNa Mods",
+    "ModName": "Malattie & Infortuni pediatrici",
+    "Status": "nuova",
+    "SiteLink": "https://www.lorynamods.com/malattie-ed-infortuni-pediatrici/",
+    "DataUltimaModifica": "18/10/2025",
+    "Translation": "inclusa",
+    "Categoria": "Gameplay",
+    "MODIT": "XML Injector di Scumbumbo/Triplis/LittleMsSam",
+    "DLCIT": "NECESSARI: Gioco Base - Al Lavoro",
+    "DescrizioneIT": "Con questa mod i bambini potranno sperimentare malattie pediatriche, infatti i Sims potranno chiamare un pediatra a casa per farli visitare oppure andare in clinica (rabbithole) per una semplice visita di controllo o per far diagnosticare i piccoli malati.",
+    "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
+    "DLCEN": "REQUIRED: Base Game - Go to work",
+    "DescrizioneEN": "With this mod, children will be able to experience pediatric diseases. In fact, Sims will be able to call a pediatrician at home or go to the clinic (rabbithole) to have their little ones diagnosed."
   },
   {
     "Author": "Lot 51",
@@ -2662,10 +2677,10 @@
     "DataUltimaModifica": "17/10/2025",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
-    "MODIT": "ATTENZIONE: è in conflitto con Steady Sit & Seat Any Sim di Amellce. Sovrascrive 288595, entrerà in conflitto con qualsiasi mod che sovrascrive anche questa messa a punto",
-    "DLCIT": "NECESSARIE: Gioco base  ",
+    "MODIT": "Core Library di Lot 51  ATTENZIONE: Va in conflitto con Steady Sit & Seat Any Sim di Amellce. Sovrascrive 288595, entrerà in conflitto con qualsiasi mod che sovrascrive anche questa messa a punto",
+    "DLCIT": "NECESSARI: Gioco base ",
     "DescrizioneIT": "Con questa mod, i sims dei bebè potranno sedersi e dormire sul letto matrimoniale con i loro genitori.",
-    "MODEN": " WARNING: Conflicts with Steady Sit & Seat Any Sim by Amellce. Overwrites 288595, will conflict with any mod that also overwrites this setting.",
+    "MODEN": "Core Library by Lot 51  WARNING: Conflicts with Steady Sit & Seat Any Sim by Amellce. Overwrites 288595, will conflict with any mod that also overwrites this setting.",
     "DLCEN": "REQUIRED: Base game ",
     "DescrizioneEN": "With this mod, baby Sims will be able to sit and sleep on the double bed with their parents."
   },
