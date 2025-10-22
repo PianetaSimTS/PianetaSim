@@ -1,7 +1,23 @@
 let lastSortedColumn = -1;
 let lastSortDirection = 'asc';
 
-// Funzione per ottenere la traduzione della categoria in base alla lingua selezionata
+// Funzione per formattare i requisiti in grassetto
+function formatRequirements(text) {
+  if (!text) return '';
+  
+  // Aggiunge grassetto alle parole chiave
+  const keywords = ['necessari', 'consigliati', 'attenzione', 'required', 'recommended', 'attention'];
+  
+  let formattedText = text;
+  keywords.forEach(keyword => {
+    const regex = new RegExp(`\\b${keyword}\\b`, 'gi');
+    formattedText = formattedText.replace(regex, '<strong>$&</strong>');
+  });
+  
+  return formattedText;
+}
+
+// Funzione per ottenere la traduzione della categoria
 function translateCategory(category, lang) {
   if (lang === "en") {
     return categoryTranslation[category] || category;
@@ -9,6 +25,7 @@ function translateCategory(category, lang) {
     return Object.keys(categoryTranslation).find(key => categoryTranslation[key] === category) || category;
   }
 }
+
 function separateModsAndDlc(dependencyString) {
   if (!dependencyString) {
     return { mods: '', dlc: '' };
@@ -17,15 +34,12 @@ function separateModsAndDlc(dependencyString) {
   const mods = [];
   const dlc = [];
   
-  // Separa la stringa usando " - " come delimitatore
   const parts = dependencyString.split(' - ');
   
   parts.forEach(part => {
     if (part.startsWith('MOD:')) {
-      // Rimuove "MOD:" e aggiunge alla lista mods
       mods.push(part.replace('MOD:', '').trim());
     } else if (part.startsWith('DLC:')) {
-      // Rimuove "DLC:" e aggiunge alla lista dlc
       dlc.push(part.replace('DLC:', '').trim());
     }
   });
@@ -35,7 +49,8 @@ function separateModsAndDlc(dependencyString) {
     dlc: dlc.join(', ')
   };
 }
-// Funzione per aggiornare il dropdown delle categorie con la lingua selezionata
+
+// Funzione per aggiornare il dropdown delle categorie
 function updateCategoryDropdown(mods) {
   const lang = localStorage.getItem("language") || "it";
   const dropdown = document.getElementById("filter-category-dropdown");
@@ -92,6 +107,10 @@ function loadModsFromJson() {
         const modLink = mod.SiteLink || '#';
         sessionStorage.setItem(mod.ModName, modLink);
 
+        // Formatta i requisiti con grassetto
+        const formattedModReqs = formatRequirements(mod[modKey] || '');
+        const formattedDlcReqs = formatRequirements(mod[dlcKey] || '');
+
         newRow.innerHTML = `
   <td>
     <span class="star-container">
@@ -119,8 +138,8 @@ function loadModsFromJson() {
         : ''}
     </span>
   </td>
-  <td>${mod[modKey] || ''}</td>
-  <td>${mod[dlcKey] || ''}</td>
+  <td>${formattedModReqs}</td>
+  <td>${formattedDlcReqs}</td>
 `;
 
         newRow.querySelector('.mod-name').appendChild(tooltip);
@@ -132,7 +151,6 @@ function loadModsFromJson() {
     .catch(error => console.error('Errore nel caricare il JSON:', error));
 }
 
-// Aggiorna anche la funzione sortTable per gestire le nuove colonne
 function sortTable(columnIndex) {
   const table = document.getElementById("mods-table");
   const rows = Array.from(table.rows).slice(1);
@@ -148,7 +166,6 @@ function sortTable(columnIndex) {
     let valA = a.cells[columnIndex].textContent.trim().toLowerCase();
     let valB = b.cells[columnIndex].textContent.trim().toLowerCase();
 
-    // Gestione speciale per le colonne vuote
     if (valA === '' && valB !== '') return lastSortDirection === 'asc' ? 1 : -1;
     if (valA !== '' && valB === '') return lastSortDirection === 'asc' ? -1 : 1;
     if (valA === '' && valB === '') return 0;
@@ -206,37 +223,7 @@ function checkModUpdates(mods) {
   }
 }
 
-function sortTable(columnIndex) {
-  const table = document.getElementById("mods-table");
-  const rows = Array.from(table.rows).slice(1);
-  const arrow = document.getElementById(`arrow-${columnIndex}`);
-
-  if (lastSortedColumn === columnIndex) {
-    lastSortDirection = (lastSortDirection === 'asc') ? 'desc' : 'asc';
-  } else {
-    lastSortDirection = 'asc';
-  }
-
-  const compare = (a, b) => {
-    let valA = a.cells[columnIndex].textContent.trim().toLowerCase();
-    let valB = b.cells[columnIndex].textContent.trim().toLowerCase();
-
-    if (valA < valB) return lastSortDirection === 'asc' ? -1 : 1;
-    if (valA > valB) return lastSortDirection === 'asc' ? 1 : -1;
-    return 0;
-  };
-
-  rows.sort(compare);
-
-  rows.forEach(row => table.appendChild(row));
-
-  document.querySelectorAll('.sort-arrow').forEach(arrow => arrow.classList.remove('asc', 'desc'));
-
-  arrow.classList.add(lastSortDirection);
-
-  lastSortedColumn = columnIndex;
-}
-
+// FUNZIONE filterTable MANCANTE - AGGIUNTA
 function filterTable() {
   const searchValue = document.getElementById("search").value.toLowerCase();
 
@@ -301,6 +288,21 @@ function toggleFavorite(modName) {
   
   localStorage.setItem("favorites", JSON.stringify(favorites));
   loadModsFromJson();
+}
+
+// Aggiungi anche queste funzioni mancanti se necessario
+function showTooltip(event, modName) {
+  const tooltip = event.currentTarget.querySelector('.tooltip');
+  if (tooltip) {
+    tooltip.style.display = 'block';
+  }
+}
+
+function hideTooltip(event) {
+  const tooltip = event.currentTarget.querySelector('.tooltip');
+  if (tooltip) {
+    tooltip.style.display = 'none';
+  }
 }
 
 window.addEventListener("load", loadModsFromJson);

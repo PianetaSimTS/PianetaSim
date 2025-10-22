@@ -50,7 +50,39 @@ function hideTooltip(event) {
     tooltip.style.display = 'none';
   }
 }
-
+    function createStars() {
+      const container = document.getElementById('stars-container');
+      const colors = ['green', 'purple'];
+      
+      // Crea 50 stelle
+      for (let i = 0; i < 50; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        
+        // Colore casuale (verde o viola)
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        star.classList.add(color);
+        
+        // Posizione casuale
+        const left = Math.random() * 100;
+        const top = Math.random() * 100;
+        
+        star.style.left = `${left}%`;
+        star.style.top = `${top}%`;
+        
+        // Durata e ritardo casuali
+        const duration = 3 + Math.random() * 7; // Tra 3 e 10 secondi
+        const delay = Math.random() * 5; // Ritardo fino a 5 secondi
+        
+        star.style.animationDuration = `${duration}s`;
+        star.style.animationDelay = `${delay}s`;
+        
+        container.appendChild(star);
+      }
+    }
+    
+    // Inizializza le stelle quando la pagina è caricata
+    document.addEventListener('DOMContentLoaded', createStars);
 // Scroll to top
 window.addEventListener("scroll", function () {
   const scrollToTopButton = document.getElementById("scrollToTop");
@@ -72,3 +104,4 @@ window.addEventListener('beforeunload', () => {
     .filter(key => key !== 'favorites')
     .forEach(key => sessionStorage.removeItem(key)); 
 });
+
