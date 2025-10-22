@@ -17,42 +17,6 @@
   --text-color: #fff;
 }
 
-/* Animazioni globali */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInFromTop {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: var(--bodybackground);
-  margin: 0;
-  padding: 0;
-}
-
 #filter-status-dropdown, #filter-translation-dropdown, #filter-category-dropdown {
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -74,24 +38,14 @@ td a:active {
   color: var(--tdactive);
 }
 
-/* HEADER STICKY CHE CONTIENE TUTTO */
-.sticky-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: var(--bodybackground);
-}
-
-/* Language toggle fisso in alto a destra */
 .language-toggle {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--text-color);
-  z-index: 1002;
+  color: var(--text-color)
 }
 
 .switch {
@@ -139,19 +93,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Titolo */
-h1 {
-  color: var(--h1color);
-  font-size: 2rem;
-  margin: 0;
-  padding: 20px 0;
-  background-color: var(--h1backgroundcolor);
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-/* Navbar */
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -160,9 +101,6 @@ h1 {
   background-color: var(--navbarbackground);
   padding: 10px;
   border-bottom: 3px solid #f9359d;
-  animation: slideInFromTop 0.5s ease-out;
-  position: relative;
-  z-index: 1;
 }
 
 .tooltip {
@@ -267,30 +205,29 @@ h1 {
 }
 
 .back-arrow {
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 10px;
   text-decoration: none;
   font-size: 20px;
   color: #16ab63;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
   display: flex;
   align-items: center;
   text-decoration: none;
-  z-index: 1001;
-  background: rgba(52, 58, 64, 0.95);
-  padding: 8px 15px;
-  border-radius: 25px;
-  border: 2px solid #16ab63;
-  animation: fadeInUp 0.5s ease-out;
 }
 
 .back-arrow:hover {
   color: #16ab63;
-  transform: scale(1.1) translateX(-5px);
-  background: rgba(22, 171, 99, 0.2);
-  box-shadow: 0 5px 15px rgba(22, 171, 99, 0.3);
+  transform: scale(1.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bodybackground);
+  margin: 0;
+  padding: 0;
 }
 
 input, select {
@@ -306,7 +243,6 @@ input:focus, select:focus {
   border-color: #16ab63;
 }
 
-/* Form container che scorre con tutto il resto */
 .form-container {
   display: flex;
   flex-wrap: wrap;
@@ -320,10 +256,6 @@ input:focus, select:focus {
   background-color: var(--formcontainerbackground);
   color: var(--formcontainercolor);
   gap: 60px;
-  position: relative;
-  z-index: 1;
-  background-color: var(--formcontainerbackground);
-  animation: fadeInUp 0.5s ease-out 0.2s both;
 }
 
 .form-container label {
@@ -338,10 +270,13 @@ input:focus, select:focus {
   gap: 10px;
 }
 
-/* Contenuto principale */
-.main-content {
-  position: relative;
-  z-index: 0;
+h1 {
+  color: var(--h1color);
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px 0;
+  background-color: var(--h1backgroundcolor);
+  text-align: center;
 }
 
 table {
@@ -517,32 +452,41 @@ tr:nth-child(even) td {
 }
 
 /* Riduzione dimensioni colonne specifiche */
-#animazioni-table th:nth-child(1), /* PREFERITE */
-#animazioni-table td:nth-child(1) {
+#mods-table th:nth-child(1), /* PREFERITE */
+#mods-table td:nth-child(1) {
   width: 80px;
   min-width: 80px;
   max-width: 80px;
 }
 
-#animazioni-table th:nth-child(2), /* AUTORE */
-#animazioni-table td:nth-child(2) {
+#mods-table th:nth-child(2), /* AUTORE */
+#mods-table td:nth-child(2) {
   width: 120px;
   min-width: 120px;
   max-width: 120px;
 }
 
+#mods-table th:nth-child(3), /* MOD */
+#mods-table td:nth-child(3) {
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
 /* Assicurati che il testo nelle celle ridotte si adatti */
-#animazioni-table td {
+#mods-table td {
   font-size: 14px;
   padding: 10px 8px;
   word-break: break-word;
 }
 
 /* Riduci ulteriormente il padding per le colonne strette */
-#animazioni-table th:nth-child(1),
-#animazioni-table td:nth-child(1),
-#animazioni-table th:nth-child(2),
-#animazioni-table td:nth-child(2) {
+#mods-table th:nth-child(1),
+#mods-table td:nth-child(1),
+#mods-table th:nth-child(2),
+#mods-table td:nth-child(2) {
   padding: 8px 5px;
 }
 
@@ -555,43 +499,59 @@ tr:nth-child(even) td {
 }
 
 .star {
-  font-size: 20px;
+  font-size: 20px; /* Leggermente più piccolo */
 }
 
 /* Colonne ultra compatte */
-#animazioni-table th:nth-child(1), /* PREFERITE */
-#animazioni-table td:nth-child(1) {
+#mods-table th:nth-child(1), /* PREFERITE */
+#mods-table td:nth-child(1) {
   width: 50px;
   min-width: 50px;
   max-width: 50px;
   padding: 5px 2px;
 }
 
-/* ALLARGATA - DATA ULTIMA MODIFICA */
-#animazioni-table th:nth-child(5), /* DATA AGGIORNAMENTO ANIMAZIONE */
-#animazioni-table td:nth-child(5) {
-  width: 150px;
-  min-width: 150px;
-  max-width: 150px;
-  padding: 10px 8px;
-  font-size: 14px;
+#mods-table th:nth-child(6), /* DATA ULTIMA MODIFICA */
+#mods-table td:nth-child(6) {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  padding: 8px 5px;
+  font-size: 12px;
+}
+
+/* ALLARGATA - TRADUZIONE */
+#mods-table th:nth-child(7), /* TRADUZIONE */
+#mods-table td:nth-child(7) {
+  width: 120px;  /* Aumentata da 80px a 120px */
+  min-width: 120px;
+  max-width: 120px;
+  padding: 8px 5px;
 }
 
 /* ALLARGATA - STATO */
-#animazioni-table th:nth-child(3), /* STATO */
-#animazioni-table td:nth-child(3) {
-  width: 110px;
+#mods-table th:nth-child(4), /* STATO */
+#mods-table td:nth-child(4) {
+  width: 110px;  /* Aggiunta larghezza fissa per Stato */
   min-width: 110px;
   max-width: 110px;
   padding: 8px 5px;
 }
 
-/* Riduzione AUTORE */
-#animazioni-table th:nth-child(2), /* AUTORE */
-#animazioni-table td:nth-child(2) {
+/* Riduzione AUTORE e MOD */
+#mods-table th:nth-child(2), /* AUTORE */
+#mods-table td:nth-child(2) {
   width: 100px;
   min-width: 100px;
   max-width: 100px;
+  padding: 8px 5px;
+}
+
+#mods-table th:nth-child(3), /* MOD */
+#mods-table td:nth-child(3) {
+  width: 170px; /* Leggermente ridotta per compensare */
+  min-width: 170px;
+  max-width: 170px;
   padding: 8px 5px;
 }
 
@@ -601,13 +561,13 @@ tr:nth-child(even) td {
 }
 
 /* Testo più compatto per le colonne ridotte */
-#animazioni-table td:nth-child(5) {
-  font-size: 14px;
+#mods-table td:nth-child(6) {
+  font-size: 12px;
   line-height: 1.2;
 }
 
-/* Status - testo più leggibile */
-.status {
+/* Status e traduzione - testo più leggibile */
+.status, .traduzione {
   padding: 4px 8px;
   font-size: 12px;
   display: inline-block;
@@ -649,7 +609,28 @@ tr:nth-child(even) td {
   color: white;
 }
 
+/* Traduzione colors - migliorata leggibilità */
+.traduzione.inclusa {
+  background-color: #54d41d;
+  color: white;
+}
+
+.traduzione.non-necessaria {
+  background-color: #38b6ff;
+  color: white;
+}
+
+.traduzione.in-lavorazione {
+  background-color: #ff57cb;
+  color: white;
+}
+
+.traduzione.da-scaricare {
+  background-color: #ff9800;
+  color: white;
+}
+
 /* Link più compatti */
-#animazioni-table td:nth-child(4) {
+#mods-table td:nth-child(5) {
   padding: 8px 5px;
 }

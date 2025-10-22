@@ -5,69 +5,402 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabella - Animazioni WW +18</title>
   <link rel="icon" type="image/png" href="Immagini/plumboblogo.png">
-  <link rel="stylesheet" href="css/tables.css">
+  <style>
+    :root {
+          --navbarbackground: #343a40;
+          --navbarcolor: #fff;
+          --formcontainerbackground: #343a40;
+          --formcontainercolor: #fff;
+          --h1backgroundcolor: #343a40;
+          --h1color: white;
+          --thchildcolor: #666666;
+          --tdcolor: #555555;
+          --thcolor: white;
+          --bodybackground: #343a40;
+          --sconosciutavar: #545454;
+          --thtdcolor: white;
+          --tdacolor: #B57EDC;
+          --tdahover: #FFB6C1;
+          --tdactive: #8E44AD;
+          --text-color: #fff;
+        }
+    
+        #filter-status-dropdown, #filter-translation-dropdown, #filter-category-dropdown {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    td a {
+  color: var(--tdacolor);
+}
+
+td a:visited {
+  color: var(--tdacolor);
+}
+
+td a:hover {
+  color: var(--tdahover);
+}
+
+td a:active {
+  color: var(--tdactive);
+}
+
+.language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Spostato in alto a destra */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color)
+}
+.switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      border-radius: 24px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #16ab63;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    
+        .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      background-color: var(--navbarbackground);
+      padding: 10px;
+      border-bottom: 3px solid #f9359d; /* Bordo inferiore della navbar */
+    }
+    
+    .navbar a, .navbar button {
+      color: var(--navbarcolor);
+      text-decoration: none;
+      background-color: #4CAF50; /* Usa il colore di sfondo dal nuovo design */
+      padding: 10px 20px; /* Più spazio cliccabile */
+      border-radius: 5px; /* Raggio bordi più ampio */
+      border: none;
+      margin: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-size: 16px; /* Font più grande */
+      text-align: center; /* Per centrare il testo */
+      font-weight: bold;
+    }
+    
+    .navbar a:hover, .navbar button:hover {
+      background-color: #0f7041; /* Colore hover più intenso */
+      transform: scale(1.05); /* Leggero ingrandimento al passaggio del mouse */
+    }
+.sort-arrow {
+  margin-left: 5px;
+  font-size: 20px;
+  color: var(--h1color);
+}
+    
+    .sort-arrow.asc:before {
+      content: "↑"; /* Freccia su per l'ordinamento ascendente */
+    }
+    
+    .sort-arrow.desc:before {
+      content: "↓"; /* Freccia giù per l'ordinamento discendente */
+    }
+          .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none; /* Sarà visibile solo quando necessario */
+      width: 50px;
+      height: 50px;
+      background-color: #f05454;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: opacity 0.3s, transform 0.3s;
+      z-index: 1000;
+    }
+    
+    .scroll-to-top:hover {
+      background-color: #d94343; /* Colore più scuro al passaggio del mouse */
+      transform: scale(1.1); /* Leggera animazione di ingrandimento */
+    }
+    
+    .scroll-to-top:active {
+      transform: scale(0.95); /* Riduce leggermente le dimensioni al clic */
+    }
+     .back-arrow {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #16ab63;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.2s ease;
+      display: flex;
+  align-items: center;
+  text-decoration: none;
+    }
+
+    .back-arrow:hover {
+      color: #16ab63;
+      transform: scale(1.1);
+    }
+          
+        body {
+          font-family: Arial, sans-serif;
+          background-color: var(--bodybackground);
+          margin: 0;
+          padding: 0;
+        }
+        
+        input, select {
+          margin: 10px 5px;
+          padding: 10px;
+          border-radius: 25px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+        }
+    
+        input:focus, select:focus {
+          outline: none;
+          border-color: #16ab63;
+        }
+    
+        .form-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: center;
+          margin-top: 0px; /* Riduci lo spazio sopra */
+          margin-bottom: 0px; /* Riduci lo spazio sotto */
+          padding: 5px;
+          border: 1px solid var(--formcontainerbackground);
+          border-radius: 5px;
+          background-color: var(--formcontainerbackground);
+          color: var(--formcontainercolor);
+          gap: 60px;
+        }
+    
+        .form-container label {
+          margin-right: 10px;
+          font-size: 16px;
+        }
+    
+        input, select {
+          margin: 5px;
+        }
+    
+        .button-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+        }
+    
+        h1 {
+          color: var(--h1color);
+          font-size: 2rem;
+          margin: 0;
+          padding: 20px 0;
+          background-color: var(--h1backgroundcolor);
+          text-align: center;
+        }
+    
+        table {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 0;
+          margin-top: 20px;
+          border-radius: 10px;
+          overflow: hidden;
+          table-layout: auto;
+        }
+    
+        th, td {
+          padding: 15px 20px;
+          text-align: center;
+          border: 1px solid #ddd;
+          font-size: 16px;
+          word-wrap: break-word;
+          color: var(--thtdcolor)
+        }
+    
+        th {
+          background-color: #4CAF50;
+          color: var(--thcolor);
+        }
+    
+        td {
+          background-color: var(--tdcolor);
+        }
+    
+        tr:nth-child(even) td {
+          background-color: var(--thchildcolor);
+        }
+    
+        .status {
+          font-weight: bold;
+          padding: 5px;
+          border-radius: 5px;
+          display: inline-block;
+          width: auto;
+          height: auto;
+          text-transform: uppercase;
+          color: white;
+        }
+          
+        .status.nuova {
+          color: #9372ff;
+        }
+          
+        .status.compatibile {
+          color: #008eff;
+        }
+    
+        .status.rotta {
+          color: #ff0015;
+        }
+        
+        .status.sconosciuta {
+          color: var(--sconosciutavar);
+        }
+    
+        .status.aggiornata {
+          color: #00d517;
+        }
+       /* Stile per il popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--navbarbackground);
+    color: var(--navbarcolor);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup-content button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#download-btn {
+    background: #28a745;
+    color: white;
+}
+
+#close-btn {
+    background: #dc3545;
+    color: white;
+}
+       
+        @media (max-width: 600px) {
+          h1 {
+            font-size: 1.5rem;
+            padding: 10px;
+          }
+    
+          .navbar a, .navbar button {
+            font-size: 14px;
+            padding: 10px;
+            width: 100%;
+          }
+    
+          .form-container {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+    
+        .star-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+        }
+    
+        .star {
+          font-size: 24px;
+          cursor: pointer;
+          color: grey;
+          transition: transform 0.2s;
+        }
+    
+        .star.favorite {
+          color: gold;
+        }
+    
+        .star:hover {
+          transform: scale(1.2);
+        }
+      </style>
 </head>
 <body>
   <a href="index.html" class="back-arrow">
     <img src="Immagini/plumboblogonoscritte.png" alt="Home Logo" width="50" height="auto">
     <span class="home-text">HOME</span>
   </a>
-  
-  <div class="sticky-header">
-    <h1 id="page-title">Tabella - Animazioni WickedWhims +18</h1>
-    
-    <div class="navbar">
-      <a href="mod.html" id="mod-link">MOD</a>
-      <a href="mod18.html" id="mod18-link">MOD +18</a>
-      <a href="animazioniww18.html" id="animazioniww18-link">ANIMAZIONI WICKEDWHIMS +18</a>
-      <a href="traduzioni.html" id="traduzioni-link">TRADUZIONI</a>
-      <a href="programmi.html" id="programmi-link">PROGRAMMI</a>
-      <a href="#" id="desc-mod-btn">HELP SIM</a>
-      <button id="themeSwitch" onclick="toggleTheme()" class="theme-toggle" title="Cambia Tema">🌙</button>
-    </div>
-    
-    <div class="form-container">
-      <div>
-        <input type="text" id="search" oninput="filterTable()" placeholder="Search...">
-      </div>
-      <div>
-        <label for="filter-status" id="filter-status-label">Status:</label>
-        <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
-        <div id="filter-status-dropdown" style="display:none;">
-          <!-- It -->
-          <div class="it-label">
-            <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
-            <label><input type="checkbox" value="Rotta" id="status-rotta" onchange="filterTable()"> Rotta</label><br>
-            <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
-            <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
-            <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label>
-          </div>
-          <div class="en-label" style="display:none;">
-            <label><input type="checkbox" value="Compatible" id="status-compatible" onchange="filterTable()"> Compatible</label><br>
-            <label><input type="checkbox" value="Broken" id="status-broken" onchange="filterTable()"> Broken</label><br>
-            <label><input type="checkbox" value="Updated" id="status-updated" onchange="filterTable()"> Updated</label><br>
-            <label><input type="checkbox" value="Unknown" id="status-unknown" onchange="filterTable()"> Unknown</label><br>
-            <label><input type="checkbox" value="New" id="status-new" onchange="filterTable()"> New</label>
-          </div>
-        </div>
-      </div>
-      <div>
-        <label for="filter-favorites" id="filter-favorites-label">Preferite:</label>
-        <select id="filter-favorites" onchange="filterTable()">
-          <!-- Italian version -->
-          <option value="">Tutte</option>
-          <option value="true">Preferite</option>
-          <option value="false">Non Preferite</option>
-        
-          <!-- English version -->
-          <option value="">All</option>
-          <option value="true">Favorites</option>
-          <option value="false">No Favorites</option>
-        </select>
-      </div>
-    </div>
+  <h1 id="page-title">Tabella - Animazioni WickedWhims +18</h1>
+  <div class="navbar">
+    <a href="mod.html" id="mod-link">MOD</a>
+    <a href="mod18.html" id="mod18-link">MOD +18</a>
+    <a href="animazioniww18.html" id="animazioniww18-link">ANIMAZIONI WICKEDWHIMS +18</a>
+    <a href="traduzioni.html" id="traduzioni-link">TRADUZIONI</a>
+    <a href="programmi.html" id="programmi-link">PROGRAMMI</a>
+    <a href="#" id="desc-mod-btn">HELP SIM</a>
+    <button id="themeSwitch" onclick="toggleTheme()" class="theme-toggle" title="Cambia Tema">🌙</button>
   </div>
-  
   <div class="language-toggle">
     <label class="switch">
       <input type="checkbox" id="language-switch">
@@ -75,10 +408,9 @@
     </label>
     <span id="language-label">Italiano</span>
   </div>
-
   <!-- Popup per la descrizione -->
-  <div id="popup" class="popup">
-    <div class="popup-content">
+<div id="popup" class="popup">
+  <div class="popup-content">
       <h2>🚀 HELP SIM</h2>
       <p>
         Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! 
@@ -94,7 +426,7 @@
       <ul style="list-style-type: none; padding-left: 0;">
           <li>★ Se l’antivirus blocca il programma, clicca su <strong>"Esegui comunque"</strong>.<br>
               Il programma è sicuro! In quanto creato interamente da noi.</li>
-          <li>★ Prima dell’uso, <strong>leggi a guida</strong> disponibile nella home del programma.</li>
+          <li>★ Prima dell’uso, <strong>leggi la guida</strong> disponibile nella home del programma.</li>
           <li>★ Supporta solo i file delle mod e delle traduzioni in <strong>formato ZIP</strong>.</li>
           <li>★ <strong>Non supporta</strong> i file singoli <em>.package</em> (CC e mod non zip).</li>
           <li>★ <strong>Non funziona</strong> con la cartella di The Sims in unità esterne (HDD, SSD, USB, ecc.).</li>
@@ -104,29 +436,530 @@
           <button id="download-btn">📥 Scarica</button>
           <button id="close-btn">❌ Chiudi</button>
       </div>
+  </div>
+</div>
+
+<div class="form-container">
+  <div>
+    <input type="text" id="search" oninput="filterTable()" placeholder="Search...">
+  </div>
+  <div>
+    <label for="filter-status" id="filter-status-label">Status:</label>
+    <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
+    <div id="filter-status-dropdown" style="display:none;">
+      <!-- It -->
+      <div class="it-label">
+        <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
+        <label><input type="checkbox" value="Rotta" id="status-rotta" onchange="filterTable()"> Rotta</label><br>
+        <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
+        <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
+        <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label>
+      </div>
+      <div class="en-label" style="display:none;">
+        <label><input type="checkbox" value="Compatible" id="status-compatible" onchange="filterTable()"> Compatible</label><br>
+        <label><input type="checkbox" value="Broken" id="status-broken" onchange="filterTable()"> Broken</label><br>
+        <label><input type="checkbox" value="Updated" id="status-updated" onchange="filterTable()"> Updated</label><br>
+        <label><input type="checkbox" value="Unknown" id="status-unknown" onchange="filterTable()"> Unknown</label><br>
+        <label><input type="checkbox" value="New" id="status-new" onchange="filterTable()"> New</label>
+      </div>
     </div>
   </div>
+    <div>
+      <label for="filter-favorites" id="filter-favorites-label">Preferite:</label>
+      <select id="filter-favorites" onchange="filterTable()">
+        <!-- Italian version -->
+        <option value="">Tutte</option>
+        <option value="true">Preferite</option>
+        <option value="false">Non Preferite</option>
+      
+        <!-- English version -->
+        <option value="">All</option>
+        <option value="true">Favorites</option>
+        <option value="false">No Favorites</option>
+      </select>
+    </div>
+</div>
 
-  <div class="main-content">
-    <table id="animazioni-table">
-      <thead>
-        <tr>
-          <th onclick="sortTable(0)">PREFERITE <span class="sort-arrow" id="arrow-0"></span></th>
-          <th onclick="sortTable(1)">AUTORE <span class="sort-arrow" id="arrow-1"></span></th>
-          <th onclick="sortTable(2)">STATO ANIMAZIONE <span class="sort-arrow" id="arrow-2"></span></th>
-          <th onclick="sortTable(3)">LINK ANIMAZIONE <span class="sort-arrow" id="arrow-3"></span></th>
-          <th onclick="sortTable(4)">DATA AGGIORNAMENTO ANIMAZIONE <span class="sort-arrow" id="arrow-4"></span></th>
-          <th onclick="sortTable(5)">NOTE <span class="sort-arrow" id="arrow-5"></span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Le righe verranno caricate dinamicamente dal JSON -->
-      </tbody>
-    </table>
-  </div>
+  <table id="animazioni-table">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">PREFERITE <span class="sort-arrow" id="arrow-0"></span></th>
+        <th onclick="sortTable(1)">AUTORE <span class="sort-arrow" id="arrow-1"></span></th>
+        <th onclick="sortTable(2)">STATO ANIMAZIONE <span class="sort-arrow" id="arrow-2"></span></th>
+        <th onclick="sortTable(3)">LINK ANIMAZIONE <span class="sort-arrow" id="arrow-3"></span></th>
+        <th onclick="sortTable(4)">DATA AGGIORNAMENTO ANIMAZIONE <span class="sort-arrow" id="arrow-4"></span></th>
+        <th onclick="sortTable(5)">NOTE <span class="sort-arrow" id="arrow-5"></span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Le righe verranno caricate dinamicamente dal JSON -->
+    </tbody>
+  </table>
 
+  <script>
+document.getElementById("desc-mod-btn").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("close-btn").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+});
+
+document.getElementById("download-btn").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "https://github.com/PianetaSimTS/HelpSim/releases/download/HelpSim/HelpSim.exe";
+    link.download = "HelpSim.exe";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    document.getElementById("popup").style.display = "none"; // Chiude il popup dopo il download
+});
+
+
+     function loadModsFromJson() {
+  fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/animazioniww18.json')
+    .then(response => response.json())
+    .then(mods => {
+      const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+      const table = document.getElementById("animazioni-table").getElementsByTagName("tbody")[0];
+      table.innerHTML = '';
+      const lang = localStorage.getItem("language") || "it";
+
+      // Crea righe per ogni mod
+      mods.forEach(mod => {
+        const cleanedAuthor = mod.Autore.replace("'", ""); // Remove the apostrophe for internal processing
+        const isFavorite = favorites.includes(cleanedAuthor); // Check against cleaned author
+        const newRow = table.insertRow();
+
+        newRow.innerHTML = `
+          <td>
+            <span class="star-container">
+              <span class="star ${isFavorite ? 'favorite' : ''}" onclick="toggleFavorite('${cleanedAuthor}')">&#9733;</span>
+            </span>
+          </td>
+          <td>${mod.Autore || ''}</td>
+                    <td>
+            <span class="status ${(mod.Status || 'sconosciuta').toLowerCase()}">
+              ${lang === "en" ? (translations[mod.Status.trim().charAt(0).toUpperCase() + mod.Status.trim().slice(1)] || mod.Status) : mod.Status}
+            </span>
+          </td>
+          <td><a href="${mod.Link || '#'}" target="_blank">Visita</a></td>
+          <td>${mod.DataAggiornamento || ''}</td>
+          <td>${mod.Note || ''}</td>
+        `;
+      });
+      checkModUpdates(mods);
+      filterTable();
+    })
+    .catch(error => {
+      console.error('Errore nel caricare il JSON:', error);
+      document.getElementById("animazioni-table").getElementsByTagName("tbody")[0].innerHTML = `
+        <tr><td colspan="6">Errore nel caricare i dati. Riprova più tardi.</td></tr>
+      `;
+    });
+}
+
+function checkModUpdates(mods) {
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  let savedMods = JSON.parse(localStorage.getItem("savedAnimazioni")) || {};
+
+  let updatedMods = [];
+
+  mods.forEach(mod => {
+    if (favorites.includes(mod.Autore)) { // Usa Autore invece di ModName
+      let prevData = savedMods[mod.Autore]; 
+
+      if (!prevData || prevData.Status !== mod.Status || prevData.DataAggiornamento !== mod.DataAggiornamento) {
+        updatedMods.push(mod);
+      }
+
+      // Aggiorna i dati salvati
+      savedMods[mod.Autore] = { 
+        Status: mod.Status,
+        DataAggiornamento: mod.DataAggiornamento 
+      };
+    }
+  });
+
+  localStorage.setItem("savedAnimazioni", JSON.stringify(savedMods));
+
+// Definizione dei testi per la notifica in entrambe le lingue
+const notificationTexts = {
+  it: "Le seguenti animazioni preferite sono state modificate:\n",
+  en: "The following favorite animations have been changed:\n"
+};
+  const lang = localStorage.getItem("language") || "it";
+// Se ci sono mod aggiornate, mostra una notifica
+if (updatedMods.length > 0) {
+  let message = notificationTexts[lang] + 
+                updatedMods.map(mod => `${mod.Autore} - Stato: ${mod.Status} (${mod.DataAggiornamento})`).join("\n");
+  alert(message); // Puoi sostituirlo con una notifica più elegante
+}
+}
+
+    let lastSortedColumn = -1; // Memorizza l'ultima colonna ordinata
+    let lastSortDirection = 'asc'; // Ordine di ordinamento: ascendente (default) o discendente
+
+    function sortTable(columnIndex) {
+      const table = document.getElementById("animazioni-table");
+      const rows = Array.from(table.rows).slice(1); // Esclude l'intestazione
+      const arrow = document.getElementById(`arrow-${columnIndex}`);
+
+      if (lastSortedColumn === columnIndex) {
+        lastSortDirection = (lastSortDirection === 'asc') ? 'desc' : 'asc';
+      } else {
+        lastSortDirection = 'asc';
+      }
+
+      const compare = (a, b) => {
+        let valA = a.cells[columnIndex].textContent.trim().toLowerCase();
+        let valB = b.cells[columnIndex].textContent.trim().toLowerCase();
+
+        if (valA < valB) return lastSortDirection === 'asc' ? -1 : 1;
+        if (valA > valB) return lastSortDirection === 'asc' ? 1 : -1;
+        return 0;
+      };
+
+      rows.sort(compare);
+      rows.forEach(row => table.appendChild(row));
+
+      document.querySelectorAll('.sort-arrow').forEach(arrow => arrow.className = 'sort-arrow');
+      arrow.classList.add(lastSortDirection);
+
+      lastSortedColumn = columnIndex;
+    }
+    const translations = {
+  "Compatibile": "Compatible",
+  "Rotta": "Broken",
+  "Aggiornata": "Updated",
+  "Sconosciuta": "Unknown",
+  "Nuova": "New",
+  "Compatible": "Compatibile",
+  "Broken": "Rotta",
+  "Updated": "Aggiornata",
+  "Unknown": "Sconosciuta",
+  "New": "Nuova"
+};
+
+    function filterTable() {
+      const searchValue = document.getElementById("search").value.toLowerCase();
+
+// Identificare la lingua attuale
+const isEnglish = document.querySelector(".en-label").style.display !== "none";
+
+// Stato - raccogli i valori selezionati e convertirli in un formato uniforme
+const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))
+                                .map(input => {
+                                  let value = input.value;
+                                  return isEnglish ? translations[value] : value; 
+                                }).map(v => v.toLowerCase());
+  const filterFavorites = document.getElementById("filter-favorites").value.toLowerCase();
+
+  const table = document.getElementById("animazioni-table");
+  const rows = table.getElementsByTagName("tr");
+
+  for (let i = 1; i < rows.length; i++) {
+        const row = rows[i];
+        const author = row.cells[1].textContent.toLowerCase();
+        let status = row.querySelector(".status").textContent.trim();
+    status = isEnglish ? (translations[status] || status) : status;
+    status = status.toLowerCase();
+        const isFavorite = row.querySelector(".star").classList.contains("favorite");
+        const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status);
+        const matchesSearch = author.includes(searchValue);
+        const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : !isFavorite);
+    row.style.display = (matchesSearch && matchesStatus && matchesFavorites) ? "" : "none";
+  }
+}
+
+    
+    function toggleFavorite(author) {
+      const lang = localStorage.getItem("language") || "it";
+  // Remove the apostrophe when toggling favorites
+  const cleanedAuthor = author.replace("'", "");
+  let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  
+  if (favorites.includes(cleanedAuthor)) {
+    favorites = favorites.filter(favorite => favorite !== cleanedAuthor);
+    alert(author + (lang === "en" ? " has been removed from favorites." : " è stata rimossa dai preferiti."));
+  } else {
+    favorites.push(cleanedAuthor);
+    alert(author + (lang === "en" ? " has been added to favorites!" : " è stata aggiunta ai preferiti!"));
+  }
+  
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+  loadModsFromJson();
+}
+    window.onload = loadModsFromJson;
+
+    function applyTheme(theme) {
+  const root = document.documentElement;
+  const themeSwitch = document.getElementById("themeSwitch");
+  
+  if (theme === "light") {
+    root.style.setProperty("--navbarbackground", "#ffffff"); // Grigio molto chiaro per la navbar
+root.style.setProperty("--navbarcolor", "#000000"); // Testo scuro per la navbar
+root.style.setProperty("--formcontainerbackground", "#ffffff"); // Bianco per lo sfondo del contenitore
+root.style.setProperty("--formcontainercolor", "#black"); // Testo scuro nel contenitore
+root.style.setProperty("--h1backgroundcolor", "#ffffff"); // Grigio chiaro per sfondo h1
+root.style.setProperty("--h1color", "#black"); // Testo scuro per h1
+root.style.setProperty("--thchildcolor", "#f2f2f2"); // Grigio medio per i titoli delle colonne
+root.style.setProperty("--tdcolor", "#f9f9f9"); // Grigio medio-scuro per il testo nelle celle
+root.style.setProperty("--thcolor", "#000000"); // Testo scuro per i titoli delle colonne
+root.style.setProperty("--bodybackground", "#ffffff"); // Sfondo bianco per il corpo
+root.style.setProperty("--sconosciutavar", "#545454"); // Giallo brillante per mantenere un colore vivace
+root.style.setProperty("--thtdcolor", "black");
+root.style.setProperty("--tdacolor", "blue");
+root.style.setProperty("--tdahover", "#551A8B");
+root.style.setProperty("--tdactive", "#000080");
+root.style.setProperty("--text-color", "#000");    
+    themeSwitch.textContent = "🌞";
+  } else {
+    // Passa al tema scuro
+    root.style.setProperty("--navbarbackground", "#343a40");
+    root.style.setProperty("--navbarcolor", "#fff");
+    root.style.setProperty("--formcontainerbackground", "#343a40");
+    root.style.setProperty("--formcontainercolor", "#fff");
+    root.style.setProperty("--h1backgroundcolor", "#343a40");
+    root.style.setProperty("--h1color", "white");
+    root.style.setProperty("--thchildcolor", "#666666");
+    root.style.setProperty("--tdcolor", "#555555");
+    root.style.setProperty("--thcolor", "white");
+    root.style.setProperty("--bodybackground", "#343a40");
+    root.style.setProperty("--sconosciutavar", "#FFFBB9");
+    root.style.setProperty("--thtdcolor", "white");
+    root.style.setProperty("--tdacolor", "#B57EDC");
+    root.style.setProperty("--tdahover", "#FFB6C1");
+    root.style.setProperty("--tdactive", "#8E44AD");
+    root.style.setProperty("--text-color", "#fff");
+    themeSwitch.textContent = "🌙";
+  }
+}
+
+const languageSwitch = document.getElementById("language-switch");
+const languageLabel = document.getElementById("language-label");
+const texts = {
+  it: {
+    helpSimTitle: "🚀 HELP SIM",
+    helpSimDesc: "Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! Con pochi click, potrai aggiungere le tue mod preferite, tenere tutto sotto controllo e persino dare una bella ripulita ai file cache di The Sims 4! Che tu voglia ampliare il tuo gioco con nuove mod o semplicemente tenere tutto in ordine, sei nel posto giusto.",
+    relax: "Ora rilassati, personalizza il tuo gioco e lascia che <strong>Help Sim</strong> faccia il resto! 🎮✨",
+    precautions: "⚠️ PICCOLE ATTENZIONI PRIMA DELLO SCARICO ⚠️",
+    antivirus: "★ Se l’antivirus blocca il programma, clicca su <strong>\"Esegui comunque\"</strong>.<br>Il programma è sicuro! In quanto creato interamente da noi.",
+    guide: "★ Prima dell’uso, <strong>leggi la guida</strong> disponibile nella home del programma.",
+    zipSupport: "★ Supporta solo i file delle mod e delle traduzioni in <strong>formato ZIP</strong>.",
+    noPackage: "★ <strong>Non supporta</strong> i file singoli <em>.package</em> (CC e mod non zip).",
+    noExternal: "★ <strong>Non funziona</strong> con la cartella di The Sims in unità esterne (HDD, SSD, USB, ecc.).",
+    download: "📥 Scarica",
+    close: "❌ Chiudi",
+    pageTitle: "Tabella - Animazioni WickedWhims +18",
+    modLink: "MOD",
+    mod18Link: "MOD +18",
+    animazioniww18Link: "ANIMAZIONI WICKEDWHIMS +18",
+    traduzioniLink: "TRADUZIONI",
+    programmiLink: "PROGRAMMI",
+    helpSimLink: "HELP SIM",
+    searchPlaceholder: "Cerca...",
+    filterStatusLabel: "Stato:",
+    filterFavoritesLabel: "Preferite:",
+    tableHeaders: {
+      favorites: "PREFERITE",
+      author: "AUTORE",
+      mod: "MOD",
+      status: "STATO ANIMAZIONE",
+      modLink: "LINK ANIMAZIONE",
+      lastModified: "DATA AGGIORNAMENTO ANIMAZIONE",
+      translation: "TRADUZIONE",
+      requirements: "NOTE"
+    }
+  },
+  en: {
+    helpSimTitle: "🚀 HELP SIM",
+    helpSimDesc: "Tired of installing mods and translations manually? Help Sim is here to save you! With just a few clicks, you can add your favorite mods, keep everything under control and even give The Sims 4 cache files a good clean! Whether you want to expand your game with new mods or simply keep everything in order, you are in the right place.",
+    relax: "Now relax, customize your game and let <strong>Help Sim</strong> do the rest! 🎮✨",
+    precautions: "⚠️ SMALL PRECAUTIONS BEFORE DOWNLOADING  ⚠️",
+    antivirus: "★ If the antivirus blocks the program, click on <strong>\"Run anyway\"</strong>.<br>The program is safe! It was entirely created by us.",
+    guide: "★ Before using it, <strong>read the guide</strong> available on the program’s home page.",
+    zipSupport: "★ Supports only mod and translation files in <strong>ZIP format</strong>.",
+    noPackage: "★ <strong>Does not support</strong> single <em>.package</em> files (CC and non-zipped mods).",
+    noExternal: "★ <strong>Does not work</strong> with The Sims folder on external drives (HDD, SSD, USB, etc.).",
+    download: "📥 Download",
+    close: "❌ Close",
+    pageTitle: "Table - Animations WickedWhims +18",
+    modLink: "MOD",
+    mod18Link: "MOD +18",
+    animazioniww18Link: "ANIMATIONS WICKEDWHIMS +18",
+    traduzioniLink: "ITALIAN TRANSLATION",
+    programmiLink: "PROGRAMS",
+    helpSimLink: "HELP SIM",
+    searchPlaceholder: "Search...",
+    filterStatusLabel: "Status:",
+    filterFavoritesLabel: "Favorites:",
+    tableHeaders: {
+      favorites: "FAVORITES",
+      author: "AUTHOR",
+      mod: "MOD",
+      status: "ANIMATION STATUS",
+      modLink: "ANIMATION LINK",
+      lastModified: "ANIMATION UPDATE DATE",
+      translation: "ITALIAN TRANSLATION",
+      requirements: "NOTES"
+    }
+  }
+};
+
+// Funzione per cambiare lingua
+function toggleLanguage() {
+  const isEnglish = languageSwitch.checked;
+  const lang = isEnglish ? "en" : "it";
+  languageLabel.textContent = isEnglish ? "English" : "Italiano";
+  localStorage.setItem("language", lang);
+
+  // Aggiornamento dinamico dei testi
+  document.querySelector("#popup h2").textContent = texts[lang].helpSimTitle;
+  document.querySelector("#popup p").innerHTML = texts[lang].helpSimDesc;
+  document.querySelector("#popup p:nth-of-type(2)").innerHTML = texts[lang].relax;
+  document.querySelector("#popup h3").textContent = texts[lang].precautions;
+  const precautionsList = document.querySelector("#popup ul");
+precautionsList.innerHTML = `
+  <li>${texts[lang].antivirus}</li>
+  <li>${texts[lang].guide}</li>
+  <li>${texts[lang].zipSupport}</li>
+  <li>${texts[lang].noPackage}</li>
+  <li>${texts[lang].noExternal}</li>
+`;
+  document.getElementById("download-btn").textContent = texts[lang].download;
+  document.getElementById("close-btn").textContent = texts[lang].close;
+  document.getElementById("page-title").textContent = texts[lang].pageTitle;
+  document.getElementById("mod-link").textContent = texts[lang].modLink;
+  document.getElementById("mod18-link").textContent = texts[lang].mod18Link;
+  document.getElementById("animazioniww18-link").textContent = texts[lang].animazioniww18Link;
+  document.getElementById("traduzioni-link").textContent = texts[lang].traduzioniLink;
+  document.getElementById("programmi-link").textContent = texts[lang].programmiLink;
+  document.getElementById("desc-mod-btn").textContent = texts[lang].helpSimLink;
+  document.querySelector("#search").placeholder = texts[lang].searchPlaceholder;
+  document.getElementById("filter-status-label").textContent = texts[lang].filterStatusLabel;
+  document.getElementById("filter-favorites-label").textContent = texts[lang].filterFavoritesLabel;
+document.querySelector("th:nth-child(1)").textContent = texts[lang].tableHeaders.favorites;
+document.querySelector("th:nth-child(2)").textContent = texts[lang].tableHeaders.author;
+document.querySelector("th:nth-child(3)").textContent = texts[lang].tableHeaders.status;
+document.querySelector("th:nth-child(4)").textContent = texts[lang].tableHeaders.modLink;
+document.querySelector("th:nth-child(5)").textContent = texts[lang].tableHeaders.lastModified;
+document.querySelector("th:nth-child(6)").textContent = texts[lang].tableHeaders.requirements;
+languageLabel.textContent = isEnglish ? "English" : "Italiano";
+  localStorage.setItem("language", lang);
+  
+  const italianLabels = document.querySelectorAll('.it-label');
+  const englishLabels = document.querySelectorAll('.en-label');
+  
+  italianLabels.forEach(label => label.style.display = isEnglish ? 'none' : 'block');
+  englishLabels.forEach(label => label.style.display = isEnglish ? 'block' : 'none');
+  const filterFavorites = document.getElementById('filter-favorites');
+  
+  if (isEnglish) {
+    filterFavorites.innerHTML = `
+      <option value="">All</option>
+      <option value="true">Favorites</option>
+      <option value="false">No Favorites</option>
+    `;
+  } else {
+    filterFavorites.innerHTML = `
+      <option value="">Tutte</option>
+      <option value="true">Preferite</option>
+      <option value="false">Non Preferite</option>
+    `;
+  }
+
+  // Reset the dropdown to the default value (All or Tutte)
+  filterFavorites.selectedIndex = 0;  // This will select the first option (All or Tutte)
+  
+  // Reset the search field
+  document.getElementById("search").value = ""; 
+
+  // Call filterTable() again to apply the reset
+  filterTable();
+}
+
+// Impostazione della lingua iniziale
+function setInitialLanguage() {
+  const savedLanguage = localStorage.getItem("language") || "it";
+  languageSwitch.checked = savedLanguage === "en";
+  toggleLanguage();
+}
+
+languageSwitch.addEventListener("change", toggleLanguage);
+setInitialLanguage();
+
+function showTooltip(event, modName) {
+  const tooltip = document.querySelector(`#${modName} .tooltip`);
+  tooltip.style.display = 'block';
+}
+
+function hideTooltip(event) {
+  const tooltip = event.target.querySelector('.tooltip');
+  if (tooltip) {
+    tooltip.style.display = 'none';
+  }
+}
+function toggleDropdown(id) {
+  var dropdown = document.getElementById(id);
+  var button = dropdown.previousElementSibling;
+
+  // Cambia la visibilità con un fade
+  if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+    dropdown.style.display = 'block';
+    setTimeout(function() {
+      dropdown.style.opacity = 1;
+    }, 10);
+    button.innerHTML = '▲';
+  } else {
+    dropdown.style.opacity = 0;
+    setTimeout(function() {
+      dropdown.style.display = 'none';
+    }, 300); // Attendere il tempo della transizione
+    button.innerHTML = '▼';
+  }
+}
+// Funzione per alternare il tema e salvarlo
+function toggleTheme() {
+  const currentTheme = localStorage.getItem("theme") || "dark";
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  localStorage.setItem("theme", newTheme); // Salva il tema
+  applyTheme(newTheme); // Applica il tema
+}
+
+// Applica il tema al caricamento della pagina
+window.onload = function () {
+  const savedTheme = localStorage.getItem("theme") || "dark"; // Imposta tema di default
+  applyTheme(savedTheme); // Applica il tema salvato
+  loadModsFromJson(); // Carica i dati della tabella
+};
+
+window.addEventListener("scroll", function () {
+  const scrollToTopButton = document.getElementById("scrollToTop");
+  if (window.scrollY > 300) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+});
+
+// Gestione dell'evento beforeunload per svuotare sessionStorage
+window.addEventListener('beforeunload', () => {
+  // Cancella tutti i mod link salvati in sessionStorage quando la pagina viene chiusa o ricaricata
+  Object.keys(sessionStorage)
+    .filter(key => key !== 'favorites') // Esclude eventualmente altre chiavi (come i preferiti)
+    .forEach(key => sessionStorage.removeItem(key)); 
+});
+
+  // Scroll fluido verso l'alto
+  document.getElementById("scrollToTop").addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  themeSwitch.addEventListener("change", toggleTheme);
+  setInitialTheme();
+  </script>
   <a href="#top" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
-
-  <script src="js/table.js"></script>
 </body>
 </html>

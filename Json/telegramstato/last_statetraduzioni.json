@@ -291,8 +291,8 @@
     "Creator": "Andirz",
     "Title": "PSO - SimSim Online Store",
     "ReleaseVersion": "5.1.0",
-    "CurrentVersion": null,
-    "Status": "da-aggiornare",
+    "CurrentVersion": "5.1.0",
+    "Status": "aggiornata",
     "Translator": "di vale93_games",
     "Link": "https://www.patreon.com/posts/sims-4-simsim-107757966?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
   },
@@ -325,7 +325,16 @@
   },
   {
     "Creator": "Andirz",
-    "Title": "Smart Sim Randomizer",
+    "Title": "Smart Sim Randomizer - Patreon",
+    "ReleaseVersion": "3.0.0",
+    "CurrentVersion": "3.0.0",
+    "Status": "nuova",
+    "Translator": "di vale93_games",
+    "Link": "https://vale93games.it/download/3953/"
+  },
+  {
+    "Creator": "Andirz",
+    "Title": "Smart Sim Randomizer - Pubblica",
     "ReleaseVersion": "2.8.0",
     "CurrentVersion": "2.6.4",
     "Status": "compatibile",
@@ -424,15 +433,6 @@
   },
   {
     "Creator": "Basemental",
-    "Title": "Basemental Drugs (+18) - Patreon",
-    "ReleaseVersion": "8.18.235",
-    "CurrentVersion": "8.18.235",
-    "Status": "nuova",
-    "Translator": "di Leo",
-    "Link": "https://www.patreon.com/posts/basemental-drugs-139194123"
-  },
-  {
-    "Creator": "Basemental",
     "Title": "Basemental Gangs (+18)",
     "ReleaseVersion": "6.20.62",
     "CurrentVersion": "6.18.56",
@@ -506,9 +506,9 @@
   {
     "Creator": "Deaderpool",
     "Title": "MC Command Center",
-    "ReleaseVersion": "2025.4.0",
-    "CurrentVersion": "2025.4.0",
-    "Status": "compatibile",
+    "ReleaseVersion": "2025.5.1",
+    "CurrentVersion": "2025.5.1",
+    "Status": "aggiornata",
     "Translator": "di vale93_games",
     "Link": "https://vale93games.it/download/3133/"
   },
