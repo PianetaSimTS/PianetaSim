@@ -125,7 +125,7 @@
     "Status": "aggiornata",
     "SiteLink": "https://adeepindigomods.itch.io/education-overhaul",
     "DataUltimaModifica": "24/09/2025",
-    "Translation": "in-lavorazione",
+    "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "General Pie Menus di Adeepindigo - Shared Tuning di Adeepindigo",
     "DLCIT": "NECESSARI: Gioco Base",
@@ -403,21 +403,6 @@
     "MODEN": "XML Injector by Scumbumbo/Triplis/LittleMsSam",
     "DLCEN": "REQUIRED: Base Game - Island Living - Spa Day",
     "DescrizioneEN": "You can do yoga right on the beach."
-  },
-  {
-    "Author": "Andirz",
-    "ModName": "Better Live Shopping",
-    "Status": "obsoleta",
-    "SiteLink": null,
-    "DataUltimaModifica": "",
-    "Translation": "da-scaricare",
-    "Categoria": "Gameplay",
-    "MODIT": "Inclusa nella PSO Better Vending Mashines di Andirz",
-    "DLCIT": "",
-    "DescrizioneIT": "",
-    "MODEN": "Included in the PSO Better Vending Mashines by Andirz",
-    "DLCEN": "",
-    "DescrizioneEN": ""
   },
   {
     "Author": "Andirz",
@@ -913,21 +898,6 @@
     "MODEN": "Smart Core Script by Andirz - PSO Common Package by Andirz",
     "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Allows Sims to shop online, offering a variety of items, clothing and accessories directly from a virtual store. Adds a new level of realism and convenience, allowing Sims to shop conveniently without leaving home."
-  },
-  {
-    "Author": "Andirz",
-    "ModName": "Rapid Household Management",
-    "Status": "obsoleta",
-    "SiteLink": null,
-    "DataUltimaModifica": "",
-    "Translation": "non necessaria",
-    "Categoria": "Utilità",
-    "MODIT": "Unita alla Smart Sim Cheats di Andirz",
-    "DLCIT": "",
-    "DescrizioneIT": "",
-    "MODEN": "Merged with Smart Sim Cheats by Andirz",
-    "DLCEN": "",
-    "DescrizioneEN": ""
   },
   {
     "Author": "Andirz",
@@ -2645,7 +2615,7 @@
     "Status": "compatibile",
     "SiteLink": "https://nickyclem.itch.io/insurance-company",
     "DataUltimaModifica": "18/09/2025",
-    "Translation": "",
+    "Translation": "da-scaricare",
     "Categoria": "Utilità",
     "MODIT": "Serve per il funzionamento di altre mod di NickyClem",
     "DLCIT": "NECESSARI: Gioco Base",
