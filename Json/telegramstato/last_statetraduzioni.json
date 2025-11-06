@@ -371,35 +371,35 @@
   {
     "Creator": "Arnie",
     "Title": "FutureFruit ",
-    "ReleaseVersion": "1.0",
-    "CurrentVersion": "1.0",
-    "Status": "nuova",
+    "ReleaseVersion": "28/08/2025",
+    "CurrentVersion": "14/10/2025",
+    "Status": "compatibile",
     "Translator": "di LadyPsycoTrilly",
     "Link": "https://www.patreon.com/posts/141177912?pr=true"
   },
   {
     "Creator": "Arnie",
     "Title": "Luminova ",
-    "ReleaseVersion": "1.8",
-    "CurrentVersion": "1.8",
-    "Status": "nuova",
+    "ReleaseVersion": "24/09/2025",
+    "CurrentVersion": "14/10/2025",
+    "Status": "compatibile",
     "Translator": "di LadyPsycoTrilly",
     "Link": "https://www.patreon.com/posts/141176720?pr=true"
   },
   {
     "Creator": "Arnie",
     "Title": "Plumfruit Essentials",
-    "ReleaseVersion": "1.2",
-    "CurrentVersion": "1.2",
-    "Status": "nuova",
+    "ReleaseVersion": "24/09/2025",
+    "CurrentVersion": "14/10/2025",
+    "Status": "compatibile",
     "Translator": "di LadyPsycoTrilly",
     "Link": "https://www.patreon.com/posts/141177447?pr=true"
   },
   {
     "Creator": "Basemental",
     "Title": "Basemental Alcohol (+18)",
-    "ReleaseVersion": "6.8",
-    "CurrentVersion": "6.8",
+    "ReleaseVersion": "01/03/2024",
+    "CurrentVersion": "24/03/2024",
     "Status": "compatibile",
     "Translator": "di Isy's",
     "Link": "https://www.patreon.com/posts/mod-18-alcohol-8-67634406?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
@@ -407,8 +407,8 @@
   {
     "Creator": "Basemental",
     "Title": "Basemental Drugs (+18)",
-    "ReleaseVersion": "7.18.177",
-    "CurrentVersion": "7.17.165",
+    "ReleaseVersion": "21/08/2025",
+    "CurrentVersion": "02/11/2023",
     "Status": "da-aggiornare",
     "Translator": "di Isy's",
     "Link": "https://www.patreon.com/posts/67633945"
@@ -416,8 +416,8 @@
   {
     "Creator": "Basemental",
     "Title": "Basemental Drugs (+18)",
-    "ReleaseVersion": "7.18.178",
-    "CurrentVersion": "7.18.178",
+    "ReleaseVersion": "21/08/2025",
+    "CurrentVersion": "18/09/2025",
     "Status": "compatibile",
     "Translator": "di Leo",
     "Link": "https://www.patreon.com/posts/basemental-drugs-139194123"
@@ -425,8 +425,8 @@
   {
     "Creator": "Basemental",
     "Title": "Basemental Gangs (+18)",
-    "ReleaseVersion": "6.20.62",
-    "CurrentVersion": "6.18.56",
+    "ReleaseVersion": "02/07/2025",
+    "CurrentVersion": "09/03/2024",
     "Status": "da-aggiornare",
     "Translator": "di Isy's",
     "Link": "https://www.patreon.com/posts/mod-18-gangs-v6-67636228?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
@@ -434,9 +434,9 @@
   {
     "Creator": "Basemental",
     "Title": "Basemental Gangs (+18)",
-    "ReleaseVersion": "6.20.62",
-    "CurrentVersion": "6.20.62",
-    "Status": "compatibile",
+    "ReleaseVersion": "02/07/2025",
+    "CurrentVersion": null,
+    "Status": "in-lavorazione",
     "Translator": "di LadyPsycoTrilly",
     "Link": "https://www.simfileshare.net/download/5394453/"
   },
@@ -452,8 +452,8 @@
   {
     "Creator": "Carl's Guides",
     "Title": "Dine Out Reloaded",
-    "ReleaseVersion": "4.0987",
-    "CurrentVersion": "4.0982",
+    "ReleaseVersion": "20/08/2025",
+    "CurrentVersion": "10/03/2025",
     "Status": "compatibile",
     "Translator": "di LoryNa",
     "Link": "https://www.curseforge.com/sims4/translations/trad-ita-dine-out-reloaded-di-carls-guide"
@@ -461,11 +461,11 @@
   {
     "Creator": "Carl's Guides",
     "Title": "Sim Spawner & Filter Tool",
-    "ReleaseVersion": "1.05",
-    "CurrentVersion": "1.05",
+    "ReleaseVersion": "19/08/2025",
+    "CurrentVersion": "02/10/2024",
     "Status": "compatibile",
     "Translator": "di SimTecnologic",
-    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+    "Link": "https://www.curseforge.com/sims4/translations/carls-sim-spawner-filter-tool-ssft-italian"
   },
   {
     "Creator": "Danitysimmer",
@@ -965,11 +965,11 @@
   {
     "Creator": "Peco",
     "Title": "Sensual Studio – Lore Friendly Erotic Painting Mod (+18)",
-    "ReleaseVersion": "3.3",
-    "CurrentVersion": "3.2",
+    "ReleaseVersion": "27/07/2025",
+    "CurrentVersion": "19/09/2024",
     "Status": "compatibile",
     "Translator": "di SimTecnologic",
-    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+    "Link": "http://www.simfileshare.net/download/4974169/"
   },
   {
     "Creator": "Plumlace",
@@ -1131,7 +1131,7 @@
     "CurrentVersion": "1.3.1",
     "Status": "compatibile",
     "Translator": "di SimTecnologic",
-    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+    "Link": "http://www.simfileshare.net/download/4948340/"
   },
   {
     "Creator": "Sacrificial",
@@ -1140,7 +1140,7 @@
     "CurrentVersion": "1.6",
     "Status": "compatibile",
     "Translator": "di SimTecnologic",
-    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+    "Link": "http://www.simfileshare.net/download/4948341/"
   },
   {
     "Creator": "Sacrificial",
@@ -1149,7 +1149,7 @@
     "CurrentVersion": "2.2.4",
     "Status": "compatibile",
     "Translator": "di SimTecnologic",
-    "Link": "https://simtecnologic.wixsite.com/simtecnologic-world"
+    "Link": "http://www.simfileshare.net/download/4948342/"
   },
   {
     "Creator": "Sacrificial (Junior)",
