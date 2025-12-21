@@ -3017,9 +3017,9 @@
   {
     "Author": "SimMattically",
     "ModName": "Refreshed Main Menu 3.0",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/posts/refreshed-main-3-133777443?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share",
-    "DataUltimaModifica": "02/12/2025",
+    "DataUltimaModifica": "21/12/2025",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "MODIT": "Nessuna",
@@ -3418,36 +3418,6 @@
     "MODEN": "None",
     "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "It allows you to move, rotate and resize objects in ways impossible with standard game tools, providing greater creative freedom for more detailed and customized constructions. Ideal for players who want to take their creativity to the next level!"
-  },
-  {
-    "Author": "Vale93_games",
-    "ModName": "CC Wrench Animal Paw",
-    "Status": "aggiornata",
-    "SiteLink": "https://vale93games.it/mods-sims4/",
-    "DataUltimaModifica": "14/12/2025",
-    "Translation": "non necessaria",
-    "Categoria": "Utilità",
-    "MODIT": "Nessuna",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Sostituisce la normale chiave del gioco con una simpatica zampina disponibile in 6 colorazioni.",
-    "MODEN": "None",
-    "DLCEN": "REQUIRED: Base Game",
-    "DescrizioneEN": "Replaces the regular game key with a cute little paw available in 6 colors."
-  },
-  {
-    "Author": "Vale93_games",
-    "ModName": "CC Wrench Bow Pink",
-    "Status": "aggiornata",
-    "SiteLink": "https://vale93games.it/mods-sims4/",
-    "DataUltimaModifica": "14/12/2025",
-    "Translation": "non necessaria",
-    "Categoria": "Utilità",
-    "MODIT": "Nessuna",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Sostituisce la normale chiave del gioco con un fiocco rosa.",
-    "MODEN": "None",
-    "DLCEN": "REQUIRED: Base Game",
-    "DescrizioneEN": ""
   },
   {
     "Author": "Weerbesu",
