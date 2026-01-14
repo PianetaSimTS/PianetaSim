@@ -319,6 +319,28 @@ body.light-theme {
     color: white;
 }
 
+/* Stile per il banner informativo */
+.info-banner {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    padding: 15px 25px;
+    margin: 20px auto;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    border-left: 5px solid #b510bd;
+}
+
+.info-banner p {
+    margin: 0;
+    padding: 0;
+}
+
 /* Media query per schermi più grandi */
 @media (min-width: 1920px) and (min-height: 1080px) {
       header img {
@@ -367,6 +389,12 @@ body.light-theme {
       .social-container p {
         font-size: 22px;
       }
+      
+      .info-banner {
+        font-size: 18px;
+        padding: 20px 30px;
+        max-width: 1000px;
+      }
     }
 
 /* Stili responsivi */
@@ -394,6 +422,11 @@ body.light-theme {
         font-size: 16px;
         padding: 12px;
       }
+      
+      .info-banner {
+        font-size: 14px;
+        padding: 12px 20px;
+      }
     }
 
     /* Adattamento per dispositivi con larghezza max 480px */
@@ -416,6 +449,11 @@ body.light-theme {
       .button-container a {
         font-size: 14px;
         padding: 10px;
+      }
+      
+      .info-banner {
+        font-size: 13px;
+        padding: 10px 15px;
       }
     }
   </style>
@@ -454,6 +492,11 @@ body.light-theme {
       ⬇ PREMI QUI SOTTO PER RECARTI NELLA TABELLA DESIDERATA ⬇
     </p>
   </header>
+
+  <!-- Banner informativo aggiunto -->
+  <div class="info-banner">
+    <p>⚠️ <strong>ATTENZIONE:</strong> La patch del 13/01/2026 non ha disabilitato le mod, è stato un piccolo fix. Il reset è stato annullato. Eventuali cambiamenti di stato verranno riportati in base alle informazioni che saranno rese disponibili.</p>
+  </div>
 
   <div class="button-container">
     <a href="#" id="desc-mod-btn">HELP SIM</a>
@@ -555,6 +598,7 @@ const texts = {
     patch: "PATCH + BUG FIX",
     patchDate: "del",
     tableHint: "⬇ PREMI QUI SOTTO PER RECARTI NELLA TABELLA DESIDERATA ⬇",
+    bannerText: "⚠️ <strong>ATTENZIONE:</strong> La patch del 13/01/2026 non ha disabilitato le mod, è stato un piccolo fix. Il reset è stato annullato. Eventuali cambiamenti di stato verranno riportati in base alle informazioni che saranno rese disponibili.",
     buttons: {
       helpSim: "HELP SIM",
       mods: "MOD",
@@ -582,6 +626,7 @@ const texts = {
     patch: "PATCH + BUG FIX",
     patchDate: "on",
     tableHint: "⬇ CLICK BELOW TO GO TO THE DESIRED TABLE ⬇",
+    bannerText: "⚠️ <strong>NOTICE:</strong> The patch from 13/01/2026 did not disable mods, it was a minor fix. The reset has been cancelled. Any status changes will be reported based on the information that will be made available.",
     buttons: {
       helpSim: "HELP SIM",
       mods: "MODS",
@@ -595,13 +640,13 @@ const texts = {
     relax: "Now relax, customize your game and let <strong>Help Sim</strong> do the rest! 🎮✨",
     precautions: "⚠️ SMALL PRECAUTIONS BEFORE DOWNLOADING  ⚠️",
     antivirus: "★ If the antivirus blocks the program, click on <strong>\"Run anyway\"</strong>.<br>The program is safe! It was entirely created by us.",
-    guide: "★ Before using it, <strong>read the guide</strong> available on the program’s home page.",
+    guide: "★ Before using it, <strong>read the guide</strong> available on the program's home page.",
     zipSupport: "★ Supports only mod and translation files in <strong>ZIP format</strong>.",
     noPackage: "★ <strong>Does not support</strong> single <em>.package</em> files (CC and non-zipped mods).",
     noExternal: "★ <strong>Does not work</strong> with The Sims folder on external drives (HDD, SSD, USB, etc.).",
     download: "📥 Download",
     close: "❌ Close",
-    social: "Join our social media and become part of the Pianeta Sim community! You’ll find support and much more!"
+    social: "Join our social media and become part of the Pianeta Sim community! You'll find support and much more!"
   }
 };
 
@@ -614,28 +659,29 @@ function toggleLanguage() {
 
   // Aggiornamento dinamico dei testi
   document.getElementById("desc-mod-btn").textContent = texts[lang].buttons.helpSim;
-document.querySelector(".button-container a:nth-of-type(2)").textContent = texts[lang].buttons.mods;
-document.querySelector(".button-container a:nth-of-type(3)").textContent = texts[lang].buttons.mods18;
-document.querySelector(".button-container a:nth-of-type(4)").textContent = texts[lang].buttons.animationsWW18;
-document.querySelector(".button-container a:nth-of-type(5)").textContent = texts[lang].buttons.translations;
-document.querySelector(".button-container a:nth-of-type(6)").textContent = texts[lang].buttons.programs;
+  document.querySelector(".button-container a:nth-of-type(2)").textContent = texts[lang].buttons.mods;
+  document.querySelector(".button-container a:nth-of-type(3)").textContent = texts[lang].buttons.mods18;
+  document.querySelector(".button-container a:nth-of-type(4)").textContent = texts[lang].buttons.animationsWW18;
+  document.querySelector(".button-container a:nth-of-type(5)").textContent = texts[lang].buttons.translations;
+  document.querySelector(".button-container a:nth-of-type(6)").textContent = texts[lang].buttons.programs;
   document.querySelector(".scritta-benvenuto").setAttribute("alt", texts[lang].welcome);
   document.querySelector(".intro-text").innerHTML = texts[lang].intro;
   document.querySelector(".highlight").firstChild.textContent = texts[lang].patch + " ";
   document.querySelector(".highlight .version").nextSibling.textContent = ` ${texts[lang].patchDate} `;
   document.querySelector(".button-hint").textContent = texts[lang].tableHint;
+  document.querySelector(".info-banner p").innerHTML = texts[lang].bannerText;
   document.querySelector("#popup h2").textContent = texts[lang].helpSimTitle;
   document.querySelector("#popup p").innerHTML = texts[lang].helpSimDesc;
   document.querySelector("#popup p:nth-of-type(2)").innerHTML = texts[lang].relax;
   document.querySelector("#popup h3").textContent = texts[lang].precautions;
   const precautionsList = document.querySelector("#popup ul");
-precautionsList.innerHTML = `
-  <li>${texts[lang].antivirus}</li>
-  <li>${texts[lang].guide}</li>
-  <li>${texts[lang].zipSupport}</li>
-  <li>${texts[lang].noPackage}</li>
-  <li>${texts[lang].noExternal}</li>
-`;
+  precautionsList.innerHTML = `
+    <li>${texts[lang].antivirus}</li>
+    <li>${texts[lang].guide}</li>
+    <li>${texts[lang].zipSupport}</li>
+    <li>${texts[lang].noPackage}</li>
+    <li>${texts[lang].noExternal}</li>
+  `;
 
   document.getElementById("download-btn").textContent = texts[lang].download;
   document.getElementById("close-btn").textContent = texts[lang].close;
