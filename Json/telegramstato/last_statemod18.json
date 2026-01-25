@@ -92,9 +92,9 @@
   {
     "Author": "Khlas",
     "ModName": "Khlas Males Interactions (+18)",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://wicked.cc/mods/khlas/kmi-khlas-males-interactions-wcc/",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "13/01/2026",
     "Translation": "da-scaricare",
     "Categoria": "Gameplay",
     "MODIT": "NECESSARIE: WickedWhims di TurboDriver",
@@ -315,21 +315,6 @@
     "DescrizioneEN": "This mod revolutionizes the way your sims interact with sperm, adding traits and more."
   },
   {
-    "Author": "True AI",
-    "ModName": "Vulgar Language for WickedWhims (+18)",
-    "Status": "sconosciuta",
-    "SiteLink": "https://wicked.cc/mods/true-ai/vulgar-language-for-wickedwhims/",
-    "DataUltimaModifica": null,
-    "Translation": "da-scaricare",
-    "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: WickedWhims di TurboDriver  ATTENZIONE: sostituisce alcune stringhe originali della WickedWhims di TurboDriver ",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Questa mod aggiunge dialoghi espliciti e linguaggio volgare alle interazioni di WickedWhims. Migliora l'immersione con espressioni più realistiche e dirette, rendendo le conversazioni tra Sim più audaci e provocatorie.",
-    "MODEN": "REQUIRED: WickedWhims by TurboDriver  WARNING: replaces some original strings from WickedWhims by TurboDriver",
-    "DLCEN": "REQUIRED: Base Game",
-    "DescrizioneEN": "This mod adds explicit dialogue and vulgar language to WickedWhims interactions. It enhances immersion with more realistic and direct expressions, making conversations between Sims more racy and provocative."
-  },
-  {
     "Author": "TurboDriver",
     "ModName": "WickedWhims (+18)",
     "Status": "aggiornata",
@@ -343,20 +328,5 @@
     "MODEN": "None",
     "DLCEN": "REQUIRED: Base Game RECOMMENDED: Go to work",
     "DescrizioneEN": "This mod introduces an advanced system of explicit romantic and sexual interactions, enriching gameplay with nudity, custom animations, unique traits and more realistic relationship dynamics. It offers a more immersive and deeply customizable experience."
-  },
-  {
-    "Author": "Wicked Pixxel",
-    "ModName": "Random Sex Moodlets V2 (+18)",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/posts/random-sex-v2-103944398",
-    "DataUltimaModifica": "02/12/2025",
-    "Translation": "da-scaricare",
-    "Categoria": "Gameplay",
-    "MODIT": "Nessuna",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Questa aggiunge eventi intimi casuali tra i Sim, basati su desideri e situazioni spontanee. Introduce nuove interazioni, personalizzazioni e scenari dinamici, rendendo il gameplay più imprevedibile e realistico nelle relazioni.",
-    "MODEN": "None",
-    "DLCEN": "REQUIRED: Base Game",
-    "DescrizioneEN": "This adds random intimate events between Sims, based on spontaneous desires and situations. It introduces new interactions, customizations, and dynamic scenarios, making gameplay more unpredictable and realistic in relationships."
   }
 ]
