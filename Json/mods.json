@@ -360,6 +360,21 @@
     "DescrizioneEN": "This mod adds a lot of names to the game, but really a lot! Especially they are names that come from different cultures which makes the game much more realistic. I recommend that you read the modder's post carefully, where you will also find the list of names added."
   },
   {
+    "Author": "Amethyst-Lilac",
+    "ModName": "Better Ladders",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/better-ladders-133618466",
+    "DataUltimaModifica": "13/01/2026",
+    "Translation": "non necessaria",
+    "Categoria": "Utilità",
+    "MODIT": "NECESSARIE: Core Library di Lotto 51",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Better Ladders è una mod che migliora l’uso delle scale: i Sims si muovono più velocemente e possono salire/scendere anche mentre portano oggetti o bambini. Include una variante opzionale in cui i Sims scendono sempre scivolando.",
+    "MODEN": "REQUIRED: Core Library by Lot 51",
+    "DLCEN": "REQUIRED: Base Game",
+    "DescrizioneEN": "Better Ladders is a mod that improves ladder usage: Sims move faster and can climb up and down even while carrying objects or children. It also includes an optional variant where Sims always slide down ladders."
+  },
+  {
     "Author": "Andirz",
     "ModName": "ELENCO GENERALE",
     "Status": null,
