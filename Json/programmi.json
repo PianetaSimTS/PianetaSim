@@ -3,11 +3,11 @@
     "programma": "Help Sim di Pianeta Sim",
     "windows": true,
     "macOS": false,
-    "statuswindows": "compatibile",
+    "statuswindows": "aggiornato",
     "statusmacos": "non-disponibile",
     "link_programmawindows": "https://github.com/PianetaSimTS/HelpSim/releases/download/HelpSim/HelpSim.exe",
     "link_programmamacos": "",
-    "data_aggiornamentowindows": "01/07/2025",
+    "data_aggiornamentowindows": "02/02/2026",
     "data_aggiornamentomacos": null,
     "video_spiegativo": "https://docs.google.com/presentation/d/1Pevb-bL7lE0PDWflIjwsN4Kcp9WNrLbpzYcIM024wq4/edit#slide=id.g32da8d4de36_0_0"
   },
