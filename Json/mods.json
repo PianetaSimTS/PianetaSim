@@ -2282,9 +2282,9 @@
   {
     "Author": "Scumbumbo/LittleMsSam",
     "ModName": "Set Filters On Paintings by Reference",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://scumbumbomods.com/set-filters-on-paintings-by-reference/",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "03/02/2026",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam",
@@ -2297,9 +2297,9 @@
   {
     "Author": "Scumbumbo/Triplis/LittleMsSam",
     "ModName": "Xml Injector",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/xml-injector",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "03/02/2026",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "MODIT": "Serve per il funzionamento di altre mod",
