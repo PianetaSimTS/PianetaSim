@@ -2657,9 +2657,9 @@
   {
     "Author": "TwistedMexi",
     "ModName": "All Scenarios",
-    "Status": "sconosciuta",
+    "Status": "rotta",
     "SiteLink": "https://twistedmexi.com/Mods/",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "MODIT": "Nessuna",
@@ -2702,9 +2702,9 @@
   {
     "Author": "TwistedMexi",
     "ModName": "ModGuard: Mod Malware Protection",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://twistedmexi.com/Mods/",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "03/02/2026",
     "Translation": "non necessaria",
     "Categoria": "Utilità",
     "MODIT": "Nessuna",
