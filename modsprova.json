@@ -220,9 +220,9 @@
     "ModName": "General Pie Menus",
     "Status": "compatibile",
     "SiteLink": "https://adeepindigomods.itch.io/utility-mods",
-    "Traduttore": "non necessaria",
+    "Traduttore": null,
     "LinkTraduzione":null,
-    "Translation":null,
+    "Translation":"non necessaria",
     "DataTraduzione":null,
     "Categoria": "Utilità",
     "MODIT": "INSTALLARNE UNA SOLA per tutte le sue mod",
@@ -3290,4 +3290,5 @@
     "DescrizioneEN": "It allows you to easily change the features of the game lots, such as their type and functionality. With this mod, you can turn any lot into a venue for specific events, such as restaurants, nightclubs or libraries, without having to create a new lot from scratch. An easy way to expand your game possibilities and customize the experience!"
   }
 ]
+
 
