@@ -8,5 +8,20 @@
             "4"
         ],
         "social": "test"
+    },
+    {
+        "nome": "test2",
+        "link": "teste2",
+        "descrizione": "",
+        "data": "2026-02-11",
+        "sims": [
+            "4"
+        ],
+        "social": {
+            "tiktok": "test",
+            "instagram": "test",
+            "telegram": "test",
+            "patreon": "test"
+        }
     }
 ]
