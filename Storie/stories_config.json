@@ -1,1 +1,12 @@
-.
+[
+    {
+        "nome": "test",
+        "link": "test",
+        "descrizione": "test",
+        "data": "2026-02-11",
+        "sims": [
+            "4"
+        ],
+        "social": "test"
+    }
+]
