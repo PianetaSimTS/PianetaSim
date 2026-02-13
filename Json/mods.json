@@ -346,21 +346,6 @@
   },
   {
     "Author": "Amethyst-Lilac",
-    "ModName": "More Sim Names",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/posts/more-sim-names-126517152",
-    "DataUltimaModifica": "12/02/2026",
-    "Translation": "non necessaria",
-    "Categoria": "Varie",
-    "MODIT": "Nessuna",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Questa mod aggiunge un sacco di nomi al gioco, ma davvero un sacco! Soprattutto sono nomi che derivano da culture diverse il che rende il gioco molto più realistico. Vi consiglio di leggere attentamente il post della modder, dove troverete anche l'elenco dei nomi inseriti.",
-    "MODEN": "None",
-    "DLCEN": "REQUIRED: Base Game",
-    "DescrizioneEN": "This mod adds a lot of names to the game, but really a lot! Especially they are names that come from different cultures which makes the game much more realistic. I recommend that you read the modder's post carefully, where you will also find the list of names added."
-  },
-  {
-    "Author": "Amethyst-Lilac",
     "ModName": "Better Ladders",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/better-ladders-133618466",
@@ -373,6 +358,21 @@
     "MODEN": "REQUIRED: Core Library by Lot 51",
     "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "Better Ladders is a mod that improves ladder usage: Sims move faster and can climb up and down even while carrying objects or children. It also includes an optional variant where Sims always slide down ladders."
+  },
+  {
+    "Author": "Amethyst-Lilac",
+    "ModName": "More Sim Names",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/more-sim-names-126517152",
+    "DataUltimaModifica": "12/02/2026",
+    "Translation": "non necessaria",
+    "Categoria": "Varie",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Questa mod aggiunge un sacco di nomi al gioco, ma davvero un sacco! Soprattutto sono nomi che derivano da culture diverse il che rende il gioco molto più realistico. Vi consiglio di leggere attentamente il post della modder, dove troverete anche l'elenco dei nomi inseriti.",
+    "MODEN": "None",
+    "DLCEN": "REQUIRED: Base Game",
+    "DescrizioneEN": "This mod adds a lot of names to the game, but really a lot! Especially they are names that come from different cultures which makes the game much more realistic. I recommend that you read the modder's post carefully, where you will also find the list of names added."
   },
   {
     "Author": "Andirz",
@@ -961,21 +961,6 @@
   },
   {
     "Author": "LoryNaMods",
-    "ModName": "Prima Soluzione Dei Problemi e Supporto",
-    "Status": "compatibile",
-    "SiteLink": "https://www.lorynamods.com/prima-risoluzione-dei-problemi-e-supporto-mod/",
-    "DataUltimaModifica": "03/02/2026",
-    "Translation": "inclusa",
-    "Categoria": "Utilità",
-    "MODIT": "Nessuna",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Questa mod ha lo scopo di fornivi un primo supporto riguardo le altre mie mod. Nel caso in cui questo primo supporto non vi basti potete comunque mettervi in contatto con me su Discord.\nInoltre ho ideato questa mod anche per le persone che sono pigre come me, che quando sono nel bel mezzo di una partita non hanno la minima voglia di uscire, aprire il browser e cercare per la descrizione della mod per ricordarsi come funziona. Infatti tramite un semplice comando, se vorrete rinfrescarvi la memoria, verrete automaticamente indirizzati alla descrizione della mod scelta.",
-    "MODEN": "Nope",
-    "DLCEN": "REQUIRED: Base Game",
-    "DescrizioneEN": "This mod is intended to provide a first support for my mods. If this support is not enough, you can still get in touch with me on Discord or here on Curseforge.\n\nI also made this mod for people who are lazy like me, when they are in the middle of a game do not have the slightest desire to go out, open the browser and search for mods’ descriptions to remember how they work. In fact, through a simple command, if you want to refresh your memory, you will be automatically directed to the description of the chosen mod."
-  },
-  {
-    "Author": "LoryNaMods",
     "ModName": "Carriera Modder - Attiva",
     "Status": "compatibile",
     "SiteLink": "https://www.lorynamods.com/carriera-modder/?doing_wp_cron=1743536343.3856940269470214843750",
@@ -1078,6 +1063,21 @@
     "MODEN": "REQUIRED: Expanded Pregnancy Interactions by LoryNa",
     "DLCEN": "REQUIRED: Base Game - High School Years",
     "DescrizioneEN": "This is the Maternity Shop for Expanded Pregnancy Interactions mod."
+  },
+  {
+    "Author": "LoryNaMods",
+    "ModName": "Prima Soluzione Dei Problemi e Supporto",
+    "Status": "compatibile",
+    "SiteLink": "https://www.lorynamods.com/prima-risoluzione-dei-problemi-e-supporto-mod/",
+    "DataUltimaModifica": "03/02/2026",
+    "Translation": "inclusa",
+    "Categoria": "Utilità",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Questa mod ha lo scopo di fornivi un primo supporto riguardo le altre mie mod. Nel caso in cui questo primo supporto non vi basti potete comunque mettervi in contatto con me su Discord.\nInoltre ho ideato questa mod anche per le persone che sono pigre come me, che quando sono nel bel mezzo di una partita non hanno la minima voglia di uscire, aprire il browser e cercare per la descrizione della mod per ricordarsi come funziona. Infatti tramite un semplice comando, se vorrete rinfrescarvi la memoria, verrete automaticamente indirizzati alla descrizione della mod scelta.",
+    "MODEN": "Nope",
+    "DLCEN": "REQUIRED: Base Game",
+    "DescrizioneEN": "This mod is intended to provide a first support for my mods. If this support is not enough, you can still get in touch with me on Discord or here on Curseforge.\n\nI also made this mod for people who are lazy like me, when they are in the middle of a game do not have the slightest desire to go out, open the browser and search for mods’ descriptions to remember how they work. In fact, through a simple command, if you want to refresh your memory, you will be automatically directed to the description of the chosen mod."
   },
   {
     "Author": "LoryNaMods",
@@ -1906,21 +1906,6 @@
   },
   {
     "Author": "NickyClem",
-    "ModName": "SimSure Insurance & Co",
-    "Status": "compatibile",
-    "SiteLink": "https://nickyclem.itch.io/simsure-insurance-co-public/download/eyJpZCI6NDE0NjE2OSwiZXhwaXJlcyI6MTc3MDcwODE5NX0%3d.4QsHwlw6cyWS1O4T6HZc3VgIRmQ%3d",
-    "DataUltimaModifica": "03/02/2026",
-    "Translation": "da-scaricare",
-    "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam - Insurance Company Phone App & Computer Menu di NickyClem",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "L'assicurazione copre i tuoi elettrodomestici, così quando hanno bisogno di essere riparati non dovrai più pagare il riparatore!",
-    "MODEN": "REQUIRED: XML Injector by Scumbumbo/Triplis/LittleMsSam - Insurance Company Phone App & Computer Menu by NickyClem",
-    "DLCEN": "REQUIRED: Base Game",
-    "DescrizioneEN": "Insurance covers your appliances, so when they need repair, you no longer have to pay the repairman!"
-  },
-  {
-    "Author": "NickyClem",
     "ModName": "Insurance Company Phone App & Computer Menu",
     "Status": "sconosciuta",
     "SiteLink": "https://nickyclem.itch.io/insurance-company",
@@ -1933,6 +1918,21 @@
     "MODEN": "It is needed for the operation of other mods of NickyClem",
     "DLCEN": "REQUIRED: Base Game",
     "DescrizioneEN": "It is needed for the operation of other mods of NickyClem"
+  },
+  {
+    "Author": "NickyClem",
+    "ModName": "SimSure Insurance & Co",
+    "Status": "compatibile",
+    "SiteLink": "https://nickyclem.itch.io/simsure-insurance-co-public/download/eyJpZCI6NDE0NjE2OSwiZXhwaXJlcyI6MTc3MDcwODE5NX0%3d.4QsHwlw6cyWS1O4T6HZc3VgIRmQ%3d",
+    "DataUltimaModifica": "03/02/2026",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam - Insurance Company Phone App & Computer Menu di NickyClem",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "L'assicurazione copre i tuoi elettrodomestici, così quando hanno bisogno di essere riparati non dovrai più pagare il riparatore!",
+    "MODEN": "REQUIRED: XML Injector by Scumbumbo/Triplis/LittleMsSam - Insurance Company Phone App & Computer Menu by NickyClem",
+    "DLCEN": "REQUIRED: Base Game",
+    "DescrizioneEN": "Insurance covers your appliances, so when they need repair, you no longer have to pay the repairman!"
   },
   {
     "Author": "Northern siberia winds",
