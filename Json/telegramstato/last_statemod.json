@@ -2355,6 +2355,21 @@
     "DescrizioneEN": "It is needed for the operation of other mods."
   },
   {
+    "Author": "Simkatu ",
+    "ModName": "Take a Nap with Infant",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/take-nap-with-116027318",
+    "DataUltimaModifica": "12/02/2026",
+    "Translation": "da-scaricare",
+    "Categoria": "Gameplay",
+    "MODIT": "NECESSARIE: • XML Injector di Scumbumbo/Triplis/LittleMsSam",
+    "DLCIT": "NECESSARI: • Gioco Base",
+    "DescrizioneIT": "La mod Take a Nap with Infant di Simkatu permette ai tuoi Sims di addormentarsi insieme al lattante per fare un sonnellino condiviso. Aggiunge animazioni interattive dolci e realistici momenti di cura, rafforzando i legami familiari e rendendo l’esperienza con i bimbi piccoli più tenera, naturale e immersiva nel gioco quotidiano.",
+    "MODEN": "REQUIRED: • XML Injector by Scumbumbo/Triplis/LittleMsSam",
+    "DLCEN": "REQUIRED: • Base Game",
+    "DescrizioneEN": "Simkatu's Take a Nap with Infant mod allows your Sims to fall asleep alongside their infant for a shared nap. It adds sweet interactive animations and realistic caregiving moments, strengthening family bonds and making the experience with small children more tender, natural, and immersive in everyday gameplay."
+  },
+  {
     "Author": "SimMattically",
     "ModName": "Better Simology Panel",
     "Status": "compatibile",
