@@ -2535,6 +2535,21 @@
     "DescrizioneEN": "This mod intends to create an extensive financial/banking system similar to what we humans have in real life. With the latest feature add and enhance your own plots in the game or even reproduce any financial situation that is limited only to your imagination."
   },
   {
+    "Author": "Simularity",
+    "ModName": "Prefer Tables When Eating",
+    "Status": "compatibile",
+    "SiteLink": "https://simularity.cc/mods/tuning/prefer-tables/",
+    "DataUltimaModifica": "12/02/2026",
+    "Translation": "non necessaria",
+    "Categoria": "Utilità",
+    "MODIT": "Nessuna ATTENZIONE: Nella zip troverete un file Opzionale \"simularity-dont-getup.package\". Potete decidere se tenerlo o rimuoverlo, in base alle vostre esigenze.",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Prefer Tables When Eating di Simularity fa scegliere autonomamente ai Sim un tavolo da pranzo quando mangiano, evitando divani, scrivanie o pasti in piedi. Basta installarla nella cartella Mods: funziona subito. Nel download è incluso anche un pacchetto opzionale “Don’t Get Up” che li fa restare seduti dopo il pasto, finché non li comandi.",
+    "MODEN": "None ATTENTION: In the zip file, you will find an optional file called “simularity-dont-getup.package.” You can decide whether to keep it or remove it, depending on your needs.",
+    "DLCEN": "REQUIRED: Base Game",
+    "DescrizioneEN": "Prefer Tables When Eating by Simularity allows Sims to choose a dining table when they eat, avoiding sofas, desks, or standing meals. Just install it in the Mods folder: it works right away. The download also includes an optional “Don't Get Up” pack that keeps them seated after the meal until you command them to get up."
+  },
+  {
     "Author": "SonozakiSisters",
     "ModName": "Choose High School Classmates",
     "Status": "sconosciuta",
