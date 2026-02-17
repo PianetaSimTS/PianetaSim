@@ -1906,6 +1906,21 @@
   },
   {
     "Author": "MizoreYukii",
+    "ModName": "Functional Spiral Staircases",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/functional-spiral-staircases-with-animations",
+    "DataUltimaModifica": "10/02/2026",
+    "Translation": "non necessaria",
+    "Categoria": "Oggetti Funzionali",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "La mod aggiunge scale a chiocciola funzionali con animazioni che i Sim usano normalmente per spostarsi tra i piani, senza il sistema di teletrasporto dell’ascensore. Queste scale si comportano come quelle EA, permettendo passaggi continui su più piani. Ci sono alcune limitazioni beta e animazioni incomplete per bambini/animali.",
+    "MODEN": "None",
+    "DLCEN": "REQUIRED: Base Game",
+    "DescrizioneEN": "The mod adds functional spiral staircases with animations that Sims normally use to move between floors, without the elevator teleportation system. These stairs behave like EA stairs, allowing continuous passage between multiple floors. There are some beta limitations and incomplete animations for children/animals."
+  },
+  {
+    "Author": "MizoreYukii",
     "ModName": "Skip CAS Stories",
     "Status": "sconosciuta",
     "SiteLink": "https://www.patreon.com/posts/65743472",
