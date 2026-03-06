@@ -1177,12 +1177,12 @@
     "DataUltimaModifica": "06/03/2026",
     "Translation": "da-scaricare",
     "Categoria": "Oggetti Funzionali",
-    "MODIT": null,
-    "DLCIT": null,
-    "DescrizioneIT": null,
-    "MODEN": null,
-    "DLCEN": null,
-    "DescrizioneEN": null
+    "MODIT": "NECESSARIE: Core Library di Lot 51",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "La Plum Telephone Company è una mod per The Sims 4 che sostituisce gli smartphone con un telefono fisso funzionante. Permette chiamate, ricezione di telefonate casuali e nuove animazioni, mantenendo quasi tutte le interazioni del telefono originale del gioco.",
+    "MODEN": "REQUIRED: Core Library by Lot 51",
+    "DLCEN": "REQUIRED: Base Game",
+    "DescrizioneEN": "The Plum Telephone Company is a The Sims 4 mod that replaces smartphones with a functional landline telephone. It allows Sims to make and receive calls, adds random phone events and new animations, while preserving most interactions available in the game’s original phone system."
   },
   {
     "Author": "Loulicorn",
