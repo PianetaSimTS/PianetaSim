@@ -1170,6 +1170,21 @@
     "DescrizioneEN": "It allows you to create custom hotels with guest rooms, room service, and daily housekeeping. Sims can stay, interact in common areas and receive maintenance on demand, making vacations more immersive."
   },
   {
+    "Author": "Lot51",
+    "ModName": "Plum Telephone Company",
+    "Status": "nuova",
+    "SiteLink": "https://lot51.cc/mods/telephone",
+    "DataUltimaModifica": "06/03/2026",
+    "Translation": "da-scaricare",
+    "Categoria": "Oggetti Funzionali",
+    "MODIT": null,
+    "DLCIT": null,
+    "DescrizioneIT": null,
+    "MODEN": null,
+    "DLCEN": null,
+    "DescrizioneEN": null
+  },
+  {
     "Author": "Loulicorn",
     "ModName": "Ultimate CAS items Unlocker",
     "Status": "aggiornata",
