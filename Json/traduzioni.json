@@ -12,10 +12,10 @@
     "Creator": "Adeepindigo",
     "Title": "Better Daycare",
     "ReleaseVersion": "26/02/2025",
-    "CurrentVersion": "07/09/2025",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.curseforge.com/sims4/translations/better-daycare-by-adeepindigo-italian-translation"
+    "CurrentVersion": null,
+    "Status": "in-lavorazione",
+    "Translator": null,
+    "Link": null
   },
   {
     "Creator": "Adeepindigo",
@@ -39,10 +39,10 @@
     "Creator": "Adeepindigo",
     "Title": "Dental Care",
     "ReleaseVersion": "29/10/2025",
-    "CurrentVersion": "11/01/2026",
-    "Status": "aggiornata",
-    "Translator": "di vale93_games",
-    "Link": "https://www.curseforge.com/sims4/translations/dental-care-by-adeepindigo-italian-translation"
+    "CurrentVersion": null,
+    "Status": "in-lavorazione",
+    "Translator": null,
+    "Link": null
   },
   {
     "Creator": "Adeepindigo",
@@ -97,15 +97,6 @@
     "Status": "compatibile",
     "Translator": "di Leo",
     "Link": "https://www.patreon.com/posts/eyecare-italiana-113351556?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
-  },
-  {
-    "Creator": "Adeepindigo",
-    "Title": "Functional Janitor Closet",
-    "ReleaseVersion": "31/07/2024",
-    "CurrentVersion": "11/01/2026",
-    "Status": "aggiornata",
-    "Translator": "di vale93_games",
-    "Link": "https://www.curseforge.com/sims4/translations/functional-janitors-closet-by-adeepindigo-italian"
   },
   {
     "Creator": "Adeepindigo",
@@ -165,10 +156,10 @@
     "Creator": "Adeepindigo/ItsKatato",
     "Title": "Preteens",
     "ReleaseVersion": "11/05/2025",
-    "CurrentVersion": "11/01/2026",
-    "Status": "aggiornata",
-    "Translator": "di vale93_games",
-    "Link": "https://www.curseforge.com/sims4/translations/preeten-by-adeepindigo-italian-translation"
+    "CurrentVersion": null,
+    "Status": "in-lavorazione",
+    "Translator": null,
+    "Link": null
   },
   {
     "Creator": "Adeepindigo/Pandasama",
@@ -184,9 +175,9 @@
     "Title": "Pose Player",
     "ReleaseVersion": "19/03/2023",
     "CurrentVersion": "10/10/2024",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.curseforge.com/sims4/translations/pose-player-by-andrew-italian-translation"
+    "Status": "in-lavorazione",
+    "Translator": null,
+    "Link": null
   },
   {
     "Creator": "Arnie",
@@ -240,7 +231,7 @@
     "CurrentVersion": null,
     "Status": "in-lavorazione",
     "Translator": "di Leo",
-    "Link": "https://www.simfileshare.net/download/5394453/"
+    "Link": null
   },
   {
     "Creator": "Carl's Guides",
@@ -286,15 +277,6 @@
     "Status": "compatibile",
     "Translator": "di LadyPsycoTrilly",
     "Link": "https://www.patreon.com/posts/114797750?pr=true"
-  },
-  {
-    "Creator": "Deaderpool",
-    "Title": "MC Command Center",
-    "ReleaseVersion": "16/10/2025",
-    "CurrentVersion": "26/10/2025",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://vale93games.it/download/3133/"
   },
   {
     "Creator": "DQuiet",
@@ -811,57 +793,21 @@
   },
   {
     "Creator": "Ravasheen",
-    "Title": "Bus Upon a Time – Travel Mod",
-    "ReleaseVersion": "04/01/2023",
-    "CurrentVersion": "24/04/2023",
-    "Status": "compatibile",
-    "Translator": "di Isy's",
-    "Link": "https://www.patreon.com/posts/4-mini-mod-di-81987849"
-  },
-  {
-    "Creator": "Ravasheen",
-    "Title": "Cake A Break – Buyable Cakes",
-    "ReleaseVersion": "13/03/2024",
-    "CurrentVersion": "04/03/2024",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.curseforge.com/sims4/translations/cake-a-break-by-ravasheen-italian-translation"
-  },
-  {
-    "Creator": "Ravasheen",
     "Title": "Modern Family Portrait",
     "ReleaseVersion": "18/03/2024",
-    "CurrentVersion": "04/03/2024",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.curseforge.com/sims4/translations/modern-family-portrait-by-ravasheen-italian"
+    "CurrentVersion": null,
+    "Status": "in-lavorazione",
+    "Translator": null,
+    "Link": null
   },
   {
     "Creator": "Ravasheen",
     "Title": "Photographic Memory",
     "ReleaseVersion": "24/09/2024",
-    "CurrentVersion": "14/01/2026",
-    "Status": "aggiornata",
-    "Translator": "di vale93_games",
-    "Link": "https://www.curseforge.com/sims4/translations/photographic-memory-by-ravasheen-italian-translation"
-  },
-  {
-    "Creator": "Ravasheen",
-    "Title": "Sims Inventory Management System (S.I.M.S.)",
-    "ReleaseVersion": "18/03/2024",
-    "CurrentVersion": "09/04/2025",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://e.pcloud.link/publink/show?code=XZ7Y7qZfhjVN7Sj1bS3y9WWYw6tGumO5oOk"
-  },
-  {
-    "Creator": "Ravasheen",
-    "Title": "Sims Portrait Maker",
-    "ReleaseVersion": "01/03/2024",
-    "CurrentVersion": "05/03/2024",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.curseforge.com/sims4/translations/sims-portrait-maker-by-ravasheen-italian-translation"
+    "CurrentVersion": null,
+    "Status": "in-lavorazione",
+    "Translator": null,
+    "Link": null
   },
   {
     "Creator": "Sacrificial",
@@ -885,10 +831,10 @@
     "Creator": "Sacrificial",
     "Title": "Life Manager",
     "ReleaseVersion": "07/02/2026",
-    "CurrentVersion": "17/07/2025",
+    "CurrentVersion": "05/08/2025",
     "Status": "da-aggiornare",
-    "Translator": "di _Niky_sims_05",
-    "Link": "https://www.patreon.com/posts/traduzione-life-134357200"
+    "Translator": "di Sha",
+    "Link": "https://www.patreon.com/posts/ita-life-manager-135712138"
   },
   {
     "Creator": "Sacrificial",
@@ -1029,10 +975,10 @@
     "Creator": "SpinningPlumbobs",
     "Title": "Fairies vs. Witches",
     "ReleaseVersion": "08/11/2025",
-    "CurrentVersion": "11/11/2025",
-    "Status": "aggiornata",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/sims-4-fairies-106244752?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_fan&utm_content=web_share"
+    "CurrentVersion": null,
+    "Status": "in-lavorazione",
+    "Translator": null,
+    "Link": null
   },
   {
     "Creator": "SpinningPlumbobs",
@@ -1080,21 +1026,12 @@
     "Link": "https://www.patreon.com/posts/123210058?pr=true"
   },
   {
-    "Creator": "TwistedMexi",
-    "Title": "Better BuildBuy",
-    "ReleaseVersion": "02/10/2025",
-    "CurrentVersion": "08/08/2025",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://vale93games.it/download/3263/"
-  },
-  {
     "Creator": "Zerbu",
     "Title": "The Custom Preferences Mod",
     "ReleaseVersion": "05/11/2025",
-    "CurrentVersion": "08/03/2025",
-    "Status": "compatibile",
-    "Translator": "di vale93_games",
-    "Link": "https://www.patreon.com/posts/nuove-traduzioni-123892248?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+    "CurrentVersion": null,
+    "Status": "in-lavorazione",
+    "Translator": null,
+    "Link": null
   }
 ]
