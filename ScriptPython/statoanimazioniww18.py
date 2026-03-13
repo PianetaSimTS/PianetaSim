@@ -102,32 +102,22 @@ def compare_status_only(old_state, new_state):
         icon = status_icons.get(status, "⚪️")
 
         # --------------------------------
-        # NUOVA ANIMAZIONE
+        # NUOVA ANIMAZIONE O MODIFICATA
         # --------------------------------
-        if new_mod["Autore"] not in old_authors:
+        is_new = new_mod["Autore"] not in old_authors
+        old_mod = next(
+            (m for m in normalized_old if m["Autore"] == new_mod["Autore"]),
+            None
+        )
+
+        # Solo se nuova o se cambia stato/data
+        if is_new or (old_mod and (new_mod["Status"] != old_mod["Status"] or new_mod["DataAggiornamento"] != old_mod["DataAggiornamento"])):
             messages.append(
-                f"🌶 ANIMAZIONE\n\n"
-                f"{new_mod['Autore']} ➜ Data {new_mod['DataAggiornamento']}\n\n"
-                f"Stato {icon} {status}\n"
+                f"🌶 <b>ANIMAZIONE</b>\n\n"
+                f"<b>{new_mod['Autore']} ➜ Data {new_mod['DataAggiornamento']}</b>\n\n"
+                f"<b>Stato {icon} {status}</b>\n\n"
                 f"Link <a href=\"https://pianetasimts.github.io/PianetaSim/mod.html\">SITO</a>"
             )
-        else:
-            old_mod = next(
-                (m for m in normalized_old if m["Autore"] == new_mod["Autore"]),
-                None
-            )
-            if not old_mod:
-                continue
-            # --------------------------------
-            # CAMBIO STATUS O DATA
-            # --------------------------------
-            if new_mod["Status"] != old_mod["Status"] or new_mod["DataAggiornamento"] != old_mod["DataAggiornamento"]:
-                messages.append(
-                    f"🌶 ANIMAZIONE\n\n"
-                    f"{new_mod['Autore']} ➜ Data {new_mod['DataAggiornamento']}\n\n"
-                    f"Stato {icon} {new_mod['Status']}\n"
-                    f"Link <a href=\"https://pianetasimts.github.io/PianetaSim/mod.html\">SITO</a>"
-                )
 
     return messages
 
