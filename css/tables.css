@@ -294,7 +294,7 @@ h1 {
 }
 
 .back-arrow {
-  position: fixed;
+  position: sticky;
   top: 10px;
   left: 10px;
   text-decoration: none;
@@ -335,6 +335,7 @@ input:focus, select:focus {
 
 /* Form container che scorre con tutto il resto */
 .form-container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
