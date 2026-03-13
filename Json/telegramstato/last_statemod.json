@@ -2638,5 +2638,21 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!",
     "NoteIT": null
+  },
+  {
+    "Author": "Test",
+    "ModName": "Test",
+    "Status": "compatibile",
+    "SiteLink": "Test",
+    "DataUltimaModifica": "19/02/2026",
+    "Traduttore": "Test",
+    "LinkTraduzione": "Test",
+    "Translation": "nuova",
+    "DataTraduzione": "Test",
+    "Categoria": "Carriere",
+    "MODIT": null,
+    "DLCIT": null,
+    "DescrizioneIT": null,
+    "NoteIT": null
   }
 ]
