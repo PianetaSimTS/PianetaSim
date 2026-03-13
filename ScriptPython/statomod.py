@@ -138,7 +138,7 @@ def compare_status_only(old_state, new_state):
                 f"🧩  <b>MOD AGGIUNTA AL SITO</b>\n\n"
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                 f"Stato <i>{icon_mod} {new_mod['Status']}</i>\n\n"
-                f'<a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
+                f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
             if new_mod["Traduttore"]:
@@ -148,7 +148,7 @@ def compare_status_only(old_state, new_state):
                     f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                     f"Stato <i>{icon_tr} {new_mod['Translation']}</i>\n"
                     f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                    f'<a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
+                    f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
                 )
 
             continue
@@ -178,7 +178,7 @@ def compare_status_only(old_state, new_state):
                 f"Stato <i>{icon_mod} {new_mod['Status']}</i>\n"
                 + (f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
                    if new_mod["DataUltimaModifica"] != old_mod["DataUltimaModifica"] else "\n")
-                + f'<a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
+                + f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
         # Cambio TRADUZIONE (stato o data)
@@ -192,7 +192,7 @@ def compare_status_only(old_state, new_state):
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                 f"Stato <i>{icon_tr} {new_mod['Translation']}</i>\n"
                 f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                f'<a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
+                f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
     return messages
