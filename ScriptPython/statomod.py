@@ -109,12 +109,10 @@ def normalize_mod(mod):
         "Author": safe_strip(mod.get("Author")),
         "ModName": safe_strip(mod.get("ModName")),
         "Status": safe_strip(mod.get("Status")).upper(),
-        "SiteLink": safe_strip(mod.get("SiteLink")),
         "DataUltimaModifica": safe_strip(mod.get("DataUltimaModifica")),
 
         "Traduttore": safe_strip(mod.get("Traduttore")),
         "DataTraduzione": safe_strip(mod.get("DataTraduzione")),
-
     }
 
 
@@ -159,7 +157,7 @@ def compare_status_only(old_state, new_state):
                 f"MOD AGGIUNTA AL SITO\n\n"
                 f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                 f"Stato {icon} {new_mod['Status']}\n\n"
-                f"Link SITO"
+                f"<a href=\"{new_mod['SiteLink']}\">Link SITO</a>"
             )
 
         else:
@@ -190,14 +188,14 @@ def compare_status_only(old_state, new_state):
                     f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                     f"Stato {icon} {new_mod['Status']}\n"
                     f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                    f"Link SITO"
+                    f"<a href=\"https://pianetasimts.github.io/PianetaSim/mod.html\">Link SITO</a>"
                 )
 
             # --------------------------------
             # CAMBIO VERSIONE MOD
             # --------------------------------
 
-            elif new_mod["DataUltimaModifica"] != old_mod["DataUltimaModifica"]:
+            if new_mod["DataUltimaModifica"] != old_mod["DataUltimaModifica"]:
 
                 messages.append(
 
@@ -205,14 +203,14 @@ def compare_status_only(old_state, new_state):
                     f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                     f"Stato {icon} {new_mod['Status']}\n"
                     f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                    f"Link SITO"
+                    f"<a href=\"https://pianetasimts.github.io/PianetaSim/mod.html\">Link SITO</a>"
                 )
 
             # --------------------------------
             # AGGIORNAMENTO TRADUZIONE
             # --------------------------------
 
-            elif new_mod["DataTraduzione"] != old_mod["DataTraduzione"]:
+            if new_mod["DataTraduzione"] != old_mod["DataTraduzione"]:
 
                 if new_mod["Traduttore"]:
 
@@ -222,7 +220,7 @@ def compare_status_only(old_state, new_state):
                         f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                         f"Stato {icon} {new_mod['Status']}\n"
                         f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                        f"Link SITO"
+                        f"<a href=\"https://pianetasimts.github.io/PianetaSim/mod.html\">Link SITO</a>"
                     )
 
     return messages
@@ -241,7 +239,8 @@ def send_telegram_message(message, chat_id, topic_id):
         "chat_id": chat_id,
         "text": message,
         "message_thread_id": topic_id,
-        "disable_web_page_preview": True
+        "disable_web_page_preview": True,
+        "parse_mode": "HTML"
     }
 
     try:
