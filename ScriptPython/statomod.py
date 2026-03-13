@@ -157,7 +157,7 @@ def compare_status_only(old_state, new_state):
                 f"MOD AGGIUNTA AL SITO\n\n"
                 f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                 f"Stato {icon} {new_mod['Status']}\n\n"
-                f"<a href=\"{new_mod['SiteLink']}\">Link SITO</a>"
+                f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
         else:
@@ -188,7 +188,7 @@ def compare_status_only(old_state, new_state):
                     f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                     f"Stato {icon} {new_mod['Status']}\n"
                     f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                    Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>
+                    f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
                 )
 
             # --------------------------------
@@ -203,7 +203,7 @@ def compare_status_only(old_state, new_state):
                     f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                     f"Stato {icon} {new_mod['Status']}\n"
                     f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                    Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>
+                    f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
                 )
 
             # --------------------------------
@@ -220,7 +220,7 @@ def compare_status_only(old_state, new_state):
                         f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                         f"Stato {icon} {new_mod['Status']}\n"
                         f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                        Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>
+                        f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
                     )
 
     return messages
