@@ -136,7 +136,7 @@ def compare_status_only(old_state, new_state):
 
             messages.append(
                 f"🧩  <b>MOD AGGIUNTA AL SITO</b>\n\n"
-                f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
+                f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n"
                 f"Stato <i>{icon_mod} {new_mod['Status']}</i>\n\n"
                 f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
