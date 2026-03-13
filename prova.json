@@ -486,7 +486,7 @@
     "SiteLink": "https://www.patreon.com/posts/dine-out-v2-64188681",
     "DataUltimaModifica": "20/08/2025",
     "Traduttore": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-dine-out-reloaded-di-carls-guide",
+    "LinkTraduzione": "https://www.curseforge.com/sims4/translations/trad-ita-dine-out-reloaded-di-carls-guide",
     "Translation": "compatibile",
     "DataTraduzione": "10/03/2025",
     "Categoria": "Gameplay",
@@ -790,8 +790,8 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/firefighter-career",
     "DataUltimaModifica":  "24/02/2025",
     "Traduttore": "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-vigile-del-fuoco-di", "Translation": "da-scaricare",
-    "DataTraduzione": null,
+    "LinkTraduzione": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-vigile-del-fuoco-di", "Translation": "da-scaricare",
+    "DataTraduzione": "19/09/2025",
     "Categoria": "Carriere",
     "MODIT": "NECESSARIE: • XML Injector di Scumbumbo/Triplis/LittleMsSam • Core Library di Lot 51",
     "DLCIT": "NECESSARI: Gioco Base",
@@ -805,7 +805,7 @@
     "SiteLink": "https://www.curseforge.com/sims4/mods/fortune-teller-career",
     "DataUltimaModifica": "24/02/2025",
     "Traduttore":  "di LoryNa",
-    "Link": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-chiaroveggente-di",
+    "LinkTraduzione": "https://www.curseforge.com/sims4/translations/trad-ita-carriera-di-chiaroveggente-di",
     "Translation": "compatibile",
     "DataTraduzione": "04/03/2025",
     "Categoria": "Carriere",
@@ -1972,7 +1972,7 @@
     "Status": "compatibile",
     "SiteLink": "https://sacrificialmods.com/downloads.html",
     "DataUltimaModifica": "O7/09/2025",
-    "Traduttore": null,
+    "Traduttore": "di LadyPsycoTrilly",
     "LinkTraduzione": "https://www.patreon.com/posts/lifes-drama-di-134187293",
     "Translation": "compatibile",
     "DataTraduzione": "O7/09/2025",
@@ -2639,3 +2639,4 @@
     "NoteIT": null
   }
 ]
+
