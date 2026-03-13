@@ -161,7 +161,7 @@ def compare_status_only(old_state, new_state):
                 f"🌶 ANIMAZIONE\n\n"
                 f"{new_mod['Autore']} ➜ Data {new_mod['DataAggiornamento']}\n\n"
                 f"Stato {icon} {status}\n"
-                f"Link SITO"
+                Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>
             )
 
         else:
@@ -191,7 +191,7 @@ def compare_status_only(old_state, new_state):
                     f"🌶 ANIMAZIONE\n\n"
                     f"{new_mod['Autore']} ➜ Data {new_mod['DataAggiornamento']}\n\n"
                     f"Stato {icon} {new_mod['Status']}\n"
-                    f"Link SITO"
+                    Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>
                 )
 
     return messages
