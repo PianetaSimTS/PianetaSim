@@ -16,6 +16,7 @@ github_token = os.getenv('GITHUB_TOKEN')
 repo_api_url_mods = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/mods.json'
 repo_api_url_state = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_statemod.json'
 
+
 # -------------------------------
 # FETCH JSON DA GITHUB
 # -------------------------------
@@ -51,9 +52,7 @@ def load_last_state():
 # SALVA STATO
 # -------------------------------
 def save_current_state(new_state):
-
     try:
-
         headers = {
             "Authorization": f"token {github_token}",
             "Accept": "application/vnd.github.v3+json",
@@ -142,7 +141,7 @@ def compare_status_only(old_state, new_state):
                 f'<a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
-            if new_mod["Traduttore"] and new_mod["DataTraduzione"]:
+            if new_mod["Traduttore"]:
 
                 messages.append(
                     f"💬  <b>TRADUZIONE {new_mod['Traduttore']}</b>\n\n"
@@ -167,8 +166,11 @@ def compare_status_only(old_state, new_state):
         if not old_mod:
             continue
 
-        # Cambio stato MOD
-        if new_mod["Status"] != old_mod["Status"] or new_mod["DataUltimaModifica"] != old_mod["DataUltimaModifica"]:
+        # Cambio MOD
+        if (
+            new_mod["Status"] != old_mod["Status"]
+            or new_mod["DataUltimaModifica"] != old_mod["DataUltimaModifica"]
+        ):
 
             messages.append(
                 f"🧩  <b>MOD</b>\n\n"
@@ -179,8 +181,11 @@ def compare_status_only(old_state, new_state):
                 + f'<a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
-        # Cambio traduzione
-        if new_mod["DataTraduzione"] != old_mod["DataTraduzione"] and new_mod["Traduttore"]:
+        # Cambio TRADUZIONE (stato o data)
+        if (
+            new_mod["Translation"] != old_mod["Translation"]
+            or new_mod["DataTraduzione"] != old_mod["DataTraduzione"]
+        ) and new_mod["Traduttore"]:
 
             messages.append(
                 f"💬  <b>TRADUZIONE di {new_mod['Traduttore']}</b>\n\n"
@@ -209,10 +214,8 @@ def send_telegram_message(message, chat_id, topic_id):
     }
 
     try:
-
         response = requests.post(url, data=payload)
         response.raise_for_status()
-
         print("Messaggio inviato")
 
     except requests.exceptions.RequestException as e:
@@ -228,7 +231,6 @@ def send_telegram_batch(messages, chat_id, topic_id, batch_size=20, delay=60):
         batch = messages[i:i+batch_size]
 
         for message in batch:
-
             send_telegram_message(message, chat_id, topic_id)
             time.sleep(2)
 
@@ -274,9 +276,7 @@ async def monitor_mods():
 if __name__ == "__main__":
 
     try:
-
         asyncio.run(monitor_mods())
 
     except Exception as e:
-
         print(f"Errore esecuzione: {e}")
