@@ -5,6 +5,10 @@ import asyncio
 import os
 import time
 
+# -------------------------------
+# CONFIG
+# -------------------------------
+
 telegram_token = os.getenv("TELEGRAM_TOKEN")
 group_id = '-1001771715212'
 topic_id = '79558'
@@ -31,19 +35,18 @@ def fetch_json_from_github(api_url):
         response.raise_for_status()
 
         content = response.json()
-
         file_content = base64.b64decode(content['content']).decode('utf-8')
 
         return json.loads(file_content)
 
     except requests.exceptions.RequestException as e:
 
-        print(f"Errore GitHub: {e}")
+        print(f"Errore nel recuperare il file da GitHub: {e}")
         return None
 
 
 # -------------------------------
-# CARICA STATO
+# CARICA STATO PRECEDENTE
 # -------------------------------
 
 def load_last_state():
@@ -75,16 +78,15 @@ def save_current_state(new_state):
         ).decode('utf-8')
 
         data = {
-            "message": "Aggiornamento stato mod18",
+            "message": "Aggiornamento stato mod",
             "content": content,
             "sha": sha,
         }
 
         response = requests.put(repo_api_url_state, headers=headers, json=data)
-
         response.raise_for_status()
 
-        print("Stato aggiornato su GitHub")
+        print("Stato salvato su GitHub")
 
     except requests.exceptions.RequestException as e:
 
@@ -92,16 +94,14 @@ def save_current_state(new_state):
 
 
 # -------------------------------
-# NORMALIZZAZIONE MOD
+# NORMALIZZAZIONE DATI
 # -------------------------------
 
 def normalize_mod(mod):
 
     def safe_strip(value):
-
         if value is None:
             return ''
-
         return str(value).strip()
 
     return {
@@ -109,12 +109,10 @@ def normalize_mod(mod):
         "Author": safe_strip(mod.get("Author")),
         "ModName": safe_strip(mod.get("ModName")),
         "Status": safe_strip(mod.get("Status")).upper(),
-        "SiteLink": safe_strip(mod.get("SiteLink")),
         "DataUltimaModifica": safe_strip(mod.get("DataUltimaModifica")),
 
         "Traduttore": safe_strip(mod.get("Traduttore")),
-        "DataTraduzione": safe_strip(mod.get("DataTraduzione"))
-
+        "DataTraduzione": safe_strip(mod.get("DataTraduzione")),
     }
 
 
@@ -148,19 +146,18 @@ def compare_status_only(old_state, new_state):
 
         icon = status_icons.get(new_mod["Status"], "⚪️")
 
-        # ---------------------------
+        # --------------------------------
         # MOD NUOVA
-        # ---------------------------
+        # --------------------------------
 
         if (new_mod["ModName"], new_mod["Author"]) not in old_mod_keys:
 
             messages.append(
 
-                f"🔞 MOD +18\n\n"
                 f"MOD AGGIUNTA AL SITO\n\n"
                 f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                 f"Stato {icon} {new_mod['Status']}\n\n"
-                f"Link SITO"
+                f"<a href=\"{new_mod['SiteLink']}\">Link SITO</a>"
             )
 
         else:
@@ -179,51 +176,51 @@ def compare_status_only(old_state, new_state):
             if not old_mod:
                 continue
 
-            # ---------------------------
+            # --------------------------------
             # CAMBIO STATUS
-            # ---------------------------
+            # --------------------------------
 
             if new_mod["Status"] != old_mod["Status"]:
 
                 messages.append(
 
-                    f"🔞 MOD +18\n\n"
+                    f"MOD\n\n"
                     f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                     f"Stato {icon} {new_mod['Status']}\n"
                     f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                    f"Link SITO"
+                    Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>
                 )
 
-            # ---------------------------
-            # CAMBIO VERSIONE
-            # ---------------------------
+            # --------------------------------
+            # CAMBIO VERSIONE MOD
+            # --------------------------------
 
-            elif new_mod["DataUltimaModifica"] != old_mod["DataUltimaModifica"]:
+            if new_mod["DataUltimaModifica"] != old_mod["DataUltimaModifica"]:
 
                 messages.append(
 
-                    f"🔞 MOD +18\n\n"
+                    f"MOD\n\n"
                     f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                     f"Stato {icon} {new_mod['Status']}\n"
                     f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                    f"Link SITO"
+                    Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>
                 )
 
-            # ---------------------------
-            # TRADUZIONE AGGIORNATA
-            # ---------------------------
+            # --------------------------------
+            # AGGIORNAMENTO TRADUZIONE
+            # --------------------------------
 
-            elif new_mod["DataTraduzione"] != old_mod["DataTraduzione"]:
+            if new_mod["DataTraduzione"] != old_mod["DataTraduzione"]:
 
                 if new_mod["Traduttore"]:
 
                     messages.append(
 
-                        f"TRADUZIONE {new_mod['Traduttore']}\n\n"
+                        f"TRADUZIONE di {new_mod['Traduttore']}\n\n"
                         f"{new_mod['ModName']} ➜ Di {new_mod['Author']}\n\n"
                         f"Stato {icon} {new_mod['Status']}\n"
                         f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
-                        f"Link SITO"
+                        Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>
                     )
 
     return messages
@@ -242,8 +239,8 @@ def send_telegram_message(message, chat_id, topic_id):
         "chat_id": chat_id,
         "text": message,
         "message_thread_id": topic_id,
-        "disable_web_page_preview": True
-
+        "disable_web_page_preview": True,
+        "parse_mode": "HTML"
     }
 
     try:
@@ -286,7 +283,7 @@ def send_telegram_batch(messages, chat_id, topic_id, batch_size=20, delay=60):
 
 async def monitor_mods():
 
-    print("Monitorando modifiche mods18...")
+    print("Monitorando modifiche...")
 
     last_state = load_last_state()
 
@@ -310,7 +307,7 @@ async def monitor_mods():
 
     else:
 
-        print("Errore recupero mods18")
+        print("Errore recupero mods")
 
 
 # -------------------------------
