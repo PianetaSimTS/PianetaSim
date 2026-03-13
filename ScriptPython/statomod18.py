@@ -13,8 +13,8 @@ group_id = '-1001771715212'
 topic_id = '79558'
 github_token = os.getenv('GITHUB_TOKEN')
 
-repo_api_url_mods = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/mods.json'
-repo_api_url_state = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_statemod.json'
+repo_api_url_mods = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/mods18.json'
+repo_api_url_state = 'https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/Json/telegramstato/last_statemod18.json'
 
 
 # -------------------------------
@@ -135,8 +135,8 @@ def compare_status_only(old_state, new_state):
         if (new_mod["ModName"], new_mod["Author"]) not in old_mod_keys:
 
             messages.append(
-                f"🔞  <b>MOD +18 AGGIUNTA AL SITO</b>\n\n"
-                f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
+                f"🔞  <b>MOD AGGIUNTA AL SITO</b>\n\n"
+                f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n"
                 f"Stato <i>{icon_mod} {new_mod['Status']}</i>\n\n"
                 f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
@@ -147,7 +147,7 @@ def compare_status_only(old_state, new_state):
                     f"💬  <b>TRADUZIONE {new_mod['Traduttore']}</b>\n\n"
                     f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                     f"Stato <i>{icon_tr} {new_mod['Translation']}</i>\n"
-                    f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
+                    f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
                     f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
                 )
 
@@ -173,10 +173,9 @@ def compare_status_only(old_state, new_state):
         ):
 
             messages.append(
-                f"🔞  <b>MOD +18</b>\n\n"
-                f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
-                f"Stato <i>{icon_mod} {new_mod['Status']}</i>\n"
-                f"{'Versione Mod: ' + new_mod['DataUltimaModifica'] if new_mod['DataUltimaModifica'] != old_mod['DataUltimaModifica'] else ''}\n"
+                f"🔞  <b>MOD</b>\n\n"
+                f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n"
+                f"Stato <i>{icon_mod} {new_mod['Status']}</i>\n\n"
                 f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
@@ -190,7 +189,7 @@ def compare_status_only(old_state, new_state):
                 f"💬  <b>TRADUZIONE di {new_mod['Traduttore']}</b>\n\n"
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                 f"Stato <i>{icon_tr} {new_mod['Translation']}</i>\n"
-                f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
+                f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
                 f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
