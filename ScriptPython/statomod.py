@@ -114,15 +114,15 @@ def compare_status_only(old_state, new_state):
         if (new_mod["ModName"], new_mod["Author"]) not in old_mod_keys:
             messages.append(
                 f"🧩  <b>MOD AGGIUNTA AL SITO</b>\n\n"
-                f"<b>{new_mod['ModName']} ➜ Di {new_mod['Author']}</b>\n\n"
+                f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                 f"Stato <i>{icon} {new_mod['Status'].upper()}</i>\n\n"
                 f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
             if new_mod["Traduttore"] and new_mod["DataTraduzione"]:
                 messages.append(
-                    f"💬  <b>TRADUZIONE di {new_mod['Traduttore']}</b>\n\n"
-                    f"<b>{new_mod['ModName']} ➜ Di {new_mod['Author']}</b>\n\n"
+                    f"💬  <b>TRADUZIONE {new_mod['Traduttore']}</b>\n\n"
+                    f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                     f"Stato <i>{icon} {new_mod['Status'].upper()}</i>\n"
                     f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
                     f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
@@ -145,7 +145,7 @@ def compare_status_only(old_state, new_state):
         if new_mod["Status"] != old_mod["Status"] or new_mod["DataUltimaModifica"] != old_mod["DataUltimaModifica"]:
             messages.append(
                 f"🧩  <b>MOD</b>\n\n"
-                f"<b>{new_mod['ModName']} ➜ Di {new_mod['Author']}</b>\n\n"
+                f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                 f"Stato <i>{icon} {new_mod['Status'].upper()}</i>\n"
                 + (f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n" if new_mod["DataUltimaModifica"] != old_mod["DataUltimaModifica"] else "\n")
                 + f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
@@ -155,7 +155,7 @@ def compare_status_only(old_state, new_state):
         if new_mod["DataTraduzione"] != old_mod["DataTraduzione"] and new_mod["Traduttore"]:
             messages.append(
                 f"💬  <b>TRADUZIONE di {new_mod['Traduttore']}</b>\n\n"
-                f"<b>{new_mod['ModName']} ➜ Di {new_mod['Author']}</b>\n\n"
+                f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                 f"Stato <i>{icon} {new_mod['Status'].upper()}</i>\n"
                 f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
                 f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
