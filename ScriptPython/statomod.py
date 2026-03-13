@@ -113,7 +113,7 @@ def compare_status_only(old_state, new_state):
         # --------------------------------
         if (new_mod["ModName"], new_mod["Author"]) not in old_mod_keys:
             messages.append(
-                f"🆕  <b>MOD AGGIUNTA AL SITO</b>\n\n"
+                f"🧩  <b>MOD AGGIUNTA AL SITO</b>\n\n"
                 f"<b>{new_mod['ModName']} ➜ Di {new_mod['Author']}</b>\n\n"
                 f"Stato <i>{icon} {new_mod['Status'].upper()}</i>\n\n"
                 f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
