@@ -176,7 +176,6 @@ def compare_status_only(old_state, new_state):
                 f"🧩  <b>MOD</b>\n\n"
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                 f"Stato <i>{icon_mod} {new_mod['Status']}</i>\n"
-                + (f"Versione Mod: {new_mod['DataUltimaModifica']}\n\n"
                    if new_mod["DataUltimaModifica"] != old_mod["DataUltimaModifica"] else "\n")
                 + f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
