@@ -112,11 +112,17 @@ def compare_status_only(old_state, new_state):
     normalized_new = [normalize_mod(m) for m in new_state]
 
     status_icons = {
-        "AGGIORNATA": "🟢",
-        "COMPATIBILE": "🔵",
-        "ROTTA": "🔴",
-        "NUOVA": "🟣",
-        "SCONOSCIUTA & OBSOLETA": "⚪️"
+        "COMPATIBILE": "🩵",
+        "AGGIORNATA": "💚",
+        "ROTTA": "💔",
+        "NUOVA": "💜",
+        "SCONOSCIUTA": "🩶",
+        "OBSOLETA": "🤎",
+        "NON NECESSARIA": "🧡",
+        "INCLUSA": "💛",
+        "IN LAVORAZIONE": "🩷",
+        "DA CONTROLLARE": "🖤",
+        "DA AGGIORNARE": "💙"
     }
 
     old_mod_keys = {(m['ModName'], m['Author']) for m in normalized_old}
@@ -135,10 +141,10 @@ def compare_status_only(old_state, new_state):
         if (new_mod["ModName"], new_mod["Author"]) not in old_mod_keys:
 
             messages.append(
-                f"🔞  <b>MOD AGGIUNTA AL SITO</b>\n\n"
+                f"🔞  <b>MOD +18 AGGIUNTA AL SITO</b>\n\n"
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n"
                 f"Stato <i>{icon_mod} {new_mod['Status']}</i>\n\n"
-                f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
+                f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod18.html">SITO</a>'
             )
 
             if new_mod["Traduttore"]:
@@ -148,7 +154,7 @@ def compare_status_only(old_state, new_state):
                     f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                     f"Stato <i>{icon_tr} {new_mod['Translation']}</i>\n"
                     f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
-                    f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
+                    f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod18.html">SITO</a>'
                 )
 
             continue
@@ -173,10 +179,10 @@ def compare_status_only(old_state, new_state):
         ):
 
             messages.append(
-                f"🔞  <b>MOD</b>\n\n"
+                f"🔞  <b>MOD +18</b>\n\n"
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n"
                 f"Stato <i>{icon_mod} {new_mod['Status']}</i>\n\n"
-                f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
+                f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod18.html">SITO</a>'
             )
 
         # Cambio TRADUZIONE (stato o data)
@@ -190,7 +196,7 @@ def compare_status_only(old_state, new_state):
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                 f"Stato <i>{icon_tr} {new_mod['Translation']}</i>\n"
                 f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
-                f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
+                f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod18.html">SITO</a>'
             )
 
     return messages
