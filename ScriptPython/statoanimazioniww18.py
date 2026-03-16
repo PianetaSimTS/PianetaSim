@@ -121,7 +121,7 @@ def compare_status_only(old_state, new_state):
             messages.append(
                 f"🌶 <b>ANIMAZIONE</b>\n\n"
                 f"<b>{new_mod['Autore']} ➜ Data {new_mod['DataAggiornamento']}</b>\n\n"
-                f"<b>Stato {icon} {status}</b>\n\n"
+                f"<b>Stato {icon} {status}</b>\n"
                 f"Link <a href=\"https://pianetasimts.github.io/PianetaSim/animazioniww18.html\">SITO</a>"
             )
 
