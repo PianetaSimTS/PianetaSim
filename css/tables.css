@@ -413,48 +413,13 @@ tr:nth-child(even) td {
   text-transform: uppercase;
   color: white;
 }
-.status.nuova {
-  color: #6b1fad;
-}
-
-.status.obsoleta {
-  color: #0025cc;
-}
-
-.status.compatibile {
-  color: #0cc0df;
-}
-
-.status.rotta {
-  color: #cc0000;
-}
-
-.status.sconosciuta {
-  color: #737373;
-}
-
-.status.aggiornata {
-  color: #00bf63;
-}
-
-.traduzione.inclusa {
-  color: #f6c400;
-}
-
-.traduzione.non-necessaria {
-  color: #ff751f;
-}
-
-.traduzione.in-lavorazione {
-  color: #000000;
-}
 
 .traduzione.compatibile {
-  background-color: #0cc0df;
+  background-color: #008eff;
   color: white; 
 }
 .traduzione.aggiornata {
-  background-color: #00bf63;
+  background-color: #00d517;
   color: white; 
 }
 .traduzione.da-aggiornare {
@@ -463,7 +428,7 @@ tr:nth-child(even) td {
 }
 
 .traduzione.da-controllare {
-    background-color: #ff1fa9;
+    background-color: #000000;
     color: white; 
     padding: 2px 6px;
     border-radius: 4px;
@@ -482,7 +447,7 @@ tr:nth-child(even) td {
 
 
 .traduzione.nuova {
-    background-color: #8f1eae;
+    background-color: #6b1fad;
     color: white; 
     padding: 2px 6px;
     border-radius: 4px;
@@ -707,12 +672,12 @@ tr:nth-child(even) td {
 
 /* Status colors - mantenuti ma con testo più leggibile */
 .status.nuova {
-  background-color: #9372ff;
+  background-color: #6b1fad;
   color: white;
 }
 
 .status.obsoleta {
-  background-color: #545454;
+  background-color: #0025cc;
   color: white;
 }
 
@@ -722,12 +687,12 @@ tr:nth-child(even) td {
 }
 
 .status.rotta {
-  background-color: #ff0015;
+  background-color: #cc0000;
   color: white;
 }
 
 .status.sconosciuta {
-  background-color: #545454;
+  background-color: #737373;
   color: white;
 }
 
@@ -738,17 +703,17 @@ tr:nth-child(even) td {
 
 /* Traduzione colors - migliorata leggibilità */
 .traduzione.inclusa {
-  background-color: #54d41d;
+  background-color: #f6c400;
   color: white;
 }
 
 .traduzione.non-necessaria {
-  background-color: #38b6ff;
+  background-color: #ff751f;
   color: white;
 }
 
 .traduzione.in-lavorazione {
-  background-color: #ff57cb;
+  background-color: #ff1fa9;
   color: white;
 }
 
