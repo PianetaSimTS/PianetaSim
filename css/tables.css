@@ -423,7 +423,7 @@ tr:nth-child(even) td {
   color: white; 
 }
 .traduzione.da-aggiornare {
-  background-color: #083335;
+  background-color: blue;
   color: white; 
 }
 
@@ -677,7 +677,7 @@ tr:nth-child(even) td {
 }
 
 .status.obsoleta {
-  background-color: #0025cc;
+  background-color: #7a4900;
   color: white;
 }
 
