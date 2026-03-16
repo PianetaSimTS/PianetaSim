@@ -112,11 +112,17 @@ def compare_status_only(old_state, new_state):
     normalized_new = [normalize_mod(m) for m in new_state]
 
     status_icons = {
-        "AGGIORNATA": "🟢",
-        "COMPATIBILE": "🔵",
-        "ROTTA": "🔴",
-        "NUOVA": "🟣",
-        "SCONOSCIUTA & OBSOLETA": "⚪️"
+        "COMPATIBILE": "🩵",
+        "AGGIORNATA": "💚",
+        "ROTTA": "💔",
+        "NUOVA": "💜",
+        "SCONOSCIUTA": "🩶",
+        "OBSOLETA": "🤎",
+        "NON NECESSARIA": "🧡",
+        "INCLUSA": "💛",
+        "IN LAVORAZIONE": "🩷",
+        "DA CONTROLLARE": "🖤",
+        "DA AGGIORNARE": "💙"
     }
 
     old_mod_keys = {(m['ModName'], m['Author']) for m in normalized_old}
