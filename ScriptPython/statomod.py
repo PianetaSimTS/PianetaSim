@@ -143,7 +143,7 @@ def compare_status_only(old_state, new_state):
             messages.append(
                 f"🧩  <b>MOD AGGIUNTA AL SITO</b>\n\n"
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
-                f"Stato <u><i>{icon_mod} {new_mod['Status']}</i></u>\n"
+                f"Stato {icon_mod} <u><i>{new_mod['Status']}</i></u>\n"
                 f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
@@ -152,7 +152,7 @@ def compare_status_only(old_state, new_state):
                 messages.append(
                     f"💬  <b>TRADUZIONE {new_mod['Traduttore']}</b>\n\n"
                     f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
-                    f"Stato <u><i>{icon_mod} {new_mod['Status']}</i></u>\n"
+                    f"Stato {icon_mod} <u><i>{new_mod['Status']}</i></u>\n"
                     f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
                     f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
                 )
@@ -181,7 +181,7 @@ def compare_status_only(old_state, new_state):
             messages.append(
                 f"🧩  <b>MOD</b>\n\n"
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
-                f"Stato <u><i>{icon_mod} {new_mod['Status']}</i></u>\n"
+                f"Stato {icon_mod} <u><i>{new_mod['Status']}</i></u>\n"
                 f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
 
@@ -194,7 +194,7 @@ def compare_status_only(old_state, new_state):
             messages.append(
                 f"💬  <b>TRADUZIONE di {new_mod['Traduttore']}</b>\n\n"
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
-                f"Stato <u><i>{icon_mod} {new_mod['Status']}</i></u>\n"
+                f"Stato {icon_mod} <u><i>{new_mod['Status']}</i></u>\n"
                 f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
                 f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
