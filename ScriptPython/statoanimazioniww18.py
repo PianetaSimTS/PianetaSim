@@ -85,11 +85,17 @@ def compare_status_only(old_state, new_state):
     normalized_new = [normalize_mod(m) for m in new_state]
 
     status_icons = {
-        "AGGIORNATA": "🟢",
-        "COMPATIBILE": "🔵",
-        "ROTTA": "🔴",
-        "NUOVA": "🟣",
-        "SCONOSCIUTA & OBSOLETA": "⚪️"
+        "COMPATIBILE": "🩵",
+        "AGGIORNATA": "💚",
+        "ROTTA": "💔",
+        "NUOVA": "💜",
+        "SCONOSCIUTA": "🩶",
+        "OBSOLETA": "🤎",
+        "NON NECESSARIA": "🧡",
+        "INCLUSA": "💛",
+        "IN LAVORAZIONE": "🩷",
+        "DA CONTROLLARE": "🖤",
+        "DA AGGIORNARE": "💙"
     }
 
     old_authors = {m["Autore"] for m in normalized_old}
@@ -116,7 +122,7 @@ def compare_status_only(old_state, new_state):
                 f"🌶 <b>ANIMAZIONE</b>\n\n"
                 f"<b>{new_mod['Autore']} ➜ Data {new_mod['DataAggiornamento']}</b>\n\n"
                 f"<b>Stato {icon} {status}</b>\n\n"
-                f"Link <a href=\"https://pianetasimts.github.io/PianetaSim/mod.html\">SITO</a>"
+                f"Link <a href=\"https://pianetasimts.github.io/PianetaSim/animazioniww18.html\">SITO</a>"
             )
 
     return messages
