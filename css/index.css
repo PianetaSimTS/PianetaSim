@@ -514,7 +514,54 @@ body {
       background-color: white;
       color: black;
     }
+.patch-warning {
+    background-color: #ffcccc;
+    border: 3px solid #ff0000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
 
+.warning-title {
+    color: #cc0000;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.warning-text {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.warning-highlight {
+    color: #cc0000;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* Stile per tema scuro */
+body.dark-mode .patch-warning {
+    background-color: #660000;
+    border-color: #ff6666;
+}
+
+body.dark-mode .warning-title {
+    color: #ff9999;
+}
+
+body.dark-mode .warning-text {
+    color: #fff;
+}
+
+body.dark-mode .warning-highlight {
+    color: #ff9999;
+}
     /* Popup */
     .popup {
       display: none;
