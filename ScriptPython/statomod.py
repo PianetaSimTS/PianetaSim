@@ -102,6 +102,20 @@ def normalize_mod(mod):
 
 
 # -------------------------------
+# FUNZIONE DI UTILITÀ PER VERIFICARE SE UNA DATA È VUOTA
+# -------------------------------
+def is_data_blank(data_value):
+    """
+    Verifica se un valore di data è vuoto (None, stringa vuota, o solo spazi)
+    """
+    if data_value is None:
+        return True
+    if isinstance(data_value, str):
+        return data_value.strip() == ''
+    return False
+
+
+# -------------------------------
 # CONFRONTO MOD
 # -------------------------------
 def compare_status_only(old_state, new_state):
@@ -148,14 +162,21 @@ def compare_status_only(old_state, new_state):
             )
 
             if new_mod["Traduttore"]:
-
-                messages.append(
+                translation_message = (
                     f"💬  <b>TRADUZIONE {new_mod['Traduttore']}</b>\n\n"
                     f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                     f"Stato {icon_tr} <u><i>{new_mod['Translation']}</i></u>\n"
-                    f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
-                    f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
                 )
+                
+                # Aggiungi Versione Traduzione SOLO se non è vuota o null
+                if not is_data_blank(new_mod['DataTraduzione']):
+                    translation_message += f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
+                else:
+                    translation_message += "\n"
+                
+                translation_message += f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
+                
+                messages.append(translation_message)
 
             continue
 
@@ -191,13 +212,21 @@ def compare_status_only(old_state, new_state):
             or new_mod["DataTraduzione"] != old_mod["DataTraduzione"]
         ) and new_mod["Traduttore"]:
 
-            messages.append(
+            translation_message = (
                 f"💬  <b>TRADUZIONE di {new_mod['Traduttore']}</b>\n\n"
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                 f"Stato {icon_tr} <u><i>{new_mod['Translation']}</i></u>\n"
-                f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
-                f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
             )
+            
+            # Aggiungi Versione Traduzione SOLO se non è vuota o null
+            if not is_data_blank(new_mod['DataTraduzione']):
+                translation_message += f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
+            else:
+                translation_message += "\n"
+            
+            translation_message += f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
+            
+            messages.append(translation_message)
 
     return messages
 
