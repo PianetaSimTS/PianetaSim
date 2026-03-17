@@ -152,7 +152,7 @@ def compare_status_only(old_state, new_state):
                 messages.append(
                     f"💬  <b>TRADUZIONE {new_mod['Traduttore']}</b>\n\n"
                     f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
-                    f"Stato {icon_mod} <u><i>{new_mod['Status']}</i></u>\n"
+                    f"Traduzione {icon_tr} <u><i>{new_mod['Translation']}</i></u>\n"
                     f"Versione Traduzione: {new_mod['DataTraduzione']}\n\n"
                     f'Link <a href="https://pianetasimts.github.io/PianetaSim/mod.html">SITO</a>'
                 )
