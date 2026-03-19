@@ -381,7 +381,7 @@
     "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod aggiunge un sacco di nomi al gioco, ma davvero un sacco! Soprattutto sono nomi che derivano da culture diverse il che rende il gioco molto più realistico. Vi consiglio di leggere attentamente il post della modder, dove troverete anche l'elenco dei nomi inseriti.",
-    "NoteIT": null
+    "NoteIT": "Questa mod entrerà in conflitto con qualsiasi altra lista di nomi, quelle che aggiungono o modificano i nomi dei sim."
   },
   {
     "Author": "Andirz",
