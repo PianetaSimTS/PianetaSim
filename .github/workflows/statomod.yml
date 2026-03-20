@@ -3,8 +3,12 @@ name: Tabella Mods
 on:
   push:
     paths:
-      - 'Json/mods.json' # Avvia il workflow solo se viene modificato Json/mods.json
-  workflow_dispatch: # Permette di avviare manualmente il workflow
+      - 'Json/mods.json'
+  workflow_dispatch:
+
+concurrency:
+  group: tabella-mods
+  cancel-in-progress: false
 
 jobs:
   monitor:
@@ -17,7 +21,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x' # Specifica la versione di Python
+        python-version: '3.x'
 
     - name: Install dependencies
       run: pip install requests python-telegram-bot==20.0
@@ -25,6 +29,7 @@ jobs:
     - name: Esegui lo script monitor
       run: |
             python ScriptPython/statomod.py
+
 env:
   GITHUB_TOKEN: ${{ secrets.TOKEN }}
   TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
