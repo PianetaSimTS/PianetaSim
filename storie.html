@@ -98,35 +98,30 @@
 
         // Funzione per ottenere tutti i file JSON dalla cartella usando GitHub API
         async function getJsonFilesFromGitHub() {
-            try {
-                // Ottieni il percorso corrente per determinare se siamo su GitHub Pages
-                const currentPath = window.location.pathname;
-                const repoPath = currentPath.substring(0, currentPath.lastIndexOf('/'));
-                
-                // Costruisci l'URL per l'API di GitHub
-                // Nota: Dovrai sostituire "PianetaSimTS" e "PianetaSim" con i tuoi dati
-                const githubApiUrl = `https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/${STORIES_BASE_PATH}`;
-                
-                const response = await fetch(githubApiUrl);
-                
-                if (response.ok) {
-                    const files = await response.json();
-                    // Filtra solo i file JSON
-                    const jsonFiles = files
-                        .filter(file => file.name.endsWith('.json') && file.name !== 'list.json')
-                        .map(file => file.name);
-                    
-                    console.log(`📁 Trovati ${jsonFiles.length} file JSON:`, jsonFiles);
-                    return jsonFiles;
-                } else {
-                    console.warn('GitHub API non disponibile, provo metodo alternativo...');
-                    return await getJsonFilesFromListFile();
-                }
-            } catch (error) {
-                console.error('Errore GitHub API:', error);
-                return await getJsonFilesFromListFile();
-            }
+    try {
+        // Costruisci l'URL per l'API di GitHub
+        const githubApiUrl = `https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/${STORIES_BASE_PATH}`;
+        
+        const response = await fetch(githubApiUrl);
+        
+        if (response.ok) {
+            const files = await response.json();
+            // Filtra solo i file JSON
+            const jsonFiles = files
+                .filter(file => file.name.endsWith('.json') && file.name !== 'list.json')
+                .map(file => file.name);
+            
+            console.log(`📁 Trovati ${jsonFiles.length} file JSON:`, jsonFiles);
+            return jsonFiles;
+        } else {
+            console.warn('GitHub API non disponibile, provo metodo alternativo...');
+            return await getJsonFilesFromListFile();
         }
+    } catch (error) {
+        console.error('Errore GitHub API:', error);
+        return await getJsonFilesFromListFile();
+    }
+}
 
         // Metodo alternativo: usa un file list.json
         async function getJsonFilesFromListFile() {
