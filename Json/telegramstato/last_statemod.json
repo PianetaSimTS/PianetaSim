@@ -2850,9 +2850,9 @@
   {
     "Author": "test16",
     "ModName": "test16",
-    "Status": "obsoleta",
+    "Status": "aggiornata",
     "SiteLink": null,
-    "DataUltimaModifica": "",
+    "DataUltimaModifica": "20/03/2026",
     "Traduttore": "test16",
     "LinkTraduzione": null,
     "Translation": "da aggiornare",
@@ -2866,7 +2866,7 @@
   {
     "Author": "test17",
     "ModName": "test17",
-    "Status": "nuova",
+    "Status": "compatibile",
     "SiteLink": null,
     "DataUltimaModifica": "12/02/2026",
     "Traduttore": "test17",
