@@ -2802,9 +2802,9 @@
   {
     "Author": "test13",
     "ModName": "test13",
-    "Status": "aggiornata",
+    "Status": "nuova",
     "SiteLink": null,
-    "DataUltimaModifica": "20/03/2026",
+    "DataUltimaModifica": null,
     "Traduttore": "test13",
     "LinkTraduzione": null,
     "Translation": "aggiornata",
