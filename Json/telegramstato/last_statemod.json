@@ -2818,7 +2818,7 @@
   {
     "Author": "test14",
     "ModName": "test14\t",
-    "Status": "nuova",
+    "Status": "compatibile",
     "SiteLink": null,
     "DataUltimaModifica": "12/02/2026",
     "Traduttore": "test14\t",
@@ -2834,7 +2834,7 @@
   {
     "Author": "test15\t",
     "ModName": "test15\t",
-    "Status": "rotta",
+    "Status": "compatibile",
     "SiteLink": null,
     "DataUltimaModifica": "",
     "Traduttore": "test15\t",
