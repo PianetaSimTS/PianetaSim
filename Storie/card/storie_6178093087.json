@@ -51,5 +51,22 @@
       "nome": "Nico",
       "username": "mrnico98"
     }
+  },
+  {
+    "id": "storia_20260320_164833",
+    "titolo": "teest",
+    "autore": "Mario Rossi",
+    "data": "28/02/2028",
+    "descrizione": "ewtwerfsdfasfaewtwerfsdfasfaewtwerfsdfasfaewtwerfsdfasfaewtwerfsdfasfaewtwerfsdfasfaewtwerfsdfasfaewtwerfsdfasfaewtwerfsdfasfaewtwerfsdfasfaadaèèèèè",
+    "copertina": "https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/main/Storie/Immagini/6178093087/copertina_6178093087_20260320_164728_twitchstreamtool.ico",
+    "links": {
+      "tg": "test"
+    },
+    "data_pubblicazione": "2026-03-20T16:48:33.145526",
+    "pubblicato_da": {
+      "id": 6178093087,
+      "nome": "Nico",
+      "username": "mrnico98"
+    }
   }
 ]
