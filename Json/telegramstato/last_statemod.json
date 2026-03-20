@@ -1650,7 +1650,7 @@
   {
     "Author": "MizoreYukii",
     "ModName": "Functional Spiral Staircases",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/functional-spiral-staircases-with-animations",
     "DataUltimaModifica": "10/02/2026",
     "Traduttore": null,
@@ -1698,9 +1698,9 @@
   {
     "Author": "NickyClem",
     "ModName": "Insurance Company Phone App & Computer Menu",
-    "Status": "sconosciuta",
+    "Status": "obsoleta",
     "SiteLink": "https://nickyclem.itch.io/insurance-company",
-    "DataUltimaModifica": null,
+    "DataUltimaModifica": "",
     "Traduttore": null,
     "LinkTraduzione": null,
     "Translation": "in lavorazione",
@@ -1708,7 +1708,7 @@
     "Categoria": "Utilità",
     "MODIT": "Serve per il funzionamento di altre mod di NickyClem",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Serve per il funzionamento di altre mod di NickyClem",
+    "DescrizioneIT": "INFO QUI: https://docs.google.com/spreadsheets/d/1G8OzUqbmyOCPGR8S_wp19i4Nw9m6UTNU4c_xfgVGw9I/edit?gid=0#gid=0",
     "NoteIT": "Serve per il funzionamento di altre mod di NickyClem"
   },
   {
