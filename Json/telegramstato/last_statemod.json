@@ -1714,7 +1714,7 @@
   {
     "Author": "NickyClem",
     "ModName": "SimSure Insurance & Co",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://nickyclem.itch.io/simsure-insurance-co-public/download/eyJpZCI6NDE0NjE2OSwiZXhwaXJlcyI6MTc3MDcwODE5NX0%3d.4QsHwlw6cyWS1O4T6HZc3VgIRmQ%3d",
     "DataUltimaModifica": "",
     "Traduttore": "di Leo",
@@ -1722,10 +1722,10 @@
     "Translation": "in lavorazione",
     "DataTraduzione": null,
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam - Insurance Company Phone App & Computer Menu di NickyClem",
+    "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam ",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "L'assicurazione copre i tuoi elettrodomestici, così quando hanno bisogno di essere riparati non dovrai più pagare il riparatore!",
-    "NoteIT": null
+    "DescrizioneIT": "",
+    "NoteIT": "L'assicurazione copre i tuoi elettrodomestici, così quando hanno bisogno di essere riparati non dovrai più pagare il riparatore!"
   },
   {
     "Author": "Northern siberia winds",
