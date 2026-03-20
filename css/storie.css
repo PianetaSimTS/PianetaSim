@@ -103,7 +103,7 @@ body {
 .main-content {
   position: relative;
   z-index: 10;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 800px);
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
