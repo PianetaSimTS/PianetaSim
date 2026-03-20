@@ -1,0 +1,17 @@
+{
+  "id": "storia_20260320_144444",
+  "titolo": "Titolo della Storia",
+  "autore": "Mario Rossi",
+  "data": "28/02/2028",
+  "descrizione": "\u270d\ufe0f Passo 2: Dimmi il tuo Nome Autore e la data (nel formato GG/MM/AAAA)\nEsempio: Mario Rossi 28/02/2028",
+  "copertina": "https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/main/Storie/Immagini/copertina_1872215746_20260320_144355.jpg",
+  "links": {
+    "patreon": "https://www.patreon.com/notifications"
+  },
+  "data_pubblicazione": "2026-03-20T14:44:44.166540",
+  "pubblicato_da": {
+    "id": 1872215746,
+    "nome": "\ud835\udd43\ud835\udd52\ud835\udd55\ud835\udd6a \u2119\ud835\udd64\ud835\udd6a\ud835\udd54\ud835\udd60 \ud835\udd4b\ud835\udd63\ud835\udd5a\ud835\udd5d\ud835\udd5d\ud835\udd6a",
+    "username": "LadyPsycoTrilly"
+  }
+}
