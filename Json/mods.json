@@ -2266,10 +2266,10 @@
     "Translation": "non necessaria",
     "DataTraduzione": null,
     "Categoria": "Utilità",
-    "MODIT": "Nessuna ATTENZIONE: Nella zip troverete un file Opzionale \"simularity-dont-getup.package\". Potete decidere se tenerlo o rimuoverlo, in base alle vostre esigenze.",
+    "MODIT": "Nessuna ",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Prefer Tables When Eating di Simularity fa scegliere autonomamente ai Sim un tavolo da pranzo quando mangiano, evitando divani, scrivanie o pasti in piedi. Basta installarla nella cartella Mods: funziona subito. Nel download è incluso anche un pacchetto opzionale “Don’t Get Up” che li fa restare seduti dopo il pasto, finché non li comandi.",
-    "NoteIT": null
+    "DescrizioneIT": "ATTENZIONE: Nella zip troverete un file Opzionale \"simularity-dont-getup.package\". Potete decidere se tenerlo o rimuoverlo, in base alle vostre esigenze.",
+    "NoteIT": "Prefer Tables When Eating di Simularity fa scegliere autonomamente ai Sim un tavolo da pranzo quando mangiano, evitando divani, scrivanie o pasti in piedi. Basta installarla nella cartella Mods: funziona subito. Nel download è incluso anche un pacchetto opzionale “Don’t Get Up” che li fa restare seduti dopo il pasto, finché non li comandi."
   },
   {
     "Author": "SonozakiSisters",
