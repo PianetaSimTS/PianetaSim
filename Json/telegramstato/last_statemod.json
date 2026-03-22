@@ -578,7 +578,7 @@
   {
     "Author": "Ellesimsworld",
     "ModName": "Plumjob",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/download-plumjob-122583054",
     "DataUltimaModifica": "30/05/2025",
     "Traduttore": "di LadyPsycoTrilly",
@@ -594,7 +594,7 @@
   {
     "Author": "Ellesimsworld",
     "ModName": "Romantica: A Lover's Type Mod",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/download-lovers-137991992",
     "DataUltimaModifica": "03/09/2025",
     "Traduttore": "di LadyPsycoTrilly",
@@ -1420,7 +1420,7 @@
     "Categoria": "Gameplay",
     "MODIT": "NECESSARIE: Toolbox di Lumpinou",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Problemi Noti. INFO QUI → https://www.patreon.com/posts/patch-es-another-151192923",
+    "DescrizioneIT": "Con questa mod, i Sim avranno delle Preferenze di Relazione (esclusiva o non esclusiva) e possono vivere la loro vita romantica ideale. Possono chiedere di aprire la relazione al partner, il che può significare diventare poliamorosi, avere una relazione aperta o semplicemente qualsiasi cosa desiderino! Le definizioni di queste relazioni sono volutamente vaghe, libere e aperte. ",
     "NoteIT": "Con questa mod, i Sim avranno delle Preferenze di Relazione (esclusiva o non esclusiva) e possono vivere la loro vita romantica ideale. Possono chiedere di aprire la relazione al partner, il che può significare diventare poliamorosi, avere una relazione aperta o semplicemente qualsiasi cosa desiderino! Le definizioni di queste relazioni sono volutamente vaghe, libere e aperte. "
   },
   {
@@ -1546,10 +1546,10 @@
     "Translation": "non necessaria",
     "DataTraduzione": null,
     "Categoria": "Utilità",
-    "MODIT": "Serve per il funzionamento di altre mod di Lumpinou",
+    "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Serve per il funzionamento di altre mod di Lumpinou.",
-    "NoteIT": "Serve per il funzionamento di altre mod di Lumpinou"
+    "DescrizioneIT": "Serve per il funzionamento di altre mod di Lumpinou",
+    "NoteIT": "Serve per il funzionamento di altre mod di Lumpinou."
   },
   {
     "Author": "LunarBritney",
@@ -2266,10 +2266,10 @@
     "Translation": "non necessaria",
     "DataTraduzione": null,
     "Categoria": "Utilità",
-    "MODIT": "Nessuna ATTENZIONE: Nella zip troverete un file Opzionale \"simularity-dont-getup.package\". Potete decidere se tenerlo o rimuoverlo, in base alle vostre esigenze.",
+    "MODIT": "Nessuna ",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Prefer Tables When Eating di Simularity fa scegliere autonomamente ai Sim un tavolo da pranzo quando mangiano, evitando divani, scrivanie o pasti in piedi. Basta installarla nella cartella Mods: funziona subito. Nel download è incluso anche un pacchetto opzionale “Don’t Get Up” che li fa restare seduti dopo il pasto, finché non li comandi.",
-    "NoteIT": null
+    "DescrizioneIT": "ATTENZIONE: Nella zip troverete un file Opzionale \"simularity-dont-getup.package\". Potete decidere se tenerlo o rimuoverlo, in base alle vostre esigenze.",
+    "NoteIT": "Prefer Tables When Eating di Simularity fa scegliere autonomamente ai Sim un tavolo da pranzo quando mangiano, evitando divani, scrivanie o pasti in piedi. Basta installarla nella cartella Mods: funziona subito. Nel download è incluso anche un pacchetto opzionale “Don’t Get Up” che li fa restare seduti dopo il pasto, finché non li comandi."
   },
   {
     "Author": "SonozakiSisters",
