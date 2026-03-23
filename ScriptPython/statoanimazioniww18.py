@@ -184,7 +184,7 @@ def compare_status_only(old_state, new_state):
             
             message += (
                 f"<b>Stato {icon} {status}</b>\n"
-                f'🔗 <a href="https://pianetasimts.github.io/PianetaSim/animazioniww18.html">Vai al sito</a>'
+                f'Link <a href="https://pianetasimts.github.io/PianetaSim/animazioniww18.html">SITO</a>'
             )
             
             messages.append(message)
