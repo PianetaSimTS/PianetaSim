@@ -1,0 +1,19 @@
+[
+  {
+    "id": "storia_20260323_113200",
+    "titolo": "Test",
+    "autore": "Pinuccia Rossi",
+    "data": "28/02/1988",
+    "descrizione": "Questo è un test per vedere se i developer sono migliori di quelli EA",
+    "copertina": "https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/main/Storie/Immagini/1367160963/copertina_1367160963_20260323_112835.jpg",
+    "links": {
+      "altro": "www.sims-pollo-galattico.it"
+    },
+    "data_pubblicazione": "2026-03-23T11:32:00.671892",
+    "pubblicato_da": {
+      "id": 1367160963,
+      "nome": "dylan 🕷️",
+      "username": "rebthejuvey"
+    }
+  }
+]
