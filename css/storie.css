@@ -54,7 +54,96 @@ body {
   min-height: 100vh;
   position: relative;
 }
+/* Sezione introduttiva */
+.intro-section {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    padding: 25px 30px;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1px solid var(--card-border);
+    text-align: center;
+    animation: fadeInUp 0.6s ease forwards;
+}
 
+.intro-content p {
+    color: var(--card-description-color);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.intro-callout {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(22, 171, 99, 0.1);
+    border-radius: 20px;
+    border-left: 4px solid var(--button-bg);
+}
+
+.intro-callout i {
+    font-size: 28px;
+    color: var(--button-bg);
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.intro-callout span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--card-title-color);
+}
+
+.intro-callout p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.telegram-join-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--button-bg);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+
+.telegram-join-btn:hover {
+    background: var(--button-bg-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(22, 171, 99, 0.3);
+}
+.telegram-join-btn i {
+    color: #26A5E4; /* Colore ufficiale di Telegram */
+    transition: color 0.3s ease;
+}
+
+.telegram-join-btn:hover i {
+    color: #26A5E4 !important; /* Mantiene il colore celeste anche all'hover */
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .intro-callout span {
+        font-size: 16px;
+    }
+    
+    .telegram-join-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
 /* Animazione stelle */
 .stars-container {
   position: fixed;
