@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Storie - PianetaSim</title>
+    <link rel="stylesheet" href="css/storie.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Stelle animate -->
+    <div class="stars-container" id="starsContainer"></div>
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-button">Torna alla Home</a>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle-container">
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider"></span>
+            </label>
+            <span id="theme-label">Tema Scuro</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="stories-header">
+        <div class="main-content">
+            <h1><i class="fas fa-book-open"></i> Racconti & Storie</h1>
+        </div>
+    </header>
+
+    <!-- Filtri -->
+    <div class="filters-container">
+        <input type="text" id="searchInput" class="filter-input" placeholder="🔍 Cerca per titolo, autore o descrizione...">
+        <select id="authorFilter" class="filter-select">
+            <option value="">📝 Tutti gli autori</option>
+        </select>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-container" id="statsContainer">
+        <p id="statsText">Caricamento storie...</p>
+    </div>
+
+    <!-- Grid storie -->
+    <div class="stories-grid" id="storiesGrid">
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+            <p>Caricamento delle storie in corso...</p>
+        </div>
+    </div>
+
+    <!-- Modal dettaglio -->
+    <div id="storyModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalContent">
+                <!-- Contenuto dinamico -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="stories-footer">
+        <p>© 2024 PianetaSim - Tutte le storie sono proprietà dei rispettivi autori</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/themestorie.js"></script>
+    <script src="js/storie.js"></script>
+</body>
+</html>
