@@ -1,5 +1,3 @@
-// theme.js - Gestione temi chiari e scuri
-
 function applyTheme(theme) {
   const root = document.documentElement;
   const themeLabel = document.getElementById("theme-label");
@@ -35,14 +33,12 @@ function applyTheme(theme) {
     root.style.setProperty("--donation-border-hover", "rgba(22, 171, 99, 0.9)");
     root.style.setProperty("--donation-shadow", "rgba(22, 171, 99, 0.3)");
     
-    // Variabili per le card e testi (tema chiaro)
+    // Variabili per card e testi (tema chiaro)
     root.style.setProperty("--card-bg", "#ffffff");
     root.style.setProperty("--card-border", "#e0e0e0");
     root.style.setProperty("--card-hover-border", "#16ab63");
     root.style.setProperty("--card-shadow", "0 8px 20px rgba(0, 0, 0, 0.1)");
     root.style.setProperty("--card-hover-shadow", "0 15px 35px rgba(22, 171, 99, 0.15)");
-    
-    // Colori dei testi (tema chiaro)
     root.style.setProperty("--card-title-color", "#000000");
     root.style.setProperty("--card-meta-color", "#666666");
     root.style.setProperty("--card-description-color", "#444444");
@@ -52,16 +48,10 @@ function applyTheme(theme) {
     root.style.setProperty("--footer-text-color", "#888888");
     root.style.setProperty("--modal-text-color", "#000000");
     root.style.setProperty("--modal-meta-color", "#666666");
-    
-    // Background e blur (tema chiaro)
-    root.style.setProperty("--card-bg-blur", "rgba(255, 255, 255, 0.95)");
     root.style.setProperty("--filter-bg", "#ffffff");
     root.style.setProperty("--stats-bg", "rgba(255, 255, 255, 0.9)");
     
     if (themeLabel) themeLabel.textContent = "Tema Chiaro";
-    
-    document.body.classList.remove('dark-theme');
-    document.body.classList.add('light-theme');
   } else {
     // Tema scuro
     root.style.setProperty("--navbarbackground", "#343a40");
@@ -93,14 +83,12 @@ function applyTheme(theme) {
     root.style.setProperty("--donation-border-hover", "rgba(22, 171, 99, 0.8)");
     root.style.setProperty("--donation-shadow", "rgba(22, 171, 99, 0.2)");
     
-    // Variabili per le card e testi (tema scuro)
+    // Variabili per card e testi (tema scuro)
     root.style.setProperty("--card-bg", "rgba(255, 255, 255, 0.08)");
     root.style.setProperty("--card-border", "rgba(255, 255, 255, 0.15)");
     root.style.setProperty("--card-hover-border", "#16ab63");
     root.style.setProperty("--card-shadow", "0 8px 20px rgba(0, 0, 0, 0.3)");
     root.style.setProperty("--card-hover-shadow", "0 15px 35px rgba(22, 171, 99, 0.2)");
-    
-    // Colori dei testi (tema scuro)
     root.style.setProperty("--card-title-color", "#ffffff");
     root.style.setProperty("--card-meta-color", "rgba(255, 255, 255, 0.6)");
     root.style.setProperty("--card-description-color", "rgba(255, 255, 255, 0.8)");
@@ -110,16 +98,10 @@ function applyTheme(theme) {
     root.style.setProperty("--footer-text-color", "#888888");
     root.style.setProperty("--modal-text-color", "#ffffff");
     root.style.setProperty("--modal-meta-color", "rgba(255, 255, 255, 0.7)");
-    
-    // Background e blur (tema scuro)
-    root.style.setProperty("--card-bg-blur", "rgba(255, 255, 255, 0.08)");
     root.style.setProperty("--filter-bg", "rgba(255, 255, 255, 0.08)");
     root.style.setProperty("--stats-bg", "rgba(255, 255, 255, 0.08)");
     
     if (themeLabel) themeLabel.textContent = "Tema Scuro";
-    
-    document.body.classList.remove('light-theme');
-    document.body.classList.add('dark-theme');
   }
 }
 
