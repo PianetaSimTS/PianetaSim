@@ -100,23 +100,10 @@ async function loadAllStories() {
                 storiesGrid.innerHTML = `
                     <div class="error-container">
                         <i class="fas fa-info-circle fa-3x"></i>
-                        <h3>Configurazione richiesta</h3>
-                        <p>Per visualizzare le storie, crea un file <strong>list.json</strong> nella cartella <strong>${STORIES_BASE_PATH}/</strong></p>
-                        <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; margin: 20px auto; max-width: 500px; text-align: left;">
-                            <p><strong>📝 Esempio di list.json:</strong></p>
-                            <pre style="background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; overflow-x: auto; font-size: 12px;">{
-  "files": [
-    "storia_20260320_164251.json",
-    "storia_20260320_164409.json"
-  ]
-}</pre>
-                        </div>
-                        <p>Oppure attendi il caricamento automatico su GitHub Pages.</p>
-                        <button onclick="location.reload()" style="margin-top: 20px;">🔄 Ricarica</button>
-                    </div>
+                        <h3>Non ci sono storie disponibili</h3>
                 `;
             }
-            if (statsText) statsText.innerHTML = '📂 Configurazione necessaria';
+            if (statsText) statsText.innerHTML = '📂 Non ci sono storie attualemente';
             return [];
         }
         
