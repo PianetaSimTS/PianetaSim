@@ -1,5 +1,3 @@
-// storie.js - Logica principale per la pagina delle storie
-
 // Configurazione
 const STORIES_BASE_PATH = 'Storie/card';
 let allStories = [];
@@ -220,6 +218,11 @@ function createStoryCard(story) {
     
     const authorName = story.autore || (story.pubblicato_da?.nome) || 'Autore sconosciuto';
     
+    // Determina se la descrizione è lunga (>150 caratteri)
+    const description = story.descrizione || 'Nessuna descrizione disponibile.';
+    const isLongDescription = description.length > 150;
+    const shortDescription = isLongDescription ? description.substring(0, 150) + '...' : description;
+    
     card.innerHTML = `
         <div class="card-cover">
             ${coverHtml}
@@ -233,19 +236,23 @@ function createStoryCard(story) {
                 <span><i class="fas fa-calendar-alt"></i> ${escapeHtml(story.data || formatDate(story.data_pubblicazione))}</span>
                 <span><i class="fas fa-user-pen"></i> ${escapeHtml(authorName)}</span>
             </div>
-            <p class="card-description">${escapeHtml(story.descrizione?.substring(0, 120) || 'Nessuna descrizione disponibile')}${story.descrizione?.length > 120 ? '...' : ''}</p>
-<div class="card-links">
-    ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-instagram"></i></a>` : ''}
-    ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-telegram"></i></a>` : ''}
-    ${story.links?.patreon ? `<a href="${story.links.patreon}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-patreon"></i></a>` : ''}
-    ${story.links?.youtube ? `<a href="${story.links.youtube}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-youtube"></i></a>` : ''}
-    ${story.links?.twitter ? `<a href="${story.links.twitter}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-twitter"></i></a>` : ''}
-    ${story.links?.facebook ? `<a href="${story.links.facebook}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-facebook"></i></a>` : ''}
-    ${story.links?.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-tiktok"></i></a>` : ''}
-    ${story.links?.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-discord"></i></a>` : ''}
-    ${story.links?.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-twitch"></i></a>` : ''}
-    ${story.links?.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fas fa-link"></i></a>` : ''}
-</div>
+            <p class="card-description">${escapeHtml(shortDescription)}</p>
+            ${isLongDescription ? '<div class="expand-hint"><i class="fas fa-expand-alt"></i> <span>Clicca sulla card per leggere la descrizione completa</span></div>' : ''}
+            <div class="card-links">
+                ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Instagram"><i class="fab fa-instagram"></i></a>` : ''}
+                ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Telegram"><i class="fab fa-telegram"></i></a>` : ''}
+                ${story.links?.patreon ? `<a href="${story.links.patreon}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Patreon"><i class="fab fa-patreon"></i></a>` : ''}
+                ${story.links?.youtube ? `<a href="${story.links.youtube}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a YouTube"><i class="fab fa-youtube"></i></a>` : ''}
+                ${story.links?.twitter ? `<a href="${story.links.twitter}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Twitter"><i class="fab fa-twitter"></i></a>` : ''}
+                ${story.links?.facebook ? `<a href="${story.links.facebook}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Facebook"><i class="fab fa-facebook"></i></a>` : ''}
+                ${story.links?.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a TikTok"><i class="fab fa-tiktok"></i></a>` : ''}
+                ${story.links?.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Discord"><i class="fab fa-discord"></i></a>` : ''}
+                ${story.links?.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Twitch"><i class="fab fa-twitch"></i></a>` : ''}
+                ${story.links?.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai al link"><i class="fas fa-link"></i></a>` : ''}
+            </div>
+            <div class="click-hint">
+                <i class="fas fa-hand-pointer"></i> <span>Clicca sulla card per maggiori dettagli</span>
+            </div>
         </div>
     `;
     
@@ -277,8 +284,19 @@ function openModal(story) {
                     <p>${escapeHtml(story.descrizione || 'Nessuna descrizione disponibile.')}</p>
                 </div>
                 <div class="modal-links">
-                    ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>` : ''}
-                    ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i> Telegram</a>` : ''}
+                    <p class="social-hint"><i class="fas fa-mouse-pointer"></i> Clicca sui pulsanti qui sotto per visitare i profili social dell'autore:</p>
+                    <div class="modal-social-buttons">
+                        ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="modal-social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>` : ''}
+                        ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" class="modal-social-btn telegram"><i class="fab fa-telegram"></i> Telegram</a>` : ''}
+                        ${story.links?.patreon ? `<a href="${story.links.patreon}" target="_blank" rel="noopener noreferrer" class="modal-social-btn patreon"><i class="fab fa-patreon"></i> Patreon</a>` : ''}
+                        ${story.links?.youtube ? `<a href="${story.links.youtube}" target="_blank" rel="noopener noreferrer" class="modal-social-btn youtube"><i class="fab fa-youtube"></i> YouTube</a>` : ''}
+                        ${story.links?.twitter ? `<a href="${story.links.twitter}" target="_blank" rel="noopener noreferrer" class="modal-social-btn twitter"><i class="fab fa-twitter"></i> Twitter</a>` : ''}
+                        ${story.links?.facebook ? `<a href="${story.links.facebook}" target="_blank" rel="noopener noreferrer" class="modal-social-btn facebook"><i class="fab fa-facebook"></i> Facebook</a>` : ''}
+                        ${story.links?.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" class="modal-social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>` : ''}
+                        ${story.links?.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" class="modal-social-btn discord"><i class="fab fa-discord"></i> Discord</a>` : ''}
+                        ${story.links?.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" class="modal-social-btn twitch"><i class="fab fa-twitch"></i> Twitch</a>` : ''}
+                        ${story.links?.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="modal-social-btn altro"><i class="fas fa-link"></i> Altro link</a>` : ''}
+                    </div>
                 </div>
             </div>
         `;
