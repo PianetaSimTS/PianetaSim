@@ -251,7 +251,7 @@ function createStoryCard(story) {
                 ${story.links?.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai al link"><i class="fas fa-link"></i></a>` : ''}
             </div>
             <div class="click-hint">
-                <i class="fas fa-hand-pointer"></i> <span>Clicca sulla card per maggiori dettagli</span>
+                <i class="fas fa-hand-pointer"></i> <span>Clicca sui link per la storia completa</span>
             </div>
         </div>
     `;
