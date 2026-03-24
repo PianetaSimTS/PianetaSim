@@ -52,8 +52,6 @@ async function getJsonFilesFromGitHub() {
             const jsonFiles = files
                 .filter(file => file.name.endsWith('.json') && file.name !== 'list.json')
                 .map(file => file.name);
-            
-            console.log(`📁 Trovati ${jsonFiles.length} file JSON:`, jsonFiles);
             return jsonFiles;
         } else {
             console.warn('GitHub API non disponibile, provo metodo alternativo...');
@@ -246,6 +244,7 @@ function createStoryCard(story) {
     ${story.links?.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-tiktok"></i></a>` : ''}
     ${story.links?.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-discord"></i></a>` : ''}
     ${story.links?.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-twitch"></i></a>` : ''}
+    ${story.links?.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fas fa-link"></i></a>` : ''}
 </div>
         </div>
     `;
