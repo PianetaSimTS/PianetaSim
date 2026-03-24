@@ -412,7 +412,7 @@ function openModal(story) {
                 </div>
                 <div class="modal-links">
 <p class="social-hint">
-  <i class="fas fa-arrow-down"></i> Clicca sui pulsanti qui sotto per visitare i profili social dell'autore:
+  <i class="fas fa-arrow-down"></i> Clicca sui pulsanti qui sotto per poter leggere la storia completa:
 </p>
                     <div class="modal-social-buttons">
                         ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="modal-social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>` : ''}
