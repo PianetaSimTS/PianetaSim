@@ -411,7 +411,9 @@ function openModal(story) {
                     <p>${escapeHtml(story.descrizione || 'Nessuna descrizione disponibile.')}</p>
                 </div>
                 <div class="modal-links">
-                    <p class="social-hint"><i class="fas fa-mouse-pointer"></i> Clicca sui pulsanti qui sotto per visitare i profili social dell'autore:</p>
+<p class="social-hint">
+  <i class="fas fa-arrow-down"></i> Clicca sui pulsanti qui sotto per visitare i profili social dell'autore:
+</p>
                     <div class="modal-social-buttons">
                         ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="modal-social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>` : ''}
                         ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" class="modal-social-btn telegram"><i class="fab fa-telegram"></i> Telegram</a>` : ''}
