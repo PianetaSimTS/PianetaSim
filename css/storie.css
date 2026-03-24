@@ -213,23 +213,23 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+/* Sostituisci le regole per .back-button e .theme-toggle-container */
+
 /* ========== BOTTONI DI NAVIGAZIONE ========== */
 .back-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: var(--button-bg);
   color: white;
   padding: 12px 20px;
   border-radius: 50px;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
   font-weight: bold;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px 0 0 20px;
+  width: fit-content;
 }
 
 .back-button:hover {
@@ -245,14 +245,14 @@ body {
 
 /* ========== THEME TOGGLE ========== */
 .theme-toggle-container {
-  position: fixed;
-  top: 80px;
-  right: 20px;
-  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 20px 0 0;  /* 30px dall'alto, 20px a destra */
+  position: relative;
 }
 
 .theme-toggle {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
   background: var(--navbarbackground);
@@ -260,6 +260,7 @@ body {
   border-radius: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border: 1px solid var(--card-border);
+  width: fit-content;
 }
 
 .switch {
@@ -311,6 +312,17 @@ input:checked + .slider:before {
   font-size: 14px;
   font-weight: 500;
   color: var(--navbarcolor);
+}
+
+/* Aggiungi un container per i controlli in alto */
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* ========== FILTRI ========== */
@@ -1046,4 +1058,42 @@ input:checked + .slider:before {
 ::selection {
   background: var(--button-bg);
   color: white;
+}
+/* ========== TOP CONTROLS RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .top-controls {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    padding: 0 15px;
+  }
+  
+  .back-button {
+    margin: 15px 0 0 0;
+    justify-content: center;
+  }
+  
+  .theme-toggle-container {
+    margin: 0;
+    justify-content: center;
+  }
+  
+  .theme-toggle {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .top-controls {
+    padding: 0 20px;
+  }
+  
+  .back-button {
+    margin-left: 0;
+  }
+  
+  .theme-toggle-container {
+    margin-right: 0;
+  }
 }
