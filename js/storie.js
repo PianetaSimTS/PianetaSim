@@ -2,6 +2,7 @@
 const STORIES_BASE_PATH = 'Storie/card';
 let allStories = [];
 let authorsList = [];
+let favorites = [];
 
 // Elementi DOM
 const storiesGrid = document.getElementById('storiesGrid');
@@ -12,203 +13,93 @@ const modal = document.getElementById('storyModal');
 const modalContent = document.getElementById('modalContent');
 const modalClose = document.querySelector('.modal-close');
 
-// Funzione per creare stelle animate
-function createStars() {
-    const starsContainer = document.getElementById('starsContainer');
-    if (!starsContainer) return;
-    
-    const starCount = 100;
-    starsContainer.innerHTML = '';
-    
-    for (let i = 0; i < starCount; i++) {
-        const star = document.createElement('div');
-        star.classList.add('star');
-        const isGreen = Math.random() > 0.5;
-        star.classList.add(isGreen ? 'green' : 'purple');
-        
-        const size = Math.random() * 4 + 2;
-        star.style.width = `${size}px`;
-        star.style.height = `${size}px`;
-        star.style.left = `${Math.random() * 100}%`;
-        star.style.top = `${Math.random() * 100}%`;
-        star.style.animationDelay = `${Math.random() * 5}s`;
-        star.style.animationDuration = `${Math.random() * 3 + 3}s`;
-        
-        starsContainer.appendChild(star);
+// Carica preferiti dal localStorage
+function loadFavorites() {
+    const saved = localStorage.getItem('simStoriesFavorites');
+    if (saved) {
+        try {
+            favorites = JSON.parse(saved);
+        } catch(e) {
+            favorites = [];
+        }
     }
+    return favorites;
 }
 
-// Funzione per ottenere tutti i file JSON dalla cartella usando GitHub API
-async function getJsonFilesFromGitHub() {
-    try {
-        const githubApiUrl = `https://api.github.com/repos/PianetaSimTS/PianetaSim/contents/${STORIES_BASE_PATH}`;
-        
-        const response = await fetch(githubApiUrl);
-        
-        if (response.ok) {
-            const files = await response.json();
-            const jsonFiles = files
-                .filter(file => file.name.endsWith('.json') && file.name !== 'list.json')
-                .map(file => file.name);
-            return jsonFiles;
-        } else {
-            console.warn('GitHub API non disponibile, provo metodo alternativo...');
-            return await getJsonFilesFromListFile();
-        }
-    } catch (error) {
-        console.error('Errore GitHub API:', error);
-        return await getJsonFilesFromListFile();
-    }
+// Salva preferiti nel localStorage
+function saveFavorites() {
+    localStorage.setItem('simStoriesFavorites', JSON.stringify(favorites));
 }
 
-// Metodo alternativo: usa un file list.json
-async function getJsonFilesFromListFile() {
-    try {
-        const listResponse = await fetch(`${STORIES_BASE_PATH}/list.json`);
-        if (listResponse.ok) {
-            const listData = await listResponse.json();
-            if (listData.files && Array.isArray(listData.files)) {
-                console.log('📋 File JSON da list.json:', listData.files);
-                return listData.files;
-            }
-        }
-    } catch (e) {
-        console.log('Nessun file list.json trovato');
+// Aggiungi o rimuovi dai preferiti
+function toggleFavorite(storyId) {
+    const index = favorites.indexOf(storyId);
+    if (index === -1) {
+        favorites.push(storyId);
+        showToast('⭐ Aggiunta ai preferiti!', 'success');
+    } else {
+        favorites.splice(index, 1);
+        showToast('🗑️ Rimossa dai preferiti', 'info');
     }
+    saveFavorites();
+    updateGrid(); // Aggiorna la griglia per mostrare il cambio di stato
+}
+
+// Verifica se una storia è nei preferiti
+function isFavorite(storyId) {
+    return favorites.includes(storyId);
+}
+
+// Mostra un toast di notifica
+function showToast(message, type = 'info') {
+    // Rimuovi toast esistenti
+    const existingToast = document.querySelector('.toast-notification');
+    if (existingToast) existingToast.remove();
     
-    console.warn('Nessun metodo automatico disponibile. Creare list.json');
-    return [];
-}
-
-// Funzione per caricare tutti i file JSON
-async function loadAllStories() {
-    try {
-        let jsonFiles = [];
-        
-        if (window.location.hostname.includes('github.io')) {
-            jsonFiles = await getJsonFilesFromGitHub();
-        } else {
-            jsonFiles = await getJsonFilesFromListFile();
-        }
-        
-        if (jsonFiles.length === 0) {
-            if (storiesGrid) {
-                storiesGrid.innerHTML = `
-                    <div class="error-container">
-                        <i class="fas fa-info-circle fa-3x"></i>
-                        <h3>Non ci sono storie disponibili</h3>
-                `;
-            }
-            if (statsText) statsText.innerHTML = '📂 Non ci sono storie attualemente';
-            return [];
-        }
-        
-        const stories = [];
-        let loadedCount = 0;
-        
-        if (statsText) statsText.innerHTML = `📖 Caricamento storie... (0/${jsonFiles.length})`;
-        
-        for (const file of jsonFiles) {
-            try {
-                const response = await fetch(`${STORIES_BASE_PATH}/${file}`);
-                if (response.ok) {
-                    const data = await response.json();
-                    if (Array.isArray(data)) {
-                        stories.push(...data);
-                    } else if (data && typeof data === 'object') {
-                        stories.push(data);
-                    }
-                    loadedCount++;
-                    if (statsText) statsText.innerHTML = `📖 Caricamento storie... (${loadedCount}/${jsonFiles.length})`;
-                    console.log(`✅ Caricato: ${file}`);
-                } else {
-                    console.warn(`❌ Impossibile caricare ${file}: ${response.status}`);
-                    loadedCount++;
-                }
-            } catch (err) {
-                console.warn(`❌ Errore nel caricamento di ${file}:`, err);
-                loadedCount++;
-            }
-        }
-        
-        return stories;
-        
-    } catch (error) {
-        console.error('Errore nel caricamento delle storie:', error);
-        return [];
-    }
-}
-
-// Aggiorna la lista degli autori unici
-function updateAuthorsList(stories) {
-    const authors = new Set();
-    stories.forEach(story => {
-        if (story.autore) {
-            authors.add(story.autore);
-        }
-        if (story.pubblicato_da && story.pubblicato_da.nome) {
-            authors.add(story.pubblicato_da.nome);
-        }
-    });
-    authorsList = Array.from(authors).sort();
+    const toast = document.createElement('div');
+    toast.className = `toast-notification toast-${type}`;
+    toast.innerHTML = `
+        <i class="fas ${type === 'success' ? 'fa-heart' : 'fa-info-circle'}"></i>
+        <span>${message}</span>
+    `;
+    document.body.appendChild(toast);
     
-    if (authorFilter) {
-        authorFilter.innerHTML = '<option value="">📝 Tutti gli autori</option>';
-        authorsList.forEach(author => {
-            authorFilter.innerHTML += `<option value="${escapeHtml(author)}">✍️ ${escapeHtml(author)}</option>`;
-        });
-    }
+    // Animazione di entrata
+    setTimeout(() => toast.classList.add('show'), 10);
+    
+    // Rimuovi dopo 3 secondi
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
 }
 
-// Filtra le storie
-function filterStories() {
-    const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
-    const selectedAuthor = authorFilter ? authorFilter.value : '';
+// Verifica se una storia è stata aggiornata (confronta con data salvata)
+function checkForUpdates(story) {
+    const lastViewed = localStorage.getItem(`story_viewed_${story.id || story.titolo}`);
+    const currentDate = story.data_modifica || story.data || story.data_pubblicazione;
     
-    return allStories.filter(story => {
-        if (selectedAuthor && story.autore !== selectedAuthor && 
-            (!story.pubblicato_da || story.pubblicato_da.nome !== selectedAuthor)) {
-            return false;
-        }
-        
-        if (searchTerm) {
-            const titoloMatch = story.titolo?.toLowerCase().includes(searchTerm);
-            const autoreMatch = story.autore?.toLowerCase().includes(searchTerm);
-            const descrizioneMatch = story.descrizione?.toLowerCase().includes(searchTerm);
-            const pubblicatoMatch = story.pubblicato_da?.nome?.toLowerCase().includes(searchTerm);
-            
-            return titoloMatch || autoreMatch || descrizioneMatch || pubblicatoMatch;
-        }
-        
+    if (lastViewed && currentDate && new Date(currentDate) > new Date(lastViewed)) {
         return true;
-    });
-}
-
-// Formatta la data
-function formatDate(dateString) {
-    if (!dateString) return 'Data non disponibile';
-    try {
-        const date = new Date(dateString);
-        return date.toLocaleDateString('it-IT', {
-            day: '2-digit',
-            month: '2-digit',
-            year: 'numeric'
-        });
-    } catch {
-        return dateString;
     }
+    return false;
 }
 
-// Gestione errori immagini
-function handleImageError(img) {
-    img.onerror = null;
-    img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200"%3E%3Crect width="400" height="200" fill="%23343a40"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" fill="%23ffffff" font-size="14"%3E📖 Copertina non disponibile%3C/text%3E%3C/svg%3E';
+// Segna una storia come visualizzata
+function markStoryAsViewed(story) {
+    const storyKey = story.id || story.titolo;
+    const currentDate = story.data_modifica || story.data || story.data_pubblicazione || new Date().toISOString();
+    localStorage.setItem(`story_viewed_${storyKey}`, currentDate);
 }
 
-// Crea la card HTML per una storia
+// Crea la card HTML per una storia (versione aggiornata con preferiti e badge aggiornamento)
 function createStoryCard(story) {
     const card = document.createElement('div');
     card.className = 'story-card';
+    
+    const storyId = story.id || story.titolo;
+    const isFav = isFavorite(storyId);
+    const hasUpdate = checkForUpdates(story);
     
     const coverUrl = story.copertina && story.copertina !== '' ? story.copertina : '';
     
@@ -229,12 +120,17 @@ function createStoryCard(story) {
             <div class="author-badge">
                 <i class="fas fa-user"></i> ${escapeHtml(authorName)}
             </div>
+            ${hasUpdate ? '<div class="update-badge"><i class="fas fa-sync-alt"></i> Aggiornata!</div>' : ''}
+            <button class="favorite-btn ${isFav ? 'active' : ''}" data-story-id="${escapeHtml(storyId)}">
+                <i class="fas ${isFav ? 'fa-heart' : 'fa-heart'}"></i>
+            </button>
         </div>
         <div class="card-content">
             <h3 class="card-title">${escapeHtml(story.titolo)}</h3>
             <div class="card-meta">
                 <span><i class="fas fa-calendar-alt"></i> ${escapeHtml(story.data || formatDate(story.data_pubblicazione))}</span>
                 <span><i class="fas fa-user-pen"></i> ${escapeHtml(authorName)}</span>
+                ${story.data_modifica ? `<span class="update-date"><i class="fas fa-edit"></i> Agg.: ${formatDate(story.data_modifica)}</span>` : ''}
             </div>
             <p class="card-description">${escapeHtml(shortDescription)}</p>
             ${isLongDescription ? '<div class="expand-hint"><i class="fas fa-expand-alt"></i> <span>Clicca sulla card per leggere la descrizione completa</span></div>' : ''}
@@ -256,8 +152,17 @@ function createStoryCard(story) {
         </div>
     `;
     
+    // Evento per il pulsante preferiti
+    const favBtn = card.querySelector('.favorite-btn');
+    if (favBtn) {
+        favBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleFavorite(storyId);
+        });
+    }
+    
     card.addEventListener('click', (e) => {
-        if (!e.target.closest('.card-links') && e.target.tagName !== 'A') {
+        if (!e.target.closest('.card-links') && e.target.tagName !== 'A' && !e.target.closest('.favorite-btn')) {
             openModal(story);
         }
     });
@@ -265,19 +170,33 @@ function createStoryCard(story) {
     return card;
 }
 
-// Apre il modal con i dettagli della storia
+// Apre il modal con i dettagli della storia (versione aggiornata)
 function openModal(story) {
     const authorName = story.autore || (story.pubblicato_da?.nome) || 'Autore sconosciuto';
     const coverUrl = story.copertina && story.copertina !== '' ? story.copertina : '';
+    const storyId = story.id || story.titolo;
+    const isFav = isFavorite(storyId);
+    const hasUpdate = checkForUpdates(story);
+    
+    // Segna come visualizzata
+    markStoryAsViewed(story);
     
     if (modalContent) {
         modalContent.innerHTML = `
             ${coverUrl ? `<img class="modal-cover" src="${coverUrl}" alt="${escapeHtml(story.titolo)}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'250\' viewBox=\'0 0 600 250\'%3E%3Crect width=\'600\' height=\'250\' fill=\'%23343a40\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23ffffff\' font-size=\'16\'%3E📖 Copertina non disponibile%3C/text%3E%3C/svg%3E'">` : `<div class="modal-cover" style="background: linear-gradient(135deg, #16ab63, #b510bd); display: flex; align-items: center; justify-content: center;"><i class="fas fa-book-open" style="font-size: 64px; color: white;"></i></div>`}
             <div class="modal-body">
-                <h2 class="modal-title">${escapeHtml(story.titolo)}</h2>
+                <div class="modal-header-actions">
+                    <h2 class="modal-title">${escapeHtml(story.titolo)}</h2>
+                    <button class="modal-favorite-btn ${isFav ? 'active' : ''}" data-story-id="${escapeHtml(storyId)}">
+                        <i class="fas ${isFav ? 'fa-heart' : 'fa-heart'}"></i>
+                        <span>${isFav ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti'}</span>
+                    </button>
+                </div>
+                ${hasUpdate ? '<div class="update-notice"><i class="fas fa-sync-alt fa-fw"></i> Questa storia è stata aggiornata di recente!</div>' : ''}
                 <div class="modal-meta">
                     <span><i class="fas fa-user"></i> <strong>Autore:</strong> ${escapeHtml(authorName)}</span>
                     <span><i class="fas fa-calendar"></i> <strong>Data:</strong> ${escapeHtml(story.data || formatDate(story.data_pubblicazione))}</span>
+                    ${story.data_modifica ? `<span><i class="fas fa-edit"></i> <strong>Ultimo aggiornamento:</strong> ${formatDate(story.data_modifica)}</span>` : ''}
                     ${story.pubblicato_da?.username ? `<span><i class="fas fa-id-badge"></i> <strong>Pubblicato da:</strong> @${escapeHtml(story.pubblicato_da.username)}</span>` : ''}
                 </div>
                 <div class="modal-description">
@@ -300,32 +219,99 @@ function openModal(story) {
                 </div>
             </div>
         `;
+        
+        // Aggiungi evento per il pulsante preferiti nel modal
+        const modalFavBtn = modalContent.querySelector('.modal-favorite-btn');
+        if (modalFavBtn) {
+            modalFavBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleFavorite(storyId);
+                // Aggiorna il pulsante nel modal
+                const isNowFav = isFavorite(storyId);
+                modalFavBtn.classList.toggle('active', isNowFav);
+                modalFavBtn.querySelector('span').textContent = isNowFav ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
+                // Aggiorna anche il pulsante nella card corrispondente
+                updateGrid();
+            });
+        }
     }
     
     if (modal) modal.classList.add('show');
 }
 
-// Escape HTML per prevenire XSS
-function escapeHtml(text) {
-    if (!text) return '';
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
+// Filtra le storie (con opzione per mostrare solo preferiti)
+let showOnlyFavorites = false;
+
+// Aggiungi un filtro per preferiti
+function addFavoritesFilter() {
+    const filterContainer = document.querySelector('.filters-container');
+    if (filterContainer) {
+        const favoritesFilterBtn = document.createElement('button');
+        favoritesFilterBtn.id = 'favoritesFilterBtn';
+        favoritesFilterBtn.className = 'favorites-filter-btn';
+        favoritesFilterBtn.innerHTML = '<i class="fas fa-heart"></i> Preferiti';
+        favoritesFilterBtn.addEventListener('click', () => {
+            showOnlyFavorites = !showOnlyFavorites;
+            favoritesFilterBtn.classList.toggle('active', showOnlyFavorites);
+            updateGrid();
+        });
+        filterContainer.appendChild(favoritesFilterBtn);
+    }
 }
 
-// Aggiorna la griglia con le storie filtrate
+// Filtra le storie aggiornato
+function filterStories() {
+    const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+    const selectedAuthor = authorFilter ? authorFilter.value : '';
+    
+    return allStories.filter(story => {
+        // Filtro preferiti
+        if (showOnlyFavorites && !isFavorite(story.id || story.titolo)) {
+            return false;
+        }
+        
+        if (selectedAuthor && story.autore !== selectedAuthor && 
+            (!story.pubblicato_da || story.pubblicato_da.nome !== selectedAuthor)) {
+            return false;
+        }
+        
+        if (searchTerm) {
+            const titoloMatch = story.titolo?.toLowerCase().includes(searchTerm);
+            const autoreMatch = story.autore?.toLowerCase().includes(searchTerm);
+            const descrizioneMatch = story.descrizione?.toLowerCase().includes(searchTerm);
+            const pubblicatoMatch = story.pubblicato_da?.nome?.toLowerCase().includes(searchTerm);
+            
+            return titoloMatch || autoreMatch || descrizioneMatch || pubblicatoMatch;
+        }
+        
+        return true;
+    });
+}
+
+// Aggiorna la griglia (versione aggiornata)
 function updateGrid() {
     if (allStories.length === 0) return;
     
     const filtered = filterStories();
+    const favoritesCount = favorites.length;
     
-    if (statsText) statsText.innerHTML = `📚 ${filtered.length} ${filtered.length === 1 ? 'storia trovata' : 'storie trovate'} su ${allStories.length} totali`;
+    if (statsText) {
+        let statsMessage = `📚 ${filtered.length} ${filtered.length === 1 ? 'storia trovata' : 'storie trovate'} su ${allStories.length} totali`;
+        if (favoritesCount > 0) {
+            statsMessage += ` | ⭐ ${favoritesCount} nei preferiti`;
+        }
+        statsText.innerHTML = statsMessage;
+    }
     
     if (storiesGrid) {
         storiesGrid.innerHTML = '';
         
         if (filtered.length === 0) {
-            storiesGrid.innerHTML = '<div class="no-results"><i class="fas fa-search fa-3x"></i><h3>Nessuna storia trovata</h3><p>Prova a modificare i filtri di ricerca</p></div>';
+            storiesGrid.innerHTML = `<div class="no-results">
+                <i class="fas ${showOnlyFavorites ? 'fa-heart-broken' : 'fa-search'} fa-3x"></i>
+                <h3>${showOnlyFavorites ? 'Nessuna storia nei preferiti' : 'Nessuna storia trovata'}</h3>
+                <p>${showOnlyFavorites ? 'Aggiungi alcune storie ai preferiti cliccando sul cuore' : 'Prova a modificare i filtri di ricerca'}</p>
+            </div>`;
             return;
         }
         
@@ -337,16 +323,18 @@ function updateGrid() {
     }
 }
 
-// Inizializza la pagina
+// Inizializza la pagina (versione aggiornata)
 async function init() {
     createStars();
     window.handleImageError = handleImageError;
+    loadFavorites();
     
     try {
         allStories = await loadAllStories();
         
         if (allStories.length > 0) {
             updateAuthorsList(allStories);
+            addFavoritesFilter();
             updateGrid();
             if (statsText) statsText.innerHTML = `📚 ${allStories.length} ${allStories.length === 1 ? 'storia caricata' : 'storie caricate'}`;
         }
