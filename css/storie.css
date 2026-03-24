@@ -215,7 +215,7 @@ body {
 
 /* ========== BOTTONI DI NAVIGAZIONE ========== */
 .back-button {
-  position: fixed;
+  position: absolute;  /* Cambiato da fixed a absolute */
   top: 20px;
   left: 20px;
   z-index: 1000;
@@ -245,7 +245,7 @@ body {
 
 /* ========== THEME TOGGLE ========== */
 .theme-toggle-container {
-  position: fixed;
+  position: absolute;  /* Cambiato da fixed a absolute */
   top: 20px;
   right: 20px;
   z-index: 1000;
@@ -262,31 +262,26 @@ body {
   border: 1px solid var(--card-border);
 }
 
-/* Aggiungi padding-top al body per evitare che il contenuto venga coperto dai bottoni fissi */
+/* Rimuovi il padding-top dal body che non serve più */
 body {
   font-family: 'Roboto', Arial, sans-serif;
   background-color: var(--bodybackground);
   margin: 0;
-  padding: 0;
-  padding-top: 80px; /* Aggiungi questa riga */
+  padding: 0;  /* Rimuovi padding-top: 80px; */
   overflow-x: hidden;
   min-height: 100vh;
   position: relative;
 }
 
-/* Modifica lo stile dello stories-header per gestire il padding */
-.stories-header {
-  text-align: center;
-  padding: 20px 0;
+/* Aggiungi position relative al contenitore principale per ancorare i bottoni assoluti */
+body {
   position: relative;
-  z-index: 10;
-  margin-top: 0; /* Assicura che non ci siano margini extra */
 }
 
-/* Aggiorna il responsive per dispositivi mobili */
+/* Modifica il responsive per dispositivi mobili */
 @media (max-width: 768px) {
   body {
-    padding-top: 70px; /* Riduci il padding su mobile */
+    padding-top: 0; /* Assicurati che sia 0 */
   }
   
   .back-button {
@@ -330,7 +325,7 @@ body {
 /* Per tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
-    padding-top: 75px;
+    padding-top: 0; /* Assicurati che sia 0 */
   }
 }
 /* ========== FILTRI ========== */
