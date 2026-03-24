@@ -236,10 +236,17 @@ function createStoryCard(story) {
                 <span><i class="fas fa-user-pen"></i> ${escapeHtml(authorName)}</span>
             </div>
             <p class="card-description">${escapeHtml(story.descrizione?.substring(0, 120) || 'Nessuna descrizione disponibile')}${story.descrizione?.length > 120 ? '...' : ''}</p>
-            <div class="card-links">
-                ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-instagram"></i></a>` : ''}
-                ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-telegram"></i></a>` : ''}
-            </div>
+<div class="card-links">
+    ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-instagram"></i></a>` : ''}
+    ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-telegram"></i></a>` : ''}
+    ${story.links?.patreon ? `<a href="${story.links.patreon}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-patreon"></i></a>` : ''}
+    ${story.links?.youtube ? `<a href="${story.links.youtube}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-youtube"></i></a>` : ''}
+    ${story.links?.twitter ? `<a href="${story.links.twitter}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-twitter"></i></a>` : ''}
+    ${story.links?.facebook ? `<a href="${story.links.facebook}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-facebook"></i></a>` : ''}
+    ${story.links?.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-tiktok"></i></a>` : ''}
+    ${story.links?.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-discord"></i></a>` : ''}
+    ${story.links?.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"><i class="fab fa-twitch"></i></a>` : ''}
+</div>
         </div>
     `;
     
