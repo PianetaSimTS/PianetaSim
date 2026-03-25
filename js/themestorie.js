@@ -54,23 +54,23 @@ function applyTheme(theme) {
     if (themeLabel) themeLabel.textContent = "Tema Chiaro";
   } else {
     // Tema scuro
-    root.style.setProperty("--navbarbackground", "#343a40");
+    root.style.setProperty("--navbarbackground", "#1a1a1a");
     root.style.setProperty("--navbarcolor", "#ffffff");
-    root.style.setProperty("--formcontainerbackground", "#343a40");
+    root.style.setProperty("--formcontainerbackground", "#1a1a1a");
     root.style.setProperty("--formcontainercolor", "#ffffff");
-    root.style.setProperty("--h1backgroundcolor", "#343a40");
+    root.style.setProperty("--h1backgroundcolor", "#1a1a1a");
     root.style.setProperty("--h1color", "#ffffff");
     root.style.setProperty("--thchildcolor", "#666666");
     root.style.setProperty("--tdcolor", "#555555");
     root.style.setProperty("--thcolor", "#ffffff");
-    root.style.setProperty("--bodybackground", "#343a40");
+    root.style.setProperty("--bodybackground", "#1a1a1a");
     root.style.setProperty("--sconosciutavar", "#FFFBB9");
     root.style.setProperty("--thtdcolor", "#ffffff");
     root.style.setProperty("--tdacolor", "#B57EDC");
     root.style.setProperty("--tdahover", "#FFB6C1");
     root.style.setProperty("--tdactive", "#8E44AD");
     root.style.setProperty("--text-color", "#ffffff");
-    root.style.setProperty("--bg-color", "#343a40");
+    root.style.setProperty("--bg-color", "#1a1a1a");
     root.style.setProperty("--button-bg", "#16ab63");
     root.style.setProperty("--button-bg-hover", "#0f7041");
     root.style.setProperty("--highlight-color", "#b510bd");
