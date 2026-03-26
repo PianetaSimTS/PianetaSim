@@ -454,7 +454,7 @@ function openModal(story) {
                         ${story.links?.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="modal-social-btn altro"><i class="fas fa-link"></i> Altro link</a>` : ''}
                     </div>
                 </div>
-                ` : '<div class="modal-links empty"><p class="no-links-message"><i class="fas fa-info-circle"></i> Nessun link disponibile per questa storia.</p></div>'}
+                ` : ''}
             </div>
         `;
         
