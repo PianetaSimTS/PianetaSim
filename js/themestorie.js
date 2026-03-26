@@ -23,7 +23,7 @@ function applyTheme(theme) {
     root.style.setProperty("--bg-color", "#ffffff");
     root.style.setProperty("--button-bg", "#16ab63");
     root.style.setProperty("--button-bg-hover", "#0f7041");
-    root.style.setProperty("--highlight-color", "#b510bd");
+    root.style.setProperty("--highlight-color", "#72008f");
     root.style.setProperty("--contact-bg", "rgba(255, 255, 255, 0.95)");
     root.style.setProperty("--contact-border", "rgba(0, 136, 204, 0.5)");
     root.style.setProperty("--contact-border-hover", "rgba(0, 136, 204, 0.9)");
@@ -73,7 +73,7 @@ function applyTheme(theme) {
     root.style.setProperty("--bg-color", "#1a1a1a");
     root.style.setProperty("--button-bg", "#16ab63");
     root.style.setProperty("--button-bg-hover", "#0f7041");
-    root.style.setProperty("--highlight-color", "#b510bd");
+    root.style.setProperty("--highlight-color", "#72008f");
     root.style.setProperty("--contact-bg", "rgba(52, 58, 64, 0.9)");
     root.style.setProperty("--contact-border", "rgba(0, 136, 204, 0.3)");
     root.style.setProperty("--contact-border-hover", "rgba(0, 136, 204, 0.8)");
