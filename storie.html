@@ -49,11 +49,19 @@
 </div>
     <!-- Filtri -->
     <div class="filters-container">
-        <input type="text" id="searchInput" class="filter-input" placeholder="🔍 Cerca per titolo o autore...">
-        <select id="authorFilter" class="filter-select">
-            <option value="">📝 Tutti gli autori</option>
-        </select>
-    </div>
+    <input type="text" id="searchInput" class="filter-input" placeholder="🔍 Cerca per titolo o autore...">
+    <select id="authorFilter" class="filter-select">
+        <option value="">📝 Tutti gli autori</option>
+    </select>
+    <select id="sortFilter" class="filter-select">
+        <option value="date_desc">📅 Più recenti</option>
+        <option value="date_asc">📅 Più vecchi</option>
+        <option value="title_asc">🔤 Titolo (A-Z)</option>
+        <option value="title_desc">🔤 Titolo (Z-A)</option>
+        <option value="author_asc">✍️ Autore (A-Z)</option>
+        <option value="author_desc">✍️ Autore (Z-A)</option>
+    </select>
+</div>
 
     <!-- Stats -->
     <div class="stats-container" id="statsContainer">
