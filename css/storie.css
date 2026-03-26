@@ -401,7 +401,7 @@ input:checked + .slider:before {
   cursor: pointer;
   position: relative;
   animation: fadeInUp 0.5s ease forwards;
-  opacity: 0;
+  opacity: 0.8;
 }
 
 .story-card:hover {
