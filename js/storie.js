@@ -237,6 +237,10 @@ function updateAuthorsList(stories) {
 
 function formatDate(dateString) {
     if (!dateString) return 'Data non disponibile';
+    // Se la data è già in formato italiano, la restituisco così com'è
+    if (dateString.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
+        return dateString;
+    }
     try {
         const date = new Date(dateString);
         return date.toLocaleDateString('it-IT', {
@@ -249,12 +253,40 @@ function formatDate(dateString) {
     }
 }
 
+function convertItalianDateToISO(dateString) {
+    if (!dateString) return '1970-01-01';
+    
+    // Se è già in formato ISO (yyyy-mm-dd), restituiscilo
+    if (/^\d{4}-\d{2}-\d{2}/.test(dateString)) {
+        return dateString;
+    }
+    
+    // Converte da formato italiano (dd/mm/yyyy) a ISO (yyyy-mm-dd)
+    const parts = dateString.split('/');
+    if (parts.length === 3) {
+        const day = parts[0].padStart(2, '0');
+        const month = parts[1].padStart(2, '0');
+        const year = parts[2];
+        return `${year}-${month}-${day}`;
+    }
+    
+    return '1970-01-01';
+}
+
 // Funzione per ottenere la data di riferimento per l'ordinamento
 function getStoryDate(story) {
-    if (story.data_modifica) return story.data_modifica;
-    if (story.data_pubblicazione) return story.data_pubblicazione;
-    if (story.data) return story.data;
-    return '1970-01-01';
+    let dateString = null;
+    
+    // Prova a ottenere la data nell'ordine di priorità
+    if (story.data_modifica) dateString = story.data_modifica;
+    else if (story.data_pubblicazione) dateString = story.data_pubblicazione;
+    else if (story.data) dateString = story.data;
+    
+    // Se non c'è data, usa una data molto vecchia
+    if (!dateString) return '1970-01-01';
+    
+    // Converti la data italiana in formato ISO per l'ordinamento
+    return convertItalianDateToISO(dateString);
 }
 
 function handleImageError(img) {
@@ -280,9 +312,17 @@ function sortStories(stories) {
     
     switch(currentSort) {
         case 'date_desc':
-            return sorted.sort((a, b) => new Date(getStoryDate(b)) - new Date(getStoryDate(a)));
+            return sorted.sort((a, b) => {
+                const dateA = getStoryDate(a);
+                const dateB = getStoryDate(b);
+                return dateB.localeCompare(dateA);
+            });
         case 'date_asc':
-            return sorted.sort((a, b) => new Date(getStoryDate(a)) - new Date(getStoryDate(b)));
+            return sorted.sort((a, b) => {
+                const dateA = getStoryDate(a);
+                const dateB = getStoryDate(b);
+                return dateA.localeCompare(dateB);
+            });
         case 'title_asc':
             return sorted.sort((a, b) => (a.titolo || '').localeCompare(b.titolo || ''));
         case 'title_desc':
@@ -541,13 +581,18 @@ async function init() {
     window.handleImageError = handleImageError;
     loadFavorites();
     
+    // IMPORTANTE: Imposta il valore iniziale dal select
+    if (sortFilter) {
+        currentSort = sortFilter.value;
+    }
+    
     try {
         allStories = await loadAllStories();
         
         if (allStories.length > 0) {
             updateAuthorsList(allStories);
             addFavoritesFilter();
-            updateGrid();
+            updateGrid(); // Questo chiamerà sortStories con currentSort
             if (statsText) statsText.innerHTML = `📚 ${allStories.length} ${allStories.length === 1 ? 'storia caricata' : 'storie caricate'}`;
         }
     } catch (error) {
@@ -556,10 +601,12 @@ async function init() {
     
     if (searchInput) searchInput.addEventListener('input', updateGrid);
     if (authorFilter) authorFilter.addEventListener('change', updateGrid);
-    if (sortFilter) sortFilter.addEventListener('change', (e) => {
-        currentSort = e.target.value;
-        updateGrid();
-    });
+    if (sortFilter) {
+        sortFilter.addEventListener('change', (e) => {
+            currentSort = e.target.value;
+            updateGrid();
+        });
+    }
 }
 
 // ========== EVENT LISTENERS MODAL ==========
