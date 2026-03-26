@@ -1,21 +1,21 @@
 :root {
-  --navbarbackground: #343a40;
+  --navbarbackground: #1a1a1a;
   --navbarcolor: #fff;
-  --formcontainerbackground: #343a40;
+  --formcontainerbackground: #1a1a1a;
   --formcontainercolor: #fff;
-  --h1backgroundcolor: #343a40;
+  --h1backgroundcolor: #1a1a1a;
   --h1color: white;
   --thchildcolor: #666666;
   --tdcolor: #555555;
   --thcolor: white;
-  --bodybackground: #343a40;
+  --bodybackground: #1a1a1a;
   --sconosciutavar: #545454;
   --thtdcolor: white;
   --tdacolor: #B57EDC;
   --tdahover: #FFB6C1;
   --tdactive: #8E44AD;
   --text-color: #fff;
-  --bg-color: #343a40;
+  --bg-color: #1a1a1a;
   --button-bg: #16ab63;
   --button-bg-hover: #0f7041;
   --highlight-color: #b510bd;

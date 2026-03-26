@@ -33,23 +33,23 @@ function applyTheme(theme) {
     root.style.setProperty("--donation-shadow", "rgba(22, 171, 99, 0.3)");
     themeLabel.textContent = "Tema Chiaro";
   } else {
-    root.style.setProperty("--navbarbackground", "#343a40");
+    root.style.setProperty("--navbarbackground", "#1a1a1a");
     root.style.setProperty("--navbarcolor", "#fff");
-    root.style.setProperty("--formcontainerbackground", "#343a40");
+    root.style.setProperty("--formcontainerbackground", "#1a1a1a");
     root.style.setProperty("--formcontainercolor", "#fff");
-    root.style.setProperty("--h1backgroundcolor", "#343a40");
+    root.style.setProperty("--h1backgroundcolor", "#1a1a1a");
     root.style.setProperty("--h1color", "white");
     root.style.setProperty("--thchildcolor", "#666666");
     root.style.setProperty("--tdcolor", "#555555");
     root.style.setProperty("--thcolor", "white");
-    root.style.setProperty("--bodybackground", "#343a40");
+    root.style.setProperty("--bodybackground", "#1a1a1a");
     root.style.setProperty("--sconosciutavar", "#FFFBB9");
     root.style.setProperty("--thtdcolor", "white");
     root.style.setProperty("--tdacolor", "#B57EDC");
     root.style.setProperty("--tdahover", "#FFB6C1");
     root.style.setProperty("--tdactive", "#8E44AD");
     root.style.setProperty("--text-color", "#fff");
-    root.style.setProperty("--bg-color", "#343a40");
+    root.style.setProperty("--bg-color", "#1a1a1a");
     root.style.setProperty("--button-bg", "#16ab63");
     root.style.setProperty("--button-bg-hover", "#0f7041");
     root.style.setProperty("--highlight-color", "#b510bd");
