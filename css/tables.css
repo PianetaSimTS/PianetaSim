@@ -1,14 +1,14 @@
 :root {
-  --navbarbackground: #343a40;
+  --navbarbackground: #1a1a1a;
   --navbarcolor: #fff;
-  --formcontainerbackground: #343a40;
+  --formcontainerbackground: #1a1a1a;
   --formcontainercolor: #fff;
-  --h1backgroundcolor: #343a40;
+  --h1backgroundcolor: #1a1a1a;
   --h1color: white;
   --thchildcolor: #666666;
   --tdcolor: #555555;
   --thcolor: white;
-  --bodybackground: #343a40;
+  --bodybackground: #1a1a1a;
   --sconosciutavar: #545454;
   --thtdcolor: white;
   --tdacolor: #B57EDC;
