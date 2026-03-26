@@ -3,23 +3,23 @@ function applyTheme(theme) {
   const themeLabel = document.getElementById("theme-label"); // Cambiato da "theme-toggle" a "theme-label"
   
   if (theme === "light") {
-    root.style.setProperty("--navbarbackground", "#1a1a1a");
+    root.style.setProperty("--navbarbackground", "#ffffff");
     root.style.setProperty("--navbarcolor", "#000000");
-    root.style.setProperty("--formcontainerbackground", "#1a1a1a");
+    root.style.setProperty("--formcontainerbackground", "#ffffff");
     root.style.setProperty("--formcontainercolor", "black");
-    root.style.setProperty("--h1backgroundcolor", "#1a1a1a");
+    root.style.setProperty("--h1backgroundcolor", "#ffffff");
     root.style.setProperty("--h1color", "black");
     root.style.setProperty("--thchildcolor", "#f2f2f2");
     root.style.setProperty("--tdcolor", "#f9f9f9");
     root.style.setProperty("--thcolor", "#000000");
-    root.style.setProperty("--bodybackground", "#1a1a1a");
+    root.style.setProperty("--bodybackground", "#ffffff");
     root.style.setProperty("--sconosciutavar", "#545454");
     root.style.setProperty("--thtdcolor", "black");
     root.style.setProperty("--tdacolor", "blue");
     root.style.setProperty("--tdahover", "#551A8B");
     root.style.setProperty("--tdactive", "#000080");
     root.style.setProperty("--text-color", "#000");
-    root.style.setProperty("--bg-color", "#1a1a1a");
+    root.style.setProperty("--bg-color", "#ffffff");
     root.style.setProperty("--button-bg", "#16ab63");
     root.style.setProperty("--button-bg-hover", "#0f7041");
     root.style.setProperty("--highlight-color", "#b510bd");
