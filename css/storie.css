@@ -18,7 +18,7 @@
   --bg-color: #1a1a1a;
   --button-bg: #16ab63;
   --button-bg-hover: #0f7041;
-  --highlight-color: #b510bd;
+  --highlight-color: #72008f;
   
   /* Variabili dinamiche - verranno sovrascritte da theme.js */
   --card-bg: rgba(255, 255, 255, 0.08);
@@ -158,8 +158,8 @@ body {
 }
 
 .star.purple {
-  background-color: #b510bd;
-  box-shadow: 0 0 6px #b510bd;
+  background-color: #72008f;
+  box-shadow: 0 0 6px #72008f;
 }
 
 @keyframes twinkle {
@@ -199,7 +199,7 @@ body {
 .stories-header h1 {
   font-size: 42px;
   margin: 20px 0;
-  background: linear-gradient(45deg, #16ab63, #b510bd, #f9359d);
+  background: linear-gradient(45deg, #16ab63, #72008f, #f9359d);
   background-size: 300% 300%;
   animation: gradientShift 3s ease infinite;
   -webkit-background-clip: text;
@@ -448,7 +448,7 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
   font-size: 48px;
-  background: linear-gradient(135deg, #16ab63, #b510bd);
+  background: linear-gradient(135deg, #16ab63, #72008f);
 }
 
 /* Badge autore */
@@ -562,7 +562,7 @@ input:checked + .slider:before {
 /* Hint clicca sulla card */
 .click-hint {
   font-size: 11px;
-  color: #b510bd;
+  color: #72008f;
   margin-top: 10px;
   padding: 6px 10px;
   display: flex;
@@ -742,7 +742,7 @@ input:checked + .slider:before {
 .modal-title {
   font-size: 28px;
   margin-bottom: 15px;
-  background: linear-gradient(45deg, #16ab63, #b510bd);
+  background: linear-gradient(45deg, #16ab63, #72008f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
