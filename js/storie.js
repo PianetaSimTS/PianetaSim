@@ -247,6 +247,15 @@ function formatDate(dateString) {
     }
 }
 
+// Funzione per ottenere la data di riferimento per l'ordinamento
+function getStoryDate(story) {
+    // Priorità: data_modifica > data_pubblicazione > data > titolo come fallback
+    if (story.data_modifica) return story.data_modifica;
+    if (story.data_pubblicazione) return story.data_pubblicazione;
+    if (story.data) return story.data;
+    return '1970-01-01'; // Data di default per storie senza data
+}
+
 function handleImageError(img) {
     img.onerror = null;
     img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200"%3E%3Crect width="400" height="200" fill="%23343a40"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" fill="%23ffffff" font-size="14"%3E📖 Copertina non disponibile%3C/text%3E%3C/svg%3E';
@@ -257,6 +266,11 @@ function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+// Funzione per verificare se una storia ha almeno un link
+function hasAnyLink(story) {
+    return story.links && Object.keys(story.links).some(key => story.links[key] && story.links[key] !== '');
 }
 
 // ========== FUNZIONI FILTRO ==========
@@ -311,6 +325,7 @@ function createStoryCard(story) {
     const storyId = story.id || story.titolo;
     const isFav = isFavorite(storyId);
     const hasUpdate = checkForUpdates(story);
+    const hasLinks = hasAnyLink(story); // Verifica se ci sono link
     
     const coverUrl = story.copertina && story.copertina !== '' ? story.copertina : '';
     
@@ -323,6 +338,29 @@ function createStoryCard(story) {
     const description = story.descrizione || 'Nessuna descrizione disponibile.';
     const isLongDescription = description.length > 150;
     const shortDescription = isLongDescription ? description.substring(0, 150) + '...' : description;
+    
+    // Costruisci i link solo se presenti
+    const linksHtml = story.links ? `
+        <div class="card-links">
+            ${story.links.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Instagram"><i class="fab fa-instagram"></i></a>` : ''}
+            ${story.links.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Telegram"><i class="fab fa-telegram"></i></a>` : ''}
+            ${story.links.patreon ? `<a href="${story.links.patreon}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Patreon"><i class="fab fa-patreon"></i></a>` : ''}
+            ${story.links.youtube ? `<a href="${story.links.youtube}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a YouTube"><i class="fab fa-youtube"></i></a>` : ''}
+            ${story.links.twitter ? `<a href="${story.links.twitter}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Twitter"><i class="fab fa-twitter"></i></a>` : ''}
+            ${story.links.facebook ? `<a href="${story.links.facebook}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Facebook"><i class="fab fa-facebook"></i></a>` : ''}
+            ${story.links.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a TikTok"><i class="fab fa-tiktok"></i></a>` : ''}
+            ${story.links.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Discord"><i class="fab fa-discord"></i></a>` : ''}
+            ${story.links.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Twitch"><i class="fab fa-twitch"></i></a>` : ''}
+            ${story.links.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai al link"><i class="fas fa-link"></i></a>` : ''}
+        </div>
+    ` : '<div class="card-links empty-links"></div>';
+    
+    // Hint visibile solo se ci sono link
+    const clickHintHtml = hasLinks ? `
+        <div class="click-hint">
+            <i class="fas fa-hand-pointer"></i> <span>Clicca sull'icona dei social per la storia completa</span>
+        </div>
+    ` : '';
     
     card.innerHTML = `
         <div class="card-cover">
@@ -344,21 +382,8 @@ function createStoryCard(story) {
             </div>
             <p class="card-description">${escapeHtml(shortDescription)}</p>
             ${isLongDescription ? '<div class="expand-hint"><i class="fas fa-expand-alt"></i> <span>Clicca sulla card per leggere la descrizione completa</span></div>' : ''}
-            <div class="card-links">
-                ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Instagram"><i class="fab fa-instagram"></i></a>` : ''}
-                ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Telegram"><i class="fab fa-telegram"></i></a>` : ''}
-                ${story.links?.patreon ? `<a href="${story.links.patreon}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Patreon"><i class="fab fa-patreon"></i></a>` : ''}
-                ${story.links?.youtube ? `<a href="${story.links.youtube}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a YouTube"><i class="fab fa-youtube"></i></a>` : ''}
-                ${story.links?.twitter ? `<a href="${story.links.twitter}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Twitter"><i class="fab fa-twitter"></i></a>` : ''}
-                ${story.links?.facebook ? `<a href="${story.links.facebook}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Facebook"><i class="fab fa-facebook"></i></a>` : ''}
-                ${story.links?.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a TikTok"><i class="fab fa-tiktok"></i></a>` : ''}
-                ${story.links?.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Discord"><i class="fab fa-discord"></i></a>` : ''}
-                ${story.links?.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Twitch"><i class="fab fa-twitch"></i></a>` : ''}
-                ${story.links?.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai al link"><i class="fas fa-link"></i></a>` : ''}
-            </div>
-            <div class="click-hint">
-                <i class="fas fa-hand-pointer"></i> <span>Clicca sull'icona dei social per la storia completa</span>
-            </div>
+            ${linksHtml}
+            ${clickHintHtml}
         </div>
     `;
     
@@ -386,6 +411,7 @@ function openModal(story) {
     const storyId = story.id || story.titolo;
     const isFav = isFavorite(storyId);
     const hasUpdate = checkForUpdates(story);
+    const hasLinks = hasAnyLink(story);
     
     markStoryAsViewed(story);
     
@@ -410,10 +436,11 @@ function openModal(story) {
                 <div class="modal-description">
                     <p>${escapeHtml(story.descrizione || 'Nessuna descrizione disponibile.')}</p>
                 </div>
+                ${hasLinks ? `
                 <div class="modal-links">
-<p class="social-hint">
-  <i class="fas fa-arrow-down"></i> Clicca sui pulsanti qui sotto per poter leggere la storia completa:
-</p>
+                    <p class="social-hint">
+                        <i class="fas fa-arrow-down"></i> Clicca sui pulsanti qui sotto per poter leggere la storia completa:
+                    </p>
                     <div class="modal-social-buttons">
                         ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="modal-social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>` : ''}
                         ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" class="modal-social-btn telegram"><i class="fab fa-telegram"></i> Telegram</a>` : ''}
@@ -427,6 +454,7 @@ function openModal(story) {
                         ${story.links?.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="modal-social-btn altro"><i class="fas fa-link"></i> Altro link</a>` : ''}
                     </div>
                 </div>
+                ` : '<div class="modal-links empty"><p class="no-links-message"><i class="fas fa-info-circle"></i> Nessun link disponibile per questa storia.</p></div>'}
             </div>
         `;
         
@@ -473,7 +501,14 @@ function updateGrid() {
             return;
         }
         
-        filtered.forEach((story, index) => {
+        // Ordina le storie per data (più recenti prima)
+        const sortedStories = [...filtered].sort((a, b) => {
+            const dateA = new Date(getStoryDate(a));
+            const dateB = new Date(getStoryDate(b));
+            return dateB - dateA; // Ordine decrescente (più recente prima)
+        });
+        
+        sortedStories.forEach((story, index) => {
             const card = createStoryCard(story);
             card.style.animationDelay = `${index * 0.05}s`;
             storiesGrid.appendChild(card);
