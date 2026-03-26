@@ -4,11 +4,13 @@ let allStories = [];
 let authorsList = [];
 let favorites = [];
 let showOnlyFavorites = false;
+let currentSort = 'date_desc'; // Default: più recenti
 
 // Elementi DOM
 const storiesGrid = document.getElementById('storiesGrid');
 const searchInput = document.getElementById('searchInput');
 const authorFilter = document.getElementById('authorFilter');
+const sortFilter = document.getElementById('sortFilter');
 const statsText = document.getElementById('statsText');
 const modal = document.getElementById('storyModal');
 const modalContent = document.getElementById('modalContent');
@@ -249,11 +251,10 @@ function formatDate(dateString) {
 
 // Funzione per ottenere la data di riferimento per l'ordinamento
 function getStoryDate(story) {
-    // Priorità: data_modifica > data_pubblicazione > data > titolo come fallback
     if (story.data_modifica) return story.data_modifica;
     if (story.data_pubblicazione) return story.data_pubblicazione;
     if (story.data) return story.data;
-    return '1970-01-01'; // Data di default per storie senza data
+    return '1970-01-01';
 }
 
 function handleImageError(img) {
@@ -271,6 +272,32 @@ function escapeHtml(text) {
 // Funzione per verificare se una storia ha almeno un link
 function hasAnyLink(story) {
     return story.links && Object.keys(story.links).some(key => story.links[key] && story.links[key] !== '');
+}
+
+// ========== FUNZIONI ORDINAMENTO ==========
+function sortStories(stories) {
+    const sorted = [...stories];
+    
+    switch(currentSort) {
+        case 'date_desc':
+            return sorted.sort((a, b) => new Date(getStoryDate(b)) - new Date(getStoryDate(a)));
+        case 'date_asc':
+            return sorted.sort((a, b) => new Date(getStoryDate(a)) - new Date(getStoryDate(b)));
+        case 'title_asc':
+            return sorted.sort((a, b) => (a.titolo || '').localeCompare(b.titolo || ''));
+        case 'title_desc':
+            return sorted.sort((a, b) => (b.titolo || '').localeCompare(a.titolo || ''));
+        case 'author_asc': {
+            const getAuthor = (story) => story.autore || story.pubblicato_da?.nome || '';
+            return sorted.sort((a, b) => getAuthor(a).localeCompare(getAuthor(b)));
+        }
+        case 'author_desc': {
+            const getAuthor = (story) => story.autore || story.pubblicato_da?.nome || '';
+            return sorted.sort((a, b) => getAuthor(b).localeCompare(getAuthor(a)));
+        }
+        default:
+            return sorted;
+    }
 }
 
 // ========== FUNZIONI FILTRO ==========
@@ -325,7 +352,7 @@ function createStoryCard(story) {
     const storyId = story.id || story.titolo;
     const isFav = isFavorite(storyId);
     const hasUpdate = checkForUpdates(story);
-    const hasLinks = hasAnyLink(story); // Verifica se ci sono link
+    const hasLinks = hasAnyLink(story);
     
     const coverUrl = story.copertina && story.copertina !== '' ? story.copertina : '';
     
@@ -339,7 +366,6 @@ function createStoryCard(story) {
     const isLongDescription = description.length > 150;
     const shortDescription = isLongDescription ? description.substring(0, 150) + '...' : description;
     
-    // Costruisci i link solo se presenti
     const linksHtml = story.links ? `
         <div class="card-links">
             ${story.links.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Instagram"><i class="fab fa-instagram"></i></a>` : ''}
@@ -355,7 +381,6 @@ function createStoryCard(story) {
         </div>
     ` : '<div class="card-links empty-links"></div>';
     
-    // Hint visibile solo se ci sono link
     const clickHintHtml = hasLinks ? `
         <div class="click-hint">
             <i class="fas fa-hand-pointer"></i> <span>Clicca sull'icona dei social per la storia completa</span>
@@ -479,10 +504,11 @@ function updateGrid() {
     if (allStories.length === 0) return;
     
     const filtered = filterStories();
+    const sorted = sortStories(filtered);
     const favoritesCount = favorites.length;
     
     if (statsText) {
-        let statsMessage = `📚 ${filtered.length} ${filtered.length === 1 ? 'storia trovata' : 'storie trovate'} su ${allStories.length} totali`;
+        let statsMessage = `📚 ${sorted.length} ${sorted.length === 1 ? 'storia trovata' : 'storie trovate'} su ${allStories.length} totali`;
         if (favoritesCount > 0) {
             statsMessage += ` | ⭐ ${favoritesCount} nei preferiti`;
         }
@@ -492,7 +518,7 @@ function updateGrid() {
     if (storiesGrid) {
         storiesGrid.innerHTML = '';
         
-        if (filtered.length === 0) {
+        if (sorted.length === 0) {
             storiesGrid.innerHTML = `<div class="no-results">
                 <i class="fas ${showOnlyFavorites ? 'fa-heart-broken' : 'fa-search'} fa-3x"></i>
                 <h3>${showOnlyFavorites ? 'Nessuna storia nei preferiti' : 'Nessuna storia trovata'}</h3>
@@ -501,14 +527,7 @@ function updateGrid() {
             return;
         }
         
-        // Ordina le storie per data (più recenti prima)
-        const sortedStories = [...filtered].sort((a, b) => {
-            const dateA = new Date(getStoryDate(a));
-            const dateB = new Date(getStoryDate(b));
-            return dateB - dateA; // Ordine decrescente (più recente prima)
-        });
-        
-        sortedStories.forEach((story, index) => {
+        sorted.forEach((story, index) => {
             const card = createStoryCard(story);
             card.style.animationDelay = `${index * 0.05}s`;
             storiesGrid.appendChild(card);
@@ -537,6 +556,10 @@ async function init() {
     
     if (searchInput) searchInput.addEventListener('input', updateGrid);
     if (authorFilter) authorFilter.addEventListener('change', updateGrid);
+    if (sortFilter) sortFilter.addEventListener('change', (e) => {
+        currentSort = e.target.value;
+        updateGrid();
+    });
 }
 
 // ========== EVENT LISTENERS MODAL ==========
