@@ -187,12 +187,14 @@ async function loadAllStories() {
             try {
                 const response = await fetch(`${STORIES_BASE_PATH}/${file}`);
                 if (response.ok) {
-                    const data = await response.json();
-                    if (Array.isArray(data)) {
-                        stories.push(...data);
-                    } else if (data && typeof data === 'object') {
-                        stories.push(data);
-                    }
+const data = await response.json();
+if (Array.isArray(data)) {
+    data.forEach(story => normalizeStoryLinks(story));
+    stories.push(...data);
+} else if (data && typeof data === 'object') {
+    normalizeStoryLinks(data);
+    stories.push(data);
+}
                     loadedCount++;
                     if (statsText) statsText.innerHTML = `📖 Caricamento storie... (${loadedCount}/${jsonFiles.length})`;
                     console.log(`✅ Caricato: ${file}`);
@@ -212,6 +214,24 @@ async function loadAllStories() {
         console.error('Errore nel caricamento delle storie:', error);
         return [];
     }
+}
+
+function normalizeStoryLinks(story) {
+    if (story.links) {
+        // Supporta sia 'yt' che 'youtube'
+        if (story.links.yt && !story.links.youtube) {
+            story.links.youtube = story.links.yt;
+        }
+        // Supporta sia 'ig' che 'instagram'
+        if (story.links.ig && !story.links.instagram) {
+            story.links.instagram = story.links.ig;
+        }
+        // Supporta sia 'tg' che 'telegram'
+        if (story.links.tg && !story.links.telegram) {
+            story.links.telegram = story.links.tg;
+        }
+    }
+    return story;
 }
 
 // ========== FUNZIONI UTILITY ==========
@@ -406,20 +426,20 @@ function createStoryCard(story) {
     const isLongDescription = description.length > 150;
     const shortDescription = isLongDescription ? description.substring(0, 150) + '...' : description;
     
-    const linksHtml = story.links ? `
-        <div class="card-links">
-            ${story.links.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Instagram"><i class="fab fa-instagram"></i></a>` : ''}
-            ${story.links.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Telegram"><i class="fab fa-telegram"></i></a>` : ''}
-            ${story.links.patreon ? `<a href="${story.links.patreon}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Patreon"><i class="fab fa-patreon"></i></a>` : ''}
-            ${story.links.youtube ? `<a href="${story.links.youtube}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a YouTube"><i class="fab fa-youtube"></i></a>` : ''}
-            ${story.links.twitter ? `<a href="${story.links.twitter}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Twitter"><i class="fab fa-twitter"></i></a>` : ''}
-            ${story.links.facebook ? `<a href="${story.links.facebook}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Facebook"><i class="fab fa-facebook"></i></a>` : ''}
-            ${story.links.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a TikTok"><i class="fab fa-tiktok"></i></a>` : ''}
-            ${story.links.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Discord"><i class="fab fa-discord"></i></a>` : ''}
-            ${story.links.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Twitch"><i class="fab fa-twitch"></i></a>` : ''}
-            ${story.links.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai al link"><i class="fas fa-link"></i></a>` : ''}
-        </div>
-    ` : '<div class="card-links empty-links"></div>';
+const linksHtml = story.links ? `
+    <div class="card-links">
+        ${story.links.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Instagram"><i class="fab fa-instagram"></i></a>` : ''}
+        ${story.links.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Telegram"><i class="fab fa-telegram"></i></a>` : ''}
+        ${story.links.patreon ? `<a href="${story.links.patreon}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Patreon"><i class="fab fa-patreon"></i></a>` : ''}
+        ${(story.links.youtube || story.links.yt) ? `<a href="${story.links.youtube || story.links.yt}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a YouTube"><i class="fab fa-youtube"></i></a>` : ''}
+        ${story.links.twitter ? `<a href="${story.links.twitter}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Twitter"><i class="fab fa-twitter"></i></a>` : ''}
+        ${story.links.facebook ? `<a href="${story.links.facebook}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Facebook"><i class="fab fa-facebook"></i></a>` : ''}
+        ${story.links.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a TikTok"><i class="fab fa-tiktok"></i></a>` : ''}
+        ${story.links.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Discord"><i class="fab fa-discord"></i></a>` : ''}
+        ${story.links.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai a Twitch"><i class="fab fa-twitch"></i></a>` : ''}
+        ${story.links.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="social-link" title="Vai al link"><i class="fas fa-link"></i></a>` : ''}
+    </div>
+` : '<div class="card-links empty-links"></div>';
     
     const clickHintHtml = hasLinks ? `
         <div class="click-hint">
@@ -506,18 +526,18 @@ function openModal(story) {
                     <p class="social-hint">
                         <i class="fas fa-arrow-down"></i> Clicca sui pulsanti qui sotto per poter leggere la storia completa:
                     </p>
-                    <div class="modal-social-buttons">
-                        ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="modal-social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>` : ''}
-                        ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" class="modal-social-btn telegram"><i class="fab fa-telegram"></i> Telegram</a>` : ''}
-                        ${story.links?.patreon ? `<a href="${story.links.patreon}" target="_blank" rel="noopener noreferrer" class="modal-social-btn patreon"><i class="fab fa-patreon"></i> Patreon</a>` : ''}
-                        ${story.links?.youtube ? `<a href="${story.links.youtube}" target="_blank" rel="noopener noreferrer" class="modal-social-btn youtube"><i class="fab fa-youtube"></i> YouTube</a>` : ''}
-                        ${story.links?.twitter ? `<a href="${story.links.twitter}" target="_blank" rel="noopener noreferrer" class="modal-social-btn twitter"><i class="fab fa-twitter"></i> Twitter</a>` : ''}
-                        ${story.links?.facebook ? `<a href="${story.links.facebook}" target="_blank" rel="noopener noreferrer" class="modal-social-btn facebook"><i class="fab fa-facebook"></i> Facebook</a>` : ''}
-                        ${story.links?.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" class="modal-social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>` : ''}
-                        ${story.links?.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" class="modal-social-btn discord"><i class="fab fa-discord"></i> Discord</a>` : ''}
-                        ${story.links?.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" class="modal-social-btn twitch"><i class="fab fa-twitch"></i> Twitch</a>` : ''}
-                        ${story.links?.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="modal-social-btn altro"><i class="fas fa-link"></i> Altro link</a>` : ''}
-                    </div>
+<div class="modal-social-buttons">
+    ${story.links?.ig ? `<a href="${story.links.ig}" target="_blank" rel="noopener noreferrer" class="modal-social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>` : ''}
+    ${story.links?.tg ? `<a href="${story.links.tg}" target="_blank" rel="noopener noreferrer" class="modal-social-btn telegram"><i class="fab fa-telegram"></i> Telegram</a>` : ''}
+    ${story.links?.patreon ? `<a href="${story.links.patreon}" target="_blank" rel="noopener noreferrer" class="modal-social-btn patreon"><i class="fab fa-patreon"></i> Patreon</a>` : ''}
+    ${(story.links?.youtube || story.links?.yt) ? `<a href="${story.links.youtube || story.links.yt}" target="_blank" rel="noopener noreferrer" class="modal-social-btn youtube"><i class="fab fa-youtube"></i> YouTube</a>` : ''}
+    ${story.links?.twitter ? `<a href="${story.links.twitter}" target="_blank" rel="noopener noreferrer" class="modal-social-btn twitter"><i class="fab fa-twitter"></i> Twitter</a>` : ''}
+    ${story.links?.facebook ? `<a href="${story.links.facebook}" target="_blank" rel="noopener noreferrer" class="modal-social-btn facebook"><i class="fab fa-facebook"></i> Facebook</a>` : ''}
+    ${story.links?.tiktok ? `<a href="${story.links.tiktok}" target="_blank" rel="noopener noreferrer" class="modal-social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>` : ''}
+    ${story.links?.discord ? `<a href="${story.links.discord}" target="_blank" rel="noopener noreferrer" class="modal-social-btn discord"><i class="fab fa-discord"></i> Discord</a>` : ''}
+    ${story.links?.twitch ? `<a href="${story.links.twitch}" target="_blank" rel="noopener noreferrer" class="modal-social-btn twitch"><i class="fab fa-twitch"></i> Twitch</a>` : ''}
+    ${story.links?.altro ? `<a href="${story.links.altro}" target="_blank" rel="noopener noreferrer" class="modal-social-btn altro"><i class="fas fa-link"></i> Altro link</a>` : ''}
+</div>
                 </div>
                 ` : ''}
             </div>
