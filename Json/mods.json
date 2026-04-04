@@ -12,8 +12,8 @@
     "Categoria": "Carriere",
     "MODIT": " Nessuna",
     "DLCIT": "NECESSARI:  • Gioco Base  •  Vita sull'Isola  RACCOMANDATI:  • Vita da Genitori",
-    "DescrizioneIT": "",
-    "NoteIT": "Aggiunge lavori fissi e part-time di babysitter. Il lavoro fisso è disponibile per gli adolescenti e il lavoro part-time per gli studenti universitari adolescenti o giovani adulti. I lavori sono disponibili principalmente di notte, anche se alcuni durante il giorno."
+    "DescrizioneIT": "Aggiunge lavori fissi e part-time di babysitter. Il lavoro fisso è disponibile per gli adolescenti e il lavoro part-time per gli studenti universitari adolescenti o giovani adulti. I lavori sono disponibili principalmente di notte, anche se alcuni durante il giorno.\n",
+    "NoteIT": ""
   },
   {
     "Author": "Adeepindigo",
@@ -29,7 +29,7 @@
     "MODIT": "NECESSARIE: Core Library di Lot 51",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod modifica le opzioni di asilo nido per i sim Neonati, Lattanti e Bebè. Potranno essere mandati in qualsiasi momento. I Sim all'asilo nido possono acquisire abilità e i bisogni verranno soddisfatti in modo più efficace.",
-    "NoteIT": "Aggiunta mod Core Library di Lot 51 per funzionamento"
+    "NoteIT": ""
   },
   {
     "Author": "Adeepindigo",
@@ -44,8 +44,8 @@
     "Categoria": "Gameplay",
     "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo ",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "ATTENZIONE leggere attentamente la Descrizione dei CONFLITTI con altre mod",
-    "NoteIT": "Aggiunge nuove funzionalità al matrimonio come: la pianificazione, assumere un wedding planner, nuovi social e altro ancora. Modifica inoltre il modo in cui si svolgono i matrimoni del gioco base e i matrimoni con il mio matrimonio, nonché le proposte e altro ancora."
+    "DescrizioneIT": "Aggiunge nuove funzionalità al matrimonio come: la pianificazione, assumere un wedding planner, nuovi social e altro ancora. Modifica inoltre il modo in cui si svolgono i matrimoni del gioco base e i matrimoni con il mio matrimonio, nonché le proposte e altro ancora.",
+    "NoteIT": "ATTENZIONE leggere attentamente la Descrizione dei CONFLITTI con altre mod."
   },
   {
     "Author": "Adeepindigo",
@@ -61,7 +61,7 @@
     "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Core Library di Lot 51",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Aggiunge 8 nuove attività negli appuntamenti per far divertire insieme i tuoi Sim. Disponibile per i Sims adolescenti e più grandi.",
-    "NoteIT": "Aggiunta mod Core Library di Lot 51 per funzionamento"
+    "NoteIT": ""
   },
   {
     "Author": "Adeepindigo",
@@ -77,7 +77,7 @@
     "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Shared Tuning di Adeepindigo - Mood Pack di Lumpinou",
     "DLCIT": "RACCOMANDATI: Gioco base - Vita da genitori - Vita in città - Cresciamo insieme - Vita da liceali ",
     "DescrizioneIT": "Ora i tuoi sim adolescenti possono scappare (come rabbithole o in uno scenario), ribellarsi in modo grande o piccolo, legale o illegale. Possono farsi catturare insieme con possibili conseguenze che vanno dalla semplice punizione all'invio in centri di detenzione minorile.",
-    "NoteIT": null
+    "NoteIT": ""
   },
   {
     "Author": "Adeepindigo",
@@ -220,8 +220,8 @@
     "Categoria": "Gameplay",
     "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Mood Pack di Lumpinou",
     "DLCIT": "NECESSARI: Gioco Base - Al lavoro",
-    "DescrizioneIT": "",
-    "NoteIT": "Mod completa per l'assistenza sanitaria che aggiunge nuove malattie, lesioni, condizioni croniche, allergie, emergenze mediche e condizioni di salute legate alla gravidanza, nonché cure preventive, sistema immunitario naturale, farmaci e integratori, visite mediche, vaccinazioni, malattie mortali e altro ancora."
+    "DescrizioneIT": "Mod completa per l'assistenza sanitaria che aggiunge nuove malattie, lesioni, condizioni croniche, allergie, emergenze mediche e condizioni di salute legate alla gravidanza, nonché cure preventive, sistema immunitario naturale, farmaci e integratori, visite mediche, vaccinazioni, malattie mortali e altro ancora.",
+    "NoteIT": ""
   },
   {
     "Author": "Adeepindigo",
@@ -252,8 +252,8 @@
     "Categoria": "Gameplay",
     "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo ",
     "DLCIT": "NECESSARI: Gioco Base - Vita in città - Avventure nella giungla - Oasi innevata - Vita sull'isola - Vita in città -  Gita All’Aria Aperta  RACCOMANDATI: Vita in città - Oasi innevata - Avventure nella giungla - Vita sull'isola - Gita All’Aria Aperta",
-    "DescrizioneIT": "",
-    "NoteIT": "Viaggia in The Sims 4, puoi avere auto e molto altro! "
+    "DescrizioneIT": "Viaggia in The Sims 4, puoi avere auto e molto altro! ",
+    "NoteIT": ""
   },
   {
     "Author": "Adeepindigo",
@@ -300,8 +300,8 @@
     "Categoria": "Carriere",
     "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo",
     "DLCIT": "NECESSARI: Gioco Base RACCOMANDATI: Nuove stelle - Vita in città",
-    "DescrizioneIT": "",
-    "NoteIT": "Questa mod rivisita la carriera dello scrittore, aggiungendo nuove interazioni, obiettivi e opzioni di carriera, rendendo l'esperienza più ricca e dinamica."
+    "DescrizioneIT": "Questa mod rivisita la carriera dello scrittore, aggiungendo nuove interazioni, obiettivi e opzioni di carriera, rendendo l'esperienza più ricca e dinamica.\n",
+    "NoteIT": ""
   },
   {
     "Author": "Adeepindigo/ItsKatato",
@@ -332,8 +332,8 @@
     "Categoria": "Gameplay",
     "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo ",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "",
-    "NoteIT": "Questa mod è stata creata per incoraggiare e introdurre nuovi modi di vivere uno stile di vita più sano per i tuoi Sims."
+    "DescrizioneIT": "Questa mod è stata creata per incoraggiare e introdurre nuovi modi di vivere uno stile di vita più sano per i tuoi Sims.\n",
+    "NoteIT": ""
   },
   {
     "Author": "Amellce",
@@ -349,7 +349,7 @@
     "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Permette al giocatore di far sedere i sim in modo composto.",
-    "NoteIT": null
+    "NoteIT": ""
   },
   {
     "Author": "Amethyst-Lilac",
@@ -365,7 +365,7 @@
     "MODIT": "NECESSARIE: Core Library di Lotto 51",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Better Ladders è una mod che migliora l’uso delle scale: i Sims si muovono più velocemente e possono salire/scendere anche mentre portano oggetti o bambini. Include una variante opzionale in cui i Sims scendono sempre scivolando.",
-    "NoteIT": null
+    "NoteIT": ""
   },
   {
     "Author": "Amethyst-Lilac",
@@ -1421,7 +1421,7 @@
     "MODIT": "NECESSARIE: Toolbox di Lumpinou",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Con questa mod, i Sim avranno delle Preferenze di Relazione (esclusiva o non esclusiva) e possono vivere la loro vita romantica ideale. Possono chiedere di aprire la relazione al partner, il che può significare diventare poliamorosi, avere una relazione aperta o semplicemente qualsiasi cosa desiderino! Le definizioni di queste relazioni sono volutamente vaghe, libere e aperte. ",
-    "NoteIT": "Con questa mod, i Sim avranno delle Preferenze di Relazione (esclusiva o non esclusiva) e possono vivere la loro vita romantica ideale. Possono chiedere di aprire la relazione al partner, il che può significare diventare poliamorosi, avere una relazione aperta o semplicemente qualsiasi cosa desiderino! Le definizioni di queste relazioni sono volutamente vaghe, libere e aperte. "
+    "NoteIT": ""
   },
   {
     "Author": "Lumpinou",
@@ -1660,8 +1660,8 @@
     "Categoria": "Utilità",
     "MODIT": "Serve per il funzionamento di altre mod di NickyClem",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "INFO QUI: https://docs.google.com/spreadsheets/d/1G8OzUqbmyOCPGR8S_wp19i4Nw9m6UTNU4c_xfgVGw9I/edit?gid=0#gid=0",
-    "NoteIT": "Serve per il funzionamento di altre mod di NickyClem"
+    "DescrizioneIT": "",
+    "NoteIT": ""
   },
   {
     "Author": "NickyClem",
@@ -1676,8 +1676,8 @@
     "Categoria": "Gameplay",
     "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam ",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "",
-    "NoteIT": "L'assicurazione copre i tuoi elettrodomestici, così quando hanno bisogno di essere riparati non dovrai più pagare il riparatore!"
+    "DescrizioneIT": "L'assicurazione copre i tuoi elettrodomestici, così quando hanno bisogno di essere riparati non dovrai più pagare il riparatore!",
+    "NoteIT": ""
   },
   {
     "Author": "PandaSama",
@@ -2220,8 +2220,8 @@
     "Categoria": "Utilità",
     "MODIT": "Nessuna ",
     "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "ATTENZIONE: Nella zip troverete un file Opzionale \"simularity-dont-getup.package\". Potete decidere se tenerlo o rimuoverlo, in base alle vostre esigenze.",
-    "NoteIT": "Prefer Tables When Eating di Simularity fa scegliere autonomamente ai Sim un tavolo da pranzo quando mangiano, evitando divani, scrivanie o pasti in piedi. Basta installarla nella cartella Mods: funziona subito. Nel download è incluso anche un pacchetto opzionale “Don’t Get Up” che li fa restare seduti dopo il pasto, finché non li comandi."
+    "DescrizioneIT": "Prefer Tables When Eating di Simularity fa scegliere autonomamente ai Sim un tavolo da pranzo quando mangiano, evitando divani, scrivanie o pasti in piedi. Basta installarla nella cartella Mods: funziona subito. Nel download è incluso anche un pacchetto opzionale “Don’t Get Up” che li fa restare seduti dopo il pasto, finché non li comandi.",
+    "NoteIT": "ATTENZIONE: Nella zip troverete un file Opzionale \"simularity-dont-getup.package\". Potete decidere se tenerlo o rimuoverlo, in base alle vostre esigenze. "
   },
   {
     "Author": "SonozakiSisters",
