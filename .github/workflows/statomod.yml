@@ -1,9 +1,6 @@
 name: Tabella Mods
 
 on:
-  push:
-    paths:
-      - 'Json/mods.json'
   workflow_dispatch:
 
 concurrency:
