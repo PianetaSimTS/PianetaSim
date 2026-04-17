@@ -1,0 +1,32 @@
+name: Aggiornamento Old Mod
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: tabella-mods
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install requests python-telegram-bot==20.0
+
+    - name: Esegui lo script monitor
+      run: |
+            python ScriptPython/AggiornamentoFileOldMod.py
+
+env:
+  GITHUB_TOKEN: ${{ secrets.TOKEN }}
+  TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
