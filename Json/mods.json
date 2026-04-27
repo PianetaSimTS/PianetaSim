@@ -2386,7 +2386,7 @@
   {
     "Author": "TurboDriver",
     "ModName": "Unlimited Jobs+",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.curseforge.com/sims4/mods/unlimited-jobs",
     "DataUltimaModifica": "05/09/2025",
     "Traduttore": null,
@@ -2397,7 +2397,7 @@
     "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Consente ai Sim di assumere più di un lavoro contemporaneamente, senza limiti. Grazie a questo mod, puoi far lavorare i tuoi Sim in diverse carriere o svolgere più attività a tempo parziale, offrendo maggiori opportunità di guadagno e una gestione più dinamica delle loro vite professionali.",
-    "NoteIT": null
+    "NoteIT": "Causa problemi minori."
   },
   {
     "Author": "TurboDriver",
@@ -2418,7 +2418,7 @@
   {
     "Author": "TwistedMexi",
     "ModName": "All Scenarios",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://twistedmexi.com/Mods/",
     "DataUltimaModifica": "24/03/2026",
     "Traduttore": null,
@@ -2429,12 +2429,12 @@
     "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod rimuove tutte le restrizioni di tempo sulle simulazioni EA.",
-    "NoteIT": null
+    "NoteIT": "Causa problemi minori. Fa apparire i lama nelle icone dei pachhetti nei menù CAS e nel filtro Build/Buy."
   },
   {
     "Author": "TwistedMexi",
     "ModName": "Better BuildBuy",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://twistedmexi.com/Mods/",
     "DataUltimaModifica": "03/04/2026",
     "Traduttore": null,
@@ -2450,7 +2450,7 @@
   {
     "Author": "TwistedMexi",
     "ModName": "Better Exception",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/130049745?display_app_qr=1&utm_source=post_link&utm_medium=email&utm_campaign=patron_engagement&utm_id=45111222-d1cc-4833-b8de-8c70497a0d89",
     "DataUltimaModifica": "23/02/2026",
     "Traduttore": null,
@@ -2466,7 +2466,7 @@
   {
     "Author": "TwistedMexi",
     "ModName": "ModGuard: Mod Malware Protection",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://twistedmexi.com/Mods/",
     "DataUltimaModifica": "03/02/2026",
     "Traduttore": null,
@@ -2482,7 +2482,7 @@
   {
     "Author": "TwistedMexi",
     "ModName": "TOOL",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://twistedmexi.com/Mods/",
     "DataUltimaModifica": "18/03/2026",
     "Traduttore": null,
