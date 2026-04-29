@@ -722,7 +722,7 @@
   {
     "Author": "JayESims",
     "ModName": "Barely Legal — The Teen Takeover Mod",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/135987703?collection=1639391",
     "DataUltimaModifica": "18/03/2026",
     "Traduttore": "di LadyPsycoTrilly",
@@ -1646,38 +1646,6 @@
     "DLCIT": "NECESSARI: Gioco Base - Hobby & Attività",
     "DescrizioneIT": "Questa mod aggiunge 130 nuovi loghi/icone per le piccole imprese, ci sono 2 versioni: una loghi + icone e una solo loghi, ne va messa solo una.",
     "NoteIT": null
-  },
-  {
-    "Author": "NickyClem",
-    "ModName": "Insurance Company Phone App & Computer Menu",
-    "Status": "sconosciuta",
-    "SiteLink": "https://nickyclem.itch.io/insurance-company",
-    "DataUltimaModifica": "",
-    "Traduttore": null,
-    "LinkTraduzione": null,
-    "Translation": "in lavorazione",
-    "DataTraduzione": null,
-    "Categoria": "Utilità",
-    "MODIT": "Serve per il funzionamento di altre mod di NickyClem",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "",
-    "NoteIT": ""
-  },
-  {
-    "Author": "NickyClem",
-    "ModName": "SimSure Insurance & Co",
-    "Status": "sconosciuta",
-    "SiteLink": "https://nickyclem.itch.io/simsure-insurance-co-public/download/eyJpZCI6NDE0NjE2OSwiZXhwaXJlcyI6MTc3MDcwODE5NX0%3d.4QsHwlw6cyWS1O4T6HZc3VgIRmQ%3d",
-    "DataUltimaModifica": "",
-    "Traduttore": "di Leo",
-    "LinkTraduzione": null,
-    "Translation": "in lavorazione",
-    "DataTraduzione": null,
-    "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam ",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "L'assicurazione copre i tuoi elettrodomestici, così quando hanno bisogno di essere riparati non dovrai più pagare il riparatore!",
-    "NoteIT": ""
   },
   {
     "Author": "PandaSama",
