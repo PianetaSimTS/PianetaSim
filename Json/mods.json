@@ -544,6 +544,22 @@
     "NoteIT": null
   },
   {
+    "Author": "Danitysimmer",
+    "ModName": "General Sports Pie Menu",
+    "Status": "compatibile",
+    "SiteLink": "https://www.simfileshare.net/download/4724173/",
+    "DataUltimaModifica": "02/09/2025",
+    "Traduttore": "di LadyPsycoTrilly",
+    "LinkTraduzione": null,
+    "Translation": "in lavorazione",
+    "DataTraduzione": "",
+    "Categoria": "Utilità",
+    "MODIT": "Nessuna",
+    "DLCIT": "• Gioco Base",
+    "DescrizioneIT": "Serve per il funzionamento di altre mod.",
+    "NoteIT": "Serve per il funzionamento di altre mod. "
+  },
+  {
     "Author": "Deaderpool",
     "ModName": "MC Command Center",
     "Status": "compatibile",
@@ -1393,7 +1409,7 @@
   },
   {
     "Author": "Lumpinou",
-    "ModName": "Mood Pack Mod",
+    "ModName": "Mood Pack",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/43759541",
     "DataUltimaModifica": "06/11/2024",
@@ -1840,22 +1856,6 @@
     "NoteIT": null
   },
   {
-    "Author": "Sacrificial (Junior)",
-    "ModName": "Life Manager",
-    "Status": "compatibile",
-    "SiteLink": "https://sacrificialmods.com/individual-sim-autonomy-sac-jr-release-notes.html",
-    "DataUltimaModifica": "04/02/2026",
-    "Traduttore": "di Sha",
-    "LinkTraduzione": "https://www.patreon.com/posts/ita-life-manager-135712138",
-    "Translation": "compatibile",
-    "DataTraduzione": "05/08/2025",
-    "Categoria": "Gameplay",
-    "MODIT": "Nerssuna ",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Offre un controllo avanzato sull'albero genealogico, permettendo di creare, modificare o rimuovere legami familiari, correggere errori di parentela e personalizzare la discendenza dei Sims in modo semplice e rapido.",
-    "NoteIT": null
-  },
-  {
     "Author": "Sacrificial",
     "ModName": "Life's Drama",
     "Status": "compatibile",
@@ -1933,6 +1933,22 @@
     "MODIT": "Nerssuna ",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Aggiunge l'interazione del ballo lento romantico. I Sims possono ballare teneramente con il partner, abbracciarsi durante il ballo e creare momenti intimi, perfetti per matrimoni, appuntamenti o serate speciali.",
+    "NoteIT": null
+  },
+  {
+    "Author": "Sacrificial (Junior)",
+    "ModName": "Life Manager",
+    "Status": "compatibile",
+    "SiteLink": "https://sacrificialmods.com/individual-sim-autonomy-sac-jr-release-notes.html",
+    "DataUltimaModifica": "04/02/2026",
+    "Traduttore": "di Sha",
+    "LinkTraduzione": "https://www.patreon.com/posts/ita-life-manager-135712138",
+    "Translation": "compatibile",
+    "DataTraduzione": "05/08/2025",
+    "Categoria": "Gameplay",
+    "MODIT": "Nerssuna ",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Offre un controllo avanzato sull'albero genealogico, permettendo di creare, modificare o rimuovere legami familiari, correggere errori di parentela e personalizzare la discendenza dei Sims in modo semplice e rapido.",
     "NoteIT": null
   },
   {
