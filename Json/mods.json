@@ -2290,9 +2290,9 @@
   {
     "Author": "TwistedMexi",
     "ModName": "All Scenarios",
-    "Status": "sconosciuta",
+    "Status": "rotta",
     "SiteLink": "https://twistedmexi.com/Mods/",
-    "DataUltimaModifica": "24/03/2026",
+    "DataUltimaModifica": "",
     "Traduttore": null,
     "LinkTraduzione": null,
     "Translation": "non necessaria",
@@ -2301,12 +2301,12 @@
     "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod rimuove tutte le restrizioni di tempo sulle simulazioni EA.",
-    "NoteIT": "Causa problemi minori. Fa apparire i lama nelle icone dei pachhetti nei menù CAS e nel filtro Build/Buy."
+    "NoteIT": ""
   },
   {
     "Author": "TwistedMexi",
     "ModName": "Better BuildBuy",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://twistedmexi.com/Mods/",
     "DataUltimaModifica": "03/04/2026",
     "Traduttore": null,
@@ -2354,7 +2354,7 @@
   {
     "Author": "TwistedMexi",
     "ModName": "TOOL",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://twistedmexi.com/Mods/",
     "DataUltimaModifica": "18/03/2026",
     "Traduttore": null,
