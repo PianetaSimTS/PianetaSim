@@ -402,7 +402,7 @@
   {
     "Author": "Amethyst-Lilac",
     "ModName": "Better Ladders",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/better-ladders-133618466",
     "DataUltimaModifica": "18/03/2026",
     "Traduttore": null,
@@ -418,9 +418,9 @@
   {
     "Author": "Amethyst-Lilac",
     "ModName": "More Sim Names",
-    "Status": "sconosciuta",
+    "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/posts/more-sim-names-126517152",
-    "DataUltimaModifica": "06/03/2026",
+    "DataUltimaModifica": "13/05/2026",
     "Traduttore": null,
     "LinkTraduzione": null,
     "Translation": "non necessaria",
@@ -610,9 +610,9 @@
   {
     "Author": "Deaderpool",
     "ModName": "MC Command Center",
-    "Status": "sconosciuta",
+    "Status": "aggiornata",
     "SiteLink": "https://deaderpool-mccc.com/downloads.html",
-    "DataUltimaModifica": "10/05/2026",
+    "DataUltimaModifica": "13/05/2026",
     "Traduttore": null,
     "LinkTraduzione": null,
     "Translation": "inclusa",
@@ -642,7 +642,7 @@
   {
     "Author": "Ellesimsworld",
     "ModName": "Plumjob",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/download-plumjob-122583054",
     "DataUltimaModifica": "30/05/2025",
     "Traduttore": "di LadyPsycoTrilly",
@@ -658,7 +658,7 @@
   {
     "Author": "Ellesimsworld",
     "ModName": "Romantica: A Lover's Type Mod",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/download-lovers-137991992",
     "DataUltimaModifica": "03/09/2025",
     "Traduttore": "di LadyPsycoTrilly",
@@ -1938,7 +1938,7 @@
   {
     "Author": "SimRealist",
     "ModName": "Flowfit",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://simrealist.itch.io/public-flowfit",
     "DataUltimaModifica": "14/07/2025",
     "Traduttore": "di AngiePixelWords",
@@ -1954,7 +1954,7 @@
   {
     "Author": "SimRealist",
     "ModName": "Home & Land Company",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://simrealist.itch.io/home-and-land-company",
     "DataUltimaModifica": "19/03/2026",
     "Traduttore": null,
@@ -1970,7 +1970,7 @@
   {
     "Author": "SimRealist",
     "ModName": "Mortem",
-    "Status": "sconosciuta",
+    "Status": "obsoleta",
     "SiteLink": "https://simrealist.itch.io/mortem",
     "DataUltimaModifica": "",
     "Traduttore": null,
@@ -1986,7 +1986,7 @@
   {
     "Author": "SimRealist",
     "ModName": "Organic",
-    "Status": "sconosciuta",
+    "Status": "obsoleta",
     "SiteLink": "https://simrealist.itch.io/organic",
     "DataUltimaModifica": "",
     "Traduttore": null,
@@ -2002,7 +2002,7 @@
   {
     "Author": "SimRealist",
     "ModName": "Private Practice",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://simrealist.itch.io/private-practice-public",
     "DataUltimaModifica": "09/10/2025",
     "Traduttore": null,
@@ -2018,7 +2018,7 @@
   {
     "Author": "SimRealist",
     "ModName": "R|E",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://simrealist.itch.io/re-public",
     "DataUltimaModifica": "21/02/2026",
     "Traduttore": null,
@@ -2034,7 +2034,7 @@
   {
     "Author": "SimRealist",
     "ModName": "Snb Bills",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://simrealist.itch.io/snb-bills",
     "DataUltimaModifica": "06/02/2026",
     "Traduttore": null,
@@ -2050,7 +2050,7 @@
   {
     "Author": "SimRealist",
     "ModName": "Snb Financial Center",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://simrealist.itch.io/snb-financialcenter",
     "DataUltimaModifica": "01/09/2025",
     "Traduttore": null,
@@ -2066,7 +2066,7 @@
   {
     "Author": "SimRealist",
     "ModName": "SNBank",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://simrealist.itch.io/snbank",
     "DataUltimaModifica": "01/09/2025",
     "Traduttore": null,
@@ -2226,9 +2226,9 @@
   {
     "Author": "Thepancake1 e MizoreYukii",
     "ModName": "Color Sliders ",
-    "Status": "sconosciuta",
+    "Status": "rotta",
     "SiteLink": "https://www.patreon.com/posts/color-sliders-62823244",
-    "DataUltimaModifica": "27/03/2026",
+    "DataUltimaModifica": "",
     "Traduttore": null,
     "LinkTraduzione": null,
     "Translation": "non necessaria",
@@ -2386,9 +2386,9 @@
   {
     "Author": "Weerbesu",
     "ModName": "UI Cheats Extension",
-    "Status": "rotta",
+    "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/posts/ui-cheats-v1-19-26240068",
-    "DataUltimaModifica": "",
+    "DataUltimaModifica": "13/05/2026",
     "Traduttore": null,
     "LinkTraduzione": null,
     "Translation": "non necessaria",
