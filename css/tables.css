@@ -333,6 +333,18 @@ input:focus, select:focus {
   border-color: #16ab63;
 }
 
+/* Guida note in alto a sinistra */
+.guide-note {
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--formcontainercolor);
+  background-color: var(--formcontainerbackground);
+  border-bottom: 1px solid #333;
+  animation: fadeInUp 0.5s ease-out 0.1s both;
+}
+
 /* Form container che scorre con tutto il resto */
 .form-container {
   position: relative;
