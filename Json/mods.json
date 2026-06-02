@@ -2188,7 +2188,7 @@
     "Categoria": "Gameplay",
     "MODIT": "Core Library di Lot 51 - Mood Pack di Lumpinou - Requirements for Mega Interactions di SonozakiSisters e Katie Mods",
     "DLCIT": "Gioco Base",
-    "DescrizioneIT": "Approfondisci e rendi più tenera la relazione tra genitori e figli , con nuove 54 interazioni suddivise in: Impara a Conoscere, Affetto, Rassicura e Loda. \nQuesta mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters.",
+    "DescrizioneIT": "Approfondisci e rendi più tenera la relazione tra genitori e figli , con nuove 54 interazioni suddivise in: Impara a Conoscere, Affetto, Rassicura e Loda. Questa mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters.",
     "NoteIT": ""
   },
   {
@@ -2204,7 +2204,7 @@
     "Categoria": "Gameplay",
     "MODIT": "Core Library di Lot 51 - Mood Pack di Lumpinou - Requirements for Mega Interactions di SonozakiSisters e Katie Mods",
     "DLCIT": "Gioco Base",
-    "DescrizioneIT": "Rendi le tue relazioni amorose più profonde e realistiche, con nuove interazioni suddivise in: Romantico, Impara a Conoscere, Complimenti e Frasi d'Approccio, Discuti della Relazione, Da Amici ad Amanti, Da Nemici ad Amanti, Litiga e Lascia. \nQuesta mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters.",
+    "DescrizioneIT": "Rendi le tue relazioni amorose più profonde e realistiche, con nuove interazioni suddivise in: Romantico, Impara a Conoscere, Complimenti e Frasi d'Approccio, Discuti della Relazione, Da Amici ad Amanti, Da Nemici ad Amanti, Litiga e Lascia. Questa mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters.",
     "NoteIT": ""
   },
   {
@@ -2220,7 +2220,7 @@
     "Categoria": "Gameplay",
     "MODIT": "Core Library di Lot 51 - Mood Pack di Lumpinou - Requirements for Mega Interactions di SonozakiSisters e Katie Mods",
     "DLCIT": "Gioco Base",
-    "DescrizioneIT": "Rendi le tue relazioni amorose più profonde e realistiche, con nuove interazioni. Rispetto all'originale la mod terrà conto anche dei Pacchetti Colpo di Fulmine e Cresciamo Insieme, considerando le personalità e i gusti dei Sim.\nQuesta mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters.",
+    "DescrizioneIT": "Rendi le tue relazioni amorose più profonde e realistiche, con nuove interazioni. Rispetto all'originale la mod terrà conto anche dei Pacchetti Colpo di Fulmine e Cresciamo Insieme, considerando le personalità e i gusti dei Sim. Questa mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters.",
     "NoteIT": ""
   },
   {
@@ -2236,7 +2236,7 @@
     "Categoria": "Gameplay",
     "MODIT": "Core Library di Lot 51 - Mood Pack di Lumpinou - Requirements for Mega Interactions di SonozakiSisters e Katie Mods",
     "DLCIT": "Gioco Base",
-    "DescrizioneIT": "Espandi l'amicizia e rendi queste relazioni più profonde, con nuove 47 interazioni suddivise in:  Supporto Emotivo, Lamentati, Chiacchiera e Complimenti.\nQuesta mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters",
+    "DescrizioneIT": "Espandi l'amicizia e rendi queste relazioni più profonde, con nuove 47 interazioni suddivise in:  Supporto Emotivo, Lamentati, Chiacchiera e Complimenti. Questa mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters",
     "NoteIT": ""
   },
   {
@@ -2477,6 +2477,86 @@
     "MODIT": "Better BuildBuy di TwistedMexi",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Permette di spostare, ruotare e ridimensionare gli oggetti in modi impossibili con gli strumenti di gioco standard, offrendo una maggiore libertà creativa per costruzioni più dettagliate e personalizzate. Ideale per i giocatori che vogliono portare la loro creatività a un livello superiore!",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Vellesa",
+    "ModName": "Talks by Age: Pregnancy Talks",
+    "Status": "nuova",
+    "SiteLink": "https://www.patreon.com/posts/mod-talks-by-age-154236113",
+    "DataUltimaModifica": "01/04/2026",
+    "Traduttore": "di Sha",
+    "LinkTraduzione": "https://www.patreon.com/posts/raccolta-talks-156859942",
+    "Translation": "compatibile",
+    "DataTraduzione": "02/05/2026",
+    "Categoria": "Gameplay",
+    "MODIT": "Nessuna",
+    "DLCIT": "Gioco Base",
+    "DescrizioneIT": "Aggiunge nuove interazioni durante la gravidanza.",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Vellesa",
+    "ModName": "Talks by Age: Autumn Vibes",
+    "Status": "nuova",
+    "SiteLink": "https://www.patreon.com/posts/mod-talks-by-age-140882066",
+    "DataUltimaModifica": "11/11/2025",
+    "Traduttore": "di Sha",
+    "LinkTraduzione": "https://www.patreon.com/posts/raccolta-talks-156859942",
+    "Translation": "compatibile",
+    "DataTraduzione": "02/05/2026",
+    "Categoria": "Gameplay",
+    "MODIT": "Nessuna",
+    "DLCIT": "Gioco Base",
+    "DescrizioneIT": "Aggiunge nuove interazioni autunnali.",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Vellesa",
+    "ModName": "Talks by Age: Seniors",
+    "Status": "nuova",
+    "SiteLink": "https://www.patreon.com/posts/121741519?collection=1436262",
+    "DataUltimaModifica": "24/08/25",
+    "Traduttore": "di Sha",
+    "LinkTraduzione": "https://www.patreon.com/posts/raccolta-talks-156859942",
+    "Translation": "compatibile",
+    "DataTraduzione": "02/05/2026",
+    "Categoria": "Gameplay",
+    "MODIT": "Nessuna",
+    "DLCIT": "Gioco Base",
+    "DescrizioneIT": "Aggiunge nuove interazioni per i Sim anziani.",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Vellesa",
+    "ModName": "Talks by Age: Teens",
+    "Status": "nuova",
+    "SiteLink": "https://www.patreon.com/posts/mod-talks-by-age-137653729",
+    "DataUltimaModifica": "06/09/2025",
+    "Traduttore": "di Ricky's Mom",
+    "LinkTraduzione": "https://www.patreon.com/posts/140832788",
+    "Translation": "compatibile",
+    "DataTraduzione": "09/11/2025",
+    "Categoria": "Gameplay",
+    "MODIT": "Nessuna",
+    "DLCIT": "Gioco Base",
+    "DescrizioneIT": "Aggiunge nuove interazioni per i Sim adolescenti.",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Vellesa",
+    "ModName": "Talks by Age: Children",
+    "Status": "nuova",
+    "SiteLink": "https://www.patreon.com/posts/127997255",
+    "DataUltimaModifica": "06/05/2025",
+    "Traduttore": "di Ricky's Mom",
+    "LinkTraduzione": "https://www.patreon.com/posts/140833251",
+    "Translation": "compatibile",
+    "DataTraduzione": "09/11/2025",
+    "Categoria": "Gameplay",
+    "MODIT": "Nessuna",
+    "DLCIT": "Gioco Base",
+    "DescrizioneIT": "Aggiunge nuove interazioni per i Sim bambini.",
     "NoteIT": ""
   },
   {
