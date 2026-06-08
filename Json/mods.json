@@ -2516,7 +2516,7 @@
     "ModName": "Talks by Age: Seniors",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/121741519?collection=1436262",
-    "DataUltimaModifica": "24/08/25",
+    "DataUltimaModifica": "24/08/2025",
     "Traduttore": "di Sha",
     "LinkTraduzione": "https://www.patreon.com/posts/raccolta-talks-156859942",
     "Translation": "compatibile",
@@ -2622,5 +2622,21 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!",
     "NoteIT": null
+  },
+  {
+    "Author": "Ellesimsworld",
+    "ModName": "Origins",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/preview-origins-155576051",
+    "DataUltimaModifica": "16/04/2026",
+    "Traduttore": "di Leo",
+    "LinkTraduzione": "https://www.patreon.com/posts/origins-gameplay-158072173",
+    "Translation": "compatibile",
+    "DataTraduzione": "12/05/2026",
+    "Categoria": "Gameplay",
+    "MODIT": " XML Injector di Scumbumbo/Triplis/LittleMsSam ",
+    "DLCIT": "Al Lavoro!",
+    "DescrizioneIT": "Espande lo storytelling aggiungendo origini culturali, accenti, genetica, documenti ufficiali e sistemi narrativi profondi per creare Sims più realistici e unici.",
+    "NoteIT": ""
   }
 ]
