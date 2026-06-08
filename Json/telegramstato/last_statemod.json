@@ -70,7 +70,7 @@
     "SiteLink": "https://adeepindigomods.itch.io/custom-nuptials",
     "DataUltimaModifica": "02/12/2025",
     "Traduttore": "di Leo",
-    "LinkTraduzione": "https://www.patreon.com/posts/134215005?collection=1610462",
+    "LinkTraduzione": null,
     "Translation": "in lavorazione",
     "DataTraduzione": null,
     "Categoria": "Gameplay",
@@ -2243,7 +2243,7 @@
     "Author": "SonozakiSisters/Katie Mods",
     "ModName": "Requirements for Mega Interactions",
     "Status": "compatibile",
-    "SiteLink": "https://simfileshare.net/download/5775083/",
+    "SiteLink": "https://www.patreon.com/posts/raccolta-mega-di-160407296",
     "DataUltimaModifica": "31/12/2025",
     "Traduttore": null,
     "LinkTraduzione": null,
@@ -2354,9 +2354,9 @@
   {
     "Author": "Thepancake1 e MizoreYukii",
     "ModName": "More Traits in CAS",
-    "Status": "sconosciuta",
+    "Status": "rotta",
     "SiteLink": "https://www.patreon.com/posts/more-traits-in-62838078",
-    "DataUltimaModifica": "10/02/2026",
+    "DataUltimaModifica": "",
     "Traduttore": null,
     "LinkTraduzione": null,
     "Translation": "non necessaria",
@@ -2370,7 +2370,7 @@
   {
     "Author": "TurboDriver",
     "ModName": "Unlimited Jobs+",
-    "Status": "sconosciuta",
+    "Status": "problemi minori",
     "SiteLink": "https://www.curseforge.com/sims4/mods/unlimited-jobs",
     "DataUltimaModifica": "05/09/2025",
     "Traduttore": null,
@@ -2381,7 +2381,7 @@
     "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Consente ai Sim di assumere più di un lavoro contemporaneamente, senza limiti. Grazie a questo mod, puoi far lavorare i tuoi Sim in diverse carriere o svolgere più attività a tempo parziale, offrendo maggiori opportunità di guadagno e una gestione più dinamica delle loro vite professionali.",
-    "NoteIT": "Causa problemi minori."
+    "NoteIT": "Provoca errori di tipo LE quando i Sim nobili con più lavori aprono il telefono mentre il vantaggio dinastico \"Organizza promozione\" è attivo. L'errore di tipo LE scompare quando i vantaggi vengono resettati o quando il Sim nobile ha una sola carriera. [Confermato da tester affidabili]"
   },
   {
     "Author": "TurboDriver",
