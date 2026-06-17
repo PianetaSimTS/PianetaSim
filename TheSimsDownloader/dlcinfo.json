@@ -1,0 +1,906 @@
+[
+  {
+    "id": "EP01",
+    "name": "Al Lavoro!",
+    "type": "Expansion Pack",
+    "size": "1,65 GB",
+    "description": "Con questa espansione puoi seguire i Sims sul posto di lavoro, aprire negozi e vivere professioni attive.",
+    "url": "https://gofile.io/d/pcJSej"
+  },
+  {
+    "id": "EP02",
+    "name": "Usciamo Insieme!",
+    "type": "Expansion Pack",
+    "size": "1,73 GB",
+    "description": "Con questa espansione puoi creare club personalizzati, organizzare attività di gruppo ed esplorare Windenburg.",
+    "url": "https://gofile.io/d/6RRxJe"
+  },
+  {
+    "id": "EP03",
+    "name": "Vita in Citt\u00e0",
+    "type": "Expansion Pack",
+    "size": "2,00 GB",
+    "description": "Con questa espansione puoi vivere in appartamento, frequentare festival e scoprire San Myshuno.",
+    "url": "https://gofile.io/d/bs9Cd1"
+  },
+  {
+    "id": "EP04",
+    "name": "Cani & Gatti",
+    "type": "Expansion Pack",
+    "size": "1,89 GB",
+    "description": "Con questa espansione puoi creare animali domestici, curarli e gestire una clinica veterinaria.",
+    "url": "https://gofile.io/d/g6P3I3"
+  },
+  {
+    "id": "EP05",
+    "name": "Stagioni",
+    "type": "Expansion Pack",
+    "size": "1,33 GB",
+    "description": "Con questa espansione puoi aggiungere meteo, festivit\u00e0, calendario e cambiamenti stagionali durante l'anno.",
+    "url": "https://gofile.io/d/ANmgtz"
+  },
+  {
+    "id": "EP06",
+    "name": "Nuove Stelle",
+    "type": "Expansion Pack",
+    "size": "1,70 GB",
+    "description": "Con questa espansione puoi diventare celebre, gestire fama, reputazione e carriera nello spettacolo.",
+    "url": "https://gofile.io/d/nzLOw0"
+  },
+  {
+    "id": "EP07",
+    "name": "Vita sull'Isola",
+    "type": "Expansion Pack",
+    "size": "1,53 GB",
+    "description": "Con questa espansione puoi vivere a Sulani, nuotare, proteggere l'ambiente e scoprire tradizioni locali.",
+    "url": "https://gofile.io/d/37NvGf"
+  },
+  {
+    "id": "EP08",
+    "name": "Vita Universitaria",
+    "type": "Expansion Pack",
+    "size": "1,61 GB",
+    "description": "Con questa espansione puoi frequentare l'universit\u00e0, scegliere lauree, vivere nei dormitori e preparare il futuro.",
+    "url": "https://gofile.io/d/nx58OM"
+  },
+  {
+    "id": "EP09",
+    "name": "Vita Ecologica",
+    "type": "Expansion Pack",
+    "size": "1,39 GB",
+    "description": "Con questa espansione puoi ridurre l'impatto ambientale, riciclare e trasformare il quartiere.",
+    "url": "https://gofile.io/d/qarGcZ"
+  },
+  {
+    "id": "EP10",
+    "name": "Oasi Innevata",
+    "type": "Expansion Pack",
+    "size": "1,53 GB",
+    "description": "Con questa espansione puoi praticare sport invernali, fare escursioni e rilassarsi sul Monte Komorebi.",
+    "url": "https://gofile.io/d/s6rjEA"
+  },
+  {
+    "id": "EP11",
+    "name": "Vita in Campagna",
+    "type": "Expansion Pack",
+    "size": "1,61 GB",
+    "description": "Con questa espansione puoi allevare animali, coltivare ortaggi e vivere nella campagna di Henford-on-Bagley.",
+    "url": "https://gofile.io/d/0FCARK"
+  },
+  {
+    "id": "EP12",
+    "name": "Vita da Liceali",
+    "type": "Expansion Pack",
+    "size": "1,40 GB",
+    "description": "Con questa espansione puoi seguire gli adolescenti a scuola, tra lezioni, balli e amicizie.",
+    "url": "https://gofile.io/d/rOuop3"
+  },
+  {
+    "id": "EP13",
+    "name": "Cresciamo Insieme",
+    "type": "Expansion Pack",
+    "size": "1,34 GB",
+    "description": "Con questa espansione puoi arricchire rapporti familiari, compatibilit\u00e0 sociali e momenti chiave della crescita.",
+    "url": "https://gofile.io/d/hCFrmO"
+  },
+  {
+    "id": "EP14",
+    "name": "Vita nel Ranch",
+    "type": "Expansion Pack",
+    "size": "2,58 GB",
+    "description": "Con questa espansione puoi allevare cavalli, curare animali da ranch e produrre nettare.",
+    "url": "https://gofile.io/d/uPjIsR"
+  },
+  {
+    "id": "EP15",
+    "name": "In Affitto",
+    "type": "Expansion Pack",
+    "size": "2,76 GB",
+    "description": "Con questa espansione puoi costruire unit\u00e0 abitative, gestire proprietari, inquilini e propriet\u00e0 residenziali condivise.",
+    "url": "https://gofile.io/d/sFvU8z"
+  },
+  {
+    "id": "EP16",
+    "name": "Colpo di Fulmine",
+    "type": "Expansion Pack",
+    "size": "2,30 GB",
+    "description": "Con questa espansione puoi vivere appuntamenti, attrazione romantica e relazioni sentimentali pi\u00f9 sfumate.",
+    "url": "https://gofile.io/d/fiuaUa"
+  },
+  {
+    "id": "EP17",
+    "name": "Vita & Morte",
+    "type": "Expansion Pack",
+    "size": "2,43 GB",
+    "description": "Con questa espansione puoi esplorare lutto, aldil\u00e0, funerali e nuovi percorsi legati al ciclo della vita.",
+    "url": "https://gofile.io/d/a5VDFL"
+  },
+  {
+    "id": "EP18",
+    "name": "Hobby & Attivit\u00e0",
+    "type": "Expansion Pack",
+    "size": "1,94 GB",
+    "description": "Con questa espansione puoi sviluppare hobby, attivit\u00e0 creative e nuove passioni quotidiane per i tuoi Sims.",
+    "url": "https://gofile.io/d/Oj8tF6"
+  },
+  {
+    "id": "EP19",
+    "name": "Natura Incantata",
+    "type": "Expansion Pack",
+    "size": "1,46 GB",
+    "description": "Con questa espansione puoi scoprire fate, magia naturale, piante speciali e luoghi pieni di meraviglia.",
+    "url": "https://gofile.io/d/tnFZgG"
+  },
+  {
+    "id": "EP20",
+    "name": "All'Avventura",
+    "type": "Expansion Pack",
+    "size": "1,95 GB",
+    "description": "Con questa espansione puoi organizzare vacanze attive, esplorare nuove mete e vivere attivit\u00e0 all'aperto.",
+    "url": "https://gofile.io/d/UO3hQb"
+  },
+  {
+    "id": "EP21",
+    "name": "Intrighi a Palazzo",
+    "type": "Expansion Pack",
+    "size": "2,15 GB",
+    "description": "Con questa espansione puoi gestire dinastie, scandali di corte e vite nobili nel mondo di Ondarion.",
+    "url": "https://gofile.io/d/K6qNZ1"
+  },
+  {
+    "id": "GP01",
+    "name": "Gita All'Aria Aperta",
+    "type": "Game Pack",
+    "size": "0,82 GB",
+    "description": "Con questo game pack puoi fare campeggio, raccogliere erbe e vivere vacanze nella natura.",
+    "url": "https://gofile.io/d/8OWjiv"
+  },
+  {
+    "id": "GP02",
+    "name": "Un Giorno alla Spa",
+    "type": "Game Pack",
+    "size": "0,71 GB",
+    "description": "Con questo game pack puoi rilassarti con yoga, meditazione, massaggi e trattamenti benessere.",
+    "url": "https://gofile.io/d/RAQgPv"
+  },
+  {
+    "id": "GP03",
+    "name": "Mangiamo Fuori",
+    "type": "Game Pack",
+    "size": "0,88 GB",
+    "description": "Con questo game pack puoi aprire, personalizzare e gestire un ristorante con menu e personale.",
+    "url": "https://gofile.io/d/dw0OL0"
+  },
+  {
+    "id": "GP04",
+    "name": "Vampiri",
+    "type": "Game Pack",
+    "size": "0,72 GB",
+    "description": "Con questo game pack puoi trasformare i Sims in creature della notte e sviluppare poteri oscuri.",
+    "url": "https://gofile.io/d/85OFpy"
+  },
+  {
+    "id": "GP05",
+    "name": "Vita da Genitori",
+    "type": "Game Pack",
+    "size": "0,79 GB",
+    "description": "Con questo game pack puoi guidare l'educazione dei figli e influenzare carattere, valori e comportamento.",
+    "url": "https://gofile.io/d/wbgDPo"
+  },
+  {
+    "id": "GP06",
+    "name": "Avventura nella Giungla",
+    "type": "Game Pack",
+    "size": "0,92 GB",
+    "description": "Con questo game pack puoi esplorare templi, raccogliere reliquie e affrontare pericoli nella giungla.",
+    "url": "https://gofile.io/d/UyuJuD"
+  },
+  {
+    "id": "GP07",
+    "name": "StrangerVille",
+    "type": "Game Pack",
+    "size": "0,68 GB",
+    "description": "Con questo game pack puoi indagare su anomalie misteriose e scoprire il segreto della cittadina.",
+    "url": "https://gofile.io/d/hctGvM"
+  },
+  {
+    "id": "GP08",
+    "name": "Regno della Magia",
+    "type": "Game Pack",
+    "size": "0,89 GB",
+    "description": "Con questo game pack puoi imparare incantesimi, preparare pozioni e diventare un incantatore.",
+    "url": "https://gofile.io/d/ArNGoM"
+  },
+  {
+    "id": "GP09",
+    "name": "Star Wars: Viaggio a Batuu",
+    "type": "Game Pack",
+    "size": "1,20 GB",
+    "description": "Con questo game pack puoi viaggiare a Batuu, scegliere fazioni e vivere missioni ispirate a Star Wars.",
+    "url": "https://gofile.io/d/yDyCBY"
+  },
+  {
+    "id": "GP10",
+    "name": "Arredi da Sogno",
+    "type": "Game Pack",
+    "size": "1,10 GB",
+    "description": "Con questo game pack puoi arricchire la casa con oggetti di arredamento e decorazioni ispirate al design elegante.",
+    "url": "https://gofile.io/d/g4mxt8"
+  },
+  {
+    "id": "GP11",
+    "name": "Il Mio Matrimonio",
+    "type": "Game Pack",
+    "size": "1,00 GB",
+    "description": "Con questo game pack puoi organizzare cerimonie, ricevimenti, tradizioni e momenti romantici personalizzati.",
+    "url": "https://gofile.io/d/lNwopH"
+  },
+  {
+    "id": "GP12",
+    "name": "Lupi Mannari",
+    "type": "Game Pack",
+    "size": "0,90 GB",
+    "description": "Con questo game pack puoi trasformare i Sims in lupi mannari, unirti a branchi ed esplorare Moonwood Mill.",
+    "url": "https://gofile.io/d/fMw9AI"
+  },
+  {
+    "id": "SP01",
+    "name": "Feste di Lusso Stuff",
+    "type": "Stuff Pack",
+    "size": "0,15 GB",
+    "description": "Con questo stuff pack puoi organizzare eventi eleganti con abiti, buffet e decorazioni raffinate.",
+    "url": "https://gofile.io/d/j9nO5z"
+  },
+  {
+    "id": "SP02",
+    "name": "Esterni da Sogno Stuff",
+    "type": "Stuff Pack",
+    "size": "0,16 GB",
+    "description": "Con questo stuff pack puoi rilassarti all'aperto con vasche idromassaggio e arredi da patio.",
+    "url": "https://gofile.io/d/MPermC"
+  },
+  {
+    "id": "SP03",
+    "name": "Cucina Perfetta Stuff",
+    "type": "Stuff Pack",
+    "size": "0,18 GB",
+    "description": "Con questo stuff pack puoi rinnovare la cucina e preparare gelati artigianali.",
+    "url": "https://gofile.io/d/OnsvLE"
+  },
+  {
+    "id": "SP04",
+    "name": "Accessori da Brivido Stuff",
+    "type": "Stuff Pack",
+    "size": "0,20 GB",
+    "description": "Con questo stuff pack puoi festeggiare con costumi, decorazioni e oggetti spettrali.",
+    "url": "https://gofile.io/d/9fiqRL"
+  },
+  {
+    "id": "SP05",
+    "name": "Serata Cinema Stuff",
+    "type": "Stuff Pack",
+    "size": "0,21 GB",
+    "description": "Con questo stuff pack puoi guardare film, mangiare popcorn e arredare in stile boh\u00e9mien.",
+    "url": "https://gofile.io/d/9686dT"
+  },
+  {
+    "id": "SP06",
+    "name": "Giardini Romantici Stuff",
+    "type": "Stuff Pack",
+    "size": "0,22 GB",
+    "description": "Con questo stuff pack puoi creare giardini eleganti e usare il pozzo dei desideri.",
+    "url": "https://gofile.io/d/O0xC4z"
+  },
+  {
+    "id": "SP07",
+    "name": "Stanza dei Bimbi Stuff",
+    "type": "Stuff Pack",
+    "size": "0,23 GB",
+    "description": "Con questo stuff pack puoi decorare camerette e aggiungere giochi creativi per bambini.",
+    "url": "https://gofile.io/d/y7jL5y"
+  },
+  {
+    "id": "SP08",
+    "name": "Divertimento in Cortile Stuff",
+    "type": "Stuff Pack",
+    "size": "0,20 GB",
+    "description": "Con questo stuff pack puoi aggiungere giochi acquatici, arredi esterni e attivit\u00e0 da giardino.",
+    "url": "https://gofile.io/d/vVjsJW"
+  },
+  {
+    "id": "SP09",
+    "name": "Vintage Glamour Stuff",
+    "type": "Stuff Pack",
+    "size": "0,25 GB",
+    "description": "Con questo stuff pack puoi assumere un maggiordomo e arredare con eleganza classica.",
+    "url": "https://gofile.io/d/oZJrVD"
+  },
+  {
+    "id": "SP10",
+    "name": "Serata Bowling Stuff",
+    "type": "Stuff Pack",
+    "size": "0,24 GB",
+    "description": "Con questo stuff pack puoi giocare a bowling, creare piste e usare arredi r\u00e9tro.",
+    "url": "https://gofile.io/d/uTgkHd"
+  },
+  {
+    "id": "SP11",
+    "name": "Fitness Stuff",
+    "type": "Stuff Pack",
+    "size": "0,22 GB",
+    "description": "Con questo stuff pack puoi allenarti con nuove attrezzature, abiti sportivi e parete da arrampicata.",
+    "url": "https://gofile.io/d/hU7O3d"
+  },
+  {
+    "id": "SP12",
+    "name": "Beb\u00e8 Stuff",
+    "type": "Stuff Pack",
+    "size": "0,21 GB",
+    "description": "Con questo stuff pack puoi aggiungere giochi, abiti e attivit\u00e0 dedicate ai pi\u00f9 piccoli.",
+    "url": "https://gofile.io/d/x3Jrv4"
+  },
+  {
+    "id": "SP13",
+    "name": "Giorno di Bucato Stuff",
+    "type": "Stuff Pack",
+    "size": "0,25 GB",
+    "description": "Con questo stuff pack puoi lavare, asciugare, stendere e gestire il bucato domestico.",
+    "url": "https://gofile.io/d/ehIxjJ"
+  },
+  {
+    "id": "SP14",
+    "name": "Il Mio Primo Animale Stuff",
+    "type": "Stuff Pack",
+    "size": "0,22 GB",
+    "description": "Con questo stuff pack puoi accogliere piccoli animali e usare nuovi accessori per animali domestici.",
+    "url": "https://gofile.io/d/Gyq9YK"
+  },
+  {
+    "id": "SP15",
+    "name": "Moschino Stuff",
+    "type": "Stuff Pack",
+    "size": "0,28 GB",
+    "description": "Con questo stuff pack puoi indossare moda Moschino e sviluppare la carriera fotografica.",
+    "url": "https://gofile.io/d/yWzyho"
+  },
+  {
+    "id": "SP16",
+    "name": "Mini Case Stuff",
+    "type": "Stuff Pack",
+    "size": "0,21 GB",
+    "description": "Con questo stuff pack puoi costruire abitazioni compatte con vantaggi speciali e arredi salvaspazio.",
+    "url": "https://gofile.io/d/xqhYR8"
+  },
+  {
+    "id": "SP17",
+    "name": "Portento del Punto Stuff",
+    "type": "Stuff Pack",
+    "size": "0,41 GB",
+    "description": "Con questo stuff pack puoi lavorare a maglia, creare capi e venderli online.",
+    "url": "https://gofile.io/d/tzsGa3"
+  },
+  {
+    "id": "SP18",
+    "name": "Fenomeni Paranormali Stuff",
+    "type": "Stuff Pack",
+    "size": "0,32 GB",
+    "description": "Con questo stuff pack puoi affrontare case infestate, evocare spiriti e diventare investigatore paranormale.",
+    "url": "https://gofile.io/d/y5cYmF"
+  },
+  {
+    "id": "SP20",
+    "name": "Moda Retr\u00f2 Kit",
+    "type": "Kit",
+    "size": "0,06 GB",
+    "description": "Con questo kit puoi vestire i Sims con abiti sportivi e nostalgia anni Novanta.",
+    "url": "https://gofile.io/d/VqEObZ"
+  },
+  {
+    "id": "SP21",
+    "name": "Cucina Rustica Kit",
+    "type": "Kit",
+    "size": "0,11 GB",
+    "description": "Con questo kit puoi arredare le cucine dei Sims con mobili e decorazioni in stile rustico e campagnolo.",
+    "url": "https://gofile.io/d/p3MHsP"
+  },
+  {
+    "id": "SP22",
+    "name": "Pulizie di Primavera Kit",
+    "type": "Kit",
+    "size": "0,12 GB",
+    "description": "Con questo kit puoi aggiungere polvere domestica, aspirapolvere e pulizie pi\u00f9 realistiche.",
+    "url": "https://gofile.io/d/XMdFTk"
+  },
+  {
+    "id": "SP23",
+    "name": "Oasi in Giardino Kit",
+    "type": "Kit",
+    "size": "0,13 GB",
+    "description": "Con questo kit puoi creare cortili eleganti con arredi ispirati all'architettura marocchina.",
+    "url": "https://gofile.io/d/SMMCil"
+  },
+  {
+    "id": "SP24",
+    "name": "Fashion Street Kit",
+    "type": "Kit",
+    "size": "0,14 GB",
+    "description": "Con questo kit puoi aggiungere capi ispirati alla moda di Mumbai e allo street style.",
+    "url": "https://gofile.io/d/6Hyprq"
+  },
+  {
+    "id": "SP25",
+    "name": "Loft Industriale Kit",
+    "type": "Kit",
+    "size": "0,15 GB",
+    "description": "Con questo kit puoi arredare loft urbani con metallo, mattoni e stile industriale.",
+    "url": "https://gofile.io/d/m6Rlnq"
+  },
+  {
+    "id": "SP26",
+    "name": "Viaggio a Incheon Kit",
+    "type": "Kit",
+    "size": "0,16 GB",
+    "description": "Con questo kit puoi vestire i Sims con look aeroportuali moderni ispirati alla Corea.",
+    "url": "https://gofile.io/d/WY7noy"
+  },
+  {
+    "id": "SP28",
+    "name": "Modern Menswear Kit",
+    "type": "Kit",
+    "size": "0,17 GB",
+    "description": "Con questo kit puoi vestire i Sims con moda maschile contemporanea firmata Stefan Cooke.",
+    "url": "https://gofile.io/d/AKdHb8"
+  },
+  {
+    "id": "SP29",
+    "name": "Interni Floreali Kit",
+    "type": "Kit",
+    "size": "0,17 GB",
+    "description": "Con questo kit puoi riempire stanze con piante, verde decorativo e atmosfere naturali.",
+    "url": "https://gofile.io/d/6eC8GB"
+  },
+  {
+    "id": "SP30",
+    "name": "Colori di Carnevale Kit",
+    "type": "Kit",
+    "size": "0,18 GB",
+    "description": "Con questo kit puoi aggiungere abiti vivaci ispirati alle feste e alla cultura brasiliana.",
+    "url": "https://gofile.io/d/R0fwuz"
+  },
+  {
+    "id": "SP31",
+    "name": "Arredamento Massimalista Kit",
+    "type": "Kit",
+    "size": "0,19 GB",
+    "description": "Con questo kit puoi decorare con colori audaci, motivi intensi e arredi eccentrici.",
+    "url": "https://gofile.io/d/UuUYIg"
+  },
+  {
+    "id": "SP32",
+    "name": "Chiaro di Luna Kit",
+    "type": "Kit",
+    "size": "0,20 GB",
+    "description": "Con questo kit puoi vestire i Sims con look eleganti per serate e appuntamenti.",
+    "url": "https://gofile.io/d/sibrOX"
+  },
+  {
+    "id": "SP33",
+    "name": "Piccoli Campeggiatori Kit",
+    "type": "Kit",
+    "size": "0,21 GB",
+    "description": "Con questo kit puoi creare aree gioco all'aperto con tende, coperte e attivit\u00e0 infantili.",
+    "url": "https://gofile.io/d/gSndAF"
+  },
+  {
+    "id": "SP34",
+    "name": "Mini Passi nella Moda Kit",
+    "type": "Kit",
+    "size": "0,22 GB",
+    "description": "Con questo kit puoi vestire i bambini con outfit moderni, colorati e pieni di personalit\u00e0.",
+    "url": "https://gofile.io/d/XHgmSi"
+  },
+  {
+    "id": "SP35",
+    "name": "Lusso nel Deserto Kit",
+    "type": "Kit",
+    "size": "0,23 GB",
+    "description": "Con questo kit puoi creare ambienti minimalisti e raffinati ispirati ai paesaggi desertici.",
+    "url": "https://gofile.io/d/ZLY1DV"
+  },
+  {
+    "id": "SP36",
+    "name": "Tinte Pastello Kit",
+    "type": "Kit",
+    "size": "0,24 GB",
+    "description": "Con questo kit puoi arredare con colori pastello, forme morbide e stile r\u00e9tro giocoso.",
+    "url": "https://gofile.io/d/P1yusQ"
+  },
+  {
+    "id": "SP37",
+    "name": "Oggettini Quotidiani Kit",
+    "type": "Kit",
+    "size": "0,25 GB",
+    "description": "Con questo kit puoi rendere le case vissute con oggetti personali e piccoli disordini realistici.",
+    "url": "https://gofile.io/d/Z4ao1x"
+  },
+  {
+    "id": "SP38",
+    "name": "Collezione Simtimia Kit",
+    "type": "Kit",
+    "size": "0,26 GB",
+    "description": "Con questo kit puoi vestire i Sims con intimo moderno e abbigliamento da casa.",
+    "url": "https://gofile.io/d/YWAKWh"
+  },
+  {
+    "id": "SP39",
+    "name": "Oggetti da Bagno Kit",
+    "type": "Kit",
+    "size": "0,27 GB",
+    "description": "Con questo kit puoi arricchire il bagno con prodotti, accessori e dettagli quotidiani.",
+    "url": "https://gofile.io/d/eLZInr"
+  },
+  {
+    "id": "SP40",
+    "name": "Oasi Verde Kit",
+    "type": "Kit",
+    "size": "0,28 GB",
+    "description": "Con questo kit puoi costruire serre, angoli verdi e spazi dedicati alle piante.",
+    "url": "https://gofile.io/d/0mBWvf"
+  },
+  {
+    "id": "SP41",
+    "name": "Tesori Nascosti Kit",
+    "type": "Kit",
+    "size": "0,29 GB",
+    "description": "Con questo kit puoi decorare con oggetti vintage, ricordi familiari e dettagli da cantina.",
+    "url": "https://gofile.io/d/q5zt7w"
+  },
+  {
+    "id": "SP42",
+    "name": "Grunge Revival Kit",
+    "type": "Kit",
+    "size": "0,30 GB",
+    "description": "Con questo kit puoi usare capi grunge, consumati e ribelli ispirati agli anni Novanta.",
+    "url": "https://gofile.io/d/hSSGCR"
+  },
+  {
+    "id": "SP43",
+    "name": "Angolo dei Libri Kit",
+    "type": "Kit",
+    "size": "0,31 GB",
+    "description": "Con questo kit puoi creare spazi lettura accoglienti con librerie, poltrone e dettagli caldi.",
+    "url": "https://gofile.io/d/dE6TgA"
+  },
+  {
+    "id": "SP44",
+    "name": "Un Tuffo in Piscina Kit",
+    "type": "Kit",
+    "size": "0,32 GB",
+    "description": "Con questo kit puoi vestire i Sims con costumi e look da bordo piscina.",
+    "url": "https://gofile.io/d/pf6hXY"
+  },
+  {
+    "id": "SP45",
+    "name": "Lusso Moderno Kit",
+    "type": "Kit",
+    "size": "0,33 GB",
+    "description": "Con questo kit puoi arredare case con design contemporaneo, elegante e di fascia alta.",
+    "url": "https://gofile.io/d/CXnYZx"
+  },
+  {
+    "id": "SP46",
+    "name": "Frenesia ai Fornelli Stuff",
+    "type": "Stuff Pack",
+    "size": "0,25 GB",
+    "description": "Con questo stuff pack puoi cucinare con nuovi elettrodomestici e vendere piatti preparati in casa.",
+    "url": "https://gofile.io/d/S4VEe5"
+  },
+  {
+    "id": "SP47",
+    "name": "Castelli di Classe Kit",
+    "type": "Kit",
+    "size": "0,26 GB",
+    "description": "Con questo kit puoi costruire ambienti medievali, castelli e dettagli architettonici storici.",
+    "url": "https://gofile.io/d/IF7j1m"
+  },
+  {
+    "id": "SP48",
+    "name": "Goth a Gogo Kit",
+    "type": "Kit",
+    "size": "0,27 GB",
+    "description": "Con questo kit puoi aggiungere look gotici, scuri e alternativi per Sims espressivi.",
+    "url": "https://gofile.io/d/Vya1AP"
+  },
+  {
+    "id": "SP49",
+    "name": "Creazioni di Cristallo Stuff",
+    "type": "Stuff Pack",
+    "size": "0,28 GB",
+    "description": "Con questo stuff pack puoi creare gioielli, lavorare cristalli e sfruttarne effetti speciali.",
+    "url": "https://gofile.io/d/qRMf72"
+  },
+  {
+    "id": "SP50",
+    "name": "Omaggio Urbano Kit",
+    "type": "Kit",
+    "size": "0,29 GB",
+    "description": "Con questo kit puoi vestire i Sims con moda streetwear ispirata alla cultura urbana.",
+    "url": "https://gofile.io/d/4WLJyL"
+  },
+  {
+    "id": "SP51",
+    "name": "Feste da Manuale Kit",
+    "type": "Kit",
+    "size": "0,30 GB",
+    "description": "Con questo kit puoi organizzare celebrazioni curate con decorazioni, tavoli e dettagli festivi.",
+    "url": "https://gofile.io/d/MAYnh0"
+  },
+  {
+    "id": "SP52",
+    "name": "Rifugio in Riviera Kit",
+    "type": "Kit",
+    "size": "0,31 GB",
+    "description": "Con questo kit puoi creare spazi esterni eleganti ispirati alle vacanze mediterranee.",
+    "url": "https://gofile.io/d/yb4aVz"
+  },
+  {
+    "id": "SP53",
+    "name": "Accogliente Bistrot Kit",
+    "type": "Kit",
+    "size": "0,32 GB",
+    "description": "Con questo kit puoi realizzare piccoli bistrot, caffetterie e locali romantici.",
+    "url": "https://gofile.io/d/CG0tmO"
+  },
+  {
+    "id": "SP54",
+    "name": "Atelier Kit",
+    "type": "Kit",
+    "size": "0,33 GB",
+    "description": "Con questo kit puoi creare studi artistici con oggetti, strumenti e dettagli creativi.",
+    "url": "https://gofile.io/d/Uig5Hw"
+  },
+  {
+    "id": "SP55",
+    "name": "Cameretta Fiabesca Kit",
+    "type": "Kit",
+    "size": "0,34 GB",
+    "description": "Con questo kit puoi decorare camerette incantate con arredi dolci e ispirati alle fiabe.",
+    "url": "https://gofile.io/d/IFW7z6"
+  },
+  {
+    "id": "SP56",
+    "name": "Pigiama Party Kit",
+    "type": "Kit",
+    "size": "0,35 GB",
+    "description": "Con questo kit puoi vestire i Sims per feste notturne, relax e serate tra amici.",
+    "url": "https://gofile.io/d/IFW7z6"
+  },
+  {
+    "id": "SP57",
+    "name": "Salotto Retr\u00f2 Kit",
+    "type": "Kit",
+    "size": "0,36 GB",
+    "description": "Con questo kit puoi arredare ambienti colorati, kitsch e ispirati al design r\u00e9tro.",
+    "url": "https://gofile.io/d/onQQSP"
+  },
+  {
+    "id": "SP58",
+    "name": "Postazione da Gamer Kit",
+    "type": "Kit",
+    "size": "0,37 GB",
+    "description": "Con questo kit puoi allestire spazi gaming comodi, tecnologici e pieni di accessori.",
+    "url": "https://gofile.io/d/fcJ1Gh"
+  },
+  {
+    "id": "SP59",
+    "name": "Rifugio Segreto Kit",
+    "type": "Kit",
+    "size": "0,38 GB",
+    "description": "Con questo kit puoi progettare stanze intime, eleganti e nascoste per momenti privati.",
+    "url": "https://gofile.io/d/113pyx"
+  },
+  {
+    "id": "SP60",
+    "name": "Casa Casanova Kit",
+    "type": "Kit",
+    "size": "0,39 GB",
+    "description": "Con questo kit puoi creare rifugi maschili eleganti, rilassati e pieni di carattere.",
+    "url": "https://gofile.io/d/RCzz1t"
+  },
+  {
+    "id": "SP61",
+    "name": "Soggiorno Raffinato Kit",
+    "type": "Kit",
+    "size": "0,40 GB",
+    "description": "Con questo kit puoi arredare salotti eleganti con mobili sofisticati e dettagli decorativi.",
+    "url": "https://gofile.io/d/TRWX3e"
+  },
+  {
+    "id": "SP62",
+    "name": "Business Chic Kit",
+    "type": "Kit",
+    "size": "0,41 GB",
+    "description": "Con questo kit puoi vestire i Sims con capi professionali, moderni e adatti all'ufficio.",
+    "url": "https://gofile.io/d/z1Jm73"
+  },
+  {
+    "id": "SP63",
+    "name": "Bagno Raffinato Kit",
+    "type": "Kit",
+    "size": "0,42 GB",
+    "description": "Con questo kit puoi progettare bagni eleganti, moderni e curati nei dettagli.",
+    "url": "https://gofile.io/d/MsQxsP"
+  },
+  {
+    "id": "SP64",
+    "name": "Dolce Attrazione Kit",
+    "type": "Kit",
+    "size": "0,43 GB",
+    "description": "Con questo kit puoi aggiungere look romantici, seducenti e curati per occasioni speciali.",
+    "url": "https://gofile.io/d/CdWkd8"
+  },
+  {
+    "id": "SP65",
+    "name": "Laboratorio di Restauro Kit",
+    "type": "Kit",
+    "size": "0,44 GB",
+    "description": "Con questo kit puoi creare spazi per riparare, restaurare e dare nuova vita agli oggetti.",
+    "url": "https://gofile.io/d/cAw8M7"
+  },
+  {
+    "id": "SP66",
+    "name": "Anni d'Oro Kit",
+    "type": "Kit",
+    "size": "0,45 GB",
+    "description": "Con questo kit puoi vestire Sims anziani con capi eleganti, comodi e pieni di personalit\u00e0.",
+    "url": "https://gofile.io/d/H9vnBF"
+  },
+  {
+    "id": "SP67",
+    "name": "Oggetti da Cucina Kit",
+    "type": "Kit",
+    "size": "0,46 GB",
+    "description": "Con questo kit puoi riempire cucine con piccoli accessori, utensili e dettagli realistici.",
+    "url": "https://gofile.io/d/cLDKBY"
+  },
+  {
+    "id": "SP68",
+    "name": "Casa di SpongeBob Kit",
+    "type": "Kit",
+    "size": "0,46 GB",
+    "description": "Con questo kit puoi ricreare ambienti ispirati a SpongeBob con arredi colorati e marini.",
+    "url": "https://gofile.io/d/DlGUn8"
+  },
+  {
+    "id": "SP69",
+    "name": "Abiti Autunnali Kit",
+    "type": "Kit",
+    "size": "0,47 GB",
+    "description": "Con questo kit puoi vestire i Sims con capi caldi, comodi e adatti alla stagione fredda.",
+    "url": "https://gofile.io/d/89av5w"
+  },
+  {
+    "id": "SP70",
+    "name": "Cameretta di SpongeBob Kit",
+    "type": "Kit",
+    "size": "0,48 GB",
+    "description": "Con questo kit puoi decorare camerette allegre con temi, colori e dettagli di SpongeBob.",
+    "url": "https://gofile.io/d/NETiKy"
+  },
+  {
+    "id": "SP71",
+    "name": "Fattoria di Famiglia Kit",
+    "type": "Kit",
+    "size": "0,48 GB",
+    "description": "Con questo kit puoi arredare case rurali con dettagli caldi, vissuti e familiari.",
+    "url": "https://gofile.io/d/r1qojx"
+  },
+  {
+    "id": "SP72",
+    "name": "Tutti Trucchi Kit",
+    "type": "Kit",
+    "size": "0,49 GB",
+    "description": "Con questo kit puoi aggiungere make-up creativi, colori intensi e dettagli espressivi per il viso.",
+    "url": "https://gofile.io/d/w6UMt5"
+  },
+  {
+    "id": "SP73",
+    "name": "Rifugio Moderno Kit",
+    "type": "Kit",
+    "size": "0,50 GB",
+    "description": "Con questo kit puoi costruire ambienti minimalisti, ordinati e contemporanei per abitazioni eleganti.",
+    "url": "https://gofile.io/d/ca15lA"
+  },
+  {
+    "id": "SP74",
+    "name": "Oro in Tavola Kit",
+    "type": "Kit",
+    "size": "0,51 GB",
+    "description": "Con questo kit puoi portare in casa cucine, dispense e dettagli ispirati alla vita contadina.",
+    "url": "https://gofile.io/d/NJx0Ci"
+  },
+  {
+    "id": "SP75",
+    "name": "Stanzetta delle Meraviglie Kit",
+    "type": "Kit",
+    "size": "0,52 GB",
+    "description": "Con questo kit puoi creare camerette fantasiose con arredi giocosi e dettagli pieni di immaginazione.",
+    "url": "https://gofile.io/d/r30ZDu"
+  },
+  {
+    "id": "SP76",
+    "name": "Stile Stellare Kit",
+    "type": "Kit",
+    "size": "0,52 GB",
+    "description": "Con questo kit puoi dare ai Sims look audaci, brillanti e ispirati al glamour spaziale.",
+    "url": "https://gofile.io/d/OyWN68"
+  },
+  {
+    "id": "SP77",
+    "name": "Ora del T\u00e8 Kit",
+    "type": "Kit",
+    "size": "0,53 GB",
+    "description": "Con questo kit puoi allestire spazi raffinati per t\u00e8, incontri eleganti e momenti tranquilli.",
+    "url": "https://gofile.io/d/e9stez"
+  },
+  {
+    "id": "SP78",
+    "name": "Abiti da Ballo in Maschera di Lady Bridgerton Kit",
+    "type": "Kit",
+    "size": "0,54 GB",
+    "description": "Con questo kit puoi vestire i Sims con abiti regali, romantici e ispirati ai balli mascherati.",
+    "url": "https://gofile.io/d/8jLQRx"
+  },
+  {
+    "id": "SP79",
+    "name": "Sala da Ballo in Maschera di Lady Bridgerton Kit",
+    "type": "Kit",
+    "size": "0,55 GB",
+    "description": "Con questo kit puoi arredare sale eleganti con decorazioni raffinate e atmosfere da ballo.",
+    "url": "https://gofile.io/d/oIHt2t"
+  },
+  {
+    "id": "SP81",
+    "name": "Praterie da Sogno Kit",
+    "type": "Kit",
+    "size": "0,55 GB",
+    "description": "Con questo kit puoi vestire i Sims con capi campestri morbidi, romantici e naturali.",
+    "url": "https://gofile.io/d/gyYXEQ"
+  },
+  {
+    "id": "SP82",
+    "name": "Charm in Cortile Kit",
+    "type": "Kit",
+    "size": "0,55 GB",
+    "description": "Con questo kit puoi abbellire cortili, giardini e spazi esterni con elementi decorativi accoglienti.",
+    "url": "https://gofile.io/d/istzpw"
+  },
+  {
+    "id": "FP01",
+    "name": "Pacchetto Celebrazione delle Festivit\u00e0",
+    "type": "Free Pack",
+    "size": "0,05 GB",
+    "description": "Con questo pack gratuito puoi aggiungere decorazioni festive, abiti a tema e oggetti stagionali per celebrare le feste.",
+    "url": "https://gofile.io/d/JQ9Qxp"
+  }
+]
