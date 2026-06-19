@@ -1,298 +1,243 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oops! Pagina non trovata</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background: #0a0a2a;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            overflow: hidden;
-        }
-        
-        .container {
-            text-align: center;
-            padding: 2rem;
-            max-width: 800px;
-            z-index: 10;
-            position: relative;
-        }
-        
-        .error-code {
-            font-size: 8rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            background: linear-gradient(45deg, #ff9a00, #ff2e63, #00c9ff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
-            animation: glow 3s infinite alternate;
-        }
-        
-        @keyframes glow {
-            0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
-            100% { text-shadow: 0 0 30px rgba(255, 255, 255, 0.7); }
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #ffffff;
-        }
-        
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-            color: #a0a0e0;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .astronaut {
-            width: 200px;
-            height: 200px;
-            margin: 0 auto 2rem;
-            position: relative;
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-        
-        .astronaut-body {
-            width: 120px;
-            height: 150px;
-            background: white;
-            border-radius: 50% 50% 40% 40%;
-            position: absolute;
-            top: 50px;
-            left: 40px;
-        }
-        
-        .helmet {
-            width: 130px;
-            height: 130px;
-            border: 10px solid #4a90e2;
-            border-radius: 50%;
-            position: absolute;
-            top: 20px;
-            left: 35px;
-            background: rgba(200, 220, 255, 0.1);
-        }
-        
-        .visor {
-            width: 80px;
-            height: 40px;
-            background: #a0d2ff;
-            border-radius: 20px;
-            position: absolute;
-            top: 60px;
-            left: 25px;
-            box-shadow: 0 0 15px rgba(160, 210, 255, 0.5);
-        }
-        
-        .stars {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-        
-        .star {
-            position: absolute;
-            background-color: white;
-            border-radius: 50%;
-            animation: twinkle var(--duration) infinite ease-in-out;
-        }
-        
-        @keyframes twinkle {
-            0%, 100% { opacity: 0.2; }
-            50% { opacity: 1; }
-        }
-        
-        .shooting-star {
-            position: absolute;
-            width: 100px;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, white);
-            transform: rotate(-45deg);
-            animation: shoot 5s infinite;
-        }
-        
-        @keyframes shoot {
-            0% {
-                opacity: 0;
-                transform: translateX(0) translateY(0) rotate(-45deg);
-            }
-            10% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-                transform: translateX(500px) translateY(500px) rotate(-45deg);
-            }
-        }
-        
-        .planet {
-            position: absolute;
-            border-radius: 50%;
-            background: radial-gradient(circle at 30% 30%, #4a235a, #1a1a2e);
-            width: 80px;
-            height: 80px;
-            bottom: 50px;
-            right: 50px;
-            box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
-            animation: rotate 40s infinite linear;
-        }
-        
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .message {
-            font-style: italic;
-            margin-top: 2rem;
-            color: #d0d0ff;
-            font-size: 1rem;
-        }
-        
-        @media (max-width: 768px) {
-            .error-code {
-                font-size: 6rem;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .astronaut {
-                width: 150px;
-                height: 150px;
-            }
-            
-            .astronaut-body {
-                width: 90px;
-                height: 110px;
-                top: 40px;
-                left: 30px;
-            }
-            
-            .helmet {
-                width: 100px;
-                height: 100px;
-                top: 25px;
-                left: 25px;
-            }
-            
-            .visor {
-                width: 60px;
-                height: 30px;
-                top: 45px;
-                left: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Pagina non trovata | PianetaSim</title>
+  <meta name="description" content="Pagina non trovata">
+  <link rel="icon" type="image/png" href="Immagini/plumboblogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0f;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #f0f0f5;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      max-width: 700px;
+      z-index: 10;
+      position: relative;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+    .error-code {
+      font-size: clamp(5rem, 15vw, 10rem);
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #00e676, #bb86fc, #ff4081);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      0% { filter: brightness(1); }
+      100% { filter: brightness(1.2); }
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #f0f0f5;
+    }
+
+    p {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+      color: #8888a0;
+    }
+
+    .astronaut {
+      width: 160px; height: 160px;
+      margin: 0 auto 1.5rem;
+      position: relative;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .helmet {
+      width: 100px; height: 100px;
+      border: 3px solid rgba(187, 134, 252, 0.4);
+      border-radius: 50%;
+      position: absolute; top: 15px; left: 30px;
+      background: rgba(187, 134, 252, 0.05);
+      box-shadow: 0 0 30px rgba(187, 134, 252, 0.1);
+    }
+
+    .visor {
+      width: 60px; height: 30px;
+      background: linear-gradient(135deg, rgba(0, 230, 118, 0.3), rgba(64, 196, 255, 0.3));
+      border-radius: 50%;
+      position: absolute; top: 45px; left: 20px;
+      box-shadow: 0 0 20px rgba(0, 230, 118, 0.2);
+    }
+
+    .helmet-body {
+      width: 80px; height: 100px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 40% 40% 30% 30%;
+      position: absolute; top: 75px; left: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .message {
+      font-style: italic;
+      margin-bottom: 2rem;
+      color: #666690;
+      font-size: 0.95rem;
+    }
+
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, rgba(0, 230, 118, 0.15), rgba(0, 230, 118, 0.05));
+      color: #00e676;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      border: 1px solid rgba(0, 230, 118, 0.2);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .home-link:hover {
+      background: linear-gradient(135deg, rgba(0, 230, 118, 0.25), rgba(0, 230, 118, 0.1));
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0, 230, 118, 0.15);
+      border-color: rgba(0, 230, 118, 0.4);
+    }
+
+    .stars {
+      position: fixed; inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle var(--duration) infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+
+    .shooting-star {
+      position: absolute;
+      width: 80px; height: 1.5px;
+      background: linear-gradient(90deg, transparent, #ffffff);
+      transform: rotate(-45deg);
+      animation: shoot 6s infinite;
+    }
+
+    @keyframes shoot {
+      0% { opacity: 0; transform: translateX(0) translateY(0) rotate(-45deg); }
+      10% { opacity: 1; }
+      100% { opacity: 0; transform: translateX(400px) translateY(400px) rotate(-45deg); }
+    }
+
+    .planet {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(187, 134, 252, 0.3), rgba(10, 10, 15, 0.8));
+      width: 60px; height: 60px;
+      bottom: 40px; right: 40px;
+      box-shadow: 0 0 30px rgba(187, 134, 252, 0.2);
+      animation: rotate 60s infinite linear;
+    }
+
+    @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    ::selection { background: rgba(0, 230, 118, 0.3); color: #fff; }
+
+    @media (max-width: 768px) {
+      .astronaut { width: 120px; height: 120px; }
+      .helmet { width: 75px; height: 75px; top: 12px; left: 22px; }
+      .visor { width: 45px; height: 22px; top: 35px; left: 15px; }
+      .helmet-body { width: 60px; height: 75px; top: 55px; left: 30px; }
+      .planet { width: 40px; height: 40px; bottom: 20px; right: 20px; }
+      .shooting-star { width: 60px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="stars" id="stars"></div>
-    <div class="shooting-star" style="top: 20%; left: 10%; animation-delay: 2s;"></div>
-    <div class="shooting-star" style="top: 60%; left: 5%; animation-delay: 5s;"></div>
-    <div class="shooting-star" style="top: 80%; left: 15%; animation-delay: 8s;"></div>
-    
-    <div class="planet"></div>
-    
-    <div class="container">
-        <div class="astronaut">
-            <div class="helmet">
-                <div class="visor"></div>
-            </div>
-            <div class="astronaut-body"></div>
-        </div>
-        
-        <div class="error-code">404</div>
-        <h1>Oops! Pagina persa nello spazio</h1>
-        <p>La pagina che stai cercando è volata via come una stella cadente. Forse è atterrata su un altro pianeta o è stata risucchiata da un buco nero.</p>
-        
-        <p class="message">Torna alla home o continua a esplorare l'universo del nostro sito!</p>
+  <div class="stars" id="stars"></div>
+
+  <div class="container">
+    <div class="astronaut">
+      <div class="helmet">
+        <div class="visor"></div>
+      </div>
+      <div class="helmet-body"></div>
     </div>
 
-    <script>
-        // Crea stelle casuali
-        const starsContainer = document.getElementById('stars');
-        const starCount = 150;
-        
-        for (let i = 0; i < starCount; i++) {
-            const star = document.createElement('div');
-            star.classList.add('star');
-            
-            // Dimensioni casuali
-            const size = Math.random() * 3;
-            star.style.width = `${size}px`;
-            star.style.height = `${size}px`;
-            
-            // Posizione casuale
-            star.style.left = `${Math.random() * 100}%`;
-            star.style.top = `${Math.random() * 100}%`;
-            
-            // Durata dell'animazione casuale
-            const duration = 2 + Math.random() * 3;
-            star.style.setProperty('--duration', `${duration}s`);
-            
-            // Ritardo casuale
-            star.style.animationDelay = `${Math.random() * 5}s`;
-            
-            starsContainer.appendChild(star);
-        }
-        
-        // Aggiungi altre stelle cadenti
-        function createShootingStar() {
-            const shootingStar = document.createElement('div');
-            shootingStar.classList.add('shooting-star');
-            
-            // Posizione casuale
-            shootingStar.style.top = `${Math.random() * 100}%`;
-            shootingStar.style.left = `${Math.random() * 100}%`;
-            
-            // Durata casuale
-            const duration = 3 + Math.random() * 4;
-            shootingStar.style.animationDuration = `${duration}s`;
-            
-            document.body.appendChild(shootingStar);
-            
-            // Rimuovi dopo l'animazione
-            setTimeout(() => {
-                shootingStar.remove();
-            }, duration * 1000);
-        }
-        
-        // Crea stelle cadenti periodicamente
-        setInterval(createShootingStar, 3000);
-        
-        // Crea stelle cadenti iniziali
-        for (let i = 0; i < 3; i++) {
-            setTimeout(createShootingStar, i * 1000);
-        }
-    </script>
+    <div class="error-code">404</div>
+    <h1>Oops! Pagina persa nello spazio</h1>
+    <p>La pagina che stai cercando &egrave; volata via come una stella cadente. Forse &egrave; atterrata su un altro pianeta o &egrave; stata risucchiata da un buco nero.</p>
+    <p class="message">Torna alla home o continua a esplorare l'universo del nostro sito!</p>
+    <a href="index.html" class="home-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Torna alla Home
+    </a>
+  </div>
+
+  <script>
+    const starsContainer = document.getElementById('stars');
+    const starCount = 120;
+
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      const size = Math.random() * 2.5 + 0.5;
+      star.style.width = size + 'px';
+      star.style.height = size + 'px';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.setProperty('--duration', (2 + Math.random() * 3) + 's');
+      star.style.animationDelay = Math.random() * 5 + 's';
+      starsContainer.appendChild(star);
+    }
+
+    function createShootingStar() {
+      const el = document.createElement('div');
+      el.classList.add('shooting-star');
+      el.style.top = Math.random() * 100 + '%';
+      el.style.left = Math.random() * 100 + '%';
+      el.style.animationDuration = (3 + Math.random() * 4) + 's';
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 7000);
+    }
+
+    setInterval(createShootingStar, 4000);
+    for (let i = 0; i < 3; i++) setTimeout(createShootingStar, i * 1000);
+  </script>
 </body>
 </html>

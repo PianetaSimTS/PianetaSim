@@ -3,32 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabella - MOD</title>
+  <title>Tabella - MOD | PianetaSim</title>
+  <meta name="description" content="Tabella delle mod e traduzioni per The Sims 4">
   <link rel="icon" type="image/png" href="Immagini/plumboblogo.png">
   <link rel="stylesheet" href="css/tables.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
- 
   <h1 id="page-title">Tabella - Mod</h1>
-  
-  <div class="navbar">
-      <a href="index.html" class="back-arrow">
-    <img src="Immagini/plumboblogonoscritte.png" alt="Home Logo" width="50" height="auto">
-    <span class="home-text">HOME</span>
-  </a>
-    <a href="mod.html" id="mod-link" class="active">MOD & TRADUZIONI</a>
-    <a href="mod18.html" id="mod18-link">MOD +18 & TRADUZIONI</a>
-    <a href="animazioniww18.html" id="animazioniww18-link">ANIMAZIONI WICKEDWHIMS +18</a>
-    <a href="#" id="desc-mod-btn">HELP SIM</a>
-    <a href="storie.html" id="storie-link">RACCONTI & STORIE</a>
-    <a href="https://ohmproject.my.canva.site/tabellamod" 
-       id="guide-btn" 
-       class="guide-button"
-       target="_blank" 
-       rel="noopener noreferrer">
-       📋 GUIDA TABELLA
-    </a>
 
+  <div class="navbar">
+    <a href="index.html" class="back-arrow">
+      <img src="Immagini/plumboblogonoscritte.png" alt="Home" width="28" height="auto">
+      <span class="home-text">HOME</span>
+    </a>
+    <a href="mod.html" id="mod-link" class="active">MOD & TRADUZIONI</a>
+    <a href="mod18.html" id="mod18-link">MOD +18</a>
+    <a href="animazioniww18.html" id="animazioniww18-link">ANIMAZIONI</a>
+    <a href="#" id="desc-mod-btn">HELP SIM</a>
+    <a href="storie.html" id="storie-link">RACCONTI</a>
+    <a href="https://ohmproject.my.canva.site/tabellamod" id="guide-btn" class="guide-button" target="_blank" rel="noopener noreferrer">GUIDA TABELLA</a>
     <div class="theme-toggle">
       <label class="switch">
         <input type="checkbox" id="theme-switch">
@@ -39,52 +35,46 @@
   </div>
 
   <div class="guide-note">LEGGI LA GUIDA ALLA TABELLA PER TUTTE LE INFO.</div>
-  
+
   <div class="form-container">
     <div>
       <input type="text" id="search" oninput="filterTable()" placeholder="Cerca...">
     </div>
-    
     <div>
-      <label for="filter-status" id="filter-status-label">Stato:</label>
-      <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
+      <label for="filter-status-label">Stato:</label>
+      <button onclick="toggleDropdown('filter-status-dropdown')">Filtra</button>
       <div id="filter-status-dropdown" style="display:none;">
-        <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
-        <label><input type="checkbox" value="Rotta" id="status-rotta" onchange="filterTable()"> Rotta</label><br>
-        <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
-        <label><input type="checkbox" value="Sconosciuta" id="status-sconosciuta" onchange="filterTable()"> Sconosciuta</label><br>
-        <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label><br>
-        <label><input type="checkbox" value="Obsoleta" id="status-obsoleta" onchange="filterTable()"> Obsoleta</label><br>
-        <label><input type="checkbox" value="Problemi Minori" id="status-problemi-minori" onchange="filterTable()"> Problemi Minori</label>
+        <label><input type="checkbox" value="Compatibile" onchange="filterTable()"> Compatibile</label>
+        <label><input type="checkbox" value="Rotta" onchange="filterTable()"> Rotta</label>
+        <label><input type="checkbox" value="Aggiornata" onchange="filterTable()"> Aggiornata</label>
+        <label><input type="checkbox" value="Sconosciuta" onchange="filterTable()"> Sconosciuta</label>
+        <label><input type="checkbox" value="Nuova" onchange="filterTable()"> Nuova</label>
+        <label><input type="checkbox" value="Obsoleta" onchange="filterTable()"> Obsoleta</label>
+        <label><input type="checkbox" value="Problemi Minori" onchange="filterTable()"> Problemi Minori</label>
       </div>
     </div>
-  
     <div>
-      <label for="filter-translation" id="filter-translation-label">Traduzione:</label>
-      <button onclick="toggleDropdown('filter-translation-dropdown')">▼</button>
+      <label>Traduzione:</label>
+      <button onclick="toggleDropdown('filter-translation-dropdown')">Filtra</button>
       <div id="filter-translation-dropdown" style="display:none;">
-        <label><input type="checkbox" value="Compatibile" id="translation-inclusa" onchange="filterTable()"> Compatibile</label><br>
-        <label><input type="checkbox" value="Aggiornata" id="translation-non-necessaria" onchange="filterTable()"> Aggiornata</label><br>
-        <label><input type="checkbox" value="Non necessaria" id="translation-in-lavorazione" onchange="filterTable()"> Non necessaria</label><br>
-        <label><input type="checkbox" value="Inclusa" id="translation-da-controllare" onchange="filterTable()"> Inclusa</label><br>
-        <label><input type="checkbox" value="Nuova" id="translation-nuova" onchange="filterTable()"> Nuova</label>
-        <label><input type="checkbox" value="In lavorazione" id="translation-nuova" onchange="filterTable()"> In lavorazione</label>
-        <label><input type="checkbox" value="Da controllare" id="translation-nuova" onchange="filterTable()"> Da controllare</label>
-        <label><input type="checkbox" value="Da aggiornare" id="translation-nuova" onchange="filterTable()"> Da aggiornare</label>
-        <label><input type="checkbox" value="Non disponibile" id="translation-nuova" onchange="filterTable()"> Non disponibile</label>
+        <label><input type="checkbox" value="Compatibile" onchange="filterTable()"> Compatibile</label>
+        <label><input type="checkbox" value="Aggiornata" onchange="filterTable()"> Aggiornata</label>
+        <label><input type="checkbox" value="Non necessaria" onchange="filterTable()"> Non necessaria</label>
+        <label><input type="checkbox" value="Inclusa" onchange="filterTable()"> Inclusa</label>
+        <label><input type="checkbox" value="Nuova" onchange="filterTable()"> Nuova</label>
+        <label><input type="checkbox" value="In lavorazione" onchange="filterTable()"> In lavorazione</label>
+        <label><input type="checkbox" value="Da controllare" onchange="filterTable()"> Da controllare</label>
+        <label><input type="checkbox" value="Da aggiornare" onchange="filterTable()"> Da aggiornare</label>
+        <label><input type="checkbox" value="Non disponibile" onchange="filterTable()"> Non disponibile</label>
       </div>
     </div>
-    
     <div>
-      <label for="filter-category" id="filter-category-label">Categoria:</label>
-      <button onclick="toggleDropdown('filter-category-dropdown')">▼</button>
-      <div id="filter-category-dropdown" style="display:none;">
-        <!-- Le checkbox delle categorie verranno aggiunte dinamicamente qui -->
-      </div>
+      <label>Categoria:</label>
+      <button onclick="toggleDropdown('filter-category-dropdown')">Filtra</button>
+      <div id="filter-category-dropdown" style="display:none;"></div>
     </div>
-    
     <div>
-      <label for="filter-favorites" id="filter-favorites-label">Preferite:</label>
+      <label>Preferite:</label>
       <select id="filter-favorites" onchange="filterTable()">
         <option value="">Tutte</option>
         <option value="true">Solo Preferite</option>
@@ -92,58 +82,48 @@
     </div>
   </div>
 
-  <!-- POPUP HELP SIM -->
   <div id="popup" class="popup">
     <div class="popup-content">
-      <h2>🚀 HELP SIM</h2>
-      <p>
-        Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! 
-        Con pochi click, potrai aggiungere le tue mod preferite, tenere tutto sotto controllo e persino dare una bella ripulita ai file cache di The Sims 4!
-        Che tu voglia ampliare il tuo gioco con nuove mod o semplicemente tenere tutto in ordine, sei nel posto giusto.
-      </p>
-      
-      <p>Ora rilassati, personalizza il tuo gioco e lascia che <strong>Help Sim</strong> faccia il resto! 🎮✨</p>
-      
-      <hr>
-
-      <h3>⚠️ PICCOLE ATTENZIONI PRIMA DELLO SCARICO ⚠️</h3>
-      <ul style="list-style-type: none; padding-left: 0;">
-        <li>★ Se l'antivirus blocca il programma, clicca su <strong>"Esegui comunque"</strong>.<br>
-          Il programma è sicuro! In quanto creato interamente da noi.</li>
-        <li>★ Prima dell'uso, <strong>leggi la guida</strong> disponibile nella home del programma.</li>
-        <li>★ Supporta solo i file delle mod e delle traduzioni in <strong>formato ZIP</strong>.</li>
-        <li>★ <strong>Non supporta</strong> i file singoli <em>.package</em> (CC e mod non zip).</li>
-        <li>★ <strong>Non funziona</strong> con la cartella di The Sims in unità esterne (HDD, SSD, USB, ecc.).</li>
+      <h2>HELP SIM</h2>
+      <p>Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! Con pochi click, potrai aggiungere le tue mod preferite, tenere tutto sotto controllo e persino dare una bella ripulita ai file cache di The Sims 4!</p>
+      <p>Ora rilassati, personalizza il tuo gioco e lascia che <strong>Help Sim</strong> faccia il resto!</p>
+      <h3>PICCOLE ATTENZIONI PRIMA DELLO SCARICO</h3>
+      <ul>
+        <li>Se l'antivirus blocca il programma, clicca su "Esegui comunque". Il programma è sicuro!</li>
+        <li>Prima dell'uso, leggi la guida disponibile nella home del programma.</li>
+        <li>Supporta solo i file delle mod e delle traduzioni in formato ZIP.</li>
+        <li>Non supporta i file singoli .package (CC e mod non zip).</li>
+        <li>Non funziona con la cartella di The Sims in unità esterne.</li>
       </ul>
-
       <div class="popup-buttons">
-        <button id="download-btn">📥 Scarica</button>
-        <button id="close-btn">❌ Chiudi</button>
+        <button id="download-btn">Scarica</button>
+        <button id="close-btn">Chiudi</button>
       </div>
     </div>
   </div>
-  
-  <!-- Tabella -->
-  <table id="mods-table">
-<thead>
-  <tr>
-    <th onclick="sortTable(0)">AUTORE <span class="sort-arrow" id="arrow-0"></span></th>
-    <th onclick="sortTable(1)">DOWNLOAD MOD <span class="sort-arrow" id="arrow-1"></span></th>
-    <th onclick="sortTable(2)">STATO PATCH <span class="sort-arrow" id="arrow-2"></span></th>
-    <th onclick="sortTable(3)">DATA ULTIMO AGGIORNAMENTO MOD <span class="sort-arrow" id="arrow-3"></span></th>
-    <th onclick="sortTable(4)">STATO TRADUZIONE <span class="sort-arrow" id="arrow-4"></span></th>
-    <th onclick="sortTable(5)">DOWNLOAD & DATA TRADUZIONE <span class="sort-arrow" id="arrow-5"></span></th>
-    <th onclick="sortTable(6)">MOD RICHIESTE <span class="sort-arrow" id="arrow-6"></span></th>
-    <th onclick="sortTable(7)">DLC RICHIESTI <span class="sort-arrow" id="arrow-7"></span></th>
-    <th onclick="sortTable(8)">NOTE <span class="sort-arrow" id="arrow-8"></span></th>
-  </tr>
-</thead>
-    <tbody>
-      <!-- Le righe verranno aggiunte tramite JavaScript -->
-    </tbody>
-  </table>
 
-  <a href="#top" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
+  <div class="main-content">
+    <div class="table-wrapper">
+      <table id="mods-table">
+        <thead>
+          <tr>
+            <th onclick="sortTable(0)">AUTORE <span class="sort-arrow" id="arrow-0"></span></th>
+            <th onclick="sortTable(1)">DOWNLOAD MOD <span class="sort-arrow" id="arrow-1"></span></th>
+            <th onclick="sortTable(2)">STATO PATCH <span class="sort-arrow" id="arrow-2"></span></th>
+            <th onclick="sortTable(3)">DATA ULTIMO AGGIORNAMENTO MOD <span class="sort-arrow" id="arrow-3"></span></th>
+            <th onclick="sortTable(4)">STATO TRADUZIONE <span class="sort-arrow" id="arrow-4"></span></th>
+            <th onclick="sortTable(5)">DOWNLOAD & DATA TRADUZIONE <span class="sort-arrow" id="arrow-5"></span></th>
+            <th onclick="sortTable(6)">MOD RICHIESTE <span class="sort-arrow" id="arrow-6"></span></th>
+            <th onclick="sortTable(7)">DLC RICHIESTI <span class="sort-arrow" id="arrow-7"></span></th>
+            <th onclick="sortTable(8)">NOTE <span class="sort-arrow" id="arrow-8"></span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <a href="#" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
 
   <script src="js/theme.js"></script>
   <script src="js/mods.js"></script>

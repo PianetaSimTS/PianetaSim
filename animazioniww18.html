@@ -3,115 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabella - Animazioni WW +18</title>
+  <title>Tabella - Animazioni WW +18 | PianetaSim</title>
+  <meta name="description" content="Tabella delle animazioni WickedWhims per The Sims 4">
   <link rel="icon" type="image/png" href="Immagini/plumboblogo.png">
   <link rel="stylesheet" href="css/tables.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <h1 id="page-title">Tabella - Animazioni WickedWhims +18</h1>
 
-  
-  <div class="sticky-header">
-    <h1 id="page-title">Tabella - Animazioni WickedWhims +18</h1>
-    
-    <div class="navbar">
-        <a href="index.html" class="back-arrow">
-    <img src="Immagini/plumboblogonoscritte.png" alt="Home Logo" width="50" height="auto">
-    <span class="home-text">HOME</span>
-  </a>
-      <a href="mod.html" id="mod-link">MOD & TRADUZIONI</a>
-      <a href="mod18.html" id="mod18-link">MOD +18 & TRADUZIONI</a>
-      <a href="animazioniww18.html" id="animazioniww18-link" class="active">ANIMAZIONI WICKEDWHIMS +18</a>
-      <a href="#" id="desc-mod-btn">HELP SIM</a>
-      <a href="storie.html" id="storie-link">RACCONTI & STORIE</a>
-      <a href="https://ohmproject.my.canva.site/animazioni" 
-         id="guide-btn" 
-         class="guide-button"
-         target="_blank" 
-         rel="noopener noreferrer">
-         📋 GUIDA TABELLA
-      </a>
-      
-      <div class="theme-toggle">
-        <label class="switch">
-          <input type="checkbox" id="theme-switch">
-          <span class="slider"></span>
-        </label>
-        <span id="theme-label">Tema Scuro</span>
-      </div>
-    </div>
-    
-    <div class="form-container">
-      <div>
-        <input type="text" id="search" oninput="filterTable()" placeholder="Cerca...">
-      </div>
-      
-      <div>
-        <label for="filter-status" id="filter-status-label">Stato:</label>
-        <button onclick="toggleDropdown('filter-status-dropdown')">▼</button>
-        <div id="filter-status-dropdown" style="display:none;">
-          <label><input type="checkbox" value="Compatibile" id="status-compatibile" onchange="filterTable()"> Compatibile</label><br>
-          <label><input type="checkbox" value="Aggiornata" id="status-aggiornata" onchange="filterTable()"> Aggiornata</label><br>
-          <label><input type="checkbox" value="Nuova" id="status-nuova" onchange="filterTable()"> Nuova</label>
-        </div>
-      </div>
-      
-      <div>
-        <label for="filter-favorites" id="filter-favorites-label">Preferite:</label>
-        <select id="filter-favorites" onchange="filterTable()">
-          <option value="">Tutte</option>
-          <option value="true">Solo Preferite</option>
-        </select>
-      </div>
+  <div class="navbar">
+    <a href="index.html" class="back-arrow">
+      <img src="Immagini/plumboblogonoscritte.png" alt="Home" width="28" height="auto">
+      <span class="home-text">HOME</span>
+    </a>
+    <a href="mod.html" id="mod-link">MOD & TRADUZIONI</a>
+    <a href="mod18.html" id="mod18-link">MOD +18</a>
+    <a href="animazioniww18.html" id="animazioniww18-link" class="active">ANIMAZIONI</a>
+    <a href="#" id="desc-mod-btn">HELP SIM</a>
+    <a href="storie.html" id="storie-link">RACCONTI</a>
+    <a href="https://ohmproject.my.canva.site/animazioni" id="guide-btn" class="guide-button" target="_blank" rel="noopener noreferrer">GUIDA TABELLA</a>
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="theme-switch">
+        <span class="slider"></span>
+      </label>
+      <span id="theme-label">Tema Scuro</span>
     </div>
   </div>
-  
-  <!-- Popup per la descrizione -->
+
+  <div class="form-container">
+    <div>
+      <input type="text" id="search" oninput="filterTable()" placeholder="Cerca...">
+    </div>
+    <div>
+      <label>Stato:</label>
+      <button onclick="toggleDropdown('filter-status-dropdown')">Filtra</button>
+      <div id="filter-status-dropdown" style="display:none;">
+        <label><input type="checkbox" value="Compatibile" onchange="filterTable()"> Compatibile</label>
+        <label><input type="checkbox" value="Aggiornata" onchange="filterTable()"> Aggiornata</label>
+        <label><input type="checkbox" value="Nuova" onchange="filterTable()"> Nuova</label>
+      </div>
+    </div>
+    <div>
+      <label>Preferite:</label>
+      <select id="filter-favorites" onchange="filterTable()">
+        <option value="">Tutte</option>
+        <option value="true">Solo Preferite</option>
+      </select>
+    </div>
+  </div>
+
   <div id="popup" class="popup">
     <div class="popup-content">
-      <h2>🚀 HELP SIM</h2>
-      <p>
-        Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! 
-        Con pochi click, potrai aggiungere le tue mod preferite, tenere tutto sotto controllo e persino dare una bella ripulita ai file cache di The Sims 4!
-        Che tu voglia ampliare il tuo gioco con nuove mod o semplicemente tenere tutto in ordine, sei nel posto giusto.
-      </p>
-      
-      <p>Ora rilassati, personalizza il tuo gioco e lascia che <strong>Help Sim</strong> faccia il resto! 🎮✨</p>
-      
-      <hr>
-
-      <h3>⚠️ PICCOLE ATTENZIONI PRIMA DELLO SCARICO ⚠️</h3>
-      <ul style="list-style-type: none; padding-left: 0;">
-        <li>★ Se l'antivirus blocca il programma, clicca su <strong>"Esegui comunque"</strong>.<br>
-          Il programma è sicuro! In quanto creato interamente da noi.</li>
-        <li>★ Prima dell'uso, <strong>leggi la guida</strong> disponibile nella home del programma.</li>
-        <li>★ Supporta solo i file delle mod e delle traduzioni in <strong>formato ZIP</strong>.</li>
-        <li>★ <strong>Non supporta</strong> i file singoli <em>.package</em> (CC e mod non zip).</li>
-        <li>★ <strong>Non funziona</strong> con la cartella di The Sims in unità esterne (HDD, SSD, USB, ecc.).</li>
+      <h2>HELP SIM</h2>
+      <p>Stanco di installare mod e traduzioni a mano? Help Sim è qui per salvarti! Con pochi click, potrai aggiungere le tue mod preferite, tenere tutto sotto controllo e persino dare una bella ripulita ai file cache di The Sims 4!</p>
+      <p>Ora rilassati, personalizza il tuo gioco e lascia che <strong>Help Sim</strong> faccia il resto!</p>
+      <h3>PICCOLE ATTENZIONI PRIMA DELLO SCARICO</h3>
+      <ul>
+        <li>Se l'antivirus blocca il programma, clicca su "Esegui comunque". Il programma è sicuro!</li>
+        <li>Prima dell'uso, leggi la guida disponibile nella home del programma.</li>
+        <li>Supporta solo i file delle mod e delle traduzioni in formato ZIP.</li>
+        <li>Non supporta i file singoli .package (CC e mod non zip).</li>
+        <li>Non funziona con la cartella di The Sims in unità esterne.</li>
       </ul>
-
       <div class="popup-buttons">
-        <button id="download-btn">📥 Scarica</button>
-        <button id="close-btn">❌ Chiudi</button>
+        <button id="download-btn">Scarica</button>
+        <button id="close-btn">Chiudi</button>
       </div>
     </div>
   </div>
 
   <div class="main-content">
-    <table id="animazioni-table">
-      <thead>
-        <tr>
-          <th onclick="sortTable(0)">AUTORE <span class="sort-arrow" id="arrow-0"></span></th>
-          <th onclick="sortTable(1)">STATO ANIMAZIONE <span class="sort-arrow" id="arrow-1"></span></th>
-          <th onclick="sortTable(2)">DATA AGGIORNAMENTO ANIMAZIONE <span class="sort-arrow" id="arrow-2"></span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Le righe verranno caricate dinamicamente dal JSON -->
-      </tbody>
-    </table>
+    <div class="table-wrapper">
+      <table id="animazioni-table">
+        <thead>
+          <tr>
+            <th onclick="sortTable(0)">AUTORE <span class="sort-arrow" id="arrow-0"></span></th>
+            <th onclick="sortTable(1)">STATO ANIMAZIONE <span class="sort-arrow" id="arrow-1"></span></th>
+            <th onclick="sortTable(2)">DATA AGGIORNAMENTO ANIMAZIONE <span class="sort-arrow" id="arrow-2"></span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
   </div>
 
-  <a href="#top" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
+  <a href="#" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
 
   <script src="js/animazioniww18.js"></script>
   <script src="js/script.js"></script>
