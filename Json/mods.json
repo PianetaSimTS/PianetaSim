@@ -1,21 +1,5 @@
 [
   {
-    "Author": " Littlbowbub",
-    "ModName": "Medieval Cookbook",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/littlbowbub/posts/medieval-04-06-113000160",
-    "DataUltimaModifica": "04/06/2026",
-    "Traduttore": "di Ricky's Mom",
-    "LinkTraduzione": "https://www.patreon.com/RickysMom/posts/traduzione-del-141280641?collection=2012877",
-    "Translation": "compatibile",
-    "DataTraduzione": "07/02/2026",
-    "Categoria": "Varie",
-    "MODIT": "NECESSARIE: Homestead Helper di  Littlbowbub",
-    "DLCIT": "",
-    "DescrizioneIT": "Questo è un solo un libro di cucina in stile medievale utilizzato per raccogliere le ricette che sono da scaricare separatamente. ",
-    "NoteIT": "Le ricette sono scaricabili a parte, le trovate sul Patreon di Littlbowbub nella raccolta chiamata: Medieval Corner"
-  },
-  {
     "Author": "Adeepindigo",
     "ModName": "Babysitting Gigs",
     "Status": "compatibile",
@@ -273,6 +257,22 @@
   },
   {
     "Author": "Adeepindigo",
+    "ModName": "Pet Careers",
+    "Status": "compatibile",
+    "SiteLink": "https://adeepindigomods.itch.io/pet-careers",
+    "DataUltimaModifica": "01/06/2026",
+    "Traduttore": "di LadySilka",
+    "LinkTraduzione": "https://www.patreon.com/LadySilka/posts/ita-pet-careers-155649440",
+    "Translation": "compatibile",
+    "DataTraduzione": "15/04/2026",
+    "Categoria": "Carriere",
+    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Core Library di Lot 51",
+    "DLCIT": "NECESSARI: Gioco Base - Cani e Gatti",
+    "DescrizioneIT": "Questa mod aggiunge 3 carriere per cani e gatti, ispirato a The Sims 2 Pets. Gli animali domestici ora possono entrare nel settore sicurezza, spettacolo o servizi.",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Adeepindigo",
     "ModName": "Shared Tuning",
     "Status": "compatibile",
     "SiteLink": "https://adeepindigomods.itch.io/utility-mods",
@@ -365,22 +365,6 @@
     "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo",
     "DLCIT": "NECESSARI: Gioco Base RACCOMANDATI: Nuove stelle - Vita in città",
     "DescrizioneIT": "Questa mod rivisita la carriera dello scrittore, aggiungendo nuove interazioni, obiettivi e opzioni di carriera, rendendo l'esperienza più ricca e dinamica.\n",
-    "NoteIT": ""
-  },
-  {
-    "Author": "Adeepindigo",
-    "ModName": "Pet Careers",
-    "Status": "compatibile",
-    "SiteLink": "https://adeepindigomods.itch.io/pet-careers",
-    "DataUltimaModifica": "01/06/2026",
-    "Traduttore": "di LadySilka",
-    "LinkTraduzione": "https://www.patreon.com/LadySilka/posts/ita-pet-careers-155649440",
-    "Translation": "compatibile",
-    "DataTraduzione": "15/04/2026",
-    "Categoria": "Carriere",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Core Library di Lot 51",
-    "DLCIT": "NECESSARI: Gioco Base - Cani e Gatti",
-    "DescrizioneIT": "Questa mod aggiunge 3 carriere per cani e gatti, ispirato a The Sims 2 Pets. Gli animali domestici ora possono entrare nel settore sicurezza, spettacolo o servizi.",
     "NoteIT": ""
   },
   {
@@ -689,6 +673,22 @@
   },
   {
     "Author": "Ellesimsworld",
+    "ModName": "Attachment Styles",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/ellesimsworld/posts/download-styles-109014111",
+    "DataUltimaModifica": "12/05/2026",
+    "Traduttore": "di LadySilka",
+    "LinkTraduzione": "https://www.patreon.com/LadySilka/posts/ita-attachment-156705791",
+    "Translation": "compatibile",
+    "DataTraduzione": "01/05/2026",
+    "Categoria": "Tratti",
+    "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Questa mod aggiunge quattro tratti che rappresentano i quattro principali stili di attaccamento: Sicuro, Ansioso, Evitante e Disorganizzato.",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Ellesimsworld",
     "ModName": "Origins",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/preview-origins-155576051",
@@ -734,22 +734,6 @@
     "DLCIT": "RICHIESTI: Gioco base",
     "DescrizioneIT": "Romantica: A Lover’s Type Mod” di ellesimsworld espande il tratto “Romantico” rendendolo più definito. Permette ai Sims dai giovani adulti agli anziani di scegliere fra sei tipi di amante (Passionale, Gentile, Piccante, Possessivo, Viziato, Noncurante), ognuno con interazioni sociali uniche, buff personalizzati e notifiche. Include anche un addon opzionale “Lovey Dovey.",
     "NoteIT": null
-  },
-  {
-    "Author": "Ellesimsworld",
-    "ModName": "Attachment Styles",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/ellesimsworld/posts/download-styles-109014111",
-    "DataUltimaModifica": "12/05/2026",
-    "Traduttore": "di LadySilka",
-    "LinkTraduzione": "https://www.patreon.com/LadySilka/posts/ita-attachment-156705791",
-    "Translation": "compatibile",
-    "DataTraduzione": "01/05/2026",
-    "Categoria": "Tratti",
-    "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Questa mod aggiunge quattro tratti che rappresentano i quattro principali stili di attaccamento: Sicuro, Ansioso, Evitante e Disorganizzato.",
-    "NoteIT": ""
   },
   {
     "Author": "Ellesimsworld",
@@ -942,6 +926,22 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa impone un’uniforme scolastica identica per tutti gli studenti (anche quelli di squadra o club), sceglie una sola opzione colore tra le cinque disponibili (nero, grigio, rosa, plaid verde, bordeaux).",
     "NoteIT": null
+  },
+  {
+    "Author": "Littlbowbub",
+    "ModName": "Medieval Cookbook",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/littlbowbub/posts/medieval-04-06-113000160",
+    "DataUltimaModifica": "04/06/2026",
+    "Traduttore": "di Ricky's Mom",
+    "LinkTraduzione": "https://www.patreon.com/RickysMom/posts/traduzione-del-141280641?collection=2012877",
+    "Translation": "compatibile",
+    "DataTraduzione": "07/02/2026",
+    "Categoria": "Varie",
+    "MODIT": "NECESSARIE: Homestead Helper di  Littlbowbub",
+    "DLCIT": "",
+    "DescrizioneIT": "Questo è un solo un libro di cucina in stile medievale utilizzato per raccogliere le ricette che sono da scaricare separatamente. ",
+    "NoteIT": "Le ricette sono scaricabili a parte, le trovate sul Patreon di Littlbowbub nella raccolta chiamata: Medieval Corner"
   },
   {
     "Author": "Littlbowbub",
@@ -1649,22 +1649,6 @@
   },
   {
     "Author": "Midnitetech",
-    "ModName": "Real Estate Career",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/midnitetech/posts/real-estate-156169057",
-    "DataUltimaModifica": "20/04/2026",
-    "Traduttore": "di AngiePixelWords",
-    "LinkTraduzione": "https://www.patreon.com/AngiePixelWords/posts/nuova-traduzione-158497218",
-    "Translation": "compatibile",
-    "DataTraduzione": "17/05/2026",
-    "Categoria": "Carriere",
-    "MODIT": "NECESSARIE Core Library di Lot 51 - Midnitetech_modlibrary di Midnitetech",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Aggiunge la carriera (rabbithole) da Agente Immobiliare.",
-    "NoteIT": ""
-  },
-  {
-    "Author": "Midnitetech",
     "ModName": "midnitetech_modlibrary",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/midnitetech/posts/midnitetech-121729961",
@@ -1677,6 +1661,22 @@
     "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Serve per il funzionamento di altre mod.",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Midnitetech",
+    "ModName": "Real Estate Career",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/midnitetech/posts/real-estate-156169057",
+    "DataUltimaModifica": "20/04/2026",
+    "Traduttore": "di AngiePixelWords",
+    "LinkTraduzione": "https://www.patreon.com/AngiePixelWords/posts/nuova-traduzione-158497218",
+    "Translation": "compatibile",
+    "DataTraduzione": "17/05/2026",
+    "Categoria": "Carriere",
+    "MODIT": "NECESSARIE Core Library di Lot 51 - Midnitetech_modlibrary di Midnitetech",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Aggiunge la carriera (rabbithole) da Agente Immobiliare.",
     "NoteIT": ""
   },
   {
