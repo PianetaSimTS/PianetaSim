@@ -865,22 +865,6 @@
   },
   {
     "Author": "Littlbowbub",
-    "ModName": "Homestead Helper",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/littlbowbub/posts/homestead-helper-99658534?pr=true",
-    "DataUltimaModifica": "04/06/2026",
-    "Traduttore": "di Leo",
-    "LinkTraduzione": "https://www.patreon.com/leotranslations/posts/homestead-helper-161018237",
-    "Translation": "nuova",
-    "DataTraduzione": "13/06/2026",
-    "Categoria": "Utilità",
-    "MODIT": "Nessuna",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "L'Homestead Helper è una mod di supporto che contiene elementi grafici per le mod di cucina di littlbowbub. ",
-    "NoteIT": "Serve per il funzionamento di altre mod."
-  },
-  {
-    "Author": "Littlbowbub",
     "ModName": "Grannies Cookbook",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/littlbowbub/posts/grannies-04-06-35854516",
@@ -894,6 +878,22 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "La Grannies Cookbook è una mod che aggiunge un ricettario personalizzato al tuo gioco, permettendo ai tuoi Sim di cucinare una vasta gamma di ricette esclusive non presenti nel gioco base!",
     "NoteIT": "Le ricette sono scaricabili a parte, le trovate sempre qui sul sito con il nome: Ricette Grannies Cookbook di Littlbowbub"
+  },
+  {
+    "Author": "Littlbowbub",
+    "ModName": "Homestead Helper",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/littlbowbub/posts/homestead-helper-99658534?pr=true",
+    "DataUltimaModifica": "04/06/2026",
+    "Traduttore": "di Leo",
+    "LinkTraduzione": "https://www.patreon.com/leotranslations/posts/homestead-helper-161018237",
+    "Translation": "nuova",
+    "DataTraduzione": "13/06/2026",
+    "Categoria": "Utilità",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "L'Homestead Helper è una mod di supporto che contiene elementi grafici per le mod di cucina di littlbowbub. ",
+    "NoteIT": "Serve per il funzionamento di altre mod."
   },
   {
     "Author": "Littlbowbub",
