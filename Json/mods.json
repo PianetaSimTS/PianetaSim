@@ -641,6 +641,22 @@
   },
   {
     "Author": "Ellesimsworld",
+    "ModName": "Origins",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/preview-origins-155576051",
+    "DataUltimaModifica": "16/04/2026",
+    "Traduttore": "di Leo",
+    "LinkTraduzione": "https://www.patreon.com/posts/origins-gameplay-158072173",
+    "Translation": "compatibile",
+    "DataTraduzione": "12/05/2026",
+    "Categoria": "Gameplay",
+    "MODIT": " XML Injector di Scumbumbo/Triplis/LittleMsSam ",
+    "DLCIT": "Al Lavoro!",
+    "DescrizioneIT": "Espande lo storytelling aggiungendo origini culturali, accenti, genetica, documenti ufficiali e sistemi narrativi profondi per creare Sims più realistici e unici.",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Ellesimsworld",
     "ModName": "Plumjob",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/download-plumjob-122583054",
@@ -2176,8 +2192,24 @@
     "NoteIT": null
   },
   {
-    "Author": "SonozakiSisters/Katie Mods ",
-    "ModName": "The One With The Loving Parents",
+    "Author": "SonozakiSisters/Katie Mods",
+    "ModName": "Requirements for Mega Interactions",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/raccolta-mega-di-160407296",
+    "DataUltimaModifica": "31/12/2025",
+    "Traduttore": null,
+    "LinkTraduzione": null,
+    "Translation": "non necessaria",
+    "DataTraduzione": "",
+    "Categoria": "Varie",
+    "MODIT": "Nessuna",
+    "DLCIT": "Gioco Base",
+    "DescrizioneIT": "Serve per il funzionamento delle Mod della serie Mega Interactions di SonozakiSisters e Katie Mods",
+    "NoteIT": "Il link per il download della mod rimanda al post Patreon di Sha, dove troverete la traduzione e  la GUIDA per l’installazione delle mod."
+  },
+  {
+    "Author": "SonozakiSisters/Katie Mods",
+    "ModName": "The One Where They Are Friends",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/raccolta-mega-di-160407296",
     "DataUltimaModifica": "31/12/2025",
@@ -2188,7 +2220,7 @@
     "Categoria": "Gameplay",
     "MODIT": "Core Library di Lot 51 - Mood Pack di Lumpinou - Requirements for Mega Interactions di SonozakiSisters e Katie Mods",
     "DLCIT": "Gioco Base",
-    "DescrizioneIT": "Approfondisci e rendi più tenera la relazione tra genitori e figli , con nuove 54 interazioni suddivise in: Impara a Conoscere, Affetto, Rassicura e Loda. Questa mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters.",
+    "DescrizioneIT": "Espandi l'amicizia e rendi queste relazioni più profonde, con nuove 47 interazioni suddivise in:  Supporto Emotivo, Lamentati, Chiacchiera e Complimenti. Questa mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters",
     "NoteIT": "Il link per il download della mod rimanda al post Patreon di Sha, dove troverete la traduzione e  la GUIDA per l’installazione delle mod."
   },
   {
@@ -2224,8 +2256,8 @@
     "NoteIT": "Il link per il download della mod rimanda al post Patreon di Sha, dove troverete la traduzione e  la GUIDA per l’installazione delle mod."
   },
   {
-    "Author": "SonozakiSisters/Katie Mods",
-    "ModName": "The One Where They Are Friends",
+    "Author": "SonozakiSisters/Katie Mods ",
+    "ModName": "The One With The Loving Parents",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/raccolta-mega-di-160407296",
     "DataUltimaModifica": "31/12/2025",
@@ -2236,23 +2268,7 @@
     "Categoria": "Gameplay",
     "MODIT": "Core Library di Lot 51 - Mood Pack di Lumpinou - Requirements for Mega Interactions di SonozakiSisters e Katie Mods",
     "DLCIT": "Gioco Base",
-    "DescrizioneIT": "Espandi l'amicizia e rendi queste relazioni più profonde, con nuove 47 interazioni suddivise in:  Supporto Emotivo, Lamentati, Chiacchiera e Complimenti. Questa mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters",
-    "NoteIT": "Il link per il download della mod rimanda al post Patreon di Sha, dove troverete la traduzione e  la GUIDA per l’installazione delle mod."
-  },
-  {
-    "Author": "SonozakiSisters/Katie Mods",
-    "ModName": "Requirements for Mega Interactions",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/posts/raccolta-mega-di-160407296",
-    "DataUltimaModifica": "31/12/2025",
-    "Traduttore": null,
-    "LinkTraduzione": null,
-    "Translation": "non necessaria",
-    "DataTraduzione": "",
-    "Categoria": "Varie",
-    "MODIT": "Nessuna",
-    "DLCIT": "Gioco Base",
-    "DescrizioneIT": "Serve per il funzionamento delle Mod della serie Mega Interactions di SonozakiSisters e Katie Mods",
+    "DescrizioneIT": "Approfondisci e rendi più tenera la relazione tra genitori e figli , con nuove 54 interazioni suddivise in: Impara a Conoscere, Affetto, Rassicura e Loda. Questa mod fa parte della serie Mega Interactions originariamente creata e supportata da KatieMods per poi essere stata ripresa da SonozakiSisters.",
     "NoteIT": "Il link per il download della mod rimanda al post Patreon di Sha, dove troverete la traduzione e  la GUIDA per l’installazione delle mod."
   },
   {
@@ -2389,10 +2405,10 @@
     "Status": "compatibile",
     "SiteLink": "https://wonderfulwhims.com/download/",
     "DataUltimaModifica": "15/02/2026",
-    "Traduttore": "di LadyPsycoTrilly",
-    "LinkTraduzione": null,
-    "Translation": "in lavorazione",
-    "DataTraduzione": null,
+    "Traduttore": "di Leo",
+    "LinkTraduzione": "https://www.patreon.com/leotranslations/posts/wonderful-whims-161521369",
+    "Translation": "nuova",
+    "DataTraduzione": "19/06/2026",
     "Categoria": "Gameplay",
     "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base",
@@ -2481,22 +2497,6 @@
   },
   {
     "Author": "Vellesa",
-    "ModName": "Talks by Age: Pregnancy Talks",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/posts/mod-talks-by-age-154236113",
-    "DataUltimaModifica": "01/04/2026",
-    "Traduttore": "di Sha",
-    "LinkTraduzione": "https://www.patreon.com/posts/raccolta-talks-156859942",
-    "Translation": "compatibile",
-    "DataTraduzione": "02/05/2026",
-    "Categoria": "Gameplay",
-    "MODIT": "Nessuna",
-    "DLCIT": "Gioco Base",
-    "DescrizioneIT": "Aggiunge nuove interazioni durante la gravidanza.",
-    "NoteIT": ""
-  },
-  {
-    "Author": "Vellesa",
     "ModName": "Talks by Age: Autumn Vibes",
     "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/mod-talks-by-age-140882066",
@@ -2509,6 +2509,38 @@
     "MODIT": "Nessuna",
     "DLCIT": "Gioco Base",
     "DescrizioneIT": "Aggiunge nuove interazioni autunnali.",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Vellesa",
+    "ModName": "Talks by Age: Children",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/127997255",
+    "DataUltimaModifica": "06/05/2025",
+    "Traduttore": "di Ricky's Mom",
+    "LinkTraduzione": "https://www.patreon.com/posts/140833251",
+    "Translation": "compatibile",
+    "DataTraduzione": "09/11/2025",
+    "Categoria": "Gameplay",
+    "MODIT": "Nessuna",
+    "DLCIT": "Gioco Base",
+    "DescrizioneIT": "Aggiunge nuove interazioni per i Sim bambini.",
+    "NoteIT": ""
+  },
+  {
+    "Author": "Vellesa",
+    "ModName": "Talks by Age: Pregnancy Talks",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/posts/mod-talks-by-age-154236113",
+    "DataUltimaModifica": "01/04/2026",
+    "Traduttore": "di Sha",
+    "LinkTraduzione": "https://www.patreon.com/posts/raccolta-talks-156859942",
+    "Translation": "compatibile",
+    "DataTraduzione": "02/05/2026",
+    "Categoria": "Gameplay",
+    "MODIT": "Nessuna",
+    "DLCIT": "Gioco Base",
+    "DescrizioneIT": "Aggiunge nuove interazioni durante la gravidanza.",
     "NoteIT": ""
   },
   {
@@ -2541,22 +2573,6 @@
     "MODIT": "Nessuna",
     "DLCIT": "Gioco Base",
     "DescrizioneIT": "Aggiunge nuove interazioni per i Sim adolescenti.",
-    "NoteIT": ""
-  },
-  {
-    "Author": "Vellesa",
-    "ModName": "Talks by Age: Children",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/posts/127997255",
-    "DataUltimaModifica": "06/05/2025",
-    "Traduttore": "di Ricky's Mom",
-    "LinkTraduzione": "https://www.patreon.com/posts/140833251",
-    "Translation": "compatibile",
-    "DataTraduzione": "09/11/2025",
-    "Categoria": "Gameplay",
-    "MODIT": "Nessuna",
-    "DLCIT": "Gioco Base",
-    "DescrizioneIT": "Aggiunge nuove interazioni per i Sim bambini.",
     "NoteIT": ""
   },
   {
@@ -2622,21 +2638,5 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!",
     "NoteIT": null
-  },
-  {
-    "Author": "Ellesimsworld",
-    "ModName": "Origins",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/posts/preview-origins-155576051",
-    "DataUltimaModifica": "16/04/2026",
-    "Traduttore": "di Leo",
-    "LinkTraduzione": "https://www.patreon.com/posts/origins-gameplay-158072173",
-    "Translation": "compatibile",
-    "DataTraduzione": "12/05/2026",
-    "Categoria": "Gameplay",
-    "MODIT": " XML Injector di Scumbumbo/Triplis/LittleMsSam ",
-    "DLCIT": "Al Lavoro!",
-    "DescrizioneIT": "Espande lo storytelling aggiungendo origini culturali, accenti, genetica, documenti ufficiali e sistemi narrativi profondi per creare Sims più realistici e unici.",
-    "NoteIT": ""
   }
 ]
