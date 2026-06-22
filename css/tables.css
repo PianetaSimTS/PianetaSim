@@ -337,6 +337,22 @@ td a:hover { color: var(--accent-green); text-decoration: underline; }
   box-shadow: 0 0 25px rgba(187, 134, 252, 0.2);
 }
 
+.global-tooltip {
+  position: fixed;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 400px;
+  z-index: 99999;
+  pointer-events: none;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  word-wrap: break-word;
+}
+
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--bg-card-hover); border-radius: 3px; }
