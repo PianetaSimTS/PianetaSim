@@ -298,7 +298,6 @@ function getSelectedStatuses() {
     if (document.getElementById('status-compatibile')?.checked) statuses.push('Compatibile');
     if (document.getElementById('status-aggiornata')?.checked) statuses.push('Aggiornata');
     if (document.getElementById('status-nuova')?.checked) statuses.push('Nuova');
-    
     return statuses;
 }
 
@@ -367,28 +366,23 @@ function updateSortArrows() {
 // Toggle dropdown
 function toggleDropdown(dropdownId) {
     const dropdown = document.getElementById(dropdownId);
-    if (dropdown) {
-        dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
-    }
+    if (!dropdown) return;
+    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
 }
 
 // Setup event listeners
 function setupEventListeners() {
-    const searchInput = document.getElementById('search');
-    if (searchInput) {
-        searchInput.addEventListener('input', filterTable);
-    }
-    
-    const favoriteFilter = document.getElementById('filter-favorites');
-    if (favoriteFilter) {
-        favoriteFilter.addEventListener('change', filterTable);
-    }
-    
-    document.querySelectorAll('#filter-status-dropdown input[type="checkbox"]').forEach(checkbox => {
-        checkbox.addEventListener('change', filterTable);
-    });
-    
     setupPopupButtons();
+
+    // Filtri: evita doppie chiamate del change event sui checkbox
+    var cbState = {};
+    document.querySelectorAll('#filter-status-dropdown input[type="checkbox"]').forEach(function(cb) {
+        cb.addEventListener('change', function() {
+            if (cbState[this.id] === this.checked) return;
+            cbState[this.id] = this.checked;
+            filterTable();
+        });
+    });
 }
 
 // Setup dei bottoni del popup

@@ -42,9 +42,9 @@
       <label>Stato:</label>
       <button onclick="toggleDropdown('filter-status-dropdown')">Filtra</button>
       <div id="filter-status-dropdown" style="display:none;">
-        <label><input type="checkbox" value="Compatibile" onchange="filterTable()"> Compatibile</label>
-        <label><input type="checkbox" value="Aggiornata" onchange="filterTable()"> Aggiornata</label>
-        <label><input type="checkbox" value="Nuova" onchange="filterTable()"> Nuova</label>
+        <label><input type="checkbox" id="status-compatibile" value="Compatibile"> Compatibile</label>
+        <label><input type="checkbox" id="status-aggiornata" value="Aggiornata"> Aggiornata</label>
+        <label><input type="checkbox" id="status-nuova" value="Nuova"> Nuova</label>
       </div>
     </div>
     <div>
@@ -93,8 +93,8 @@
 
   <a href="#" class="scroll-to-top" id="scrollToTop" title="Torna in alto">&#x25B2;</a>
 
-  <script src="js/animazioniww18.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/animazioniww18.js"></script>
   <script src="js/theme.js"></script>
 </body>
 </html>

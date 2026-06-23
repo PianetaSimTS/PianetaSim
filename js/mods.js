@@ -407,6 +407,7 @@ function checkModUpdates(mods) {
 
 // FUNZIONE filterTable
 function filterTable() {
+
   const searchValue = document.getElementById("search").value.toLowerCase();
 
   const selectedStatuses = Array.from(document.querySelectorAll('#filter-status-dropdown input:checked'))

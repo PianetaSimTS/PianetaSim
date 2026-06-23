@@ -21,21 +21,35 @@ document.getElementById("download-btn").addEventListener("click", function() {
 // Gestione dropdown
 function toggleDropdown(id) {
   var dropdown = document.getElementById(id);
+  if (!dropdown) return;
   var button = dropdown.previousElementSibling;
 
-  if (dropdown.style.display === 'none' || dropdown.style.display === '') {
-    dropdown.style.display = 'block';
-    setTimeout(function() {
-      dropdown.style.opacity = 1;
-    }, 10);
-    button.innerHTML = '▲';
-  } else {
+  // Se già aperto, chiudi
+  if (dropdown.style.display === 'block') {
     dropdown.style.opacity = 0;
     setTimeout(function() {
       dropdown.style.display = 'none';
     }, 300);
-    button.innerHTML = '▼';
+    if (button) { button.innerHTML = '▼'; }
+    return;
   }
+
+  // Chiudi tutti gli altri dropdown prima di aprire questo
+  document.querySelectorAll('.form-container > div > div[id$="-dropdown"]').forEach(function(el) {
+    if (el.id !== id && el.style.display === 'block') {
+      el.style.opacity = 0;
+      el.style.display = 'none';
+      var btn = el.previousElementSibling;
+      if (btn) { btn.innerHTML = '▼'; }
+    }
+  });
+
+  // Apri questo
+  dropdown.style.display = 'block';
+  setTimeout(function() {
+    dropdown.style.opacity = 1;
+  }, 10);
+  if (button) { button.innerHTML = '▲'; }
 }
 
 function createStars() {
