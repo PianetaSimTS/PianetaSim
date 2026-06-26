@@ -370,9 +370,26 @@ function toggleDropdown(dropdownId) {
     dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
 }
 
+// Setup warning popup
+function setupWarningPopup() {
+    const warningPopup = document.getElementById('warning-popup');
+    const warningCloseBtn = document.getElementById('warning-close-btn');
+
+    if (warningPopup && warningCloseBtn) {
+        setTimeout(function() {
+            warningPopup.style.display = 'flex';
+        }, 1500);
+
+        warningCloseBtn.addEventListener('click', function() {
+            warningPopup.style.display = 'none';
+        });
+    }
+}
+
 // Setup event listeners
 function setupEventListeners() {
     setupPopupButtons();
+    setupWarningPopup();
 
     // Filtri: evita doppie chiamate del change event sui checkbox
     var cbState = {};

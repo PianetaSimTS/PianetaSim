@@ -331,6 +331,36 @@ td a:hover { color: var(--accent-green); text-decoration: underline; }
 #close-btn { background: rgba(255, 64, 129, 0.15); color: var(--accent-pink); }
 #close-btn:hover { background: rgba(255, 64, 129, 0.25); transform: scale(1.05); }
 
+.warning-popup {
+  border: 2px solid rgba(255, 87, 34, 0.3);
+}
+
+.warning-popup .popup-content h2 {
+  background: linear-gradient(135deg, #ff5252, #ff9800);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+.warning-link {
+  color: var(--accent-blue);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.warning-link:hover {
+  color: var(--accent-green);
+}
+
+#warning-close-btn {
+  background: linear-gradient(135deg, #ff5252, #ff9800);
+  color: #fff;
+}
+
+#warning-close-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 87, 34, 0.3);
+}
+
 .scroll-to-top {
   position: fixed; bottom: 24px; right: 24px;
   display: none; width: 44px; height: 44px;
