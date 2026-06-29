@@ -218,12 +218,23 @@ function formatModRequirements(text, modsList) {
     if (!mod.SiteLink || mod.SiteLink === '#') return;
     
     // Costruisci le varianti del nome da cercare
-    const variants = [
+    let variants = [
       mod.ModName,
       `${mod.ModName} di ${mod.Author}`,
       `${mod.ModName} di ${mod.Author?.split(' ')[0]}`, // Solo primo nome dell'autore
     ].filter(v => v && v.length > 3);
     
+    // Also try without common suffixes like (+18), (18+) for matching
+    const cleanVariants = [];
+    variants.forEach(v => {
+        cleanVariants.push(v);
+        const cleaned = v.replace(/\s*\((\+?\d+|\w+)\)\s*/g, ' ').trim();
+        if (cleaned !== v && cleaned.length > 3) {
+            cleanVariants.push(cleaned);
+        }
+    });
+    variants = cleanVariants;
+
     variants.forEach(variant => {
       // Escape dei caratteri speciali per la regex
       const escapedVariant = variant.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
