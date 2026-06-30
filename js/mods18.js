@@ -66,9 +66,12 @@ function updateCategoryDropdown(mods) {
 }
 
 function loadModsFromJson() {
-  fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/mods18.json')
-    .then(response => response.json())
-    .then(mods => {
+  Promise.all([
+    fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/mods18.json').then(r => r.json()),
+    fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/mods.json').then(r => r.json()).catch(() => [])
+  ])
+    .then(([mods18, mods]) => {
+      const allMods = [...mods18, ...mods];
       const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
       const table = document.getElementById("mods-table").getElementsByTagName("tbody")[0];
       table.innerHTML = '';
@@ -77,7 +80,7 @@ function loadModsFromJson() {
       const modMap = new Map();
       const modByNameAndAuthor = new Map();
       
-      mods.forEach(mod => {
+      mods18.forEach(mod => {
         // Mappa per nome esatto
         modMap.set(mod.ModName, mod);
         
@@ -89,9 +92,9 @@ function loadModsFromJson() {
       });
 
       // Aggiorna il dropdown delle categorie PRIMA di popolare la tabella
-      updateCategoryDropdown(mods);
+      updateCategoryDropdown(mods18);
 
-      mods.forEach(mod => {
+      mods18.forEach(mod => {
         const isFavorite = favorites.includes(mod.ModName);
         const newRow = table.insertRow();
 
@@ -104,7 +107,7 @@ function loadModsFromJson() {
         const translatorLink = mod.LinkTraduzione || '';
 
         // Formatta i requisiti con grassetto e link alle mod necessarie
-        const formattedModReqs = formatModRequirements(mod.MODIT || '', mods);
+        const formattedModReqs = formatModRequirements(mod.MODIT || '', allMods);
         const formattedDlcReqs = formatRequirements(mod.DLCIT || '');
         
         // Ottieni le note
@@ -162,7 +165,7 @@ const translatorCell = translatorLink
         `;
       });
 
-      checkModUpdates(mods);
+      checkModUpdates(mods18);
       
       // Applica i filtri dopo aver popolato la tabella
       setTimeout(() => {
