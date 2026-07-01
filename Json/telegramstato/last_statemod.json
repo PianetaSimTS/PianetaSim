@@ -880,22 +880,6 @@
     "NoteIT": ""
   },
   {
-    "Author": "KiaraSims4Mods",
-    "ModName": "Elenco Generale",
-    "Status": "sconosciuta",
-    "SiteLink": "https://docs.google.com/spreadsheets/d/1Rk3K_Z_6Wf1t5V02PDA008wOOKfKjVwIWpw8mlglngM/edit?gid=1364221733#gid=1364221733",
-    "DataUltimaModifica": null,
-    "Traduttore": "di LoryNa",
-    "LinkTraduzione": "https://www.lorynamods.com/",
-    "Translation": null,
-    "DataTraduzione": null,
-    "Categoria": null,
-    "MODIT": "",
-    "DLCIT": "",
-    "DescrizioneIT": "Tabella generale con tutte le mod di KiaraSims4Mods.",
-    "NoteIT": "Potete trovare alcune traduzioni sul sito di LoryNa."
-  },
-  {
     "Author": "Ksuihuh's Corner",
     "ModName": "High School Uniform",
     "Status": "sconosciuta",
@@ -2466,7 +2450,7 @@
   {
     "Author": "Thatssojordy",
     "ModName": "Business Casual",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/business-casual-120367671",
     "DataUltimaModifica": "08/02/2025",
     "Traduttore": null,
@@ -2482,7 +2466,7 @@
   {
     "Author": "Thatssojordy",
     "ModName": "World Tour Mod",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://www.patreon.com/posts/world-tour-core-145499406",
     "DataUltimaModifica": "14/03/2026",
     "Traduttore": "di LadyPsycoTrilly",
