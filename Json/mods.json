@@ -2034,18 +2034,18 @@
   {
     "Author": "Scumbumbo/Basemental",
     "ModName": "Packing Crates",
-    "Status": "rotta",
+    "Status": "problemi minori",
     "SiteLink": "https://scumbumbomods.com/packing-crates/",
-    "DataUltimaModifica": "",
+    "DataUltimaModifica": "27/08/2025",
     "Traduttore": null,
-    "LinkTraduzione": null,
+    "LinkTraduzione": "https://scumbumbomods.com/packing-crates/",
     "Translation": "inclusa",
     "DataTraduzione": null,
     "Categoria": "Utilità",
     "MODIT": "Nerssuna ",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod aggiunge una voce di menu \"Imballa nella cassa\" a tutti gli oggetti del gioco (con alcune eccezioni) che non possono essere inseriti normalmente nell'inventario. Per imballare gli oggetti: Vai in modalità compra/costruisci, cerca la voce \"cassa da imballaggio\" e posziona la cassa nel lotto. Torna in modalità vivi, clicca sulla cassa e scegli l'opzione \"abilita imballaggio\". Ora cliccando sugli oggetti troverai l'opzione \"metti nella cassa\". Attenzione, se non è consentito posizionare una cassa nel lotto, la mod non può essere utilizzata.",
-    "NoteIT": null
+    "NoteIT": "Causa un errore (File Lastexception) quando si clicca su un cane o si ha un cane in casa."
   },
   {
     "Author": "Scumbumbo/LittleMsSam",
