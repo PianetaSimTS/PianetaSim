@@ -496,3 +496,4 @@ function toggleFavorite(modName) {
 }
 
 window.addEventListener("load", loadModsFromJson);
+setupWarningPopup();
