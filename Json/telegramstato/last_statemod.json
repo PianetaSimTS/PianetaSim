@@ -1,5 +1,21 @@
 [
   {
+    "Author": " Adeepindigo",
+    "ModName": "Shared Utilities",
+    "Status": "nuova",
+    "SiteLink": "https://adeepindigomods.itch.io/utility-mods",
+    "DataUltimaModifica": "10/07/2026",
+    "Traduttore": "di LadyPsycoTrilly",
+    "LinkTraduzione": "https://www.patreon.com/LadyTrillyTheSims4/posts/traduzione-di-163666554",
+    "Translation": "nuova",
+    "DataTraduzione": "13/07/2026",
+    "Categoria": "Utilità",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Si tratta di una mod di utilità che consente alle mod di Adeepindigo di condividere dati, risorse e informazioni. Puoi generare un report con dettagli utili per installazione e troubleshooting, come le mod installate, le dipendenze, i conflitti, la correttezza della versione e altri dati simili.",
+    "NoteIT": "INSTALLARNE UNA SOLA per tutte le mod che la richiedono"
+  },
+  {
     "Author": "Adeepindigo",
     "ModName": "Babysitting Gigs",
     "Status": "compatibile",
@@ -90,10 +106,10 @@
     "Translation": "compatibile",
     "DataTraduzione": "24/04/2023",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Core Library di Lot 51",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo - Core Library di Lot 51",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Aggiunge 8 nuove attività negli appuntamenti per far divertire insieme i tuoi Sim. Disponibile per i Sims adolescenti e più grandi.",
-    "NoteIT": ""
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -106,10 +122,10 @@
     "Translation": "compatibile",
     "DataTraduzione": "18/02/2025",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Shared Tuning di Adeepindigo - Mood Pack di Lumpinou",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo - Shared Tuning di Adeepindigo - Mood Pack di Lumpinou",
     "DLCIT": "RACCOMANDATI: Gioco base - Vita da genitori - Vita in città - Cresciamo insieme - Vita da liceali ",
     "DescrizioneIT": "Ora i tuoi sim adolescenti possono scappare (come rabbithole o in uno scenario), ribellarsi in modo grande o piccolo, legale o illegale. Possono farsi catturare insieme con possibili conseguenze che vanno dalla semplice punizione all'invio in centri di detenzione minorile.",
-    "NoteIT": ""
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -122,10 +138,10 @@
     "Translation": "in lavorazione",
     "DataTraduzione": null,
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Mood Pack di Lumpinou",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo - Mood Pack di Lumpinou",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Aggiunge le Cure Dentistiche! Ora il tuo Sim può avere le carie, l'alito cattivo, aver bisogno dell'apparecchio, i bambini possono farsi togliere i denti e gli adolescenti possono farsi estrarre i denti del giudizio. Tutti possono godersi una visita dal dentista!",
-    "NoteIT": null
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -138,10 +154,10 @@
     "Translation": "compatibile",
     "DataTraduzione": "26/09/2024",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Mood Pack di Lumpinou",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo - Mood Pack di Lumpinou",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Si tratta di una mod che si concentra sulla neurodiversità, l'autostima, la salute mentale, la dipendenza, la valutazione e i trattamenti.",
-    "NoteIT": null
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -154,10 +170,10 @@
     "Translation": "compatibile",
     "DataTraduzione": "14/11/2024",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Shared Tuning di Adeepindigo - Mood Pack di Lumpinou",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo - Shared Tuning di Adeepindigo - Mood Pack di Lumpinou",
     "DLCIT": "NECESSARI: Gioco Base RACCOMANDATI: Vita da genitori - Oasi innevata - Nuove stelle - Vita da liceali",
     "DescrizioneIT": "Aggiunge attività e molto altro per gli adolescenti.",
-    "NoteIT": null
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -170,10 +186,10 @@
     "Translation": "compatibile",
     "DataTraduzione": "02/06/2026",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Shared Tuning di Adeepindigo",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo - Shared Tuning di Adeepindigo",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Amplia il sistema educativo del gioco, aggiunge nuove opzioni per l'apprendimento, migliorando la carriera scolastica dei Sims e introducendo nuove interazioni, eventi scolastici e opportunità per rendere l’esperienza educativa più realistica e coinvolgente.",
-    "NoteIT": null
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -202,26 +218,10 @@
     "Translation": "da aggiornare",
     "DataTraduzione": "",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod aggiunge la cura base degli occhi al tuo gioco. Ora ai Sims possono essere diagnosticati problemi agli occhi. Esami oculistici regolari, lenti a contatto e occhiali da vista possono aiutare a identificare e quindi a mitigare questi problemi. La chirurgia laser dell'occhio è un'opzione solo per alcune condizioni. ",
-    "NoteIT": null
-  },
-  {
-    "Author": "Adeepindigo",
-    "ModName": "General Pie Menus",
-    "Status": "compatibile",
-    "SiteLink": "https://adeepindigomods.itch.io/utility-mods",
-    "DataUltimaModifica": "01/03/2023",
-    "Traduttore": null,
-    "LinkTraduzione": null,
-    "Translation": "non necessaria",
-    "DataTraduzione": null,
-    "Categoria": "Utilità",
-    "MODIT": "Nessuna",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Mod che serve per il funzionamento di altre mod.",
-    "NoteIT": "INSTALLARNE UNA SOLA per tutte le sue mod"
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -234,10 +234,10 @@
     "Translation": "compatibile",
     "DataTraduzione": "01/04/2026",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Universal Venue List di Basemental o Venue Changes di Zerbu",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo - Universal Venue List di Basemental o Venue Changes di Zerbu",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Migliora l'esperienza di gioco per i Sim anziani, aggiungendo nuove interazioni, attività e opzioni per una vita più ricca e soddisfacente. Con questo mod, gli anziani possono godere di hobby, relazioni e momenti speciali, portando una maggiore profondità e realismo alla loro fase della vita.",
-    "NoteIT": null
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -250,10 +250,10 @@
     "Translation": "aggiornata",
     "DataTraduzione": "01/07/2026",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Mood Pack di Lumpinou",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo - Mood Pack di Lumpinou",
     "DLCIT": "NECESSARI: Gioco Base - Al lavoro",
     "DescrizioneIT": "Mod completa per l'assistenza sanitaria che aggiunge nuove malattie, lesioni, condizioni croniche, allergie, emergenze mediche e condizioni di salute legate alla gravidanza, nonché cure preventive, sistema immunitario naturale, farmaci e integratori, visite mediche, vaccinazioni, malattie mortali e altro ancora.",
-    "NoteIT": ""
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -298,10 +298,10 @@
     "Translation": "compatibile",
     "DataTraduzione": "01/06/2026",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo CONSIGLIATE: Language Barriers di Frankk",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo CONSIGLIATE: Language Barriers di Frankk",
     "DLCIT": "NECESSARI: Gioco Base  RACCOMANDATI: Vita in città - Avventure nella giungla - Oasi innevata - Vita sull'isola - Vita in città -  Gita All’Aria Aperta  ",
     "DescrizioneIT": "Viaggia in The Sims 4, puoi avere auto e molto altro! ",
-    "NoteIT": "Sebbene la mod base non richieda espansioni per funzionare, né una carriera né un’aspirazione specifica, il gioco potrebbe risultare fortemente limitato senza gli altri pacchetti. CONSIGLIO di leggere la descrizione della mod fornita nel Patreon della traduzione di Leo."
+    "NoteIT": "Sebbene la mod base non richieda espansioni per funzionare, né una carriera né un’aspirazione specifica, il gioco potrebbe risultare fortemente limitato senza gli altri pacchetti. CONSIGLIO di leggere la descrizione della mod fornita nel Patreon della traduzione di Leo. \n\nATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -333,7 +333,7 @@
     "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base - Stagioni",
     "DescrizioneIT": "Campi estivi da esplorare per bambini e adolescenti.",
-    "NoteIT": null
+    "NoteIT": ""
   },
   {
     "Author": "Adeepindigo",
@@ -346,10 +346,10 @@
     "Translation": "compatibile",
     "DataTraduzione": "26/03/2023",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Core Library di Lot 51",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo - Core Library di Lot 51",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod aggiunge la possibilità ai vostri sim di farsi un tatuaggio tramite rabbithole. Avranno la possibilità di scegliere un tatuaggio o ricevere un tatuaggio casuale. Ottenere tatuaggi temporanei a parti del corpo specifiche. Disponibile per i Sims da adolescenti a superiori.",
-    "NoteIT": null
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo",
@@ -394,10 +394,10 @@
     "Translation": "compatibile",
     "DataTraduzione": "02/04/2026",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo - Mood Pack di Lumpinou",
+    "MODIT": "NECESSARIE: Shared Utilities di Adeepindigo - Mood Pack di Lumpinou",
     "DLCIT": "NECESSARI: Gioco Base RACCOMANDATI: Vita da Genitori - Oasi Innevata",
     "DescrizioneIT": "Aggiunge la Pre-Adolescenza, i sim passano dall'essere bambini ad essere pre-adolescenti prima di diventare adolescenti. Saranno più bassi rispetto gli adolescenti e avranno il tratto preadolescente.",
-    "NoteIT": null
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Adeepindigo/Pandasama",
@@ -410,10 +410,10 @@
     "Translation": "compatibile",
     "DataTraduzione": "27/06/2026",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo ",
+    "MODIT": "NECESSARIEShared Utilities di Adeepindigo ",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod è stata creata per incoraggiare e introdurre nuovi modi di vivere uno stile di vita più sano per i tuoi Sims.\n",
-    "NoteIT": ""
+    "NoteIT": "ATTENZIONE: sostituire la General Pie Menus con la Shared Utilities.  \nVa installata SOLO UNA mod Shared Utilities."
   },
   {
     "Author": "Amellce",
@@ -881,22 +881,6 @@
   },
   {
     "Author": "Littlbowbub",
-    "ModName": "Medieval Cookbook",
-    "Status": "compatibile",
-    "SiteLink": "https://www.patreon.com/littlbowbub/posts/medieval-04-06-113000160",
-    "DataUltimaModifica": "04/06/2026",
-    "Traduttore": "di Ricky's Mom",
-    "LinkTraduzione": "https://www.patreon.com/RickysMom/posts/traduzione-del-141280641?collection=2012877",
-    "Translation": "compatibile",
-    "DataTraduzione": "07/02/2026",
-    "Categoria": "Varie",
-    "MODIT": "NECESSARIE: Homestead Helper di  Littlbowbub",
-    "DLCIT": "",
-    "DescrizioneIT": "Questo è un solo un libro di cucina in stile medievale utilizzato per raccogliere le ricette che sono da scaricare separatamente. ",
-    "NoteIT": "Le ricette sono scaricabili a parte, le trovate sul Patreon di Littlbowbub nella raccolta chiamata: Medieval Corner"
-  },
-  {
-    "Author": "Littlbowbub",
     "ModName": "Grannies Cookbook",
     "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/littlbowbub/posts/grannies-04-06-35854516",
@@ -926,6 +910,22 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "L'Homestead Helper è una mod di supporto che contiene elementi grafici per le mod di cucina di littlbowbub. ",
     "NoteIT": "Serve per il funzionamento di altre mod."
+  },
+  {
+    "Author": "Littlbowbub",
+    "ModName": "Medieval Cookbook",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/littlbowbub/posts/medieval-04-06-113000160",
+    "DataUltimaModifica": "04/06/2026",
+    "Traduttore": "di Ricky's Mom",
+    "LinkTraduzione": "https://www.patreon.com/RickysMom/posts/traduzione-del-141280641?collection=2012877",
+    "Translation": "compatibile",
+    "DataTraduzione": "07/02/2026",
+    "Categoria": "Varie",
+    "MODIT": "NECESSARIE: Homestead Helper di  Littlbowbub",
+    "DLCIT": "",
+    "DescrizioneIT": "Questo è un solo un libro di cucina in stile medievale utilizzato per raccogliere le ricette che sono da scaricare separatamente. ",
+    "NoteIT": "Le ricette sono scaricabili a parte, le trovate sul Patreon di Littlbowbub nella raccolta chiamata: Medieval Corner"
   },
   {
     "Author": "Littlbowbub",
