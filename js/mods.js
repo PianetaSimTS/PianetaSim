@@ -176,7 +176,6 @@ const translatorCell = translatorLink
 }
 
 // Funzione per formattare i requisiti con link alle mod
-// Funzione per formattare i requisiti con link alle mod
 function formatModRequirements(text, modsList) {
   if (!text) return '';
   
@@ -377,6 +376,21 @@ function sortTable(columnIndex) {
   arrow.classList.add(lastSortDirection);
 
   lastSortedColumn = columnIndex;
+}
+
+function setupWarningPopup() {
+    const warningPopup = document.getElementById('warning-popup');
+    const warningCloseBtn = document.getElementById('warning-close-btn');
+
+    if (warningPopup && warningCloseBtn) {
+        setTimeout(function() {
+            warningPopup.style.display = 'flex';
+        }, 1500);
+
+        warningCloseBtn.addEventListener('click', function() {
+            warningPopup.style.display = 'none';
+        });
+    }
 }
 
 function checkModUpdates(mods) {
