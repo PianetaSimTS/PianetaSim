@@ -1,21 +1,5 @@
 [
   {
-    "Author": " Adeepindigo",
-    "ModName": "Shared Utilities",
-    "Status": "nuova",
-    "SiteLink": "https://adeepindigomods.itch.io/utility-mods",
-    "DataUltimaModifica": "10/07/2026",
-    "Traduttore": "di LadyPsycoTrilly",
-    "LinkTraduzione": "https://www.patreon.com/LadyTrillyTheSims4/posts/traduzione-di-163666554",
-    "Translation": "nuova",
-    "DataTraduzione": "13/07/2026",
-    "Categoria": "Utilità",
-    "MODIT": "Nessuna",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Si tratta di una mod di utilità che consente alle mod di Adeepindigo di condividere dati, risorse e informazioni. Puoi generare un report con dettagli utili per installazione e troubleshooting, come le mod installate, le dipendenze, i conflitti, la correttezza della versione e altri dati simili.",
-    "NoteIT": "INSTALLARNE UNA SOLA per tutte le mod che la richiedono"
-  },
-  {
     "Author": "Adeepindigo",
     "ModName": "Babysitting Gigs",
     "Status": "compatibile",
@@ -286,6 +270,22 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Mod che serve per il funzionamento di altre mod.",
     "NoteIT": "INSTALLARNE UNA per tutte le sue mod"
+  },
+  {
+    "Author": "Adeepindigo",
+    "ModName": "Shared Utilities",
+    "Status": "nuova",
+    "SiteLink": "https://adeepindigomods.itch.io/utility-mods",
+    "DataUltimaModifica": "10/07/2026",
+    "Traduttore": "di LadyPsycoTrilly",
+    "LinkTraduzione": "https://www.patreon.com/LadyTrillyTheSims4/posts/traduzione-di-163666554",
+    "Translation": "nuova",
+    "DataTraduzione": "13/07/2026",
+    "Categoria": "Utilità",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Si tratta di una mod di utilità che consente alle mod di Adeepindigo di condividere dati, risorse e informazioni. Puoi generare un report con dettagli utili per installazione e troubleshooting, come le mod installate, le dipendenze, i conflitti, la correttezza della versione e altri dati simili.",
+    "NoteIT": "INSTALLARNE UNA SOLA per tutte le mod che la richiedono"
   },
   {
     "Author": "Adeepindigo",
