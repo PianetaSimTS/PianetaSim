@@ -1,21 +1,5 @@
 [
   {
-    "Author": " Adeepindigo",
-    "ModName": "Shared Utilities",
-    "Status": "nuova",
-    "SiteLink": "https://adeepindigomods.itch.io/utility-mods",
-    "DataUltimaModifica": "10/07/2026",
-    "Traduttore": "di LadyPsycoTrilly",
-    "LinkTraduzione": "https://www.patreon.com/LadyTrillyTheSims4/posts/traduzione-di-163666554",
-    "Translation": "nuova",
-    "DataTraduzione": "13/07/2026",
-    "Categoria": "Utilità",
-    "MODIT": "Nessuna",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Si tratta di una mod di utilità che consente alle mod di Adeepindigo di condividere dati, risorse e informazioni. Puoi generare un report con dettagli utili per installazione e troubleshooting, come le mod installate, le dipendenze, i conflitti, la correttezza della versione e altri dati simili.",
-    "NoteIT": "INSTALLARNE UNA SOLA per tutte le mod che la richiedono"
-  },
-  {
     "Author": "Adeepindigo",
     "ModName": "Babysitting Gigs",
     "Status": "compatibile",
@@ -90,7 +74,7 @@
     "Translation": "in lavorazione",
     "DataTraduzione": null,
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: General Pie Menus di Adeepindigo ",
+    "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Aggiunge nuove funzionalità al matrimonio come: la pianificazione, assumere un wedding planner, nuovi social e altro ancora. Modifica inoltre il modo in cui si svolgono i matrimoni del gioco base e i matrimoni con il mio matrimonio, nonché le proposte e altro ancora.",
     "NoteIT": "ATTENZIONE leggere attentamente la Descrizione dei CONFLITTI con altre mod."
@@ -286,6 +270,22 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Mod che serve per il funzionamento di altre mod.",
     "NoteIT": "INSTALLARNE UNA per tutte le sue mod"
+  },
+  {
+    "Author": "Adeepindigo",
+    "ModName": "Shared Utilities",
+    "Status": "nuova",
+    "SiteLink": "https://adeepindigomods.itch.io/utility-mods",
+    "DataUltimaModifica": "10/07/2026",
+    "Traduttore": "di LadyPsycoTrilly",
+    "LinkTraduzione": "https://www.patreon.com/LadyTrillyTheSims4/posts/traduzione-di-163666554",
+    "Translation": "nuova",
+    "DataTraduzione": "13/07/2026",
+    "Categoria": "Utilità",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Si tratta di una mod di utilità che consente alle mod di Adeepindigo di condividere dati, risorse e informazioni. Puoi generare un report con dettagli utili per installazione e troubleshooting, come le mod installate, le dipendenze, i conflitti, la correttezza della versione e altri dati simili.",
+    "NoteIT": "INSTALLARNE UNA SOLA per tutte le mod che la richiedono"
   },
   {
     "Author": "Adeepindigo",
@@ -578,12 +578,12 @@
   {
     "Author": "Danitysimmer",
     "ModName": "Fashion Designer Mod",
-    "Status": "sconosciuta",
+    "Status": "aggiornata",
     "SiteLink": "https://www.patreon.com/posts/mod-index-131067713",
-    "DataUltimaModifica": "26/04/2026",
+    "DataUltimaModifica": "10/07/2026",
     "Traduttore": "di Ricky's Mom",
     "LinkTraduzione": "https://www.patreon.com/posts/traduzione-di-di-159482479",
-    "Translation": "aggiornata",
+    "Translation": "da controllare",
     "DataTraduzione": "02/06/2026",
     "Categoria": "Carriere",
     "MODIT": "NECESSARIE: Mood Pack di Lumpinou - Core Library di Lot 51 - Universal Venue List di Basemental",
