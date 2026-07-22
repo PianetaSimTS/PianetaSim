@@ -380,6 +380,43 @@ td a:hover { color: var(--accent-green); text-decoration: underline; }
   box-shadow: 0 0 25px rgba(187, 134, 252, 0.2);
 }
 
+.favorites-toggle-btn {
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.12), rgba(255, 170, 0, 0.06));
+  color: #ffd700;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.favorites-toggle-btn:hover {
+  border-color: rgba(255, 215, 0, 0.6);
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 170, 0, 0.1));
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.15);
+}
+
+.favorites-toggle-btn.active {
+  background: linear-gradient(135deg, #ffd700, #ffaa00);
+  color: #1a1a1a;
+  border-color: #ffd700;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+}
+
+.favorites-section-title {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 700;
+  text-align: center;
+  padding: 24px 16px 8px;
+  background: linear-gradient(135deg, #ffd700, #ffaa00, #ff8c00);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  animation: fadeIn 0.6s ease;
+}
+
 .global-tooltip {
   position: fixed;
   background: var(--bg-secondary);

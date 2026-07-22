@@ -50,11 +50,7 @@
       </div>
     </div>
     <div>
-      <label>Preferite:</label>
-      <select id="filter-favorites" onchange="filterTable()">
-        <option value="">Tutte</option>
-        <option value="true">Solo Preferite</option>
-      </select>
+      <button id="favorites-toggle-btn" class="favorites-toggle-btn" onclick="toggleFavoritesView()">⭐ I MIEI PREFERITI</button>
     </div>
   </div>
 
@@ -98,6 +94,22 @@
             <th onclick="sortTable(0)">AUTORE <span class="sort-arrow" id="arrow-0"></span></th>
             <th onclick="sortTable(1)">STATO ANIMAZIONE <span class="sort-arrow" id="arrow-1"></span></th>
             <th onclick="sortTable(2)">DATA AGGIORNAMENTO ANIMAZIONE <span class="sort-arrow" id="arrow-2"></span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="favorites-section" class="main-content" style="display:none;">
+    <h2 class="favorites-section-title">⭐ I MIEI PREFERITI</h2>
+    <div class="table-wrapper">
+      <table id="favorites-table">
+        <thead>
+          <tr>
+            <th>AUTORE <span class="sort-arrow"></span></th>
+            <th>STATO ANIMAZIONE <span class="sort-arrow"></span></th>
+            <th>DATA AGGIORNAMENTO ANIMAZIONE <span class="sort-arrow"></span></th>
           </tr>
         </thead>
         <tbody></tbody>

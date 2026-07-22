@@ -74,11 +74,7 @@
       <div id="filter-category-dropdown" style="display:none;"></div>
     </div>
     <div>
-      <label>Preferite:</label>
-      <select id="filter-favorites" onchange="filterTable()">
-        <option value="">Tutte</option>
-        <option value="true">Solo Preferite</option>
-      </select>
+      <button id="favorites-toggle-btn" class="favorites-toggle-btn" onclick="toggleFavoritesView()">⭐ I MIEI PREFERITI</button>
     </div>
   </div>
 
@@ -129,6 +125,28 @@
             <th onclick="sortTable(6)">MOD RICHIESTE <span class="sort-arrow" id="arrow-6"></span></th>
             <th onclick="sortTable(7)">DLC RICHIESTI <span class="sort-arrow" id="arrow-7"></span></th>
             <th onclick="sortTable(8)">NOTE <span class="sort-arrow" id="arrow-8"></span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="favorites-section" class="main-content" style="display:none;">
+    <h2 class="favorites-section-title">⭐ I MIEI PREFERITI</h2>
+    <div class="table-wrapper">
+      <table id="favorites-table">
+        <thead>
+          <tr>
+            <th>AUTORE <span class="sort-arrow"></span></th>
+            <th>DOWNLOAD MOD <span class="sort-arrow"></span></th>
+            <th>STATO PATCH <span class="sort-arrow"></span></th>
+            <th>DATA ULTIMO AGGIORNAMENTO MOD <span class="sort-arrow"></span></th>
+            <th>STATO TRADUZIONE <span class="sort-arrow"></span></th>
+            <th>DOWNLOAD & DATA TRADUZIONE <span class="sort-arrow"></span></th>
+            <th>MOD RICHIESTE <span class="sort-arrow"></span></th>
+            <th>DLC RICHIESTI <span class="sort-arrow"></span></th>
+            <th>NOTE <span class="sort-arrow"></span></th>
           </tr>
         </thead>
         <tbody></tbody>

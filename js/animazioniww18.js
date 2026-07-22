@@ -2,6 +2,7 @@
 let animazioniData = [];
 let currentSortColumn = -1;
 let currentSortDirection = 'asc';
+let showingFavorites = false;
 
 // Inizializzazione
 document.addEventListener('DOMContentLoaded', function() {
@@ -44,6 +45,12 @@ function loadAnimazioniData() {
             });
             
             populateTable(animazioniData);
+            if (showingFavorites) {
+                populateFavoritesSection();
+                document.querySelector(".table-wrapper").style.display = "none";
+                document.getElementById("favorites-section").style.display = "block";
+                document.getElementById("favorites-toggle-btn").classList.add("active");
+            }
         })
         .catch(error => {
             console.error('Errore nel caricamento dei dati:', error);
@@ -257,22 +264,163 @@ function toggleFavorite(modName) {
     loadAnimazioniData();
 }
 
+// FUNZIONE per mostrare/nascondere la sezione Preferiti
+function toggleFavoritesView() {
+    const btn = document.getElementById("favorites-toggle-btn");
+    const mainTable = document.querySelector(".table-wrapper");
+    const favSection = document.getElementById("favorites-section");
+
+    if (showingFavorites) {
+        showingFavorites = false;
+        btn.classList.remove("active");
+        mainTable.style.display = "";
+        favSection.style.display = "none";
+    } else {
+        showingFavorites = true;
+        btn.classList.add("active");
+        populateFavoritesSection();
+        mainTable.style.display = "none";
+        favSection.style.display = "block";
+    }
+}
+
+// Sezione Preferiti dedicata
+function populateFavoritesSection() {
+    const favorites = JSON.parse(localStorage.getItem("animazioniFavorites") || '[]');
+    const section = document.getElementById("favorites-section");
+    const tbody = document.querySelector("#favorites-table tbody");
+
+    tbody.innerHTML = '';
+
+    const favoriteItems = animazioniData.filter(item => {
+        const modName = item.autore || `Animazione_${item.id}`;
+        return favorites.includes(modName);
+    });
+
+    if (favoriteItems.length === 0) {
+        section.style.display = 'none';
+        return;
+    }
+
+    section.style.display = 'block';
+
+    favoriteItems.forEach(item => {
+        const row = document.createElement('tr');
+
+        const authorCell = document.createElement('td');
+        authorCell.className = 'author-cell';
+        authorCell.style.textAlign = 'center';
+        authorCell.style.verticalAlign = 'middle';
+
+        const authorContainer = document.createElement('div');
+        authorContainer.className = 'author-with-star';
+        authorContainer.style.display = 'inline-flex';
+        authorContainer.style.alignItems = 'center';
+        authorContainer.style.justifyContent = 'center';
+        authorContainer.style.gap = '5px';
+        authorContainer.style.width = '100%';
+
+        const star = document.createElement('span');
+        star.className = 'star favorite';
+        star.innerHTML = '★';
+        star.onclick = (e) => {
+            e.stopPropagation();
+            const modName = item.autore || `Animazione_${item.id}`;
+            toggleFavorite(modName);
+        };
+        star.title = "Rimuovi dai preferiti";
+        star.style.cursor = 'pointer';
+        star.style.fontSize = '1.2em';
+        star.style.color = '#ffd700';
+        star.style.transition = 'color 0.3s';
+        star.style.userSelect = 'none';
+
+        let authorContent;
+        if (item.linkAnimazione) {
+            const authorLink = document.createElement('a');
+            authorLink.href = item.linkAnimazione;
+            authorLink.target = '_blank';
+            authorLink.rel = 'noopener noreferrer';
+            authorLink.textContent = item.autore || 'Sconosciuto';
+            authorLink.className = 'mod-link';
+            authorLink.style.textDecoration = 'underline';
+            authorLink.style.color = '#007bff';
+            authorLink.style.cursor = 'pointer';
+
+            const escapedDescription = (item.descrizione || '')
+                .replace(/`/g, "'")
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, "\\'");
+
+            authorLink.addEventListener('mouseenter', (e) => {
+                if (escapedDescription && escapedDescription.trim() !== '') {
+                    showGlobalTooltip(e, escapedDescription);
+                }
+            });
+
+            authorLink.addEventListener('mouseleave', () => {
+                hideGlobalTooltip();
+            });
+
+            authorLink.addEventListener('mousemove', (e) => {
+                const tooltip = document.getElementById('global-tooltip');
+                if (tooltip) {
+                    positionTooltip(e, tooltip);
+                }
+            });
+
+            authorContent = authorLink;
+        } else {
+            const authorName = document.createElement('span');
+            authorName.textContent = item.autore || 'Sconosciuto';
+            authorContent = authorName;
+        }
+
+        authorContainer.appendChild(star);
+        authorContainer.appendChild(authorContent);
+        authorCell.appendChild(authorContainer);
+        row.appendChild(authorCell);
+
+        const statusCell = document.createElement('td');
+        statusCell.style.textAlign = 'center';
+        statusCell.style.verticalAlign = 'middle';
+
+        const statusSpan = document.createElement('span');
+
+        let statusText = item.statoAnimazione || 'sconosciuta';
+        statusText = statusText.charAt(0).toUpperCase() + statusText.slice(1).toLowerCase();
+
+        const statusLower = statusText.toLowerCase();
+        let statusClass = 'sconosciuta';
+
+        if (statusLower.includes('compatibil')) statusClass = 'compatibile';
+        else if (statusLower.includes('aggiornat')) statusClass = 'aggiornata';
+        else if (statusLower.includes('nuova')) statusClass = 'nuova';
+
+        statusSpan.className = `status ${statusClass}`;
+        statusSpan.textContent = statusText;
+        statusCell.appendChild(statusSpan);
+        row.appendChild(statusCell);
+
+        const dateCell = document.createElement('td');
+        dateCell.textContent = item.dataAggiornamentoAnimazione || '';
+        dateCell.style.textAlign = 'center';
+        dateCell.style.verticalAlign = 'middle';
+        row.appendChild(dateCell);
+
+        tbody.appendChild(row);
+    });
+}
+
 // Filtra la tabella
 function filterTable() {
     const searchTerm = document.getElementById('search')?.value.toLowerCase() || '';
-    const favoriteFilter = document.getElementById('filter-favorites')?.value || '';
     
     const selectedStatuses = getSelectedStatuses();
     
     const filteredData = animazioniData.filter(item => {
         const matchesSearch = !searchTerm || 
             (item.autore && item.autore.toLowerCase().includes(searchTerm));
-        
-        const modName = item.autore || `Animazione_${item.id}`;
-        const isFavorite = JSON.parse(localStorage.getItem("animazioniFavorites") || '[]').includes(modName);
-        
-        const matchesFavorite = favoriteFilter === '' || 
-            (favoriteFilter === 'true' && isFavorite);
         
         let itemStatus = item.statoAnimazione || '';
         itemStatus = itemStatus.charAt(0).toUpperCase() + itemStatus.slice(1).toLowerCase();
@@ -285,7 +433,7 @@ function filterTable() {
                 return statusLower === itemStatusLower;
             });
         
-        return matchesSearch && matchesFavorite && matchesStatus;
+        return matchesSearch && matchesStatus;
     });
     
     populateTable(filteredData);

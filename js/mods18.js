@@ -1,5 +1,8 @@
 let lastSortedColumn = -1;
 let lastSortDirection = 'asc';
+let showingFavorites = false;
+let _mods18 = [];
+let _allMods = [];
 
 // Funzione per formattare i requisiti in grassetto
 function formatRequirements(text) {
@@ -71,7 +74,8 @@ function loadModsFromJson() {
     fetch('https://raw.githubusercontent.com/PianetaSimTS/PianetaSim/refs/heads/main/Json/mods.json').then(r => r.json()).catch(() => [])
   ])
     .then(([mods18, mods]) => {
-      const allMods = [...mods18, ...mods];
+      _mods18 = mods18;
+      _allMods = [...mods18, ...mods];
       const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
       const table = document.getElementById("mods-table").getElementsByTagName("tbody")[0];
       table.innerHTML = '';
@@ -107,7 +111,7 @@ function loadModsFromJson() {
         const translatorLink = mod.LinkTraduzione || '';
 
         // Formatta i requisiti con grassetto e link alle mod necessarie
-        const formattedModReqs = formatModRequirements(mod.MODIT || '', allMods);
+        const formattedModReqs = formatModRequirements(mod.MODIT || '', _allMods);
         const formattedDlcReqs = formatRequirements(mod.DLCIT || '');
         
         // Ottieni le note
@@ -170,6 +174,12 @@ const translatorCell = translatorLink
       // Applica i filtri dopo aver popolato la tabella
       setTimeout(() => {
         filterTable();
+        if (showingFavorites) {
+          populateFavoritesSection(_mods18, _allMods);
+          document.querySelector(".table-wrapper").style.display = "none";
+          document.getElementById("favorites-section").style.display = "block";
+          document.getElementById("favorites-toggle-btn").classList.add("active");
+        }
       }, 50);
     })
     .catch(error => console.error('Errore nel caricare il JSON:', error));
@@ -419,6 +429,102 @@ function checkModUpdates(mods) {
   }
 }
 
+// FUNZIONE per mostrare/nascondere la sezione Preferiti
+function toggleFavoritesView() {
+  const btn = document.getElementById("favorites-toggle-btn");
+  const mainTable = document.querySelector(".table-wrapper");
+  const favSection = document.getElementById("favorites-section");
+
+  if (showingFavorites) {
+    showingFavorites = false;
+    btn.classList.remove("active");
+    mainTable.style.display = "";
+    favSection.style.display = "none";
+  } else {
+    showingFavorites = true;
+    btn.classList.add("active");
+    populateFavoritesSection(_mods18, _allMods);
+    mainTable.style.display = "none";
+    favSection.style.display = "block";
+  }
+}
+
+// FUNZIONE per popolare la sezione Preferiti
+function populateFavoritesSection(mods, modsList) {
+  const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  const section = document.getElementById("favorites-section");
+  const tbody = document.querySelector("#favorites-table tbody");
+
+  tbody.innerHTML = '';
+
+  const favoriteMods = mods.filter(mod => favorites.includes(mod.ModName));
+
+  if (favoriteMods.length === 0) {
+    section.style.display = 'none';
+    return;
+  }
+
+  section.style.display = 'block';
+
+  favoriteMods.forEach(mod => {
+    const row = tbody.insertRow();
+    const rowId = `fav-${mod.ModName.replace(/[^\w\s]/g, '').replace(/\s+/g, '-')}`;
+    row.id = rowId;
+
+    const modLink = mod.SiteLink || '#';
+    const translatorLink = mod.LinkTraduzione || '';
+    const formattedModReqs = formatModRequirements(mod.MODIT || '', modsList);
+    const formattedDlcReqs = formatRequirements(mod.DLCIT || '');
+    const note = mod.NoteIT || '';
+
+    const authorWithStar = `
+      <span class="author-with-star">
+        <span class="star favorite" onclick="toggleFavorite('${mod.ModName.replace(/'/g, "\\'")}')">&#9733;</span>
+        ${mod.Author || ''}
+      </span>
+    `;
+
+    const translatorCell = translatorLink
+      ? `<a href="${translatorLink}" target="_blank" rel="noopener noreferrer" class="translator-link">${mod.Traduttore || ''}</a>`
+      : (mod.Traduttore ? `<span class="translator-name">${mod.Traduttore}</span>` : '');
+
+    const description = mod.DescrizioneIT || "Nessuna descrizione disponibile";
+    const escapedDescription = description
+      .replace(/`/g, "'")
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, "\\'");
+
+    row.innerHTML = `
+      <td class="author-cell">${authorWithStar}</td>
+      <td class="mod-name">
+        <a href="${modLink}" target="_blank" rel="noopener noreferrer" class="mod-link"
+           onmouseover="showGlobalTooltip(event, '${escapedDescription}')"
+           onmouseout="hideGlobalTooltip()">
+          ${mod.ModName || ''}
+        </a>
+      </td>
+      <td>
+        <span class="status ${(mod.Status || 'sconosciuta').toLowerCase()}">
+          ${mod.Status}
+        </span>
+      </td>
+      <td>${mod.DataUltimaModifica || ''}</td>
+      <td>
+        <span class="traduzione ${(mod.Translation || '').replace(" ", "-").toLowerCase()}">
+          ${mod.Translation && mod.Translation !== "null" ? mod.Translation.toUpperCase() : ''}
+        </span>
+      </td>
+      <td class="translation-download-cell">
+        ${translatorCell}
+        <span class="translation-date">${mod.DataTraduzione || ''}</span>
+      </td>
+      <td>${formattedModReqs}</td>
+      <td>${formattedDlcReqs}</td>
+      <td>${note}</td>
+    `;
+  });
+}
+
 // FUNZIONE filterTable
 function filterTable() {
 
@@ -433,8 +539,6 @@ function filterTable() {
   const selectedCategories = Array.from(document.querySelectorAll('#filter-category-dropdown input:checked'))
                                    .map(input => input.value.toLowerCase());
 
-  const filterFavorites = document.getElementById("filter-favorites").value;
-
   const table = document.getElementById("mods-table");
   const rows = table.getElementsByTagName("tr");
 
@@ -446,15 +550,13 @@ function filterTable() {
     const status = row.querySelector(".status").textContent.trim().toLowerCase();
     const translation = row.querySelector(".traduzione").textContent.toLowerCase();
     const categories = row.getAttribute("data-categories").toLowerCase();
-    const isFavorite = row.querySelector(".star").classList.contains("favorite");
     
     const matchesSearch = modName.includes(searchValue) || author.includes(searchValue);
     const matchesStatus = selectedStatuses.length === 0 || selectedStatuses.includes(status);
     const matchesTranslation = selectedTranslations.length === 0 || selectedTranslations.some(t => translation.includes(t));
     const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(category => categories.includes(category));
-    const matchesFavorites = !filterFavorites || (filterFavorites === 'true' ? isFavorite : true);
     
-    row.style.display = (matchesSearch && matchesStatus && matchesTranslation && matchesCategory && matchesFavorites) ? "" : "none";
+    row.style.display = (matchesSearch && matchesStatus && matchesTranslation && matchesCategory) ? "" : "none";
   }
 }
 
