@@ -1169,6 +1169,22 @@
   },
   {
     "Author": "Lot 51",
+    "ModName": "Custom Channel Injector",
+    "Status": "compatibile",
+    "SiteLink": "https://lot51.cc/mods/custom-channel-injector",
+    "DataUltimaModifica": "02/05/2026",
+    "Traduttore": null,
+    "LinkTraduzione": null,
+    "Translation": "non necessaria",
+    "DataTraduzione": "",
+    "Categoria": "Utilità",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco BAse",
+    "DescrizioneIT": "Il Custom Channel Injector è uno script che permette ai modder di aggiungere facilmente canali TV e stereo personalizzati al gioco. SERVE PER IL FUNZIONAMENTO DI ALTRE MOD",
+    "NoteIT": "SERVE PER IL FUNZIONAMENTO DI ALTRE MOD"
+  },
+  {
+    "Author": "Lot 51",
     "ModName": "Ding & Ditch Smart Doorbell",
     "Status": "compatibile",
     "SiteLink": "https://lot51.cc/mods/smart-doorbell",
