@@ -2754,7 +2754,7 @@
   {
     "Author": "Zerbu",
     "ModName": "The Custom Preferences Mod",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://zerbu.tumblr.com/post/756892231287422976/the-sims-4-mod-the-custom-preferences-mod",
     "DataUltimaModifica": "11/07/2026",
     "Traduttore": "di LadyPsycoTrilly",
@@ -2770,7 +2770,7 @@
   {
     "Author": "Zerbu",
     "ModName": "Venue Changes",
-    "Status": "sconosciuta",
+    "Status": "compatibile",
     "SiteLink": "https://zerbu.tumblr.com/post/160347810775/the-sims-4-mod-venue-changes",
     "DataUltimaModifica": "12/02/2026",
     "Traduttore": null,
@@ -2781,6 +2781,22 @@
     "MODIT": "ATTENZIONE va usata una sola Venue List",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!",
+    "NoteIT": null
+  },
+  {
+    "Author": null,
+    "ModName": null,
+    "Status": null,
+    "SiteLink": null,
+    "DataUltimaModifica": null,
+    "Traduttore": null,
+    "LinkTraduzione": null,
+    "Translation": null,
+    "DataTraduzione": null,
+    "Categoria": null,
+    "MODIT": null,
+    "DLCIT": null,
+    "DescrizioneIT": null,
     "NoteIT": null
   }
 ]
