@@ -64,7 +64,6 @@ function updateCategoryDropdown(mods) {
 
     dropdown.appendChild(checkbox);
     dropdown.appendChild(label);
-    dropdown.appendChild(document.createElement("br"));
   });
 }
 
@@ -427,7 +426,7 @@ function checkModUpdates(mods) {
 
   if (updatedMods.length > 0) {
     let message = "Le seguenti mod preferite sono state modificate:\n" + 
-                  updatedMods.map(mod => `${mod.ModName} - Stato: ${mod.Status} (${mod.DataUltimaModifica})`).join("\n");
+                  updatedMods.map(mod => `${mod.ModName} - Stato: ${mod.Status} - Data ultimo aggiornamento mod: ${mod.DataUltimaModifica || 'Non disponibile'}`).join("\n");
     alert(message);
   }
 }

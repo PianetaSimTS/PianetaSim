@@ -515,7 +515,7 @@ function updateSortArrows() {
 function toggleDropdown(dropdownId) {
     const dropdown = document.getElementById(dropdownId);
     if (!dropdown) return;
-    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+    dropdown.style.display = dropdown.style.display === 'none' ? 'flex' : 'none';
 }
 
 // Setup warning popup

@@ -94,23 +94,11 @@ h1 {
 .back-arrow img { width: 28px; height: auto; }
 .home-text { font-size: 11px; font-weight: 600; color: var(--text-secondary); }
 
-.guide-button {
-  margin-left: auto;
-  background: linear-gradient(135deg, rgba(187, 134, 252, 0.15), rgba(187, 134, 252, 0.05)) !important;
-  border: 1px solid rgba(187, 134, 252, 0.2) !important;
-  border-radius: 50px !important;
-  color: var(--accent-purple) !important;
-}
-
-.guide-button:hover {
-  background: linear-gradient(135deg, rgba(187, 134, 252, 0.25), rgba(187, 134, 252, 0.1)) !important;
-  border-color: rgba(187, 134, 252, 0.4) !important;
-}
-
 .theme-toggle {
   display: flex; align-items: center; gap: 8px;
   padding: 4px 10px; border-radius: 50px;
   background: var(--bg-card); border: 1px solid var(--border-color);
+  margin-left: auto;
 }
 
 .switch { position: relative; display: inline-block; width: 36px; height: 18px; }
@@ -139,6 +127,21 @@ input:checked + .slider:before { transform: translateX(18px); background: var(--
   background: rgba(187, 134, 252, 0.06);
   border-bottom: 1px solid var(--border-color);
   animation: slideDown 0.5s ease;
+  display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
+}
+
+.guide-note-btn {
+  display: inline-block; padding: 4px 14px; border-radius: 50px;
+  background: linear-gradient(135deg, rgba(187, 134, 252, 0.2), rgba(187, 134, 252, 0.05));
+  border: 1px solid rgba(187, 134, 252, 0.3);
+  color: var(--accent-purple); text-decoration: none;
+  font-size: 11px; font-weight: 700; white-space: nowrap;
+  transition: var(--transition);
+}
+
+.guide-note-btn:hover {
+  background: linear-gradient(135deg, rgba(187, 134, 252, 0.35), rgba(187, 134, 252, 0.1));
+  border-color: rgba(187, 134, 252, 0.5); transform: translateY(-1px);
 }
 
 .form-container {
@@ -147,6 +150,7 @@ input:checked + .slider:before { transform: translateX(18px); background: var(--
   background: var(--bg-card); backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
   animation: slideDown 0.5s ease;
+  position: relative; z-index: 50;
 }
 
 .form-container > div { display: flex; align-items: center; gap: 6px; position: relative; }
@@ -156,13 +160,25 @@ input:checked + .slider:before { transform: translateX(18px); background: var(--
   top: 100%;
   left: 0;
   margin-top: 4px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-hover);
   border-radius: var(--radius-sm);
   padding: 10px;
   z-index: 1000;
   white-space: nowrap;
   box-shadow: var(--shadow-md);
+  display: flex; flex-wrap: wrap; gap: 4px 12px;
+}
+
+.form-container > div > div[id$="-dropdown"] label {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 12px; cursor: pointer; white-space: nowrap;
+  color: var(--text-primary);
+}
+
+.form-container > div > div[id$="-dropdown"] label {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 12px; cursor: pointer; white-space: nowrap;
 }
 
 .form-container input, .form-container select {
@@ -208,6 +224,19 @@ input:checked + .slider:before { transform: translateX(18px); background: var(--
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   background: var(--bg-card);
+}
+
+.table-wrapper::-webkit-scrollbar {
+  width: 8px; height: 10px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); border-radius: 5px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--border-hover); border-radius: 5px;
+}
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
 }
 
 table {

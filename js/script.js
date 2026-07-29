@@ -25,7 +25,7 @@ function toggleDropdown(id) {
   var button = dropdown.previousElementSibling;
 
   // Se già aperto, chiudi
-  if (dropdown.style.display === 'block') {
+  if (dropdown.style.display === 'flex') {
     dropdown.style.opacity = 0;
     setTimeout(function() {
       dropdown.style.display = 'none';
@@ -36,7 +36,7 @@ function toggleDropdown(id) {
 
   // Chiudi tutti gli altri dropdown prima di aprire questo
   document.querySelectorAll('.form-container > div > div[id$="-dropdown"]').forEach(function(el) {
-    if (el.id !== id && el.style.display === 'block') {
+    if (el.id !== id && el.style.display === 'flex') {
       el.style.opacity = 0;
       el.style.display = 'none';
       var btn = el.previousElementSibling;
@@ -45,7 +45,7 @@ function toggleDropdown(id) {
   });
 
   // Apri questo
-  dropdown.style.display = 'block';
+  dropdown.style.display = 'flex';
   setTimeout(function() {
     dropdown.style.opacity = 1;
   }, 10);

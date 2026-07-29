@@ -233,7 +233,7 @@ def compare_status_only(old_state, new_state):
         
         if translation_changed:
             translation_message = (
-                f"💬  <b>TRADUZIONE di {new_mod['Traduttore']}</b>\n\n"
+                f"💬  <b>TRADUZIONE {new_mod['Traduttore']}</b>\n\n"
                 f"<b>{new_mod['ModName']}</b> ➜ di <b>{new_mod['Author']}</b>\n\n"
                 f"Stato {icon_tr} <u><i>{new_mod['Translation']}</i></u>\n"
             )
