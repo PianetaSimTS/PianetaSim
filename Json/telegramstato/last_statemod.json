@@ -562,9 +562,9 @@
   {
     "Author": "Basemental",
     "ModName": "Universal Venue List",
-    "Status": "compatibile",
+    "Status": "aggiornata",
     "SiteLink": "https://basementalcc.com/mods/universal-venue-list/",
-    "DataUltimaModifica": "01/08/2026",
+    "DataUltimaModifica": "07/09/2026",
     "Traduttore": null,
     "LinkTraduzione": null,
     "Translation": "non necessaria",
@@ -1101,7 +1101,7 @@
     "MODIT": "NECESSARIE: XML Injector di Scumbumbo/Triplis/LittleMsSam - Mood Pack Mod di Lumpinou - Negozio di Maternità - EPI Mod di LoryNa",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "In questa mod sono presenti un'app di monitoraggio di gravidanza, un nuovo NPC, nuove interazioni al computer e la possibilità di scegliere la preferenza di nutrizione per il neonato.\n ",
-    "NoteIT": ""
+    "NoteIT": "ATTENZIONE: Attualmente INCOMPATIBILE con la mod Child Birth di Pandasama. La modder sta lavorando per fixare il problema."
   },
   {
     "Author": "LoryNaMods",
@@ -1837,7 +1837,7 @@
     "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base - Al Lavoro",
     "DescrizioneIT": "Aggiunge opzioni più realistiche e dettagliate per il parto dei Sims. Include nuove modalità di nascita come il parto naturale, il cesareo e il parto in acqua, con animazioni, interazioni e reazioni più immersive. I Sims possono ricevere supporto dai partner o dai medici e vivere un'esperienza più realistica e personalizzata del parto.",
-    "NoteIT": null
+    "NoteIT": "ATTENZIONE: Attualmente INCOMPATIBILE con la mod Maggiori Interazioni di Gravidanza di LoryNa Mods. La modder LoryNa sta lavorando per fixare il problema."
   },
   {
     "Author": "PandaSama",
