@@ -1027,17 +1027,17 @@
     "Author": "llazyneiph",
     "ModName": "Royalty Mod e Addo-on",
     "Status": "aggiornata",
-    "SiteLink": "https://www.patreon.com/llazyneiph/posts/royalty-mod-3-6-48723623",
+    "SiteLink": "https://www.patreon.com/llazyneiph/posts/royalty-mod-3-6-166794873?display_app_qr=1&utm_source=post_link&utm_medium=email&utm_campaign=patron_engagement&utm_id=87629b9a-49a7-480e-bafa-1c39b04a0d84",
     "DataUltimaModifica": "07/09/2026",
     "Traduttore": "di LoryNa",
     "LinkTraduzione": "https://www.curseforge.com/sims4/translations/trad-ita-royalty-mod-di-ilazyneiph",
     "Translation": "da controllare",
     "DataTraduzione": "",
     "Categoria": "Gameplay",
-    "MODIT": "NECESSARIE: Core Library di Lot 51 - Pack Tests di Frankk",
+    "MODIT": "NECESSARIE: Core Library di Lot 51 - Pack Tests di Frankk - Ballroom Dance Mod di Mod Revivor/Mercuryfoam RACCOMANDATE: Medieval Cookbook di Littlbowbub",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Introduce il concetto di nobiltà e monarchia nel gioco. I Sims possono diventare membri della famiglia reale, governare terre, avere titoli nobiliari e partecipare a eventi di corte. Questa mod aggiunge nuove carriere, interazioni e possibilità di gioco legate alla vita di corte, creando un'esperienza più regale e aristocratica per i giocatori.",
-    "NoteIT": null
+    "NoteIT": ""
   },
   {
     "Author": "LoryNaMods",
@@ -1773,6 +1773,22 @@
     "MODIT": "Nessuna",
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Questa mod salta il popup delle Storie CAS che appare per la prima volta quando si entra nella \"Nuova Partita\" ti porta direttamente al CAS.",
+    "NoteIT": null
+  },
+  {
+    "Author": "Mod Revivor/Mercuryfoam",
+    "ModName": "Ballroom Dance Mod",
+    "Status": "compatibile",
+    "SiteLink": "https://www.patreon.com/ModRevivor/posts/mercuryfoam-mod-141666835",
+    "DataUltimaModifica": "20/10/2025",
+    "Traduttore": null,
+    "LinkTraduzione": null,
+    "Translation": "in lavorazione",
+    "DataTraduzione": "",
+    "Categoria": "Gameplay",
+    "MODIT": null,
+    "DLCIT": null,
+    "DescrizioneIT": null,
     "NoteIT": null
   },
   {
