@@ -2878,5 +2878,53 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Permette di modificare facilmente le caratteristiche delle lotti del gioco, come la loro tipologia e funzionalità. Con questo mod, puoi trasformare qualsiasi lotto in un luogo adatto a eventi specifici, come ristoranti, discoteche o biblioteche, senza dover creare un nuovo lotto da zero. Un modo semplice per espandere le possibilità di gioco e personalizzare l’esperienza!",
     "NoteIT": null
+  },
+  {
+    "Author": "Kemzima",
+    "ModName": "Functional baby monitor + CC Pack",
+    "Status": "compatibile",
+    "SiteLink": "https://kemzimamods.com/mod-list/functional-baby-monitor-mod/",
+    "DataUltimaModifica": "07/08/2026",
+    "Traduttore": "di LadyPsycoTrilly",
+    "LinkTraduzione": "https://www.patreon.com/LadyTrillyTheSims4/posts/traduzione-baby-166066660",
+    "Translation": "nuova",
+    "DataTraduzione": "21/09/2026",
+    "Categoria": "Gameplay",
+    "MODIT": "NECESSARIE: Core Library di Lot 51  CONSIGLIATE: Longer Infant OR Toddler Crying Add-on di Kemzima - Malattie & Infortuni pediatrici di LoryNaMods - Healthcare Redux di Adeepindigo - Responsible Pregnancy di Kemzima ",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "MOD:\nFunctional Baby Monitor Mod di Kemzima aggiunge a The Sims 4 dei baby monitor realmente funzionali, con modelli audio e video dedicati a neonati, lattanti e bebè. I monitor possono segnalare pianti e bisogni, permettere ai Sims di controllare i piccoli a distanza e, nei modelli più avanzati, riprodurre ninne nanne, parlare o tranquillizzare il bambino e visualizzare letture simulate su sonno e parametri vitali.\n\nCC:\nIl CC Pack decorativo include una serie di oggetti coordinati a tema baby monitor, pensati per arredare camerette e spazi dedicati ai più piccoli. Gli elementi sono puramente estetici e permettono di aggiungere dettagli moderni e realistici agli ambienti di The Sims 4.",
+    "NoteIT": "ATTENZIONE: Va installata una solo versione!\no la mod completa o solo i CC pack."
+  },
+  {
+    "Author": "Kemzima",
+    "ModName": "Longer Infant OR Toddler Crying Add-on",
+    "Status": "compatibile",
+    "SiteLink": "https://kemzimamods.com/mod-list/longer-infant-toddler-crying/",
+    "DataUltimaModifica": "07/08/2026",
+    "Traduttore": null,
+    "LinkTraduzione": null,
+    "Translation": "non necessaria",
+    "DataTraduzione": "",
+    "Categoria": "Varie",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Questa mod modifica il pianto di neonati e lattanti.",
+    "NoteIT": "Compatibilità: Questa mod sovrascrive la sintonia del pianto di neonati e bambini piccoli di EA e può entrare in conflitto con altre mod che modificano le stesse interazioni"
+  },
+  {
+    "Author": "Kemzima",
+    "ModName": "Responsible Pregnancy",
+    "Status": "aggiornata",
+    "SiteLink": "https://kemzimamods.com/responsible-pregnancy-mod/",
+    "DataUltimaModifica": "04/09/2026",
+    "Traduttore": null,
+    "LinkTraduzione": null,
+    "Translation": "inclusa",
+    "DataTraduzione": "",
+    "Categoria": "Gameplay",
+    "MODIT": "NECESSARIE: Core Library di Lot 51  CONSIGLIATE: Basemental Drugs di Basemental - Child Birth Mod di Pandasama - Healthcare Redux di Adeepindigo - RPO Relationship & Pregnancy Overhaul - tutti i moduli di Lumpinou -  Divergent Sims di Adeepindigo ",
+    "DLCIT": "NECESSARI: Gioco BAse - Stagioni (solo per il modulo 5) CONSIGLIATI: Vita in città - Cani e Gatti - Vita da Campagna - Giorno alla Spa - Giorno del Bucato",
+    "DescrizioneIT": "La mod Responsible Pregnancy aggiunge meccaniche realistiche di salute per la gravidanza a The Sims 4. Questa mod si concentra principalmente su ciò che i Sims DOVREBBERO e NON DOVREBBERO fare durante la gravidanza e dopo il parto. Le azioni durante la gravidanza hanno conseguenze dirette sia per la salute del Sim sia per la condizione del bambino alla nascita.\n\nATTENZIONE: Mod a Sistema Modulare\nQuesta mod è suddivisa in moduli separati. Puoi installare solo quelli che vuoi, oppure installarli tutti per vivere l'esperienza completa. Ogni modulo si concentra su un aspetto specifico del rischio per la salute o della gravidanza.",
+    "NoteIT": "Il modulo 7 richiede l'installazione di almeno UNO dei moduli 1 o 6 insieme al pacchetto CORE."
   }
 ]
