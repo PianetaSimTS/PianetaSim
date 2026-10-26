@@ -832,6 +832,22 @@
     "NoteIT": null
   },
   {
+    "Author": "Grumpy Mods",
+    "ModName": "Trick or Treating",
+    "Status": "compatibile",
+    "SiteLink": "https://www.grumpymods.com/en/trick-or-treating",
+    "DataUltimaModifica": "26/08/2026",
+    "Traduttore": "di Leo",
+    "LinkTraduzione": "https://www.patreon.com/leotranslations/posts/trick-or-172256041?utm_campaign=postshare_creator&utm_content=ios_share_native",
+    "Translation": "nuova",
+    "DataTraduzione": "13/10/2026",
+    "Categoria": "Gameplay",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Con la Trick or Treating, mod realizzata da GrumpyMods, potrete rendere la notte più spaventosa dell'anno ancora più speciale, portando nel vostro gioco la tradizionale raccolta di caramelle porta a porta!",
+    "NoteIT": ""
+  },
+  {
     "Author": "JaneSimsten",
     "ModName": "Regency Romance",
     "Status": "sconosciuta",
@@ -2686,6 +2702,22 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Aggiunge gli slider per poter modificare il colore ai capelli, vestiti e accessori.",
     "NoteIT": " "
+  },
+  {
+    "Author": "Tralfaz",
+    "ModName": "InScents - Fall Themed Incense Spooky Season Edition",
+    "Status": "compatibile",
+    "SiteLink": "https://www.curseforge.com/sims4/mods/inscents-fall-themed-incense-spooky-season-edition",
+    "DataUltimaModifica": "05/10/2026",
+    "Traduttore": "di Leo",
+    "LinkTraduzione": "https://www.patreon.com/leotranslations/posts/inscents-fall-172818405?utm_campaign=postshare_creator&utm_content=ios_share_native",
+    "Translation": "nuova",
+    "DataTraduzione": "13/10/2026",
+    "Categoria": "Oggetti Funzionali",
+    "MODIT": "NECESSARIE: Core Library di Lotto 51",
+    "DLCIT": "NECESSARI: Gioco BAse -  Stagioni",
+    "DescrizioneIT": "InScents aggiunge 6 fragranze autunnali che rendono la casa più accogliente. I Sims reagiranno agli incensi in modo diverso in base alla stagione e alla loro natura soprannaturale: generalmente li apprezzeranno in autunno, mentre nelle altre stagioni potrebbero esserne infastiditi. I Sims macabri, invece, li adoreranno sempre!",
+    "NoteIT": ""
   },
   {
     "Author": "TurboDriver",
