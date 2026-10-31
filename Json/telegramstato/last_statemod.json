@@ -992,6 +992,22 @@
     "NoteIT": "Il modulo 7 richiede l'installazione di almeno UNO dei moduli 1 o 6 insieme al pacchetto CORE."
   },
   {
+    "Author": "Kemzima",
+    "ModName": "School Bus Service",
+    "Status": "aggiornata",
+    "SiteLink": "https://kemzimamods.com/mod-list/school-bus-service/",
+    "DataUltimaModifica": "31/10/2026",
+    "Traduttore": "di Leo",
+    "LinkTraduzione": "https://www.patreon.com/leotranslations/posts/schoolbus-mod-171235124?utm_content=ios_share_native",
+    "Translation": "compatibile",
+    "DataTraduzione": "02/10/2026",
+    "Categoria": "Gameplay",
+    "MODIT": "NECESSARIE: Core Library di Lot 51",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Finalmente anche i tuoi bambini e adolescenti possono andare a scuola in autobus!\nLa School Bus Service Mod di Kemzima aggiunge un vero servizio di scuolabus al gioco, con arrivi mattutini, visite pomeridiane e nuove interazioni per studenti e genitori o tutori.",
+    "NoteIT": "è compatibile con: - Go to School di Zerbu - Education Overhaul di Adeepindigo - Shorter School Hours di MSQSIMS - High School Anywhere di Lunar Britney"
+  },
+  {
     "Author": "Ksuihuh's Corner",
     "ModName": "High School Uniform",
     "Status": "sconosciuta",
@@ -2688,22 +2704,6 @@
     "NoteIT": null
   },
   {
-    "Author": "Tyjokr/Thepancake1",
-    "ModName": "Color Sliders ",
-    "Status": "aggiornata",
-    "SiteLink": "https://www.patreon.com/tyjokr/posts/update-color-by-173692221",
-    "DataUltimaModifica": "29/10/2026",
-    "Traduttore": null,
-    "LinkTraduzione": null,
-    "Translation": "non necessaria",
-    "DataTraduzione": null,
-    "Categoria": "Utilità",
-    "MODIT": "Nessuna",
-    "DLCIT": "NECESSARI: Gioco Base",
-    "DescrizioneIT": "Aggiunge gli slider per poter modificare il colore ai capelli, vestiti e accessori.",
-    "NoteIT": " "
-  },
-  {
     "Author": "Tralfaz",
     "ModName": "InScents - Fall Themed Incense Spooky Season Edition",
     "Status": "sconosciuta",
@@ -2830,6 +2830,22 @@
     "DLCIT": "NECESSARI: Gioco Base",
     "DescrizioneIT": "Permette di spostare, ruotare e ridimensionare gli oggetti in modi impossibili con gli strumenti di gioco standard, offrendo una maggiore libertà creativa per costruzioni più dettagliate e personalizzate. Ideale per i giocatori che vogliono portare la loro creatività a un livello superiore!",
     "NoteIT": ""
+  },
+  {
+    "Author": "Tyjokr/Thepancake1",
+    "ModName": "Color Sliders ",
+    "Status": "aggiornata",
+    "SiteLink": "https://www.patreon.com/tyjokr/posts/update-color-by-173692221",
+    "DataUltimaModifica": "29/10/2026",
+    "Traduttore": null,
+    "LinkTraduzione": null,
+    "Translation": "non necessaria",
+    "DataTraduzione": null,
+    "Categoria": "Utilità",
+    "MODIT": "Nessuna",
+    "DLCIT": "NECESSARI: Gioco Base",
+    "DescrizioneIT": "Aggiunge gli slider per poter modificare il colore ai capelli, vestiti e accessori.",
+    "NoteIT": " "
   },
   {
     "Author": "Vellesa",
